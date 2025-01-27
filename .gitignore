@@ -1,1 +1,26 @@
+# OS-generated files #
+######################
 .DS_Store
+Thumbs.db
+.trash
+
+# VS-generated files #
+######################
+*.code-workspace
+.vscode/spellright.dict
+
+# Local infrustructure files #
+#########################
+
+_jekyll/_site
+tmp
+Gemfile.lock
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.rar
+*.tar
+*.zip
