@@ -4,7 +4,6 @@ description: See the list of environment variables that control actions in the A
 feature: Cloud, Configuration, Cache, Deploy, SCD, Storage, Search
 recommendations: noDisplay, catalog
 role: Developer
-exl-id: 673880b5-830b-4837-ac0c-5fa5643ae34c
 ---
 # Deploy variables
 

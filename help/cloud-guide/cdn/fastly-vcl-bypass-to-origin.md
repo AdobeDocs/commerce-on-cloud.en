@@ -2,7 +2,6 @@
 title: Custom VCL to bypass Fastly cache
 description: Troubleshoot request traffic to the origin server by creating a custom VCL snippet to bypass the Fastly cache.
 feature: Cloud, Configuration, Cache
-exl-id: a2e9dc57-9b5e-4716-9965-a4324442ad00
 ---
 # Custom VCL to bypass Fastly cache
 

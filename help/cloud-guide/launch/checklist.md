@@ -1,7 +1,6 @@
 ---
 title: Launch checklist
 description: Review checklist items for site launch.
-exl-id: 4525742e-18c5-40d1-975d-00ba3f3a51a0
 ---
 # Launch checklist
 

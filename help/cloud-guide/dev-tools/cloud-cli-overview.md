@@ -1,7 +1,6 @@
 ---
 title: Cloud CLI
 description: Learn about the magento-cloud CLI and how it helps you to manage local development environments for your Adobe Commerce on cloud infrastructure project.
-exl-id: 70dddd62-0269-4af4-bd2a-1a4fbf11a131
 ---
 
 # Cloud CLI

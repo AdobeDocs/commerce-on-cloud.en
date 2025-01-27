@@ -1,7 +1,6 @@
 ---
 title: '[!DNL ECE-Tools] Package'
 description: Learn about the [!DNL ECE-Tools] package and how it helps to manage and deploy Adobe Commerce.
-exl-id: 5583a685-29c5-4de5-8d2e-94cff5ff37ab
 ---
 # ECE-Tools Package
 

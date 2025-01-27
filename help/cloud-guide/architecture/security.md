@@ -2,7 +2,6 @@
 title: Cloud infrastructure security
 description: Learn about how Adobe keeps Adobe Commerce on cloud infrastructure secure.
 feature: Cloud, Security
-exl-id: fcdcaa07-fac7-46a7-864b-16525fc7ff9d
 ---
 # Security
 

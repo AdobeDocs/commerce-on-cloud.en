@@ -3,7 +3,6 @@ title: Provision Commerce on Cloud
 description: Learn how to prepare an Adobe Customer Technical Advisor to provision your Adobe Commerce on cloud infrastructure project.
 recommendations: noDisplay, catalog
 role: Admin
-exl-id: cfb354b0-c255-4b6e-94aa-c5a6bf7230d6
 ---
 # Commerce on Cloud provisioning prerequisites
 

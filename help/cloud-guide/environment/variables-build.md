@@ -4,7 +4,6 @@ description: See the list of environment variables that control actions in the A
 feature: Cloud, Configuration, Build, SCD, Upgrade
 recommendations: noDisplay, catalog
 role: Developer
-exl-id: 243aaa45-a5ef-4ed2-8800-3d0f07bf3740
 ---
 # Build variables
 

@@ -2,7 +2,6 @@
 title: Best practices for store configuration
 description: Read about best practices for configuring your store on Adobe Commerce on cloud infrastructure.
 feature: Cloud, Best Practices
-exl-id: 01f528bd-74c2-42e7-8e77-7e6f57a40ef4
 ---
 # Best practices for store configuration
 

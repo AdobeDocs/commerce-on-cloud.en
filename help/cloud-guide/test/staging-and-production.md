@@ -1,7 +1,6 @@
 ---
 title: Staging and Production testing
 description: Learn how to test in Staging and Production environments.
-exl-id: 5b762d59-04c5-4e89-a637-719141759158
 ---
 # Staging and Production testing
 

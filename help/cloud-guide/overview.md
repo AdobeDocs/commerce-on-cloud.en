@@ -1,7 +1,6 @@
 ---
 title: Commerce on Cloud Infrastructure
 description: Learn about building, deploying, and managing Commerce on Cloud infrastructure.
-exl-id: c0accd55-95ac-49d9-b6f4-0da19b82c28f
 ---
 # Commerce on Cloud Infrastructure
 

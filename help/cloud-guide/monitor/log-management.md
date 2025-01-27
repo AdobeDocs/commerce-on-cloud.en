@@ -2,7 +2,6 @@
 title: New Relic log management
 description: Learn how to use the New Relic log
 feature: Cloud, Logs, Observability
-exl-id: d8afb5c0-9727-4123-8944-81cd6ad7cbb7
 ---
 # New Relic log management
 

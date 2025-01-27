@@ -2,7 +2,6 @@
 title: Upgrade project to use ECE-Tools
 description: Learn how to upgrade your Adobe Commerce on cloud infrastructure project to use the ECE-Tools package and take advantage of the latest fixes and features.
 feature: Cloud, Install
-exl-id: 820cca84-2817-4881-829f-ebb78400d8c7
 ---
 # Upgrade project to use ECE-Tools package
 

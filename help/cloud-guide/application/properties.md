@@ -2,7 +2,6 @@
 title: Properties
 description: Use the property list as a reference when configurion the [!DNL Commerce] application for build and deploy to the cloud infrastructure.
 feature: Cloud, Configuration, Build, Deploy, Roles/Permissions, Storage
-exl-id: 58a86136-a9f9-4519-af27-2f8fa4018038
 ---
 # Properties for application configuration
 

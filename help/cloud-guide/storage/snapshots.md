@@ -2,7 +2,6 @@
 title: Backup management
 description: Learn how to manually create and restore a backup for your Adobe Commerce on cloud infrastructure project.
 feature: Cloud, Paas, Snapshots, Storage
-exl-id: 1cb00db7-2375-4761-9c07-1e20a74859e0
 ---
 # Backup management
 

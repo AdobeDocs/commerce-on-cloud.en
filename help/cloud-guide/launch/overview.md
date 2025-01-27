@@ -1,7 +1,6 @@
 ---
 title: Site launch
 description: Learn how to begin site launch preparation.
-exl-id: a7b3f260-b76e-4220-b521-699548a9928a
 ---
 # Site launch
 

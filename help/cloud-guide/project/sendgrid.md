@@ -1,7 +1,6 @@
 ---
 title: SendGrid email service
 description: Learn about the SendGrid email service for Adobe Commerce on cloud infrastructure and how you can test your DNS configuration.
-exl-id: 30d3c780-603d-4cde-ab65-44f73c04f34d
 ---
 # SendGrid email service
 

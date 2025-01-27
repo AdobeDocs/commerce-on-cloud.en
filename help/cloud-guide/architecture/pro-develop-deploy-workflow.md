@@ -2,7 +2,6 @@
 title: Pro project workflow
 description: Learn how to use the Pro development and deployment workflows.
 feature: Cloud, Iaas, Paas
-exl-id: 103e90d5-2ef2-4fef-845c-439344666b00
 ---
 # Pro project workflow
 
