@@ -7,7 +7,7 @@ feature-set: Commerce
 role: Admin, Developer
 topic: Commerce, Development
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/commerce-cloud-service.en
+git-repo: https://github.com/AdobeDocs/commerce-on-cloud.en
 description: Adobe Commerce on Cloud Infrastructure Guides
 index: yes
 ---
