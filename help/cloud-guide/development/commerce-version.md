@@ -289,7 +289,7 @@ Review the [service versions](../services/services-yaml.md#service-versions) inf
 
    **Method 1**: [Verify the applicable versions in the Quality Patches release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
   
-   **Method 2**: [View available patches and status](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
+   **Method 2**: [View available patches and status](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
   
    **Method 3**: [Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=en)
 

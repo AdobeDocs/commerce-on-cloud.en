@@ -2,8 +2,8 @@
 
 This site contains the latest developer documentation for Commerce on Cloud Infrastructure.
 
-- [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html)
-- [Get Started with Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/start/overview.html) on Cloud infrastructure
+- [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/overview.html)
+- [Get Started with Commerce](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html) on Cloud infrastructure
 
 ## Adobe Open Source Code of Conduct
 
