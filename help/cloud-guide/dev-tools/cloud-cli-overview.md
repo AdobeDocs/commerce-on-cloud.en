@@ -10,8 +10,8 @@ The `magento-cloud` CLI tool enables developers and system administrators the ab
 >[!NOTE]
 >
 >This is a local tool and cannot be installed on the Cloud environment (which is read-only) using this method. You can only install modules on the Cloud environment through the **deployment workflow**
->- [Pro deployment workflow](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
->- [Starter deployment workflow](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow)
+>- [Pro deployment workflow](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
+>- [Starter deployment workflow](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
 
 **To install the `magento-cloud` CLI**:
 

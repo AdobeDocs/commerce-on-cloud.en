@@ -180,7 +180,7 @@ stage:
 
 >[!WARNING]
 >
->Set the `CRYPT_KEY` value through the [!DNL Cloud Console] instead of the `.magento.env.yaml` file to avoid exposing the key in the source code repository for your environment. See [Set environment and project variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-environment).
+>Set the `CRYPT_KEY` value through the [!DNL Cloud Console] instead of the `.magento.env.yaml` file to avoid exposing the key in the source code repository for your environment. See [Set environment and project variables](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/project/overview.html#configure-environment).
 
 When you move the database from one environment to another without an installation process, you need the corresponding cryptographic information. Adobe Commerce uses the encryption key value set in the [!DNL Cloud Console] as the `crypt/key` value in the `env.php` file.
 
@@ -271,7 +271,7 @@ stage:
 
 >[!NOTE]
 >
->On a Pro Staging/Production cluster that has three nodes (or three service nodes on [Scaled Architecture](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture#service-tier), the `indices_settings` should be set as follows:
+>On a Pro Staging/Production cluster that has three nodes (or three service nodes on [Scaled Architecture](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture#service-tier), the `indices_settings` should be set as follows:
 >
 >```yaml
 >      indices_settings:
