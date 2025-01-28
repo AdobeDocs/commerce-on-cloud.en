@@ -14,4 +14,4 @@ recommendations: noDisplay, noCatalog
 + [Log in to [!DNL Cloud Console]](cloud-console.md)
 + [Access storefront](access-storefront.md)
 + [Prepare for development](prepare-workspace.md)
-+ [Return to Cloud Infrastructure Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html)
++ [Return to Cloud Infrastructure Guide](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/overview.html)
