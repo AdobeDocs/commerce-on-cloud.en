@@ -3,7 +3,7 @@ name: Bug report
 about: Create an issue about a bug on the Experience League website
 title: Bug report
 labels: bug
-assignees: hguthrie
+assignees: jeff-matthews
 ---
 
 ## Description

@@ -3,7 +3,7 @@ name: New website feature
 about: Request new functionality on the Experience League website
 title: Feature request
 labels: enhancement
-assignees: hguthrie
+assignees: jeff-matthews
 ---
 
 ## Description
