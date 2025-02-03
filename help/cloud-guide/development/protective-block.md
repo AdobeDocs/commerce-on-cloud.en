@@ -3,6 +3,7 @@ title: Protective block
 description: Learn about the protective block feature of Adobe Commerce on cloud infrastructure and how it works to protect your site against known security vulnerabilities.
 feature: Cloud, Configuration, Security
 topic: Security
+exl-id: 4a470e75-0b42-4ab7-b3dc-9f50b63bea14
 ---
 # Protective block
 

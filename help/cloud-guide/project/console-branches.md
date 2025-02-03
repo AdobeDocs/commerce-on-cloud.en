@@ -1,8 +1,9 @@
 ---
-title: "Manage branches with the [!DNL Cloud Console]"
+title: Manage branches with the [!DNL Cloud Console]
 description: Learn how to manage the environment branches for Adobe Commerce on cloud infrastructure using the [!DNL Cloud Console].
 role: Developer
 feature: Cloud, Install
+exl-id: 2c254586-b670-4dd7-8f82-edcc139e9800
 ---
 # Manage branches with the [!DNL Cloud Console]
 

@@ -3,6 +3,7 @@ title: Restore an environment
 description: Learn how to uninstall the Adobe Commerce application from a cloud infrastructure project and restore an environment to a stable state.
 role: Developer
 topic: Development
+exl-id: 78e4c535-8c4d-4185-9a56-d25cb04db991
 ---
 # Restore an environment
 

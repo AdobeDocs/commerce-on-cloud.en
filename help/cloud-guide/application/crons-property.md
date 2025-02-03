@@ -2,6 +2,7 @@
 title: Crons property
 description: See examples on how to configure the `crons` property in the [!DNL Commerce] application configuration file.
 feature: Cloud, Configuration
+exl-id: ff176cb1-5b6c-48a0-ad3c-56cc1d606c97
 ---
 # Crons property
 

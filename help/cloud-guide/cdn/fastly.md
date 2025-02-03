@@ -2,6 +2,7 @@
 title: Fastly services overview
 description: Learn how the Fastly services included with Adobe Commerce on cloud infrastructure help you optimize and secure content delivery operations for your Adobe Commerce sites.
 feature: Cloud, Configuration, Iaas, Paas, Cache, Security, Services
+exl-id: 429b6762-0b01-438b-a962-35376306895b
 ---
 # Fastly services overview
 

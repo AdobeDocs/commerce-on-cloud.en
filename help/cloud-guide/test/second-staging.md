@@ -1,6 +1,7 @@
 ---
 title: Second staging environment
 description: Learn the benefits and uses of having a second staging environment for parallel testing, issue isolation, version control, and more.
+exl-id: 300019bd-07cb-4efb-8740-a49a5a3cf01b
 ---
 # Second staging environment
 

@@ -2,6 +2,7 @@
 title: GitLab integration
 description: Learn how to integrate your Adobe Commerce on cloud infrastructure project with GitLab.
 feature: Cloud, Integration
+exl-id: 24c2156f-0629-4e89-b5b1-ca144d6bfdae
 ---
 # GitLab integration
 

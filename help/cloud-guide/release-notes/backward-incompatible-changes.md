@@ -3,6 +3,7 @@ title: Backward-incompatible changes
 description: Learn about backward compatibility when upgrading existing Cloud projects.
 feature: Cloud, Release Notes
 recommendations: noDisplay, catalog
+exl-id: 3f3c1036-bfd0-4c70-8309-6c5e442134cd
 ---
 # Backward-incompatible changes
 

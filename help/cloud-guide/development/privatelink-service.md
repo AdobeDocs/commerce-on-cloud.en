@@ -2,6 +2,7 @@
 title: PrivateLink service
 description: Learn how to use the PrivateLink service to establish a secure connection between a private cloud and Adobe Commerce cloud platform in the same region.
 feature: Cloud, Iaas, Security
+exl-id: 13a7899f-9eb5-4c84-b4c9-993c39d611cc
 ---
 # PrivateLink service
 

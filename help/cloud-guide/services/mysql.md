@@ -2,6 +2,7 @@
 title: Set up MySQL service
 description: Learn how to manage the MySQL service for persistent data storage with Adobe Commerce on cloud infrastructure.
 feature: Cloud, Services, Storage
+exl-id: 37b893ef-43cf-466b-9d18-ee3b80fdf2d8
 ---
 # Set up MySQL service
 

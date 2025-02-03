@@ -1,6 +1,7 @@
 ---
 title: Configure [!DNL Xdebug]
 description: Learn how to configure the Xdebug extension for debugging your Adobe Commerce on cloud infrastructure project development.
+exl-id: 32857c9c-4a49-4337-9c15-a6e46c328df7
 ---
 # Configure Xdebug
 

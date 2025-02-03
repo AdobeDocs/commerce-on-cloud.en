@@ -2,6 +2,7 @@
 title: Variables property
 description: Use the variables property to customize store configuration options for the [!DNL Commerce] application.
 feature: Cloud, Configuration
+exl-id: 9909d4a1-d9c8-492b-a5cc-cfbf17b5b7a8
 ---
 # Variables property
 

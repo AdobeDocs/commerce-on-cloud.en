@@ -3,6 +3,7 @@ title: GitHub integration
 description: Learn how to integrate your Adobe Commerce on cloud infrastructure project with GitHub.
 feature: Cloud, Integration
 last-substantial-update: 2023-05-25
+exl-id: 08e569fa-5ab4-45c0-82e6-476f25c17fe0
 ---
 # GitHub integration
 

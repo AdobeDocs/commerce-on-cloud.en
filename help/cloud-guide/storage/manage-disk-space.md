@@ -2,6 +2,7 @@
 title: Manage disk space
 description: Learn how to manage disk space using the command-line interface.
 feature: Cloud, Storage
+exl-id: 1d13dc4e-56eb-4153-a8b1-48d2263ebc4c
 ---
 # Manage disk space
 

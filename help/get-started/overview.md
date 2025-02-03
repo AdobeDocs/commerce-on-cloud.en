@@ -2,6 +2,7 @@
 title: Get Started with Adobe Commerce
 description: Get started with your new self-service Adobe Commerce on cloud infrastructure and learn how to build and deploy an Adobe Commerce store in minutes.
 recommendations: noDisplay, catalog
+exl-id: be93ef73-ae10-4d87-83ed-8da90bb5527c
 ---
 # Get Started with Adobe Commerce on Cloud
 

@@ -2,6 +2,7 @@
 title: Smart wizards
 description: Learn how to use smart wizards to evaluate whether your Adobe Commerce on cloud infrastructure project is following deployment best practices.
 feature: Cloud, Build, Deploy, SCD
+exl-id: a9f042cd-861f-4b1c-b80f-2569f12bcde8
 ---
 # Smart wizards
 

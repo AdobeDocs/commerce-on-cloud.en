@@ -2,6 +2,7 @@
 title: Store configuration management
 description: Learn how to manage and synchronize store configuration settings across all Adobe Commerce on cloud infrastructure environments.
 feature: Cloud, Configuration, SCD
+exl-id: 01850a7b-2c03-45e8-8051-b24ae95c5f87
 ---
 # Store configuration management
 

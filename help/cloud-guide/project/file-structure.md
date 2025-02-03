@@ -1,6 +1,7 @@
 ---
 title: Project structure
 description: Learn about the file structure and project templates for Adobe Commerce on cloud infrastructure.
+exl-id: 364e40e4-a5b3-4d23-b86d-74fc0696ac19
 ---
 # Project structure
 

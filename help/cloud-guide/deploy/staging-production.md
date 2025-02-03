@@ -2,6 +2,7 @@
 title: Deploy to Staging and Production
 description: Learn how to deploy your Adobe Commerce on cloud infrastructure code to the Staging and Production environments for further testing.
 feature: Cloud, Console, Deploy, SCD, Storage
+exl-id: 1cfeb472-c6ec-44ff-9b32-516ffa1b30d2
 ---
 # Deploy to Staging and Production
 

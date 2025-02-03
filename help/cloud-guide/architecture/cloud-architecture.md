@@ -4,6 +4,7 @@ description: Learn how Starter and Pro project architectures contrast for Commer
 feature: Cloud, Iaas, Paas
 topic: Architecture
 recommendations: noDisplay
+exl-id: 7c1e895d-0f88-4f11-919a-b3b5748ca5f0
 ---
 # Cloud architecture for Commerce
 

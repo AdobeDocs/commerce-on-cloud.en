@@ -1,6 +1,7 @@
 ---
 title: Testing guidance
 description: Read about testing types and best practices for launching Adobe Commerce on cloud infrastructure.
+exl-id: 70fdfbbd-1763-4b1b-9ffd-9ffdc92f4f91
 ---
 # Testing guidance
 

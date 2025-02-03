@@ -2,6 +2,7 @@
 title: Recover from component failure
 description: Learn how you can recover if a component fails to deploy properly in Adobe Commerce on cloud infrastructure.
 feature: Cloud, Deploy
+exl-id: f5e79366-5548-40dd-ac2a-56dc84c5d4e2
 ---
 # Recover from component failure
 

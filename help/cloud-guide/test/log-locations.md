@@ -2,6 +2,7 @@
 title: View and manage logs
 description: Understand the types of log files available in the cloud infrastructure and where to find them.
 last-substantial-update: 2023-05-23
+exl-id: f0bb8830-8010-4764-ac23-d63d62dc0117
 ---
 # View and manage logs
 

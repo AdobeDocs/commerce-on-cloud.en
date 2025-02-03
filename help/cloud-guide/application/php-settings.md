@@ -2,6 +2,7 @@
 title: PHP settings
 description: Learn about the optimal PHP settings for Commerce application configuration in the cloud infrastructure.
 feature: Cloud, Configuration, Extensions
+exl-id: 83094c16-7407-41fa-ba1c-46b206aa160d
 ---
 # PHP settings
 

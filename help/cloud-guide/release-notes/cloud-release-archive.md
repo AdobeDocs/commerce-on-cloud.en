@@ -4,6 +4,7 @@ description: Learn about archived improvements for ece-tools.
 hide: yes
 hidefromtoc: yes
 recommendations: noDisplay, noCatalog
+exl-id: 3ba39fa6-88e9-4177-956d-f3e382bf59e3
 ---
 # Release notes archive for ece-tools
 

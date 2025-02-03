@@ -2,6 +2,7 @@
 title: Hooks property
 description: See examples on how to configure the hooks property in the [!DNL Commerce] application configuration file.
 feature: Cloud, Configuration, Build, Deploy
+exl-id: 56b7045c-fba5-43f1-b43e-4d438b8e0568
 ---
 # Hooks property
 

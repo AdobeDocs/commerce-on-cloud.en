@@ -2,6 +2,7 @@
 title: Workers
 description: Learn how to configure the workers property in the [!DNL Commerce] application configuration file.
 feature: Cloud, Configuration
+exl-id: 62d9dfaf-6265-4016-8d68-26362cf6a63a
 ---
 # Workers property
 

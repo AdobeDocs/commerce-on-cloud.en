@@ -3,6 +3,7 @@ title: New Relic Account Management
 description: Learn how to access your New Relic account and manage access, integrations, and tool usage for your Adobe Commerce on cloud infrastructure project.
 feature: Cloud, Observability
 role: Admin
+exl-id: 7aeedd12-7a81-47eb-a82f-3079e16ecb06
 ---
 # New Relic account management
 

@@ -2,6 +2,7 @@
 title: Upgrade Commerce version
 description: Learn how to upgrade the Adobe Commerce version in the cloud infrastructure project.
 feature: Cloud, Upgrade
+exl-id: 0cc070cf-ab25-4269-b18c-b2680b895c17
 ---
 # Upgrade Commerce version
 

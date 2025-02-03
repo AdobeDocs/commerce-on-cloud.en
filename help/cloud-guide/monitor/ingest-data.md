@@ -2,6 +2,7 @@
 title: Data ingestion
 description: Learn how to view and manage Commerce data ingestion in New Relic.
 feature: Cloud, Observability
+exl-id: b457b4de-deeb-4e92-b95a-c2b89d6f7a05
 ---
 # Data ingestion
 

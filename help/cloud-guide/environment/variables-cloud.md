@@ -4,6 +4,7 @@ description: See a list of environment variables specific to Adobe Commerce on c
 feature: Cloud, Configuration
 recommendations: noDisplay, catalog
 role: Developer
+exl-id: 82923b6f-221d-4902-a1b8-5ba6c7b3339a
 ---
 # Cloud-specific variables
 

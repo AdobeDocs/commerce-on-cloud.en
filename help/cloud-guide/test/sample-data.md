@@ -1,6 +1,7 @@
 ---
 title: Sample data
 description: Learn how to install sample data with Adobe Commerce on cloud infrastructure.
+exl-id: 59e23cfa-d364-4e70-8a86-644c339778cc
 ---
 # Sample data
 

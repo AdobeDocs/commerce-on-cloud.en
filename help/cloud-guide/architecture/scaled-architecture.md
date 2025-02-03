@@ -2,6 +2,7 @@
 title: Scaled architecture
 description: Learn about the split-tier architecture and how it scales to meet demand.
 feature: Cloud, Auto Scaling, Iaas, Logs
+exl-id: 45c0cf14-99e6-4643-88f0-98ebcdb3a98c
 ---
 # Scaled Architecture
 

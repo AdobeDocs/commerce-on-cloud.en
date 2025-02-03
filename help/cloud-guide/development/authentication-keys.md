@@ -3,6 +3,7 @@ title: Authentication keys
 description: Learn how to apply authentication keys to a development project in Adobe Commerce on cloud infrastructure.
 feature: Cloud, Security
 topic: Security
+exl-id: b5a24fcd-9b43-4ec9-8a0c-52956a74e45e
 ---
 # Authentication keys
 

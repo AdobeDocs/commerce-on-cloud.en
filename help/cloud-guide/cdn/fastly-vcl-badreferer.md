@@ -2,6 +2,7 @@
 title: Block referral spam
 description: Block referral spam from your site using the Fastly Edge dictionary and a custom VCL snippet.
 feature: Cloud, Configuration, Security
+exl-id: 4ed47a71-7fee-4f37-a7da-3e30052004df
 ---
 # Block referral spam
 

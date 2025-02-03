@@ -2,6 +2,7 @@
 title: Server-side includes
 description: Learn how to use server-side includes with Adobe Commerce on cloud infrastructure.
 feature: Cloud, Routes
+exl-id: 826a9c9a-d082-4ec4-8fd2-00ca357522ab
 ---
 # Server-side includes
 

@@ -2,6 +2,7 @@
 title: Manage extensions
 description: Learn how to install and manage extensions in Adobe Commerce on cloud infrastructure.
 feature: Cloud, Extensions, Upgrade
+exl-id: 88c5ea06-fe79-4105-8b67-f16e9ef06210
 ---
 # Manage extensions
 

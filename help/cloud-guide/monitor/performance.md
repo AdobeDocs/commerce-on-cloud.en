@@ -3,6 +3,7 @@ title: Performance Monitoring
 description: Learn about performance monitoring for Adobe Commerce on cloud infrastructure.
 feature: Cloud, Observability
 topic: Performance
+exl-id: 51e371cf-8374-4dae-8e5a-f31477dc59c1
 ---
 # Performance monitoring
 

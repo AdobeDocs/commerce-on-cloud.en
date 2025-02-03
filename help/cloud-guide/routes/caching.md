@@ -2,6 +2,7 @@
 title: Caching
 description: Learn how to enable caching for your Adobe Commerce on cloud infrastructure environments.
 feature: Cloud, Cache, Routes
+exl-id: e73c36d6-9a58-45c0-9220-86074c1f46f0
 ---
 # Caching
 

@@ -3,6 +3,7 @@ title: Log handlers
 description: Learn how to configure log handlers for Adobe Commerce on cloud infrastructure.
 feature: Cloud, Logs, Configuration
 role: Developer
+exl-id: 0d7fb653-468b-432c-9830-582b0fed8512
 ---
 # Log handlers
 

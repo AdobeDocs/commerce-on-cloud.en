@@ -2,6 +2,7 @@
 title: Customize cache configuration
 description: Learn how to review and customize cache configuration settings after Fastly service setup is complete.
 feature: Cloud, Configuration, Iaas, Cache
+exl-id: f6901931-7b3f-40a8-9514-168c6243cc43
 ---
 # Customize cache configuration
 

@@ -2,6 +2,7 @@
 title: Redirects
 description: Learn how to manage redirection rules for your Adobe Commerce on cloud infrastructure project.
 feature: Cloud, Routes
+exl-id: f70a9035-bbae-4d23-bb7c-c0de6a7ccf6c
 ---
 # Redirects
 

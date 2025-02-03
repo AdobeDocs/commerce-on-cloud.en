@@ -1,6 +1,7 @@
 ---
 title: Configure outgoing emails
 description: Learn how to enable outgoing emails for Adobe Commerce on cloud infrastructure.
+exl-id: 616e287b-960a-4933-916e-37896ee6b533
 ---
 # Configure outgoing emails
 

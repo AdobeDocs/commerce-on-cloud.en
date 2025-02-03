@@ -2,6 +2,7 @@
 title: Set up notifications
 description: Learn how to configure notifications for Adobe Commerce on cloud infrastructure environments.
 feature: Cloud, Configuration, Logs
+exl-id: dfbe1084-ad30-4489-af2d-d6f6b5eae1c4
 ---
 # Set up notifications
 

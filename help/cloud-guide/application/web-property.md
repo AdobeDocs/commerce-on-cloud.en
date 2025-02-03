@@ -2,6 +2,7 @@
 title: Web property
 description: See examples on how to configure the web property in the [!DNL Commerce] application configuration file.
 feature: Cloud, Configuration
+exl-id: 6ecf6fb5-57a8-435c-8de3-f66dc56837fe
 ---
 # Web property
 

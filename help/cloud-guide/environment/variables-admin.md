@@ -3,6 +3,7 @@ title: ADMIN variables
 description: See a list of environment variables used when installing Adobe Commerce on cloud infrastructure.
 feature: Cloud, Configuration, Install, Roles/Permissions
 role: Developer
+exl-id: d2746185-bc59-4d30-a088-73df1bd2c0b2
 ---
 # Admin variables
 

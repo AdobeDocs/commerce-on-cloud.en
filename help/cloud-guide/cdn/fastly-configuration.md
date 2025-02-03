@@ -2,6 +2,7 @@
 title: Configure Fastly services
 description: Learn how to set up and configure Fastly services for your Adobe Commerce project.
 feature: Cloud, Configuration, Iaas, Cache, Security
+exl-id: f9ce1e8b-4e9f-488e-8a4d-f866567c41d8
 ---
 # Configure Fastly services
 

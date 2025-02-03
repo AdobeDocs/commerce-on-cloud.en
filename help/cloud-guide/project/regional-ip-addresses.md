@@ -1,6 +1,7 @@
 ---
 title: Regional IP addresses
 description: See a list of IP addresses for the AWS and Azure regions used by Adobe Commerce on cloud infrastructure for integration environments.
+exl-id: 1137f5cf-4879-46d7-878c-bf47de7a0e34
 ---
 # Regional IP addresses
 

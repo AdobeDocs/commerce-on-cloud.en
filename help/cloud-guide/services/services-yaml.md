@@ -2,6 +2,7 @@
 title: Configure services
 description: Learn how to configure services used by Adobe Commerce on cloud infrastructure.
 feature: Cloud, Configuration, Services
+exl-id: ddf44b7c-e4ae-48f0-97a9-a219e6012492
 ---
 # Configure services
 

@@ -4,6 +4,7 @@ description: Learn how to apply SSH keys to your Adobe Commerce on cloud infrast
 role: Developer
 feature: Cloud, Security
 topic: Security
+exl-id: 73af13d8-7085-4ac8-9cfe-9772bc6bc112
 ---
 # Secure connections to remote environments
 

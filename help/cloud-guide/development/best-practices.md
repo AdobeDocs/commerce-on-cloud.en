@@ -2,6 +2,7 @@
 title: Best practices for upgrading your project
 description: See a list of best practices for upgrading your project files.
 feature: Cloud, Best Practices, Upgrade
+exl-id: 64f92739-9170-4cbf-90ef-aab6593a37ca
 ---
 # Best practices for upgrading your project
 

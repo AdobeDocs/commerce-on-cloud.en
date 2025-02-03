@@ -2,6 +2,7 @@
 title: Technology stack
 description: See the technology stack that forms the Commerce on Cloud infrastructure.
 feature: Cloud, Iaas, Paas
+exl-id: 3fac1ab7-6440-4bf9-8169-9fadf51d70dd
 ---
 # Technology stack
 

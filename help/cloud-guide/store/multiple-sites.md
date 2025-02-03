@@ -2,6 +2,7 @@
 title: Set up multiple websites or stores
 description: Learn how to configure multiple websites or stores for Adobe Commerce on cloud infrastructure.
 feature: Cloud, Configuration, Routes, Site Navigation
+exl-id: 773d8d64-d235-4c2b-87e9-aadbf8471b2c
 ---
 # Set up multiple websites or stores
 

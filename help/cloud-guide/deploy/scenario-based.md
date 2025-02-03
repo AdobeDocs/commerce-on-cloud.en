@@ -2,6 +2,7 @@
 title: Scenario-based deployment
 description: Learn how to customize Adobe Commerce on cloud infrastructure deployments using custom configuration files.
 feature: Cloud, Configuration, Deploy, Build
+exl-id: 44c2a73e-4ea2-49a6-86c1-9fa8cfc8b66e
 ---
 # Scenario-based deployment
 

@@ -2,6 +2,7 @@
 title: Prepare for development
 description: Gather credentials and learn about the tools available to set up a development workspace for use with your Commerce on cloud infrastructure project.
 recommendations: noDisplay, catalog
+exl-id: adb7f74f-8007-4f23-bc07-46b0f7d0ebd9
 ---
 # Prepare for development
 

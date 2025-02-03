@@ -4,6 +4,7 @@ description: See a list of the latest improvements to the Cloud Docker package.
 feature: Cloud, Docker, Release Notes
 recommendations: noDisplay, catalog
 last-substantial-update: 2024-10-07
+exl-id: 95cf4f30-6bce-4bac-8e11-cfe53cac2c70
 ---
 # Cloud Docker package
 
