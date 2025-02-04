@@ -55,3 +55,4 @@ The Commerce on cloud infrastructure guide assumes that you have some working kn
 - [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs/) (Adobe Developer site)—Develop, customize, integrate, extend, and use advanced capabilities
 
 - [Adobe Commerce Documentation](https://experienceleague.adobe.com/docs/commerce.html) (Adobe Experience League)—Plan, implement, operate, upgrade, and maintain your [!DNL Commerce] projects
+
