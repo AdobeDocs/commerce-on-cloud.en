@@ -3,7 +3,7 @@ title: Cloud Patches for Commerce
 description: See a list of the latest improvements to the Cloud Patches package.
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-02-06
-exl-id: ae6b511b-a37d-4776-9a5e-ad7d9f9f6611
+exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913
 ---
 # Cloud Patches for Commerce
 

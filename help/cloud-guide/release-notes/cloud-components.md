@@ -2,7 +2,7 @@
 title: Cloud Components for Commerce
 description: See a list of the latest improvements to the Cloud Components package.
 recommendations: noDisplay, catalog
-exl-id: b4e2508a-3558-4fa8-bae0-3eb76c7b2775
+exl-id: 34aec593-e2ea-4060-a6b9-6f4cb95a11c0
 ---
 # Cloud Components for Commerce
 

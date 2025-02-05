@@ -3,7 +3,7 @@ title: ECE-Tools release notes
 description: See a list of the latest improvements to the ECE-Tools package.
 recommendations: noDisplay, catalog
 last-substantial-update: 2024-02-06
-exl-id: a464b940-c56e-4a7c-9948-559539e25361
+exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
 ---
 # ECE-Tools release notes
 
