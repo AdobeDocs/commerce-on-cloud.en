@@ -3,8 +3,8 @@ title: Cloud Docker package
 description: See a list of the latest improvements to the Cloud Docker package.
 feature: Cloud, Docker, Release Notes
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-10-07
-exl-id: 95cf4f30-6bce-4bac-8e11-cfe53cac2c70
+last-substantial-update: 2025-02-06
+exl-id: 907d977f-2e9c-4553-a46b-000bc6a57b28
 ---
 # Cloud Docker package
 
@@ -19,7 +19,14 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v1.4.0 {#latest}
+## v1.4.1 {#latest}
+
+Release date: February 6, 2025
+
+-  ![new icon](../../assets/new.svg) **PHP 8.4**Added support of  PHP 8.4
+
+
+## v1.4.0
 
 Release date: October 7, 2024
 
