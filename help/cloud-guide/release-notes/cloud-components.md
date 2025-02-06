@@ -20,8 +20,8 @@ The release notes include:
 
 Release date: February 6, 2025
 
--  ![new icon](../../assets/new.svg) **PHP 8.4**Added support of  PHP 8.4<!-- MCLOUD-13148	 - -->
--  ![fix icon](../../assets/fix.svg) **Fix for cache warm-up**Fixed category URLs issue during cache warm-up<!-- MCLOUD-12454 - -->
+-  ![new icon](../../assets/new.svg) **PHP 8.4**—Added support for PHP 8.4.<!-- MCLOUD-13148	 - -->
+-  ![fix icon](../../assets/fix.svg) **Fix for cache warm-up**—Fixed an issue with category URLs during cache warm-up.<!-- MCLOUD-12454 - -->
 
 
 ## v1.1.0
