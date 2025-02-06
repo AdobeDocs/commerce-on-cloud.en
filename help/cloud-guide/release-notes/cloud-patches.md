@@ -24,6 +24,7 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 <!--Add release notes below-->
 ## v1.1.3 {#latest}
 
+
 Release date: February 6, 2025
 
 -  ![new icon](../../assets/new.svg) **PHP 8.4**—Added support for PHP 8.4.<!-- MCLOUD-13149	 - -->

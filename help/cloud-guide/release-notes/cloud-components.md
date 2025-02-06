@@ -18,6 +18,7 @@ The release notes include:
 <!--Add release notes below-->
 ## v1.1.1 {#latest}
 
+
 Release date: February 6, 2025
 
 -  ![new icon](../../assets/new.svg) **PHP 8.4**—Added support for PHP 8.4.<!-- MCLOUD-13148	 - -->
