@@ -23,7 +23,7 @@ Create an SSH key pair on every machine and workspace that requires access to yo
 
 ## Add an SSH public key to your account
 
-After you add your SSH public key to your Adobe Commerce on cloud infrastructure account, redeploy all active environments on your account to install the key.
+After you add or update your SSH public key to your Adobe Commerce on cloud infrastructure account, [redeploy all active environments](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference#environmentredeploy) on your account to install the key. 
 
 You can add SSH keys to your account using one of the following methods: Cloud CLI or [!DNL Cloud Console].
 
