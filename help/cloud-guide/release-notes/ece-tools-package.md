@@ -2,7 +2,7 @@
 title: ECE-Tools release notes
 description: See a list of the latest improvements to the ECE-Tools package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-10-07
+last-substantial-update: 2024-02-06
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
 ---
 # ECE-Tools release notes
@@ -22,7 +22,16 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.2.0 {#latest}
+## v2002.2.1 {#latest}
+
+
+Release date: February 6, 2024
+
+-  ![new icon](../../assets/new.svg) **PHP 8.4**—Added support for PHP 8.4.<!-- MCLOUD-13145	 - -->
+-  ![fix icon](../../assets/fix.svg) **Validator for Opensearch**-Fixed the validator that produced a misleading message about the wrong version of service.<!-- MCLOUD-13184	 - -->
+
+
+## v2002.2.0
 
 Release date: October 7, 2024
 
