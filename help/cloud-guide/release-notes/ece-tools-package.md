@@ -21,11 +21,13 @@ The release notes include:
 -  ![fix icon](../../assets/fix.svg) Fixes and improvements
 
 <!--Add release notes below-->
+
 ## v2002.2.1 {#latest}
+
 
 Release date: February 6, 2024
 
--  ![new icon](../../assets/new.svg) **PHP 8.4**Added support of  PHP 8.4<!-- MCLOUD-13145	 - -->
+-  ![new icon](../../assets/new.svg) **PHP 8.4**—Added support for PHP 8.4.<!-- MCLOUD-13145	 - -->
 -  ![fix icon](../../assets/fix.svg) **Validator for Opensearch**-Fixed the validator that produced a misleading message about the wrong version of service.<!-- MCLOUD-13184	 - -->
 
 
