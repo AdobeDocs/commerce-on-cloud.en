@@ -12,7 +12,7 @@ A backup or _snapshot_ is a complete backup of environment data that includes al
 
 >[!WARNING]
 >
->While backups normally contain the contents of mounted directories, including public web directories like `pub/media`, do not move backup ouptut files to public web directories like `pub/media` or `pub/static`.
+>While backups normally contain the contents of mounted directories, including public web directories like `pub/media`, do not move backup output files to public web directories like `pub/media` or `pub/static`.
 
 The backup/snapshot feature does **not** apply to the Pro Staging and Production environments, which receive regular backups for disaster recovery purposes by default. Refer to [Pro Backup & Disaster Recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery) for more information. Unlike the automatic live backups on the Pro Staging and Production environments, backups are **not** automatic. It is _your_ responsibility to manually create a backup or set up a cron job to periodically create a backup of your Starter or Pro integration environments.
 
