@@ -6,7 +6,7 @@ exl-id: 351f7691-3153-4b8a-83af-8b8895b93d98
 ---
 # Back up the database
 
-You can create a copy of your database using the `ece-tools db-dump` command without capturing all environment data from services and mounts. By default, this command creates backups in the `/app/var/dump-main` directory for all database connections that are specified in the environment configuration. The DB dump operation switches the application to maintenance mode, stops consumer queue processes, and disables cron jobs before the dump begins.
+You can create a copy of your database using the `ece-tools db-dump` command without capturing all environment data from services and mounts. By default, this command creates backups in the `app/var/` directory for all database connections that are specified in the environment configuration. The DB dump operation switches the application to maintenance mode, stops consumer queue processes, and disables cron jobs before the dump begins.
 
 Consider the following guidelines for DB dump:
 
@@ -23,8 +23,8 @@ php vendor/bin/ece-tools db-dump main sales
 
 Use the `php vendor/bin/ece-tools db-dump --help` command for more options:
 
-- `--dump-directory=<dir>`—Choose a target directory for the database dump
-- `--remove-definers`—Remove DEFINER statements from the database dump
+- `--dump-directory=<dir>`—Choose a target directory for the database dump. **Do not choose public web directories like `pub/media` or `pub/static`**.
+- `--remove-definers`—Remove DEFINER statements from the database dump.
 
 **To create a database dump in the Staging or Production environment**:
 
@@ -44,6 +44,10 @@ Use the `php vendor/bin/ece-tools db-dump --help` command for more options:
 
 1. Create a backup of the database. To choose a target directory for the DB dump, use the `--dump-directory` option.
 
+   >[!WARNING]
+   >
+   >If you specify a target directory, do not choose public web directories like `pub/media` or `pub/static`.
+
    ```bash
    php vendor/bin/ece-tools db-dump -- main
    ```
@@ -60,7 +64,7 @@ Use the `php vendor/bin/ece-tools db-dump --help` command for more options:
    [2020-01-28 16:38:10] INFO: Running Magento cron and consumers processes were not found.
    [2020-01-28 16:38:10] INFO: Waiting for lock on db dump.
    [2020-01-28 16:38:10] INFO: Start creation DB dump for main database...
-   [2020-01-28 16:38:10] INFO: Finished DB dump for main database, it can be found here: /tmp/qxmtlseakof6y/dump-main-1580229490.sql.gz
+   [2020-01-28 16:38:10] INFO: Finished DB dump for main database, it can be found here: /app/qxmtlseakof6y/var/dump-main-1580229490.sql.gz
    [2020-01-28 16:38:10] INFO: Backup completed.
    [2020-01-28 16:38:11] NOTICE: Maintenance mode is disabled.
    ```
