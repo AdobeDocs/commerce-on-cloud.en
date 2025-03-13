@@ -203,13 +203,13 @@ For Pro Staging and Production environments, the Deploy, Post-deploy, and Cron l
 
 | Log file            | Pro Staging                                         | Pro Production                                  |
 | ------------------- | --------------------------------------------------- | ----------------------------------------------- |
-| **Deploy log**      | First node only:<br>`/var/log/platform/<project-ID>_stg/deploy.log` | First node only:<br>`/var/log/platform/<project-ID>/deploy.log` |
-| **Post-deploy log** | First node only:<br>`/var/log/platform/<project-ID>_stg/post_deploy.log` | First node only:<br>`/var/log/platform/<project-ID>/post_deploy.log` |
-| **Cron log**        | First node only:<br>`/var/log/platform/<project-ID>_stg/cron.log` | First node only:<br>`/var/log/platform/<project-ID>/cron.log` |
-| **Nginx access log**| `/var/log/platform/<project-ID>_stg/access.log`     | `/var/log/platform/<project-ID>/access.log`     |
-| **Nginx error log** | `/var/log/platform/<project-ID>_stg/error.log`      | `/var/log/platform/<project-ID>/error.log`      |
-| **PHP access log**  | `/var/log/platform/<project-ID>_stg/php.access.log` | `/var/log/platform/<project-ID>/php.access.log` |
-| **PHP FPM log**     | `/var/log/platform/<project-ID>_stg/php5-fpm.log`   | `/var/log/platform/<project-ID>/php5-fpm.log`   |
+| **Deploy log**      | First node only:<br>`/var/log/platform/<project-ID>_stg*/deploy.log` | First node only:<br>`/var/log/platform/<project-ID>/deploy.log` |
+| **Post-deploy log** | First node only:<br>`/var/log/platform/<project-ID>_stg*/post_deploy.log` | First node only:<br>`/var/log/platform/<project-ID>/post_deploy.log` |
+| **Cron log**        | First node only:<br>`/var/log/platform/<project-ID>_stg*/cron.log` | First node only:<br>`/var/log/platform/<project-ID>/cron.log` |
+| **Nginx access log**| `/var/log/platform/<project-ID>_stg*/access.log`     | `/var/log/platform/<project-ID>/access.log`     |
+| **Nginx error log** | `/var/log/platform/<project-ID>_stg*/error.log`      | `/var/log/platform/<project-ID>/error.log`      |
+| **PHP access log**  | `/var/log/platform/<project-ID>_stg*/php.access.log` | `/var/log/platform/<project-ID>/php.access.log` |
+| **PHP FPM log**     | `/var/log/platform/<project-ID>_stg*/php5-fpm.log`   | `/var/log/platform/<project-ID>/php5-fpm.log`   |
 
 ### Archived log files
 
@@ -229,7 +229,7 @@ The archived log files are always stored in the directory where the original fil
 
 Because each service runs in a separate container, the service logs are not available in the integration environment. Adobe Commerce on cloud infrastructure provides access to the web server container in the integration environment only. The following service log locations are for the Pro Production and Staging environments:
 
-- **Redis log**: `/var/log/platform/<project-ID>_stg/redis-server-<project-ID>_stg.log`
+- **Redis log**: `/var/log/platform/<project-ID>*/redis-server-<project-ID>*.log`
 - **Elasticsearch log**: `/var/log/elasticsearch/elasticsearch.log`
 - **Java garbage collection log**: `/var/log/elasticsearch/gc.log`
 - **Mail log**: `/var/log/mail.log`
