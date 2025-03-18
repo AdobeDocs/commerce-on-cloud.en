@@ -9611,7 +9611,7 @@
                 "metrics",
                 "met"
             ],
-            "description": "<fg=white;bg=red> BETA </> Show CPU, disk and memory metrics for an environment",
+            "description": "Show CPU, disk and memory metrics for an environment",
             "help": "",
             "examples": [
                 {
@@ -9822,7 +9822,7 @@
             "aliases": [
                 "cpu"
             ],
-            "description": "<fg=white;bg=red> BETA </> Show CPU usage of an environment",
+            "description": "Show CPU usage of an environment",
             "help": "",
             "examples": [],
             "definition": {
@@ -10219,7 +10219,7 @@
                 "mem",
                 "memory"
             ],
-            "description": "<fg=white;bg=red> BETA </> Show memory usage of an environment",
+            "description": "Show memory usage of an environment",
             "help": "",
             "examples": [],
             "definition": {
@@ -11153,7 +11153,7 @@
             "aliases": [
                 "ops"
             ],
-            "description": "<fg=white;bg=red> BETA </> List runtime operations on an environment",
+            "description": "List runtime operations on an environment",
             "help": "",
             "examples": [],
             "definition": {
@@ -11299,7 +11299,7 @@
                 "magento-cloud operation:run [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-W|--no-wait] [--wait] [--] [<operation>]"
             ],
             "aliases": [],
-            "description": "<fg=white;bg=red> BETA </> Run an operation on the environment",
+            "description": "Run an operation on the environment",
             "help": "",
             "examples": [],
             "definition": {

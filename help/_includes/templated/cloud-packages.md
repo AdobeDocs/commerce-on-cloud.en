@@ -20,13 +20,13 @@ The following reference documentation is generated from the `composer.lock` file
 
 ## Dependencies
 
-`magento/magento-cloud-metapackage 2.4.7` has the following dependencies:
+`magento/magento-cloud-metapackage 2.4.8` has the following dependencies:
 
 ```config
 fastly/magento2: ^1.2.34
-magento/ece-tools: ^2002.1.0
+magento/ece-tools: ^2002.2.0
 magento/module-paypal-on-boarding: ~100.5.0
-magento/product-enterprise-edition: >=2.4.7 <2.4.8
+magento/product-enterprise-edition: >=2.4.8 <2.4.9
 ```
 
 ## Third-party licenses
