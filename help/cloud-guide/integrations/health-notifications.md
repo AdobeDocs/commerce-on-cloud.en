@@ -39,3 +39,7 @@ PagerDuty is an external service that can notify on-call team members of importa
 ```bash
 magento-cloud integration:add --type health.pagerduty --routing-key PAGERDUTY_ROUTING_KEY
 ```
+
+## Free up hard drive space
+
+An optional way to free up some hard drive space would be to truncate or remove log files.  If `logrotate` is enabled on the environment, you can pull down a copy of any logs, then remove them with a command similar to `rm -rf some-log-file.log.gz`.  Another option is to truncate a log file. An example for this type of process is explained by watching the video tutorial [Truncate Log Files](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-cloud/troubleshooting/truncate-logs){target="_blank"}.
