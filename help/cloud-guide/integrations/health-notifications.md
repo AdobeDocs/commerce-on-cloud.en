@@ -42,4 +42,8 @@ magento-cloud integration:add --type health.pagerduty --routing-key PAGERDUTY_RO
 
 ## Log management
 
-An optional way to free up some hard drive space would be to truncate or remove log files.  If `logrotate` is enabled on the environment, you can pull down a copy of any logs, then remove them with a command similar to `rm -rf some-log-file.log.gz`.  Another option is to truncate a log file. An example for this type of process is explained by watching the video tutorial [Truncate Log Files](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-cloud/troubleshooting/truncate-logs){target="_blank"}.
+To increase available disk space, you can truncate or remove log files from your environment. If logrotate is enabled, first download a backup copy of the logs, then remove them:
+
+`rm -rf some-log-file.log.gz`
+
+Alternatively, you can truncate individual log files to reduce their size. For a detailed example of log file truncation, see the video tutorial Truncate Log Files{target="_blank"}.
