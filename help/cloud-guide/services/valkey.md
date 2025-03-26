@@ -1,14 +1,14 @@
 ---
 title: Set up Valkey service
-description: Learn how to set up and optimize Valkey as a backend cache solution for Adobe Commerce on cloud infrastructure.
+description: Learn how to set up and optimize Valkey as a backend cache solution for Adobe Commerce on Cloud Infrastructure.
 feature: Cloud, Cache, Services
-exl-id: be6f2462-0878-47e3-b906-ebdd4aa319f2
+exl-id:
 ---
 # Set up Valkey service
 
-[Valkey](https://valkey.io) is an optional, backend cache solution that replaces the Zend Framework Zend_Cache_Backend_File, which Adobe Commerce uses by default.
+[Valkey](https://valkey.io) is an optional, backend cache solution that replaces the `Zend Framework Zend_Cache_Backend_File`, which Adobe Commerce uses by default.
 
-See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey.html) in the _Configuration guide_.
+See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey.html) in the Configuration guide_.
 
 {{service-instruction}}
 
@@ -25,7 +25,7 @@ See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operatio
 
    ```yaml
    cache:
-       type: valkey:<version>
+       type: valkey:8.0
    ```
 
 1. Configure the relationships in the `.magento.app.yaml` file.
@@ -55,7 +55,7 @@ Assuming your Valkey relationship is named `valkey`, you can access it using the
 1. Open an SSH tunnel to a host.
 
    ```bash
-   valkey-cli -h valkey.internal
+   valkey-cli -h valkeycache.internal
    ```
 
 ## Get installed Valkey version
@@ -63,14 +63,14 @@ Assuming your Valkey relationship is named `valkey`, you can access it using the
 Use the following command to get the Valkey version installed on an integration environment:
 
 ```bash
-valkey-cli -h valkey.internal info | grep version
+valkey-cli -h valkeycache.internal info | grep version
 ```
 
-Sample response:
+Response:
 
 ```
-valkey_version:7.0.5
-gcc_version:8.3.0
+valkey_version:8.0.1
+gcc_version:12.2.0
 ```
 
 ### Valkey on Pro staging and production
@@ -82,7 +82,7 @@ valkey-server -v
 ```
 
 ```
-Valkey server v=7.0.5 ...
+Valkey server v=8.0.1 ...
 ```
 
 Use the following command to get the Valkey configuration installed on a Pro Staging or Production environment:
@@ -91,7 +91,7 @@ Use the following command to get the Valkey configuration installed on a Pro Sta
 echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
 ```
 
-Sample response:
+Response:
 
 ```json
 "valkeycache" : [
@@ -103,9 +103,9 @@ Sample response:
         "host_mapped" : false,
         "hostname" : "msmntiftwxp3ctdesyp3qeypgq.cache.service._.magentosite.cloud",
         "instance_ips" : [
-        "246.158.240.103"
+        "123.456.789.012"
         ],
-        "ip" : "169.254.135.174",
+        "ip" : "123.456.789.012",
         "password" : null,
         "path" : null,
         "port" : 6379,
@@ -119,12 +119,3 @@ Sample response:
     }
 ]
 ```
-
-## Troubleshooting Valkey
-
-See the following Adobe Commerce Support articles for help with troubleshooting Valkey problems:
-
-- [Valkey issue delay Admin login or checkout](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redis-issue-delay-magento-admin-login-or-checkout.html)
-- [Extended Valkey cache implementation Adobe Commerce 2.3.5+](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
-- [Managed alerts on Adobe Commerce: Valkey memory warning alert](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-warning-alert.html)
-- [Managed alerts on Adobe Commerce: Valkey memory critical alert](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-critical-alert.html)
