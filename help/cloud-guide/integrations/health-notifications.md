@@ -44,6 +44,8 @@ magento-cloud integration:add --type health.pagerduty --routing-key PAGERDUTY_RO
 
 To increase available disk space, you can truncate or remove log files from your environment. If logrotate is enabled, first download a backup copy of the logs, then remove them:
 
-`rm -rf some-log-file.log.gz`
+```bash
+rm -rf some-log-file.log.gz
+```
 
 Alternatively, you can truncate individual log files to reduce their size. For a detailed example of log file truncation, see the video tutorial Truncate Log Files{target="_blank"}.
