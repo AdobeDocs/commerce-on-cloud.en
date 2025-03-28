@@ -62,9 +62,9 @@ Assuming your Valkey relationship is named `valkey`, you can access it using the
 
 Use the following command to get the Valkey version installed on an integration environment:
 
-```bash
-valkey-cli -h valkeycache.internal info | grep version
-```
+  ```bash
+  valkey-cli -h valkeycache.internal info | grep version
+  ```
 
 Response:
 
@@ -96,12 +96,12 @@ Response:
 ```json
 "valkeycache" : [
     {
-        "cluster" : "ram4yord7vqs6-dev-54ta5gq",
+        "cluster" : "project-master-abc0003",
         "epoch" : 0,
         "fragment" : null,
         "host" : "valkeycache.internal",
         "host_mapped" : false,
-        "hostname" : "msmntiftwxp3ctdesyp3qeypgq.cache.service._.magentosite.cloud",
+        "hostname" : "oblahblahblahblahe.cache.service._.magentosite.cloud",
         "instance_ips" : [
         "123.456.789.012"
         ],
