@@ -17,7 +17,9 @@ The syntax for addressing the integration environments is as follows:
 - **Project ID** = 13-character project ID
 - **Region** = AWS or Azure region name
 
-You can use the `ping` command to retrieve the incoming IP address:
+You can use the `ping` or `dig` command to retrieve the incoming IP address:
+
+**Ping**
 
 ```bash
 ping integration-abcd123-abcd78910.us-3.magentosite.cloud
@@ -30,6 +32,18 @@ PING integration-abcd123-abcd78910.us-3.magentosite.cloud (34.210.133.187): 56 d
 Request timeout for icmp_seq 0
 Request timeout for icmp_seq 1
 Request timeout for icmp_seq 2
+```
+
+**Dig**
+
+```bash 
+dig +short integration-abcd123-abcd78910.us-3.magentosite.cloud
+```
+
+Sample Response
+
+```bash
+34.210.133.187
 ```
 
 If you have a corporate firewall that blocks outgoing SSH connections, you can add the inbound IP addresses to your allowlist.
