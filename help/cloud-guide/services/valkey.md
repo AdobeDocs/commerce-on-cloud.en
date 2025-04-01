@@ -8,7 +8,7 @@ exl-id:
 
 [Valkey](https://valkey.io) is an optional, backend cache solution that replaces the `Zend Framework Zend_Cache_Backend_File`, which Adobe Commerce uses by default.
 
-See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey.html) in the Configuration guide_.
+See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey.html) {target="_blank"} in the _Configuration guide_.
 
 {{service-instruction}}
 
@@ -31,7 +31,6 @@ See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operatio
 1. Configure the relationships in the `.magento.app.yaml` file.
 
    ```yaml
-
    relationships:
        valkeycache: "cache:valkey"
    ```
