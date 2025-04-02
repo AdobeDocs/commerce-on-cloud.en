@@ -30,7 +30,7 @@ Release date: April 3, 2025
 
 Release date: February 6, 2025
 
--  ![new icon](../../assets/new.svg) **PHP 8.4**Added support of  PHP 8.4
+-  ![new icon](../../assets/new.svg) **PHP 8.4**—Added support for PHP 8.4.
 
 
 ## v1.4.0
