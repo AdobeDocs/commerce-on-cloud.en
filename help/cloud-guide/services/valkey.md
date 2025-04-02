@@ -80,7 +80,7 @@ To get the Valkey version installed on a Staging or Production environment, use 
 valkey-server -v
 ```
 
-```
+```bash
 Valkey server v=8.0.1 ...
 ```
 
