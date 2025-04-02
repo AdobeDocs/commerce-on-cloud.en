@@ -23,7 +23,7 @@ The release notes include:
 
 Release date: April 3, 2025
 
--  ![new icon](../../assets/new.svg) **PHP 8.4**Added php-cli 8.4 and php-fpm 8.4 images
+-  ![new icon](../../assets/new.svg) **PHP 8.4**—Added `php-cli` 8.4 and `php-fpm` 8.4 images.
 
 
 ## v1.4.1
