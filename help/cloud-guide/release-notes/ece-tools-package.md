@@ -21,12 +21,13 @@ The release notes include:
 -  ![fix icon](../../assets/fix.svg) Fixes and improvements
 
 <!--Add release notes below-->
+
 ## v2002.2.2 {#latest}
 
 Release date: April 3, 2025
 
--  ![new icon](../../assets/new.svg) **Valkey**Added support of new service Valkey (replacement for Redis)<!-- MCLOUD-13455	 - -->
--  ![fix icon](../../assets/fix.svg) **Opensearch2 for 2.4.4/2.4.5**-Added support of opensearch2 in Adobe Commerce versions 2.4.4/2.4.5 <!-- MCLOUD-13493	 - -->
+-  ![new icon](../../assets/new.svg) **Valkey**—Added support for a new service (Valkey), which is  areplacement for Redis.<!-- MCLOUD-13455	 - -->
+-  ![fix icon](../../assets/fix.svg) **Opensearch2 for 2.4.4/2.4.5**—Added support for `opensearch2` in Adobe Commerce versions 2.4.4/2.4.5. <!-- MCLOUD-13493	 - -->
 
 
 
