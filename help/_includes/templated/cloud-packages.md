@@ -16,17 +16,13 @@ Adobe Commerce on cloud infrastructure uses Composer to manage PHP packages.
 
 The `composer.json` file declares the list of packages, whereas the `composer.lock` file stores a complete list of the packages (a full version of each package and its dependencies) used to build an installation of Adobe Commerce.
 
-The following reference documentation is generated from the `composer.lock` file, and it covers required packages included in Adobe Commerce on cloud infrastructure 2.4.8.
+The following reference documentation is generated from the `composer.lock` file, and it covers required packages included in Adobe Commerce on cloud infrastructure .
 
 ## Dependencies
 
-`magento/magento-cloud-metapackage 2.4.8` has the following dependencies:
+` ` has the following dependencies:
 
 ```config
-fastly/magento2: ^1.2.34
-magento/ece-tools: ^2002.2.0
-magento/module-paypal-on-boarding: ~100.5.0
-magento/product-enterprise-edition: >=2.4.8 <2.4.9
 ```
 
 ## Third-party licenses
@@ -384,6 +380,13 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
     </td>
     <td>library</td>
     <td>Flexible view layer supporting and providing multiple view layers, helpers, and more</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/marc-mabe/php-enum.git">marc-mabe/php-enum</a>
+    </td>
+    <td>library</td>
+    <td>Simple and fast implementation of enumerations with native PHP</td>
   </tr>
   <tr>
     <td>
@@ -1297,6 +1300,13 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
   </tr>
   <tr>
     <td>
+      paypal/module-braintree-gift-card
+    </td>
+    <td>magento2-module</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>
       paypal/module-braintree-gift-card-account
     </td>
     <td>magento2-module</td>
@@ -1312,6 +1322,13 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
   <tr>
     <td>
       paypal/module-braintree-graph-ql
+    </td>
+    <td>magento2-module</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>
+      paypal/module-braintree-reward
     </td>
     <td>magento2-module</td>
     <td>N/A</td>
