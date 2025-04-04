@@ -16,13 +16,17 @@ Adobe Commerce on cloud infrastructure uses Composer to manage PHP packages.
 
 The `composer.json` file declares the list of packages, whereas the `composer.lock` file stores a complete list of the packages (a full version of each package and its dependencies) used to build an installation of Adobe Commerce.
 
-The following reference documentation is generated from the `composer.lock` file, and it covers required packages included in Adobe Commerce on cloud infrastructure .
+The following reference documentation is generated from the `composer.lock` file, and it covers required packages included in Adobe Commerce on cloud infrastructure.
 
 ## Dependencies
 
-` ` has the following dependencies:
+`magento/magento-cloud-metapackage 2.4.8` has the following dependencies:
 
 ```config
+fastly/magento2: ^1.2.34
+magento/ece-tools: ^2002.1.0
+magento/module-paypal-on-boarding: ~100.5.0
+magento/product-enterprise-edition: >=2.4.7 <2.4.8
 ```
 
 ## Third-party licenses

@@ -4334,7 +4334,7 @@ For global options, see [Global options](#global-options).
 magento-cloud magento-cloud metrics [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
-Show CPU, disk and memory metrics for an environment
+ BETA  Show CPU, disk and memory metrics for an environment
 
 ### Options
 
@@ -4433,7 +4433,7 @@ The date format (as a PHP date format string)
 magento-cloud magento-cloud cpu [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
-Show CPU usage of an environment
+ BETA  Show CPU usage of an environment
 
 ### Options
 
@@ -4631,7 +4631,7 @@ The date format (as a PHP date format string)
 magento-cloud magento-cloud mem [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
-Show memory usage of an environment
+ BETA  Show memory usage of an environment
 
 ### Options
 
@@ -5093,7 +5093,7 @@ An SSH identity (private key) to use
 magento-cloud magento-cloud ops [--full] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
-List runtime operations on an environment
+ BETA  List runtime operations on an environment
 
 ### Options
 
@@ -5158,7 +5158,7 @@ Do not output the table header
 magento-cloud magento-cloud operation:run [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-W|--no-wait] [--wait] [--] [<operation>]
 ```
 
-Run an operation on the environment
+ BETA  Run an operation on the environment
 
 ### Arguments
 
