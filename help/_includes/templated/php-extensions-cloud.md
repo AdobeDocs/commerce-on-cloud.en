@@ -26,6 +26,7 @@
                 intl<br>
                 libxml<br>
                 mysqli<br>
+                opcache<br>
                 pcntl<br>
                 pdo_mysql<br>
                 Reflection<br>
@@ -69,18 +70,31 @@
                 xmlwriter<br>
             </td>
             <td>
+                geoip<br>
+                gmp<br>
                 igbinary<br>
+                imagick<br>
                 imap<br>
+                ldap<br>
+                mailparse<br>
                 mcrypt<br>
+                msgpack<br>
                 mysqli<br>
+                oauth<br>
                 pdo_mysql<br>
                 propro<br>
+                pspell<br>
+                raphf<br>
                 recode<br>
                 redis<br>
                 shmop sockets<br>
                 sodium<br>
+                ssh2<br>
+                tidy<br>
+                xdebug<br>
                 xmlrpc<br>
                 xsl<br>
+                yaml<br>
             </td>
         </tr>
     </tbody>
