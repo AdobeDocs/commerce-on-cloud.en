@@ -2,7 +2,6 @@
 title: Set up Valkey service
 description: Learn how to set up and optimize Valkey as a backend cache solution for Adobe Commerce on Cloud Infrastructure.
 feature: Cloud, Cache, Services
-exl-id:
 ---
 # Set up Valkey service
 
@@ -80,7 +79,7 @@ To get the Valkey version installed on a Staging or Production environment, use 
 valkey-server -v
 ```
 
-```
+```bash
 Valkey server v=8.0.1 ...
 ```
 
