@@ -130,6 +130,7 @@ feature: Cloud
         + [OpenSearch](services/opensearch.md)
         + [RabbitMQ](services/rabbitmq.md)
         + [Redis](services/redis.md)
+        + [Valkey](services/valkey.md)
 + Fastly services {#cdn}
     + [Overview](cdn/fastly.md)
     + Fastly Setup {#setup-fastly}
