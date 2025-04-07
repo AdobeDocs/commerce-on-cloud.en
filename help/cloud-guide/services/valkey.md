@@ -32,7 +32,7 @@ See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operatio
 
    ```yaml
    relationships:
-       valkeycache: "cache:valkey"
+       valkey: "cache:valkey"
    ```
 
 1. Add, commit, and push your code changes.
@@ -93,7 +93,7 @@ echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
 Response:
 
 ```json
-"valkeycache" : [
+"valkey" : [
     {
         "cluster" : "project-master-abc0003",
         "epoch" : 0,
