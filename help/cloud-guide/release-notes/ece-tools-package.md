@@ -2,7 +2,7 @@
 title: ECE-Tools release notes
 description: See a list of the latest improvements to the ECE-Tools package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-04-07
+last-substantial-update: 2024-04-09
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
 ---
 # ECE-Tools release notes
@@ -22,7 +22,18 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.2.2 {#latest}
+## v2002.2.3 {#latest}
+
+Release date: April 9, 2025
+
+-  ![fix icon](../../assets/fix.svg) **Fix Valkey**Fixed issue with valkey custom config.<!-- MCLOUD-13569	 - -->
+-  ![fix icon](../../assets/fix.svg) **Fix validator**-Fixed validator for RabbitMQ 4.0.<!-- MCLOUD-13560	 - -->
+
+## v2002.2.2
+
+Release date: April 7, 2025
+
+## v2002.2.2
 
 Release date: April 7, 2025
 
