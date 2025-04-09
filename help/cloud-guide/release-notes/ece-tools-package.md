@@ -32,7 +32,7 @@ Release date: April 9, 2025
 
 Release date: April 7, 2025
 
-## v2002.2.2 {#latest}
+## v2002.2.2
 
 Release date: April 7, 2025
 
