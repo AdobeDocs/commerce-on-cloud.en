@@ -32,17 +32,19 @@ Release date: April 9, 2025
 
 Release date: April 7, 2025
 
--  ![new icon](../../assets/new.svg) **Valkey**Added support of new service Valkey (replacement for Redis)<!-- MCLOUD-13455	 - -->
--  ![fix icon](../../assets/fix.svg) **Opensearch2 for 2.4.4/2.4.5**-Added support of opensearch2 in Adobe Commerce versions 2.4.4/2.4.5 <!-- MCLOUD-13493	 - -->
+## v2002.2.2 {#latest}
 
+Release date: April 7, 2025
 
+-  ![new icon](../../assets/new.svg) **Valkey**—Added support for a new service (Valkey), which is a replacement for Redis.<!-- MCLOUD-13455 --->
+-  ![fix icon](../../assets/fix.svg) **Opensearch2 for 2.4.4/2.4.5**—Added support for `opensearch2` in Adobe Commerce versions 2.4.4/2.4.5. <!-- MCLOUD-13493 --->
 
 ## v2002.2.1
 
-Release date: February 6, 2025
+Release date: February 6, 2024
 
--  ![new icon](../../assets/new.svg) **PHP 8.4**Added support of  PHP 8.4<!-- MCLOUD-13145	 - -->
--  ![fix icon](../../assets/fix.svg) **Validator for Opensearch**-Fixed the validator that produced a misleading message about the wrong version of service.<!-- MCLOUD-13184	 - -->
+-  ![new icon](../../assets/new.svg) **PHP 8.4**—Added support for PHP 8.4.<!-- MCLOUD-13145     - -->
+-  ![fix icon](../../assets/fix.svg) **Validator for Opensearch**-Fixed the validator that produced a misleading message about the wrong version of service.<!-- MCLOUD-13184 --->
 
 
 ## v2002.2.0

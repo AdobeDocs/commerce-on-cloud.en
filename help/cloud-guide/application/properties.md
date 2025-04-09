@@ -49,7 +49,7 @@ The `build` property determines what happens by default when building the projec
 
 ```yaml
 # The toolstack used to build the application.
-type: php:8.3
+type: php:8.4
 build:
     flavor: none
 

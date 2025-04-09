@@ -1,6 +1,6 @@
 # ece-tools
 
-**Version**: 2002.2.0
+**Version**: 2002.2.2
 
 This reference contains 34 commands available through the `ece-tools` command-line tool.
 The initial list is auto generated using the `ece-tools list` command at Adobe Commerce on cloud infrastructure.
@@ -446,7 +446,7 @@ For global options, see [Global options](#global-options).
 ece-tools cloud:config:create <configuration>
 ```
 
-Creates a `.magento.env.yaml` file with the specified build, deploy, and post-deploy variable configuration. Overwrites any existing `.magento,.env.yaml` file.
+Creates a `.magento.env.yaml` file with the specified build, deploy, and post-deploy variable configuration. Overwrites any existing `.magento.env.yaml` file.
 
 ### Arguments
 
