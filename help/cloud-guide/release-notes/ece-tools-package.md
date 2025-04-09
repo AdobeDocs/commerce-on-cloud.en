@@ -25,8 +25,8 @@ The release notes include:
 
 Release date: April 9, 2025
 
--  ![fix icon](../../assets/fix.svg) **Fix Valkey**Fixed issue with valkey custom config<!-- MCLOUD-13569	 - -->
--  ![fix icon](../../assets/fix.svg) **Fix validator**-Fixed validator for RabbitMQ 4.0 <!-- MCLOUD-13560	 - -->
+-  ![fix icon](../../assets/fix.svg) **Fix Valkey**Fixed issue with valkey custom config.<!-- MCLOUD-13569	 - -->
+-  ![fix icon](../../assets/fix.svg) **Fix validator**-Fixed validator for RabbitMQ 4.0.<!-- MCLOUD-13560	 - -->
 
 ## v2002.2.2
 
