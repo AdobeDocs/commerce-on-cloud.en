@@ -21,6 +21,7 @@ The release notes include:
 -  ![fix icon](../../assets/fix.svg) Fixes and improvements
 
 <!--Add release notes below-->
+
 ## v2002.2.3 {#latest}
 
 Release date: April 9, 2025
