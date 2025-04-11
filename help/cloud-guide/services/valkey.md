@@ -7,7 +7,7 @@ feature: Cloud, Cache, Services
 
 [Valkey](https://valkey.io) is an optional, backend cache solution that replaces the `Zend Framework Zend_Cache_Backend_File`, which Adobe Commerce uses by default.
 
-See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey.html) {target="_blank"} in the _Configuration guide_.
+See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey.html){target="_blank"} in the _Configuration guide_.
 
 {{service-instruction}}
 
@@ -53,7 +53,7 @@ Assuming your Valkey relationship is named `valkey`, you can access it using the
 1. Open an SSH tunnel to a host.
 
    ```bash
-   valkey-cli -h valkeycache.internal
+   valkey-cli -h valkey.internal
    ```
 
 ## Get installed Valkey version
@@ -61,7 +61,7 @@ Assuming your Valkey relationship is named `valkey`, you can access it using the
 Use the following command to get the Valkey version installed on an integration environment:
 
   ```bash
-  valkey-cli -h valkeycache.internal info | grep version
+  valkey-cli -h valkey.internal info | grep version
   ```
 
 Response:
