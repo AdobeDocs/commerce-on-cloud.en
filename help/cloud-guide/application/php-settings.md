@@ -61,10 +61,16 @@ These settings allow PHP processes to cache paths to files instead of looking th
 
 ### Check custom PHP settings
 
-After pushing the `php.ini` changes to your Cloud environment, you can check that the custom PHP configuration has been added to your environment. For example, use SSH to log in to the remote environment and view the file using something similar to the following:
+After pushing the `php.ini` changes to your Cloud environment, you can check that the custom PHP configuration has been added to your environment. For example, use SSH to log in to the remote environment, display PHP configuration information, and filter for the `register_argc_argv` directive:
 
 ```bash
-cat /etc/php/<php-version>/fpm/php.ini
+php -i | grep register_argc_ar
+```
+
+Sample output:
+
+```text
+register_argc_argv => On => On
 ```
 
 >[!WARNING]

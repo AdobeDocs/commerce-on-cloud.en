@@ -2,7 +2,7 @@
 title: Cloud Patches for Commerce
 description: See a list of the latest improvements to the Cloud Patches package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-10-07
+last-substantial-update: 2025-02-06
 exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913
 ---
 # Cloud Patches for Commerce
@@ -23,7 +23,19 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.1.2 {#latest}
+## v1.1.4 {#latest}
+
+Release date: February 13, 2025
+
+-  ![new icon](../../assets/new.svg) **Added patch for Commerce 2.4.4 to 2.4.7**—This update patches [CVE-2025-24434](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08).<!-- MCLOUD-13240	 - -->
+
+## v1.1.3
+
+Release date: February 6, 2025
+
+-  ![new icon](../../assets/new.svg) **PHP 8.4**—Added support for PHP 8.4.<!-- MCLOUD-13149	 - -->
+
+## v1.1.2
 
 Release date: November 5, 2024
 
