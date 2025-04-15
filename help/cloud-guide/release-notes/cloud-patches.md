@@ -22,18 +22,18 @@ The Cloud Patches for Commerce package is a dependency for the ECE-Tools package
 The `magento/magento-cloud-patches` package uses the following version sequence: `<major>.<minor>.<patch>`
 
 <!--Add release notes below-->
+
 ## v1.1.5 {#latest}
 
 Release date: April 15, 2025
 
--  ![new icon](../../assets/new.svg) **Added patch for B2B 1.5.2**—Fix for the issue ACP2E-3833 with B2B module 1.5.2 and MariaDB 10.6<!-- MCLOUD-13605	 - -->
+-  ![new icon](../../assets/new.svg) **Added patch for B2B 1.5.2**—Fix for the issue ACP2E-3833 with B2B module 1.5.2 and MariaDB 10.6<!-- MCLOUD-13605	-->
 
 ## v1.1.4
 
 Release date: February 13, 2025
 
 -  ![new icon](../../assets/new.svg) **Added patch for Commerce 2.4.4 to 2.4.7**—This update patches [CVE-2025-24434](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08).<!-- MCLOUD-13240	 - -->
-
 
 ## v1.1.3
 
