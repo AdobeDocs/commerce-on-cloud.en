@@ -10,7 +10,7 @@ mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/commerce-on-cloud.en
 description: Adobe Commerce on Cloud Infrastructure Guides
 index: yes
-badgePaas: label="PaaS-only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce" tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."
+badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce" tooltip="Applies to Adobe Commerce on Cloud projects only (Adobe-managed PaaS infrastructure)."
 ---
 
 # Metadata for internal use
