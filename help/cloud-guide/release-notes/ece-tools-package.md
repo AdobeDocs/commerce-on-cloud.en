@@ -21,12 +21,12 @@ The release notes include:
 -  ![fix icon](../../assets/fix.svg) Fixes and improvements
 
 <!--Add release notes below-->
+
 ## v2002.2.4 {#latest}
 
 Release date: April 24, 2025
 
--  ![fix icon](../../assets/fix.svg) **Opensearch2 for 2.4.4/2.4.5**— Fixed issue related to  support for `opensearch2` in Adobe Commerce versions 2.4.4/2.4.5. <!-- MCLOUD-13607 --->
-
+-  ![fix icon](../../assets/fix.svg) **Opensearch2 for 2.4.4/2.4.5**—Fixed an issue related to support for `opensearch2` in Adobe Commerce versions 2.4.4/2.4.5.<!-- MCLOUD-13607 -->
 
 ## v2002.2.3
 
