@@ -2,7 +2,7 @@
 title: ECE-Tools release notes
 description: See a list of the latest improvements to the ECE-Tools package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-04-09
+last-substantial-update: 2024-04-24
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
 ---
 # ECE-Tools release notes
@@ -21,8 +21,14 @@ The release notes include:
 -  ![fix icon](../../assets/fix.svg) Fixes and improvements
 
 <!--Add release notes below-->
+## v2002.2.4 {#latest}
 
-## v2002.2.3 {#latest}
+Release date: April 24, 2025
+
+-  ![fix icon](../../assets/fix.svg) **Opensearch2 for 2.4.4/2.4.5**— Fixed issue related to  support for `opensearch2` in Adobe Commerce versions 2.4.4/2.4.5. <!-- MCLOUD-13607 --->
+
+
+## v2002.2.3
 
 Release date: April 9, 2025
 

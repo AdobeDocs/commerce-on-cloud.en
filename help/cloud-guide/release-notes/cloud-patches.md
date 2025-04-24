@@ -2,7 +2,7 @@
 title: Cloud Patches for Commerce
 description: See a list of the latest improvements to the Cloud Patches package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2025-04-15
+last-substantial-update: 2025-04-24
 exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913
 ---
 # Cloud Patches for Commerce
@@ -22,8 +22,14 @@ The Cloud Patches for Commerce package is a dependency for the ECE-Tools package
 The `magento/magento-cloud-patches` package uses the following version sequence: `<major>.<minor>.<patch>`
 
 <!--Add release notes below-->
+## v1.1.6 {#latest}
 
-## v1.1.5 {#latest}
+Release date: April 24, 2025
+
+-  ![new icon](../../assets/new.svg) **Fixed patch for Commerce 2.4.4 to 2.4.7**—This update patches for [CVE-2025-24434](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08) released in 1.1.4<!-- MCLOUD-13240	 - -->
+
+
+## v1.1.5
 
 Release date: April 15, 2025
 
