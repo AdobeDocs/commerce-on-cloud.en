@@ -2,7 +2,7 @@
 title: Cloud Patches for Commerce
 description: See a list of the latest improvements to the Cloud Patches package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2025-02-06
+last-substantial-update: 2025-04-15
 exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913
 ---
 # Cloud Patches for Commerce
@@ -23,7 +23,13 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.1.4 {#latest}
+## v1.1.5 {#latest}
+
+Release date: April 15, 2025
+
+-  ![new icon](../../assets/new.svg) **Added patch for B2B 1.5.2**—Fix for the issue ACP2E-3833 with B2B module 1.5.2 and MariaDB 10.6<!-- MCLOUD-13605	-->
+
+## v1.1.4
 
 Release date: February 13, 2025
 
