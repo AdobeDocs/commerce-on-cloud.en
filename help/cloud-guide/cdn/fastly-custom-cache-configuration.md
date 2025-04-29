@@ -26,7 +26,7 @@ To complete bulk actions that take longer than 3 minutes change the _Admin path 
 
 >[!NOTE]
 >
->If you have specified a custom Admin Path endpoint in Stores > Configuration > Advanced > Admin > URL > Custom Admin Path, you will also need to set the [ADMIN_URL Variable](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin#change-the-admin-url) in that environment to the same value. If the settings are different, the timeout will not work.
+>If you have specified a custom Admin Path endpoint in the **Custom Admin Path** field in **Stores** > **Configuration** > **Advanced** > **Admin** > **Admin Base URL**, you will also need to set the [ADMIN_URL Variable](../environment/variables-admin.md#change-the-admin-url) in that environment to the same value. If the settings are different, the timeout will not work.
 >
 >To extend Fastly timeout parameters for other than Admin in the Fastly UI, see [Increase Timeouts for Long Jobs](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-INCREASE-TIMEOUTS-LONG-JOBS.md).
 
