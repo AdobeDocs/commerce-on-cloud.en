@@ -1,5 +1,5 @@
 ---
-version: 2.4.7
+version: 2.4.8
 default:
   - bcmath
   - bz2
@@ -21,7 +21,6 @@ default:
   - sysvmsg
   - sysvsem
   - sysvshm
-  - opcache
   - zip
   - zlib
 installed:
@@ -52,28 +51,15 @@ installed:
   - xmlreader
   - xmlwriter
 available:
-  - geoip
-  - gmp
   - igbinary
-  - imagick
   - imap
-  - ldap
-  - mailparse
   - mcrypt
-  - msgpack
   - mysqli
-  - oauth
   - pdo_mysql
   - propro
-  - pspell
-  - raphf
   - recode
   - redis
   - shmop sockets
   - sodium
-  - ssh2
-  - tidy
-  - xdebug
   - xmlrpc
   - xsl
-  - yaml
