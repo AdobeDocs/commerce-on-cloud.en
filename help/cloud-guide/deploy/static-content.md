@@ -34,6 +34,11 @@ Generating static content during the build phase with minified HTML is the optim
 
 Generating static content requires access to themes and locales. Adobe Commerce stores themes in the file system, which is accessible during the build phase; however, Adobe Commerce stores locales in the database. The database is _not_ available during the build phase. In order to generate the static content during the build phase, you must use the `config:dump` command in the `ece-tools` package to move locales to the file system. It reads the locales and saves them in the `app/etc/config.php` file.
 
+>[!NOTE]
+>After you run the `config:dump` command in the `ece-tools` package, the configurations that are dumped to the config.php file [will become locked (grayed out) in the Admin dashboard](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/locked-fields-in-magento-admin), and the only way to update those configurations in the admin would be to delete them from the file locally, and redeploy.
+>In addition, every time you add a new store/store group/website to your instance, you should remember to run the `config:dump` command to ensure that the database is in sync. You can also choose [which configurations should be dumped](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration?lang=en) into the config.php file.
+>If you were to delete the store/store group/website configuration from config.php because the fields are grayed out, but neglect to perform this step, those new entities that weren't dumped will get deleted from the database on the next deployment.
+
 **To configure your project to generate SCD on build**:
 
 1. On your local workstation, change to your project directory.
