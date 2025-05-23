@@ -181,7 +181,7 @@ Review the [service versions](../services/services-yaml.md#service-versions) inf
 1. Set the [version constraint](overview.md#cloud-metapackage) for the target upgrade version. This step is only necessary if the target version is outside the existing constraint.
 
    ```bash
-   composer require "magento/magento-cloud-metapackage":">=CURRENT_VERSION <NEXT_VERSION" --no-update
+   composer require-commerce "magento/magento-cloud-metapackage":">=CURRENT_VERSION <NEXT_VERSION" --no-update
    ```
 
    >[!NOTE]
