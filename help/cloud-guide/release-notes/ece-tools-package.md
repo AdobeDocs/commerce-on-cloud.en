@@ -2,7 +2,7 @@
 title: ECE-Tools release notes
 description: See a list of the latest improvements to the ECE-Tools package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-04-24
+last-substantial-update: 2024-05-27
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
 ---
 # ECE-Tools release notes
@@ -22,7 +22,16 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.2.4 {#latest}
+## v2002.2.5 {#latest}
+
+Release date: May 27, 2025
+
+-  ![fix icon](../../assets/new.svg) **Extended Valkey compatibility**-Extended Valkey compatibility in Adobe Commerce.<!-- MCLOUD-13595	 - -->
+-  ![fix icon](../../assets/fix.svg) **Updated RabbitMQ validator**-Updated validator for RabbitMQ.<!-- MCLOUD-13589	 - -->
+-  ![fix icon](../../assets/fix.svg) **Updated MariaDB validator**-Updated ece-tools validator for MariaDB 10.11.<!-- MCLOUD-13593	 - -->
+-  ![fix icon](../../assets/fix.svg) **Extended Opensearch2 compatibility**-Made Opensearch2 compatible with the latest 2.4.4 versions.<!-- MCLOUD-13710	 - -->
+
+## v2002.2.4
 
 Release date: April 24, 2025
 
