@@ -2,7 +2,7 @@
 title: ECE-Tools release notes
 description: See a list of the latest improvements to the ECE-Tools package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-02-06
+last-substantial-update: 2024-04-24
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
 ---
 # ECE-Tools release notes
@@ -22,13 +22,36 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.2.1 {#latest}
+## v2002.2.4 {#latest}
 
+Release date: April 24, 2025
+
+-  ![fix icon](../../assets/fix.svg) **Opensearch2 for 2.4.4/2.4.5**—Fixed an issue related to support for `opensearch2` in Adobe Commerce versions 2.4.4/2.4.5.<!-- MCLOUD-13607 -->
+
+## v2002.2.3
+
+Release date: April 9, 2025
+
+-  ![fix icon](../../assets/fix.svg) **Fix Valkey**Fixed issue with valkey custom config.<!-- MCLOUD-13569	 - -->
+-  ![fix icon](../../assets/fix.svg) **Fix validator**-Fixed validator for RabbitMQ 4.0.<!-- MCLOUD-13560	 - -->
+
+## v2002.2.2
+
+Release date: April 7, 2025
+
+## v2002.2.2
+
+Release date: April 7, 2025
+
+-  ![new icon](../../assets/new.svg) **Valkey**—Added support for a new service (Valkey), which is a replacement for Redis.<!-- MCLOUD-13455 --->
+-  ![fix icon](../../assets/fix.svg) **Opensearch2 for 2.4.4/2.4.5**—Added support for `opensearch2` in Adobe Commerce versions 2.4.4/2.4.5. <!-- MCLOUD-13493 --->
+
+## v2002.2.1
 
 Release date: February 6, 2024
 
--  ![new icon](../../assets/new.svg) **PHP 8.4**—Added support for PHP 8.4.<!-- MCLOUD-13145	 - -->
--  ![fix icon](../../assets/fix.svg) **Validator for Opensearch**-Fixed the validator that produced a misleading message about the wrong version of service.<!-- MCLOUD-13184	 - -->
+-  ![new icon](../../assets/new.svg) **PHP 8.4**—Added support for PHP 8.4.<!-- MCLOUD-13145     - -->
+-  ![fix icon](../../assets/fix.svg) **Validator for Opensearch**-Fixed the validator that produced a misleading message about the wrong version of service.<!-- MCLOUD-13184 --->
 
 
 ## v2002.2.0

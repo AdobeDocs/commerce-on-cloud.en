@@ -2,6 +2,7 @@
 title: Set up Valkey service
 description: Learn how to set up and optimize Valkey as a backend cache solution for Adobe Commerce on Cloud Infrastructure.
 feature: Cloud, Cache, Services
+exl-id: f8933e0d-a308-4c75-8547-cb26ab6df947
 ---
 # Set up Valkey service
 
