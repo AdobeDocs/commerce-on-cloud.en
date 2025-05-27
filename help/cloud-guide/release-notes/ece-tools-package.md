@@ -26,9 +26,10 @@ The release notes include:
 
 Release date: May 27, 2025
 
--  ![fix icon](../../assets/fix.svg) **Extend Valkey compatibility**-Extend Valkey compatibility in Adobe Commerce.<!-- MCLOUD-13595	 - -->
--  ![fix icon](../../assets/fix.svg) **Updated RabbitMQ validator**-Update validator for RabbitMQ.<!-- MCLOUD-13589	 - -->
--  ![fix icon](../../assets/fix.svg) **Updated MariaDB validator**-Adjust ece-tools validator for MariaDB 10.11.<!-- MCLOUD-13593	 - -->
+-  ![fix icon](../../assets/new.svg) **Extended Valkey compatibility**-Extended Valkey compatibility in Adobe Commerce.<!-- MCLOUD-13595	 - -->
+-  ![fix icon](../../assets/fix.svg) **Updated RabbitMQ validator**-Updated validator for RabbitMQ.<!-- MCLOUD-13589	 - -->
+-  ![fix icon](../../assets/fix.svg) **Updated MariaDB validator**-Updated ece-tools validator for MariaDB 10.11.<!-- MCLOUD-13593	 - -->
+-  ![fix icon](../../assets/fix.svg) **Extended Opensearch2 compatibility**-Made Opensearch2 compatible with latest 2.4.4 versions.<!-- MCLOUD-13710	 - -->
 
 ## v2002.2.4
 
