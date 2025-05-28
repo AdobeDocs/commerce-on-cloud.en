@@ -20,6 +20,9 @@ The backup/snapshot feature does **not** apply to the Pro Staging and Production
 
 You can create a manual backup of any active Starter environment and integration Pro environment from the [!DNL Cloud Console] or create a snapshot from the Cloud CLI. You must have an [Admin role](../project/user-access.md) for the environment.
 
+**To create a database backup of Pro environment**:
+To create a database dump of any Pro environment, including Staging and Production, see the [Create a database dump](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) Knowledge Base article.
+
 **To create a backup of any Starter environment using the [!DNL Cloud Console]**:
 
 1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).
@@ -76,8 +79,6 @@ You can create a manual backup of any active Starter environment and integration
    | 2023-03-08T17:07:01+00:00 | my-snapshot          | true       |
    +---------------------------+----------------------+------------+
    ```
-
-To create a database dump of any environment, including Staging and Production, see the [Create a database dump](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) Knowledge Base article.
 
 ## Restore a manual backup
 
