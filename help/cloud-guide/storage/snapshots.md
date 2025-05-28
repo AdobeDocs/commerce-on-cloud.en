@@ -77,6 +77,8 @@ You can create a manual backup of any active Starter environment and integration
    +---------------------------+----------------------+------------+
    ```
 
+To create a database dump of any environment, including Staging and Production, see the [Create a database dump](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) Knowledge Base article.
+
 ## Restore a manual backup
 
 You must have [Admin access](../project/user-access.md) to the environment. You have up to **seven days** to _restore_ a manual backup. Restoring a backup does not change the code of the current git branch. Restoring a backup in this manner does not apply to Pro staging and production environments; see [Pro Backup & Disaster Recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery).
