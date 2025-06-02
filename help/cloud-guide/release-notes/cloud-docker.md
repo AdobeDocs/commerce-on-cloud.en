@@ -3,7 +3,7 @@ title: Cloud Docker package
 description: See a list of the latest improvements to the Cloud Docker package.
 feature: Cloud, Docker, Release Notes
 recommendations: noDisplay, catalog
-last-substantial-update: 2025-04-07
+last-substantial-update: 2025-06-03
 exl-id: 95cf4f30-6bce-4bac-8e11-cfe53cac2c70
 ---
 # Cloud Docker package
@@ -19,7 +19,13 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v1.4.2 {#latest}
+## v1.4.3 {#latest}
+
+Release date: June 03, 2025
+
+-  ![fix icon](../../assets/fix.svg) **Improved compatibility with 2.4.8**-Updated 3rd-party libraries for better compatibility with 2.4.8<!-- MCLOUD-13707	 - -->
+
+## v1.4.2 
 
 Release date: April 7, 2025
 
