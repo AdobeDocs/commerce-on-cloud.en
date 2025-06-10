@@ -27,8 +27,8 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 Release date: June 09, 2025
 
--  ![fix icon](../../assets/fix.svg) **Improved Category View**-Improve category view<!-- MCLOUD-13752	 - -->
--  ![fix icon](../../assets/fix.svg) **Improved Admin Cache**-Improve-admin-cache-efficiency<!-- MCLOUD-13753	 - -->
+-  ![fix icon](../../assets/fix.svg) **Improved Category View**-Improve category view CVE-2025-47109<!-- MCLOUD-13752	 - -->
+-  ![fix icon](../../assets/fix.svg) **Improved Admin Cache**-Improve-admin-cache-efficiency CVE-2025-47110<!-- MCLOUD-13753	 - -->
 
 ## v1.1.8
 
