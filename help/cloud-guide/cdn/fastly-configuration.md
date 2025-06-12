@@ -98,7 +98,7 @@ You need the following components to enable and configure Fastly services:
 
    >[!NOTE]
    >
-   >Do not select the link to create the Fastly API token. Instead, use the [Fastly credentials (Service ID and API token) provided by Adobe](#get-fastly-credentials) provided by Adobe.
+   >Do not select the link to create the Fastly API token. Instead, use the [Fastly credentials (Service ID and API token) provided by Adobe](#get-fastly-credentials).
 
 1. Click **Test credentials**.
 
