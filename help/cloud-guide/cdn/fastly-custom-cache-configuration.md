@@ -42,7 +42,7 @@ To complete bulk actions that take longer than 3 minutes change the _Admin path 
 
 >[!NOTE]
 >
->**_Admin path timeout_** configuration setting does not control timeout values outside of Adobe Commerce, such as Fastly WAF timeout. To adjust Fastly WAF timeout value you must open Adobe Support ticket, to update it on the Fastly side.    
+>The **_Admin path timeout_** configuration setting does not control timeout values outside of Adobe Commerce, such as Fastly WAF timeout. To adjust the Fastly WAF timeout value, you must open an Adobe Support ticket to update it in the Fastly service.
 
 1. Click **Save Config** at the top of the page.
 
