@@ -311,3 +311,16 @@ These API request examples use exported environment variables to provide the cre
 -  **Override values in the [default Fastly VCL code](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets)**
 
    Create a snippet with updated values and assign a priority of `100`.
+
+## Snippets that cannot be viewed/modified in the Commerce Admin
+
+You cannot view or modify some snippets directly within the Commerce Admin. For example, [dynamic snippets](https://docs.fastly.com/en/guides/using-dynamic-vcl-snippets). In the Custom VCL Snippets section, you will not see snippets that were added by the Cloud Support team directly to the [Fastly management dashboard](fastly.md#fastly-service-account-and-credentials).
+
+
+**To observe the snippets added by the Cloud Support team:**
+
+1. Go to the **Tools** section.
+
+1. Click **List all versions** next to _Version History_.
+
+1. Click the eye icon next to the applicable VCL Version to view the existing snippets.
