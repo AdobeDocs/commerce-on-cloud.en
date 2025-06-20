@@ -26,15 +26,17 @@ Complete the following steps to enable, configure, and test Fastly early in your
 >
 >After you enable and verify the initial Fastly configuration, you can customize the configuration. For example, you can enable additional options such as image optimization, edge modules, and custom VCL code. See [Customize cache configuration](fastly-custom-cache-configuration.md).
 
-## Get Fastly credentials
-
 During project provisioning, Adobe adds your project to the [Fastly service account](fastly.md#fastly-service-account-and-credentials) for Adobe Commerce on cloud infrastructure and creates Fastly account credentials for the Starter `master` and Pro Staging and Production environments. Each environment has unique credentials.
 
-You need the Fastly credentials to configure Fastly CDN services from the Admin and to submit Fastly API requests.
+You need the Fastly credentials to configure Fastly CDN services from the Adobe Commerce Admin and to submit Fastly API requests.
 
->[!NOTE]
->
->With Adobe Commerce on cloud infrastructure, you cannot access the Fastly Admin directly. Use the Admin to review and update the Fastly configuration for your environments. If you cannot resolve an issue using the Fastly capabilities in the Admin, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+## Fastly Admin Dashboard access
+
+With Adobe Commerce on cloud infrastructure, you cannot access the Fastly Admin Dashboard directly. 
+
+You must use the Adobe Commerce Admin to review and update the Fastly configuration for your environments. If you cannot resolve an issue using the Fastly capabilities in the Admin, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+
+## Get Fastly credentials
 
 Use the following methods to find and save the Fastly service ID and API token for your environment:
 
