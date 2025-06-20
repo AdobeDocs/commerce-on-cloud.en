@@ -2,7 +2,7 @@
 title: Cloud Patches for Commerce
 description: See a list of the latest improvements to the Cloud Patches package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2025-06-03
+last-substantial-update: 2025-06-09
 exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913
 ---
 # Cloud Patches for Commerce
@@ -23,7 +23,14 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.1.8 {#latest}
+## v1.1.9 {#latest}
+
+Release date: June 09, 2025
+
+-  ![fix icon](../../assets/fix.svg) **Improved Category View**-Improve category view CVE-2025-47109<!-- MCLOUD-13752	 - -->
+-  ![fix icon](../../assets/fix.svg) **Improved Admin Cache**-Improve-admin-cache-efficiency CVE-2025-47110<!-- MCLOUD-13753	 - -->
+
+## v1.1.8
 
 Release date: June 03, 2025
 
