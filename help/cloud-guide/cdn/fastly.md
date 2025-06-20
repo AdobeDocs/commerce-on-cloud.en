@@ -60,7 +60,9 @@ During project provisioning, Adobe adds your project to the Fastly service accou
 
 ### Change Fastly API token
 
-Submit an Adobe Commerce Support ticket to change the Fastly API token credential. When you receive the new token, update your Staging or Production environment to use the new token.
+Submit an Adobe Commerce Support ticket to issue a new Fastly API token credential [if it fails validation/has expired](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials), or if you believe that it has been compromised.
+
+When you receive the new token, update your Staging or Production environment to use the new token.
 
 **To change the Fastly API token credential**:
 
