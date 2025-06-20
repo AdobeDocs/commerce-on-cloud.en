@@ -30,7 +30,7 @@ _"Our monitoring has detected files storage on your cluster (project-id-environm
 
 >[!TIP]
 >
->adobe recommends that you regularly monitor your storage capacity and maintain it well under 90% to avoid these automatic increases. Once allocated, the storage increase for Pro staging and production is permanent and cannot be reverted.
+>Adobe recommends that you regularly monitor your storage capacity and maintain it well under 90% to avoid these automatic increases. Once allocated, the storage increase for Pro staging and production is permanent and cannot be reverted.
 
 ## Check integration environment
 
