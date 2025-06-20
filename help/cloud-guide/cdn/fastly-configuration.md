@@ -34,7 +34,7 @@ You need the Fastly credentials to configure Fastly CDN services from the Adobe 
 
 With Adobe Commerce on cloud infrastructure, you cannot access the Fastly Admin Dashboard directly. 
 
-You must Use the Adobe Commerce Admin to review and update the Fastly configuration for your environments. If you cannot resolve an issue using the Fastly capabilities in the Admin, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+You must use the Adobe Commerce Admin to review and update the Fastly configuration for your environments. If you cannot resolve an issue using the Fastly capabilities in the Admin, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ### Get Fastly credentials
 
