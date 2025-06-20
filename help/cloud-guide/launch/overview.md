@@ -61,7 +61,7 @@ The Security Scan Tool enables you to regularly monitor your store websites and 
 
 >[!NOTE]
 >
->We recommend using Security Scan Tool over the other 3rd party tools to ensure the best quality of service during the findings investigation.
+>Adobe recommends using the Security Scan Tool over other third-party tools to ensure the best quality of service during the findings investigation.
 
 See the [User Guide](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) for information about setting up and using the security scan tool. Typically, you start using this tool when you begin user acceptance testing (UAT).
 
