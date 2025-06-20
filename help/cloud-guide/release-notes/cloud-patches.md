@@ -2,7 +2,7 @@
 title: Cloud Patches for Commerce
 description: See a list of the latest improvements to the Cloud Patches package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2025-04-24
+last-substantial-update: 2025-06-09
 exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913
 ---
 # Cloud Patches for Commerce
@@ -23,7 +23,26 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.1.6 {#latest}
+## v1.1.9 {#latest}
+
+Release date: June 09, 2025
+
+-  ![fix icon](../../assets/fix.svg) **Improved Category View**-Improve category view CVE-2025-47109<!-- MCLOUD-13752	 - -->
+-  ![fix icon](../../assets/fix.svg) **Improved Admin Cache**-Improve-admin-cache-efficiency CVE-2025-47110<!-- MCLOUD-13753	 - -->
+
+## v1.1.8
+
+Release date: June 03, 2025
+
+-  ![fix icon](../../assets/fix.svg) **Improved compatibility with 2.4.8**-Updated 3rd-party libraries for better compatibility with 2.4.8<!-- MCLOUD-13707	 - -->
+
+## v1.1.7
+
+Release date: May 05, 2025
+
+-  ![new icon](../../assets/new.svg) **Updated patch for Commerce 2.4.4 to 2.4.8**—This is an updated patch for [CVE-2025-24434](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/increased-execution-time-for-bulk-asynchronous-web-endpoints-post-apsb25-08-security-patch), which was released in 1.1.7<!-- MCLOUD-13619 -->
+
+## v1.1.6
 
 Release date: April 24, 2025
 
