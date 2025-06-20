@@ -28,6 +28,10 @@ You can create a manual backup of any active Starter environment and integration
 >/usr/bin/nice -n 15 /bin/tar -czhf var/support/code-$(date +"%Y%m%d%H%M%p").tar.gz app bin composer.* dev lib pub/*.php pub/errors setup vendor --exclude='pub/media'
 >```
 
+**To create a database backup of Pro environment**:
+
+To create a database dump of any Pro environment, including Staging and Production, see the [Create a database dump](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) Knowledge Base article.
+
 **To create a backup of any Starter environment using the [!DNL Cloud Console]**:
 
 1. Log in to the [[!DNL Cloud Console]](https://console.adobecommerce.com).

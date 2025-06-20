@@ -26,6 +26,8 @@ To complete bulk actions that take longer than 3 minutes change the _Admin path 
 
 >[!NOTE]
 >
+>If you have specified a custom Admin Path endpoint in the **Custom Admin Path** field in **Stores** > **Configuration** > **Advanced** > **Admin** > **Admin Base URL**, you will also need to set the [ADMIN_URL Variable](../environment/variables-admin.md#change-the-admin-url) in that environment to the same value. If the settings are different, the timeout will not work.
+>
 >To extend Fastly timeout parameters for other than Admin in the Fastly UI, see [Increase Timeouts for Long Jobs](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-INCREASE-TIMEOUTS-LONG-JOBS.md).
 
 **To extend the Fastly timeout for the Admin**:
@@ -37,6 +39,10 @@ To complete bulk actions that take longer than 3 minutes change the _Admin path 
 1. In the _Fastly Configuration_ section, expand **Advanced Configuration**.
 
 1. Set the **Admin path timeout** value in seconds. This value cannot be more than 10 minutes (600 seconds).
+
+>[!NOTE]
+>
+>The **_Admin path timeout_** configuration setting does not control timeout values outside of Adobe Commerce, such as Fastly WAF timeout. To adjust the Fastly WAF timeout value, you must open an Adobe Support ticket to update it in the Fastly service.
 
 1. Click **Save Config** at the top of the page.
 

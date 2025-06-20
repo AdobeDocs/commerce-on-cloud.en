@@ -466,6 +466,58 @@ You must have a Redis service configured in the `.magento.app.yaml` file and in 
 
 The read-only connection is not available for use in the integration environment or if you use the [`CACHE_CONFIGURATION` variable](#cache_configuration).
 
+## `VALKEY_BACKEND`
+
+-  **Default**—`Cm_Cache_Backend_Redis`
+-  **Version**—Adobe Commerce 2.8.0 and later
+
+`VALKEY_BACKEND` specifies the backend model configuration for the Valkey cache.
+
+Adobe Commerce version 2.8.0 and later includes the following backend models:
+
+-  `Cm_Cache_Backend_Redis`
+-  `\Magento\Framework\Cache\Backend\Redis`
+-  `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache`
+
+The following example describes how to set `VALKEY_BACKEND`:
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+```
+
+>[!NOTE]
+>
+>If you specify `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` as the Valkey backend model to enable [L2 cache](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html), `ece-tools` generates the cache configuration automatically. See an example [configuration file](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html#configuration-example) in the _Adobe Commerce Configuration Guide_. To override the generated cache configuration, use the [CACHE_CONFIGURATION](#cache_configuration) deploy variable.
+
+## `VALKEY_USE_SLAVE_CONNECTION`
+
+-  **Default**—`false`
+-  **Version**—Adobe Commerce 2.4.8 and later
+
+>[!WARNING]
+>
+>Do _not_ enable this variable on a [scaled architecture](../architecture/scaled-architecture.md) project. It causes Valkey connection errors. Redis slaves are still active but are not used for Redis reads. Alternatively, Adobe recommends using Adobe Commerce 2.4.8 or later, implementing a new Valkey backend configuration, and implementing L2 caching for Valkey.
+
+>[!TIP]
+>
+>The `VALKEY_USE_SLAVE_CONNECTION` variable is supported only on Adobe Commerce on cloud infrastructure Staging and Production Pro cluster environments and is not supported on Starter projects.
+
+Adobe Commerce can read multiple Redis instances asynchronously. `VALKEY_USE_SLAVE_CONNECTION` Set to `true` to automatically use a _read-only_ connection to a Redis instance to receive read-only traffic on a non-master node. This connection improves performance through load balancing, because only one node handles read-write traffic. Set `VALKEY_USE_SLAVE_CONNECTION` to `false` to remove any existing read-only connection array from the `env.php` file.
+
+```yaml
+stage:
+  deploy:
+    VALKEY_USE_SLAVE_CONNECTION: true
+```
+
+You must have a Redis service configured in the `.magento.app.yaml` file and in the `services.yaml` file.
+
+[ECE-Tools version 2002.0.18](../release-notes/cloud-release-archive.md#v2002018) and later uses more fault-tolerant settings. If Adobe Commerce cannot read data from the Valkey _slave_ instance, then it reads data from the Redis _master_ instance.
+
+The read-only connection is not available for use in the integration environment or if you use the [`CACHE_CONFIGURATION` variable](#cache_configuration).
+
 ## `RESOURCE_CONFIGURATION`
 
 -  **Default**—Not set
