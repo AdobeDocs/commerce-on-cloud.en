@@ -163,6 +163,7 @@ feature: Cloud
     + [Launch steps](launch/steps.md)
 + Monitor site {#monitor}
     + [Performance](monitor/performance.md)
+    + [Operational Telemetry](monitor/operational-telemetry.md)
     + New Relic service {#new-relic}
         + [New Relic overview](monitor/new-relic-service.md)
         + [Account and user management](monitor/account-management.md)

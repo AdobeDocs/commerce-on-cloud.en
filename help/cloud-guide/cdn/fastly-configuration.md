@@ -26,19 +26,31 @@ Complete the following steps to enable, configure, and test Fastly early in your
 >
 >After you enable and verify the initial Fastly configuration, you can customize the configuration. For example, you can enable additional options such as image optimization, edge modules, and custom VCL code. See [Customize cache configuration](fastly-custom-cache-configuration.md).
 
-## Get Fastly credentials
-
 During project provisioning, Adobe adds your project to the [Fastly service account](fastly.md#fastly-service-account-and-credentials) for Adobe Commerce on cloud infrastructure and creates Fastly account credentials for the Starter `master` and Pro Staging and Production environments. Each environment has unique credentials.
 
-You need the Fastly credentials to configure Fastly CDN services from the Admin and to submit Fastly API requests.
+You need the Fastly credentials to configure Fastly CDN services from the Adobe Commerce Admin and to submit Fastly API requests.
 
->[!NOTE]
->
->With Adobe Commerce on cloud infrastructure, you cannot access the Fastly Admin directly. Use the Admin to review and update the Fastly configuration for your environments. If you cannot resolve an issue using the Fastly capabilities in the Admin, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+## Fastly Admin Dashboard access
+
+With Adobe Commerce on cloud infrastructure, you cannot access the Fastly Admin Dashboard directly. 
+
+You must use the Adobe Commerce Admin to review and update the Fastly configuration for your environments. If you cannot resolve an issue using the Fastly capabilities in the Admin, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+
+## Get Fastly credentials
 
 Use the following methods to find and save the Fastly service ID and API token for your environment:
 
 **To view your Fastly credentials**:
+
+>[!NOTE]
+>
+>Do not share your API Token in support tickets, public forums, or any public location. Additionally, never commit API Tokens to code repositories—repositories should only contain immutable files without sensitive information.
+>
+>Adobe Commerce Support already has access to the necessary keys, so you do not need to provide your API Token when seeking assistance.
+>
+>If your API Token is ever shared publicly or attached to a support ticket, it will be considered compromised. In such cases, Adobe will be required to generate a new token for you.
+>
+>Related: [Error when validating the Fastly credentials](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials#solution)
 
 The method for viewing credentials is different for Pro and Starter projects.
 
@@ -98,7 +110,7 @@ You need the following components to enable and configure Fastly services:
 
    >[!NOTE]
    >
-   >Do not select the link to create the Fastly API token. Instead, use the [Fastly credentials (Service ID and API token) provided by Adobe](#get-fastly-credentials) provided by Adobe.
+   >Do not select the link to create the Fastly API token. Instead, use the [Fastly credentials (Service ID and API token) provided by Adobe](#get-fastly-credentials).
 
 1. Click **Test credentials**.
 

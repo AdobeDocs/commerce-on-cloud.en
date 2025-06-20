@@ -17,8 +17,13 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v1.1.1 {#latest}
+## v1.1.2 {#latest}
 
+Release date: June 03, 2025
+
+-  ![fix icon](../../assets/fix.svg) **Improved compatibility with 2.4.8**-Updated 3rd-party libraries for better compatibility with 2.4.8<!-- MCLOUD-13707	 - -->
+
+## v1.1.1
 
 Release date: February 6, 2025
 

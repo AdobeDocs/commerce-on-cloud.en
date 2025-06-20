@@ -2,7 +2,7 @@
 title: ECE-Tools release notes
 description: See a list of the latest improvements to the ECE-Tools package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-04-09
+last-substantial-update: 2024-06-03
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
 ---
 # ECE-Tools release notes
@@ -22,7 +22,28 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.2.3 {#latest}
+## v2002.2.6 {#latest}
+
+Release date: June 03, 2025
+
+-  ![fix icon](../../assets/fix.svg) **Improved compatibility with 2.4.8**-Updated 3rd-party libraries for better compatibility with 2.4.8<!-- MCLOUD-13707	 - -->
+
+## v2002.2.5
+
+Release date: May 27, 2025
+
+-  ![new icon](../../assets/new.svg) **Extended Valkey compatibility**-Extended Valkey compatibility in Adobe Commerce.<!-- MCLOUD-13595	 - -->
+-  ![fix icon](../../assets/fix.svg) **Updated RabbitMQ validator**-Updated validator for RabbitMQ.<!-- MCLOUD-13589	 - -->
+-  ![fix icon](../../assets/fix.svg) **Updated MariaDB validator**-Updated ece-tools validator for MariaDB 10.11.<!-- MCLOUD-13593	 - -->
+-  ![fix icon](../../assets/fix.svg) **Extended Opensearch2 compatibility**-Made Opensearch2 compatible with the latest 2.4.4 versions.<!-- MCLOUD-13710	 - -->
+
+## v2002.2.4
+
+Release date: April 24, 2025
+
+-  ![fix icon](../../assets/fix.svg) **Opensearch2 for 2.4.4/2.4.5**—Fixed an issue related to support for `opensearch2` in Adobe Commerce versions 2.4.4/2.4.5.<!-- MCLOUD-13607 -->
+
+## v2002.2.3
 
 Release date: April 9, 2025
 
