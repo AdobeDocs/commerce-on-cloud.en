@@ -20,7 +20,16 @@ The backup/snapshot feature does **not** apply to the Pro Staging and Production
 
 You can create a manual backup of any active Starter environment and integration Pro environment from the [!DNL Cloud Console] or create a snapshot from the Cloud CLI. You must have an [Admin role](../project/user-access.md) for the environment.
 
+>[!NOTE]
+>
+>You can create a backup of the code directly on Pro Production and Staging clusters by running the following command in the terminal - adjusting it for any folders/paths that you want to include/exclude:
+>```bash
+>mkdir -p var/support
+>/usr/bin/nice -n 15 /bin/tar -czhf var/support/code-$(date +"%Y%m%d%H%M%p").tar.gz app bin composer.* dev lib pub/*.php pub/errors setup vendor --exclude='pub/media'
+>```
+
 **To create a database backup of Pro environment**:
+
 To create a database dump of any Pro environment, including Staging and Production, see the [Create a database dump](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) Knowledge Base article.
 
 **To create a backup of any Starter environment using the [!DNL Cloud Console]**:
@@ -141,3 +150,8 @@ To restore the Disaster Recovery Snapshot in Pro Staging and Production environm
 Backups and snapshots do _not_ include a copy of your code. Your code is already stored in the Git-based repository, so you can use Git-based commands to roll back (or revert) code. For example, use `git log --oneline` to scroll through previous commits; then use [`git revert`](https://git-scm.com/docs/git-revert) to restore code from a specific commit.
 
 Also, you can choose to store code in an _inactive_ branch. Use git commands to create a branch instead of using `magento-cloud` commands. See about [Git commands](../dev-tools/cloud-cli-overview.md#git-commands) in the Cloud CLI topic.
+
+## Related information
+
+- [Back up the database](database-dump.md)
+- [Backup and disaster recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery) for Pro Production and Staging clusters
