@@ -42,6 +42,16 @@ Use the following methods to find and save the Fastly service ID and API token f
 
 **To view your Fastly credentials**:
 
+>[!NOTE]
+>
+>Do not share your API Token in support tickets, public forums, or any public location. Additionally, never commit API Tokens to code repositories—repositories should only contain immutable files without sensitive information.
+>
+>Adobe Commerce Support already has access to the necessary keys, so you do not need to provide your API Token when seeking assistance.
+>
+>If your API Token is ever shared publicly or attached to a support ticket, it will be considered compromised. In such cases, Adobe will be required to generate a new token for you.
+>
+>Related: [Error when validating the Fastly credentials](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials#solution)
+
 The method for viewing credentials is different for Pro and Starter projects.
 
 - IaaS-mounted shared directory—On Pro projects, use SSH to connect to your server and get the Fastly credentials from the `/mnt/shared/fastly_tokens.txt` file. Staging and Production environments have unique credentials. You must get the credentials for each environment.
