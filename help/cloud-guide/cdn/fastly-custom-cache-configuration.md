@@ -40,6 +40,10 @@ To complete bulk actions that take longer than 3 minutes change the _Admin path 
 
 1. Set the **Admin path timeout** value in seconds. This value cannot be more than 10 minutes (600 seconds).
 
+>[!NOTE]
+>
+>The **_Admin path timeout_** configuration setting does not control timeout values outside of Adobe Commerce, such as Fastly WAF timeout. To adjust the Fastly WAF timeout value, you must open an Adobe Support ticket to update it in the Fastly service.
+
 1. Click **Save Config** at the top of the page.
 
 1. After the page reloads, select **Upload VCL to Fastly** in the _Fastly Configuration_ section.
