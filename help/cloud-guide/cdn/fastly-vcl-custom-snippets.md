@@ -312,15 +312,15 @@ These API request examples use exported environment variables to provide the cre
 
    Create a snippet with updated values and assign a priority of `100`.
 
-## Snippets that cannot be viewed/modified directly in the Adobe Commerce Admin
+## Snippets that cannot be viewed/modified in the Commerce Admin
 
-- [Dynamic snippets](https://docs.fastly.com/en/guides/using-dynamic-vcl-snippets)
-- In the Custom VCL Snippets section, you will not see snippets that were added by the Cloud Support team directly to the [Fastly management dashboard](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly#fastly-service-account-and-credentials) 
+You cannot view or modify some snippets directly within the Commerce Admin. For example, [dynamic snippets](https://docs.fastly.com/en/guides/using-dynamic-vcl-snippets). In the Custom VCL Snippets section, you will not see snippets that were added by the Cloud Support team directly to the [Fastly management dashboard](fastly.md#fastly-service-account-and-credentials).
 
-### To observe the snippets added by the Cloud Support team:
 
-1. Go to the Tools section
+**To observe the snippets added by the Cloud Support team:**
 
-1. Click **List all versions** next to ``Version History``
+1. Go to the **Tools** section.
 
-1. Click on the Eye icon ``( O )`` next to the applicable VCL Version to view the existing snippets
+1. Click **List all versions** next to _Version History_.
+
+1. Click the eye icon next to the applicable VCL Version to view the existing snippets.
