@@ -221,9 +221,9 @@ The application logs are compressed and archived once per day and kept for **365
 
 The archived log files are always stored in the directory where the original file was located before compression.
 
-You can request an increase (up to a maximum of 365 days) or reduction (to conserve your storage quota) of the log retention period, or to add an additional log path to the `logrotate` configuration in Pro Staging and Production clusters by [submitting a ticket.](https://experienceleague.adobe.com/home?support-tab=home#support)
+You can [submit a support ticket](https://experienceleague.adobe.com/home?support-tab=home#support) to request changes to your log retention period or logrotate configuration. You can increase the retention period up to a maximum of 365 days, reduce it to conserve storage quota, or add additional log paths to the logrotate configuration. These changes are available for Pro Staging and Production clusters.
 
-For example, you've created a custom path to store other logs in the var/log/mymodule folder. You can request log rotation to be enabled for this path, but within the current Infrastructure, the file name must be consistent, otherwise we cannot configure log rotation (although it is generally recommended to keep log names consistent to avoid configuration issues.)
+For example, if you create a custom path to store logs in the `var/log/mymodule` directory, you can request log rotation for this path. However, the current Infrastructure requires consistent file names for Adobe to configure log rotation properly. Adobe recommends keeping log names consistent to avoid configuration issues.
 
 >[!NOTE]
 >
