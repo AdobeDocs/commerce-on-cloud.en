@@ -213,13 +213,17 @@ For Pro Staging and Production environments, the Deploy, Post-deploy, and Cron l
 
 ### Archived log files
 
-The application logs are compressed and archived once per day and kept for **30 days**. The compressed logs are named using a unique ID that corresponds to the `Number of Days Ago + 1`. For example, on Pro production environments a PHP access log for 21 days in the past is stored and named as follows:
+The application logs are compressed and archived once per day and kept for **365 days** by default (for Pro Staging and Production clusters) - and log rotation is not available in all integration/Starter environments. The compressed logs are named using a unique ID that corresponds to the `Number of Days Ago + 1`. For example, on Pro production environments a PHP access log for 21 days in the past is stored and named as follows:
 
 ```
 /var/log/platform/<project-ID>/php.access.log.22.gz
 ```
 
 The archived log files are always stored in the directory where the original file was located before compression.
+
+You can [submit a support ticket](https://experienceleague.adobe.com/home?support-tab=home#support) to request changes to your log retention period or logrotate configuration. You can increase the retention period up to a maximum of 365 days, reduce it to conserve storage quota, or add additional log paths to the logrotate configuration. These changes are available for Pro Staging and Production clusters.
+
+For example, if you create a custom path to store logs in the `var/log/mymodule` directory, you can request log rotation for this path. However, the current Infrastructure requires consistent file names for Adobe to configure log rotation properly. Adobe recommends keeping log names consistent to avoid configuration issues.
 
 >[!NOTE]
 >
