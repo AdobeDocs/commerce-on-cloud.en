@@ -13,7 +13,7 @@ The SendGrid Simple Mail Transfer Protocol (SMTP) proxy service provides outboun
 * Custom domain registration (for Pro only)
 * Automated integration for Starter and Pro integration environments. Pro Production and Staging environments require manual provisioning and configuration during the Infrastructure as a Service (IaaS) hardware provisioning process
 
-The SendGrid SMTP proxy is not intended for use as a general-purpose email server to receive incoming email or for use with email marketing campaigns.
+The SendGrid SMTP proxy is not intended for use as a general-purpose email server to receive incoming email or for use with email marketing campaigns. If you plan to import and send welcome emails to a large number of customers (for example, 10,000 or more), split the import and email sending across multiple days. This practice helps stay within daily sending limits and protects your sender reputation.
 
 >[!TIP]
 >

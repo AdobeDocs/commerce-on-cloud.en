@@ -9,7 +9,9 @@ exl-id: 7aeedd12-7a81-47eb-a82f-3079e16ecb06
 
 When Adobe provisions your cloud infrastructure project, the License Owner receives an email from New Relic with credentials and instructions for accessing the New Relic account. If you did not receive the email, use the License Owner email address to reset the New Relic password.
 
-## Manage user access
+If the License Owner was changed and the new License Owner doesn't currently have access to New Relic, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+
+## Manage user access (Adminstrator role)
 
 >[!NOTE]
 >
