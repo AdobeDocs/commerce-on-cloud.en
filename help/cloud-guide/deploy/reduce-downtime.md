@@ -12,7 +12,7 @@ During the deployment process, all connections queue for up to 5 minutes preserv
 
 >[!NOTE]
 >
->To verify whether your Cloud project is optimally configured to minimize deployment downtime, use the [Smart Wizard](smart-wizards). The Smart Wizard checks your current setup and guides you through recommended configuration adjustments to enable best practices for zero-downtime deployments.
+>To verify whether your Cloud project is optimally configured to minimize deployment downtime, use the [Smart Wizard](smart-wizards.md). The Smart Wizard checks your current setup and guides you through recommended configuration adjustments to enable best practices for zero-downtime deployments.
 
 Use the following steps to reduce the amount of time it takes your store to deploy an update to Production:
 
