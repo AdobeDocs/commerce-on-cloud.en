@@ -484,7 +484,8 @@ The following example describes how to set `VALKEY_BACKEND`:
 ```yaml
 stage:
   deploy:
-    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+  VALKEY_USE_SLAVE_CONNECTION: true
+  VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
 >[!NOTE]
