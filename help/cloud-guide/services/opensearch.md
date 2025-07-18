@@ -176,6 +176,9 @@ If you need to restart the OpenSearch service, you must contact Adobe Commerce s
 
 Optionally, you can add plugins for OpenSearch by adding the `configuration:plugins` section to the OpenSearch service in the `.magento/services.yaml` file. For example, the following code enables the ICU analysis and Phonetic analysis plugins.
 
+>[!NOTE] This only applies to Integration and Starter environments. To install the plugins in a Pro Staging or Production cluster, [submit a support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
+
+
 ```yaml
 opensearch:
     type: opensearch:2
@@ -192,7 +195,10 @@ See the [OpenSearch Project](https://github.com/opensearch-project) for more inf
 
 Removing the plugin entries from the `opensearch:` section of the `.magento/services.yaml` file does **not** uninstall or disable the service. To fully disable the service, you must reindex your OpenSearch data after removing the plugins from your `.magento/services.yaml` file. This design prevents the possible loss or corruption of data that depends on these plugins.
 
+
 **To remove OpenSearch plugins**:
+
+>[!NOTE] This change only applies to Integration and Starter environments. You will have to [submit a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) to remove the plugin in a Pro Staging or Production cluster.
 
 1. Remove the OpenSearch plugin entries from your `.magento/services.yaml` file.
 1. Add, commit, and push your code changes.
@@ -210,7 +216,7 @@ Removing the plugin entries from the `opensearch:` section of the `.magento/serv
    ```
 
 1. Commit the `.magento/services.yaml` changes to your cloud repository.
-1. Reindex the Catalog Search index.
+1. Reindex the Catalog Search index. (all environments: Integration, Starter, Pro Staging and Production clusters)
 
     ```bash
     bin/magento indexer:reindex catalogsearch_fulltext
