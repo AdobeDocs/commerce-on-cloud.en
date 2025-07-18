@@ -60,7 +60,7 @@ Assuming your Valkey relationship is named `valkey`, you can access it using the
 
 1. Use SSH to connect to the integration environment with Valkey installed and configured.
 
-2. Open an SSH tunnel to a host.
+1. Open an SSH tunnel to a host.
 
    ```bash
    valkey-cli -h valkey.internal
