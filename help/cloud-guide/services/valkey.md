@@ -13,7 +13,7 @@ See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operatio
 
 {{service-instruction}}
 
-**To replace Redis with Valkey, update the configuration in the following three files::**:
+**To replace Redis with Valkey, update the configuration in the following three files**:
 
 1. Add the required name and type to the `.magento/services.yaml` file.
 
