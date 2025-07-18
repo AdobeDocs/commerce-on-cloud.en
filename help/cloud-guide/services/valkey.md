@@ -44,7 +44,7 @@ See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operatio
         VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
    ```
 
-4. Add, commit, and push your code changes.
+1. Add, commit, and push your code changes.
 
    ```bash
    git add .magento/services.yaml .magento.app.yaml .magento.env.yaml && git commit -m "Enable valkey service" && git push origin <branch-name>
