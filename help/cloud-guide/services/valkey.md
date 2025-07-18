@@ -35,7 +35,7 @@ See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operatio
    relationships:
        valkey: "cache:valkey"
 
-3. Configure `.magento.env.yaml` as follows:.
+1. Configure `.magento.env.yaml` as follows:.
    
    ```yaml
     stage:
