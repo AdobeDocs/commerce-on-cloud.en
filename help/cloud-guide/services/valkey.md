@@ -29,7 +29,7 @@ See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operatio
        type: valkey:8.0
    ```
 
-2. Configure the relationships in the `.magento.app.yaml` file.
+1. Configure the relationships in the `.magento.app.yaml` file.
 
    ```yaml
    relationships:
