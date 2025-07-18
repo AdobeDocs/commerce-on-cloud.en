@@ -1,4 +1,5 @@
 ---
+
 title: Set up Valkey service
 description: Learn how to set up and optimize Valkey as a backend cache solution for Adobe Commerce on Cloud Infrastructure.
 feature: Cloud, Cache, Services
@@ -12,7 +13,7 @@ See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operatio
 
 {{service-instruction}}
 
-**To enable Valkey**:
+**To replace Redis with Valkey, update the configuration in the following three files**:
 
 1. Add the required name and type to the `.magento/services.yaml` file.
 
@@ -35,10 +36,19 @@ See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operatio
        valkey: "cache:valkey"
    ```
 
+1. Configure `.magento.env.yaml` as follows:.
+   
+   ```yaml
+    stage:
+        deploy:
+        VALKEY_USE_SLAVE_CONNECTION: true
+        VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+   ```
+
 1. Add, commit, and push your code changes.
 
    ```bash
-   git add .magento/services.yaml .magento.app.yaml && git commit -m "Enable valkey service" && git push origin <branch-name>
+   git add .magento/services.yaml .magento.app.yaml .magento.env.yaml && git commit -m "Enable valkey service" && git push origin <branch-name>
    ```
 
 1. [Verify the service relationships](services-yaml.md#service-relationships).
