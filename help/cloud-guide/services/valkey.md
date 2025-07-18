@@ -13,7 +13,7 @@ See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operatio
 
 {{service-instruction}}
 
-**To replace Redis with Valkey, update the configuration in the following three files::**:
+**To replace Redis with Valkey, update the configuration in the following three files**:
 
 1. Add the required name and type to the `.magento/services.yaml` file.
 
@@ -29,13 +29,14 @@ See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operatio
        type: valkey:8.0
    ```
 
-2. Configure the relationships in the `.magento.app.yaml` file.
+1. Configure the relationships in the `.magento.app.yaml` file.
 
    ```yaml
    relationships:
        valkey: "cache:valkey"
+  ```  
 
-3. Configure `.magento.env.yaml` as follows:.
+1. Configure `.magento.env.yaml` as follows:.
    
    ```yaml
     stage:
@@ -44,7 +45,7 @@ See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operatio
         VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
    ```
 
-4. Add, commit, and push your code changes.
+1. Add, commit, and push your code changes.
 
    ```bash
    git add .magento/services.yaml .magento.app.yaml .magento.env.yaml && git commit -m "Enable valkey service" && git push origin <branch-name>
@@ -60,7 +61,7 @@ Assuming your Valkey relationship is named `valkey`, you can access it using the
 
 1. Use SSH to connect to the integration environment with Valkey installed and configured.
 
-2. Open an SSH tunnel to a host.
+1. Open an SSH tunnel to a host.
 
    ```bash
    valkey-cli -h valkey.internal
