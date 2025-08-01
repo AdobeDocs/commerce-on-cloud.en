@@ -155,13 +155,14 @@ For more information, see the [Backend settings guide](https://github.com/fastly
 
 ## Basic authentication
 
-Basic authentication is a feature to protect every page and asset on your site
-with a username and password. We **do not recommend** activating basic
-authentication on your Production environment. You can configure it on Staging
-to protect your site during the development process. See the [Basic Authentication Guide](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BASIC-AUTH.md) in the Fastly CDN module documentation.
+Basic authentication is a feature to protect every page and asset on your site with a username and password. 
+
+We **do not recommend** activating basic authentication on your Production environment. You can configure it on Staging to protect your site during the development process. See the [Basic Authentication Guide](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BASIC-AUTH.md) in the Fastly CDN module documentation.
 
 If you add user access and enable basic authentication on Staging, you can still
 access the Admin without requiring additional credentials.
+
+>[!NOTE] Do **not** check [!UICONTROL Enable HTTP access control] in the Cloud Console for any environment where Fastly is enabled (such as Staging or non-live Production environments.) If access control is configured this way, users who previously had access may still be able to access the site if their credentials remain cached by Fastly, even after their access has been rescinded.
 
 ## Create custom VCL snippets
 
