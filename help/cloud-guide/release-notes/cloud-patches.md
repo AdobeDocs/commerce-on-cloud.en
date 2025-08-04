@@ -29,7 +29,7 @@ Release date: August 12, 2025
 
 -  ![new icon](../../assets/new.svg) **Add PHP 8.4 functional test**—Added functional test coverage for PHP 8.4.<!-- MCLOUD-13312 -->
 
-## v1.1.9 {#latest}
+## v1.1.9
 
 Release date: June 09, 2025
 
