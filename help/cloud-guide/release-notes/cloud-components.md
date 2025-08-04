@@ -21,7 +21,7 @@ The release notes include:
 
 Release date: August 12, 2025
 
--  ![fix icon](../../assets/fix.svg) **Fix Jenkins functional error**-Resolved functional test failure in Jenkins for Magento Cloud components.<!-- MCLOUD-13962 -->
+-  ![fix icon](../../assets/fix.svg) **Fix Jenkins functional error**-Resolved functional test failures in Jenkins for Cloud components.<!-- MCLOUD-13962 -->
 -  ![new icon](../../assets/new.svg) **Enhance PHP 8.4 functional testing**—Added functional test for PHP 8.4 and removed unnecessary code from Acceptance83Cest.<!-- MCLOUD-13313 -->
 
 ## v1.1.2 {#latest}
