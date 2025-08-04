@@ -37,7 +37,7 @@ Release date: August 12, 2025
 -  ![new icon](../../assets/new.svg) **Add functional test for Valkey with PHP 8.3 and 8.2**-Introduced functional tests for Valkey compatibility with PHP 8.3 and 8.2.<!-- MCLOUD-13610 -->
 -  ![new icon](../../assets/new.svg) **Add support for OpenSearch 3**-Added OpenSearch 3 support in ece-tools to ensure compatibility with newer OpenSearch versions.<!-- MCLOUD-13763 -->
 
-## v2002.2.6 {#latest}
+## v2002.2.6 
 
 Release date: June 03, 2025
 

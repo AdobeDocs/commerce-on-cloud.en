@@ -29,7 +29,7 @@ Release date: August 12, 2025
 -  ![new icon](../../assets/new.svg) **Create new OpenSearch 3 image**—Created a new OpenSearch 3 image for improved compatibility with ece-tools.<!-- MCLOUD-13766 -->
 -  ![new icon](../../assets/new.svg) **Add Valkey to cloud-docker**—Integrated Valkey service into cloud-docker for enhanced service management.<!-- MCLOUD-13558 -->
 
-## v1.4.3 {#latest}
+## v1.4.3
 
 Release date: June 03, 2025
 
