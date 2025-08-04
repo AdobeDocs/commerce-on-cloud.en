@@ -27,7 +27,7 @@ The release notes include:
 Release date: August 12, 2025
 
 -  ![fix icon](../../assets/fix.svg) **Fix PHP type compatibility in functional tests**-Resolved PHP type compatibility issues in ece-tools functional tests.<!-- MCLOUD-13965 -->
--  ![fix icon](../../assets/fix.svg) **Fix OpenSearch version validation**-Added support for Magento 2.4.4-p7/p12 in OpenSearch version validation.<!-- MCLOUD-13945 -->
+-  ![fix icon](../../assets/fix.svg) **Fix OpenSearch version validation**-Added support for Commerce 2.4.4-p7/p12 in OpenSearch version validation.<!-- MCLOUD-13945 -->
 -  ![fix icon](../../assets/fix.svg) **Fix inaccurate EOL dates**-Corrected inaccurate End of Life (EOL) dates for several services.<!-- MCLOUD-13929 -->
 -  ![fix icon](../../assets/fix.svg) **Fix Valkey validator**-Fixed the Valkey validator to address the warning message in ece-tools.<!-- MCLOUD-13896 -->
 -  ![fix icon](../../assets/fix.svg) **Fix ECE tools unit test**-Resolved issues in ECE tools unit tests to ensure they run successfully.<!-- MCLOUD-13838 -->
