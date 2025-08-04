@@ -25,7 +25,6 @@ feature: Cloud
     + [Cloud Patches](release-notes/cloud-patches.md)
     + [Cloud Docker package](release-notes/cloud-docker.md)
     + [Cloud Components](release-notes/cloud-components.md)
-    + [Cloud Metapackage](release-notes/cloud-metapackage.md)
     + [Cloud Packages](release-notes/cloud-packages.md)
     + [Backward-incompatible changes](release-notes/backward-incompatible-changes.md)
     + [Release notes archive](release-notes/cloud-release-archive.md)

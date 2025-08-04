@@ -14,7 +14,6 @@ This release information details the latest improvements to the Cloud Tools Suit
 | [Cloud Patches for Commerce](cloud-patches.md) | 1.1.9    | A set of patches which improve the integration of all Adobe Commerce versions with Cloud environments. This package includes Adobe Commerce patches and available hotfixes that are applied when you use `ece-tools` to deploy | [`magento/magento-cloud-patches`](https://github.com/magento/magento-cloud-patches/tree/1.1.9) |
 | [Cloud Docker for Commerce](cloud-docker.md) | 1.4.3    | Functionality and configuration files for Docker images to deploy Adobe Commerce to a local cloud environment | [`magento/magento-cloud-docker`](https://github.com/magento/magento-cloud-docker/tree/1.4.3) |
 | [Cloud Components of Commerce](cloud-components.md) | 1.1.2    | Extended Adobe Commerce core functionality for sites deployed on the Cloud infrastructure | [`magento/magento-cloud-components`](https://github.com/magento/magento-cloud-components/tree/1.1.2) |
-| [Cloud Metapackage](cloud-metapackage.md) | TBD | A foundational component that bundles together essential modules and services required to operate Adobe Commerce in a cloud-native environment. | `magento/magento-cloud-metapackage` |
 
 When you update to ECE-Tools 2002.1.0 or later, you automatically update to the latest versions of the other packages, which are dependencies for the `ece-tools` package. See [Cloud metapackage](../development/overview.md#cloud-metapackage) for a list of dependencies.
 
