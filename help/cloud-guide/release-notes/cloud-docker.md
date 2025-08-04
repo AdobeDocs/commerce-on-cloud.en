@@ -25,7 +25,7 @@ Release date: August 12, 2025
 
 -  ![fix icon](../../assets/fix.svg) **Prepare functional tests for Cloud Docker with PHP 8.4**—Added functional test coverage for Cloud Docker using PHP 8.4.<!-- MCLOUD-13311 -->
 -  ![fix icon](../../assets/fix.svg) **Fix FTP extension dynamically added in docker-compose.yml**-Fixed the dynamic addition of the FTP extension in the docker-compose.yml file.<!-- MCLOUD-13843 -->
--  ![new icon](../../assets/new.svg) **Test 2.4.9 with PHP 8.4 & OpenSearch 3**—Added tests for Magento 2.4.9 with PHP 8.4 and OpenSearch 3 compatibility.<!-- MCLOUD-13768 -->
+-  ![new icon](../../assets/new.svg) **Test 2.4.9 with PHP 8.4 & OpenSearch 3**—Added tests for Commerce 2.4.9 with PHP 8.4 and OpenSearch 3 compatibility.<!-- MCLOUD-13768 -->
 -  ![new icon](../../assets/new.svg) **Create new OpenSearch 3 image**—Created a new OpenSearch 3 image for improved compatibility with ece-tools.<!-- MCLOUD-13766 -->
 -  ![new icon](../../assets/new.svg) **Add Valkey to cloud-docker**—Integrated Valkey service into cloud-docker for enhanced service management.<!-- MCLOUD-13558 -->
 
