@@ -30,7 +30,7 @@ Release date: August 12, 2025
 -  ![fix icon](../../assets/fix.svg) **Fix OpenSearch version validation**-Added support for Magento 2.4.4-p7/p12 in OpenSearch version validation.<!-- MCLOUD-13945 -->
 -  ![fix icon](../../assets/fix.svg) **Fix inaccurate EOL dates**-Corrected inaccurate End of Life (EOL) dates for several services.<!-- MCLOUD-13929 -->
 -  ![fix icon](../../assets/fix.svg) **Fix Valkey validator**-Fixed the Valkey validator to address the warning message in ece-tools.<!-- MCLOUD-13896 -->
--  ![fix icon](../../assets/fix.svg) **Fix ECE tools unit test**- Resolved issues in ECE tools unit tests to ensure they run successfully.<!-- MCLOUD-13838 -->
+-  ![fix icon](../../assets/fix.svg) **Fix ECE tools unit test**-Resolved issues in ECE tools unit tests to ensure they run successfully.<!-- MCLOUD-13838 -->
 -  ![new icon](../../assets/new.svg) **Update validator script for OpenSearch, PHP, and MariaDB**-Updated the validator script to support new versions of OpenSearch, PHP, and MariaDB services.<!-- MCLOUD-13923 -->
 -  ![new icon](../../assets/new.svg) **Create functional test for OpenSearch**-Added new functional tests to validate OpenSearch functionality in ece-tools.<!-- MCLOUD-13769 -->
 -  ![new icon](../../assets/new.svg) **Add functional test for Valkey with PHP 8.3 and 8.2**-Introduced functional tests for Valkey compatibility with PHP 8.3 and 8.2.<!-- MCLOUD-13610 -->
