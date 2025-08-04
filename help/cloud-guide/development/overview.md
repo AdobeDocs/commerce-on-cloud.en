@@ -53,8 +53,7 @@ The main packages of this metapackage are the following:
 - **vendor/magento/product-enterprise-edition**—This metapackage requires application components, including modules, frameworks, themes, and more.
 - **vendor/fastly2/magento2**—This module manages the Fastly CDN and services for the Pro Staging and Production and Starter Production environments. See [Fastly services](/help/cloud-guide/cdn/fastly.md#fastly-cdn-module-for-magento-2).
 - **vendor/magento/module-paypal-on-boarding**—This module provides PayPal payment gateway checkout by connecting to your PayPal merchant account. See [PayPal On-Boarding tool](../store/paypal.md).
-- **vendor/open-telemetry/api**—This package provides the API for OpenTelemetry. It enables the [Operational Telemetry](../monitor/operational-telemetry.md) data collection tool.
-- **vendor/open-telemetry/context**—This package provides the execution context for OpenTelemetry. It enables the [Operational Telemetry](../monitor/operational-telemetry.md) data collection tool.
+- **vendor/aem/rum**—This module manages the [Operational Telemetry](../monitor/operational-telemetry.md) data collection tool.
 
 >[!TIP]
 >
