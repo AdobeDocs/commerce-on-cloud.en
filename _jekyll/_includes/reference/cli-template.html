@@ -27,11 +27,15 @@ The initial list is auto generated using the `{{ tool }} list` command at {{ edi
   {%- assign options = command.definition.options %}
 
 ## `{{ command.name }}`
-
+{% if app.name contains 'Cloud' %}
+```bash
+{{ command.usage }}
+```
+{% else %}
 ```bash
 {{ tool }} {{ command.usage }}
 ```
-
+{% endif %}
 {{ command.description | strip_html }}
 {% unless command.help == command.description or command.help == empty %}
 ```
