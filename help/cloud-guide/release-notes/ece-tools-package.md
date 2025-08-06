@@ -2,7 +2,7 @@
 title: ECE-Tools release notes
 description: See a list of the latest improvements to the ECE-Tools package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2025-08-12
+last-substantial-update: 2025-08-07
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
 ---
 # ECE-Tools release notes
@@ -24,18 +24,17 @@ The release notes include:
 
 ## v2002.2.7 {#latest}
 
-Release date: August 12, 2025
+Release date: August 07, 2025
 
--  ![fix icon](../../assets/fix.svg) **Fix PHP type compatibility in functional tests**-Resolved PHP type compatibility issues in ece-tools functional tests.<!-- MCLOUD-13965 -->
--  ![fix icon](../../assets/fix.svg) **Fix OpenSearch version validation**-Added support for Magento 2.4.4-p7/p12 in OpenSearch version validation.<!-- MCLOUD-13945 -->
--  ![fix icon](../../assets/fix.svg) **Fix inaccurate EOL dates**-Corrected inaccurate End of Life (EOL) dates for several services.<!-- MCLOUD-13929 -->
--  ![fix icon](../../assets/fix.svg) **Fix Valkey validator**-Fixed the Valkey validator to address the warning message in ece-tools.<!-- MCLOUD-13896 -->
--  ![fix icon](../../assets/fix.svg) **Fix ECE tools unit test**- Resolved issues in ECE tools unit tests to ensure they run successfully.<!-- MCLOUD-13838 -->
--  ![fix icon](../../assets/fix.svg) **Fix inaccurate EOL services**-Corrected inaccurate End of Life (EOL) dates for several services.<!-- MCLOUD-13929 -->
--  ![new icon](../../assets/new.svg) **Update validator script for OpenSearch, PHP, and MariaDB**-Updated the validator script to support new versions of OpenSearch, PHP, and MariaDB services.<!-- MCLOUD-13923 -->
--  ![new icon](../../assets/new.svg) **Create functional test for OpenSearch**-Added new functional tests to validate OpenSearch functionality in ece-tools.<!-- MCLOUD-13769 -->
--  ![new icon](../../assets/new.svg) **Add functional test for Valkey with PHP 8.3 and 8.2**-Introduced functional tests for Valkey compatibility with PHP 8.3 and 8.2.<!-- MCLOUD-13610 -->
--  ![new icon](../../assets/new.svg) **Add support for OpenSearch 3**-Added OpenSearch 3 support in ece-tools to ensure compatibility with newer OpenSearch versions.<!-- MCLOUD-13763 -->
+-  ![fix icon](../../assets/fix.svg) **PHP 8.4 fixes**-Added type compatibility.<!-- MCLOUD-13965 -->
+-  ![fix icon](../../assets/fix.svg) **EOL validator**-Updated End of Life (EOL) services dates.<!-- MCLOUD-13929 -->
+-  ![new icon](../../assets/new.svg) **Valkey**-Added PHP 8.2 and PHP 8.3 functional tests.<!-- MCLOUD-13610 -->
+-  ![fix icon](../../assets/fix.svg) **Valkey validator**-Fixed the ECE tools warning message.<!-- MCLOUD-13896 -->
+-  ![fix icon](../../assets/fix.svg) **ECE tools**-Added Unit tests improvements.<!-- MCLOUD-13838 -->
+-  ![new icon](../../assets/new.svg) **Validator for services**-Added new versions support of Opensearch, MariaDB and PHP.<!-- MCLOUD-13923 -->
+-  ![new icon](../../assets/new.svg) **Opensearch3**-Added support for Opensearch3.<!-- MCLOUD-13763 -->
+-  ![fix icon](../../assets/fix.svg) **Opensearch support for 2.4.4-p7/p12**-Updated the validator script.<!-- MCLOUD-13945 -->
+-  ![new icon](../../assets/new.svg) **Opensearch3 tests**-Added functional tests.<!-- MCLOUD-13769 -->
 
 ## v2002.2.6 
 

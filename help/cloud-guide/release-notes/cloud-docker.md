@@ -3,7 +3,7 @@ title: Cloud Docker package
 description: See a list of the latest improvements to the Cloud Docker package.
 feature: Cloud, Docker, Release Notes
 recommendations: noDisplay, catalog
-last-substantial-update: 2025-08-12
+last-substantial-update: 2025-08-07
 exl-id: 95cf4f30-6bce-4bac-8e11-cfe53cac2c70
 ---
 # Cloud Docker package
@@ -21,13 +21,13 @@ The release notes include:
 
 ## v1.4.4 {#latest}
 
-Release date: August 12, 2025
+Release date: August 07, 2025
 
--  ![fix icon](../../assets/fix.svg) **Prepare functional tests for Cloud Docker with PHP 8.4**—Added functional test coverage for Cloud Docker using PHP 8.4.<!-- MCLOUD-13311 -->
--  ![fix icon](../../assets/fix.svg) **Fix FTP extension dynamically added in docker-compose.yml**-Fixed the dynamic addition of the FTP extension in the docker-compose.yml file.<!-- MCLOUD-13843 -->
--  ![new icon](../../assets/new.svg) **Test 2.4.9 with PHP 8.4 & OpenSearch 3**—Added tests for Magento 2.4.9 with PHP 8.4 and OpenSearch 3 compatibility.<!-- MCLOUD-13768 -->
--  ![new icon](../../assets/new.svg) **Create new OpenSearch 3 image**—Created a new OpenSearch 3 image for improved compatibility with ece-tools.<!-- MCLOUD-13766 -->
--  ![new icon](../../assets/new.svg) **Add Valkey to cloud-docker**—Integrated Valkey service into cloud-docker for enhanced service management.<!-- MCLOUD-13558 -->
+-  ![fix icon](../../assets/fix.svg) **PHP 8.4**—Added PHP 8.4 tests.<!-- MCLOUD-13311 -->
+-  ![fix icon](../../assets/fix.svg) **FTP extension**-Added fix for FTP extension.<!-- MCLOUD-13843 -->
+-  ![new icon](../../assets/new.svg) **Opensearch3 image**—Added support of Opensearch3.<!-- MCLOUD-13766 -->
+-  ![new icon](../../assets/new.svg) **Opensearch3 tests**—Added PHP 8.4 tests for Opensearch3.<!-- MCLOUD-13768 -->
+-  ![new icon](../../assets/new.svg) **Valkey**—Added support for Valkey.<!-- MCLOUD-13558 -->
 
 ## v1.4.3
 

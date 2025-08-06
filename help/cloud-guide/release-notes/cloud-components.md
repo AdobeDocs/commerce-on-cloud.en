@@ -2,6 +2,7 @@
 title: Cloud Components for Commerce
 description: See a list of the latest improvements to the Cloud Components package.
 recommendations: noDisplay, catalog
+last-substantial-update: 2025-08-07
 exl-id: 34aec593-e2ea-4060-a6b9-6f4cb95a11c0
 ---
 # Cloud Components for Commerce
@@ -19,10 +20,9 @@ The release notes include:
 
 ## v1.1.3 {#latest}
 
-Release date: August 12, 2025
+Release date: August 07, 2025
 
--  ![fix icon](../../assets/fix.svg) **Fix Jenkins functional error**-Resolved functional test failure in Jenkins for Magento Cloud components.<!-- MCLOUD-13962 -->
--  ![new icon](../../assets/new.svg) **Enhance PHP 8.4 functional testing**—Added functional test for PHP 8.4 and removed unnecessary code from Acceptance83Cest.<!-- MCLOUD-13313 -->
+-  ![new icon](../../assets/new.svg) **PHP 8.4**—Added functional test for PHP 8.4 and fixes.<!-- MCLOUD-13313 -->
 
 ## v1.1.2 
 
