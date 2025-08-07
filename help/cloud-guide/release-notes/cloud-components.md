@@ -2,6 +2,7 @@
 title: Cloud Components for Commerce
 description: See a list of the latest improvements to the Cloud Components package.
 recommendations: noDisplay, catalog
+last-substantial-update: 2025-08-07
 exl-id: 34aec593-e2ea-4060-a6b9-6f4cb95a11c0
 ---
 # Cloud Components for Commerce
@@ -17,7 +18,13 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v1.1.2 {#latest}
+## v1.1.3 {#latest}
+
+Release date: August 07, 2025
+
+-  ![new icon](../../assets/new.svg) **PHP 8.4**—Added functional test for PHP 8.4 and fixes.<!-- MCLOUD-13313 -->
+
+## v1.1.2 
 
 Release date: June 03, 2025
 

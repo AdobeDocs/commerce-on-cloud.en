@@ -3,7 +3,7 @@ title: Cloud Docker package
 description: See a list of the latest improvements to the Cloud Docker package.
 feature: Cloud, Docker, Release Notes
 recommendations: noDisplay, catalog
-last-substantial-update: 2025-06-03
+last-substantial-update: 2025-08-07
 exl-id: 95cf4f30-6bce-4bac-8e11-cfe53cac2c70
 ---
 # Cloud Docker package
@@ -19,7 +19,17 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v1.4.3 {#latest}
+## v1.4.4 {#latest}
+
+Release date: August 07, 2025
+
+-  ![fix icon](../../assets/fix.svg) **PHP 8.4**—Added PHP 8.4 tests.<!-- MCLOUD-13311 -->
+-  ![fix icon](../../assets/fix.svg) **FTP extension**-Added fix for FTP extension.<!-- MCLOUD-13843 -->
+-  ![new icon](../../assets/new.svg) **Opensearch3 image**—Added support of Opensearch3.<!-- MCLOUD-13766 -->
+-  ![new icon](../../assets/new.svg) **Opensearch3 tests**—Added PHP 8.4 tests for Opensearch3.<!-- MCLOUD-13768 -->
+-  ![new icon](../../assets/new.svg) **Valkey**—Added support for Valkey.<!-- MCLOUD-13558 -->
+
+## v1.4.3
 
 Release date: June 03, 2025
 
