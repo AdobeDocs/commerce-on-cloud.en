@@ -54,19 +54,21 @@ Use the following methods to find and save the Fastly service ID and API token f
 
 The method for viewing credentials is different for Pro and Starter projects.
 
-- IaaS-mounted shared directory—On Pro projects, use SSH to connect to your server and get the Fastly credentials from the `/mnt/shared/fastly_tokens.txt` file. Staging and Production environments have unique credentials. You must get the credentials for each environment.
+**Pro projects**:
+- IaaS-mounted shared directory — use SSH to connect to your server and get the Fastly credentials from the `/mnt/shared/fastly_tokens.txt` file. Staging and Production environments have unique credentials. You must get the credentials for each environment. If you are on a Starter project, you should obtain Fastly credentials through the alternate methods described below.
 
-- Local workspace—From the command line, use the `magento-cloud` CLI to [list and review](../environment/variables-cloud.md#viewing-environment-variables) Fastly environment variables.
-
-  ```bash
-  magento-cloud variable:get -e <environment-ID>
-  ```
-
-- [!DNL Cloud Console]—Check the following environment variables in the [Environment configuration](../project/overview.md#configure-environment).
+**Starter projects**:
+- [!DNL Cloud Console] — Check the following environment variables in the [Environment configuration](../project/overview.md#configure-environment).
 
   - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_API_KEY`
 
   - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_SERVICE_ID`
+
+- Local workspace — From the command line, use the `magento-cloud` CLI to [list and review](../environment/variables-cloud.md#viewing-environment-variables) Fastly environment variables.
+
+  ```bash
+  magento-cloud variable:get -e <environment-ID>
+  ```
 
 >[!NOTE]
 >
