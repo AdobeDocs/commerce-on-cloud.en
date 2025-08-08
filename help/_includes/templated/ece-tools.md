@@ -1,6 +1,6 @@
 # ece-tools
 
-**Version**: 2002.2.5
+**Version**: 2002.2.7
 
 This reference contains 34 commands available through the `ece-tools` command-line tool.
 The initial list is auto generated using the `ece-tools list` command at Adobe Commerce on cloud infrastructure.
@@ -18,9 +18,16 @@ Display help for the given command. When no command is given display help for th
 - Default: `false`
 - Does not accept a value
 
-#### `--quiet`, `-q`
+#### `--silent`
 
 Do not output any message
+
+- Default: `false`
+- Does not accept a value
+
+#### `--quiet`, `-q`
+
+Only errors are displayed. All other output is suppressed
 
 - Default: `false`
 - Does not accept a value
@@ -49,7 +56,6 @@ Force (or disable --no-ansi) ANSI output
 
 Negate the "--ansi" option
 
-- Default: `false`
 - Does not accept a value
 
 #### `--no-interaction`, `-n`
