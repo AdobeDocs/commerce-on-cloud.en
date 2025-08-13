@@ -14,7 +14,14 @@ The Pro project includes a single Git repository with a global `master` branch a
 
 ![Pro environment list](../../assets/pro-environments.png)
 
-These environments are `read-only`, accepting deployed code changes from branches pushed from your local workspace. See [Pro architecture](pro-architecture.md) for a complete overview of the Pro environments. See [[!DNL Cloud Console]](../project/overview.md#cloud-console) for an overview of the Pro environments list in the project view.
+These environments are `read-only`, accepting deployed code changes from branches pushed from your local workspace only. See [Pro architecture](pro-architecture.md) for a complete overview of the Pro environments. See [[!DNL Cloud Console]](../project/overview.md#cloud-console) for an overview of the Pro environments list in the project view.
+
+>[!NOTE]> You cannot make any code changes directly in the Cloud environment or run ``composer install`` to install any modules - you will get an error, for example:
+>
+>```bash
+>file_put_contents(...): Failed to open stream: Read-only file system  
+>The disk hosting /app/<cluster_ID> is full
+>```
 
 The following graphic demonstrates the Pro develop and deploy workflow, which uses a simple, git-branching approach. You [develop](#development-workflow) code using an active branch based on the `integration` environment, _pushing_ and _pulling_ code changes to and from your remote, Active branch. You deploy verified code by _merging_ the remote branch to the base branch, which activates an automated [build and deploy](#deployment-workflow) process for that environment.
 
