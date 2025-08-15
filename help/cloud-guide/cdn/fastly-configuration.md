@@ -60,11 +60,12 @@ On Cloud Starter projects you can get the credentials from the Cloud Console or 
 
   - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_SERVICE_ID`
 
-- From you the command line in your local workspace, use the `magento-cloud` CLI to [list and review](../environment/variables-cloud.md#viewing-environment-variables) Fastly environment variables.
+- From the command line in your local workspace, use the `magento-cloud` CLI to [list and review](../environment/variables-cloud.md#viewing-environment-variables) Fastly environment variables.
 
   ```bash
   magento-cloud variable:get -e <environment-ID>
   ```
+
 ### Troubleshooting
 
 - If you cannot find the Fastly credentials for the Staging or Production environments, contact your Adobe Customer Technical Advisor (CTA).
