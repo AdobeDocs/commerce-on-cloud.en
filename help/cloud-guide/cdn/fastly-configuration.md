@@ -38,29 +38,23 @@ You must use the Adobe Commerce Admin to review and update the Fastly configurat
 
 ## Get Fastly credentials
 
-Use the following methods to find and save the Fastly service ID and API token for your environment:
+The Fastly service ID and API token for your Staging and Production environments are stored in your Cloud project environment. You need the credentials for both environments.
 
-**To view your Fastly credentials**:
+**Get credentials for Cloud Pro projects**:
 
->[!NOTE]
->
->Do not share your API Token in support tickets, public forums, or any public location. Additionally, never commit API Tokens to code repositories—repositories should only contain immutable files without sensitive information.
->
->Adobe Commerce Support already has access to the necessary keys, so you do not need to provide your API Token when seeking assistance.
->
->If your API Token is ever shared publicly or attached to a support ticket, it will be considered compromised. In such cases, Adobe will be required to generate a new token for you.
->
->Related: [Error when validating the Fastly credentials](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials#solution)
+On Cloud Pro projects, check the credentials from the IaaS-mounted shared directory.
 
-The method for viewing credentials is different for Pro and Starter projects.
+1. Use SSH to connect to your server.
 
-**Get Credentials for Cloud Pro projects**:
+2. Open the `/mnt/shared/fastly_tokens.txt` file to get the credentials.
 
-- IaaS-mounted shared directory — use SSH to connect to your server and get the Fastly credentials from the `/mnt/shared/fastly_tokens.txt` file. Staging and Production environments have unique credentials. You must get the credentials for each environment.
+   Staging and Production environments have unique credentials. You must get the credentials for each environment.
 
-**Get credntials For Cloud Starter projects**:
+**Get credentials For Cloud Starter projects**:
 
-- [!DNL Cloud Console] — Check the following environment variables in the [Environment configuration](../project/overview.md#configure-environment).
+On Cloud Starter projects you can get the credentials from the Cloud Console or using the Cloud CLI:
+
+- From the [!DNL Cloud Console], check the following environment variables in the [Environment configuration](../project/overview.md#configure-environment).
 
   - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_API_KEY`
 
@@ -71,10 +65,21 @@ The method for viewing credentials is different for Pro and Starter projects.
   ```bash
   magento-cloud variable:get -e <environment-ID>
   ```
+### Troubleshooting
 
->[!NOTE]
->
->If you cannot find the Fastly credentials for the Staging or Production environments, contact your Adobe Customer Technical Advisor (CTA).
+- If you cannot find the Fastly credentials for the Staging or Production environments, contact your Adobe Customer Technical Advisor (CTA).
+
+- Error when validating the Fastly credentials](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials#solution
+
+## Secure your credentials
+
+Do not share your API Token in support tickets, public forums, or any public location. Additionally, never commit API Tokens to code repositories—repositories should only contain immutable files without sensitive information.
+
+Adobe Commerce Support already has access to the necessary keys, so you do not need to provide your API Token when seeking assistance.
+
+If your API Token is ever shared publicly or attached to a support ticket, it will be considered compromised. In such cases, Adobe is required to generate a new token for you.
+
+Related: [Error when validating the Fastly credentials](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials#solution)
 
 ## Enable Fastly caching
 
