@@ -79,8 +79,6 @@ Adobe Commerce Support already has access to the necessary keys, so you do not n
 
 If your API Token is ever shared publicly or attached to a support ticket, it will be considered compromised. In such cases, Adobe is required to generate a new token for you.
 
-Related: [Error when validating the Fastly credentials](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials#solution)
-
 ## Enable Fastly caching
 
 You need the following components to enable and configure Fastly services:
