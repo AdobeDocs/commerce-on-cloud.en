@@ -54,10 +54,12 @@ Use the following methods to find and save the Fastly service ID and API token f
 
 The method for viewing credentials is different for Pro and Starter projects.
 
-**Pro projects**:
-- IaaS-mounted shared directory — use SSH to connect to your server and get the Fastly credentials from the `/mnt/shared/fastly_tokens.txt` file. Staging and Production environments have unique credentials. You must get the credentials for each environment. If you are on a Starter project, you should obtain Fastly credentials through the alternate methods described below.
+**Get Credentials for Cloud Pro projects**:
 
-**Starter projects**:
+- IaaS-mounted shared directory — use SSH to connect to your server and get the Fastly credentials from the `/mnt/shared/fastly_tokens.txt` file. Staging and Production environments have unique credentials. You must get the credentials for each environment.
+
+**Get credntials For Cloud Starter projects**:
+
 - [!DNL Cloud Console] — Check the following environment variables in the [Environment configuration](../project/overview.md#configure-environment).
 
   - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_API_KEY`
