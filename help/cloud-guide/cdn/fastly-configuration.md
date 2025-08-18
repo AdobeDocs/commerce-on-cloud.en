@@ -70,7 +70,7 @@ On Cloud Starter projects you can get the credentials from the Cloud Console or 
 
 - If you cannot find the Fastly credentials for the Staging or Production environments, contact your Adobe Customer Technical Advisor (CTA).
 
-- Error when validating the Fastly credentials](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials#solution
+- Error when validating the Fastly credentials](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials#solution).
 
 ## Secure your credentials
 
