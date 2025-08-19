@@ -12,7 +12,7 @@ The following sections provide an overview and instructions for configuring some
 
 >[!IMPORTANT]
 >
->The available Admin options for configuring the Fastly cache depend on which version of the Fastly CDN Module for Magento 2 is installed. Adobe recommends that you [Upgrade the Fastly module](fastly-configuration.md#upgrade] the Fastly module in your Staging and Production environments to the latest version. For the latest information, see the [Release Notes for the Fastly CDN for Magento2 module](https://github.com/fastly/fastly-magento2/blob/master/Release-Notes.md).
+>The available Admin options for configuring the Fastly cache depend on which version of the Fastly CDN Module for Magento 2 is installed. Adobe recommends that you [Upgrade the Fastly module](fastly-configuration.md#upgrade) the Fastly module in your Staging and Production environments to the latest version. For the latest information, see the [Release Notes for the Fastly CDN for Magento2 module](https://github.com/fastly/fastly-magento2/blob/master/Release-Notes.md).
 
 ## Force TLS
 
