@@ -52,7 +52,7 @@ On Cloud Pro projects, check the credentials from the IaaS-mounted shared direct
 
 **Get credentials For Cloud Starter projects**:
 
-On Cloud Starter projects you can get the credentials from the Cloud Console or using the Cloud CLI:
+On Cloud Starter projects, get the credentials from the Cloud Console or using the Cloud CLI:
 
 - From the [!DNL Cloud Console], check the following environment variables in the [Environment configuration](../project/overview.md#configure-environment).
 
