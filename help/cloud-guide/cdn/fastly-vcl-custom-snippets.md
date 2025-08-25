@@ -326,3 +326,5 @@ These API request examples use exported environment variables to provide the cre
 -  **Override values in the [default Fastly VCL code](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets)**
 
    Create a snippet with updated values and assign a priority of `100`.
+
+<!-- Last updated from includes: 2025-01-27 17:16:28 -->
