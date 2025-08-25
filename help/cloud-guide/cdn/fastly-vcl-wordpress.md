@@ -43,3 +43,5 @@ Use Fastly Edge Modules to create and upload custom VCL code from the Admin inst
      For detailed instructions, see [Fastly Edge Modules - Other CMS/Backend integration](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-OTHER-CMS-INTEGRATION.md) in the _Fastly CDN module for Magento 2_ documentation.
 
 1. After updating the Fastly service configuration, test your Adobe Commerce store to ensure that the specified URL requests for WordPress are rerouted correctly.
+
+<!-- Last updated from includes: 2025-01-27 17:16:28 -->

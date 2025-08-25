@@ -7,3 +7,5 @@ exl-id: 1b96682c-63db-403a-ac2d-b2f6a2e745f1
 # Cloud packages for Adobe Commerce
 
 {{$include /help/_includes/templated/cloud-packages.md}}
+
+<!-- Last updated from includes: 2025-04-08 18:35:17 -->
