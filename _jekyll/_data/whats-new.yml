@@ -1,0 +1,76 @@
+---
+title: What's New
+description: This page contains the changes made in the last 60 days. We exclude all
+  minor updates, such as copy editing, from this list.
+updated: Wed Sep 3 15:08:29 2025
+entries:
+- description: Updated [CLI reference](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)
+    and [Error messages](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference)
+    after ECE-Tools release, v2002.2.7.
+  versions: ''
+  type: technical
+  date: August 8, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/70
+  merge_commit: 8cf7b01cbd9fe32a89d83db5b4eac7638b834c49
+  contributor: magedocs
+  membership:
+  labels:
+  - devops
+  - technical
+- description: Added [release notes](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite)
+    for cloud components, Docker, patches, and the ECE tools package.
+  versions: ''
+  type: major-update
+  date: August 7, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/67
+  merge_commit: 7aecdc89a2f4e0103cfe46ed1c2dc7b93566baf5
+  contributor: glo33270
+  membership:
+  labels:
+  - major-update
+- description: Added a note about the mandatory 6-hour cooldown period after [disk
+    space increases](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space)
+    for projects hosted on AWS.
+  versions: ''
+  type: technical
+  date: August 6, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/69
+  merge_commit: a04d056377da4fec9a54503d959f90ebf605de41
+  contributor: jmatthew
+  membership:
+  labels:
+  - technical
+- description: Added additional information about [basic authentication](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration)
+    in Fastly.
+  versions: ''
+  type: major-update
+  date: August 1, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/65
+  merge_commit: 6d949fbbab631e633ba27641a48829d74856fcaa
+  contributor: anchico
+  membership:
+  labels:
+  - major-update
+- description: Added missing [configuration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey)
+    details for the Valkey service.
+  versions: ''
+  type: technical
+  date: July 18, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/63
+  merge_commit: add0d4f3bd91b66fd1bd8f5306ff206076121871
+  contributor: glo33270
+  membership:
+  labels:
+  - technical
+- description: Removed [upgrade instructions](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version)
+    for Commerce versions that have reached end of support and were causing confusion.
+  versions: ''
+  type: major-update, feedback
+  date: July 15, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/44
+  merge_commit: 7c0fcf520cd76f25d51f3a644a60132ac6028959
+  contributor: jmatthew
+  membership:
+  labels:
+  - major-update
+  - feedback

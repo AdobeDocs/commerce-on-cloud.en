@@ -1,39 +1,39 @@
 ---
 metadata:
-  last_updated: 2025-08-27 14:12:58 CDT
+  last_updated: 2025-09-03 15:08:56 CDT
   description: Index of main files and their included files for automatic timestamp
     updates
   total_relationships: 11
   auto_discovered: true
-  discovery_date: 2025-08-27 14:12:58 CDT
+  discovery_date: 2025-09-03 15:08:56 CDT
 relationships:
   cloud-guide/dev-tools/error-reference.md:
   - "/help/_includes/automated/ece-tools-error-codes.md"
-  cloud-guide/cdn/fastly-vcl-badreferer.md:
-  - "/help/_includes/vcl-snippet-modify.md"
-  - "/help/_includes/vcl-snippet-prerequisites.md"
-  - "/help/_includes/vcl-snippet-delete.md"
-  cloud-guide/cdn/fastly-vcl-blocking.md:
-  - "/help/_includes/vcl-snippet-modify.md"
-  - "/help/_includes/vcl-snippet-prerequisites.md"
-  - "/help/_includes/vcl-snippet-delete.md"
-  cloud-guide/cdn/fastly-vcl-bypass-to-origin.md:
-  - "/help/_includes/vcl-snippet-modify.md"
-  - "/help/_includes/vcl-snippet-prerequisites.md"
-  - "/help/_includes/vcl-snippet-delete.md"
-  cloud-guide/cdn/fastly-vcl-allowlist.md:
-  - "/help/_includes/vcl-snippet-modify.md"
-  - "/help/_includes/vcl-snippet-prerequisites.md"
-  - "/help/_includes/vcl-snippet-delete.md"
-  cloud-guide/release-notes/cloud-packages.md:
-  - "/help/_includes/templated/cloud-packages.md"
-  cloud-guide/application/php-settings.md:
-  - "/help/_includes/templated/php-extensions-cloud.md"
   cloud-guide/dev-tools/cloud-cli-reference.md:
   - "/help/_includes/templated/cloud-cli-ref.md"
+  cloud-guide/release-notes/cloud-packages.md:
+  - "/help/_includes/templated/cloud-packages.md"
   cloud-guide/dev-tools/ece-tools-cli-reference.md:
   - "/help/_includes/templated/ece-tools.md"
-  cloud-guide/cdn/fastly-vcl-wordpress.md:
+  cloud-guide/application/php-settings.md:
+  - "/help/_includes/templated/php-extensions-cloud.md"
+  cloud-guide/cdn/fastly-vcl-allowlist.md:
+  - "/help/_includes/vcl-snippet-delete.md"
+  - "/help/_includes/vcl-snippet-modify.md"
+  - "/help/_includes/vcl-snippet-prerequisites.md"
+  cloud-guide/cdn/fastly-vcl-badreferer.md:
+  - "/help/_includes/vcl-snippet-delete.md"
+  - "/help/_includes/vcl-snippet-modify.md"
+  - "/help/_includes/vcl-snippet-prerequisites.md"
+  cloud-guide/cdn/fastly-vcl-blocking.md:
+  - "/help/_includes/vcl-snippet-delete.md"
+  - "/help/_includes/vcl-snippet-modify.md"
+  - "/help/_includes/vcl-snippet-prerequisites.md"
+  cloud-guide/cdn/fastly-vcl-bypass-to-origin.md:
+  - "/help/_includes/vcl-snippet-delete.md"
+  - "/help/_includes/vcl-snippet-modify.md"
   - "/help/_includes/vcl-snippet-prerequisites.md"
   cloud-guide/cdn/fastly-vcl-custom-snippets.md:
+  - "/help/_includes/vcl-snippet-prerequisites.md"
+  cloud-guide/cdn/fastly-vcl-wordpress.md:
   - "/help/_includes/vcl-snippet-prerequisites.md"
