@@ -21,7 +21,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Technical
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8cf7b01cbd9fe32a89d83db5b4eac7638b834c49">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/8cf7b01cbd9fe32a89d83db5b4eac7638b834c49">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -43,7 +43,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Major update
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7aecdc89a2f4e0103cfe46ed1c2dc7b93566baf5">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/7aecdc89a2f4e0103cfe46ed1c2dc7b93566baf5">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -65,7 +65,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Technical
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a04d056377da4fec9a54503d959f90ebf605de41">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/a04d056377da4fec9a54503d959f90ebf605de41">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -87,7 +87,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Major update
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6d949fbbab631e633ba27641a48829d74856fcaa">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/6d949fbbab631e633ba27641a48829d74856fcaa">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -109,7 +109,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Technical
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/add0d4f3bd91b66fd1bd8f5306ff206076121871">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/add0d4f3bd91b66fd1bd8f5306ff206076121871">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -131,7 +131,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Major update, feedback
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7c0fcf520cd76f25d51f3a644a60132ac6028959">commit</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/7c0fcf520cd76f25d51f3a644a60132ac6028959">commit</a></td>
     </tr>
   </tbody>
 </table>
