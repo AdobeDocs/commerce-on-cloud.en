@@ -56,3 +56,4 @@ The Commerce on cloud infrastructure guide assumes that you have some working kn
 
 - [Adobe Commerce Documentation](https://experienceleague.adobe.com/docs/commerce.html) (Adobe Experience League)—Plan, implement, operate, upgrade, and maintain your [!DNL Commerce] projects
 
+{{$include /help/_includes/templated/whats-new.md}}
