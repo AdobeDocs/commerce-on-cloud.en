@@ -1,11 +1,11 @@
 ---
 metadata:
-  last_updated: 2025-09-03 15:47:54 CDT
+  last_updated: 2025-09-05 15:31:50 CDT
   description: Index of main files and their included files for automatic timestamp
     updates
   total_relationships: 12
   auto_discovered: true
-  discovery_date: 2025-09-03 15:47:54 CDT
+  discovery_date: 2025-09-05 15:31:50 CDT
 relationships:
   cloud-guide/dev-tools/error-reference.md:
   - "/help/_includes/automated/ece-tools-error-codes.md"
