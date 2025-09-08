@@ -23,7 +23,13 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.1.10 {#latest}
+## v1.1.11 {#latest}
+
+Release date: September 08, 2025
+
+-  ![fix icon](../../assets/fix.svg) **WebAPI**-WebAPI improvement CVE-2025-54236.<!-- MCLOUD-14016 -->
+
+## v1.1.10
 
 Release date: August 07, 2025
 
