@@ -18,3 +18,4 @@ This release information details the latest improvements to the Cloud Tools Suit
 When you update to ECE-Tools 2002.1.0 or later, you automatically update to the latest versions of the other packages, which are dependencies for the `ece-tools` package. See [Cloud metapackage](../development/overview.md#cloud-metapackage) for a list of dependencies.
 
 The new version of `ece-tools` (2002.2.0)  is available with PHP version 8.1 and higher (8.2, 8.3) only. Older PHP versions were deprecated (7.4, 7.3, 7.2). You can use previous versions of `ece-tools` with old PHP versions.
+
