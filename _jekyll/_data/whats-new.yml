@@ -2,8 +2,19 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Sep 5 15:31:47 2025
+updated: Wed Sep 10 13:52:49 2025
 entries:
+- description: Added [release notes](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
+    for Cloud Patches package v1.1.11.
+  versions: ''
+  type: major-update
+  date: September 9, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/82
+  merge_commit: 2b6f0790dbfb47472fd06db4a46e36c847873eb7
+  contributor: glo33270
+  membership:
+  labels:
+  - major-update
 - description: Updated [CLI reference](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)
     and [Error messages](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference)
     after ECE-Tools release, v2002.2.7.
