@@ -2,8 +2,20 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Wed Sep 10 13:52:49 2025
+updated: Fri Sep 12 15:32:00 2025
 entries:
+- description: Clarified supported operating systems for `magento-cloud` CLI tool
+    [installation](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview).
+  versions: ''
+  type: feedback
+  date: September 12, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/88
+  merge_commit: abae1d93c8e2a8cd9658c338835806f239c34464
+  contributor: jmatthew
+  membership:
+  labels:
+  - editorial
+  - feedback
 - description: Added [release notes](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
     for Cloud Patches package v1.1.11.
   versions: ''
