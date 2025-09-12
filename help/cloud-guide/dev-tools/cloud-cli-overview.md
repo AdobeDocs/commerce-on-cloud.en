@@ -11,7 +11,7 @@ This tool extends the functionality of the [[!DNL Cloud Console]](../../get-star
 
 >[!NOTE]
 >
->This is a local tool and is only supported on Linux-based operating systems. Windows is not supported. It cannot be installed on the Cloud environment (which is read-only) using the method described on this page. You can only install modules on the Cloud environment through one of the following **deployment workflows**.
+>This is a local tool and is only supported on Unix-based operating systems. Windows is not supported. It cannot be installed on the Cloud environment (which is read-only) using the method described on this page. You can only install modules on the Cloud environment through one of the following **deployment workflows**.
 >
 >- [Pro deployment workflow](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
 >- [Starter deployment workflow](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
