@@ -30,7 +30,7 @@ The PrivateLink service integration for Adobe Commerce on cloud infrastructure p
 - You cannot establish SSH connections using PrivateLink. See [Enable SSH keys](secure-connections.md).
 - Adobe Commerce support does not cover troubleshooting AWS PrivateLink issues beyond initial enablement.
 - Customers are responsible for costs associated with managing their own VPC.
-- **HTTPS protocol limitations by platform:**
+- **HTTPS protocol (port 443) support by platform:**
   - **Azure Private Link**: You cannot use the HTTPS protocol (port 443) to connect to Adobe Commerce on cloud infrastructure due to [Fastly origin cloaking](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html).
   - **AWS PrivateLink**: HTTPS protocol (port 443) connections are supported.
 - PrivateDNS is not available.
