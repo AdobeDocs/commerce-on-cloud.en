@@ -1,14 +1,14 @@
 ---
 title: Upgrade Commerce version
-description: Learn how to upgrade the Adobe Commerce version in the cloud infrastructure project.
+description: Learn how to upgrade the Adobe Commerce version in the cloud infrastructure environment.
 feature: Cloud, Upgrade
 exl-id: 0cc070cf-ab25-4269-b18c-b2680b895c17
 ---
 # Upgrade Commerce version
 
-You can upgrade the Adobe Commerce code base to a newer version. Before upgrading your project, review the [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the _Installation_ guide for the latest software version requirements.
+You can upgrade the Adobe Commerce code base to a newer version. Before upgrading the environment, review the [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the _Installation_ guide for the latest software version requirements.
 
-Depending on your project configuration, your upgrade tasks may include the following:
+ Depending on the environment type (Development/Staging/Production), your upgrade tasks may include the following:
 
 - Update the `.magento/services.yaml` file with new versions for MariaDB (MySQL), OpenSearch, RabbitMQ, and Redis for compatibility with new Adobe Commerce versions.
 - Update the `.magento.app.yaml` file with new settings for hooks and environment variables.
@@ -63,9 +63,9 @@ To update the `composer.json` file for Adobe Commerce version 2.4.4 and later**:
 
 1. Continue with the upgrade process.
 
-## Project backup
+## Environment Backup
 
-We recommend creating a backup of your project before an upgrade. Use the following steps to back up your Integration, Staging, and Production environments.
+We recommend creating a backup of the instance before an upgrade. Use the following steps to back up your Integration, Staging, and Production environments.
 
 **To back up your integration environment database and code**:
 
