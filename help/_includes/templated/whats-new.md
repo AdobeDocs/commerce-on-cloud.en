@@ -113,25 +113,3 @@ This page contains the changes made in the last 60 days. We exclude all minor up
     </tr>
   </tbody>
 </table>
-
-### August 1, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added additional information about <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration">basic authentication</a> in Fastly.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/6d949fbbab631e633ba27641a48829d74856fcaa">commit</a></td>
-    </tr>
-  </tbody>
-</table>
