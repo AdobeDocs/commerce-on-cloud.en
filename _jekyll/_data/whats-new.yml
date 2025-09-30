@@ -2,7 +2,7 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Sep 19 15:31:57 2025
+updated: Fri Sep 26 15:33:13 2025
 entries:
 - description: Clarified supported operating systems for `magento-cloud` CLI tool
     [installation](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview).
