@@ -8,7 +8,7 @@ exl-id: 0cc070cf-ab25-4269-b18c-b2680b895c17
 
 You can upgrade the Adobe Commerce code base to a newer version. Before upgrading the environment, review the [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the _Installation_ guide for the latest software version requirements.
 
- Depending on the environment type (Development/Staging/Production), your upgrade tasks may include the following:
+ Depending on the environment type (Development, Staging, or Production), your upgrade tasks may include the following:
 
 - Update the `.magento/services.yaml` file with new versions for MariaDB (MySQL), OpenSearch, RabbitMQ, and Redis for compatibility with new Adobe Commerce versions.
 - Update the `.magento.app.yaml` file with new settings for hooks and environment variables.
