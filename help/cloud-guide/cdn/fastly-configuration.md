@@ -278,10 +278,10 @@ After you complete the DNS configuration changes, use the [cURL](https://curl.se
    curl -vo /dev/null -H Fastly-Debug:1 --resolve <live-URL-hostname>:443:<live-IP-address>
    ```
 
-1. In the response, verify the [headers](fastly-troubleshooting.md#check-cache-hit-and-miss-response-headers) to ensure that Fastly is working. You should see following unique headers in the response:
+1. In the response, verify the [headers](fastly-troubleshooting.md#check-cache-hit-and-miss-response-headers) to ensure that Fastly is working. For example, you should see following unique headers in the response:
 
    ```http
-   < Fastly-Magento-VCL-Uploaded: yes
+   < Fastly-Magento-VCL-Uploaded: 1.2.228
    < X-Cache: HIT, MISS
    ```
 
