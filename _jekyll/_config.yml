@@ -1,3 +1,6 @@
+---
+repo: AdobeDocs/commerce-on-cloud.en
+url: https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview
 exclude:
   - Rakefile
   - tmp

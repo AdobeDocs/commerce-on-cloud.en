@@ -6,6 +6,8 @@
 #
 # frozen_string_literal: true
 
+require 'adobe-comdox-exl-rake-tasks'
+
 desc 'Generate an Azure regions map.
   Place the input data file in _jekyll/tmp/azure-regions.json.
   The result will be found in _jekyll/tmp/azure-regions.svg.
