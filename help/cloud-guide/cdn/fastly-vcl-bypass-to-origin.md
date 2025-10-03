@@ -81,3 +81,5 @@ Then, inspect the response to troubleshoot issues with the uncached content.
 <!--External link definitions-->
 
 [Fastly VCL reference]: https://docs.fastly.com/vcl/
+
+<!-- Last updated from includes: 2025-01-27 17:16:28 -->
