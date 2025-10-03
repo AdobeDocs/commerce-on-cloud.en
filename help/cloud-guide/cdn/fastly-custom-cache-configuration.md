@@ -8,7 +8,11 @@ exl-id: f6901931-7b3f-40a8-9514-168c6243cc43
 
 After you set up and test the Fastly service in your Staging and Production environments, review and customize cache configuration settings. For example, you can update settings to enable force TLS to redirect HTTP requests to Fastly, update purge settings, and enable basic authentication to password-protect your site during development.
 
-The following sections provide an overview and instructions for configuring some cache settings. Find additional information about the available configuration options in the [Fastly CDN Module for Magento 2](https://github.com/fastly/fastly-magento2/tree/master/Documentation) documentation.
+The following sections provide an overview and instructions for configuring some cache settings.
+
+>[!IMPORTANT]
+>
+>The available Admin options for configuring the Fastly cache depend on which version of the Fastly CDN Module for Magento 2 is installed. Adobe recommends that you [upgrade the Fastly module](fastly-configuration.md#upgrade) the Fastly module in your Staging and Production environments to the latest version. For the latest information, see the [Release Notes for the Fastly CDN for Magento2 module](https://github.com/fastly/fastly-magento2/blob/master/Release-Notes.md).
 
 ## Force TLS
 
