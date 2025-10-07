@@ -28,7 +28,7 @@ Release date: October 08, 2025
 
 -  ![new icon](../../assets/new.svg) **ActiveMQ**-Added support for ActiveMQ.<!-- MCLOUD-13770 -->
 -  ![new icon](../../assets/new.svg) **ActiveMQ**-Added functional tests.<!-- MCLOUD-13813 -->
--  ![fix icon](../../assets/fix.svg) **ECE-tools**-Adjusted versions for UpgradeCest test. <!-- MCLOUD-14027 -->
+
 
 ## v2002.2.7
 
