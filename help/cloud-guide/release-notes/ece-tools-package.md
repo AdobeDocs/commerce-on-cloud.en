@@ -22,7 +22,15 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.2.7 {#latest}
+## v2002.2.8 {#latest}
+
+Release date: October 08, 2025
+
+-  ![new icon](../../assets/new.svg) **ActiveMQ**-Added support for ActiveMQ.<!-- MCLOUD-13770 -->
+-  ![new icon](../../assets/new.svg) **ActiveMQ**-Added functional tests.<!-- MCLOUD-13813 -->
+
+
+## v2002.2.7
 
 Release date: August 07, 2025
 
