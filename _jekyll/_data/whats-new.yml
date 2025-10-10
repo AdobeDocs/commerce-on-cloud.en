@@ -2,8 +2,32 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Oct 3 15:33:57 2025
+updated: Fri Oct 10 15:35:54 2025
 entries:
+- description: Updated [CLI reference](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)
+    after ECE-Tools release, v2002.2.8.
+  versions: ''
+  type: technical
+  date: October 9, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/101
+  merge_commit: eb12c7dae2ec1e2c5bf053ed863ffc89dcf347dd
+  contributor: magedocs
+  membership:
+  labels:
+  - devops
+  - technical
+- description: Updated [CLI reference](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference)
+    after Cloud CLI release, v1.47.0.
+  versions: ''
+  type: technical
+  date: October 8, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/99
+  merge_commit: 3a9777c9164dc4447fbc712c887bdfb9923c562f
+  contributor: magedocs
+  membership:
+  labels:
+  - devops
+  - technical
 - description: Clarified supported operating systems for `magento-cloud` CLI tool
     [installation](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview).
   versions: ''
