@@ -129,7 +129,7 @@ For debugging purposes, it is useful to directly connect to a service instance i
 
 ### Connect from the application
 
-To connect to ActiveMQ running in an application, you need to install a STOMP client library in your PHP application.
+To connect to ActiveMQ running in an application, install a STOMP client library in your PHP application.
 
 ### Connect from your PHP application
 
