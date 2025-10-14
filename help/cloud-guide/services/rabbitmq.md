@@ -14,7 +14,7 @@ The MQF uses [RabbitMQ](https://www.rabbitmq.com/) as the messaging broker, whic
 >
 >Adobe Commerce on cloud infrastructure also supports [ActiveMQ Artemis](activemq.md) as an alternative message queue service using the STOMP protocol.
 
->[!WARNING]
+>[!IMPORTANT]
 >
 >If you prefer using an existing AMQP-based service, like [!DNL RabbitMQ], instead of relying on Adobe Commerce on cloud infrastructure to create it for you, use the [`QUEUE_CONFIGURATION`](../environment/variables-deploy.md#queue_configuration) environment variable to connect it to your site.
 
