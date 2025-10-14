@@ -8,6 +8,24 @@
 
 require 'adobe-comdox-exl-rake-tasks'
 
+desc 'Update cloud packages documentation from the latest composer.lock file.
+  Downloads composer.lock from magento-cloud repository and regenerates documentation.'
+task :update_cloud_packages, [:branch] do |_t, args|
+  args.with_defaults(branch: 'master')
+  branch = args[:branch]
+  
+  puts "Downloading composer.lock from branch: #{branch}".magenta
+  sh "curl --fail --output cloud-composer.lock https://raw.githubusercontent.com/magento/magento-cloud/#{branch}/composer.lock"
+  
+  puts 'Moving file to data directory...'.magenta
+  sh 'mv cloud-composer.lock _data/composer_lock.json'
+  
+  puts 'Rendering documentation...'.magenta
+  sh 'bundle exec rake render'
+  
+  puts '✓ Cloud packages updated successfully!'.green
+end
+
 desc 'Generate an Azure regions map.
   Place the input data file in _jekyll/tmp/azure-regions.json.
   The result will be found in _jekyll/tmp/azure-regions.svg.
