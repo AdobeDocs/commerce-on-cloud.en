@@ -11,7 +11,7 @@ The MQF can use [ActiveMQ Artemis](https://activemq.apache.org/components/artemi
 
 [!DNL ActiveMQ Artemis] is available as an alternative to RabbitMQ for managing message queues. It is particularly useful when you need features specific to ActiveMQ or want to use STOMP protocol.
 
->[!WARNING]
+>[!IMPORTANT]
 >
 >If you prefer using an existing message broker service, like [!DNL ActiveMQ], instead of relying on Adobe Commerce on cloud infrastructure to create it for you, use the [`QUEUE_CONFIGURATION`](../environment/variables-deploy.md#queue_configuration) environment variable to connect it to your site.
 
