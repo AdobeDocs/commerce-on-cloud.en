@@ -21,7 +21,7 @@ OpenSearch enables you to take data from any source, any format, and search and 
 
 >[!TIP]
 >
->For Adobe Commerce on cloud infrastructure projects not using [Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/overview), Adobe recommends setting up [!DNL OpenSearch] to provide a fallback option for third-party search tools. However, [!DNL OpenSearch] and [!DNL Live Search] cannot both be enabled on the same Commerce instance.
+>For Adobe Commerce on Cloud Infrastructure projects not using [Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/overview), Adobe recommends setting up [!DNL OpenSearch] to provide a fallback option for third-party search tools. However, [!DNL OpenSearch] and [!DNL Live Search] cannot both be enabled on the same Commerce instance.
 
 **To enable OpenSearch**:
 
