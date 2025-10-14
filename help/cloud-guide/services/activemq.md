@@ -9,9 +9,7 @@ The [Message Queue Framework (MQF)](https://experienceleague.adobe.com/docs/comm
 
 The MQF can use [ActiveMQ Artemis](https://activemq.apache.org/components/artemis/) as the messaging broker, which provides a scalable platform for sending and receiving messages. It also includes a mechanism for storing undelivered messages. [!DNL ActiveMQ Artemis] supports the STOMP (Streaming Text Oriented Messaging Protocol) protocol for messaging.
 
->[!NOTE]
->
->[!DNL ActiveMQ Artemis] is available as an alternative to RabbitMQ for managing message queues. It is particularly useful when you need features specific to ActiveMQ or want to use STOMP protocol.
+[!DNL ActiveMQ Artemis] is available as an alternative to RabbitMQ for managing message queues. It is particularly useful when you need features specific to ActiveMQ or want to use STOMP protocol.
 
 >[!WARNING]
 >
