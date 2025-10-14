@@ -54,7 +54,7 @@ The MQF can use [ActiveMQ Artemis](https://activemq.apache.org/components/artemi
 
 ## Connect to ActiveMQ for debugging
 
-For debugging purposes, it is useful to directly connect to a service instance in one of the following ways:
+For debugging purposes, you can directly connect to a service instance in one of the following ways:
 
 - Connect from your local development environment
 - Connect from the application
