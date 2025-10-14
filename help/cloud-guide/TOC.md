@@ -125,6 +125,7 @@ feature: Cloud
         + [Server-side includes](routes/server-side-includes.md)
     + Services {#service}
         + [Configure services](services/services-yaml.md)
+        + [ActiveMQ](services/activemq.md)
         + [Elasticsearch](services/elasticsearch.md)
         + [MySQL](services/mysql.md)
         + [OpenSearch](services/opensearch.md)
