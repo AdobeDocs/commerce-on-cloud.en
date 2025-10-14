@@ -377,7 +377,7 @@ When the `MYSQL_USE_SLAVE_CONNECTION` variable is set to `true`, the `synchronou
 -  **Default**—_Not set_
 -  **Version**—Adobe Commerce 2.1.4 and later
 
-Use this environment variable to retain customized AMQP service settings between deployments. For example, if you prefer using an existing message queue service instead of relying on the cloud infrastructure to create it for you, use the `QUEUE_CONFIGURATION` environment variable to connect it to your site:
+Use this environment variable to retain customized queue service settings between deployments. This variable supports both AMQP (for RabbitMQ) and STOMP (for ActiveMQ Artemis) protocols. For example, if you prefer using an existing message queue service instead of relying on the cloud infrastructure to create it for you, use the `QUEUE_CONFIGURATION` environment variable to connect it to your site:
 
 ```yaml
 stage:
@@ -392,6 +392,19 @@ stage:
       mq:
         host: mq.host
         port: 1234
+```
+
+For ActiveMQ Artemis using STOMP protocol:
+
+```yaml
+stage:
+  deploy:
+    QUEUE_CONFIGURATION:
+      stomp:
+        host: activemq.host
+        port: 61616
+        user: username
+        password: password
 ```
 
 {{merge-options}}

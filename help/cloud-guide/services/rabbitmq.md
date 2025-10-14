@@ -10,6 +10,10 @@ The [Message Queue Framework (MQF)](https://experienceleague.adobe.com/docs/comm
 
 The MQF uses [RabbitMQ](https://www.rabbitmq.com/) as the messaging broker, which provides a scalable platform for sending and receiving messages. It also includes a mechanism for storing undelivered messages. [!DNL RabbitMQ] is based on the Advanced Message Queuing Protocol (AMQP) 0.9.1 specification.
 
+>[!NOTE]
+>
+>Adobe Commerce on cloud infrastructure also supports [ActiveMQ Artemis](activemq.md) as an alternative message queue service using the STOMP protocol.
+
 >[!WARNING]
 >
 >If you prefer using an existing AMQP-based service, like [!DNL RabbitMQ], instead of relying on Adobe Commerce on cloud infrastructure to create it for you, use the [`QUEUE_CONFIGURATION`](../environment/variables-deploy.md#queue_configuration) environment variable to connect it to your site.
