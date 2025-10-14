@@ -148,7 +148,7 @@ Fastly API requests are passed through the Fastly extension to get a response fr
 1. In the response, verify the [headers](#check-cache-hit-and-miss-response-headers) to ensure that Fastly is working. You should see following unique headers in the response:
 
    ```http
-   < Fastly-Magento-VCL-Uploaded: yes
+   < Fastly-Magento-VCL-Uploaded: 1.2.222
    < X-Cache: HIT, MISS
    ```
 
