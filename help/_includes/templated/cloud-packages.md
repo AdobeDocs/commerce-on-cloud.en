@@ -107,6 +107,13 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/stomp-php/stomp-php.git">stomp-php/stomp-php</a>
+    </td>
+    <td>library</td>
+    <td>stomp support for PHP</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/wikimedia/less.php.git">wikimedia/less.php</a>
     </td>
     <td>library</td>
@@ -828,7 +835,7 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/PhpGt/Dom.git">phpgt/dom</a>
+      <a href="https://github.com/phpgt/Dom.git">phpgt/dom</a>
     </td>
     <td>library</td>
     <td>Modern DOM API.</td>
@@ -1189,6 +1196,20 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
     </td>
     <td>library</td>
     <td>Symfony polyfill backporting some PHP 8.3+ features to lower PHP versions</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/polyfill-php84.git">symfony/polyfill-php84</a>
+    </td>
+    <td>library</td>
+    <td>Symfony polyfill backporting some PHP 8.4+ features to lower PHP versions</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/polyfill-php85.git">symfony/polyfill-php85</a>
+    </td>
+    <td>library</td>
+    <td>Symfony polyfill backporting some PHP 8.5+ features to lower PHP versions</td>
   </tr>
   <tr>
     <td>
