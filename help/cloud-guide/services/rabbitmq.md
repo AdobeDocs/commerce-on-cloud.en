@@ -143,3 +143,11 @@ When you log in to your PHP container, you enter any `amqp-` command available t
 ### Connect from your PHP application
 
 To connect to RabbitMQ using your PHP application, add a PHP library to your source tree.
+
+# Troubleshooting the [!DNL RabbitMQ] service
+
+Refer to [Unable to connect to RabbitMQ in Adobe Commerce Cloud](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27688)
+
+# Upgrading the [!DNL RabbitMQ] service
+
+The instructions can be found at [Change service version](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version)
