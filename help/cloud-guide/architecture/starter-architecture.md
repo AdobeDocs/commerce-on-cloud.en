@@ -10,6 +10,10 @@ Your Adobe Commerce on cloud infrastructure Starter architecture supports up to 
 
 All environments are in PaaS (Platform as a service) containers. These containers are deployed inside highly restricted containers on a grid of servers. These environments are read-only, accepting deployed code changes from branches pushed from your local workspace. Each environment provides a database and web server.
 
+>[!NOTE] It is not possible to change the permissions on read-only folders in any of the Starter environments.
+>
+>This restriction exists by design to protect the integrity and security of the application. Folder permissions on these read-only file systems cannot be changed — even Support will not be able to modify them.
+
 You can use any development and branching methodology you like. When you get initial access to your project, create a `staging` environment from the `master` environment. Then, create the `integration` environment by branching from `staging`.
 
 ## Starter environment architecture
