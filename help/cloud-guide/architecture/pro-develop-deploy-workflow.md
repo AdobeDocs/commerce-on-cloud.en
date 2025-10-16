@@ -27,6 +27,10 @@ file_put_contents(...): Failed to open stream: Read-only file system
 The disk hosting /app/<cluster_ID> is full
 ```
 
+>[!NOTE] It is not possible to change the permissions on read-only folders in any of the Pro environments.
+>
+>This restriction exists by design to protect the integrity and security of the application. Folder permissions on these read-only file systems cannot be changed — even Support will not be able to modify them.
+
 For more information, see [Pro architecture](pro-architecture.md) for an overview of Pro environments, and see [[!DNL Cloud Console]](../project/overview.md#cloud-console) for an overview of the Pro environments list in the project view.
 
 ## Development workflow
