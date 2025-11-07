@@ -30,7 +30,6 @@ The cloud infrastructure supports and deploys the following services:
 - [MySQL](mysql.md)
 - [Redis](redis.md)
 - [RabbitMQ](rabbitmq.md)
->[!NOTE] After RabbitMQ has been upgraded, you will need to trigger a full deployment to ensure that your custom message queues are recreated in RabbitMQ.
 - [Elasticsearch](elasticsearch.md)
 - [OpenSearch](opensearch.md)
 
