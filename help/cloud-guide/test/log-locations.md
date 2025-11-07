@@ -28,6 +28,37 @@ The value of `<project-ID>` depends on the project and whether the environment i
 
 Using that example, the deploy log is: `/var/log/platform/yw1unoukjcawe_stg/deploy.log`
 
+### Finding specific error log records
+
+When you encounter an error with a specific log record number (such as `475a3bca674d3bbc77b35973d028e6da1cbee7404888bfb113daffc6b2f4a7b9`), you can locate the record by querying Commerce application server remote environment logs using the following methods:
+
+>[!NOTE]
+>
+>For instructions on accessing remote environment logs for your Commerce application using Secure Shell (SSH), see [Secure connections to remote environments](../development/secure-connections.md). 
+
+#### Method 1: Search using grep
+
+```bash
+# Search for the specific error record in all log files
+magento-cloud ssh -e <environment-ID> "grep -r '475a3bca674d3bbc77b35973d028e6da1cbee7404888bfb113daffc6b2f4a7b9' /var/log/"
+
+# Search in specific log files
+magento-cloud ssh -e <environment-ID> "grep '475a3bca674d3bbc77b35973d028e6da1cbee7404888bfb113daffc6b2f4a7b9' /var/log/exception.log"
+```
+
+#### Method 2: Search in archived logs
+
+If the error occurred in the past, check archived log files:
+
+```bash
+# Search in compressed log files
+magento-cloud ssh -e <environment-ID> "find /var/log -name '*.gz' -exec zgrep '475a3bca674d3bbc77b35973d028e6da1cbee7404888bfb113daffc6b2f4a7b9' {} \;"
+```
+
+#### Method 3: Use New Relic (Pro environments)
+
+For Pro Production and Staging environments, use New Relic Logs to search for specific error records. For details, see [New Relic log management](../monitor/log-management.md).
+
 ### View remote environment logs
 
 Most logs include events that occur in the remote environment. For Pro, there are multiple nodes and each node has unique logs. Use the following to see a list of all hosts:
@@ -137,7 +168,7 @@ Sample response:
 ```
 Reading log file projectID-branchname-ID--mymagento@ssh.zone.magento.cloud:/var/log/'deploy.log'
 
-[2023-04-24 18:58:03.080678] Launching command 'b'php ./vendor/bin/ece-tools run scenario/deploy.xml\n''.
+[2023-04-24 18:58:03.080678] Launching command 'b'php ./vendor/bin/ece-tools run scenario/deploy.xml\\n''.
 
 [2023-04-24T18:58:04.129888+00:00] INFO: Starting scenario(s): scenario/deploy.xml (magento/ece-tools version: 2002.1.14, magento/magento2-base version: 2.4.6)
 [2023-04-24T18:58:04.364714+00:00] NOTICE: Starting pre-deploy.
