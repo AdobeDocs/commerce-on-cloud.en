@@ -19,13 +19,7 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v1.4.6 {#latest}
-
-Release date: November 06, 2025
-
--  ![fix icon](../../assets/fix.svg) **Symfony package**-Added support for the latest Symfony YAML packages.<!-- MCLOUD-14020 -->
-
-## v1.4.5
+## v1.4.5 {#latest}
 
 Release date: October 08, 2025
 
