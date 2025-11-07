@@ -30,7 +30,7 @@ Fastly provides the following services to optimize and secure content delivery o
 
   - [Web Application Firewall](fastly-waf-service.md) (WAF)—Managed web application firewall service that provides PCI-compliant protection to block malicious traffic before it can damage your production Adobe Commerce on cloud infrastructure sites and network. The WAF service is available on Pro and Starter Production environments only.
 
-  - [Distributed Denial of Service (DDoS) protection](#ddos-protection)—Built-in DDoS protection against common attacks like Ping of Death, Smurf attacks, and other ICMP-based flood attacks.
+  - [Distributed Denial of Service (DDoS) protection](#ddos-protection)—Built-in DDoS protection against common layer 3 and 4 attacks like Ping of Death, Smurf attacks, and other ICMP-based flood attacks. The built-in protection does not include protection against Layer 7 attacks. See [DDoS protection](#ddos-protection).
 
   - [SSL/TLS certificates](fastly-configuration.md#provision-ssltls-certificates)—The Fastly service requires an SSL/TLS certificate to serve secure traffic over HTTPS.
   
@@ -112,7 +112,9 @@ DDOS protection is built in to the Fastly CDN service. Once you have enabled Fas
 
   Fastly manages TCP level attacks at the cache layer. This strategy provides the necessary scale and context per client to deal with a SYN flood attack and its many variants, including TCP stack, resource attacks, and TLS attacks within Fastly systems.
 
-- Fastly also provides protection against Layer 7 attacks. If your store is experiencing performance issues and you suspect a Layer 7 DDoS attack, submit an Adobe Commerce Support ticket. Adobe can create and apply custom rules to the Fastly service to inspect for and filter out malicious requests based on header, payload, or a combination of attributes that identify the attack traffic. See [Checking for DDoS attacks][] and [How to block malicious traffic] in the *Adobe Commerce Help Center*.
+>[!NOTE]
+>
+>Protection against Layer 7 attacks is not covered by the Fastly CDN service integrated with Adobe Commerce. For tips on protecting against Layer 7 attacks, see [Checking for DDoS Attacks](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli) and [How to block malicious attacks](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level) in the *Adobe Commerce Knowledge Base*. 
 
 <!--Link definitions-->
 
