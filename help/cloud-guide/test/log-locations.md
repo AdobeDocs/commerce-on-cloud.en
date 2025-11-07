@@ -34,7 +34,7 @@ When you encounter an error with a specific log record number (such as `475a3bca
 
 >[!NOTE]
 >
->For instructions on accessing remote environment logs for your Commerce application using Secure Shell (SSH), see [Secure connections to remote environments](./development/secure-connections.md). 
+>For instructions on accessing remote environment logs for your Commerce application using Secure Shell (SSH), see [Secure connections to remote environments](../development/secure-connections.md). 
 
 #### Method 1: Search using grep
 
@@ -57,7 +57,7 @@ magento-cloud ssh -e <environment-ID> "find /var/log -name '*.gz' -exec zgrep '4
 
 #### Method 3: Use New Relic (Pro environments)
 
-For Pro Production and Staging environments, use New Relic Logs to search for specific error records. For details, see [New Relic log management](./monitor/log-management.md).
+For Pro Production and Staging environments, use New Relic Logs to search for specific error records. For details, see [New Relic log management](../monitor/log-management.md).
 
 ### View remote environment logs
 
