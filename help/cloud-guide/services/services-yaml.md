@@ -34,6 +34,10 @@ The cloud infrastructure supports and deploys the following services:
 - [Elasticsearch](elasticsearch.md)
 - [OpenSearch](opensearch.md)
 
+>[!NOTE]
+>
+>After upgrading to a new version of RabbitMQ, trigger a full deployment to ensure that your custom message queues are recreated in RabbitMQ.
+
 
 You can view default versions and disk values in the current, [default `services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). The following sample shows the `mysql`, `redis`, `opensearch` or `elasticsearch`, `rabbitmq`, and `activemq-artemis` services defined in the `services.yaml` configuration file:
 
