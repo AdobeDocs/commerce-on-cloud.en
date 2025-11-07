@@ -2,8 +2,21 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Oct 31 15:37:20 2025
+updated: Fri Nov 7 17:20:40 2025
 entries:
+- description: The retention period for archived log files for Commerce on cloud projects
+    is now 30 days. See [View and Manage Logs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations)
+    in the Commerce on Cloud Guide.
+  versions: ''
+  type: technical, feedback
+  date: November 6, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/118
+  merge_commit: 1aa8f5e1b64ae40330d9f4b499ceb42d7725d432
+  contributor: meker
+  membership:
+  labels:
+  - technical
+  - feedback
 - description: Updated [CLI reference](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)
     after ECE-Tools release, v2002.2.8.
   versions: ''
