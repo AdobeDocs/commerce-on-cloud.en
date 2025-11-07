@@ -33,7 +33,7 @@ You can add users and assign roles using the `magento-cloud` CLI or the [!DNL Cl
 
 **Prerequisites:**
 
-- A registered user with an Adobe ID. A user must [register for an Adobe account](https://account.adobe.com) and then [initialize their Cloud account](https://console.adobecommerce.com) before you can add them to a Cloud project.
+- A registered user with an Adobe ID. A user must [register for an Adobe account](https://account.adobe.com) and then initialize their [Cloud account](https://console.adobecommerce.com) by visiting [https://console.adobecommerce.com](https://console.adobecommerce.com) before you can add them to a Cloud project.
 - A user assigned the **Admin** role cannot manage users with the `magento-cloud` CLI. Only users that are granted the **Account Owner** role can manage users.
 
 >[!ENDSHADEBOX]
