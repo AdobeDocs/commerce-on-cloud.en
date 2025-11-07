@@ -29,7 +29,7 @@ The disk hosting /app/<cluster_ID> is full
 
 >[!NOTE]
 >
->This restriction protects the integrity and security of the application. Folder permissions on these read-only file systems cannot be changed — even Support cannot modify them. Any changes must be made from a branch in your local development environment and pushed to the application environment. For more information, see [Pro architecture](pro-architecture.md) for an overview of Pro environments, and see [[!DNL Cloud Console]](../project/overview.md#cloud-console) for an overview of the Pro environments list in the project view.
+>It is not possible to change the permissions on read-only folders in any of the Pro environments. This restriction protects the integrity and security of the application. Folder permissions on these read-only file systems cannot be changed — even Support cannot modify them. Any changes must be made from a branch in your local development environment and pushed to the application environment. For more information, see [Pro architecture](pro-architecture.md) for an overview of Pro environments, and see [[!DNL Cloud Console]](../project/overview.md#cloud-console) for an overview of the Pro environments list in the project view.
 
 ## Development workflow
 
