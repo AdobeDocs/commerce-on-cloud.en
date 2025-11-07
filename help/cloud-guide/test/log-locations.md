@@ -30,7 +30,11 @@ Using that example, the deploy log is: `/var/log/platform/yw1unoukjcawe_stg/depl
 
 ### Finding specific error log records
 
-When you encounter an error with a specific log record number (such as `475a3bca674d3bbc77b35973d028e6da1cbee7404888bfb113daffc6b2f4a7b9`), you can locate it using the following methods:
+When you encounter an error with a specific log record number (such as `475a3bca674d3bbc77b35973d028e6da1cbee7404888bfb113daffc6b2f4a7b9`), you can locate the record by querying Commerce application server remote environment logs using the following methods:
+
+>[!NOTE]
+>
+>For instructions on configuring secure access to access the Commerce application server environment, see [Secure connections to remote environments](./development/secure-connections.md). 
 
 #### Method 1: Search using grep
 
