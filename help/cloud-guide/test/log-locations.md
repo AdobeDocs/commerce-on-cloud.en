@@ -34,7 +34,7 @@ When you encounter an error with a specific log record number (such as `475a3bca
 
 >[!NOTE]
 >
->For instructions on configuring secure access to access the Commerce application server environment, see [Secure connections to remote environments](./development/secure-connections.md). 
+>For instructions on accessing remote environment logs for your Commerce application using Secure Shell (SSH), see [Secure connections to remote environments](./development/secure-connections.md). 
 
 #### Method 1: Search using grep
 
