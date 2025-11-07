@@ -57,7 +57,7 @@ magento-cloud ssh -e <environment-ID> "find /var/log -name '*.gz' -exec zgrep '4
 
 #### Method 3: Use New Relic (Pro environments)
 
-For Pro Production and Staging environments, use New Relic Logs to search for specific error records. For details, see [New Relic log management](./monitor/new-relic/log-management.md).
+For Pro Production and Staging environments, use New Relic Logs to search for specific error records. For details, see [New Relic log management](./monitor/log-management.md).
 
 ### View remote environment logs
 
