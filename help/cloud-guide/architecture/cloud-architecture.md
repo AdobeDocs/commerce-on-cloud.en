@@ -63,6 +63,7 @@ You can configure the following services:
 - [MySQL](../services/mysql.md)
 - [Redis](../services/redis.md)
 - [RabbitMQ](../services/rabbitmq.md)
+- [ActiveMQ](../services/activemq.md)
 - [Elasticsearch](../services/elasticsearch.md)
 - [OpenSearch](../services/opensearch.md)
 

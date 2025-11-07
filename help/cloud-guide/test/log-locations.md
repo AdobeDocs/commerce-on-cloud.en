@@ -254,7 +254,7 @@ For Pro Staging and Production environments, the Deploy, Post-deploy, and Cron l
 
 ### Archived log files
 
-The application logs are compressed and archived once per day and kept for **365 days** by default (for Pro Staging and Production clusters) - and log rotation is not available in all integration/Starter environments. The compressed logs are named using a unique ID that corresponds to the `Number of Days Ago + 1`. For example, on Pro production environments a PHP access log for 21 days in the past is stored and named as follows:
+The application logs are compressed and archived once per day and kept for **30 days** by default (for Pro Staging and Production clusters) - and log rotation is not available in all integration/Starter environments. The compressed logs are named using a unique ID that corresponds to the `Number of Days Ago + 1`. For example, on Pro production environments a PHP access log for 21 days in the past is stored and named as follows:
 
 ```
 /var/log/platform/<project-ID>/php.access.log.22.gz

@@ -19,7 +19,13 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v1.4.4 {#latest}
+## v1.4.5 {#latest}
+
+Release date: October 08, 2025
+
+-  ![new icon](../../assets/new.svg) **ActiveMQ**—Added ActiveMQ support in cloud-docker with functional tests.<!-- MCLOUD-13771 -->
+
+## v1.4.4 
 
 Release date: August 07, 2025
 
