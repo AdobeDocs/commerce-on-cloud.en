@@ -55,16 +55,6 @@ magento-cloud ssh -e <environment-ID> "find /var/log -name '*.gz' -exec zgrep '4
 
 For Pro Production and Staging environments, use New Relic Logs to search for specific error records. For details, see [New Relic log management](./monitor/new-relic/log-management.md).
 
-### Understanding error log records
-
-Error log records typically contain:
-
-- **Error ID**: A unique identifier for the error
-- **Timestamp**: When the error occurred
-- **Error message**: Description of what went wrong
-- **Stack trace**: Technical details about where the error occurred
-- **Context**: Additional information about the system state
-
 ### View remote environment logs
 
 Most logs include events that occur in the remote environment. For Pro, there are multiple nodes and each node has unique logs. Use the following to see a list of all hosts:
