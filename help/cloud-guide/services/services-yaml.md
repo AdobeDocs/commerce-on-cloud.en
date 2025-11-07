@@ -12,7 +12,6 @@ The `services.yaml` file defines the services supported and used by Adobe Commer
 >
 >The `.magento/services.yaml` file is managed locally in the `.magento` directory of your project. The configuration is accessed during the build process for defining the required service versions in the integration environment only, and gets removed once the deployment has been completed, so you will not find them on the server.
 
-
 The deploy script uses the configuration files in the `.magento` directory to provision the environment with the configured services. A service becomes available to your application if it is included in the [`relationships`](../application/properties.md#relationships) property of the `.magento.app.yaml` file. The `services.yaml` file contains the _type_ and _disk_ values. Service type defines the service _name_ and _version_.
 
 Changing a service configuration causes a deployment to provision the environment with the updated services, which affects the following environments:
