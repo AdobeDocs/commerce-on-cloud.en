@@ -128,7 +128,9 @@ There are no hard limits on the number of emails that can be sent in the Product
 
    If you see any `authentication failed` log entries and the **Email sending reputation** is at a minimum of 95, you can [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) to request a credit allotment increase.
 
->[!NOTE] The var/log/mail.log file is a *running log*. As new entries are added, older entries will be removed from the file over time, and only the most recent log activity will be available. The older log entries are not archived or retained once removed from mail.log.
+>[!NOTE]
+>
+>The `var/log/mail.log` file is a *running log*. As new entries are added, older entries are removed from the file over time. Only the most recent log activity is available in the log. The older log entries are not archived or retained once removed from mail.log.
 
 ### Email sending reputation
 
