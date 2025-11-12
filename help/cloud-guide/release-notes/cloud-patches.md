@@ -25,7 +25,7 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 ## v1.1.12 {#latest}
 
-Release date: November 06, 2025
+Release date: November 13, 2025
 
 -  ![fix icon](../../assets/fix.svg) **Symfony package**-Added support for the latest Symfony YAML packages.<!-- MCLOUD-14020 -->
 -  ![fix icon](../../assets/fix.svg) **Patch**-Fix for broken checkout (AC-15867) & newrelic (ACSD-68617).<!-- MCLOUD-14191 -->

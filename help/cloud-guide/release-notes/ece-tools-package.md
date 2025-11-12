@@ -24,7 +24,7 @@ The release notes include:
 
 ## v2002.2.9 {#latest}
 
-Release date: November 06, 2025
+Release date: November 13, 2025
 
 -  ![fix icon](../../assets/fix.svg) **Symfony package**-Added support for the latest Symfony YAML packages.<!-- MCLOUD-14020 -->
 -  ![fix icon](../../assets/fix.svg) **Fixed cache cleaning for active services** – Added active service validation.<!-- MCLOUD-14166 -->
