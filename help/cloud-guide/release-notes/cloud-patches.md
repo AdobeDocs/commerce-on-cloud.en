@@ -28,8 +28,8 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 Release date: November 13, 2025
 
 -  ![fix icon](../../assets/fix.svg) **Symfony package**-Added support for the latest Symfony YAML packages.<!-- MCLOUD-14020 -->
--  ![fix icon](../../assets/fix.svg) **Patch**-Fix for broken checkout (AC-15867) & newrelic (ACSD-68617).<!-- MCLOUD-14191 -->
--  ![fix icon](../../assets/fix.svg) **Improved Category View** - MCLOUD-13752: Improve category view<!-- MCLOUD-13752 | MCLOUD-14139  - -->
+- ![fix icon](../../assets/fix.svg) **Patch** – Fix for the issue described in [KB article KA-27997](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997) (tickets AC-15867 & ACSD-68617).<!-- MCLOUD-14191 -->
+- ![fix icon](../../assets/fix.svg) **Improved Category View** - MCLOUD-13752: Improve category view.<!-- MCLOUD-13752 | MCLOUD-14139  -->
 
 ## v1.1.11 
 
