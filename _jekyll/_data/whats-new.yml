@@ -2,7 +2,7 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Nov 7 17:20:40 2025
+updated: Fri Nov 14 15:34:34 2025
 entries:
 - description: The retention period for archived log files for Commerce on cloud projects
     is now 30 days. See [View and Manage Logs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations)
