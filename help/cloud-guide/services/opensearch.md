@@ -25,11 +25,11 @@ OpenSearch enables you to take data from any source, any format, and search and 
 
 **To enable OpenSearch**:
 
-1. For integration environments, add the `opensearch` service to the `.magento/services.yaml` file with the appropriate version and allocated disk space in MB. In this case, version 2 is appropriate. The minor version is not required.
+1. For integration environments, add the `opensearch` service to the `.magento/services.yaml` file with the appropriate version and allocated disk space in MB. In this case, version 3 is appropriate. The minor version is not required.
 
    ```yaml
    opensearch:
-       type: opensearch:2
+       type: opensearch:3
        disk: 1024
    ```
 
@@ -129,7 +129,7 @@ Service version and compatibility support is determined by versions tested and d
    | path                                     | null                                                   |
    | query                                    |                                                        |
    | password                                 | null                                                   |
-   | type                                     | opensearch:2                                           |
+   | type                                     | opensearch:3                                           |
    | public                                   | false                                                  |
    | host_mapped                              | false                                                  |
    ```
@@ -183,7 +183,7 @@ Optionally, you can add plugins for OpenSearch by adding the `configuration:plug
 
 ```yaml
 opensearch:
-    type: opensearch:2
+    type: opensearch:3
     disk: 1024
     configuration:
         plugins:
