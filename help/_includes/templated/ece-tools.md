@@ -1,6 +1,6 @@
 # ece-tools
 
-**Version**: 2002.2.8
+**Version**: 2002.2.9
 
 This reference contains 34 commands available through the `ece-tools` command-line tool.
 The initial list is auto generated using the `ece-tools list` command at Adobe Commerce on cloud infrastructure.
