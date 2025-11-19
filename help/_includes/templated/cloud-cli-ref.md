@@ -1917,7 +1917,7 @@ The environment ID. Use "." to select the project's default environment.
 magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
-Update a domain - not available on Cloud Pro plan
+Update a domain. This option is not available for Cloud Pro plan projects.
 
 ### Arguments
 
