@@ -213,3 +213,7 @@ After establishing an SSH tunnel, you can connect to services as if running loca
 ```bash
 mysql --host=127.0.0.1 --user='<database-username>' --pass='<user-password>' --database='<name>' --port='<port>'
 ```
+
+#### Obtain the Mysql credentials
+
+Scroll to the section **To create a database dump in the Staging or Production environment** under [Back up the database](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/database-dump) - this indicates how you can list the environment relationships and database login information.
