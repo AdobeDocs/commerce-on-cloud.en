@@ -1871,7 +1871,7 @@ The environment ID. Use "." to select the project's default environment.
 magento-cloud domains [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
-Get a list of all domains - not available on Cloud Pro plan
+Get a list of all domains. This option is not available for Cloud Pro plan projects.
 
 ### Options
 
