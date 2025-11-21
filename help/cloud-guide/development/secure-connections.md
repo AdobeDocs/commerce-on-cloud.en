@@ -214,6 +214,6 @@ After establishing an SSH tunnel, you can connect to services as if running loca
 mysql --host=127.0.0.1 --user='<database-username>' --pass='<user-password>' --database='<name>' --port='<port>'
 ```
 
-#### Obtain the Mysql credentials
+#### Obtain MySQL credentials
 
-Scroll to the section **To create a database dump in the Staging or Production environment** under [Back up the database](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/database-dump) - this indicates how you can list the environment relationships and database login information.
+Retrieve the MySQL login credentials from the the `database` properties in the `$MAGENTO_CLOUD_RELATIONSHIPS` environment variable. For instructions on retrieving the information in a local or remote environment, see [Service relationships](../services/services-yaml.md#service-relationships).
