@@ -2,8 +2,32 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Nov 14 15:34:34 2025
+updated: Fri Nov 21 15:32:43 2025
 entries:
+- description: 'Updates the [Cloud Patches 1.1.12 release notes](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
+    to include the fix for the "Checkout fails when JS minification and bundling are
+    enabled: issue.'
+  versions: ''
+  type: technical
+  date: November 17, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/124
+  merge_commit: d07be1a20fa95e2a79534e364e7620a2f856fc0d
+  contributor: glo33270
+  membership:
+  labels:
+  - technical
+- description: Updated [CLI reference](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)
+    after ECE-Tools release, v2002.2.9.
+  versions: ''
+  type: technical
+  date: November 17, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/125
+  merge_commit: 5f088df3e7bc35cc1d7fa93d06b5fa9968802572
+  contributor: magedocs
+  membership:
+  labels:
+  - devops
+  - technical
 - description: The retention period for archived log files for Commerce on cloud projects
     is now 30 days. See [View and Manage Logs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations)
     in the Commerce on Cloud Guide.
