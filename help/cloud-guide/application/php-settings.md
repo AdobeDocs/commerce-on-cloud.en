@@ -75,7 +75,7 @@ register_argc_argv => On => On
 
 >[!WARNING]
 >
->If you use Cloud Docker for Commerce for local development, see [Docker service containers](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#fpm-container) for information about using a custom `php.ini` file in a Docker environment.
+>If you use Cloud Docker for Commerce for local development, see [Docker service containers](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#fpm-container) for information about using a custom `php.ini` file in a Docker environment.
 
 ## Enable extensions
 

@@ -82,11 +82,11 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
 -  ![new icon](../../assets/new.svg) **Docker Updates**—
 
-   -  ![new icon](../../assets/new.svg) You can now perform functional testing using the `ece-tools` package in the Docker environment. See [application testing](https://developer.adobe.com/commerce/cloud-tools/docker/test/code-testing/).<!-- MAGECLOUD-3129/3684 -->
+   -  ![new icon](../../assets/new.svg) You can now perform functional testing using the `ece-tools` package in the Docker environment. See [application testing](https://developer.adobe.com/commerce/cloud-tools/docker/test/code-testing).<!-- MAGECLOUD-3129/3684 -->
 
    -  ![new icon](../../assets/new.svg) Added support for configuring PHP modules using the `.magento.app.yaml` file. Any [PHP Extensions specified in the `.magento.app.yaml` file](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) become available in the Docker PHP containers.<!-- MAGECLOUD-3357 -->
 
-   -  ![new icon](../../assets/new.svg) There are new commands available to improve the Docker command line experience. See the [`bin/magento-docker` section of the Docker reference](https://developer.adobe.com/commerce/cloud-tools/docker/quick-reference/#cloud-docker-cli).<!-- MAGECLOUD-3569 -->
+   -  ![new icon](../../assets/new.svg) There are new commands available to improve the Docker command line experience. See the [`bin/magento-docker` section of the Docker reference](https://developer.adobe.com/commerce/cloud-tools/docker/quick-reference#cloud-docker-cli).<!-- MAGECLOUD-3569 -->
 
    -  ![new icon](../../assets/new.svg) Added the ability to use Mutagen.io to synchronize files during development between the local host and Docker.<!-- MAGECLOUD-3559 -->
 
@@ -140,7 +140,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  ![new icon](../../assets/new.svg) Now, the Docker environment supports the cron configuration defined in the [crons property of the .magento.app.yaml file](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property).<!-- MAGECLOUD-3150 -->
 
-   -  ![new icon](../../assets/new.svg) **New Docker Container**—Added a [TLS termination proxy container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#varnish-container) to facilitate the Varnish SSL termination over HTTPS.<!-- MAGECLOUD-2890 -->
+   -  ![new icon](../../assets/new.svg) **New Docker Container**—Added a [TLS termination proxy container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#varnish-container) to facilitate the Varnish SSL termination over HTTPS.<!-- MAGECLOUD-2890 -->
 
    -  ![new icon](../../assets/new.svg) **New Docker Image**—Added a Node.js image to support Gulp and other capabilities, such as Jasmine JS Unit Testing.<!-- MAGECLOUD-3345 -->
 
@@ -206,7 +206,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  You can send mail from your Docker environment using the `sendmail` service.<!-- MAGECLOUD-2907 -->
 
-   -  Added the ability to [configure Xdebug](https://developer.adobe.com/commerce/cloud-tools/docker/test/configure-xdebug/) to debug in the Cloud Docker environment.<!-- MAGECLOUD-2891 -->
+   -  Added the ability to [configure Xdebug](https://developer.adobe.com/commerce/cloud-tools/docker/configure-xdebug) to debug in the Cloud Docker environment.<!-- MAGECLOUD-2891 -->
 
    -  Fixed an issue with web service permissions when generating the `docker-compose.yml` file.<!-- MAGECLOUD-2883 -->
 
@@ -264,7 +264,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  Added PHP 7.2 image—Added support for PHP 7.2 in Cloud Docker; updated the [Launch Docker configuration](https://developer.adobe.com/commerce/cloud-tools/docker/configure/) to include the `docker:build --php` option to specify the version of PHP compatible with your version of Adobe Commerce.<!-- MAGECLOUD-2799 -->
 
-   -  Added a [Cron container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/cli/#cron-container) based on the PHP-CLI image.<!-- MAGECLOUD-2565 -->
+   -  Added a [Cron container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/cli#cron-container) based on the PHP-CLI image.<!-- MAGECLOUD-2565 -->
 
    -  Added the following services to the Docker build:
 
@@ -336,7 +336,7 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 
    -  **Redis service support**—Added a Redis image, which is deployed to a Docker container and configured automatically to work with your Docker installation.<!--MAGECLOUD--2442-->
 
-   -  Now you have the DB dump capability when using the Cloud Docker [database container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#database-container). Also, you can [share files](https://developer.adobe.com/commerce/cloud-tools/docker/containers/#sharing-data-between-host-machine-and-container) between a host machine and a container using the `docker/mnt` directory.<!-- MAGECLOUD-2577 -->
+   -  Now you have the DB dump capability when using the Cloud Docker [database container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#database-container). Also, you can [share files](https://developer.adobe.com/commerce/cloud-tools/docker/containers#sharing-data-between-host-machine-and-container) between a host machine and a container using the `docker/mnt` directory.<!-- MAGECLOUD-2577 -->
 
    -  **Varnish service support**— Added a Varnish image, which is deployed automatically to a Docker container. After deployment, you can manually configure Varnish following Adobe Commerce best practices. See [Configure and use Varnish](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish).<!--MAGECLOUD--2358-->
 
