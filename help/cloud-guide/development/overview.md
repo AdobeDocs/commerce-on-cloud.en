@@ -63,7 +63,7 @@ The main packages of this metapackage are the following:
 
 You can use the Cloud Docker for Commerce tool to emulate the Adobe Commerce on cloud infrastructure production and development environments for local development. Cloud Docker for Commerce does not require PHP and Composer to be installed locally.
 
-- [Local development with Cloud Docker](https://developer.adobe.com/commerce/cloud-tools/docker/setup/) in the Adobe Developer site
+- [Local development with Cloud Docker](https://developer.adobe.com/commerce/cloud-tools/docker/setup) in the Adobe Developer site
 - [Docker architecture and common commands](../dev-tools/cloud-docker.md)
 - [Cloud Docker release notes](../release-notes/cloud-docker.md)
 
