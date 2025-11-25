@@ -45,7 +45,7 @@ Release date: August 07, 2025
 
 Release date: June 03, 2025
 
--  ![fix icon](../../assets/fix.svg) **Improved compatibility with 2.4.8**-Updated 3rd-party libraries for better compatibility with 2.4.8<!-- MCLOUD-13707     - -->
+-  ![fix icon](../../assets/fix.svg) **Improved compatibility with 2.4.8**-Updated 3rd-party libraries for better compatibility with 2.4.8<!-- MCLOUD-13707- -->
 
 ## v1.4.2 
 
@@ -385,11 +385,11 @@ Release date: Feb 5, 2020
 
    -  ![new icon](../../assets/new.svg) **Web container**—
 
-      -  ![new icon](../../assets/new.svg) **Customize NGINX configuration**—Added the capability to mount a custom `nginx.conf` file to the Cloud Docker for Commerce environment. See [Web container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service).<!--MAGECLOUD-4204-->
+      -  ![new icon](../../assets/new.svg) **Customize NGINX configuration**—Added the capability to mount a custom `nginx.conf` file to the Cloud Docker for Commerce environment. See [Web container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#web-container).<!--MAGECLOUD-4204-->
 
       -  ![new icon](../../assets/new.svg) **Auto-generated NGINX certificates**—The Docker configuration file now includes the configuration to auto-generate NGINX certificates for the Web container.<!--MAGECLOUD-4258-->
 
-   -  ![new icon](../../assets/new.svg) **New Selenium container**—Added a [Selenium container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service) to support Adobe Commerce application testing using the Magento Functional Testing Framework (MFTF).<!--MAGECLOUD-4040-->
+   -  ![new icon](../../assets/new.svg) **New Selenium container**—Added a [Selenium container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#selenium-container) to support Adobe Commerce application testing using the Magento Functional Testing Framework (MFTF).<!--MAGECLOUD-4040-->
 
    -  ![new icon](../../assets/new.svg) **[!DNL RabbitMQ] version support**—Updated the [!DNL RabbitMQ] container configuration to support [!DNL RabbitMQ] version 3.8.<!--MAGECLOUD-4674-->
 
@@ -397,7 +397,7 @@ Release date: Feb 5, 2020
 
    -  ![new icon](../../assets/new.svg) **TLS container**—
 
-      -  ![new icon](../../assets/new.svg) **Updated the container base image to use official image**—The [Cloud TLS container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service) image is now based on the official `debian:jessie` Docker image.—<!--MAGECLOUD-4163-->
+      -  ![new icon](../../assets/new.svg) **Updated the container base image to use official image**—The [Cloud TLS container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#tls-container) image is now based on the official `debian:jessie` Docker image.—<!--MAGECLOUD-4163-->
 
       -  ![new icon](../../assets/new.svg) **Added support for the [Pound TLS Termination Proxy]**—The [Pound configuration file](https://github.com/magento/magento-cloud-docker/blob/1.0/images/tls/) adds the following ENV variables to customize the Docker configuration for the TLS container:
 
@@ -409,7 +409,7 @@ Release date: Feb 5, 2020
 
    -  ![new icon](../../assets/new.svg) **Varnish container**—
 
-      -  ![new icon](../../assets/new.svg) **Updated the container base image to use official image**—The [Cloud Varnish container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service) is now based on the official `centos` Docker image.<!--MAGECLOUD-4163-->
+      -  ![new icon](../../assets/new.svg) **Updated the container base image to use official image**—The [Cloud Varnish container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#varnish-container) is now based on the official `centos` Docker image.<!--MAGECLOUD-4163-->
 
       -  ![new icon](../../assets/new.svg) **Improved default timeout configuration**-Added `.first_byte_timeout` and `.between_bytes_timeout` configuration to the Varnish container. Both timeout values default to `300s` (5 minutes). [Fix submitted by Mathew Beane from Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/78)<!--MAGECLOUD-4460-->
 
@@ -431,13 +431,13 @@ Release date: Feb 5, 2020
 
    -  ![new icon](../../assets/new.svg) **Added a service configuration option to expose the database port to the host**—Use the `--expose-db-port= [Fix submitted by Adarsh Manickam from Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/101).<PORT>` option to expose the database port to the host when building the `docker-compose.yml` file: `bin/ece-docker build:compose --expose-db-port=<PORT>`<!--MAGECLOUD-4454-->
 
-   -  ![new icon](../../assets/new.svg) **New post-deploy command**—Previously, the post-deploy hooks defined in the `.magento.app.yaml` file ran automatically after you deployed Adobe Commerce to a Cloud Docker container using the `cloud-deploy` command. Now, you must issue a separate `cloud-post-deploy` command to run the post-deploy hooks after you deploy. See the updated launch instructions for [developer](https://developer.adobe.com/commerce/cloud-tools/docker/deploy) and [production](https://developer.adobe.com/commerce/cloud-tools/docker/deploy) mode.<!--MAGECLOUD-3996-->
+   -  ![new icon](../../assets/new.svg) **New post-deploy command**—Previously, the post-deploy hooks defined in the `.magento.app.yaml` file ran automatically after you deployed Adobe Commerce to a Cloud Docker container using the `cloud-deploy` command. Now, you must issue a separate `cloud-post-deploy` command to run the post-deploy hooks after you deploy. See the updated launch instructions for [developer](https://developer.adobe.com/commerce/cloud-tools/docker/deploy) and [production](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/production-mode) mode.<!--MAGECLOUD-3996-->
 
    -  ![new icon](../../assets/new.svg) Added the `--rm` option to `./bin/magento-docker` commands for the build and deploy containers. This removes the container after the task is complete.<!--MAGECLOUD-4205-->
 
    -  ![new icon](../../assets/new.svg) **Updates to `build:compose` command**—
 
-      -  ![new icon](../../assets/new.svg) Added the `--sync-engine="native"` option to the `docker-build` command to disable file synchronization when you generate the Docker Compose configuration file in developer mode. Use this option when developing on Linux systems, which do not require file synchronization for local Docker development. See [Synchronizing data in the Docker environment](https://developer.adobe.com/commerce/cloud-tools/docker/setup).<!--MCLOUD-3231, MCLOUD-3890-->
+      -  ![new icon](../../assets/new.svg) Added the `--sync-engine="native"` option to the `docker-build` command to disable file synchronization when you generate the Docker Compose configuration file in developer mode. Use this option when developing on Linux systems, which do not require file synchronization for local Docker development. See [Synchronizing data in the Docker environment](https://developer.adobe.com/commerce/cloud-tools/docker/setup/synchronize-data).<!--MCLOUD-3231, MCLOUD-3890-->
 
    -  ![new icon](../../assets/new.svg) Changed the default file synchronization setting from `docker-sync` to `native`. [Fix submitted by Mathew Beane from Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/124).<!--MAGECLOUD-5066-->
 
