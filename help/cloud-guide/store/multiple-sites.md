@@ -63,7 +63,7 @@ After successfully creating and testing the local installation to use multiple s
 
 >[!TIP]
 >
->You can use a local environment to set up multiple websites or stores. See the Cloud Docker instructions to [Set up multiple websites or stores](https://developer.adobe.com/commerce/cloud-tools/docker/configure/multiple-sites/).
+>You can use a local environment to set up multiple websites or stores. See the Cloud Docker instructions to [Set up multiple websites or stores](https://developer.adobe.com/commerce/cloud-tools/docker/configure/multiple-sites).
 
 ### Configuration updates to Pro environments
 
