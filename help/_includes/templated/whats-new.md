@@ -33,25 +33,3 @@ This page contains the changes made in the last 60 days. We exclude all minor up
     </tr>
   </tbody>
 </table>
-
-### November 6, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>The retention period for archived log files for Commerce on cloud projects is now 30 days. See <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations">View and Manage Logs</a> in the Commerce on Cloud Guide.</p>
-</td>
-      <td>
-        Technical, feedback
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/1aa8f5e1b64ae40330d9f4b499ceb42d7725d432">commit</a></td>
-    </tr>
-  </tbody>
-</table>
