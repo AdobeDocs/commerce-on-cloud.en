@@ -2,7 +2,7 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Dec 19 15:38:24 2025
+updated: Fri Jan 2 15:33:39 2026
 entries:
 - description: 'Updates the [Cloud Patches 1.1.12 release notes](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
     to include the fix for the "Checkout fails when JS minification and bundling are
