@@ -59,4 +59,4 @@ The Commerce on cloud infrastructure guide assumes that you have some working kn
 {{$include /help/_includes/templated/whats-new.md}}
 
 
-<!-- Last updated from includes: 2025-12-12 21:32:21 -->
+<!-- Last updated from includes: 2026-01-05 17:03:22 -->
