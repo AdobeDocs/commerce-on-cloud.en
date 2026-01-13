@@ -6,7 +6,7 @@ exl-id: e704ab2a-2f6b-480b-9b36-1e97c406e873
 ---
 # Set up OpenSearch service
 
-The [OpenSearch](https://www.opensearch.org) service is an open-source fork of Elasticsearch 7.10.2, following the licensing changes for Elasticsearch. See the [OpenSource Project](https://github.com/opensearch-project) in GitHub.
+The [OpenSearch](https://www.opensearch.org) service is an open-source fork of Elasticsearch 7.10.2, following the licensing changes for Elasticsearch. See the [OpenSource Project](https://github.com/opensearch-project) in GitHub. [System Requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) lists the supported version.
 
 {{elasticsearch-support}}
 
