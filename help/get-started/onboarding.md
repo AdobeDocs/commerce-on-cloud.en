@@ -15,7 +15,7 @@ To quickly onboard your project, so you can begin developing your site for live 
 
 ## Sign up for a Cloud account
 
-If you do not have an Adobe Commerce on cloud infrastructure account, contact [Sales][]. When you sign up, Adobe creates your account and sends you a welcome email that provides instructions on how to access the project interface. The email contains a link so that you can log in to your account and complete your initial project setup.
+If you do not have an Adobe Commerce on cloud infrastructure account, contact [Sales](https://business.adobe.com/products/magento/get-demo.html). When you sign up, Adobe creates your account and sends you a welcome email that provides instructions on how to access the project interface. The email contains a link so that you can log in to your account and complete your initial project setup.
 
 ## Access project and add users
 
@@ -27,7 +27,7 @@ You can only add registered users to your Adobe Commerce on cloud infrastructure
 
 ### Shared account access
 
-The License Owner can set up shared access for the account. Shared access allows trusted employees and service providers to use the Help center to submit and track Support tickets related to your Adobe Commerce on cloud infrastructure projects. For setup instructions, see the [Shared Access][] article in the Help Center.
+The License Owner can set up shared access for the account. Shared access allows trusted employees and service providers to use the Help center to submit and track Support tickets related to your Adobe Commerce on cloud infrastructure projects. For setup instructions, see the [Shared Access](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access) article in the Help Center.
 
 ### [!DNL Cloud Console]
 
@@ -35,7 +35,7 @@ You can use the [[!DNL Cloud Console]](cloud-console.md) to manage your project,
 
 ## Sign up for Adobe status
 
-Get updates about Adobe Commerce on cloud infrastructure platform environments and related services from the [Status page][].
+Get updates about Adobe Commerce on cloud infrastructure platform environments and related services from the [Status page](https://status.adobe.com/products/503473).
 
 The page provides a status for Adobe Commerce components and services followed by notifications about incident reports, service upgrades, planned outages, and scheduled maintenance. Anyone working on your project can subscribe to the Adobe Commerce status site to receive event notifications and updates through email or Slack. You can customize your Adobe status subscription to track specific products by regions and events.
 
@@ -45,8 +45,3 @@ The page provides a status for Adobe Commerce components and services followed b
 >
 >**Next step**: [Log in to Cl[!DNL ]oud Console](cloud-console.md)
 
-<!-- link definitions -->
-
-[Sales]: https://business.adobe.com/products/magento/get-demo.html
-[Shared Access]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access
-[Status page]: https://status.adobe.com/products/503473

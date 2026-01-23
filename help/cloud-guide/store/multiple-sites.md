@@ -48,7 +48,7 @@ The process to add a domain depends on the type of Cloud account:
 
 ## Configure local installation
 
-To configure your local installation to use multiple stores, see [Multiple websites or stores][config-multiweb] in the _Configuration Guide_.
+To configure your local installation to use multiple stores, see [Multiple websites or stores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html) in the _Configuration Guide_.
 
 After successfully creating and testing the local installation to use multiple stores, you must prepare your integration environment:
 
@@ -345,6 +345,3 @@ Follow the deployment process for [deploying to Staging and Production](../deplo
 
 Adobe recommends fully testing in the Staging environment before pushing to the Production environment. Make code changes in the integration environment and begin the process to deploy across environments again.
 
-<!-- link definitions -->
-
-[config-multiweb]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html
