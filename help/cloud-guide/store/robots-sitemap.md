@@ -111,7 +111,7 @@ In the `sitemap` admin config, you must specify the location of the file using `
 
 ### Configure indexing by search engine
 
-To activate `robots.txt` customizations in Production, enable indexing by search engines for the **<environment-name>** option in the project settings on the Cloud Console:
+To activate `robots.txt` customizations in Production, enable indexing by search engines for the `<environment-name>` option in the project settings on the Cloud Console:
 
 - Legacy Cloud Console—the URL follows the pattern `https://<region-id>.magento.cloud/projects/<project_id>`
 
