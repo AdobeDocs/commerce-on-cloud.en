@@ -6,7 +6,7 @@ exl-id: e704ab2a-2f6b-480b-9b36-1e97c406e873
 ---
 # Set up OpenSearch service
 
-The [OpenSearch](https://www.opensearch.org) service is an open-source fork of Elasticsearch 7.10.2, following the licensing changes for Elasticsearch. See the [OpenSource Project](https://github.com/opensearch-project) in GitHub.
+The [OpenSearch](https://www.opensearch.org) service is an open-source fork of Elasticsearch 7.10.2, following the licensing changes for Elasticsearch. See the [OpenSource Project](https://github.com/opensearch-project) in GitHub. [System Requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) lists the supported version.
 
 {{elasticsearch-support}}
 
@@ -25,11 +25,11 @@ OpenSearch enables you to take data from any source, any format, and search and 
 
 **To enable OpenSearch**:
 
-1. For integration environments, add the `opensearch` service to the `.magento/services.yaml` file with the appropriate version and allocated disk space in MB. In this case, version 2 is appropriate. The minor version is not required.
+1. For integration environments, add the `opensearch` service to the `.magento/services.yaml` file with the appropriate version and allocated disk space in MB. In this case, version 3 is appropriate. The minor version is not required.
 
    ```yaml
    opensearch:
-       type: opensearch:2
+       type: opensearch:3
        disk: 1024
    ```
 
@@ -129,7 +129,7 @@ Service version and compatibility support is determined by versions tested and d
    | path                                     | null                                                   |
    | query                                    |                                                        |
    | password                                 | null                                                   |
-   | type                                     | opensearch:2                                           |
+   | type                                     | opensearch:3                                           |
    | public                                   | false                                                  |
    | host_mapped                              | false                                                  |
    ```
@@ -147,7 +147,7 @@ Service version and compatibility support is determined by versions tested and d
       "cluster_uuid" : "_yzaae6-ywSEW1MaAF8ZPWyQ",
       "version" : {
         "distribution" : "opensearch",
-        "number" : "2.5.0",
+        "number" : "3.1.0",
         "build_type" : "deb",
         "build_hash" : "aaaaaaa",
         "build_date" : "2023-01-23T12:07:18.760675Z",
