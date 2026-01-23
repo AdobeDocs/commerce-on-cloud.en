@@ -111,22 +111,23 @@ In the `sitemap` admin config, you must specify the location of the file using `
 
 ### Configure indexing by search engine
 
-To activate `robots.txt` customizations in Production, enable indexing by search engines for the `<environment-name>`** option in the project settings on the Cloud Console:
+To activate `robots.txt` customizations in Production, enable indexing by search engines for the `<environment-name>` option in the project settings on the Cloud Console:
 
 - Legacy Cloud Console—the URL follows the pattern `https://<region-id>.magento.cloud/projects/<project_id>`
+
+  Toggle the setting [!UICONTROL Indexing by search engines] (Legacy Console) [!UICONTROL Hide from search engines] (Adobe Console) to **On**.
+
+  ![Use the [!DNL Cloud Console] to manage environments](../../assets/robots-indexing-by-search-engine.png)
+
 - Adobe Cloud Console—the URL follows the pattern ``https://console.adobecommerce.com/<username>/<project_id>``
 
-1. Toggle the setting [!UICONTROL Indexing by search engines] to **On**.
+  Uncheck the setting [!UICONTROL Hide from search engines].
 
-   ![Use the [!DNL Cloud Console] to manage environments](../../assets/robots-indexing-by-search-engine.png)
+- You can also use the magento-cloud CLI to update this setting:
 
-1. Uncheck the setting [!UICONTROL Hide from search engines].
-
-You can also use the magento-cloud CLI to update this setting:
-
-```bash
-magento-cloud environment:info -p <project_id> -e production restrict_robots false
-```
+  ```bash
+  magento-cloud environment:info -p <project_id> -e production restrict_robots false
+  ```
 
 >[!NOTE]
 >
