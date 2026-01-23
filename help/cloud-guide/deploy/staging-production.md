@@ -314,7 +314,7 @@ When importing data, you must drop and create a database.
    drop database main;
    ```
 
-   For Production/Staging:
+   For Production and Staging environments:
 
    ```shell
    drop database <database_name>;
