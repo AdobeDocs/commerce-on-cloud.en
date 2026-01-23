@@ -125,9 +125,9 @@ To activate `robots.txt` customizations in Production, enable indexing by search
 
 - You can also use the magento-cloud CLI to update this setting:
 
-   ```bash
-      magento-cloud environment:info -p <project_id> -e production restrict_robots false
-   ```
+  ```bash
+  magento-cloud environment:info -p <project_id> -e production restrict_robots false
+  ```
 
 >[!NOTE]
 >
