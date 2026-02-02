@@ -42,7 +42,7 @@ Fastly provides the following services to optimize and secure content delivery o
 
 - **[Fastly CDN and WAF logs](../monitor/new-relic-service.md#new-relic-log-management)**—For Adobe Commerce on cloud infrastructure Pro projects, you can use the New Relic Logs service to review and analyze Fastly CDN and WAF log data.
 
-## Origin cloaking {origin-cloaking}
+## Origin cloaking {#origin-cloaking}
 
 Origin cloaking is a security feature that prevents non‑Fastly traffic from reaching the Adobe Commerce on cloud infrastructure origin. All requests must follow this enforced path:
 
