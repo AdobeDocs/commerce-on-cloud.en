@@ -36,13 +36,51 @@ Fastly provides the following services to optimize and secure content delivery o
   
     Adobe Commerce provides a Domain-validated Let's Encrypt SSL/TLS certificate for each Staging and Production environment. Adobe Commerce completes domain validation and certificate provisioning during the Fastly set up process.
 
-- **Origin cloaking**—Prevents traffic from bypassing the Fastly WAF and hides the IP addresses of your origin servers to protect them from direct access and DDoS attacks.
-
-  Origin cloaking is enabled by default on Adobe Commerce on cloud infrastructure Pro Production projects. To enable origin cloaking on Adobe Commerce on cloud infrastructure Starter Production projects, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). If you have traffic that does not require caching, you can customize the Fastly service configuration to allow requests to [bypass the Fastly cache](fastly-vcl-bypass-to-origin.md).
+- **Origin cloaking** — Security feature that ensures all traffic flows through Fastly and blocks direct access to origin servers. See the Origin cloaking section below.
 
 - **[Image optimization](fastly-image-optimization.md)**—Offloads image processing and resizing load to the Fastly service so that servers can process orders and conversions more efficiently.
 
 - **[Fastly CDN and WAF logs](../monitor/new-relic-service.md#new-relic-log-management)**—For Adobe Commerce on cloud infrastructure Pro projects, you can use the New Relic Logs service to review and analyze Fastly CDN and WAF log data.
+
+### Origin cloaking
+
+Origin cloaking is a security feature that prevents non‑Fastly traffic from reaching the Adobe Commerce on cloud infrastructure origin. All requests must follow this enforced path:
+
+**Fastly → Load Balancer → Adobe Commerce application instances**
+
+This ensures all traffic is inspected by the Fastly Web Application Firewall (WAF) and by the internal WAF on the load balancer. Origin cloaking protects your sites from direct-access attempts and reduces the risk of DDoS attacks.
+
+#### Enablement status
+
+Origin cloaking has been fully enabled on all Adobe Commerce on cloud infrastructure projects since 2021.  
+Projects provisioned after 2021 include this configuration by default.  
+**No action is required** to request origin cloaking enablement.
+
+#### What origin cloaking blocks
+
+Origin cloaking blocks any direct access to the origin infrastructure, such as:
+
+```
+mywebsite.com.c.abcdefghijkl.ent.magento.cloud
+mcstaging2.mywebsite.com.c.abcdefghijkl.dev.ent.magento.cloud
+mcstagingX.mywebsite.com.c.abcdefghijkl.X.dev.ent.magento.cloud
+```
+
+Requests through your public domain continue to work normally, including REST API traffic. Examples:
+
+```
+mywebsite.com/rest/default/V1/integration/admin/token
+mywebsite.com/rest/default/V1/orders/
+mywebsite.com/rest/default/V1/products/
+mywebsite.com/rest/default/V1/inventory/source-items
+```
+
+#### Impact on service behavior
+
+- **Outgoing IP addresses do not change.**
+- **REST APIs are not affected.** Fastly does not cache API calls.
+- **Deployments and downtime are not impacted.**
+- If a project has multiple staging environments, **origin cloaking applies to all of them**.
 
 ## Fastly CDN module for Magento 2
 
