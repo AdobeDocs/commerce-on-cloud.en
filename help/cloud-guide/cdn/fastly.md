@@ -36,7 +36,7 @@ Fastly provides the following services to optimize and secure content delivery o
   
     Adobe Commerce provides a Domain-validated Let's Encrypt SSL/TLS certificate for each Staging and Production environment. Adobe Commerce completes domain validation and certificate provisioning during the Fastly set up process.
 
-- **Origin cloaking** — Security feature that ensures all traffic flows through Fastly and blocks direct access to origin servers. See the Origin cloaking section below.
+- **Origin cloaking** — Security feature that ensures all traffic flows through Fastly and blocks direct access to origin servers. See the [Origin cloaking](#origin-cloaking) section below.
 
 - **[Image optimization](fastly-image-optimization.md)**—Offloads image processing and resizing load to the Fastly service so that servers can process orders and conversions more efficiently.
 
