@@ -48,7 +48,7 @@ Origin cloaking is a security feature that prevents non‑Fastly traffic from re
 
 **Fastly > Load Balancer > Adobe Commerce application instances**
 
-This ensures all traffic is inspected by the Fastly Web Application Firewall (WAF) and by the internal WAF on the load balancer. Origin cloaking protects your sites from direct-access attempts and reduces the risk of DDoS attacks.
+Using this path ensures that all traffic is inspected by the Fastly Web Application Firewall (WAF) and by the internal WAF on the load balancer. Origin cloaking protects your sites from direct-access attempts and reduces the risk of DDoS attacks.
 
 ### Enablement status
 
