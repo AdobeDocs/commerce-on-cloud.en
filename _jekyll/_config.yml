@@ -4,3 +4,7 @@ url: https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/ove
 exclude:
   - Rakefile
   - tmp
+  - Gemfile
+  - Gemfile.lock
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
