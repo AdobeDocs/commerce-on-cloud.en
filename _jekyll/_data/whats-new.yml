@@ -2,8 +2,22 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Jan 30 15:32:34 2026
+updated: Mon Feb 9 11:16:07 2026
 entries:
+- description: Added the following information about origin cloaking to the [Fastly
+    services overview](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly).<br/>-
+    Definition and traffic flow<br/>- Enablement status (enabled on all cloud projects
+    since 2021) Blocked origin URL examples<br/>- REST API usage examples
+  versions: ''
+  type: technical
+  date: February 3, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/149
+  merge_commit: e367fd9c565d4d6d2bbc15b0289768dc38dcf7a9
+  contributor: barnato
+  membership:
+  labels:
+  - technical
+  - migrated-from-commerce-kb
 - description: Updated the version of the examples in [Set up OpenSearch service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch).
   versions: ''
   type: feedback
