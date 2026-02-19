@@ -134,7 +134,7 @@ You can only use your New Relic license key on three active environments. If the
 
 ## Change account owner for New Relic on Cloud
 
-[To change the New Relic account owner for your Adobe Commerce on cloud infrastructure project:
+To change the New Relic account owner for your Adobe Commerce on cloud infrastructure project:
 
 1. **Change the owner** in the New Relic UI. See [Change the account Owner](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/account-user-mgmt-tutorial/) in the New Relic documentation.
 
