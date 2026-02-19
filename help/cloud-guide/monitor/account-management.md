@@ -142,4 +142,4 @@ You can only use your New Relic license key on three active environments. If the
 
 3. **Need help?** If no existing Owner or Admin can help, any Adobe Commerce user with access to the [Adobe Commerce Partnership Owner Account](https://account.newrelic.com/accounts/1311131/users) can add users on your behalf.
 
-For more details, see the [New Relic service overview](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service).](https://git.corp.adobe.com/jmenn/commerce-on-cloud.en/blob/main/help/cloud-guide/monitor/new-relic-service.md)
+For more details, see the [New Relic service overview](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service).
