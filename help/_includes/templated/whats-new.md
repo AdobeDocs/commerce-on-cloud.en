@@ -4,6 +4,28 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### February 19, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added instructions for <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management">changing the New Relic account owner</a> to the <em>Commerce on Cloud Infrastructure Guide</em>.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/6e570c70bb720a6469d7764c7640b07bb56880ce">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### February 3, 2026
 
 <table style="table-layout:auto;">
