@@ -2,8 +2,19 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Feb 13 15:31:39 2026
+updated: Fri Feb 20 15:31:42 2026
 entries:
+- description: Added instructions for [changing the New Relic account owner](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management)
+    to the _Commerce on Cloud Infrastructure Guide_.
+  versions: ''
+  type: technical
+  date: February 19, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/156
+  merge_commit: 6e570c70bb720a6469d7764c7640b07bb56880ce
+  contributor: jmenn
+  membership:
+  labels:
+  - technical
 - description: Added the following information about origin cloaking to the [Fastly
     services overview](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly).<br/>-
     Definition and traffic flow<br/>- Enablement status (enabled on all cloud projects
