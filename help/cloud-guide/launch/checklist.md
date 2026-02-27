@@ -55,14 +55,14 @@ When you are ready to launch your site, you must update the DNS configuration to
    | `www.<domain-name>.com`     | prod.magentocloud.map.fastly.net |
    | `mystore.<domain-name>.com` | prod.magentocloud.map.fastly.net |
 
-1. If needed, add A records to map the apex domain (`<domain-name>.com`) to the following Fastly IP addresses:
+1. If needed, add A and AAAA records to map the apex domain (`<domain-name>.com`) to the following Fastly IP addresses:
 
-   | Apex domain     | ANAME             |
-   | --------------- | ----------------- |
-   | `<domain-name>.com` | `151.101.1.124`   |
-   | `<domain-name>.com` | `151.101.65.124`  |
-   | `<domain-name>.com` | `151.101.129.124` |
-   | `<domain-name>.com` | `151.101.193.124` |
+   | Apex domain     | ANAME             | AAAANAME |
+   | --------------- | ----------------- | -------- |
+   | `<domain-name>.com` | `151.101.1.124`   | 2a04:4e42:200::380 |
+   | `<domain-name>.com` | `151.101.65.124`  | 2a04:4e42:400::380 |
+   | `<domain-name>.com` | `151.101.129.124` | 2a04:4e42:600::380 |
+   | `<domain-name>.com` | `151.101.193.124` | 2a04:4e42::380 |
    
 >[!IMPORTANT]
 >
