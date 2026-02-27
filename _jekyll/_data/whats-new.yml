@@ -2,8 +2,20 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Feb 20 15:31:42 2026
+updated: Fri Feb 27 17:49:26 2026
 entries:
+- description: Updated the [Launch checklist](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist)
+    for Commerce on cloud projects to add Fastly AAAA records to the DNS configuration
+    instructions.
+  versions: ''
+  type: feedback
+  date: February 27, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/159
+  merge_commit: c4c84286c178cb17a2051d6d803742ab73c409bf
+  contributor: meker
+  membership:
+  labels:
+  - feedback
 - description: Added instructions for [changing the New Relic account owner](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management)
     to the _Commerce on Cloud Infrastructure Guide_.
   versions: ''
