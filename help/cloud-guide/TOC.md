@@ -83,7 +83,7 @@ feature: Cloud
     + [Restore environment](development/restore-environment.md)
     + Storage {#storage}
         + [Manage disk space](storage/manage-disk-space.md)
-        + [Check disk space limit for Adobe Commerce on cloud infrastructure](storage/check-disk-space-limit-for-magento-commerce-cloud.md)
+        + [Check disk space limit for Adobe Commerce on cloud infrastructure](storage/check-disk-space-limit-on-cloud.md)
         + [Profile database queries](storage/profile-database-queries.md)
         + [Back up the database](storage/database-dump.md)
         + [Backup management](storage/snapshots.md)
