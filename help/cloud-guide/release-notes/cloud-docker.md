@@ -21,7 +21,7 @@ The release notes include:
 
 ## v1.4.7 {#latest}
 
-Release date: March 10, 2026
+Release date: March 05, 2026
 
 - ![new icon](../../assets/new.svg) **PHP 8.5**—Added support for PHP 8.5.<!-- MCLOUD-14180 -->
 - ![new icon](../../assets/new.svg) **Added `php-cli`and `php-fpm` 8.5 images**—Added new Cloud Docker images (CLI and FPM) with PHP 8.5 support.<!-- MCLOUD-14178 -->

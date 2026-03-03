@@ -24,7 +24,7 @@ The release notes include:
 
 ## v2002.2.10 {#latest}
 
-Release date: March 10, 2026
+Release date: March 05, 2026
 
 -  ![new icon](../../assets/new.svg) **PHP 8.5**—Added support for PHP 8.5.<!-- MCLOUD-14179 -->
 -  ![fix icon](../../assets/fix.svg) **Updated Functional Test**-Updated Valkey 8.1, 8,2 and Redis 8.4 tests<!-- MCLOUD-13983 -->
