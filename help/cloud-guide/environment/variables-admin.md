@@ -77,7 +77,7 @@ The following example updates the `master` environment `ADMIN_URL` to `newAdmin_
 magento-cloud variable:update ADMIN_URL --value newAdmin_A8v10 -e master --inheritable false
 ```
 
-- **Redeployment:** Changing the `ADMIN_URL` variable via [!DNL Cloud CLI] triggers a redeployment of the environment. Plan for this when making the change.
+- **Redeployment:** Changing the `ADMIN_URL` variable in the [!DNL Cloud CLI] triggers a redeployment of the environment.
 - **Inheritance:** Variables are inheritable by default. To prevent the value from being inherited by child environments, use the `--inheritable false` option as shown. For more detail, see [variable level visibility](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility).
 
 >[!NOTE]
