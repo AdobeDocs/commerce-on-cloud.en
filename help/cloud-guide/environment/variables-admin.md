@@ -24,7 +24,7 @@ If you want to change the values after installation, connect to your environment
 
 ## Admin URL
 
-Use the following environment variable to secure access to your Admin UI. If specified, this value overrides the default URL during installation. In [!DNL Adobe Commerce] on cloud infrastructure, you must set or change the Admin URL using this variable in the ([!DNL Cloud Console] or [!DNL Cloud CLI]). Modifying the setting from the [!DNL Admin] is only applicable for on-premises installations.
+Use the following environment variable to secure access to your Admin UI. If specified, this value overrides the default URL during installation. In [!DNL Adobe Commerce] on cloud infrastructure, you must set or change the Admin URL using the `ADMIN_URL` variable in the ([!DNL Cloud Console] or [!DNL Cloud CLI]). Modifying the setting from the [!DNL Admin] is only applicable for on-premises installations.
 
 `ADMIN_URL`—The relative URL to access the Admin UI. The default URL is `/admin`.
 
