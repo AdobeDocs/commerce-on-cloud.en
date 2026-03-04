@@ -65,7 +65,7 @@ From the [Cloud Console](https://experienceleague.adobe.com/docs/commerce-cloud-
 
 ##### When Staging and Production are not available in the [!DNL Cloud Console]
 
-[Submit a support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) requesting to add the `ADMIN_URL` variable for your Staging or Production environment. If Staging and Production are accessible from the [!DNL Cloud Console], add the variable as described in the *Integration environment* section above.
+[Submit a support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) requesting to add the `ADMIN_URL` variable for your Staging or Production environment. If Staging and Production are accessible from the [!DNL Cloud Console], add the variable as described in *Integration environment*.
 
 #### Option B: Change the Admin URL using the [!DNL Cloud CLI]
 
