@@ -71,7 +71,7 @@ From the [Cloud Console](https://experienceleague.adobe.com/docs/commerce-cloud-
 
 Use the `magento-cloud variable:update` command to update the variable. (The `variable:set` command has been deprecated and is not available.)
 
-Example for the `master` environment—update `ADMIN_URL` to `newAdmin_A8v10` and prevent child environments from inheriting the value:
+The following example updates the `master` environment `ADMIN_URL` to `newAdmin_A8v10` and prevents child environments from inheriting the value:
 
 ```bash
 magento-cloud variable:update ADMIN_URL --value newAdmin_A8v10 -e master --inheritable false
