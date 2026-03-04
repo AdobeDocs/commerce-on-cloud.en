@@ -49,7 +49,7 @@ From the [Cloud Console](https://experienceleague.adobe.com/docs/commerce-cloud-
 
 - For detailed steps, see [add environment variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-environment) or [environment variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html) in our developer documentation.
 
-##### Step-by-step in the [!DNL Cloud Console]
+##### Set the Admin URL in the [!DNL Cloud Console]
 
 1. Log in to the [Cloud Console](https://console.adobecommerce.com/).
 2. Select a project from the **[!UICONTROL All projects]** list.
