@@ -30,7 +30,7 @@ Use the following environment variable to secure access to your Admin UI. If spe
 
 ### Change the Admin URL
 
-By default, the [Commerce Admin](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/admin.html) URL is set to *&lt;domain_name&gt;/admin*. For security reasons, Adobe recommends changing it to a unique, custom Admin URL that is not easy to guess.
+By default, the [Commerce Admin](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/admin.html) URL is set to *<domain_name>/admin*. For security reasons, Adobe recommends changing it to a unique, custom Admin URL that is not easy to guess.
 
 **In [!DNL Adobe Commerce] on cloud infrastructure**,  you must change the Admin URL using the `ADMIN_URL` environment variable in the ([!DNL Cloud Console] or [!DNL Cloud CLI]). Modifying the setting from the [!DNL Admin] is only applicable for on-premises installations. For on-premises installations, follow [use a custom admin URL](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html#use-a-custom-admin-url).
 
