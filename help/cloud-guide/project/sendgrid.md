@@ -43,13 +43,25 @@ If possible, include the following information with your request:
 * the timeframe in question (within the past 30 days only)
 * the subject of the email
 
+To better manage your email delivery settings, use your own [SMTP server or email delivery service provider](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/communications/email-communications). You can also sign up for your own SendGrid service to closely follow the Cloud service stack.
+
+   >![IMPORTANT]
+   >
+   >If you use your own SendGrid account, you will no longer receive SendGrid support through Adobe.
+   >
+   > To enable your proprietary SendGrid service or update an existing API Key, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) and include the API Key for your SendGrid account.
+
 ## DomainKeys Identified Mail (DKIM)
 
 DKIM is an email authentication technology that enables Internet Service Providers (ISPs) to identify both legitimate and fake sender addresses, a technique commonly used in phishing and email scams. DKIM relies on a domain owner managing the DNS records. When using DKIM, the sender server uses a private key to sign the messages. Also, the domain owner adds a DKIM record, which is a modified `TXT` record, to the sender-domain's DNS records. This `TXT` record contains a public key that recipient mail servers use to verify the signature of a message. The DKIM public-key cryptography procedure enables recipients to verify the authenticity of a sender. See [DKIM Records Explained](https://docs.sendgrid.com/ui/account-and-settings/dkim-records).
 
 >[!WARNING]
 >
->The SendGrid DKIM signatures and domain authentication support are only available on the Production and Staging environments for Pro projects, but not for all Starter environments. As a result, outbound transactional emails are likely to be flagged by spam filters. Using DKIM improves the delivery rate as an authenticated email sender. To improve the message delivery rate, you can upgrade from Starter to Pro or use your own SMTP server or email delivery service provider. See [Configure email connections](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/communications/email-communications) in the _Admin Systems guide_.
+>The SendGrid DKIM signatures and domain authentication support are available only on the Production and Staging environments for Pro projects. They are not supported on Starter environments.
+>
+>Because of this, transactional emails sent from Starter environments are more likely to be marked ass spam since they cannot be fully authenticated.  On Pro environments, enabling DKIM authenticates your sending domain, which signficantly improves email deliverability and reduces the chance that messages are filtered as spam.
+>
+>To improve the message delivery rate, upgrade from Starter to Pro, or use your own SMTP server or email delivery service provider. See [Configure email connections](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/communications/email-communications) in the _Admin Systems guide_.
 
 ### Sender and domain authentication
 
