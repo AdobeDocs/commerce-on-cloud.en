@@ -45,7 +45,9 @@ If possible, include the following information with your request:
 
 To better manage your email delivery settings, use your own [SMTP server or email delivery service provider](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/communications/email-communications). You can also sign up for your own SendGrid service to closely follow the Cloud service stack.
 
-   >![IMPORTANT]: If you use your own SendGrid account, you will no longer receive SendGrid support through Adobe.
+   >![IMPORTANT]
+   >
+   >If you use your own SendGrid account, you will no longer receive SendGrid support through Adobe.
    >
    > To enable your proprietary SendGrid service or update an existing API Key, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) and include the API Key for your SendGrid account.
 
