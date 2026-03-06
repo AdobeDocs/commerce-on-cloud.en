@@ -22,7 +22,16 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.2.9 {#latest}
+## v2002.2.10 {#latest}
+
+Release date: March 05, 2026
+
+-  ![new icon](../../assets/new.svg) **PHP 8.5**—Added support for PHP 8.5.<!-- MCLOUD-14179 -->
+-  ![fix icon](../../assets/fix.svg) **Updated Functional Test**-Updated Valkey 8.1, 8,2 and Redis 8.4 tests<!-- MCLOUD-13983 -->
+-  ![fix icon](../../assets/fix.svg) **Updated MariaDB,PHP and Opensearch Validators**-Updated the validator script.<!-- MCLOUD-14574/MCLOUD-14466 -->
+-  ![fix icon](../../assets/fix.svg) **EOL validator**-Updated End of Life (EOL) services dates.<!-- MCLOUD-14272 -->
+
+## v2002.2.9
 
 Release date: November 13, 2025
 
@@ -31,7 +40,7 @@ Release date: November 13, 2025
 
 ## v2002.2.8
 
-Release date: October 08, 2025
+Release date: October 08, 2025      
 
 -  ![new icon](../../assets/new.svg) **ActiveMQ**-Added support for ActiveMQ.<!-- MCLOUD-13770 -->
 -  ![new icon](../../assets/new.svg) **ActiveMQ**-Added functional tests.<!-- MCLOUD-13813 -->
