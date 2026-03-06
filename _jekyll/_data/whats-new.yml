@@ -2,8 +2,45 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Feb 27 17:49:26 2026
+updated: Fri Mar 6 17:03:50 2026
 entries:
+- description: "[ECE-Tools](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)
+    release, v2002.2.10."
+  versions: ''
+  type: technical
+  date: March 6, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/163
+  merge_commit: 78c1e1ae549243e41721592195bf9426f6e3510f
+  contributor: magedocs
+  membership:
+  labels:
+  - devops
+  - technical
+- description: Added clarification of how to [change the admin URL](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin#change-the-admin-url)
+    in Adobe Commerce on Cloud as opposed to on-premises.
+  versions: ''
+  type: major-update, feedback
+  date: March 4, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/158
+  merge_commit: e16ca6d2bdd93f2cf6c43527b5831779a1c7b3d9
+  contributor: glo42770
+  membership:
+  labels:
+  - major-update
+  - feedback
+- description: Added documentation for [checking the disk space limit for Adobe Commerce
+    on Cloud projects](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/check-disk-space-limit-on-cloud)
+    from the Cloud Console.
+  versions: ''
+  type: new-topic, technical
+  date: March 2, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/161
+  merge_commit: 1feaf0c56401ceebf52263e290695d45302d5485
+  contributor: glo51666
+  membership:
+  labels:
+  - new-topic
+  - technical
 - description: Updated the [Launch checklist](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist)
     for Commerce on cloud projects to add Fastly AAAA records to the DNS configuration
     instructions.
