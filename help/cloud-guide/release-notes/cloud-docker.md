@@ -19,7 +19,15 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v1.4.6 {#latest}
+## v1.4.7 {#latest}
+
+Release date: March 05, 2026
+
+- ![new icon](../../assets/new.svg) **PHP 8.5**—Added support for PHP 8.5.<!-- MCLOUD-14180 -->
+- ![new icon](../../assets/new.svg) **Added `php-cli`and `php-fpm` 8.5 images**—Added new Cloud Docker images (CLI and FPM) with PHP 8.5 support.<!-- MCLOUD-14178 -->
+- ![new icon](../../assets/new.svg) **Added PHP 8.5 and Opensearch 3.0 docker image generation commands**-Resolved Docker network isolation (including ARM64), fixed integration tests and added PHP 8.5 and OpenSearch 3.0 support for Docker image generation commands.<!-- MCLOUD-14523 -->
+
+## v1.4.6
 
 Release date: November 13, 2025
 
