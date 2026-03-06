@@ -43,16 +43,14 @@ Set the `_merge` option to one of the following:
 
 - For changes to a live Production environment (**Pro only**), a minimum of 48 hours notice is required. This allows the Cloud infrastructure team sufficient time to marshal resources and conduct a secure upgrade. The notice period begins when the Infrastructure team acknowledges the request and schedules the upgrade, excluding weekends. For example, to have service upgrades completed on a Monday, an acknowledgement of the scheduled upgrade must be received by Wednesday. During peak demand periods, it might take more time to process your request.
 
->[!NOTE]
->
->**Two-Part Handshake Process for Scheduling Upgrades**
->
->To ensure a smooth and coordinated upgrade process, Adobe Commerce Support follows a two-part handshake process for all production environment upgrades:
->
->1. **Customer Confirmation**: Adobe Support will first request that the customer confirm the desired date and time for the upgrade. This step ensures that the timing aligns with the customer’s business needs and maintenance windows.
->2. **Scheduling & Final Confirmation**: Once the customer confirms the timing, Adobe Support will submit the request to the Infrastructure team, who will then review the request and provide final confirmation of the scheduled upgrade window.
->
->The upgrade is not considered scheduled until the Infrastructure team has provided final confirmation. Customers are encouraged to respond promptly at least 48 hours before the upgrade window to avoid delays and to allow for adequate notice.
+- **Two-Part Handshake Process for Scheduling Upgrades**
+
+  To ensure a smooth and coordinated upgrade process, Adobe Commerce Support follows a two-part handshake process for all production environment upgrades:
+
+  1. **Customer Confirmation**: Adobe Support will first request that the customer confirm the desired date and time for the upgrade. This step ensures that the timing aligns with the customer’s business needs and maintenance windows.
+  2. **Scheduling & Final Confirmation**: Once the customer confirms the timing, Adobe Support will submit the request to the Infrastructure team, who will then review the request and provide final confirmation of the scheduled upgrade window.
+
+ The upgrade is not considered scheduled until the Infrastructure team has provided final confirmation. Customers are encouraged to respond promptly at least 48 hours before the upgrade window to avoid delays and to allow for adequate notice.
 
 >[!ENDSHADEBOX]
 
