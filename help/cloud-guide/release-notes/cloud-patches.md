@@ -23,12 +23,19 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.1.12 {#latest}
+## v1.1.13 {#latest}
+
+Release date: March 05, 2026
+
+-  ![new icon](../../assets/new.svg) **PHP 8.5**—Added support for PHP 8.5.<!-- MCLOUD-14181 -->
+-  ![fix icon](../../assets/fix.svg) **Updated functional tests for PHP 8.x**—Removed legacy PHP 7.x tests, added PHP 8.1 and 8.2 new test coverage and updated Adobe Commerce versions.<!-- MCLOUD-14203 -->
+
+## v1.1.12
 
 Release date: November 13, 2025
 
 -  ![fix icon](../../assets/fix.svg) **Symfony package**-Added support for the latest Symfony YAML packages.<!-- MCLOUD-14020 -->
-- ![fix icon](../../assets/fix.svg) **Patch** – Fix for the [Checkout fails when JS minification and bundling are enabled](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997) issue described in the *Commerce Knowledgebase*.
+-  ![fix icon](../../assets/fix.svg) **Patch** – Fix for the [Checkout fails when JS minification and bundling are enabled](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997) issue described in the *Commerce Knowledgebase*.
 - ![fix icon](../../assets/fix.svg) **Improved Category View** - MCLOUD-13752: Improve category view.<!-- MCLOUD-13752 | MCLOUD-14139  -->
 
 ## v1.1.11 
