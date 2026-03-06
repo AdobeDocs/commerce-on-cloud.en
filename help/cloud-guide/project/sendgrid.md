@@ -43,7 +43,7 @@ If possible, include the following information with your request:
 * the timeframe in question (within the past 30 days only)
 * the subject of the email
 
-To better manage your email delivery settings, you can use your own [SMTP server or email delivery service provider](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/communications/email-communications). You can also sign up for your own SendGrid service to closely follow the Cloud service stack.
+To better manage your email delivery settings, use your own [SMTP server or email delivery service provider](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/communications/email-communications). You can also sign up for your own SendGrid service to closely follow the Cloud service stack.
 
    >![IMPORTANT]: If you use your own SendGrid account, you will no longer receive SendGrid support through Adobe.
    >
