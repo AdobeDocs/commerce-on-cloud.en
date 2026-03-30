@@ -30,7 +30,7 @@ You can fine-tune your `locations` configuration using the following key values 
 
 >[!IMPORTANT]
 >
->**Security note:** Adobe Commerce Cloud's default configuration sets `scripts: false` for media locations to prevent execution of uploaded files. Custom web location entries that set `scripts: true` on paths that share storage with `pub/media` can expose your store to execution of maliciously uploaded files. Do not override this setting unless you fully understand the security implications for your implementation.
+>**Security note:** Adobe Commerce on Cloud's default configuration sets `scripts: false` for media locations to prevent execution of uploaded files. Custom web location entries that set `scripts: true` on paths that share storage with `pub/media` can expose your store to execution of maliciously uploaded files. Do not override this setting unless you fully understand the security implications for your implementation.
 
 The default configuration allows the following:
 
