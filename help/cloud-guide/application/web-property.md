@@ -28,14 +28,14 @@ You can fine-tune your `locations` configuration using the following key values 
 | `root` | Set the path relative to the root of the application that is exposed on the web. The public directory (location "/") for a Cloud project is set to "pub" by default. |
 | `scripts` | Allow loading scripts in this location. Set the value to `true` to allow scripts. For `pub/media` and `pub/static` directories, the default configuration is set to `scripts: false` to prevent execution of uploaded files. |
 
->[!IMPORTANT]
->
->Adobe Commerce Cloud's default configuration sets `scripts: false` for media locations to prevent execution of uploaded files. Custom web location entries that set `scripts: true` on paths that share storage with `pub/media` can expose your store to execution of maliciously uploaded files. Do not override this setting unless you fully understand the security implications for your implementation.
-
 The default configuration allows the following:
 
 -  From the root (`/`) path, only web and media can be accessed
--  From the `~/pub/static` and `~/pub/media` paths, any file can be accessed
+-  From the `~/pub/media` and `~/pub/static` paths, any file can be accessed but scripts cannot be uploaded
+
+>[!IMPORTANT]
+>
+>**Security note:** Adobe Commerce Cloud's default configuration sets `scripts: false` for media locations to prevent execution of uploaded files. Custom web location entries that set `scripts: true` on paths that share storage with `pub/media` can expose your store to execution of maliciously uploaded files. Do not override this setting unless you fully understand the security implications for your implementation.
 
 The following example shows the default configuration in the `.magento.app.yaml` file for a set of web-accessible locations associated with an entry in the  [`mounts` property](properties.md#mounts):
 
