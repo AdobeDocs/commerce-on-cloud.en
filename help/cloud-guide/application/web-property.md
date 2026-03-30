@@ -26,7 +26,11 @@ You can fine-tune your `locations` configuration using the following key values 
 | `rules` | Specify overrides for a location. Use a regular expression to match a request. If an incoming request matches the rule, then regular handling of the request is overridden by the keys used in the rule. |
 | `passthru` | Set the URL used in case a static file or PHP file cannot be found. Typically, this URL is the front controller for your applications, such as `/index.php` or `/app.php`. |
 | `root` | Set the path relative to the root of the application that is exposed on the web. The public directory (location "/") for a Cloud project is set to "pub" by default. |
-| `scripts` | Allow loading scripts in this location. Set the value to `true` to allow scripts. |
+| `scripts` | Allow loading scripts in this location. Set the value to `true` to allow scripts. For `pub/media` and `pub/static` directories, the default configuration is set to `scripts: false` to prevent execution of uploaded files. |
+
+>[!IMPORTANT]
+>
+>Adobe Commerce Cloud's default configuration sets `scripts: false` for media locations to prevent execution of uploaded files. Custom web location entries that set `scripts: true` on paths that share storage with `pub/media` can expose your store to execution of maliciously uploaded files. Do not override this setting unless you fully understand the security implications for your implementation.
 
 The default configuration allows the following:
 
