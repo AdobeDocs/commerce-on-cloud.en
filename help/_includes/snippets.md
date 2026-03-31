@@ -51,8 +51,8 @@ Set the `_merge` option to one of the following:
 
   To ensure a smooth and coordinated upgrade process, Adobe Commerce Support follows a two-part handshake process for all production environment upgrades:
 
-  1. **Customer Confirmation**: Adobe Support will first request that the customer confirm the desired date and time for the upgrade. This step ensures that the timing aligns with the customer’s business needs and maintenance windows.
-  2. **Scheduling & Final Confirmation**: Once the customer confirms the timing, Adobe Support will submit the request to the Infrastructure team, who will then review the request and provide final confirmation of the scheduled upgrade window.
+  1. **Customer Confirmation**: Adobe Support first requests that the customer confirm the desired date and time for the upgrade. This step ensures that the timing aligns with the customer’s business needs and maintenance windows.
+  2. **Scheduling & Final Confirmation**: Once the customer confirms the timing, Adobe Support submits the request to the Infrastructure team, who then reviews the request and provides final confirmation of the scheduled upgrade window.
 
  The upgrade is not considered scheduled until the Infrastructure team has provided final confirmation. Customers are encouraged to respond promptly at least 48 hours before the upgrade window to avoid delays and to allow for adequate notice.
 
