@@ -44,6 +44,10 @@ Set the `_merge` option to one of the following:
 
 - Indicate the service changes needed, include your updated `.magento.app.yaml` and `services.yaml` files, and state the PHP version in the ticket. For self-service changes to PHP version, extensions, or environment settings, see [PHP settings](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/php-settings.html) in _Application configuration_.
 
+>[!IMPORTANT]
+>
+>When selecting the Environment field in the new ticket form, use Adobe's environment naming. For example, select Staging even if you call that environment **Dev** internally. You can mention your internal name in the description, but the Environment field itself must use Adobe's nomenclature.
+
 - For changes to a live Production environment (**Pro only**), a minimum of 48 hours notice is required. This allows the Cloud infrastructure team sufficient time to marshal resources and conduct a secure upgrade. The notice period begins when the Infrastructure team acknowledges the request and schedules the upgrade, excluding weekends. For example, to have service upgrades completed on a Monday, an acknowledgement of the scheduled upgrade must be received by Wednesday. During peak demand periods, it might take more time to process your request.
  
 >[!NOTE]
