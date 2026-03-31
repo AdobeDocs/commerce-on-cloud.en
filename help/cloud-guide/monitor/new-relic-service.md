@@ -18,6 +18,8 @@ The following New Relic features are available for use with Production and Stagi
 >[!INFO]
 >
 >Other New Relic features are not available on Adobe Commerce projects.
+>
+>Adobe Commerce on Cloud customers cannot integrate or send data from external servers directly into their provisioned New Relic account. The New Relic service is limited to monitoring the Commerce Cloud application environment. Only third-party services that are invoked by the application itself (for example, external APIs or services called during runtime) can be traced and monitored within New Relic.
 
 ## New Relic APM
 
