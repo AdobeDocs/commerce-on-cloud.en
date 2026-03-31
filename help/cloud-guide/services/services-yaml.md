@@ -33,6 +33,7 @@ The cloud infrastructure supports and deploys the following services:
 - [OpenSearch](opensearch.md)
 
 >[!NOTE]
+>You must [upgrade RabbitMQ sequentially between available versions](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service), e.g., you cannot upgrade from 3.9 directly to 4.1
 >
 >After upgrading to a new version of RabbitMQ, trigger a full deployment to ensure that your custom message queues are recreated in RabbitMQ.
 
