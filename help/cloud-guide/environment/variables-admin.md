@@ -17,9 +17,11 @@ If you want to change the values after installation, connect to your environment
 
 | Variable       | Default                     | Description |
 | -------------- | --------------------------- | ----------- |
-|`ADMIN_USERNAME`| License Owner email address | A username for the administrative user with the ability to create other users, including administrative users.|
-|`ADMIN_EMAIL`   |                             | Email address for the administrative user. This address is used to send password reset notifications.|
-|`ADMIN_PASSWORD`|                             | Password for the administrative user. When the project is created, a random password is generated and an email is sent to the License Owner. During project creation, the License Owner should have already changed the password. Contact the License Owner for the updated password.|
+|`ADMIN_USERNAME`| License Owner username | A username for the administrative user with the ability to create other users, including administrative users.|
+|`ADMIN_FIRSTNAME`| License Owner first name | The first name for the administrative user.|
+|`ADMIN_LASTNAME`| License Owner last name | The last name for the administrative user.|
+|`ADMIN_EMAIL`   | License Owner email      | Email address for the administrative user. This address is used to send password reset notifications.|
+|`ADMIN_PASSWORD`| License Owner password     | Password for the administrative user. When the project is created, a random password is generated and an email is sent to the License Owner. During project creation, the License Owner should have already changed the password. Contact the License Owner for the updated password.|
 |`ADMIN_LOCALE`  | `en_US`                     | The default locale used by the Admin.|
 
 ## Admin URL
