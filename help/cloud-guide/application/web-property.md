@@ -35,7 +35,7 @@ You can fine-tune your `locations` configuration using the following key values 
 The default configuration allows the following:
 
 -  From the root (`/`) path, only web and media can be accessed
--  From the `~/pub/media` and `~/pub/static` paths, any file can be accessed but scripts cannot be uploaded
+-  From the `~/pub/media` and `~/pub/static` paths, any file can be accessed but scripts cannot be executed
 
 The following example shows the default configuration in the `.magento.app.yaml` file for a set of web-accessible locations associated with an entry in the  [`mounts` property](properties.md#mounts):
 
