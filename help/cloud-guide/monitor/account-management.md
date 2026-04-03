@@ -25,7 +25,7 @@ If the License Owner was changed and the new License Owner doesn't currently hav
 
 1. Click **[!UICONTROL Administration]** and select one of the following from the list:
 
-   - **[!UICONTROL User management]** to add new users, manage active users and pending invites, and remove or deactivate users who no longer require access (for example, users who are no longer with your company).
+   - **[!UICONTROL User management]** to add users, manage active users and pending invites, and remove or deactivate users who no longer need access, for example users who are no longer with your company.
 
    - **[!UICONTROL Access management]** to manage user groups, roles, and accounts.
 
