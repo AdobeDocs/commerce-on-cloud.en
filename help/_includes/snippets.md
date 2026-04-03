@@ -44,17 +44,27 @@ Set the `_merge` option to one of the following:
 
 - Indicate the service changes needed, include your updated `.magento.app.yaml` and `services.yaml` files, and state the PHP version in the ticket. For self-service changes to PHP version, extensions, or environment settings, see [PHP settings](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/php-settings.html) in _Application configuration_.
 
->[!IMPORTANT]
->
->When selecting the Environment field in the new ticket form, use Adobe's environment naming. For example, select Staging even if you call that environment **Dev** internally. You can mention your internal name in the description, but the Environment field itself must use Adobe's nomenclature.
+  >[!IMPORTANT]
+  >
+  >When selecting the Environment field in the new ticket form, use Adobe's environment naming. For example, select Staging even if you call that environment **Dev** internally. You can mention your internal name in the description, but the Environment field itself must use Adobe's nomenclature.
 
 - For changes to a live Production environment (**Pro only**), a minimum of 48 hours notice is required. This allows the Cloud infrastructure team sufficient time to marshal resources and conduct a secure upgrade. The notice period begins when the Infrastructure team acknowledges the request and schedules the upgrade, excluding weekends. For example, to have service upgrades completed on a Monday, an acknowledgement of the scheduled upgrade must be received by Wednesday. During peak demand periods, it might take more time to process your request.
  
->[!NOTE]
->
->All scheduled maintenance windows must be provided in UTC format to ensure clarity and consistency across all communications. Service upgrades cannot be scheduled in the Staging environment; in most cases, upgrades in Staging are performed on the same day as the request.
->
->If you request a RabbitMQ upgrade, make sure to redeploy the environment after the upgrade completes so that the message queues are re-initialized.
+  >[!NOTE]
+  >
+  >All scheduled maintenance windows must be provided in UTC format to ensure clarity and consistency across all communications. Service upgrades cannot be scheduled in the Staging environment; in most cases, upgrades in Staging are performed on the same day as the request.
+  >
+  >If you request a RabbitMQ upgrade, make sure to redeploy the environment after the upgrade completes so that the message queues are re-initialized.
+
+- **Two-Part Handshake Process for Scheduling Upgrades**
+
+  To ensure a smooth and coordinated upgrade process, Adobe Commerce Support follows a two-part handshake process for all production environment upgrades:
+
+  1. **Customer Confirmation**: Adobe Support first requests that the customer confirm the desired date and time for the upgrade. This step ensures that the timing aligns with the customer’s business needs and maintenance windows.
+  2. **Scheduling & Final Confirmation**: Once the customer confirms the timing, Adobe Support submits the request to the Infrastructure team, who then reviews the request and provides final confirmation of the scheduled upgrade window.
+
+ The upgrade is not considered scheduled until the Infrastructure team has provided final confirmation. Customers are encouraged to respond promptly at least 48 hours before the upgrade window to avoid delays and to allow for adequate notice.
+
 >[!ENDSHADEBOX]
 
 ## Pro backups {#pro-backups}
