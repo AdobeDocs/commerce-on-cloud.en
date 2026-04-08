@@ -457,10 +457,6 @@ stage:
 -  **Default**—`false`
 -  **Version**—Adobe Commerce 2.1.16 and later
 
->[!WARNING]
->
->Do _not_ enable this variable on a [scaled architecture](../architecture/scaled-architecture.md) project. It causes Redis connection errors. Redis slaves are still active but are not used for Redis reads. As an alternative, Adobe recommends using Adobe Commerce 2.3.5 or later, implement a new Redis backend configuration, and implement L2 caching for Redis.
-
 >[!TIP]
 >
 >The `REDIS_USE_SLAVE_CONNECTION` variable is supported only on Adobe Commerce on cloud infrastructure Staging and Production Pro cluster environments and is not supported on Starter projects.
@@ -509,10 +505,6 @@ stage:
 
 -  **Default**—`false`
 -  **Version**—Adobe Commerce 2.4.8 and later
-
->[!WARNING]
->
->Do _not_ enable this variable on a [scaled architecture](../architecture/scaled-architecture.md) project. It causes Valkey connection errors. Redis slaves are still active but are not used for Redis reads. Alternatively, Adobe recommends using Adobe Commerce 2.4.8 or later, implementing a new Valkey backend configuration, and implementing L2 caching for Valkey.
 
 >[!TIP]
 >
