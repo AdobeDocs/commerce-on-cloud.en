@@ -10,18 +10,18 @@ Critical errors indicate a problem with the Commerce on cloud infrastructure pro
 
 | Error code | Build step | Error description (Title) | Suggested action |
 | - | - | - | - |
-| 2 |  | Cannot write to the `./app/etc/env.php` file | Deployment script can't make required changes to the `/app/etc/env.php` file. Check your filesystem permissions. |
+| 2 |  | Cannot write to the `./app/etc/env.php` file | Deployment script cannot make required changes to the `/app/etc/env.php` file. Check your filesystem permissions. |
 | 3 |  | Configuration is not defined in the `schema.yaml` file | Configuration is not defined in the `./vendor/magento/ece-tools/config/schema.yaml` file. Check that the config variable name is correct and defined. |
 | 4 |  | Failed to parse the `.magento.env.yaml` file | The `./.magento.env.yaml` file format is invalid. Use a YAML parser to check the syntax and fix any errors. |
 | 5 |  | Unable to read the `.magento.env.yaml` file | Unable to read the `./.magento.env.yaml` file. Check file permissions. |
 | 6 |  | Unable to read the `.schema.yaml` file | Unable to read the `./vendor/magento/ece-tools/config/magento.env.yaml` file. Check file permissions and redeploy (`magento-cloud environment:redeploy`). |
-| 7 | refresh-modules | Can't write to the `./app/etc/config.php` file | The deployment script can't make required changes to the `/app/etc/config.php` file. Check your filesystem permissions. |
-| 8 | validate-config | Can't read the `composer.json` file | Unable to read the `./composer.json` file. Check file permissions. |
+| 7 | refresh-modules | Cannot write to the `./app/etc/config.php` file | The deployment script cannot make required changes to the `/app/etc/config.php` file. Check your filesystem permissions. |
+| 8 | validate-config | Cannot read the `composer.json` file | Unable to read the `./composer.json` file. Check file permissions. |
 | 9 | validate-config | The `composer.json` file is missing required autoload section | Required `autoload` section is missing from the `composer.json` file. Compare the autoload section to the `composer.json` file in the Cloud template, and add the missing configuration. |
 | 10 | validate-config | The `.magento.env.yaml` file contains an option that is not declared in the schema, or an option configured with an invalid value or stage | The `./.magento.env.yaml` file contains invalid configuration. Check the error log for detailed info. |
 | 11 | refresh-modules | Command failed: `/bin/magento module:enable --all` | Try to run `composer update` locally. Then, commit and push the updated `composer.lock` file. Also, check the `cloud.log` for more information. For more detailed command output, add the `VERBOSE_COMMANDS: '-vvv'` option to  the `.magento.env.yaml` file. |
 | 12 | apply-patches | Failed to apply patch |  |
-| 13 | set-report-dir-nesting-level | Can't write to the file `/pub/errors/local.xml` |  |
+| 13 | set-report-dir-nesting-level | Cannot write to the file `/pub/errors/local.xml` |  |
 | 14 | copy-sample-data | Failed to copy sample data files |  |
 | 15 | compile-di | Command failed: `/bin/magento setup:di:compile` | Check the `cloud.log` for more information. Add `VERBOSE_COMMANDS: '-vvv'` into `.magento.env.yaml` for more detailed command output. |
 | 16 | dump-autoload | Command failed: `composer dump-autoload` | The `composer dump-autoload` command failed. Check the `cloud.log` for more information. |
@@ -33,7 +33,7 @@ Critical errors indicate a problem with the Commerce on cloud infrastructure pro
 | 22 | backup-data: writable-dirs | Failed to copy some writable directories into the `init` directory | Failed to copy writable directories into the `./init` folder. Check your filesystem permissions. |
 | 23 |  | Unable to create a logger object |  |
 | 24 | backup-data: static-content | Failed to clean the `./init/pub/static/` directory | Failed to clean `./init/pub/static` folder. Check your filesystem permissions. |
-| 25 |  | Can't find the Composer package | If you installed the Adobe Commerce application version directly from the GitHub repository, verify that the `DEPLOYED_MAGENTO_VERSION_FROM_GIT` environment variable is configured. |
+| 25 |  | Cannot find the Composer package | If you installed the Adobe Commerce application version directly from the GitHub repository, verify that the `DEPLOYED_MAGENTO_VERSION_FROM_GIT` environment variable is configured. |
 | 26 | validate-config | Remove Magento Braintree module configuration which is no longer supported in Adobe Commerce and Magento Open Source 2.4 and later versions. | Support for the Braintree module is no longer included with Magento 2.4.0 and later. Remove the CONFIG__STORES__DEFAULT__PAYMENT__BRAINTREE__CHANNEL variable from the variables section of the `.magento.app.yaml` file. For Braintree payment support, use an official extension from the Commerce Marketplace instead. |
 
 ### Deploy stage
@@ -41,13 +41,13 @@ Critical errors indicate a problem with the Commerce on cloud infrastructure pro
 | Error code | Deploy step | Error description (Title) | Suggested action |
 | - | - | - | - |
 | 101 | pre-deploy: cache | Incorrect cache configuration (missing port or host) | Cache configuration is missing required parameters `server` or `port`. Check the `cloud.log` for more information. |
-| 102 |  | Can't write to the `./app/etc/env.php` file | Deployment script can't make required changes to the `/app/etc/env.php` file. Check your filesystem permissions. |
+| 102 |  | Cannot write to the `./app/etc/env.php` file | Deployment script cannot make required changes to the `/app/etc/env.php` file. Check your filesystem permissions. |
 | 103 |  | Configuration is not defined in the `schema.yaml` file | Configuration is not defined in the `./vendor/magento/ece-tools/config/schema.yaml` file. Check that the config variable name is correct, and that it is defined. |
 | 104 |  | Failed to parse the `.magento.env.yaml` file | Configuration is not defined in the `./vendor/magento/ece-tools/config/schema.yaml` file. Check that the config variable name is correct, and that it is defined. |
 | 105 |  | Unable to read the `.magento.env.yaml` file | Unable to read the `./.magento.env.yaml` file. Check file permissions. |
 | 106 |  | Unable to read the `.schema.yaml` file |  |
-| 107 | pre-deploy: clean-redis-cache | Failed to clean the Redis cache | Failed to clean the Redis cache. Check that the Redis cache configuration is correct and that the Redis service is available. See [Setup Redis service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/redis). |
-| 140 | pre-deploy: clean-valkey-cache | Failed to clean the Valkey cache | Failed to clean the Valkey cache. Check that the Valkey cache configuration is correct and that the Valkey service is available. See [Setup Valkey service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey). |
+| 107 | pre-deploy: clean-redis-cache | Failed to clean the Redis cache | Failed to clean the Redis cache. Check that the Redis cache configuration is correct and that the Redis service is available. See [Setup Redis service](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/redis.html). |
+| 140 | pre-deploy: clean-valkey-cache | Failed to clean the Valkey cache | Failed to clean the Valkey cache. Check that the Valkey cache configuration is correct and that the Valkey service is available. See [Setup Valkey service](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/valkey.html). |
 | 108 | pre-deploy: set-production-mode | Command `/bin/magento maintenance:enable` failed | Check the `cloud.log` for more information. For more detailed command output, add the `VERBOSE_COMMANDS: '-vvv'` option to the `.magento.env.yaml` file. |
 | 109 | validate-config | Incorrect database configuration | Check that the `DATABASE_CONFIGURATION` environment variable is configured correctly. |
 | 110 | validate-config | Incorrect session configuration | Check that the `SESSION_CONFIGURATION` environment variable is configured correctly. The configuration must contain at least the `save` parameter. |
@@ -61,7 +61,7 @@ Critical errors indicate a problem with the Commerce on cloud infrastructure pro
 | 118 |  | Required utility was not found (timeout, bash) |  |
 | 119 | install-update: deploy-static-content | Command `/bin/magento setup:static-content:deploy` failed | Check the `cloud.log` for more information. For more detailed command output, add the `VERBOSE_COMMANDS: '-vvv'` option to the `.magento.env.yaml` file. |
 | 120 | compress-static-content | Static content compression failed | Check the `cloud.log` for more information. |
-| 121 | deploy-static-content:generate | Can't update the deployed version | Can't update the `./pub/static/deployed_version.txt` file. Check your filesystem permissions. |
+| 121 | deploy-static-content:generate | Cannot update the deployed version | Cannot update the `./pub/static/deployed_version.txt` file. Check your filesystem permissions. |
 | 122 | clean-static-content | Failed to clean static content files |  |
 | 123 | install-update: split-db | Command `/bin/magento setup:db-schema:split` failed | Check the `cloud.log` for more information. For more detailed command output, add the `VERBOSE_COMMANDS: '-vvv'` option to the `.magento.env.yaml` file. |
 | 124 | clean-view-preprocessed | Failed to clean the `var/view_preprocessed` folder | Unable to clean the `./var/view_preprocessed` folder. Check your filesystem permissions. |
@@ -71,9 +71,9 @@ Critical errors indicate a problem with the Commerce on cloud infrastructure pro
 | 128 | disable-maintenance-mode | Command `/bin/magento maintenance:disable` failed | Check the `cloud.log` for more information. Add `VERBOSE_COMMANDS: '-vvv'` into `.magento.env.yaml` for more detailed command output. |
 | 129 | install-update: reset-password | Unable to read reset password template |  |
 | 130 | install-update: cache_type | Command failed: `php ./bin/magento cache:enable` | Command `php ./bin/magento cache:enable` runs only when Adobe Commerce was installed but `./app/etc/env.php` file was absent or empty at the beginning of the deployment. Check the `cloud.log` for more information. Add `VERBOSE_COMMANDS: '-vvv'` into `.magento.env.yaml` for more detailed command output. |
-| 131 | install-update | The `crypt/key`  key value does not exist in the `./app/etc/env.php` file or the `CRYPT_KEY` cloud environment variable | This error occurs if the `./app/etc/env.php` file is not present when Adobe Commerce deployment begins, or if the `crypt/key` value is undefined. If you migrated the database from another environment, retrieve the crypt key value from that environment. Then, add the value to the [CRYPT_KEY](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#crypt_key) cloud environment variable in your current environment. See [Adobe Commerce encryption key](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/overview#gather-credentials). If you accidentally removed the `./app/etc/env.php` file, use the following command to restore it from the backup files created from a previous deployment: `./vendor/bin/ece-tools backup:restore` CLI command." |
-| 132 |  | Can't connect to the Elasticsearch service | Check for valid Elasticsearch credentials and verify that the service is running |
-| 137 |  | Can't connect to the OpenSearch service | Check for valid OpenSearch credentials and verify that the service is running |
+| 131 | install-update | The `crypt/key`  key value does not exist in the `./app/etc/env.php` file or the `CRYPT_KEY` cloud environment variable | This error occurs if the `./app/etc/env.php` file is not present when Adobe Commerce deployment begins, or if the `crypt/key` value is undefined. If you migrated the database from another environment, retrieve the crypt key value from that environment. Then, add the value to the [CRYPT_KEY](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#crypt_key) cloud environment variable in your current environment. See [Adobe Commerce encryption key](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/overview.html#gather-credentials). If you accidentally removed the `./app/etc/env.php` file, use the following command to restore it from the backup files created from a previous deployment: `./vendor/bin/ece-tools backup:restore` CLI command." |
+| 132 |  | Cannot connect to the Elasticsearch service | Check for valid Elasticsearch credentials and verify that the service is running |
+| 137 |  | Cannot connect to the OpenSearch service | Check for valid OpenSearch credentials and verify that the service is running |
 | 133 | validate-config | Remove Magento Braintree module configuration which is no longer supported in Adobe Commerce or Magento Open Source 2.4 and later versions. | Support for the Braintree module is no longer included with Adobe Commerce or Magento Open Source 2.4.0 and later. Remove the CONFIG__STORES__DEFAULT__PAYMENT__BRAINTREE__CHANNEL variable from the variables section of the `.magento.app.yaml` file. For Braintree support, use an official Braintree Payments extension from the Commerce Marketplace instead. |
 | 134 | validate-config | Adobe Commerce and Magento Open Source 2.4.0 require Elasticsearch service to be installed | Install Elasticsearch service |
 | 138 | validate-config | Adobe Commerce and Magento Open Source 2.4.4 requires OpenSearch or Elasticsearch service to be installed | Install OpenSearch service |
@@ -86,7 +86,7 @@ Critical errors indicate a problem with the Commerce on cloud infrastructure pro
 | Error code | Post-deploy step | Error description (Title) | Suggested action |
 | - | - | - | - |
 | 201 | is-deploy-failed | Deploy stage failed |  |
-| 202 |  | The `./app/etc/env.php` file is not writable | Deployment script can't make required changes to the `/app/etc/env.php` file. Check your filesystem permissions. |
+| 202 |  | The `./app/etc/env.php` file is not writable | Deployment script cannot make required changes to the `/app/etc/env.php` file. Check your filesystem permissions. |
 | 203 |  | Configuration is not defined in the `schema.yaml` file | Configuration is not defined in the `./vendor/magento/ece-tools/config/schema.yaml` file. Check that the config variable name is correct, and that it is defined. |
 | 204 |  | Failed to parse the `.magento.env.yaml` file | The `./.magento.env.yaml` file format is invalid. Use a YAML parser to check the syntax and fix any errors. |
 | 205 |  | Unable to read the `.magento.env.yaml` file | Check file permissions. |
@@ -122,7 +122,7 @@ Warning errors indicate a problem with the Commerce on cloud infrastructure proj
 | 1004 | validate-config | The configuration is not compatible with this version of Magento |  |
 | 1005 | validate-config | SCD options ignored |  |
 | 1006 | validate-config | The configured state is not ideal |  |
-| 1007 | run-baler | Baler JS bundling can't be used |  |
+| 1007 | run-baler | Baler JS bundling cannot be used |  |
 
 ### Deploy stage
 
@@ -144,7 +144,7 @@ Warning errors indicate a problem with the Commerce on cloud infrastructure proj
 | 2013 | validate-config | SCD options ignored because the deploy process did not run on the build phase |  |
 | 2014 | validate-config | The configuration contains deprecated variables or values |  |
 | 2015 | validate-config | Environment configuration is not valid |  |
-| 2016 | validate-config | JSON type configuration can't be decoded |  |
+| 2016 | validate-config | JSON type configuration cannot be decoded |  |
 | 2017 | validate-config | The current configuration is not compatible with this version of Adobe Commerce |  |
 | 2018 | validate-config | Some services have passed EOL |  |
 | 2019 | validate-config | The MySQL search configuration option is deprecated | Use Elasticsearch instead. |
@@ -165,12 +165,12 @@ Warning errors indicate a problem with the Commerce on cloud infrastructure proj
 | Error code | Post-deploy step | Error description (Title) | Suggested action |
 | - | - | - | - |
 | 3001 | validate-config | Debug logging is enabled in Adobe Commerce | To save disk space, do not enable debug logging for your production environments. |
-| 3002 | warm-up | Can't fetch store urls |  |
-| 3003 | warm-up | Can't fetch store url |  |
-| 3004 | backup | Can't create backup files |  |
+| 3002 | warm-up | Cannot fetch store urls |  |
+| 3003 | warm-up | Cannot fetch store url |  |
+| 3004 | backup | Cannot create backup files |  |
 
 ### General
 
 | Error code | General step | Error description (Title) | Suggested action |
 | - | - | - | - |
-| 4001 |  | Can't get system processor count: |  |
+| 4001 |  | Cannot get system processor count: |  |

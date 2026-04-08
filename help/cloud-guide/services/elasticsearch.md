@@ -255,10 +255,3 @@ Removing the plugin entries from `elasticsearch:` in `.magento/services.yaml` do
 >
 >For details on using or troubleshooting the Elastic Suite plugin with Adobe Commerce, see the [Elastic Suite documentation](https://github.com/Smile-SA/elasticsuite).
 
-## Troubleshooting
-
-See the following Adobe Commerce Support articles for help with troubleshooting Elasticsearch problems:
-
--  [Elasticsearch 5 is configured, but search page does not load with "Fielddata is disabled..." error](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled...-error.html)
--  [Elasticsearch in Adobe Commerce troubleshooter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-in-magento-troubleshooter.html)
--  [Elasticsearch Index Status is `yellow` or `red`](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-index-status-is-yellow-or-red.html)

@@ -83,6 +83,7 @@ feature: Cloud
     + [Restore environment](development/restore-environment.md)
     + Storage {#storage}
         + [Manage disk space](storage/manage-disk-space.md)
+        + [Check disk space limit for Adobe Commerce on cloud infrastructure](storage/check-disk-space-limit-on-cloud.md)
         + [Profile database queries](storage/profile-database-queries.md)
         + [Back up the database](storage/database-dump.md)
         + [Backup management](storage/snapshots.md)
@@ -125,6 +126,7 @@ feature: Cloud
         + [Server-side includes](routes/server-side-includes.md)
     + Services {#service}
         + [Configure services](services/services-yaml.md)
+        + [ActiveMQ](services/activemq.md)
         + [Elasticsearch](services/elasticsearch.md)
         + [MySQL](services/mysql.md)
         + [OpenSearch](services/opensearch.md)
@@ -163,6 +165,7 @@ feature: Cloud
     + [Launch steps](launch/steps.md)
 + Monitor site {#monitor}
     + [Performance](monitor/performance.md)
+    + [Operational Telemetry](monitor/operational-telemetry.md)
     + New Relic service {#new-relic}
         + [New Relic overview](monitor/new-relic-service.md)
         + [Account and user management](monitor/account-management.md)

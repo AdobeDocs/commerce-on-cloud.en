@@ -10,6 +10,10 @@ Adobe Commerce on cloud infrastructure runs the application in [_maintenance_ mo
 
 During the deployment process, all connections queue for up to 5 minutes preserving any active sessions and pending actions, such as adding to cart or checkout. After deployment, the queue is released and connections continue without interruption. To use this _connection hold_ to your advantage and reduce deployment to _zero_ downtime, you must configure your project to use the most efficient deploy strategy.
 
+>[!NOTE]
+>
+>To verify whether your Cloud project is optimally configured to minimize deployment downtime, use the [Smart Wizard](smart-wizards.md). The Smart Wizard checks your current setup and guides you through recommended configuration adjustments to enable best practices for zero-downtime deployments.
+
 Use the following steps to reduce the amount of time it takes your store to deploy an update to Production:
 
 1. [Upgrade to the `ece-tools` package](../dev-tools/install-package.md) or [update the `ece-tools` version](../dev-tools/update-package.md)

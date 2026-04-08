@@ -1,0 +1,244 @@
+---
+title: What's new
+description: This page contains the changes made in the last 60 days. We exclude all
+  minor updates, such as copy editing, from this list.
+updated: Fri Apr 3 15:32:04 2026
+entries:
+- description: "[ECE-Tools](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)
+    release, v2002.2.10."
+  versions: ''
+  type: technical
+  date: March 6, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/163
+  merge_commit: 78c1e1ae549243e41721592195bf9426f6e3510f
+  contributor: magedocs
+  membership:
+  labels:
+  - devops
+  - technical
+- description: Added clarification of how to [change the admin URL](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin#change-the-admin-url)
+    in Adobe Commerce on Cloud as opposed to on-premises.
+  versions: ''
+  type: major-update, feedback
+  date: March 4, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/158
+  merge_commit: e16ca6d2bdd93f2cf6c43527b5831779a1c7b3d9
+  contributor: glo42770
+  membership:
+  labels:
+  - major-update
+  - feedback
+- description: Added documentation for [checking the disk space limit for Adobe Commerce
+    on Cloud projects](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/check-disk-space-limit-on-cloud)
+    from the Cloud Console.
+  versions: ''
+  type: new-topic, technical
+  date: March 2, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/161
+  merge_commit: 1feaf0c56401ceebf52263e290695d45302d5485
+  contributor: glo51666
+  membership:
+  labels:
+  - new-topic
+  - technical
+- description: Updated the [Launch checklist](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist)
+    for Commerce on cloud projects to add Fastly AAAA records to the DNS configuration
+    instructions.
+  versions: ''
+  type: feedback
+  date: February 27, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/159
+  merge_commit: c4c84286c178cb17a2051d6d803742ab73c409bf
+  contributor: meker
+  membership:
+  labels:
+  - feedback
+- description: Added instructions for [changing the New Relic account owner](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management)
+    to the _Commerce on Cloud Infrastructure Guide_.
+  versions: ''
+  type: technical
+  date: February 19, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/156
+  merge_commit: 6e570c70bb720a6469d7764c7640b07bb56880ce
+  contributor: jmenn
+  membership:
+  labels:
+  - technical
+- description: Added the following information about origin cloaking to the [Fastly
+    services overview](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly).<br/>-
+    Definition and traffic flow<br/>- Enablement status (enabled on all cloud projects
+    since 2021) Blocked origin URL examples<br/>- REST API usage examples
+  versions: ''
+  type: technical
+  date: February 3, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/149
+  merge_commit: e367fd9c565d4d6d2bbc15b0289768dc38dcf7a9
+  contributor: barnato
+  membership:
+  labels:
+  - technical
+  - migrated-from-commerce-kb
+- description: Updated the version of the examples in [Set up OpenSearch service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch).
+  versions: ''
+  type: feedback
+  date: January 13, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/140
+  merge_commit: f5d325dbb14e5e524c89b41c4d5b82383b5b1ac7
+  contributor: keharper
+  membership:
+  labels:
+  - feedback
+- description: 'Updates the [Cloud Patches 1.1.12 release notes](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
+    to include the fix for the "Checkout fails when JS minification and bundling are
+    enabled: issue.'
+  versions: ''
+  type: technical
+  date: November 17, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/124
+  merge_commit: d07be1a20fa95e2a79534e364e7620a2f856fc0d
+  contributor: glo33270
+  membership:
+  labels:
+  - technical
+- description: Updated [CLI reference](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)
+    after ECE-Tools release, v2002.2.9.
+  versions: ''
+  type: technical
+  date: November 17, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/125
+  merge_commit: 5f088df3e7bc35cc1d7fa93d06b5fa9968802572
+  contributor: magedocs
+  membership:
+  labels:
+  - devops
+  - technical
+- description: The retention period for archived log files for Commerce on cloud projects
+    is now 30 days. See [View and Manage Logs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations)
+    in the Commerce on Cloud Guide.
+  versions: ''
+  type: technical, feedback
+  date: November 6, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/118
+  merge_commit: 1aa8f5e1b64ae40330d9f4b499ceb42d7725d432
+  contributor: meker
+  membership:
+  labels:
+  - technical
+  - feedback
+- description: Updated [CLI reference](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)
+    after ECE-Tools release, v2002.2.8.
+  versions: ''
+  type: technical
+  date: October 9, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/101
+  merge_commit: eb12c7dae2ec1e2c5bf053ed863ffc89dcf347dd
+  contributor: magedocs
+  membership:
+  labels:
+  - devops
+  - technical
+- description: Updated [CLI reference](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference)
+    after Cloud CLI release, v1.47.0.
+  versions: ''
+  type: technical
+  date: October 8, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/99
+  merge_commit: 3a9777c9164dc4447fbc712c887bdfb9923c562f
+  contributor: magedocs
+  membership:
+  labels:
+  - devops
+  - technical
+- description: Clarified supported operating systems for `magento-cloud` CLI tool
+    [installation](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview).
+  versions: ''
+  type: feedback
+  date: September 12, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/88
+  merge_commit: abae1d93c8e2a8cd9658c338835806f239c34464
+  contributor: jmatthew
+  membership:
+  labels:
+  - editorial
+  - feedback
+- description: Added [release notes](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
+    for Cloud Patches package v1.1.11.
+  versions: ''
+  type: major-update
+  date: September 9, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/82
+  merge_commit: 2b6f0790dbfb47472fd06db4a46e36c847873eb7
+  contributor: glo33270
+  membership:
+  labels:
+  - major-update
+- description: Updated [CLI reference](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)
+    and [Error messages](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference)
+    after ECE-Tools release, v2002.2.7.
+  versions: ''
+  type: technical
+  date: August 8, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/70
+  merge_commit: 8cf7b01cbd9fe32a89d83db5b4eac7638b834c49
+  contributor: magedocs
+  membership:
+  labels:
+  - devops
+  - technical
+- description: Added [release notes](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite)
+    for cloud components, Docker, patches, and the ECE tools package.
+  versions: ''
+  type: major-update
+  date: August 7, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/67
+  merge_commit: 7aecdc89a2f4e0103cfe46ed1c2dc7b93566baf5
+  contributor: glo33270
+  membership:
+  labels:
+  - major-update
+- description: Added a note about the mandatory 6-hour cooldown period after [disk
+    space increases](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space)
+    for projects hosted on AWS.
+  versions: ''
+  type: technical
+  date: August 6, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/69
+  merge_commit: a04d056377da4fec9a54503d959f90ebf605de41
+  contributor: jmatthew
+  membership:
+  labels:
+  - technical
+- description: Added additional information about [basic authentication](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration)
+    in Fastly.
+  versions: ''
+  type: major-update
+  date: August 1, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/65
+  merge_commit: 6d949fbbab631e633ba27641a48829d74856fcaa
+  contributor: anchico
+  membership:
+  labels:
+  - major-update
+- description: Added missing [configuration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey)
+    details for the Valkey service.
+  versions: ''
+  type: technical
+  date: July 18, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/63
+  merge_commit: add0d4f3bd91b66fd1bd8f5306ff206076121871
+  contributor: glo33270
+  membership:
+  labels:
+  - technical
+- description: Removed [upgrade instructions](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version)
+    for Commerce versions that have reached end of support and were causing confusion.
+  versions: ''
+  type: major-update, feedback
+  date: July 15, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/44
+  merge_commit: 7c0fcf520cd76f25d51f3a644a60132ac6028959
+  contributor: jmatthew
+  membership:
+  labels:
+  - major-update
+  - feedback

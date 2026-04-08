@@ -10,7 +10,11 @@ The [Message Queue Framework (MQF)](https://experienceleague.adobe.com/docs/comm
 
 The MQF uses [RabbitMQ](https://www.rabbitmq.com/) as the messaging broker, which provides a scalable platform for sending and receiving messages. It also includes a mechanism for storing undelivered messages. [!DNL RabbitMQ] is based on the Advanced Message Queuing Protocol (AMQP) 0.9.1 specification.
 
->[!WARNING]
+>[!NOTE]
+>
+>Adobe Commerce on cloud infrastructure also supports [ActiveMQ Artemis](activemq.md) as an alternative message queue service using the STOMP protocol.
+
+>[!IMPORTANT]
 >
 >If you prefer using an existing AMQP-based service, like [!DNL RabbitMQ], instead of relying on Adobe Commerce on cloud infrastructure to create it for you, use the [`QUEUE_CONFIGURATION`](../environment/variables-deploy.md#queue_configuration) environment variable to connect it to your site.
 
@@ -139,3 +143,15 @@ When you log in to your PHP container, you enter any `amqp-` command available t
 ### Connect from your PHP application
 
 To connect to RabbitMQ using your PHP application, add a PHP library to your source tree.
+
+## Troubleshooting the [!DNL RabbitMQ] service
+
+See [Unable to connect to RabbitMQ in Adobe Commerce Cloud](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27688).
+
+## Upgrading the [!DNL RabbitMQ] service
+
+>![IMPORTANT]
+>
+>When upgrading [!DNL RabbitMQ] in an Integration environment, do not skip versions. Only [sequential upgrades](https://www.rabbitmq.com/docs/upgrade#rabbitmq-version-upgradability) are supported (for example, 3.8 → 3.9 → 3.10 → 3.11 → 3.12 → 3.13 → 4.0 → 4.1), and each version bump must correspond to an actual, successful deployment of your Cloud environment.
+>
+>For general service upgrade instructions, see [Change service version](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version).

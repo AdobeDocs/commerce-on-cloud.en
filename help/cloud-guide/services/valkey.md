@@ -1,4 +1,5 @@
 ---
+
 title: Set up Valkey service
 description: Learn how to set up and optimize Valkey as a backend cache solution for Adobe Commerce on Cloud Infrastructure.
 feature: Cloud, Cache, Services
@@ -8,11 +9,11 @@ exl-id: f8933e0d-a308-4c75-8547-cb26ab6df947
 
 [Valkey](https://valkey.io) is an optional, backend cache solution that replaces the `Zend Framework Zend_Cache_Backend_File`, which Adobe Commerce uses by default.
 
-See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey.html) {target="_blank"} in the _Configuration guide_.
+See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey.html){target="_blank"} in the _Configuration guide_.
 
 {{service-instruction}}
 
-**To enable Valkey**:
+**To replace Redis with Valkey, update the configuration in the following three files**:
 
 1. Add the required name and type to the `.magento/services.yaml` file.
 
@@ -35,10 +36,19 @@ See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operatio
        valkey: "cache:valkey"
    ```
 
+1. Configure `.magento.env.yaml` as follows:.
+   
+   ```yaml
+    stage:
+        deploy:
+        VALKEY_USE_SLAVE_CONNECTION: true
+        VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+   ```
+
 1. Add, commit, and push your code changes.
 
    ```bash
-   git add .magento/services.yaml .magento.app.yaml && git commit -m "Enable valkey service" && git push origin <branch-name>
+   git add .magento/services.yaml .magento.app.yaml .magento.env.yaml && git commit -m "Enable valkey service" && git push origin <branch-name>
    ```
 
 1. [Verify the service relationships](services-yaml.md#service-relationships).
@@ -54,7 +64,7 @@ Assuming your Valkey relationship is named `valkey`, you can access it using the
 1. Open an SSH tunnel to a host.
 
    ```bash
-   valkey-cli -h valkeycache.internal
+   valkey-cli -h valkey.internal
    ```
 
 ## Get installed Valkey version
@@ -62,7 +72,7 @@ Assuming your Valkey relationship is named `valkey`, you can access it using the
 Use the following command to get the Valkey version installed on an integration environment:
 
   ```bash
-  valkey-cli -h valkeycache.internal info | grep version
+  valkey-cli -h valkey.internal info | grep version
   ```
 
 Response:

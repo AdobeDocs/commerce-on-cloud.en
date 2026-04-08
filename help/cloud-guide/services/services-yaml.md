@@ -12,7 +12,6 @@ The `services.yaml` file defines the services supported and used by Adobe Commer
 >
 >The `.magento/services.yaml` file is managed locally in the `.magento` directory of your project. The configuration is accessed during the build process for defining the required service versions in the integration environment only, and gets removed once the deployment has been completed, so you will not find them on the server.
 
-
 The deploy script uses the configuration files in the `.magento` directory to provision the environment with the configured services. A service becomes available to your application if it is included in the [`relationships`](../application/properties.md#relationships) property of the `.magento.app.yaml` file. The `services.yaml` file contains the _type_ and _disk_ values. Service type defines the service _name_ and _version_.
 
 Changing a service configuration causes a deployment to provision the environment with the updated services, which affects the following environments:
@@ -26,13 +25,19 @@ Changing a service configuration causes a deployment to provision the environmen
 
 The cloud infrastructure supports and deploys the following services:
 
+- [ActiveMQ](activemq.md)
 - [MySQL](mysql.md)
 - [Redis](redis.md)
 - [RabbitMQ](rabbitmq.md)
 - [Elasticsearch](elasticsearch.md)
 - [OpenSearch](opensearch.md)
 
-You can view default versions and disk values in the current, [default `services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). The following sample shows the `mysql`, `redis`, `opensearch` or `elasticsearch`, and `rabbitmq` services defined in the `services.yaml` configuration file:
+>[!NOTE]
+>You must [upgrade RabbitMQ sequentially between available versions](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service), for example, you cannot upgrade from 3.9 directly to 4.1
+>
+>After upgrading to a new version of RabbitMQ, trigger a full deployment to ensure that your custom message queues are recreated in RabbitMQ.
+
+You can view default versions and disk values in the current, [default `services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). The following sample shows the `mysql`, `redis`, `opensearch` or `elasticsearch`, `rabbitmq`, and `activemq-artemis` services defined in the `services.yaml` configuration file:
 
 ```yaml
 mysql:
@@ -48,6 +53,10 @@ opensearch:
 
 rabbitmq:
     type: rabbitmq:3.9
+    disk: 1024
+
+activemq-artemis:
+    type: activemq-artemis:2.42
     disk: 1024
 ```
 

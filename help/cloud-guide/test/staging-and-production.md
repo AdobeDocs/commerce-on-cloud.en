@@ -206,7 +206,7 @@ For best results, use the following tools:
 
 ## Functional testing
 
-You can use the Magento Functional Testing Framework (MFTF) to complete functional testing for Adobe Commerce from the Cloud Docker environment. See [Application testing](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing/) in the _Cloud Docker for Commerce guide_.
+You can use the Magento Functional Testing Framework (MFTF) to complete functional testing for Adobe Commerce from the Cloud Docker environment. See [Application testing](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing) in the _Cloud Docker for Commerce guide_.
 
 ## Set up the Security Scan Tool
 

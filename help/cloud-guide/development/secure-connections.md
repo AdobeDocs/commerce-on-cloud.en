@@ -213,3 +213,7 @@ After establishing an SSH tunnel, you can connect to services as if running loca
 ```bash
 mysql --host=127.0.0.1 --user='<database-username>' --pass='<user-password>' --database='<name>' --port='<port>'
 ```
+
+#### Obtain MySQL credentials
+
+Retrieve the MySQL login credentials from the the `database` properties in the `$MAGENTO_CLOUD_RELATIONSHIPS` environment variable. For instructions on retrieving the information in a local or remote environment, see [Service relationships](../services/services-yaml.md#service-relationships).

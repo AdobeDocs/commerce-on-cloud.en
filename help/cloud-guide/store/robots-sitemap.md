@@ -111,12 +111,27 @@ In the `sitemap` admin config, you must specify the location of the file using `
 
 ### Configure indexing by search engine
 
-To activate `robots.txt` customizations in Production, you must enable the **Indexing by search engines is On for `<environment-name>`** option in your project settings.
+To activate `robots.txt` customizations in Production, enable indexing by search engines for the `<environment-name>` option in the project settings on the Cloud Console:
 
-![Use the [!DNL Cloud Console] to manage environments](../../assets/robots-indexing-by-search-engine.png)
+- Legacy Cloud Console—the URL follows the pattern `https://<region-id>.magento.cloud/projects/<project_id>`
+
+  Toggle the setting [!UICONTROL Indexing by search engines] (Legacy Console) [!UICONTROL Hide from search engines] (Adobe Console) to **On**.
+
+  ![Use the [!DNL Cloud Console] to manage environments](../../assets/robots-indexing-by-search-engine.png)
+
+- Adobe Cloud Console—the URL follows the pattern ``https://console.adobecommerce.com/<username>/<project_id>``
+
+  Uncheck the setting [!UICONTROL Hide from search engines].
+
+- You can also use the magento-cloud CLI to update this setting:
+
+  ```bash
+  magento-cloud environment:info -p <project_id> -e production restrict_robots false
+  ```
 
 >[!NOTE]
 >
 >- Indexing by search engines can only be enabled in Production, but not in any of the lower environments.
 >
 >- If you are using PWA Studio and are unable to access your configured `robots.txt` file, add `robots.txt` to the [Front Name Allowlist](https://github.com/magento/magento2-upward-connector#front-name-allowlist) at **Stores** > Configuration > **General** > **Web** > UPWARD PWA Configuration.
+

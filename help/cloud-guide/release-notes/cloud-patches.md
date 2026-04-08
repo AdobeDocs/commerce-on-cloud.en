@@ -2,7 +2,7 @@
 title: Cloud Patches for Commerce
 description: See a list of the latest improvements to the Cloud Patches package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2025-04-24
+last-substantial-update: 2025-08-07
 exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913
 ---
 # Cloud Patches for Commerce
@@ -23,7 +23,53 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.1.6 {#latest}
+## v1.1.13 {#latest}
+
+Release date: March 05, 2026
+
+-  ![new icon](../../assets/new.svg) **PHP 8.5**—Added support for PHP 8.5.<!-- MCLOUD-14181 -->
+-  ![fix icon](../../assets/fix.svg) **Updated functional tests for PHP 8.x**—Removed legacy PHP 7.x tests, added PHP 8.1 and 8.2 new test coverage and updated Adobe Commerce versions.<!-- MCLOUD-14203 -->
+
+## v1.1.12
+
+Release date: November 13, 2025
+
+-  ![fix icon](../../assets/fix.svg) **Symfony package**-Added support for the latest Symfony YAML packages.<!-- MCLOUD-14020 -->
+-  ![fix icon](../../assets/fix.svg) **Patch** – Fix for the [Checkout fails when JS minification and bundling are enabled](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997) issue described in the *Commerce Knowledgebase*.
+- ![fix icon](../../assets/fix.svg) **Improved Category View** - MCLOUD-13752: Improve category view.<!-- MCLOUD-13752 | MCLOUD-14139  -->
+
+## v1.1.11 
+
+Release date: September 09, 2025
+
+-  ![fix icon](../../assets/fix.svg) **WebAPI**-Fix for CVE-2025-54236.<!-- MCLOUD-14016 -->
+
+## v1.1.10
+
+Release date: August 07, 2025
+
+-  ![new icon](../../assets/new.svg) **PHP 8.4**—Added functional tests.<!-- MCLOUD-13312 -->
+
+## v1.1.9 
+
+Release date: June 09, 2025
+
+-  ![fix icon](../../assets/fix.svg) **Improved Category View**-Improve category view.<!-- MCLOUD-13752	 - -->
+-  ![fix icon](../../assets/fix.svg) **Improved Admin Cache**-Improve-admin-cache-efficiency CVE-2025-47110.<!-- MCLOUD-13753	 - -->
+
+## v1.1.8
+
+Release date: June 03, 2025
+
+-  ![fix icon](../../assets/fix.svg) **Improved compatibility with 2.4.8**-Updated 3rd-party libraries for better compatibility with 2.4.8<!-- MCLOUD-13707	 - -->
+
+## v1.1.7
+
+Release date: May 05, 2025
+
+-  ![new icon](../../assets/new.svg) **Updated patch for Commerce 2.4.4 to 2.4.8**—This is an updated patch for [CVE-2025-24434](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/increased-execution-time-for-bulk-asynchronous-web-endpoints-post-apsb25-08-security-patch), which was released in 1.1.7<!-- MCLOUD-13619 -->
+
+## v1.1.6
 
 Release date: April 24, 2025
 

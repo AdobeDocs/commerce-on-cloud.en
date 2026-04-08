@@ -30,7 +30,9 @@ The PrivateLink service integration for Adobe Commerce on cloud infrastructure p
 - You cannot establish SSH connections using PrivateLink. See [Enable SSH keys](secure-connections.md).
 - Adobe Commerce support does not cover troubleshooting AWS PrivateLink issues beyond initial enablement.
 - Customers are responsible for costs associated with managing their own VPC.
-- You cannot use the HTTPS protocol (port 443) to connect to Adobe Commerce on cloud infrastructure over Azure Private Link due to [Fastly origin cloaking](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html). This limitation does not apply to AWS PrivateLink.
+- **HTTPS protocol (port 443) support by platform:**
+  - **Azure Private Link**: You cannot use the HTTPS protocol (port 443) to connect to Adobe Commerce on cloud infrastructure due to [Fastly origin cloaking](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html).
+  - **AWS PrivateLink**: HTTPS protocol (port 443) connections are supported.
 - PrivateDNS is not available.
 
 ## PrivateLink connection types
@@ -59,7 +61,7 @@ Choose one of the PrivateLink connection types best suited for your Adobe Commer
 
 ### Prerequisites
 
-![check](../../assets/fix.svg) A Cloud account (AWS or Azure) in the same region as the Adobe Commerce on cloud infrastructure instance.
+![check](../../assets/fix.svg) A Cloud account (AWS or Azure) in the same region as the Adobe Commerce on cloud infrastructure instance.
 
 ![check](../../assets/fix.svg) A VPC in the customer environment that hosts the services to connect through PrivateLink. See the AWS or Azure documentation for help with VPC setup or contact your network administrator.
 
@@ -71,7 +73,7 @@ Gather the following data required for PrivateLink enablement:
 - **Cloud region**—Provide the Cloud region where the account is hosted for verification purposes
 - **Services and communication ports**—Adobe must open ports to enable service communication between VPCs, for example SQL port 3306, SFTP port 2222
 - **Project ID**—Provide the Adobe Commerce on cloud infrastructure Pro project ID. You can get the Project ID and other project information using the following [Cloud CLI](../dev-tools/cloud-cli-overview.md) command: `magento-cloud project:info`
-- **Connection type**—Specify unidirectional or bidirectional for connection type
+- **Connection type**—Specify unidirectional or bidirectional for connection type
 - **Endpoint service**—For bidirectional PrivateLink connections, provide the DNS URL for the VPC endpoint service that Adobe must connect to, for example: `com.amazonaws.vpce.<cloud-region>.vpce-svc-<service-id>`
 - **Endpoint service access granted**—To connect to external service, allow the endpoint service access to the following AWS account principal: `arn:aws:iam::402592597372:root`
 
@@ -158,7 +160,7 @@ You can use the Telnet application to test the connection to the VPC endpoint se
    Sample successful response:
 
    ```
-   * Rebuilt URL to: telnet://vpce-007ffnb9qkcnjgult-yfhmywqh.vpce-svc-083cqvm2ta3rxqat5v.us-east-1.vpce.amazonaws.com:80
+   * Rebuilt URL to: telnet://vpce-007ffnb9qkcnjgult-yfhmywqh.vpce-svc-083cqvm2ta3rxqat5v.us-east-1.vpce. amazonaws.com:80
    * Connected to vpce-0088d56482571241d-yfhmywqh.vpce-svc-083cqvm2ta3rxqat5v.us-east-1.vpce. amazonaws.com (191.210.82.246) port 80 (#0)
    ```
 

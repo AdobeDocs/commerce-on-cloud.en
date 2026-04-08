@@ -8,7 +8,11 @@ exl-id: f6901931-7b3f-40a8-9514-168c6243cc43
 
 After you set up and test the Fastly service in your Staging and Production environments, review and customize cache configuration settings. For example, you can update settings to enable force TLS to redirect HTTP requests to Fastly, update purge settings, and enable basic authentication to password-protect your site during development.
 
-The following sections provide an overview and instructions for configuring some cache settings. Find additional information about the available configuration options in the [Fastly CDN Module for Magento 2](https://github.com/fastly/fastly-magento2/tree/master/Documentation) documentation.
+The following sections provide an overview and instructions for configuring some cache settings.
+
+>[!IMPORTANT]
+>
+>The available Admin options for configuring the Fastly cache depend on which version of the Fastly CDN Module for Magento 2 is installed. Adobe recommends that you [upgrade the Fastly module](fastly-configuration.md#upgrade) the Fastly module in your Staging and Production environments to the latest version. For the latest information, see the [Release Notes for the Fastly CDN for Magento2 module](https://github.com/fastly/fastly-magento2/blob/master/Release-Notes.md).
 
 ## Force TLS
 
@@ -26,6 +30,8 @@ To complete bulk actions that take longer than 3 minutes change the _Admin path 
 
 >[!NOTE]
 >
+>If you have specified a custom Admin Path endpoint in the **Custom Admin Path** field in **Stores** > **Configuration** > **Advanced** > **Admin** > **Admin Base URL**, you will also need to set the [ADMIN_URL Variable](../environment/variables-admin.md#change-the-admin-url) in that environment to the same value. If the settings are different, the timeout will not work.
+>
 >To extend Fastly timeout parameters for other than Admin in the Fastly UI, see [Increase Timeouts for Long Jobs](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-INCREASE-TIMEOUTS-LONG-JOBS.md).
 
 **To extend the Fastly timeout for the Admin**:
@@ -37,6 +43,10 @@ To complete bulk actions that take longer than 3 minutes change the _Admin path 
 1. In the _Fastly Configuration_ section, expand **Advanced Configuration**.
 
 1. Set the **Admin path timeout** value in seconds. This value cannot be more than 10 minutes (600 seconds).
+
+>[!NOTE]
+>
+>The **_Admin path timeout_** configuration setting does not control timeout values outside of Adobe Commerce, such as Fastly WAF timeout. To adjust the Fastly WAF timeout value, you must open an Adobe Support ticket to update it in the Fastly service.
 
 1. Click **Save Config** at the top of the page.
 
@@ -149,13 +159,15 @@ For more information, see the [Backend settings guide](https://github.com/fastly
 
 ## Basic authentication
 
-Basic authentication is a feature to protect every page and asset on your site
-with a username and password. We **do not recommend** activating basic
-authentication on your Production environment. You can configure it on Staging
-to protect your site during the development process. See the [Basic Authentication Guide](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BASIC-AUTH.md) in the Fastly CDN module documentation.
+Basic authentication is a feature to protect every page and asset on your site with a username and password. 
 
-If you add user access and enable basic authentication on Staging, you can still
-access the Admin without requiring additional credentials.
+Adobe **does not recommend** activating basic authentication on your Production environment. You can configure it on Staging to protect your site during the development process. See the [Basic Authentication Guide](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BASIC-AUTH.md) in the Fastly CDN module documentation.
+
+If you add user access and enable basic authentication on Staging, you can still access the Admin without requiring additional credentials.
+
+>[!NOTE]
+>
+>Do **not** check [!UICONTROL Enable HTTP access control] in the Cloud Console for any environment where Fastly is enabled (such as Staging or non-live Production environments.) If access control is configured this way, users who previously had access may still be able to access the site if their credentials remain cached by Fastly, even after their access has been rescinded.
 
 ## Create custom VCL snippets
 

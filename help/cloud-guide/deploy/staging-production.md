@@ -314,16 +314,10 @@ When importing data, you must drop and create a database.
    drop database main;
    ```
 
-   For Production:
+   For Production and Staging environments:
 
    ```shell
-   drop database <cluster-id>;
-   ```
-
-   For Staging:
-
-   ```shell
-   drop database <cluster-ID_stg>;
+   drop database <database_name>;
    ```
 
 1. Re-create the database.

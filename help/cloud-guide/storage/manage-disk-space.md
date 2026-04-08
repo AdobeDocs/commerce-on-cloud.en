@@ -30,7 +30,7 @@ _"Our monitoring has detected files storage on your cluster (project-id-environm
 
 >[!TIP]
 >
->It is recommended that you regularly monitor your storage capacity and maintain it well under 90% to avoid these automatic increases. Once allocated, the storage increase for Pro staging and production cannot be reverted.
+>Adobe recommends that you regularly monitor your storage capacity and maintain it well under 90% to avoid these automatic increases. Once allocated, the storage increase for Pro staging and production is permanent and cannot be reverted.
 
 ## Check integration environment
 
@@ -126,7 +126,8 @@ Two [configuration files](../environment/overview.md) control the allocation of 
 
 >[!IMPORTANT]
 >
->For Pro Production and Staging environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change disk space allocation. A size increase of Pro Production and Staging environments can only occur at certain intervals, so, depending on your current disk space usage, support might recommend increasing disk space allocation by a minimum of 10 GB. Once allocated, the storage increase for Pro staging and production cannot be reverted. Storage cannot be reallocated or redistributed between resources. To add more file storage space, reduce the disk space allocated for MySQL.
+>- For Pro Production and Staging environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change disk space allocation. A size increase of Pro Production and Staging environments can only occur at certain intervals, so, depending on your current disk space usage, support might recommend increasing disk space allocation by a minimum of 10 GB. Once allocated, the storage increase for Pro staging and production cannot be reverted. Storage cannot be reallocated or redistributed between resources. To add more file storage space, reduce the disk space allocated for MySQL.
+>- Pro Production and Staging environments hosted on AWS have a [mandatory 6-hour cooldown](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVolume.html) that applies to disk space increases. After disk space is increased on a mount, you must wait 6 hours before disk space can be increased again on that mount.
 
 ### Application disk space
 

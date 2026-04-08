@@ -6,7 +6,7 @@ exl-id: e704ab2a-2f6b-480b-9b36-1e97c406e873
 ---
 # Set up OpenSearch service
 
-The [OpenSearch](https://www.opensearch.org) service is an open-source fork of Elasticsearch 7.10.2, following the licensing changes for Elasticsearch. See the [OpenSource Project](https://github.com/opensearch-project) in GitHub.
+The [OpenSearch](https://www.opensearch.org) service is an open-source fork of Elasticsearch 7.10.2, following the licensing changes for Elasticsearch. See the [OpenSource Project](https://github.com/opensearch-project) in GitHub. [System Requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) lists the supported version.
 
 {{elasticsearch-support}}
 
@@ -21,15 +21,15 @@ OpenSearch enables you to take data from any source, any format, and search and 
 
 >[!TIP]
 >
->Adobe recommends that you always set up OpenSearch for your Adobe Commerce on cloud infrastructure project even if you plan to configure a third-party search tool for your Adobe Commerce application. Setting up OpenSearch provides a fallback option if the third-party search tool fails.
+>For Adobe Commerce on Cloud Infrastructure projects not using [Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/overview), Adobe recommends setting up [!DNL OpenSearch] to provide a fallback option for third-party search tools. However, [!DNL OpenSearch] and [!DNL Live Search] cannot both be enabled on the same Commerce instance.
 
 **To enable OpenSearch**:
 
-1. For Starter and Pro integration environments, add the `opensearch` service to the `.magento/services.yaml` file with the appropriate version and allocated disk space in MB. In this case, version 2 is appropriate. The minor version is not required because cloud infrastructure uses the latest version of OpenSearch.
+1. For integration environments, add the `opensearch` service to the `.magento/services.yaml` file with the appropriate version and allocated disk space in MB. In this case, version 3 is appropriate. The minor version is not required.
 
    ```yaml
    opensearch:
-       type: opensearch:2
+       type: opensearch:3
        disk: 1024
    ```
 
@@ -129,7 +129,7 @@ Service version and compatibility support is determined by versions tested and d
    | path                                     | null                                                   |
    | query                                    |                                                        |
    | password                                 | null                                                   |
-   | type                                     | opensearch:2                                           |
+   | type                                     | opensearch:3                                           |
    | public                                   | false                                                  |
    | host_mapped                              | false                                                  |
    ```
@@ -147,7 +147,7 @@ Service version and compatibility support is determined by versions tested and d
       "cluster_uuid" : "_yzaae6-ywSEW1MaAF8ZPWyQ",
       "version" : {
         "distribution" : "opensearch",
-        "number" : "2.5.0",
+        "number" : "3.1.0",
         "build_type" : "deb",
         "build_hash" : "aaaaaaa",
         "build_date" : "2023-01-23T12:07:18.760675Z",
@@ -176,6 +176,11 @@ If you need to restart the OpenSearch service, you must contact Adobe Commerce s
 
 Optionally, you can add plugins for OpenSearch by adding the `configuration:plugins` section to the OpenSearch service in the `.magento/services.yaml` file. For example, the following code enables the ICU analysis and Phonetic analysis plugins.
 
+>[!NOTE]
+>
+>This only applies to Integration and Starter environments. To install the plugins in a Pro Staging or Production cluster, [submit a support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
+
+
 ```yaml
 opensearch:
     type: opensearch:2
@@ -192,7 +197,12 @@ See the [OpenSearch Project](https://github.com/opensearch-project) for more inf
 
 Removing the plugin entries from the `opensearch:` section of the `.magento/services.yaml` file does **not** uninstall or disable the service. To fully disable the service, you must reindex your OpenSearch data after removing the plugins from your `.magento/services.yaml` file. This design prevents the possible loss or corruption of data that depends on these plugins.
 
+
 **To remove OpenSearch plugins**:
+
+>[!NOTE]
+>
+>This change only applies to Integration and Starter environments. You will have to [submit a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) to remove the plugin in a Pro Staging or Production cluster.
 
 1. Remove the OpenSearch plugin entries from your `.magento/services.yaml` file.
 1. Add, commit, and push your code changes.
@@ -210,7 +220,7 @@ Removing the plugin entries from the `opensearch:` section of the `.magento/serv
    ```
 
 1. Commit the `.magento/services.yaml` changes to your cloud repository.
-1. Reindex the Catalog Search index.
+1. Reindex the Catalog Search index (all environments: Integration, Starter, Pro Staging and Production clusters).
 
     ```bash
     bin/magento indexer:reindex catalogsearch_fulltext
