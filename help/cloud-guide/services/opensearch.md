@@ -183,7 +183,7 @@ Optionally, you can add plugins for OpenSearch by adding the `configuration:plug
 
 ```yaml
 opensearch:
-    type: opensearch:2
+    type: opensearch:3
     disk: 1024
     configuration:
         plugins:
