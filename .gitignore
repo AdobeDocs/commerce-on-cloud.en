@@ -9,13 +9,12 @@ Thumbs.db
 *.code-workspace
 .vscode/spellright.dict
 
-# Local infrustructure files #
+# Local infrastructure files #
 #########################
 
 _jekyll/_site
 tmp
 Gemfile.lock
-.cursor/
 
 # Packages #
 ############
@@ -25,3 +24,13 @@ Gemfile.lock
 *.rar
 *.tar
 *.zip
+
+# IDEs #
+########
+.idea
+.cursor
+.claude
+
+# Environment variables #
+########################
+.env
