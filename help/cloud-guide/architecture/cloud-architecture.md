@@ -20,7 +20,7 @@ For comparison, each plan includes the following infrastructure features and sup
 | Dedicated hardware | | Isolated and dedicated hardware in the underlying Infrastructure as a service (IaaS) to provide even higher levels of reliability and availability |
 | 24x7 email support | 24x7 monitoring and email support for the core application and the cloud infrastructure | 24x7 monitoring and email support for the core application and the cloud infrastructure |
 | A dedicated Customer Technical Advisor (CTA) | | Dedicated technical account management for the initial launch period, starting with your subscription until your initial site launch |
-| Add-ons\*| <ul><li>[B2B module](https://business.adobe.com/products/magento/b2b-ecommerce.html)</li></ul> |
+| Add-ons\* | <ul><li>[B2B module](https://business.adobe.com/products/magento/b2b-ecommerce.html)</li></ul> | |
 
 \* _Available for an additional fee_
 

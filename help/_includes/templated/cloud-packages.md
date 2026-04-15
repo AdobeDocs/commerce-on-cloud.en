@@ -1,16 +1,20 @@
 # Cloud packages for Adobe Commerce
 
-<!-- The 'packages' variable contains the 'packages' node of the '_data/codebase/cloud/composer_lock.json' file
- -->
+<!-- 
+The 'packages' variable contains the 'packages' node of the '_data/codebase/cloud/composer_lock.json' file
+-->
 
-<!-- The 'packages-dev' variable contains the 'packages-dev' node of the '_data/codebase/cloud/composer_lock.json' file
- -->
+<!-- 
+The 'packages-dev' variable contains the 'packages-dev' node of the '_data/codebase/cloud/composer_lock.json' file
+-->
 
-<!-- The 'product' variable contains data of the 'magento/magento-cloud-metapackage' package
- -->
+<!-- 
+The 'product' variable contains data of the 'magento/magento-cloud-metapackage' package
+-->
 
-<!-- The edition variable contains `cloud` value from the _data/names.yml file
- -->
+<!-- 
+The edition variable contains `cloud` value from the _data/names.yml file
+-->
 
 Adobe Commerce on cloud infrastructure uses Composer to manage PHP packages.
 
