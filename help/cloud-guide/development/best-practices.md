@@ -14,7 +14,7 @@ Follow best practices for builds and deployment, and use the [Upgrades and patch
 
     - Ensure that any custom themes are compatible with the new Adobe Commerce version
 
-    - After upgrading third party and custom extensions, use the `magento-cloud local:build` command to validate Composer dependencies before deploying, and run the [Upgrade Compatibility Tool](#upgrade-compatibility-tool) to identify code‑level incompatibilities between your current and target versions.
+    - After upgrading third party and custom extensions, use the `magento-cloud local:build` command to validate Composer dependencies before deploying, and run the [Upgrade Compatibility Tool](#use-the-upgrade-compatibility-tool) to identify code‑level incompatibilities between your current and target versions.
  
     - Use the Upgrade Compatibility Tool report to prioritize remediation across custom modules and extensions before deploying changes to Integration, Staging, and Production.
 
