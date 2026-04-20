@@ -2,7 +2,7 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Apr 10 15:32:06 2026
+updated: Fri Apr 17 15:32:06 2026
 entries:
 - description: Added a security note to the [Web property configuration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property)
     reference for Adobe Commerce on cloud infrastructure to clarify that the default
@@ -11,10 +11,9 @@ entries:
   versions: ''
   type: technical, feedback
   date: April 10, 2026
-  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/173
+  link: enterprise:AdobeDocs/commerce-on-cloud.en/pull/173
   merge_commit: f3fa8339961505f9c8ac2612d7a89e83553eee37
   contributor: meker
-  membership:
   labels:
   - technical
   - feedback
