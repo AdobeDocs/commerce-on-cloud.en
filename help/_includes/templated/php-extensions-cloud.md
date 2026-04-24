@@ -71,6 +71,7 @@
             <td>
                 igbinary<br>
                 imap<br>
+                ldap<br>
                 mcrypt<br>
                 mysqli<br>
                 pdo_mysql<br>
