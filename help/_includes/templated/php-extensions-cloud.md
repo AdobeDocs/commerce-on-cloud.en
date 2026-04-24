@@ -24,7 +24,8 @@
                 gd<br>
                 gettext<br>
                 intl<br>
-                libxml<br>
+                ldap<br>
+                libxml<br>                
                 mysqli<br>
                 pcntl<br>
                 pdo_mysql<br>
