@@ -2,7 +2,7 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Apr 17 15:32:06 2026
+updated: Fri Apr 24 15:32:08 2026
 entries:
 - description: Added a security note to the [Web property configuration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property)
     reference for Adobe Commerce on cloud infrastructure to clarify that the default
