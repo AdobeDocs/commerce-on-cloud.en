@@ -24,7 +24,7 @@
                 gd<br>
                 gettext<br>
                 intl<br>
-                libxml<br>                
+                libxml<br>
                 mysqli<br>
                 pcntl<br>
                 pdo_mysql<br>
@@ -71,7 +71,6 @@
             <td>
                 igbinary<br>
                 imap<br>
-                ldap<br>
                 mcrypt<br>
                 mysqli<br>
                 pdo_mysql<br>
@@ -87,4 +86,6 @@
     </tbody>
 </table>
 
->[!NOTE] Some PHP extensions have environment-specific installation limitations and are not represented fully by the table above. For example, LDAP can be enabled in Integration environments through project configuration, but it is not a self-service configuration for Pro Staging and Production through .magento.app.yaml
+>[!NOTE]
+>
+>Some PHP extensions have environment-specific installation limitations and are not represented fully by the table above. For example, LDAP can be enabled in Integration environments through project configuration, but it is not a self-service configuration for Pro Staging and Production through .magento.app.yaml
