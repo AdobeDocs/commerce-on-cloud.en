@@ -23,6 +23,7 @@ You can create a manual backup of any active Starter environment and integration
 >[!NOTE]
 >
 >You can create a backup of the code directly on Pro Production and Staging clusters by running the following command in the terminal - adjusting it for any folders/paths that you want to include/exclude:
+>
 >```bash
 >mkdir -p var/support
 >/usr/bin/nice -n 15 /bin/tar -czhf var/support/code-$(date +"%Y%m%d%H%M%p").tar.gz app bin composer.* dev lib pub/*.php pub/errors setup vendor --exclude='pub/media'
