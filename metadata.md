@@ -3,6 +3,8 @@ cloud: Experience Cloud
 type: Documentation
 solution-title: Commerce
 solution: Commerce
+landing-page-name: commerce
+landing-page-breadcrumb-title: Commerce
 feature-set: Commerce
 role: Admin, Developer
 topic: Commerce, Development
