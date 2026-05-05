@@ -250,7 +250,9 @@ Release date: February 1, 2021
 
 -  ![new icon](../../assets/new.svg) **New SCD_NO_PARENT environment variable**—Added the `SCD_NO_PARENT` environment variable (for Adobe Commerce >=2.4.2) to manage the generation of static content for parent themes.<!--MCLOUD-7284-->
 
--  ![fix icon](../../assets/fix.svg) **Memory limits and commands**—Fixed an issue where `php vendor/bin/ece-tools` commands would not work if the size of the `cloud.log` file exceeded the PHP memory_limit. Instead of reading the entire `cloud.log` file into memory, we now only read a smaller subset of data from the log file.<!--MCLOUD-7275--><!--MCLOUD-7400-->
+-  ![fix icon](../../assets/fix.svg) **Memory limits and commands**—Fixed an issue where `php vendor/bin/ece-tools` commands would not work if the size of the `cloud.log` file exceeded the PHP memory_limit. Instead of reading the entire `cloud.log` file into memory, we now only read a smaller subset of data from the log file.
+<!--MCLOUD-7275-->
+<!--MCLOUD-7400-->
 
 -  ![fix icon](../../assets/fix.svg) **Custom database connections**—Fixed a `.magento.env.yaml` configuration issue in which custom database connections defined for `DATABASE_CONFIGURATION` were not used. The connection settings were not being added to `app/etc/env.php`.<!--MCLOUD-7426-->
 

@@ -1,7 +1,7 @@
 ---
 title: Import existing Commerce code
 description: Learn how tp import existing Commerce code to a new cloud infrastructure project.
-hide: yes
+hide: true
 hidefromtoc: yes
 recommendations: noDisplay, noCatalog
 ---
