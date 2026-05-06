@@ -22,7 +22,21 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.2.10 {#latest}
+## v2002.2.11 {#latest}
+
+Release date: May 06, 2026
+
+-  ![new icon](../../assets/new.svg) **RabbitMQ**—Added RabbitMQ 4.2 support.<!-- MCLOUD-14374 -->
+-  ![new icon](../../assets/new.svg) **Opensearch**—Added Opensearch 2.19 and 3.5 support for multiple Magento versions. <!-- MCLOUD-14682 -->
+-  ![new icon](../../assets/new.svg) **Valkey**—Added Valkey 8.1 and 9 support.<!-- MCLOUD-14784/MCLOUD-14625 -->
+-  ![new icon](../../assets/new.svg) **ActiveMQ**—Added ActiveMQ 2.5.1 support.<!-- MCLOUD-14683 -->
+-  ![new icon](../../assets/new.svg) **MariaDB**—Added MariaDB 11.8 and 12.2 support.<!-- MCLOUD-14628 -->
+-  ![fix icon](../../assets/fix.svg) **Deployment warning**-Fixed Opensearch and MariaDB warnings in cloud deployments for newer versions.<!-- MCLOUD-14822 -->
+-  ![fix icon](../../assets/fix.svg) **OS versions**-Updated OS versions defined in configurations.<!-- MCLOUD-14724 -->
+-  ![fix icon](../../assets/fix.svg) **Composer test fixes**-Updated composer test deprecations.<!-- MCLOUD-14717 -->
+-  ![fix icon](../../assets/fix.svg) **ECE Tools version visibility**—Fixed ECE Tools version visibility in cloud environments.<!--MCLOUD-14221 -->
+
+## v2002.2.10
 
 Release date: March 05, 2026
 

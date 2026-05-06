@@ -19,7 +19,23 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v1.4.7 {#latest}
+## v1.4.8 {#latest}
+
+Release date: May 06, 2026
+
+- ![new icon](../../assets/new.svg) **MariaDB**—Updated MariaDB tests.<!-- MCLOUD-14821 --
+- ![new icon](../../assets/new.svg) **RabbitMQ**—Updated RabbitMQ tests.<!-- MCLOUD-14647 -->
+- ![new icon](../../assets/new.svg) **RabbitMQ**—Added acceptance coverage for RabbitMQ.<!-- MCLOUD-14375 -->
+- ![new icon](../../assets/new.svg) **Valkey**—Added Valkey 8.1 support.<!-- MCLOUD-14784 -->
+- ![new icon](../../assets/new.svg) **Opensearch image**—Added Opensearch 2.19 and 3.5.<!-- MCLOUD-14790/MCLOUD-14785 -->
+- ![new icon](../../assets/new.svg) **Opensearch 3.5**—Updated Opensearch tests.<!-- MCLOUD-14680 -->
+- ![new icon](../../assets/new.svg) **ActiveMQ**—Added ActiveMQ 2.51 support.<!-- MCLOUD-14683 -->
+- ![new icon](../../assets/new.svg) **MariaDB**—Added MariaDB 11.8 and 12.2 support.<!-- MCLOUD-14635 -->
+- ![new icon](../../assets/new.svg) **Valkey**—Updated Valkey tests.<!-- MCLOUD-14643 -->
+- ![fix icon](../../assets/fix.svg) **AcceptanceCest**-Added AcceptanceCest functional test in cloud docker.<!-- MCLOUD-14588 -->
+- ![fix icon](../../assets/fix.svg) **MailHog**—Fixed the MailHog image.<!-- MCLOUD-14663 -->
+
+## v1.4.7
 
 Release date: March 05, 2026
 
