@@ -34,7 +34,7 @@ Release date: May 06, 2026
 -  ![fix icon](../../assets/fix.svg) **Deployment warning**-Fixed Opensearch and MariaDB warnings in cloud deployments for newer versions.<!-- MCLOUD-14822 -->
 -  ![fix icon](../../assets/fix.svg) **OS versions**-Updated OS versions defined in configurations.<!-- MCLOUD-14724 -->
 -  ![fix icon](../../assets/fix.svg) **Composer test fixes**-Updated composer test deprecations.<!-- MCLOUD-14717 -->
--  ![fix icon](../../assets/fix.svg) **ECE Tools version visibility**—Fixed ECE Tools version visibility in cloud environments.<!--MCLOUD-14221 -->
+-  ![fix icon](../../assets/fix.svg) **ECE Tools version visibility**—Fixed ECE Tools version visibility at cloud deployment.<!--MCLOUD-14221 -->
 
 ## v2002.2.10
 
