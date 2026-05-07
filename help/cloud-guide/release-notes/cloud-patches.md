@@ -23,7 +23,15 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.1.13 {#latest}
+## v1.1.14 {#latest}
+
+Release date: May 06, 2026
+
+- ![fix icon](../../assets/fix.svg) **Patch version visibility**-Fixed cloud patch version visibility in cloud environments.<!--MCLOUD-14221 -->
+- ![fix icon](../../assets/fix.svg) **PHPUnit cleanup**-Fixed PHPUnit notices<!--MCLOUD-14717 -->
+- ![new icon](../../assets/new.svg)**Cosmetic fixes**—Added cosmetic improvements.<!--MCLOUD-14686 -->
+
+## v1.1.13
 
 Release date: March 05, 2026
 

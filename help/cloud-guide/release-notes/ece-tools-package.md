@@ -2,7 +2,7 @@
 title: ECE-Tools release notes
 description: See a list of the latest improvements to the ECE-Tools package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2025-08-07
+last-substantial-update: 2026-05-07
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
 ---
 # ECE-Tools release notes
@@ -22,7 +22,18 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.2.10 {#latest}
+## v2002.2.11 {#latest}
+
+Release date: May 06, 2026
+
+-  ![new icon](../../assets/new.svg) **RabbitMQ**—Added RabbitMQ 4.2 support.<!-- MCLOUD-14374 -->
+-  ![new icon](../../assets/new.svg) **Opensearch**—Added Opensearch 2.19 and 3.5 support for multiple Magento versions. <!-- MCLOUD-14682 -->
+-  ![new icon](../../assets/new.svg) **Valkey**—Added Valkey 8.1 and 9 support.<!-- MCLOUD-14784/MCLOUD-14625 -->
+-  ![new icon](../../assets/new.svg) **ActiveMQ**—Added ActiveMQ 2.5.1 support.<!-- MCLOUD-14683 -->
+-  ![new icon](../../assets/new.svg) **MariaDB**—Added MariaDB 11.8 and 12.2 support.<!-- MCLOUD-14628 -->
+-  ![fix icon](../../assets/fix.svg) **Configuration and deployment**—Fixed cloud deployment warnings, updated composer test deprecations,and corrected ECE tools version visibility at deployment.<!-- MCLOUD-14822 -->
+
+## v2002.2.10
 
 Release date: March 05, 2026
 
@@ -79,14 +90,18 @@ Release date: May 27, 2025
 
 Release date: April 24, 2025
 
--  ![fix icon](../../assets/fix.svg) **Opensearch2 for 2.4.4/2.4.5**—Fixed an issue related to support for `opensearch2` in Adobe Commerce versions 2.4.4/2.4.5. <!-- MCLOUD-13607 -->
+-  ![fix icon](../../assets/fix.svg) **Opensearch2 for 2.4.4/2.4.5**—Fixed an issue related to support for `opensearch2` in Adobe Commerce versions 2.4.4/2.4.5.<!-- MCLOUD-13607 -->
 
 ## v2002.2.3
 
 Release date: April 9, 2025
 
--  ![fix icon](../../assets/fix.svg) **Fix Valkey**Fixed issue with valkey custom config. <!-- MCLOUD-13569 -->
--  ![fix icon](../../assets/fix.svg) **Fix validator**-Fixed validator for RabbitMQ 4.0. <!-- MCLOUD-13560 -->
+-  ![fix icon](../../assets/fix.svg) **Fix Valkey**Fixed issue with valkey custom config.<!-- MCLOUD-13569 -->
+-  ![fix icon](../../assets/fix.svg) **Fix validator**-Fixed validator for RabbitMQ 4.0.<!-- MCLOUD-13560 -->
+
+## v2002.2.2
+
+Release date: April 7, 2025
 
 ## v2002.2.2
 
@@ -250,9 +265,7 @@ Release date: February 1, 2021
 
 -  ![new icon](../../assets/new.svg) **New SCD_NO_PARENT environment variable**—Added the `SCD_NO_PARENT` environment variable (for Adobe Commerce >=2.4.2) to manage the generation of static content for parent themes.<!--MCLOUD-7284-->
 
--  ![fix icon](../../assets/fix.svg) **Memory limits and commands**—Fixed an issue where `php vendor/bin/ece-tools` commands would not work if the size of the `cloud.log` file exceeded the PHP memory_limit. Instead of reading the entire `cloud.log` file into memory, we now only read a smaller subset of data from the log file.
-<!--MCLOUD-7275-->
-<!--MCLOUD-7400-->
+-  ![fix icon](../../assets/fix.svg) **Memory limits and commands**—Fixed an issue where `php vendor/bin/ece-tools` commands would not work if the size of the `cloud.log` file exceeded the PHP memory_limit. Instead of reading the entire `cloud.log` file into memory, we now only read a smaller subset of data from the log file.<!--MCLOUD-7275--><!--MCLOUD-7400-->
 
 -  ![fix icon](../../assets/fix.svg) **Custom database connections**—Fixed a `.magento.env.yaml` configuration issue in which custom database connections defined for `DATABASE_CONFIGURATION` were not used. The connection settings were not being added to `app/etc/env.php`.<!--MCLOUD-7426-->
 
