@@ -183,7 +183,7 @@ To request [!DNL Advanced Security]:
 
 ## Limitations
 
-[!DNL Advanced Security] is designed for edge-layer storefront protection. The following capabilities are not available and are best addressed with complementary solutions:
+[!DNL Advanced Security] provides edge-layer storefront protection. The following capabilities are not available and are best addressed with complementary solutions:
 
 - **Transaction-level fraud scoring**—[!DNL Advanced Security] does not evaluate individual payment transactions for fraud risk. Use a dedicated fraud prevention platform for transaction-level scoring.
 - **Identity and access management (IAM)**—[!DNL Advanced Security] does not manage user authentication, authorization, or session management. These remain customer responsibilities.
