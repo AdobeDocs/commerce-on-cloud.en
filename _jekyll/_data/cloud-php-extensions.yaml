@@ -53,6 +53,7 @@ installed:
 available:
   - igbinary
   - imap
+  - ldap
   - mcrypt
   - mysqli
   - pdo_mysql

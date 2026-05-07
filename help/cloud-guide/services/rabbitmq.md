@@ -150,7 +150,7 @@ See [Unable to connect to RabbitMQ in Adobe Commerce Cloud](https://experiencele
 
 ## Upgrading the [!DNL RabbitMQ] service
 
->![IMPORTANT]
+>[!IMPORTANT]
 >
 >When upgrading [!DNL RabbitMQ] in an Integration environment, do not skip versions. Only [sequential upgrades](https://www.rabbitmq.com/docs/upgrade#rabbitmq-version-upgradability) are supported (for example, 3.8 → 3.9 → 3.10 → 3.11 → 3.12 → 3.13 → 4.0 → 4.1), and each version bump must correspond to an actual, successful deployment of your Cloud environment.
 >
