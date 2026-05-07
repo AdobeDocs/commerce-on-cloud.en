@@ -1,37 +1,37 @@
 ---
-title: Advanced Security
+title: Adobe Commerce Advanced Security
 description: Learn how Advanced Security adds bot management, advanced rate limiting, and Layer 7 DDoS protection to Adobe Commerce on Cloud Infrastructure.
 feature: Cloud, Configuration, Security
 ---
-# Adobe Commerce Advanced Security
+# [!DNL Adobe Commerce Advanced Security]
 
-Adobe Commerce Advanced Security is a product that works with Adobe Commerce on Cloud Infrastructure to keep your online store fast, available, and secure. This can help protect revenue, reduce downtime, and maintain customer trust during peak traffic events and automated attacks.
+[!DNL Adobe Commerce Advanced Security] is a product that works with [!DNL Adobe Commerce on Cloud Infrastructure] to keep your online store fast, available, and secure. This can help protect revenue, reduce downtime, and maintain customer trust during peak traffic events and automated attacks.
 
-Adobe Commerce on Cloud Infrastructure includes built-in [Layer 3 and 4 DDoS protection](./fastly.md#ddos-protection) and a [Web Application Firewall (WAF)](fastly-waf-service.md). Under the [shared responsibility model](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility), Layer 7 DDoS detection, bot protection, and proactive IP blocking are merchant responsibilities, which Adobe Commerce Advanced Security is designed to address.
+[!DNL Adobe Commerce on Cloud Infrastructure] includes built-in [Layer 3 and 4 DDoS protection](./fastly.md#ddos-protection) and a [Web Application Firewall (WAF)](./fastly-waf-service.md). Under the [shared responsibility model](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility), Layer 7 DDoS detection, bot protection, and proactive IP blocking are merchant responsibilities, which [!DNL Adobe Commerce Advanced Security] is designed to address.
 
-Advanced Security extends storefront protection through Fastly-powered edge security capabilities, which delivers bot management, advanced rate limiting, and Layer 7 DDoS protection as part of a unified edge platform that combines scale, performance, and security at the network edge.
+[!DNL Advanced Security] extends storefront protection through Fastly-powered edge security capabilities, which delivers bot management, advanced rate limiting, and Layer 7 DDoS protection as part of a unified edge platform that combines scale, performance, and security at the network edge.
 
 >[!NOTE]
 >
->Advanced Security is available for Adobe Commerce on Cloud Infrastructure (PaaS) projects only.
+>[!DNL Advanced Security] is available for [!DNL Adobe Commerce on Cloud Infrastructure] (PaaS) projects only.
 
 ## Core capabilities
 
-Adobe Commerce Advanced Security includes the following additional protections:
+[!DNL Adobe Commerce Advanced Security] includes the following additional protections:
 
 - **[Bot Management](https://docs.fastly.com/products/bot-management)**—Identifies and mitigates unwanted bot activity on your web applications. The Bot Management service distinguishes between legitimate bots (search engine crawlers, social media bots) and malicious ones, providing real-time classification at the network edge with options to block, allow, challenge, or rate-limit traffic.
 
-- **[DDoS Protection](https://docs.fastly.com/products/fastly-ddos-protection)**—Provides Layer 7 (application layer) DDoS protection beyond the existing Layer 3 and 4 protection included with all Adobe Commerce on Cloud Infrastructure projects. The DDoS Protection service absorbs large-scale volumetric attacks and ensures continuous application availability during distributed denial-of-service (DDoS) events, protecting revenue during peak traffic periods.
+- **[DDoS Protection](https://docs.fastly.com/products/fastly-ddos-protection)**—Provides Layer 7 (application layer) DDoS protection beyond the existing Layer 3 and 4 protection included with all [!DNL Adobe Commerce on Cloud Infrastructure] projects. The DDoS Protection service absorbs large-scale volumetric attacks and ensures continuous application availability during distributed denial-of-service (DDoS) events, protecting revenue during peak traffic periods.
 
 - **[Advanced Rate Limiting](https://www.fastly.com/documentation/guides/next-gen-waf/rules/working-with-advanced-rate-limiting-rules/)**—Provides configurable rate limiting rules that protect specific URLs, API endpoints, and application resources from abuse. The Advanced Rate Limiting service goes beyond the [basic rate limiting](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md) available through the Fastly CDN module to target specific traffic patterns and attack vectors, reducing infrastructure strain and cloud costs.
 
 >[!NOTE]
 >
->Advanced Security configurations currently require [submitting a support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Self-service configuration through the Admin UI is planned for a future release. Refer to [Request Advanced Security](#request-advanced-security) for more information.
+>[!DNL Advanced Security] configurations currently require [submitting a support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Self-service configuration through the Admin UI is planned for a future release. Refer to [Request [!DNL Advanced Security]](#request-advanced-security) for more information.
 
 ## Threat coverage
 
-Advanced Security protects storefronts from a range of automated and application-layer threats.
+[!DNL Advanced Security] protects storefronts from a range of automated and application-layer threats.
 
 ### Bot-driven abuse
 
@@ -50,7 +50,7 @@ Advanced Security protects storefronts from a range of automated and application
 
 ### Application-layer attacks
 
-- **Layer 7 DDoS attacks**—Distributed attacks targeting the application layer that bypass built-in Layer 3 and 4 protections. Advanced Security absorbs these volumetric attacks at the edge before they reach your origin servers.
+- **Layer 7 DDoS attacks**—Distributed attacks targeting the application layer that bypass built-in Layer 3 and 4 protections. [!DNL Advanced Security] absorbs these volumetric attacks at the edge before they reach your origin servers.
 - **URL and API abuse**—Attacks targeting specific URLs or API endpoints spread across a large number of IP addresses, where individual IP blocking is not effective.
 - **Cache-busting attacks**—Requests with manipulated query parameters designed to bypass CDN caching and overwhelm the origin server.
 
@@ -59,21 +59,21 @@ Advanced Security protects storefronts from a range of automated and application
 - **Dynamic Challenges**—Automatically assigns the optimal challenge to suspicious traffic. Leverages Private Access Tokens (PAT) to seamlessly validate a portion of requests without impacting the user experience.
 - **Deception technology**—Addresses account takeover attempts by returning false information to attackers, mitigating their attack while disrupting their ability to operate at scale.
 
-## When to use Advanced Security
+## Choosing the right protection
 
-Use the following guidance to determine whether Advanced Security is the right solution for your storefront protection needs, or whether existing protections or alternative solutions are more appropriate.
+Use the following guidance to determine whether [!DNL Advanced Security] is the right solution for your storefront protection needs, or whether existing protections or alternative solutions are more appropriate.
 
-### When to use Advanced Security
+### When to use [!DNL Advanced Security]
 
-The following scenarios are best addressed with Advanced Security:
+The following scenarios are best addressed with [!DNL Advanced Security]:
 
-| Scenario | How Advanced Security helps |
+| Scenario | How [!DNL Advanced Security] helps |
 |---|---|
 | Your site experiences bot-driven attacks such as credential stuffing, content scraping, or inventory hoarding | Bot Management identifies and mitigates automated threats at the edge before they reach your application |
 | You need Layer 7 DDoS protection beyond the built-in Layer 3 and 4 coverage | DDoS Protection absorbs application-layer attacks that bypass network-level protections |
 | Specific URLs or API endpoints are targeted by high-volume distributed traffic that cannot be blocked by IP | Advanced Rate Limiting provides granular controls for specific endpoints and traffic patterns |
 | You want to manage AI crawlers and fetchers accessing your storefront content | Bot Management includes configurable AI bot detection and enforcement policies |
-| You need an Adobe-supported edge security solution integrated with your existing Fastly CDN | Advanced Security runs on the same Fastly edge platform already serving your storefront |
+| You need an Adobe-supported edge security solution integrated with your existing Fastly CDN | [!DNL Advanced Security] runs on the same Fastly edge platform already serving your storefront |
 
 ### When to use existing protections
 
@@ -82,33 +82,32 @@ The following scenarios are best addressed with existing protections:
 | Scenario | Recommended approach |
 |---|---|
 | A single IP or small set of identifiable IPs is flooding your site with requests | Block the IPs using the Commerce Admin or Fastly API. Use built-in [Layer 3/4 DDoS protection](./fastly.md#ddos-protection) and existing [IP blocklist](./fastly-vcl-blocking.md) VCL snippets. |
-| You need to block SQL injection, cross-site scripting (XSS), or other OWASP Top Ten threats | The included [WAF service](fastly-waf-service.md) blocks these threats automatically. |
+| You need to block SQL injection, cross-site scripting (XSS), or other OWASP Top Ten threats | The included [WAF service](./fastly-waf-service.md) blocks these threats automatically. |
 | Your DDoS attack patterns can be controlled with basic VCL blocking rules | Use the existing [custom VCL snippets](./fastly-vcl-custom-snippets.md) already available with Adobe Commerce. |
 
 ### When to use alternative protections
 
-The following scenarios are best addressed with alternative protections that can complement Advanced Security:
+The following scenarios are best addressed with alternative protections that can complement [!DNL Advanced Security]:
 
 | Scenario | Recommended approach |
 |---|---|
-| You need transaction-level fraud scoring or payment fraud prevention | Use a dedicated fraud prevention platform. Advanced Security protects at the edge network level and does not evaluate individual payment transactions. |
+| You need transaction-level fraud scoring or payment fraud prevention | Use a dedicated fraud prevention platform. [!DNL Advanced Security] protects at the edge network level and does not evaluate individual payment transactions. |
 | You require identity and access management (IAM) | Implement a dedicated IAM solution. User authentication and session management remain customer responsibilities. |
 | You need static or dynamic application security testing (SAST/DAST) | Use dedicated application security testing tools. Code-level vulnerability scanning is not provided. |
 | You require comprehensive API security beyond rate limiting (such as schema validation or API gateway features) | Consider a dedicated API security platform. |
 | You need regulatory compliance tooling such as PCI scanning or SOC reporting | Use dedicated compliance management tools. |
 
-
 >[!TIP]
 >
->If you currently use a third-party bot protection provider, consolidating to Advanced Security can reduce operational complexity, and eliminate inconsistent security coverage across providers. Contact your Adobe Account team to evaluate Advanced Security for your project.
+>If you currently use a third-party bot protection provider, consolidating to [!DNL Advanced Security] can reduce operational complexity, and eliminate inconsistent security coverage across providers. Contact your Adobe Account team to evaluate [!DNL Advanced Security] for your project.
 
 ## Security stack positioning
 
-Advanced Security fits within the broader Adobe Commerce security architecture as an additional layer of edge-based protection. It works alongside — and does not replace — the WAF and Layer 3/4 DDoS protections already included with Adobe Commerce on Cloud Infrastructure. The following sections clarify how it relates to existing protections and the responsibilities that remain with the customer.
+[!DNL Advanced Security] fits within the broader Adobe Commerce security architecture as an additional layer of edge-based protection. It works alongside — and does not replace — the WAF and Layer 3/4 DDoS protections already included with [!DNL Adobe Commerce on Cloud Infrastructure]. The following sections clarify how it relates to existing protections and the responsibilities that remain with the customer.
 
 ### Included protections
 
-Adobe Commerce on Cloud Infrastructure includes the following security features:
+[!DNL Adobe Commerce on Cloud Infrastructure] includes the following security features:
 
 - **[Web Application Firewall (WAF)](./fastly-waf-service.md)**—Managed protection against SQL injection, Cross-Site Scripting (XSS), and other Open Web Application Security Project (OWASP) Top Ten threats. Available on Production environments only.
 - **[Layer 3 and 4 DDoS protection](./fastly.md#ddos-protection)**—Built-in protection against network-layer attacks such as SYN floods, UDP floods, ICMP-based attacks, and TCP-level attacks. Enabled automatically with Fastly CDN.
@@ -116,9 +115,9 @@ Adobe Commerce on Cloud Infrastructure includes the following security features:
 - **[Origin cloaking](./fastly.md#origin-cloaking)**—Ensures all traffic routes through Fastly, blocking direct access to origin servers.
 - **[VCL-based security snippets](./fastly-vcl-custom-snippets.md)**—Custom Varnish Configuration Language (VCL) rules for IP blocking, allowlisting, and request filtering.
 
-### Advanced Security
+### [!DNL Advanced Security]
 
-Advanced Security provides increased protection beyond the built-in protections included with Adobe Commerce on Cloud Infrastructure, but at an additional cost:
+[!DNL Advanced Security] provides increased protection beyond the built-in protections included with [!DNL Adobe Commerce on Cloud Infrastructure], but at an additional cost:
 
 - **Bot Management**—Edge-based bot detection and mitigation with AI bot management.
 - **Layer 7 DDoS Protection**—Application-layer DDoS absorption and defense.
@@ -143,14 +142,14 @@ The following table maps common attack patterns to the appropriate protection la
 | Attack pattern | Type | Protection |
 |---|---|---|
 | Single IP or set of identifiable IPs sending a large number of requests | DDoS + Bot | Block IPs using the Commerce Admin or Fastly API. Built-in Layer 3/4 DDoS protection filters this traffic at the network edge. |
-| Attacks on specific URLs or APIs spread across a large number of IPs | DDoS + Bot | **Advanced Security**: Advanced Rate Limiting restricts request volume per URL. Bot Management identifies and blocks distributed bot traffic. |
-| Automated attacks on REST API endpoints without proper authentication | Bot + DDoS | Verify that API endpoints use token-based authentication. Rotate credentials if the token is compromised. **Advanced Security**: Advanced Rate Limiting can protect exposed endpoints. |
-| Cache-busting attacks using manipulated query parameters | Bot + DDoS | Exclude non-essential query parameters from cache keys. Normalize and restrict query parameters at the application level. **Advanced Security**: Bot Management detects and blocks automated cache-busting traffic. |
+| Attacks on specific URLs or APIs spread across a large number of IPs | DDoS + Bot | **[!DNL Advanced Security]**: Advanced Rate Limiting restricts request volume per URL. Bot Management identifies and blocks distributed bot traffic. |
+| Automated attacks on REST API endpoints without proper authentication | Bot + DDoS | Verify that API endpoints use token-based authentication. Rotate credentials if the token is compromised. **[!DNL Advanced Security]**: Advanced Rate Limiting can protect exposed endpoints. |
+| Cache-busting attacks using manipulated query parameters | Bot + DDoS | Exclude non-essential query parameters from cache keys. Normalize and restrict query parameters at the application level. **[!DNL Advanced Security]**: Bot Management detects and blocks automated cache-busting traffic. |
 | SQL injection or cross-site scripting (XSS) attempts | WAF | The included [WAF service](./fastly-waf-service.md) blocks these threats automatically using managed security rules. |
 
 ### WAF blocking behavior
 
-The following WAF behavior applies to all Adobe Commerce on Cloud Infrastructure projects, regardless of whether Advanced Security is enabled. The included WAF service uses the following blocking behavior for common attack signals:
+The following WAF behavior applies to all [!DNL Adobe Commerce on Cloud Infrastructure] projects, regardless of whether [!DNL Advanced Security] is enabled. The included WAF service uses the following blocking behavior for common attack signals:
 
 - **SQL injection** requests are blocked immediately, even for a single matching request.
 - Requests identified with the following threat signals from a known malicious IP are blocked immediately: Backdoor, Attack Tooling, CMDEXE, Log4J JNDI, Traversal, and XSS.
@@ -162,33 +161,33 @@ The following WAF behavior applies to all Adobe Commerce on Cloud Infrastructure
 | 10 minutes | 350 requests | Every 3 minutes |
 | 1 hour | 1,800 requests | Every 20 minutes |
 
-## Request Advanced Security
+## Request [!DNL Advanced Security]
 
-To request Advanced Security:
-
-<InlineAlert variant="info" slots="text"/>
-
-Advanced Security is available at an additional cost and requires an active Adobe Commerce on Cloud Infrastructure (PaaS) subscription. 
-
-1. Contact your Adobe Account team or Adobe Sales representative to discuss Advanced Security for your project.
-
-1. After purchasing Advanced Security, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting Advanced Security enablement. Include your Adobe Commerce on Cloud Infrastructure project ID and the environments requiring enablement (for example, Production and Staging).
-
-1. Adobe activates Advanced Security on your Fastly service and configures the initial protection policies. Enablement is usually completed within a few business days of ticket submission.
-
-1. You receive confirmation that Advanced Security is active, along with details about the protections enabled for your environments.
+To request [!DNL Advanced Security]:
 
 >[!NOTE]
 >
->Configuration changes to Advanced Security currently require [submitting a support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Self-service configuration through the Admin UI is planned for a future release.
+>[!DNL Advanced Security] is available at an additional cost and requires an active [!DNL Adobe Commerce on Cloud Infrastructure] (PaaS) subscription.
+
+1. Contact your Adobe Account team or Adobe Sales representative to discuss [!DNL Advanced Security] for your project.
+
+1. After purchasing [!DNL Advanced Security], [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting [!DNL Advanced Security] enablement. Include your [!DNL Adobe Commerce on Cloud Infrastructure] project ID and the environments requiring enablement (for example, Production and Staging).
+
+1. Adobe activates [!DNL Advanced Security] on your Fastly service and configures the initial protection policies. Enablement is usually completed within a few business days of ticket submission.
+
+1. You receive confirmation that [!DNL Advanced Security] is active, along with details about the protections enabled for your environments.
+
+>[!NOTE]
+>
+>Configuration changes to [!DNL Advanced Security] currently require [submitting a support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Self-service configuration through the Admin UI is planned for a future release.
 
 ## Limitations
 
-Advanced Security is designed for edge-layer storefront protection. The following capabilities are not available and are best addressed with complementary solutions:
+[!DNL Advanced Security] is designed for edge-layer storefront protection. The following capabilities are not available and are best addressed with complementary solutions:
 
-- **Transaction-level fraud scoring**—Advanced Security does not evaluate individual payment transactions for fraud risk. Use a dedicated fraud prevention platform for transaction-level scoring.
-- **Identity and access management (IAM)**—Advanced Security does not manage user authentication, authorization, or session management. These remain customer responsibilities.
-- **Static and dynamic application security testing (SAST/DAST)**—Advanced Security does not include code-level vulnerability scanning or penetration testing.
+- **Transaction-level fraud scoring**—[!DNL Advanced Security] does not evaluate individual payment transactions for fraud risk. Use a dedicated fraud prevention platform for transaction-level scoring.
+- **Identity and access management (IAM)**—[!DNL Advanced Security] does not manage user authentication, authorization, or session management. These remain customer responsibilities.
+- **Static and dynamic application security testing (SAST/DAST)**—[!DNL Advanced Security] does not include code-level vulnerability scanning or penetration testing.
 - **API security**—While Advanced Rate Limiting can protect API endpoints from abuse, comprehensive API security features such as schema validation and API gateway management are not provided.
-- **Full fraud prevention**—Advanced Security focuses on edge-layer storefront protection and is not a complete fraud management platform.
-- **Compliance tooling**—Advanced Security does not provide PCI scanning, SOC compliance reporting, or regulatory audit capabilities.
+- **Full fraud prevention**—[!DNL Advanced Security] focuses on edge-layer storefront protection and is not a complete fraud management platform.
+- **Compliance tooling**—[!DNL Advanced Security] does not provide PCI scanning, SOC compliance reporting, or regulatory audit capabilities.
