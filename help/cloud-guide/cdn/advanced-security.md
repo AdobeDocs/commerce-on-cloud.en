@@ -33,6 +33,8 @@ feature: Cloud, Configuration, Security
 
 [!DNL Advanced Security] protects storefronts from a range of automated and application-layer threats.
 
+![Advanced Security positioning in the Adobe Commerce security stack](../../assets/advanced-security.svg)
+
 ### Bot-driven abuse
 
 - **Credential stuffing**—Automated attempts to log in using stolen credentials from data breaches.
