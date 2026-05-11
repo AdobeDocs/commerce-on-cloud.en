@@ -2,8 +2,43 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri May 1 15:32:10 2026
+updated: Fri May 8 15:32:23 2026
 entries:
+- description: Updates release notes across Cloud Tools documentation to reflect recent
+    version additions, compatibility updates, and fixes. See [Release notes for Commerce
+    Cloud Tools Suite](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite).
+  versions: ''
+  type: technical
+  date: May 7, 2026
+  link: enterprise:AdobeDocs/commerce-on-cloud.en/pull/193
+  merge_commit: 812482f88f6ab6400c77b6ec36db73956dd3f202
+  contributor: glo33270
+  labels:
+  - technical
+  - release
+- description: Updated [CLI reference](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)
+    and [Error messages](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference)
+    after ECE-Tools release, v2002.2.11.
+  versions: ''
+  type: technical
+  date: May 7, 2026
+  link: enterprise:AdobeDocs/commerce-on-cloud.en/pull/194
+  merge_commit: 6db7cbfa2edc1e177d1db3047f2574fae4485b63
+  contributor: magedocs
+  labels:
+  - devops
+  - technical
+- description: Updated [PHP settings](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions)
+    to list LDAP among optional PHP extensions and to note that LDAP and similar extensions
+    are environment-specific (for example, not self-service on Pro Staging/Production).
+  versions: ''
+  type: technical
+  date: May 5, 2026
+  link: enterprise:AdobeDocs/commerce-on-cloud.en/pull/187
+  merge_commit: 3546f15b4e1d4e192177064c3c72652d8ae7b5cb
+  contributor: anchico
+  labels:
+  - technical
 - description: Added a security note to the [Web property configuration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property)
     reference for Adobe Commerce on cloud infrastructure to clarify that the default
     configuration for web property uses `scripts:false` for media locations to prevent
