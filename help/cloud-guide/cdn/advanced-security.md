@@ -27,7 +27,7 @@ feature: Cloud, Configuration, Security
 
 >[!NOTE]
 >
->[!DNL Advanced Security] configurations currently require [submitting a support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Self-service configuration through the Admin UI is planned for a future release. Refer to [Request [!DNL Advanced Security]](#request-advanced-security) for more information.
+>[!DNL Advanced Security] configurations currently require submitting a support ticket. Self-service configuration through the Admin UI is planned for a future release. Refer to [Request [!DNL Advanced Security]](#request-advanced-security) for more information.
 
 ## Threat coverage
 
