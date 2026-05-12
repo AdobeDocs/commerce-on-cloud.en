@@ -2,6 +2,7 @@
 title: Check disk space limit for Adobe Commerce on cloud infrastructure
 description: Learn how to check available disk space for your Adobe Commerce on cloud infrastructure project using the Cloud Console.
 feature: REST
+exl-id: 2c83f469-ca45-4ba8-a2c3-5ca1e633c16d
 ---
 # Check disk space limit for Adobe Commerce on cloud infrastructure
 
@@ -15,4 +16,3 @@ To check how much space you have for each Adobe Commerce on cloud infrastructure
 ## Related reading
 
 [Manage disk space](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space?lang=en) in our developer documentation.
-

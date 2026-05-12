@@ -2,6 +2,7 @@
 title: Set up ActiveMQ service
 description: Learn how to enable the ActiveMQ Artemis service to manage message queues for Adobe Commerce on cloud infrastructure.
 feature: Cloud, Services
+exl-id: 39eb03a7-3345-4db9-88fa-dd7c422228f9
 ---
 # Set up [!DNL ActiveMQ] service
 
@@ -168,4 +169,3 @@ When ActiveMQ Artemis is configured as a service, Adobe Commerce automatically c
 ```
 
 You can override this configuration using the [`QUEUE_CONFIGURATION`](../environment/variables-deploy.md#queue_configuration) environment variable if needed.
-
