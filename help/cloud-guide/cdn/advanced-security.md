@@ -2,6 +2,7 @@
 title: Adobe Commerce Advanced Security
 description: Learn how Advanced Security adds bot management, advanced rate limiting, and Layer 7 DDoS protection to Adobe Commerce on Cloud Infrastructure.
 feature: Cloud, Configuration, Security
+exl-id: 7aeb189f-be69-45d5-8163-4748424083c0
 ---
 # [!DNL Adobe Commerce Advanced Security]
 
