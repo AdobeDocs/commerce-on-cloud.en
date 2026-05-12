@@ -142,6 +142,7 @@ feature: Cloud
         + [Customize cache configuration](cdn/fastly-custom-cache-configuration.md)
         + [Customize error and maintenance pages](cdn/fastly-custom-response.md)
     + [Web Application Firewall](cdn/fastly-waf-service.md)
+    + [Advanced Security](cdn/advanced-security.md)
     + [Image Optimization](cdn/fastly-image-optimization.md)
     + Customize with VCL {#custom-vcl-snippets}
         + [Get started](cdn/fastly-vcl-custom-snippets.md)
