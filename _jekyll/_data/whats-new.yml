@@ -2,8 +2,18 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri May 8 15:32:23 2026
+updated: Wed May 13 18:38:17 2026
 entries:
+- description: Added [Advanced Security](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/advanced-security)
+    offering for Adobe Commerce on Cloud Infrastructure.
+  versions: ''
+  type: new-topic
+  date: May 12, 2026
+  link: enterprise:AdobeDocs/commerce-on-cloud.en/pull/196
+  merge_commit: a145b80df52ed271a15a6374713ac30824a67d2b
+  contributor: jhoover
+  labels:
+  - new-topic
 - description: Updates release notes across Cloud Tools documentation to reflect recent
     version additions, compatibility updates, and fixes. See [Release notes for Commerce
     Cloud Tools Suite](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite).
