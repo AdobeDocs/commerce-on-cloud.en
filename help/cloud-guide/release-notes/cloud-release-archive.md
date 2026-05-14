@@ -442,7 +442,8 @@ The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` packa
 >
 >The ECE-Tools version 2002.0.11 is required for 2.2.4 compatibility.
 
-- ![new icon](../../assets/new.svg) **Configuring read-only connections to non-master nodes**—This release adds the ability to configure a read-only connection to a non-master node to receive read-only traffic (for  [MariaDB](../environment/variables-deploy.md#mysql_use_slave_connection)).<!--MAGECLOUD-143 -->[Redis](../environment/variables-deploy.md#redis_use_slave_connection) and for <!--MAGECLOUD-143 -->
+- ![new icon](../../assets/new.svg) **Configuring read-only connections to non-master nodes**—This release adds the ability to configure a read-only connection to a non-master node to receive read-only traffic (for  [MariaDB](../environment/variables-deploy.md#mysql_use_slave_connection)).<!--MAGECLOUD-143 -->[Redis](../environment/variables-deploy.md#redis_use_slave_connection) and for 
+<!--MAGECLOUD-143 -->
 
 - ![new icon](../../assets/new.svg) **Configuration Wizard**—Added a wizard to help verify your configuration for static content deployment. See [Smart wizards](../deploy/smart-wizards.md).<!--MAGECLOUD-1910 -->
 
