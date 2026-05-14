@@ -29,7 +29,7 @@ feature: Cloud
     + [Cloud Components](release-notes/cloud-components.md)
     + [Cloud Packages](release-notes/cloud-packages.md)
     + [Backward-incompatible changes](release-notes/backward-incompatible-changes.md)
-    + [Release notes archive](release-notes/cloud-release-archive.md)
+    + {hide-from-toc} [Release notes archive](release-notes/cloud-release-archive.md)
 + Cloud project {#project}
     + [Project overview](project/overview.md)
     + [Project structure](project/file-structure.md)
