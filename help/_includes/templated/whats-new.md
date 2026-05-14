@@ -4,6 +4,28 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### May 12, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/advanced-security">Advanced Security</a> offering for Adobe Commerce on Cloud Infrastructure.</p>
+</td>
+      <td>
+        New topic
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/a145b80df52ed271a15a6374713ac30824a67d2b">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### May 7, 2026
 
 <table style="table-layout:auto;">
