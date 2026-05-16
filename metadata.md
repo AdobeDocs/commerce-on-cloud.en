@@ -5,7 +5,7 @@ solution-title: Commerce
 solution: Commerce
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
-    label: "Commerce"
+    internal-label: "Commerce"
 landing-page-name: commerce
 landing-page-breadcrumb-title: Commerce
 feature-set: Commerce
