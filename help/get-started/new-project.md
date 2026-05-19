@@ -4,6 +4,21 @@ description: Learn how to prepare an Adobe Customer Technical Advisor to provisi
 recommendations: noDisplay, catalog
 role: Admin
 exl-id: 77e8c9fb-8c4a-4c98-adbc-e57871c5bdbc
+TQID: https://experienceleague.adobe.com/GzCPqYxn0-ACS34UfvHypqv6BveTRpbLJNN2jNmCL-E
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
 ---
 # Commerce on Cloud provisioning prerequisites
 

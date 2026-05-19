@@ -5,6 +5,16 @@ feature: Cloud, Configuration, Build, SCD, Upgrade
 recommendations: noDisplay, catalog
 role: Developer
 exl-id: 67bc77da-d7f2-4a92-bc11-aa4673d733c1
+TQID: https://experienceleague.adobe.com/faQLVL7yA4G8uh8VNVpjouJdVPdwio8PdpOh-a-hHyE
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Build variables
 

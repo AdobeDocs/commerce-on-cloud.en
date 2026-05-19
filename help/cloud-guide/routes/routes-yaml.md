@@ -3,6 +3,18 @@ title: Configure routes
 description: Learn how to define the routes for incoming HTTPS requests for the Adobe Commerce on cloud infrastructures environments.
 feature: Cloud, Configuration, Routes
 exl-id: f0d6eefa-1122-4753-8a7c-1fa0c77590f0
+TQID: https://experienceleague.adobe.com/4EUSHNE6YAfXk4e7ooGRjZiICgHueLKrEA-tDskIPl0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Configure routes
 

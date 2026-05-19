@@ -1,9 +1,19 @@
 ---
-title: '[!DNL Onboarding] to Commerce'
+title: "[!DNL Onboarding] to Commerce"
 description: Access your cloud account and set up an Adobe Commerce on cloud infrastructure project.
 role: Admin
 recommendations: noDisplay, catalog
 exl-id: 9b48212a-2560-4090-b483-a8b04471de95
+TQID: https://experienceleague.adobe.com/y1WQfRLHOhgyZfCISQEsIRju7g79oq-ikJH1Tl7z420
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # [!DNL Onboarding] to Commerce
 

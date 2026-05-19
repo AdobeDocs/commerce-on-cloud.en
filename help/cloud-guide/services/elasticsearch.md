@@ -3,6 +3,21 @@ title: Set up Elasticsearch service
 description: Learn how to enable the Elasticsearch service for Adobe Commerce on cloud infrastructure.
 feature: Cloud, Search, Services
 exl-id: 238b9ed5-ce73-428f-9459-35de8573d5d8
+TQID: https://experienceleague.adobe.com/RYv3SjF62YHhPtM9vFrlPD0MVwfPS7EIhHxQXaMEeuI
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 ---
 # Set up Elasticsearch service
 
