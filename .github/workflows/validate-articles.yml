@@ -15,7 +15,7 @@ jobs:
     # Only run in the mainline repo, not forks or mirrors
     # Only run if it's not a comment trigger, or if it's a retest comment on a PR
     if: |
-      github.repository_owner == 'AdobeDocs' && (
+      github.repository_owner == 'Adobe-Enterprise-Docs' && (
         github.event_name != 'issue_comment' ||
         (github.event.issue.pull_request && contains(github.event.comment.body, 'retest'))
       )
