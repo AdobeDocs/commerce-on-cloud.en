@@ -12,6 +12,6 @@ on:
 
 jobs:
   call-workflow-add-to-project:
-    if: github.repository_owner == 'AdobeDocs'
+    if: github.event.repository.visibility == 'public'
     uses: AdobeDocs/commerce-contributor/.github/workflows/add-to-project_job.yml@main
     secrets: inherit
