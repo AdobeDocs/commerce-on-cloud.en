@@ -2,8 +2,18 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri May 22 15:31:32 2026
+updated: Mon Jun 1 14:25:54 2026
 entries:
+- description: Removed Elasticsearch support statement for On-Prem in the [Elasticsearch
+    support warning](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch).
+  versions: ''
+  type: technical
+  date: June 1, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-on-cloud.en/pull/213
+  merge_commit: 65898d2007d69d5bd3b8a9eabb9872ced98b8ffc
+  contributor: chernenk_adobe
+  labels:
+  - technical
 - description: Added [Advanced Security](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/advanced-security)
     offering for Adobe Commerce on Cloud Infrastructure.
   versions: ''
