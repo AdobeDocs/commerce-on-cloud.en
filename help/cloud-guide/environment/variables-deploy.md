@@ -340,18 +340,18 @@ stage:
 
 ## `LOCK_PROVIDER`
 
--  **Default**—`file`
+-  **Default**— In Production and Staging environments, defaults to `file`. For Pro integration and starter environments, defaults to `db`.
 -  **Version**—Adobe Commerce 2.2.5 and later
 
-The lock provider prevents the launch of duplicate cron jobs and cron groups. Use the `file` lock provider in the Production environment. Starter environments and the Pro integration environment do not use the [MAGENTO_CLOUD_LOCKS_DIR](variables-cloud.md) variable, so `ece-tools` applies the `db` lock provider automatically.
+The lock provider prevents the launch of duplicate cron jobs and cron groups. Commerce on Cloud supports only `file` and `db` lock providers.
+
+For Production and Staging environments, the default value `file` is set by [MAGENTO_CLOUD_LOCKS_DIR](variables-cloud.md) and cannot be overridden. For Starter environments and the Pro integration environment, `ece-tools` sets the `db` lock provider automatically. In these enviroments, you can change the default to `file` to optimize local performance and mirror production architecture.
 
 ```yaml
 stage:
   deploy:
     LOCK_PROVIDER: "db"
 ```
-
-See [Configure the lock](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/lock-provider.html) in the _Install guide_.
 
 ## `MYSQL_USE_SLAVE_CONNECTION`
 
