@@ -4,6 +4,19 @@ description: Learn how to configure build and deploy actions across all Commerce
 feature: Cloud, Build, Configuration, Deploy, SCD
 role: Developer
 exl-id: f39c73fc-351a-41ed-9e74-2c3f14871246
+TQID: https://experienceleague.adobe.com/Ub0FWkUN9uOVzLhVbNbPhUV5kj808ODlbjVrRDDA-4E
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
 ---
 # Configure environment variables for deployment
 

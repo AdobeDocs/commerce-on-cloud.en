@@ -4,6 +4,18 @@ description: Learn how to manage the environment branches for Adobe Commerce on 
 role: Developer
 feature: Cloud, Install
 exl-id: d67e8802-8137-451f-b468-8b788afb01ea
+TQID: https://experienceleague.adobe.com/hCfTF-Vl9LLKgUet4hS3JZN3kX7ZF6BDJ4tsYnr44Fs
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Manage branches with the CLI
 

@@ -3,6 +3,18 @@ title: Web property
 description: See examples on how to configure the web property in the [!DNL Commerce] application configuration file.
 feature: Cloud, Configuration
 exl-id: 6ecf6fb5-57a8-435c-8de3-f66dc56837fe
+TQID: https://experienceleague.adobe.com/IFmzGyuOpqIc9Fq4vLp1JEgrfSWORDtERWdisL4dyT8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Web property
 
