@@ -3,6 +3,18 @@ title: Configure application deployment
 description: Learn how to configure the properties in the application configuration file that control the way the [!DNL Commerce] application builds and deploys to the Cloud environment.
 feature: Cloud, Configuration, Build, Deploy
 exl-id: 47dcb13f-8873-495d-956f-08a5e04844d9
+TQID: https://experienceleague.adobe.com/LCTu-HeJCO1pp9trlZ7h74CxSQtyBr5SDmYP9DgCtkU
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Configure application deployment
 

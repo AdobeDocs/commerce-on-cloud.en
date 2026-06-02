@@ -3,6 +3,21 @@ title: Fastly image optimization
 description: Learn how to optimize image delivery and simplify image management for Adobe Commerce site by enabling and configuration Fastly image optimization.
 feature: Cloud, Configuration, Media
 exl-id: 3457ebb0-dbb4-4cb0-b6ab-837b15dce03e
+TQID: https://experienceleague.adobe.com/n3BJ-fU6SwFrRJGvqpF07cZ1XVTDkXqLRIRv46MQotI
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
 ---
 # Fastly image optimization
 

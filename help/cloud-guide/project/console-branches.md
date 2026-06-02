@@ -4,6 +4,26 @@ description: Learn how to manage the environment branches for Adobe Commerce on 
 role: Developer
 feature: Cloud, Install
 exl-id: 2c254586-b670-4dd7-8f82-edcc139e9800
+TQID: https://experienceleague.adobe.com/-9EfBaTgSBPQa6HspiaqngBtwURAeUGlNP9hREcXrQQ
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+subfeature_v2:
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 # Manage branches with the [!DNL Cloud Console]
 

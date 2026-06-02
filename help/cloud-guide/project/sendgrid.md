@@ -2,6 +2,27 @@
 title: SendGrid email service
 description: Learn about the SendGrid email service for Adobe Commerce on cloud infrastructure and how you can test your DNS configuration.
 exl-id: 06236068-df32-468f-99ec-c379984be136
+TQID: https://experienceleague.adobe.com/I4giHpOngkQ0KZYBXZoGJGBXLWme2fxE39uIOGnON-k
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+    internal-label: Email marketing
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 # SendGrid email service
 
