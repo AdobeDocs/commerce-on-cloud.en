@@ -55,7 +55,7 @@ The following sections provide details about the different AWS and Azure regions
 
 ## AWS regions
 
-![Diagram showing AWS regions](../assets/aws-regions.svg){zoomable="yes"}
+![Diagram showing AWS regions](../assets/aws-regions.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ The following sections provide details about the different AWS and Azure regions
 
 ## Azure regions
 
-![Diagram showing Azure regions](../assets/azure-regions.svg){zoomable="yes"}
+![Diagram showing Azure regions](../assets/azure-regions.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -79,5 +79,4 @@ The Commerce on cloud infrastructure guide assumes that you have some working kn
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-
-<!-- Last updated from includes: 2026-05-07 12:29:15 -->
+<!-- Last updated from includes: 2026-05-13 23:38:24 -->

@@ -1,5 +1,6 @@
 ---
 user-guide-title: Get Started with Commerce
+breadcrumb-title: Get Started
 user-guide-description: Begin your initial set up of the [!DNL Commerce] application in the Cloud infrastructure.
 feature: Cloud
 product: magento

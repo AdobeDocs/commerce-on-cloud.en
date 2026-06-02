@@ -4,6 +4,28 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### June 1, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Removed Elasticsearch support statement for On-Prem in the <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch">Elasticsearch support warning</a>.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/65898d2007d69d5bd3b8a9eabb9872ced98b8ffc">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### May 12, 2026
 
 <table style="table-layout:auto;">
@@ -90,7 +112,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added a security note to the <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property">Web property configuration</a> reference for Adobe Commerce on cloud infrastructure to clarify that the default configuration for web property uses <code class="language-plaintext highlighter-rouge">scripts:false</code> for media locations to prevent execution of uploaded files.</p>
+      <td><p>Added a security note to the <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property">Web property configuration</a> reference for Adobe Commerce on cloud infrastructure to clarify that the default configuration for web property uses <code>scripts:false</code> for media locations to prevent execution of uploaded files.</p>
 </td>
       <td>
         Technical, feedback

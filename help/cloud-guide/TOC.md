@@ -2,6 +2,7 @@
 cloud: Experience Cloud
 solution-title: Commerce
 user-guide-title: Commerce on Cloud Guide
+breadcrumb-title: Commerce on Cloud
 user-guide-description: Learn how to manage the Adobe Commerce application on cloud infrastructure.
 product: magento
 feature: Cloud

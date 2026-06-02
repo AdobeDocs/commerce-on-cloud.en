@@ -38,7 +38,7 @@ topic_v2:
 
 Think of the Adobe Commerce on cloud infrastructure as five functional layers, as shown below:
 
-![Cloud stack](../../assets/CloudStack.svg)
+![Cloud stack](../../assets/CloudStack.png)
 
 1. [**Cloud Infrastructure**](pro-architecture.md): Choose either Amazon Web Services (AWS) or Microsoft Azure as your Infrastructure as a Service (IaaS) foundation for your Adobe Commerce on cloud infrastructure Pro projects.
 

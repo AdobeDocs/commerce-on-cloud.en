@@ -15,10 +15,8 @@ jobs:
     # Only run on GHEC internal repos (excludes public forks and mirrors)
     # Only run if it's not a comment trigger, or if it's a retest comment on a PR
     if: |
-      github.event.repository.visibility == 'internal' && (
         github.event_name != 'issue_comment' ||
         (github.event.issue.pull_request && contains(github.event.comment.body, 'retest'))
-      )
     uses: Adobe-Enterprise-Docs/workflows/.github/workflows/validate-articles.yml@main
     with:
       debug: true
