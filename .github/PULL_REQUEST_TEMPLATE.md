@@ -28,5 +28,5 @@ See Contribution guidelines (https://github.com/AdobeDocs/commerce-operations.en
 
 <!--  _OPTIONAL - REMOVE THIS SECTION IF NOT USED._
 
-If this pull request introduces changes that should be highlighted in the [What's New section](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home#whats-new), see _What's New highlights_ in the [Contribution guidelines](https://github.com/AdobeDocs/commerce-operations.en/blob/main/contributing.md#whats-new-highlights).
+If this pull request introduces changes that should be highlighted in the [What's New section](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home#whats-new), see _What's New highlights_ in the [Contribution guidelines](https://github.com/AdobeDocs/commerce-on-cloud.en/blob/main/contributing.md#whats-new-highlights).
 -->
