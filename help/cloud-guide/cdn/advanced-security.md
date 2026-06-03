@@ -30,6 +30,78 @@ exl-id: 7aeb189f-be69-45d5-8163-4748424083c0
 >
 >[!DNL Advanced Security] configurations currently require submitting a support ticket. Self-service configuration through the Admin UI is planned for a future release. Refer to [Request [!DNL Advanced Security]](#request-advanced-security) for more information.
 
+>[!IMPORTANT]
+>
+>**Current limitations**
+>
+>Until the end of Q3 2026, customers cannot modify or manage Bot Management rules directly.
+>
+>For any rule additions, modifications, or adjustments, contact Adobe Commerce Support through a [support ticket](https://experienceleague.adobe.com/home?support-tab=home#support). The Support team will implement the requested changes.
+>
+>Beginning in Q4 2026, Fastly is scheduled to release an add-on capability that will allow customers to manage Bot Management rules in the Commerce Admin panel.
+
+## Default rules and protections
+
+### Layer 7 DDoS
+
+- DDoS thresholds are built into the Fastly CDN platform and cannot currently be customized per customer.
+- Logs for traffic blocked by DDoS protections are not directly visible to customers.
+- Upon request, Adobe Commerce Support can provide details related to blocked DDoS traffic.
+- Native DDoS log forwarding capabilities are expected in a future release.
+
+### Bot management
+
+The following baseline bot management protections are available through Fastly's Signal Sciences dashboard.
+
+| Rule Type | Status | Visibility |
+|---|---|---|
+| Block traffic tagged as Suspected Bad BOT | Enabled by default during onboarding | Visible in New Relic logs under `sigsci_tags` |
+| Block traffic based on any specific tag (sigsci tag) | Configured only when required in collaboration with the customer | Visible in New Relic logs under `sigsci_tags` |
+| Rate limiting for specific APIs or URL patterns | Configured only when required in collaboration with the customer | Blocked traffic is visible in New Relic logs under `Agent_response` |
+| Dynamic challenge for specific APIs or URL patterns | Configured only when required in collaboration with the customer | Blocked traffic is visible in New Relic logs under `Agent_response` |
+| Browser challenge | Configured only when required in collaboration with the customer | Blocked traffic is visible in New Relic logs under `Agent_response` |
+
+## Observability — monitoring bot protection and NGWAF activity
+
+CDN logs are automatically forwarded to the customer's New Relic account. For additional details, refer to [Log management](../monitor/log-management.md).
+
+The CDN logs include built-in telemetry from Signal Sciences (Bot Protection / Next-Generation WAF), allowing customers to monitor security events directly within New Relic.
+
+Key fields include:
+
+- **`Sigsci_Tags`**—Indicates classifications and tags applied by Signal Sciences.
+- **`Agent_response`**—Indicates the action taken by the Bot Protection / NGWAF agent.
+
+Examples:
+
+- To identify traffic blocked by Bot Protection or NGWAF rules:
+
+   `Agent_response:"406"`
+
+   A response code of 406 indicates the request was blocked by the security controls.
+
+- To identify requests tagged as suspected bad bots:
+
+   `Sigsci_Tags:"*SUSPECTED-BAD-BOT*"`
+
+These fields can be used to create dashboards, alerts, and investigations within New Relic to monitor bot activity, blocked requests, and other security-related events.
+
+## Existing VCL capabilities remain unchanged
+
+Enabling the [!DNL Advanced Security] add-on does not modify or replace existing Fastly VCL-based security controls.
+
+The following existing VCL blocking capabilities continue to function without any changes:
+
+- IP-based blocking
+- Geo-blocking
+- User-agent based blocking
+- JA3 signature-based blocking
+- JA4 signature-based blocking
+
+Customers can continue using existing custom VCL configurations and security rules alongside the [!DNL Advanced Security] add-on features.
+
+The [!DNL Advanced Security] add-on operates in addition to the standard Fastly CDN and existing VCL protections already available in [!DNL Adobe Commerce on Cloud Infrastructure].
+
 ## Threat coverage
 
 [!DNL Advanced Security] protects storefronts from a range of automated and application-layer threats.
