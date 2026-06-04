@@ -42,6 +42,8 @@ exl-id: 7aeb189f-be69-45d5-8163-4748424083c0
 
 ## Default rules and protections
 
+The following default rules and protections are available with [!DNL Advanced Security].
+
 ### Layer 7 DDoS
 
 - DDoS thresholds are built into the Fastly CDN platform and cannot currently be customized per customer.
