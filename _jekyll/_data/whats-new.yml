@@ -2,8 +2,29 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Mon Jun 1 14:25:54 2026
+updated: Fri Jun 5 16:34:42 2026
 entries:
+- description: Updated the [Advanced Security](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/advanced-security)
+    topic with information on limitations and observability.
+  versions: ''
+  type: major-update
+  date: June 4, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-on-cloud.en/pull/216
+  merge_commit: 54fcde91fb6fd159edadf85146da375692cce0d6
+  contributor: jhoover_adobe
+  labels:
+  - major-update
+- description: Clarified the default lock configuration and how the [`MAGENTO_CLOUD_LOCKS_DIR`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud)
+    and [`LOCK_PROVIDER`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#lock_provider)
+    environment variables affect Pro and Starter environments.
+  versions: ''
+  type: technical
+  date: June 2, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-on-cloud.en/pull/215
+  merge_commit: 17ecf47f8cad5dcb53ef92b32377a7074e16bb52
+  contributor: meker_adobe
+  labels:
+  - technical
 - description: Removed Elasticsearch support statement for On-Prem in the [Elasticsearch
     support warning](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch).
   versions: ''
