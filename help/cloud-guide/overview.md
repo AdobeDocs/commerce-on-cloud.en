@@ -2,8 +2,29 @@
 title: Commerce on Cloud Infrastructure
 description: Learn about building, deploying, and managing Commerce on Cloud infrastructure.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
+TQID: https://experienceleague.adobe.com/-sgz85xapPKNipyFVB4yMrLilEku3ff5IJg3OddymsA
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+subfeature_v2:
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
-
 # Commerce on Cloud Infrastructure
 
 Adobe Commerce on cloud infrastructure provides an automated hosting platform with a **self-service** approach to building, deploying, and managing your [!DNL Commerce] application in a cloud-native environment. Adobe Commerce on cloud infrastructure comes with additional features that set it apart from the on-premises Adobe Commerce and Magento Open Source platforms:
@@ -34,7 +55,7 @@ The following sections provide details about the different AWS and Azure regions
 
 ## AWS regions
 
-![Diagram showing AWS regions](../assets/aws-regions.svg){zoomable="yes"}
+![Diagram showing AWS regions](../assets/aws-regions.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -42,7 +63,7 @@ The following sections provide details about the different AWS and Azure regions
 
 ## Azure regions
 
-![Diagram showing Azure regions](../assets/azure-regions.svg){zoomable="yes"}
+![Diagram showing Azure regions](../assets/azure-regions.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -58,5 +79,4 @@ The Commerce on cloud infrastructure guide assumes that you have some working kn
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-
-<!-- Last updated from includes: 2026-05-01 20:32:22 -->
+<!-- Last updated from includes: 2026-05-13 23:38:24 -->

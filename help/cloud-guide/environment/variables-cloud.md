@@ -5,6 +5,16 @@ feature: Cloud, Configuration
 recommendations: noDisplay, catalog
 role: Developer
 exl-id: 82923b6f-221d-4902-a1b8-5ba6c7b3339a
+TQID: https://experienceleague.adobe.com/Zk52OMqjrB74v9djO1PVOYd3wOS8EbdfL1rnqIdA8B4
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Cloud-specific variables
 
@@ -22,7 +32,7 @@ Environment variables that are specific to Adobe Commerce on cloud infrastructur
 | `MAGENTO_CLOUD_ROUTES` | Describe the routes defined in the environment `.magento/routes.yaml` file. |
 | `MAGENTO_CLOUD_TREE_ID` | The tree ID for the application, which corresponds to the SHA of the tree in Git. |
 | `MAGENTO_CLOUD_VARIABLES` | A base64-encoded JSON object with key-value pairs, such as `"key":"value"`. |
-| `MAGENTO_CLOUD_LOCKS_DIR` | Provides the path to the mount point for the lock provider on the Cloud infrastructure. The lock provider prevents the launch of duplicate cron jobs and cron groups. |
+| `MAGENTO_CLOUD_LOCKS_DIR` | Provides the path to the mount point for the lock provider on the Cloud infrastructure. The lock provider prevents the launch of duplicate cron jobs and cron groups.<br><br>Only the `file` and `db` lock providers are supported.<br><br>**Pro production and staging environments** default to the `file` lock provider. This value cannot be changed.<br><br>**Pro integration and Starter environments**, do not use the `MAGENTO_CLOUD_LOCKS_DIR`  variable. The `db` lock provider is applied by default. You can change the default value by updating the `[LOCK_PROVIDER](variables-deploy.md#lock_provider` environment deploy variable in the `.magento.env.yaml` file.|
 
 >[!WARNING]
 >

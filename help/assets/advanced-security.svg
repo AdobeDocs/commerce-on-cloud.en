@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 710" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="820" height="710" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="410" y="26" text-anchor="middle" font-size="16" font-weight="bold" fill="#222">Adobe Commerce on Cloud Infrastructure</text>
+
+  <!-- Column Headers -->
+  <rect x="20" y="40" width="385" height="26" rx="4" fill="#cc0000"/>
+  <text x="212" y="58" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">Without Advanced Security</text>
+
+  <rect x="415" y="40" width="385" height="26" rx="4" fill="#cc0000"/>
+  <text x="607" y="58" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">With Advanced Security</text>
+
+  <!-- === INCLUDED BOXES — LEFT === -->
+  <rect x="30" y="92" width="365" height="34" rx="5" fill="#fff" stroke="#333" stroke-width="1.2"/>
+  <text x="212" y="114" text-anchor="middle" font-size="11" fill="#333">SSL / TLS Certificates</text>
+
+  <rect x="30" y="131" width="365" height="34" rx="5" fill="#fff" stroke="#333" stroke-width="1.2"/>
+  <text x="212" y="153" text-anchor="middle" font-size="11" fill="#333">Origin Cloaking</text>
+
+  <rect x="30" y="170" width="365" height="34" rx="5" fill="#fff" stroke="#333" stroke-width="1.2"/>
+  <text x="212" y="192" text-anchor="middle" font-size="11" fill="#333">Layer 3 and 4 DDoS Protection</text>
+
+  <rect x="30" y="209" width="365" height="34" rx="5" fill="#fff" stroke="#333" stroke-width="1.2"/>
+  <text x="212" y="231" text-anchor="middle" font-size="11" fill="#333">Web Application Firewall (WAF)</text>
+
+  <!-- === INCLUDED BOXES — RIGHT === -->
+  <rect x="425" y="92" width="365" height="34" rx="5" fill="#fff" stroke="#333" stroke-width="1.2"/>
+  <text x="607" y="114" text-anchor="middle" font-size="11" fill="#333">SSL / TLS Certificates</text>
+
+  <rect x="425" y="131" width="365" height="34" rx="5" fill="#fff" stroke="#333" stroke-width="1.2"/>
+  <text x="607" y="153" text-anchor="middle" font-size="11" fill="#333">Origin Cloaking</text>
+
+  <rect x="425" y="170" width="365" height="34" rx="5" fill="#fff" stroke="#333" stroke-width="1.2"/>
+  <text x="607" y="192" text-anchor="middle" font-size="11" fill="#333">Layer 3 and 4 DDoS Protection</text>
+
+  <rect x="425" y="209" width="365" height="34" rx="5" fill="#fff" stroke="#333" stroke-width="1.2"/>
+  <text x="607" y="231" text-anchor="middle" font-size="11" fill="#333">Web Application Firewall (WAF)</text>
+
+  <!-- Down arrows -->
+  <line x1="212" y1="243" x2="212" y2="260" stroke="#999" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="607" y1="243" x2="607" y2="260" stroke="#999" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#999"/>
+    </marker>
+  </defs>
+
+  <!-- === LEFT — EXPOSURE ZONE === -->
+  <rect x="30" y="266" width="365" height="230" rx="5" fill="#fff5f5" stroke="#cc0000" stroke-width="1.5" stroke-dasharray="6 3"/>
+  <text x="212" y="292" text-anchor="middle" font-size="13" font-weight="bold" fill="#cc0000">Not Protected</text>
+  <text x="212" y="322" text-anchor="middle" font-size="11" fill="#999">✗  No Bot Management</text>
+  <text x="212" y="350" text-anchor="middle" font-size="11" fill="#999">✗  No AI Bot Detection</text>
+  <text x="212" y="378" text-anchor="middle" font-size="11" fill="#999">✗  No Layer 7 DDoS Protection</text>
+  <text x="212" y="406" text-anchor="middle" font-size="11" fill="#999">✗  No Advanced Rate Limiting</text>
+  <text x="212" y="434" text-anchor="middle" font-size="11" fill="#999">✗  No Dynamic Challenges</text>
+  <text x="212" y="462" text-anchor="middle" font-size="11" fill="#999">✗  No Deception Technology</text>
+  <text x="212" y="488" text-anchor="middle" font-size="9" fill="#cc0000" font-style="italic">Vulnerable to L7 attacks, bots, and scraping</text>
+
+  <!-- === RIGHT — ADVANCED SECURITY BOXES === -->
+  <rect x="420" y="260" width="375" height="240" rx="6" fill="#cc0000" opacity="0.06"/>
+  <text x="607" y="278" text-anchor="middle" font-size="9" font-weight="bold" fill="#cc0000" letter-spacing="1">ADVANCED SECURITY ADD-ON</text>
+
+  <rect x="425" y="286" width="365" height="32" rx="5" fill="#fff" stroke="#333" stroke-width="1.2"/>
+  <text x="607" y="307" text-anchor="middle" font-size="11" fill="#333">Bot Management</text>
+
+  <rect x="425" y="323" width="365" height="32" rx="5" fill="#fff" stroke="#333" stroke-width="1.2"/>
+  <text x="607" y="344" text-anchor="middle" font-size="11" fill="#333">AI Bot Management</text>
+
+  <rect x="425" y="360" width="365" height="32" rx="5" fill="#fff" stroke="#333" stroke-width="1.2"/>
+  <text x="607" y="381" text-anchor="middle" font-size="11" fill="#333">Layer 7 DDoS Protection</text>
+
+  <rect x="425" y="397" width="365" height="32" rx="5" fill="#fff" stroke="#333" stroke-width="1.2"/>
+  <text x="607" y="418" text-anchor="middle" font-size="11" fill="#333">Advanced Rate Limiting</text>
+
+  <rect x="425" y="434" width="365" height="32" rx="5" fill="#fff" stroke="#333" stroke-width="1.2"/>
+  <text x="607" y="455" text-anchor="middle" font-size="11" fill="#333">Dynamic Challenges</text>
+
+  <rect x="425" y="471" width="365" height="32" rx="5" fill="#fff" stroke="#333" stroke-width="1.2"/>
+  <text x="607" y="492" text-anchor="middle" font-size="11" fill="#333">Deception Technology</text>
+
+  <!-- Down arrows to VCL -->
+  <line x1="212" y1="496" x2="212" y2="515" stroke="#999" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="607" y1="503" x2="607" y2="515" stroke="#999" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- VCL — both columns -->
+  <rect x="30" y="520" width="365" height="34" rx="5" fill="#fff" stroke="#333" stroke-width="1.2"/>
+  <text x="212" y="542" text-anchor="middle" font-size="11" fill="#333">VCL Snippets</text>
+
+  <rect x="425" y="520" width="365" height="34" rx="5" fill="#fff" stroke="#333" stroke-width="1.2"/>
+  <text x="607" y="542" text-anchor="middle" font-size="11" fill="#333">VCL Snippets</text>
+
+  <!-- Down arrows to App -->
+  <line x1="212" y1="554" x2="212" y2="570" stroke="#999" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="607" y1="554" x2="607" y2="570" stroke="#999" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- App — full width -->
+  <rect x="30" y="575" width="760" height="38" rx="5" fill="#f0f0f0" stroke="#999" stroke-width="1.2"/>
+  <text x="410" y="599" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Adobe Commerce — Storefront and APIs</text>
+
+  <!-- Customer Responsibility -->
+  <text x="410" y="635" text-anchor="middle" font-size="10" font-weight="bold" fill="#666" letter-spacing="1">CUSTOMER RESPONSIBILITY</text>
+
+  <rect x="34" y="645" width="144" height="34" rx="5" fill="#f0f0f0" stroke="#999" stroke-width="1"/>
+  <text x="106" y="667" text-anchor="middle" font-size="9.5" fill="#333">Fraud Prevention</text>
+
+  <rect x="186" y="645" width="144" height="34" rx="5" fill="#f0f0f0" stroke="#999" stroke-width="1"/>
+  <text x="258" y="667" text-anchor="middle" font-size="9.5" fill="#333">Identity and Access Mgmt</text>
+
+  <rect x="338" y="645" width="144" height="34" rx="5" fill="#f0f0f0" stroke="#999" stroke-width="1"/>
+  <text x="410" y="667" text-anchor="middle" font-size="9.5" fill="#333">App Security Testing</text>
+
+  <rect x="490" y="645" width="144" height="34" rx="5" fill="#f0f0f0" stroke="#999" stroke-width="1"/>
+  <text x="562" y="667" text-anchor="middle" font-size="9.5" fill="#333">Compliance Tooling</text>
+
+  <rect x="642" y="645" width="144" height="34" rx="5" fill="#f0f0f0" stroke="#999" stroke-width="1"/>
+  <text x="714" y="667" text-anchor="middle" font-size="9.5" fill="#333">App-Level Hardening</text>
+
+</svg>

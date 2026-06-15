@@ -2,6 +2,7 @@
 cloud: Experience Cloud
 solution-title: Commerce
 user-guide-title: Commerce on Cloud Guide
+breadcrumb-title: Commerce on Cloud
 user-guide-description: Learn how to manage the Adobe Commerce application on cloud infrastructure.
 product: magento
 feature: Cloud
@@ -29,7 +30,7 @@ feature: Cloud
     + [Cloud Components](release-notes/cloud-components.md)
     + [Cloud Packages](release-notes/cloud-packages.md)
     + [Backward-incompatible changes](release-notes/backward-incompatible-changes.md)
-    + [Release notes archive](release-notes/cloud-release-archive.md)
+    + {hide-from-toc} [Release notes archive](release-notes/cloud-release-archive.md)
 + Cloud project {#project}
     + [Project overview](project/overview.md)
     + [Project structure](project/file-structure.md)
@@ -142,6 +143,7 @@ feature: Cloud
         + [Customize cache configuration](cdn/fastly-custom-cache-configuration.md)
         + [Customize error and maintenance pages](cdn/fastly-custom-response.md)
     + [Web Application Firewall](cdn/fastly-waf-service.md)
+    + [Advanced Security](cdn/advanced-security.md)
     + [Image Optimization](cdn/fastly-image-optimization.md)
     + Customize with VCL {#custom-vcl-snippets}
         + [Get started](cdn/fastly-vcl-custom-snippets.md)
