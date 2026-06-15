@@ -120,7 +120,7 @@ On initial provisioning or upgrade of your Adobe Commerce project, Adobe install
 
 ## Fastly service account and credentials
 
-Adobe Commerce on cloud infrastructure projects are not given a dedicated Fastly account. The Fastly service is managed in a centralized account registered to Adobe, and the management dashboard is only accessible to the Cloud Support team.
+Adobe Commerce on cloud infrastructure projects are not given a dedicated Fastly account. The Fastly service is managed in a centralized account registered to Adobe, and  dashboard access is limited to the Cloud Support team. For this reason, support cannot provide Fastly dashboard access in response to customer requests. Use the Adobe Commerce Admin and your environment-specific Fastly credentials for supported Fastly configuration and management tasks.
 
 Instead, each Staging and Production environment has unique Fastly credentials (API token and service ID) to configure and manage Fastly services from the Commerce Admin. The Fastly API is available for performing advanced management of the Fastly service, which will require the credentials to submit those requests.
 
