@@ -1,30 +1,13 @@
 ---
-title: Manage user access
-description: Learn how to manage user access to Adobe Commerce on cloud infrastructure projects and environments.
+title: Manage User Access
+description: Learn how to add users and assign roles on Adobe Commerce on cloud infrastructure projects and environments using the magento-cloud CLI or the Cloud Console.
 role: Admin
 feature: Cloud, Roles/Permissions
-last-substantial-update: 2023-06-27T00:00:00.000Z
+level: Beginner
+short-description: Add users and assign project and environment roles in the Cloud Console or CLI.
+last-substantial-update: 2026-06-11
 topic: Security
 exl-id: 953593de-f675-49fd-988f-f11306f67fbd
-TQID: https://experienceleague.adobe.com/hoRda1DXcWU5ZfsEnOf0JSe-JbCQy0GkXQ4Tw3HIU0g
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-    internal-label: Commerce
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-    internal-label: Compliance
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-    internal-label: Security
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-    internal-label: Accounts
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-    internal-label: Configuration
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-    internal-label: Admin
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-    internal-label: Security
 ---
 # Manage user access
 
@@ -37,25 +20,21 @@ Project viewers cannot perform tasks on any environment; however, you can grant 
 
 Environment-level access is based on the environment type: production, staging, and development. Granting a user _viewer_ permission to _development_ environments means that they can view **all** development environments in the project. The following table clarifies the abilities granted to each permission level:
 
-| Permission level   |  Access     |  SSH access  |
-| ------------------ | ----------- | :----------: |
-| **Admin**          | Perform administrator tasks, such as change settings, push code, perform tasks, and branch management, including merging with the parent environment | Yes |
-| **Contributor**    | Push code and branch the environment; cannot change settings or execute actions | Yes |
-| **Viewer**         | View-only access to the environment type | No |
-| **No access**      | No access to the environment type | No |
+| Permission level | Access | SSH access |
+| ---------------- | ------ | :--------: |
+| **Admin** | Perform administrator tasks, such as change settings, push code, perform tasks, and branch management, including merging with the parent environment | Yes |
+| **Contributor** | Push code and branch the environment; cannot change settings or execute actions | Yes |
+| **Viewer** | View-only access to the environment type | No |
+| **No access** | No access to the environment type | No |
 
 {style="table-layout:auto"}
 
 You can add users and assign roles using the `magento-cloud` CLI or the [!DNL Cloud Console].
 
->[!BEGINSHADEBOX]
-
-**Prerequisites:**
-
-- A registered user with an Adobe ID. A user must [register for an Adobe account](https://account.adobe.com), and then initialize their [Cloud account](https://console.adobecommerce.com) by visiting [https://console.adobecommerce.com](https://console.adobecommerce.com) before you can add them to a Cloud project.
-- A user assigned the **Admin** role cannot manage users with the `magento-cloud` CLI. Only users that are granted the **Account Owner** role can manage users.
-
->[!ENDSHADEBOX]
+>[!PREREQUISITES]
+>
+>- A registered user with an Adobe ID. A user must [register for an Adobe account](https://account.adobe.com), and then initialize their [Cloud account](https://console.adobecommerce.com) before you can add them to a Cloud project.
+>- A user assigned the **Admin** role cannot manage users with the `magento-cloud` CLI. Only users that are granted the **Account Owner** role can manage users.
 
 ## Manage users with the CLI
 
@@ -79,13 +58,13 @@ The following examples use the `magento-cloud` CLI to add a user, configure role
 
    >[!IMPORTANT]
    >
-   >The user must have an Adobe ID; see the [prerequisites](#add-users-and-manage-access).
+   >The user must have an Adobe ID. See the prerequisites.
 
 1. Follow the prompts: specify the user email address, set the project and environment-type roles, and add the user.
 
    > Sample prompts
 
-   ```
+   ```text
    Enter the user's email address: alice@example.com
 
    Email address: alice@example.com
@@ -119,7 +98,7 @@ magento-cloud user:get alice@example.com
 
 >Sample response:
 
-```
+```text
 Current role(s) of User (alice@example.com) on Production (project_id):
   Project role: admin
 ```
@@ -146,7 +125,7 @@ You can use the [[!DNL Cloud Console]](../../get-started/cloud-console.md) to ad
 
 >[!IMPORTANT]
 >
->The user must have an Adobe ID; see the [prerequisites](#add-users-and-manage-access).
+>The user must have an Adobe ID. See the prerequisites.
 
 ### Add a user to the project
 
@@ -178,9 +157,25 @@ You can use the [[!DNL Cloud Console]](../../get-started/cloud-console.md) to ad
    >
    >Adding a user does not trigger a deployment automatically.
 
-1. After adding users, redeploy all environments to apply the changes. Adding a user does not trigger a deployment automatically. Redeployment is an important step to ensure that the user can access an environment using SSH or perform administrator tasks.
+1. After adding users, redeploy all environments to apply the changes.
+
+   Redeployment ensures the user can access environments using SSH or perform administrator tasks.
 
 After you add the user, Adobe sends an email to the specified address with instructions for accessing the Adobe Commerce on cloud infrastructure project.
+
+### Invitation states
+
+In the [!DNL Cloud Console], an administrator can send an invitation before account initialization is complete. In that case, the access list displays the user with a status such as [!UICONTROL Invite pending]. Access is not fully active until onboarding is completed.
+
+Depending on the console and the user's account state, a user can appear in one of these states:
+
+- **[!UICONTROL Not invited]** — No project access record exists.
+- **[!UICONTROL Invite pending]** — An invitation was sent, but account initialization or acceptance is incomplete.
+- **[!UICONTROL Active]** — The user completed onboarding and has active project access.
+
+>[!NOTE]
+>
+>The [!DNL Cloud Console] displays invitation states more explicitly than the [!DNL Legacy Cloud Console] (`https://<region-id>.magento.cloud/projects/<project_id>`). A visible user or invitation entry does not always mean the user can immediately access all environments. SSH key setup or other propagation steps might still be required. See [User authentication requirements](#user-authentication-requirements).
 
 ## User authentication requirements
 
@@ -223,7 +218,7 @@ Instructions for installing the authenticator application and enabling TFA are a
 
    - On your mobile device, open the authenticator application. Then, add the setup code to the application.
 
-   - In the [!UICONTROL **[!UICONTROL TFA set up - Application]**] page, type the TFA code from your mobile device in the **[!UICONTROL Application verification code]** field.
+   - On the **[!UICONTROL TFA set up - Application]** page, type the TFA code from your mobile device in the **[!UICONTROL Application verification code]** field.
 
    - Click **[!UICONTROL Verify and save]**.
 
@@ -292,6 +287,10 @@ On projects that have MFA enforcement enabled, you must have an API token to ena
 
 1. Click **[!UICONTROL Create API token]** and enter a name, for example, specify a name that matches the machine user or automated process that uses the API token.
 
-   ![API tokens](../../assets/api-token-name.png)
+   ![Cloud Console API tokens tab with Create API token name field](../../assets/api-token-name.png)
 
 1. Click **[!UICONTROL Create API token]**.
+
+## More help on this topic
+
+- [Unable to add user to Adobe Commerce cloud project](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/unable-add-user-adobe-commerce-cloud-project) — troubleshooting when adding a user fails.
