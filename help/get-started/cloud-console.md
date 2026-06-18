@@ -42,7 +42,7 @@ The new or improved features include:
 - Simple forms and guidance to add integrations
 - Web Content Accessibility Guidelines (WCAG) compliance
 
-![[!DNL Cloud Console]](../assets/CloudConsole.svg)
+![[!DNL Cloud Console]](../assets/CloudConsole.png)
 
 The new or improved features are as follows:
 
