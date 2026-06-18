@@ -66,6 +66,8 @@ See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operatio
 
 {{service-change-tip}}
 
+{{valkey-newrelic}}
+
 ## Using the Valkey CLI
 
 Assuming your Valkey relationship is named `valkey`, you can access it using the `valkey-cli` tool.
