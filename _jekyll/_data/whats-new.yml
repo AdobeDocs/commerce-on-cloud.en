@@ -2,8 +2,19 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Jun 12 15:31:45 2026
+updated: Fri Jun 19 15:31:57 2026
 entries:
+- description: Updated [Manage user access](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)
+    with clearer prerequisites, Cloud Console invitation states, redeployment guidance,
+    and related troubleshooting.
+  versions: ''
+  type: feedback
+  date: June 15, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-on-cloud.en/pull/219
+  merge_commit: 747367a8808b0b22f810f4e26b94a06ee995281d
+  contributor: meker_adobe
+  labels:
+  - feedback
 - description: Updated the [Advanced Security](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/advanced-security)
     topic with information on limitations and observability.
   versions: ''
