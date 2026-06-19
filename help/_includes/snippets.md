@@ -137,6 +137,16 @@ Use the following instructions for service setup on Pro Integration environments
 >
 >Before beginning an upgrade or a patching process, create an active branch from the Integration environment and check out the new branch to your local workstation. Dedicating a branch to the upgrade or the patch process helps to avoid interference with your work in progress.
 
+## Valkey in New Relic {#valkey-newrelic}
+
+>[!NOTE]
+>
+>New Relic may still show Redis even after migration to Valkey
+>
+>It is expected that New Relic may continue to refer to the cache service as Redis even after the environment has been migrated to Valkey.
+>
+>Valkey is an open-source fork of Redis, and some tools and integrations continue to identify the service using Redis naming rather than a distinct Valkey label. This does not necessarily indicate that Redis is still installed.
+
 <!-- Fastly-related snippets begin -->
 
 ## Admin login {#admin-login-step}
