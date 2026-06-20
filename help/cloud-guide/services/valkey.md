@@ -26,7 +26,7 @@ See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operatio
 
 **To replace Redis with Valkey, update the configuration in the following three files**:
 
-1. Add the required name and type to the `.magento/services.yaml` file.
+1. Replace the Redis configuration with the required Valkey name and type in the `.magento/services.yaml` file.
 
    ```yaml
    cache:
@@ -47,7 +47,7 @@ See [Configure Valkey](https://experienceleague.adobe.com/docs/commerce-operatio
        valkey: "cache:valkey"
    ```
 
-1. Configure `.magento.env.yaml` as follows:.
+1. Configure `.magento.env.yaml` to replace the Redis configuration as follows:.
    
    ```yaml
     stage:
