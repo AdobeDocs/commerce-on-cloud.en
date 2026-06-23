@@ -210,3 +210,4 @@ See the following Adobe Commerce Support articles for help with troubleshooting 
 - [Cron tasks lock tasks from other groups](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html)
 
 - [Reset stuck cron jobs manually on the cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/reset-stuck-magento-cron-jobs-manually-on-cloud.html)
+

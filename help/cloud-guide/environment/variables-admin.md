@@ -100,3 +100,4 @@ magento-cloud variable:update ADMIN_URL --value newAdmin_A8v10 -e master --inher
 >[!NOTE]
 >
 >The `ADMIN_URL` value accepts letters (a–z, A–Z), numbers (0–9), and the underscore character (_). Spaces or other characters are not accepted.
+

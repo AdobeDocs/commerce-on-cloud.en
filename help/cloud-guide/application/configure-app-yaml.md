@@ -32,3 +32,4 @@ Use the `.magento.app.yaml` file to define the following configuration values:
 >[!NOTE]
 >
 >The `.magento.app.yaml` file is managed locally or in the git repository. The configuration is only read for the purpose of the deployment and build process and gets removed after the deployment has been completed, so you will not find it on the server.
+

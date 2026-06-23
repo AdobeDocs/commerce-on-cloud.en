@@ -211,3 +211,4 @@ Successful deployment removes the maintenance mode to allow for normal access an
 Enable static content generation using the `SCD_ON_DEMAND` variable and configure the [`post_deploy` hook](../application/hooks-property.md) so that it clears the cache and pre-loads (warms) the cache _after_ the container begins accepting connections and _during_ normal, incoming traffic.
 
 To review build and deploy logs, see [View logs](../test/log-locations.md#view-and-manage-logs).
+

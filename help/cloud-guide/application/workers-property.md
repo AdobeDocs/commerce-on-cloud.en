@@ -70,3 +70,4 @@ workers:
         commands:
             start: 'php -r "sleep(8); echo time() . PHP_EOL;" >> var/time.txt& sleep 2'
 ```
+

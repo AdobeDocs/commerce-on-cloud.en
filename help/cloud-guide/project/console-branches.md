@@ -287,3 +287,4 @@ You can access your project and environments from any location through a web bro
    ```
 
 1. Click **[!UICONTROL Save]**. This redeploys the environment to update security and settings. Adobe recommends testing the environment after completing security settings.
+
