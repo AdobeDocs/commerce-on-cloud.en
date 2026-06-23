@@ -90,3 +90,4 @@ For example:
 - If the allowlist contains the IP addresses for your service nodes (1, 2, and 3), then there is no action required.
 - If the allowlist contains the IP addresses for your service nodes (1, 2, and 3) and web nodes (4, 5, and 6)—in this case all six nodes—then there is no action required.
 - If the allowlist contains the IP addresses _only_ for your web nodes (4, 5, and 6), then you must update the allowlist to include the IP addresses for the service nodes.
+

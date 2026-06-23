@@ -70,3 +70,4 @@ Log levels determine the level of detail in notification messages. The following
 -  **critical**—critical conditions, such as an unavailable application component or an unexpected exception
 -  **alert**—immediate action required—such as a website is down or the database is unavailable—that triggers an SMS alert
 -  **emergency**—system is unusable
+

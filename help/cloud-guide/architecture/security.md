@@ -148,3 +148,4 @@ The service creates an independent backup on redundant storage. Because the EBS 
 Your Managed Services backup and recovery approach uses a high-availability architecture combined with full-system backups. Each project is replicated—all data, code, and assets—across three separate AWS availability zones; each zone with a separate data center.
 
 See [Snapshots and backup management](../storage/snapshots.md).
+
