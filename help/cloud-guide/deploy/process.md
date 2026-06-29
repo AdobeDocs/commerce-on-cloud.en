@@ -53,3 +53,4 @@ You can test the optimal configuration for the state of your project by running 
 >[!NOTE]
 >
 >With `ece-tools` 2002.1.0 and later, you can use the scenario-based deployment feature to customize the build, deploy, and post-deploy processes for your Adobe Commerce on cloud infrastructure project. See [Scenario-based deployment](scenario-based.md).
+

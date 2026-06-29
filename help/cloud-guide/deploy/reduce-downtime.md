@@ -52,3 +52,4 @@ Use the following steps to reduce the amount of time it takes your store to depl
 >[!NOTE]
 >
 >You can validate your project configuration for optimal deployment by [running the ideal state wizard](smart-wizards.md#verifying-an-ideal-configuration).
+

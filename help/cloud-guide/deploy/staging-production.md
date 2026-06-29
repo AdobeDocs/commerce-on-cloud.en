@@ -367,3 +367,4 @@ When importing data, you must drop and create a database.
    ```
 
    These commands decompress the database dump file, remove the `DEFINER` statements, and import the database using the specified credentials.
+

@@ -46,3 +46,4 @@ The cache TTL (time-to-live) for your media and static files is set in the `.ma
    ```bash
    git add -A && git commit -m "Set cache TTL for static files" && git push origin <branch-name>
    ```
+
