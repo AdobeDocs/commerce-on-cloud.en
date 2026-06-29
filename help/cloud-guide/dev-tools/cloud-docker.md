@@ -29,3 +29,4 @@ The Docker environment emulates the Adobe Commerce on cloud infrastructure `inte
 1. [ECE-Tools package](install-package.md)
 
 To begin working with the Docker development environment, see [Local development](https://developer.adobe.com/commerce/cloud-tools/docker/setup/) in the _Cloud Docker for Commerce guide_ for prerequisites and installation.
+

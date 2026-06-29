@@ -77,3 +77,4 @@ For setup and usage details, see:
 - [Run the Upgrade Compatibility Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run)
 
 For Cloud merchants who use the Site-Wide Analysis Tool, you can also trigger UCT from the dashboard and download the HTML report directly from the widget. See Integrate the [Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool).
+

@@ -31,3 +31,4 @@ Adobe provides a Cloud Tools Suite for Commerce, which includes packages designe
 - [Cloud Patches](../development/apply-patches.md)—Apply patches to integrate Commerce versions with Cloud environments and deliver critical fixes quickly.
 - [ECE-Tools package](package-overview.md)—Manage configurations, build, and deploy the Adobe Commerce application to the remote cloud environments.
 - [Integrations](../integrations/overview.md)—Integrate common development tools, such as notifications, webhooks, and Git-based services.
+

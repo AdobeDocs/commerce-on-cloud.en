@@ -171,3 +171,4 @@ See `srcset` [browser support](https://caniuse.com/#feat=srcset) and [specificat
 ## Validate Fastly IO
 
 After you enable and configure Fastly IO, validate your configuration by performing web page speed tests with and without Fastly IO enabled. Also, review the images in your store to check image size and appearance for issues.
+
