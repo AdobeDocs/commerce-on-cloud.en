@@ -793,6 +793,51 @@ stage:
     UPDATE_URLS: false
 ```
 
+## `USE_LUA`
+
+-  **Default**—`false`
+-  **Version**—Adobe Commerce 2.4.7 through 2.4.8
+
+Controls the `use_lua` cache backend option in `env.php` for Redis/Valkey cache backends.
+Use the default value `false` unless Adobe support explicitly directs otherwise.
+
+```yaml
+stage:
+  deploy:
+    USE_LUA: false
+```
+
+>[!WARNING]
+>
+>For Adobe Commerce 2.4.7 and 2.4.8, keep `USE_LUA: false`. Enabling Lua for all cache operations in these versions can cause cache corruption and GraphQL cache miss issues.
+>
+>Starting with Adobe Commerce 2.4.9, use Valkey cache configuration guidance for your Commerce version and do not rely on `USE_LUA` for new deployments. See [Configure Redis for default and page cache](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache).
+
+>[!NOTE]
+>
+>`LUA_KEY` (also known as `_useLua`) is deprecated for operator use, is not supported, and has no practical effect in current deployments. Remove `LUA_KEY` from `.magento.env.yaml` during migration.
+
+## `USE_LUA_ON_GC`
+
+-  **Default**—`true`
+-  **Version**—Adobe Commerce 2.4.8 and later
+
+Controls the `use_lua_on_gc` cache backend option in `env.php` for garbage collection.
+Keep this value set to `true` to preserve atomic cache tag cleanup during the
+`backend_clean_cache` cron job.
+
+```yaml
+stage:
+  deploy:
+    USE_LUA_ON_GC: true
+```
+
+>[!WARNING]
+>
+>For Adobe Commerce 2.4.8, keep `USE_LUA_ON_GC: true`. Setting it to `false` can cause tag-based cache invalidation to fail silently and may require a full cache flush to recover.
+>
+>For Adobe Commerce 2.4.9 and later, follow the cache service guidance for your installed version. See [Configure Redis for default and page cache](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache).
+
 ## `VERBOSE_COMMANDS`
 
 -  **Default**—_Not set_
