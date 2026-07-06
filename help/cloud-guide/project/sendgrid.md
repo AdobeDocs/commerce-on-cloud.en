@@ -80,7 +80,7 @@ DKIM is an email authentication technology that enables Internet Service Provide
 >
 >The SendGrid DKIM signatures and domain authentication support are available only on the Production and Staging environments for Pro projects. They are not supported on Starter environments.
 >
->Because of this, transactional emails sent from Starter environments are more likely to be marked ass spam since they cannot be fully authenticated.  On Pro environments, enabling DKIM authenticates your sending domain, which signficantly improves email deliverability and reduces the chance that messages are filtered as spam.
+>Because of this, transactional emails sent from Starter environments are more likely to be marked as spam since they cannot be fully authenticated.  On Pro environments, enabling DKIM authenticates your sending domain, which signficantly improves email deliverability and reduces the chance that messages are filtered as spam.
 >
 >To improve the message delivery rate, upgrade from Starter to Pro, or use your own SMTP server or email delivery service provider. See [Configure email connections](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/communications/email-communications) in the _Admin Systems guide_.
 
