@@ -796,7 +796,7 @@ stage:
 ## `USE_LUA`
 
 -  **Default**—`false`
--  **Version**—Adobe Commerce 2.4.7 and later
+-  **Version**—Adobe Commerce 2.4.7 and later (not recommended for new deployments on 2.4.9+)
 
 Controls the `use_lua` cache backend option in `env.php` for Redis/Valkey cache backends.
 Use the default value `false` unless Adobe support explicitly directs otherwise.
@@ -815,7 +815,7 @@ stage:
 
 >[!NOTE]
 >
->`LUA_KEY` (also known as `_useLua`) is deprecated for operator use, is not supported, and has no practical effect in current deployments. Remove `LUA_KEY` from `.magento.env.yaml` during migration.
+>`LUA_KEY` (also known as `_useLua`) is deprecated for operator use, is not supported, and has no practical effect in supported Cloud deployments. Remove `LUA_KEY` from `.magento.env.yaml` during migration.
 
 ## `USE_LUA_ON_GC`
 
