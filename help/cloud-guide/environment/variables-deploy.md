@@ -819,11 +819,11 @@ stage:
 
 ## `USE_LUA_ON_GC`
 
--  **Default**—`true`
--  **Version**—Adobe Commerce 2.4.8 and later
+- **Default**—`true`
+- **Version**—Adobe Commerce 2.4.8 and later
 
 Controls the `use_lua_on_gc` cache backend option in `env.php` for garbage collection.
-Keep this value set to `true` to preserve atomic cache tag cleanup during the
+Use the default value `true` to preserve atomic cache tag cleanup during the
 `backend_clean_cache` cron job.
 
 ```yaml
@@ -834,9 +834,9 @@ stage:
 
 >[!WARNING]
 >
->For Adobe Commerce 2.4.8, keep `USE_LUA_ON_GC: true`. Setting it to `false` can cause tag-based cache invalidation to fail silently and may require a full cache flush to recover.
+>On Adobe Commerce 2.4.8, setting `USE_LUA_ON_GC: false` can cause tag-based cache invalidation to fail silently and require a full cache flush to recover.
 >
->For Adobe Commerce 2.4.9 and later, follow the cache service guidance for your installed version. See [Configure Redis for default and page cache](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache).
+>On 2.4.9 and later, follow the [cache service guidance](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache) for your installed version.
 
 ## `VERBOSE_COMMANDS`
 
