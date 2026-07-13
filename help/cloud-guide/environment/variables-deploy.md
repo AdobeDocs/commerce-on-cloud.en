@@ -796,7 +796,7 @@ stage:
 ## `USE_LUA`
 
 -  **Default**—`false`
--  **Version**—Adobe Commerce 2.4.7 through 2.4.8
+-  **Version**—Adobe Commerce 2.4.7 and later
 
 Controls the `use_lua` cache backend option in `env.php` for Redis/Valkey cache backends.
 Use the default value `false` unless Adobe support explicitly directs otherwise.
