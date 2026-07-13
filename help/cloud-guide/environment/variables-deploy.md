@@ -815,7 +815,7 @@ stage:
 
 >[!NOTE]
 >
->`LUA_KEY` (also known as `_useLua`) is deprecated for operator use, is not supported, and has no practical effect in supported Cloud deployments. Remove `LUA_KEY` from `.magento.env.yaml` during migration.
+>`LUA_KEY` (also known as `_useLua`) is deprecated for operator use, is not supported, and has no practical effect on supported Cloud deployments. Remove `LUA_KEY` from `.magento.env.yaml` during migration.
 
 ## `USE_LUA_ON_GC`
 
