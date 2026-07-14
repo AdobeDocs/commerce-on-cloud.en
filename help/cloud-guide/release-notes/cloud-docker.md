@@ -40,12 +40,6 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v1.4.9 {#latest}
-
-Release date: July 14, 2026
-
-- ![new icon](../../assets/new.svg) **RabbitMQ**—Added RabbitMQ 4.3 support.<!-- MCLOUD-15140 -->
-
 ## v1.4.8 
 
 Release date: May 06, 2026
