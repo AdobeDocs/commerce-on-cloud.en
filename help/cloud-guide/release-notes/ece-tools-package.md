@@ -41,7 +41,7 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.2.11
+## v2002.2.11 {#latest}
 
 Release date: May 06, 2026
 

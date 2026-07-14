@@ -40,7 +40,7 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v1.4.8 
+## v1.4.8 {#latest}
 
 Release date: May 06, 2026
 
