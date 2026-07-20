@@ -816,7 +816,7 @@ stage:
 
 ## `LUA_KEY`
 
-The `LUA_KEY` variable is deprecated. If `LUA_KEY` is included in `.magento.env.yaml`, remove it during migration. Use the `USE_LUA` variable instead.
+The `LUA_KEY` variable is deprecated. If `LUA_KEY` is included in `.magento.env.yaml`, remove it during migration. Use the `USE_LUA` and `USE_LUA_ON_GC` variables instead.
 
 ## `USE_LUA_ON_GC`
 
