@@ -57,4 +57,3 @@ Use Fastly Edge Modules to create and upload custom VCL code from the Admin inst
 1. After updating the Fastly service configuration, test your Adobe Commerce store to ensure that the specified URL requests for WordPress are rerouted correctly.
 
 <!-- Last updated from includes: 2025-01-27 17:16:28 -->
-
