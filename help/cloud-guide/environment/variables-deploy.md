@@ -796,9 +796,10 @@ stage:
 ## `USE_LUA`
 
 - **Default**—`false`
-- **Version**—Adobe Commerce 2.4.7 and later (not recommended for new deployments on 2.4.9+)
+- **Version**—Adobe Commerce 2.4.7 and later
 
-Controls the `use_lua` cache backend option in `env.php` for Redis/Valkey cache backends.
+Controls the `use_lua` cache backend option in `env.php` for the default cache frontend (and, when using the `symfony_l2` backend, the `stale_cache_enabled` frontend's remote backend options). This option is not applied to the `page_cache` frontend.
+
 Use the default value `false` unless Adobe support explicitly directs otherwise.
 
 ```yaml
@@ -822,9 +823,9 @@ stage:
 - **Default**—`true`
 - **Version**—Adobe Commerce 2.4.8 and later
 
-Controls the `use_lua_on_gc` cache backend option in `env.php` for garbage collection.
-Use the default value `true` to preserve atomic cache tag cleanup during the
-`backend_clean_cache` cron job.
+Controls the `use_lua_on_gc` cache backend option in `env.php` for the default cache frontend (and, when using the `symfony_l2` backend, the `stale_cache_enabled` frontend's remote backend options) for garbage collection. This option is not applied to the `page_cache` frontend.
+
+Use the default value `true` to preserve atomic cache tag cleanup during the `backend_clean_cache` cron job.
 
 ```yaml
 stage:
