@@ -47,6 +47,7 @@ Release date: July 20, 2026
 
 - ![new icon](../../assets/new.svg) **RabbitMQ**—Added RabbitMQ 4.3 support.<!-- MCLOUD-15088 -->
 - ![fix icon](../../assets/fix.svg) **Redis Lua configuration** - Added `USE_LUA_ON_GC` support and deprecated `LUA_KEY`.<!-- MCLOUD-15048 -->
+- ![fix icon](../../assets/fix.svg) **Symfony L2 cache**-Fixed ece-tools compatibility with the Adobe Commerce 2.4.9 cache configuration<!-- MCLOUD-15114 -->
 
 ## v2002.2.11
 
