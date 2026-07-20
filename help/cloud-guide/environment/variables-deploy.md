@@ -814,9 +814,9 @@ stage:
 >
 >Starting with Adobe Commerce 2.4.9, use Valkey cache configuration guidance for your Commerce version and do not rely on `USE_LUA` for new deployments. See [Configure Redis for default and page cache](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache).
 
->[!NOTE]
->
->`LUA_KEY` (also known as `_useLua`) is deprecated for operator use, is not supported, and has no practical effect on supported Cloud deployments. Remove `LUA_KEY` from `.magento.env.yaml` during migration.
+## `LUA_KEY`
+
+The `LUA_KEY` variable is deprecated for operator use, is not supported, and has no practical effect on supported Cloud deployments. If `LUA_KEY` is included in `.magento.env.yaml`, remove it during migration.
 
 ## `USE_LUA_ON_GC`
 
