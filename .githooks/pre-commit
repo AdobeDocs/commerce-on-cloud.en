@@ -62,6 +62,7 @@ unless staged_images.empty?
 end
 
 svg_size_check_failed = false
+svg_size_check_errored = false
 
 unless staged_svgs.empty?
   puts "Found #{staged_svgs.length} staged SVG(s). Checking size limit..."
@@ -71,9 +72,19 @@ unless staged_svgs.empty?
     relative_path = to_relative_path.call(svg_path)
     output = `bundle exec rake images:check_size path=#{Shellwords.escape(relative_path)} 2>&1`
     puts output
-    svg_size_check_failed ||= $?.exitstatus != 0 || output.include?('exceeds')
+
+    if $?.exitstatus != 0
+      svg_size_check_errored = true
+    elsif output.match?(/Found \d+ oversized SVG images?/)
+      svg_size_check_failed = true
+    end
   end
   Dir.chdir(project_root)
+end
+
+if svg_size_check_errored
+  puts 'Aborting commit: failed to run the SVG size check (see output above).'
+  exit 1
 end
 
 if svg_size_check_failed
