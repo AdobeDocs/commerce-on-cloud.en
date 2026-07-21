@@ -56,6 +56,10 @@ See [Configure Valkey](https://experienceleague.adobe.com/en/docs/commerce-opera
         VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
    ```
 
+   >[!TIP]
+   >
+   >For Adobe Commerce 2.4.9 and later, you can use the modern Symfony Cache-based L2 cache implementation instead of `RemoteSynchronizedCache` by setting `VALKEY_BACKEND: symfony_l2`. See [`VALKEY_BACKEND`](../environment/variables-deploy.md#valkey_backend) in the _Deploy variables_ reference.
+
 1. Add, commit, and push your code changes.
 
    ```bash
