@@ -94,5 +94,5 @@ if svg_size_check_failed
   exit 1
 end
 
-puts "Image optimization complete!"
+puts "Pre-commit image checks complete!"
 exit 0
