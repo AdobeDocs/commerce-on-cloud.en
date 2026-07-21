@@ -9,10 +9,12 @@
 
 require 'fileutils'
 require 'shellwords'
+require 'open3'
 
 # Get the directory where this hook is located
 hook_dir = File.dirname(__FILE__)
 project_root = File.expand_path('..', hook_dir)
+svg_size_limit_bytes = 140 * 1024
 
 Dir.chdir(project_root)
 
@@ -61,8 +63,8 @@ unless staged_images.empty?
   end
 end
 
-svg_size_check_failed = false
 svg_size_check_errored = false
+oversized_staged_svgs = []
 
 unless staged_svgs.empty?
   puts "Found #{staged_svgs.length} staged SVG(s). Checking size limit..."
@@ -75,8 +77,23 @@ unless staged_svgs.empty?
 
     if $?.exitstatus != 0
       svg_size_check_errored = true
-    elsif output.match?(/Found \d+ oversized SVG images?/)
-      svg_size_check_failed = true
+      next
+    end
+
+    size_output, size_status = Open3.capture2e('git', 'cat-file', '-s', ":#{svg_path}")
+
+    unless size_status.success?
+      puts size_output
+      svg_size_check_errored = true
+      next
+    end
+
+    begin
+      staged_size_bytes = Integer(size_output.strip, 10)
+      oversized_staged_svgs << [svg_path, staged_size_bytes] if staged_size_bytes > svg_size_limit_bytes
+    rescue ArgumentError
+      puts "Failed to parse staged SVG size for #{svg_path}: #{size_output.strip}"
+      svg_size_check_errored = true
     end
   end
   Dir.chdir(project_root)
@@ -87,7 +104,12 @@ if svg_size_check_errored
   exit 1
 end
 
-if svg_size_check_failed
+unless oversized_staged_svgs.empty?
+  limit_kb = svg_size_limit_bytes / 1024
+  oversized_staged_svgs.each do |path, bytes|
+    puts "#{path} exceeds #{limit_kb} KB (#{bytes} bytes)"
+  end
+
   puts "Aborting commit: one or more staged SVGs exceed the size limit."
   puts 'Convert the SVG to PNG with "cd _jekyll && bundle exec rake images:svg_to_png ' \
        'path=path/to/svg" and use the PNG instead.'
