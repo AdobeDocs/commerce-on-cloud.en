@@ -530,7 +530,7 @@ stage:
 
 >[!NOTE]
 >
->If you specify `symfony_l2` as the Valkey backend model, `ece-tools` automatically generates the L2 cache configuration, including a `default` frontend and a `stale_cache_enabled` frontend, from your Valkey service connection details. You do not need to define `CACHE_CONFIGURATION` to use `symfony_l2`. See [Modern Symfony L2 cache implementation](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html#modern-symfony-l2-cache-implementation) in the _Adobe Commerce Configuration Guide_.
+>If you specify `symfony_l2` as the Valkey backend model, `ece-tools` automatically generates the L2 cache configuration from your Valkey service connection details, including a `default` frontend and a `stale_cache_enabled` frontend. You do not need to define `CACHE_CONFIGURATION`. See [Modern Symfony L2 cache implementation](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html#modern-symfony-l2-cache-implementation) in the _Adobe Commerce Configuration Guide_.
 
 ## `VALKEY_USE_SLAVE_CONNECTION`
 
