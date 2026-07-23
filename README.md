@@ -127,7 +127,9 @@ See the Jekyll documentation for more details on [Data Files](https://jekyllrb.c
 
 ## Available rake tasks
 
-This repository uses rake tasks provided by the `adobe-comdox-exl-rake-tasks` gem. To see all available tasks, run:
+This repository uses rake tasks provided by the
+[`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks)
+gem. To see all available tasks, run:
 
 ```bash
 cd _jekyll
@@ -148,10 +150,11 @@ After cloning the repository, run:
 
 ### What the hooks do
 
-- Automatically detect staged image files (PNG, JPG, JPEG, GIF, SVG)
-- Run `image_optim` to compress and optimize images
+- Automatically detect staged image files (PNG, JPEG, GIF, SVG)
+- Run `image_optim` to compress and optimize raster images (PNG, JPEG, GIF)
 - Re-stage optimized images automatically
-- Ensure all committed images are properly optimized
+- Ensure all committed raster images are properly optimized
+- Check staged SVGs against a size limit and abort the commit if any SVG exceeds it
 
 ### Benefits
 
