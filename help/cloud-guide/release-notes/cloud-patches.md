@@ -50,9 +50,9 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 ## v1.1.16 {#latest}
 
-Release date: July 21, 2026
+Release date: July 23, 2026
 
-- ![fix icon](../../assets/fix.svg) **Optimized Symfony L2 cache tag storage**—Cache tags for Valkey-backed `symfony_l2` deployments are now stored exclusively in Valkey instead of a redundant local tag index; file-based `symfony_l2` deployments now write that local tag index to the configured `cache_dir` instead of a hardcoded `var/cache` path.<!-- ACP2E-5132 -->
+- ![fix icon](../../assets/fix.svg) **Enhanced Symfony L2 cache performance and reliability**—Optimized cache tag storage for symfony_l2, improved cache invalidation with TTL-based regeneration locks and proper L1 tag cleanup to eliminate stale cache entries, and enabled Redis/Valkey compression (compress_data) by default to reduce memory consumption and network traffic while aligning with the legacy cache implementation.<!-- ACP2E-5132 -->
 
 ## v1.1.15
 
