@@ -26,7 +26,6 @@ The `.magento.app.yaml` file uses properties to manage environment support for t
 | [`crons`](crons-property.md) | Update specs and schedule cron jobs | — | No |
 | [`dependencies`](#dependencies) | Enable additional dependencies | `php:composer/composer: '2.2.4'` | No |
 | [`disk`](#disk) | Define the persistent disk size | `5120` | Yes |
-| [`firewall`](firewall-property.md) | (Starter only) Control outbound traffic | — | No |
 | [`hooks`](hooks-property.md) | Customize shell commands for the build, deploy, and post-deploy phases | — | No |
 | [`mounts`](#mounts) | Set paths | Paths:<ul><li>`"var": "shared:files/var"`</li><li>`"app/etc": "shared:files/etc"`</li><li>`"pub/media": "shared:files/media"`</li><li>`"pub/static": "shared:files/static"`</li></ul> | No |
 | [`name`](#name) | Define the application name | `mymagento` | Yes |

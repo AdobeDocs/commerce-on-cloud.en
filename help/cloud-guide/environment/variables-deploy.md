@@ -495,17 +495,21 @@ The read-only connection is not available for use in the integration environment
 ## `VALKEY_BACKEND`
 
 - **Default**—`Cm_Cache_Backend_Redis`
-- **Version**—Adobe Commerce 2.8.0 and later
+- **Version**—Adobe Commerce 2.4.8 and later
 
 `VALKEY_BACKEND` specifies the backend model configuration for the Valkey cache.
 
-Adobe Commerce version 2.8.0 and later includes the following backend models:
+Adobe Commerce version 2.4.8 and later includes the following backend models:
 
 - `Cm_Cache_Backend_Redis`
 - `\Magento\Framework\Cache\Backend\Redis`
 - `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache`
 
-The following example describes how to set `VALKEY_BACKEND`:
+Adobe Commerce 2.4.9 and later also supports the `symfony_l2` backend model, which enables the modern Symfony Cache-based L2 cache implementation.
+
+### Configure remote synchronized cache
+
+For Adobe Commerce 2.4.8, the following example describes how to set `VALKEY_BACKEND` to the remote synchronized cache:
 
 ```yaml
 stage:
@@ -514,9 +518,23 @@ stage:
   VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
+Specifying remote synchronized cache as the Valkey backend model enables [L2 cache](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html), and `ece-tools` generates the cache configuration automatically. See the [example configuration file](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html#configuration-example). To override the configuration, use the [CACHE_CONFIGURATION](#cache_configuration) deploy variable.
+
+### Configure modern Symfony L2 cache implementation
+
+For Adobe Commerce 2.4.9 and later, the following example describes how to set `VALKEY_BACKEND` to the modern Symfony L2 cache implementation:
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: symfony_l2
+```
+
+Specifying `symfony_l2` as the Valkey backend model enables [L2 cache](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html){target="_blank"}, and `ece-tools` generates the L2 cache configuration automatically from your Valkey service connection details, including a `default` frontend and a `stale_cache_enabled` frontend. Defining `CACHE_CONFIGURATION` is optional and needed only to customize specific backend options, such as the local cache directory. See [Modern Symfony L2 cache implementation](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html#modern-symfony-l2-cache-implementation){target="_blank"} in the _Adobe Commerce Configuration Guide_, and [Configure Symfony L2 cache](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration#configure-symfony-l2-cache){target="_blank"}  in the _Implementation Playbook_ for a customization example.
+
 >[!NOTE]
 >
->If you specify `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` as the Valkey backend model to enable [L2 cache](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html), `ece-tools` generates the cache configuration automatically. See an example [configuration file](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html#configuration-example) in the _Adobe Commerce Configuration Guide_. To override the generated cache configuration, use the [CACHE_CONFIGURATION](#cache_configuration) deploy variable.
+>Adobe Commerce 2.4.9 includes Symfony L2 cache improvements—including cache tag storage, invalidation, and compression—with patch ACP2E-5132, reducing disk I/O, eliminating stale cache entries, and reducing memory and network overhead. See [Enhanced Symfony L2 cache performance and reliability](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html#enhanced-symfony-l2-cache-performance-and-reliability) in the _Adobe Commerce Configuration Guide_.
 
 ## `VALKEY_USE_SLAVE_CONNECTION`
 
