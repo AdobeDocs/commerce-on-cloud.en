@@ -2,8 +2,20 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Jul 17 15:31:48 2026
+updated: Fri Jul 24 18:12:55 2026
 entries:
+- description: Updated [CLI reference](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)
+    after ECE-Tools release, v2002.2.12. No other changes were made besides the version
+    number.
+  versions: ''
+  type: technical
+  date: July 20, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-on-cloud.en/pull/239
+  merge_commit: 136f8312d1c125a49538ee050394c722ab68d9b6
+  contributor: commercedocs_adobe
+  labels:
+  - devops
+  - technical
 - description: Updated [Manage user access](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)
     with clearer prerequisites, Cloud Console invitation states, redeployment guidance,
     and related troubleshooting.
