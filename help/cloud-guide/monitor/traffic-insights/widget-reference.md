@@ -69,8 +69,6 @@ Bandwidth per Adobe Commerce Cloud project. In multi-project accounts this attri
 
 Per-project bandwidth over time.
 
----
-
 ## Full Page Cache Performance tab
 
 Metrics here cover only dynamic storefront HTML pages eligible for Full Page Cache (FPC) — successful (`200`) `text/html` responses that are not AJAX, excluding `static/`, `media/`, checkout, customer account, sitemaps, robots.txt, and other non-cacheable paths. The focus is cache efficiency for the dynamic content (PDP, PLP, CMS) that most affects performance, origin load, and bandwidth. See the [documentation on cache invalidation](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-29631) and root-cause research.
