@@ -8,6 +8,10 @@ exl-id: 7aeb189f-be69-45d5-8163-4748424083c0
 
 [!DNL Adobe Commerce Advanced Security] is a product that works with [!DNL Adobe Commerce on Cloud Infrastructure] to keep your online store fast, available, and secure. This can help protect revenue, reduce downtime, and maintain customer trust during peak traffic events and automated attacks.
 
+>[!TIP]
+>
+>The [Adobe Commerce Traffic Insights](../monitor/traffic-insights/overview.md) New Relic app can help you understand your current Fastly traffic and bot patterns, which can help you determine whether Advanced Security is right for you. 
+
 [!DNL Adobe Commerce on Cloud Infrastructure] includes built-in [Layer 3 and 4 DDoS protection](./fastly.md#ddos-protection) and a [Web Application Firewall (WAF)](./fastly-waf-service.md). Under the [shared responsibility model](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility), Layer 7 DDoS detection, bot protection, and proactive IP blocking are merchant responsibilities, which [!DNL Adobe Commerce Advanced Security] is designed to address.
 
 [!DNL Advanced Security] extends storefront protection through Fastly-powered edge security capabilities, which delivers bot management, advanced rate limiting, and Layer 7 DDoS protection as part of a unified edge platform that combines scale, performance, and security at the network edge.
