@@ -15,9 +15,9 @@ Many New Relic widgets reuse the same metrics and Fastly Next-Gen WAF signals. T
   - For more information on how the deduplication works, see [How the data is measured](understanding-the-app.md#how-the-data-is-measured).
 - **IPs** — The number of distinct client IP addresses.
 - **URLs** — The number of distinct URLs.
-- **Requests per minute (RPM)** — The average request rate, in requests per minute, over the selected period. A high RPM concentrated on a single IP or bot points to automated hammering.
-- **Req. / IPs** — Average requests per unique IP. A high ratio means a few addresses are making many requests each, which is a hallmark of automation. Conversely, a low ratio means the traffic is spread across many distinct clients.
-- **Avg Size** — The average response size, including headers and body, per request. Large values point to heavy resources, such as big files or uncached error pages.
+- **Requests per minute (RPM)** — The average request rate, in requests per minute, over the selected period. A high RPM concentrated on a single IP or bot points to automated, significant activity.
+- **Req. / IPs** — Average requests per unique IP. A high ratio means a few addresses are making many requests each, which is an indicator of automation. Conversely, a low ratio means the traffic is spread across many distinct clients.
+- **Avg Size** — The average response size, including headers and body, per request. Large values indicate heavy resources, such as big files or uncached error pages.
 
 ## HTTP status distribution
 
@@ -30,7 +30,7 @@ Where a table breaks down requests by response status, the columns are the perce
 - **Other 4xx** — client errors other than `403` or `404`
 - **5xx** — server errors.
 
-A skew toward `404` or `4xx` suggests probing, broken links, or scraping. A rise in `5xx` points to origin trouble.
+A skew toward `404` or `4xx` suggests probing, broken links, or scraping. A rise in `5xx` indicates origin trouble.
 
 ## Request-quality signals
 
@@ -41,26 +41,26 @@ A skew toward `404` or `4xx` suggests probing, broken links, or scraping. A rise
 ## Cache and Full Page Cache
 
 - **Cache Age or Median Age** — The Fastly cache [**Age**](https://www.fastly.com/documentation/reference/http/http-headers/Age/) indicates how long (in seconds) the object served has been sitting in cache when it is returned. The **Median Age** is the typical age of the served cached copies. Consistently short ages on high-traffic content indicate frequent cache invalidation or short TTLs. See Fastly's [HTTP caching semantics](https://www.fastly.com/documentation/guides/concepts/cache/cache-freshness/).
-- **FPC Hit percent** — Of Full-Page-Cache-eligible requests, this is the share served from cache (`HIT`) rather than fetched from the origin (`MISS`). Higher is better.
+- **FPC Hit percent** — Of Full-Page-Cache-eligible requests, this value is the share served from cache (`HIT`) rather than fetched from the origin (`MISS`). Higher is better.
 - **404 BW** — The bandwidth consumed specifically by `404` responses. If an [!DNL Adobe Commerce] `404` page is heavy (often ~1.5 MB) and non-cacheable, repeated `404`s can generate an abnormal volume of traffic.
 - **Media BW percent** — The share of a row's bandwidth coming from `/media/` URLs.
 
 ## WAF signals
 
-These come from Fastly's Next-Gen WAF and are read from the request's signal tags from the the comma-separated `Sigsci_Tags` field. They are described in Fastly's official [system signals documentation](https://www.fastly.com/documentation/guides/next-gen-waf/signals/using-system-signals/). The app does not add its own detection logic.
+These come from Fastly's Next-Gen WAF and are read from the request's signal tags from the comma-separated `Sigsci_Tags` field. They are described in Fastly's official [system signals documentation](https://www.fastly.com/documentation/guides/next-gen-waf/signals/using-system-signals/). The app does not add its own detection logic.
 
 - **WAF Attacks** — The share of requests carrying an active attack signal, such as cross-site scripting (XSS), SQL injection (SQLI), command execution, path traversal, Log4j-JNDI, SSRF, or backdoor.
 - **WAF Anomalies** — The share carrying an anomaly or suspicious-behavior signal, such as scanners, malformed data, abnormal paths, or already-blocked requests.
 - **SUSPECTED-BAD-BOT** — A request suspected of being a bad bot.
-- **AI-CRAWLER** — A request suspected of being an AI or LLM crawler, generally used for building AI models or indexes.
-- **DATACENTER** — A request originating from a known cloud, hosting, or data-center network. This can include legitimate uses such as a VPN, so consider these requests as worth investigating before coming to a determination.
+- **AI-CRAWLER** — A request suspected of being an AI or LLM crawler, used for building AI models or indexes.
+- **DATACENTER** — A request originating from a known cloud, hosting, or data-center network. This traffic can include legitimate uses such as a VPN, so consider these requests as worth investigating before coming to a determination.
 - **SITE-FLAGGED-IP** — A request from an IP flagged for exceeding the site's attack thresholds. The WAF labels an IP with this up to a threshold before it starts blocking it automatically.
 - **VERIFIED-BOT.\*** — A verified bot per Fastly's system signals, such as search-engine crawlers, AI fetchers or crawlers, accessibility tools, and similar bots. Use this information to distinguish legitimate crawlers from impostors. See the [system signals documentation](https://www.fastly.com/documentation/guides/next-gen-waf/signals/using-system-signals/).
-- **Sus. Requests** — A combined suspiciousness indicator. These requests are flagged by any attack, anomaly, suspected-bad-bot, or site-flagged-IP signal, or those coming from a datacenter network without being a verified bot.
+- **Sus. Requests** — A combined suspiciousness indicator. Suspicious requests can be flagged by any attack, anomaly, suspected-bad-bot, or site-flagged-IP signal, or those coming from a datacenter network without being a verified bot.
 
 ## Geolocation
 
-Country and region are derived by Fastly from the client IP:
+Fastly derives country and region from the client IP:
 
 - **country** uses [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1#Codes) two-letter codes from [client.geo.country_code](https://www.fastly.com/documentation/reference/vcl/variables/geolocation/client-geo-country-code/)
 - **region** uses [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2#Current_codes) from [client.geo.region](https://www.fastly.com/documentation/reference/vcl/variables/geolocation/client-geo-region/)

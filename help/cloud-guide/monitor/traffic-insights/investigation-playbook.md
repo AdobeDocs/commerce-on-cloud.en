@@ -12,15 +12,15 @@ The [!DNL Adobe Commerce Traffic Insights] app is built around approaches to the
 - Crawler load
 - Malicious traffic
 
-Alternatively, you can request [Advanced Security: native bot management, Layer 7 DDoS & rate limiting](#advanced-security-native-bot-management-layer-7-ddos--rate-limiting), Adobe's native escalation path for when manual mitigation is not enough. Each step names the widget that confirms the symptom, so you can move from a number on a chart to a concrete action.
+Alternatively, you can request [Advanced Security: native bot management, Layer 7 DDoS & rate limiting](#advanced-security-native-bot-management-layer-7-ddos--rate-limiting), Adobe's native escalation path for when manual mitigation is not enough. Each step names the widget that confirms the symptom, so you can transition from a number on a chart to a concrete action.
 
 >[!WARNING]
 >
->These are guidelines. Always validate any blocking rule against your own traffic before deploying it.
+>The suggestions on this page are only guidelines. Always validate any blocking rule against your own traffic before deploying it.
 
 ## CDN bandwidth overage
 
-Before considering bandwidth overages, you should understand how bandwidth is billed. Traffic for **all** Fastly services bundled with the [!DNL Adobe Commerce on Cloud Infrastructure] account, including every production **and** staging environment, counts toward the common usage compared against the annual allowance in your contract. Start from **Bandwidth ▸ Total Bandwidth**, then attribute the volume with **Bandwidth By Content Type** and **Bandwidth By Domain Details**.
+Before considering bandwidth overages, understand how bandwidth is billed. Traffic for **all** Fastly services bundled with the [!DNL Adobe Commerce on Cloud Infrastructure] account, including every production **and** staging environment, counts toward the common usage compared against the annual allowance in your contract. Start from **Bandwidth ▸ Total Bandwidth**, then attribute the volume with **Bandwidth By Content Type** and **Bandwidth By Domain Details**.
 
 ### Media content
 
@@ -35,7 +35,7 @@ Some sites contain large files or specific, heavy responses, for example ERP int
 
 ### Heavy 404s
 
-An Adobe Commerce **404 page not found** is usually a heavy, theme-stylized page (~1.5 MB) and **non-cacheable**, so repeated 404s can generate abnormal traffic. Even a trivial missing resource like `favicon.ico` can turn into a heavy `404` page instead of a small file. Use the **404** and **404 BW** columns in **Bandwidth By Domain Details**, **URLs By Bandwidth**, **Top IPs By Bandwidth**, and **Stats By IP Subnets** to find clients, IPs, and URLs consistently generating 404 volume. Then reduce or limit that access, for example, you could return a lightweight `403` instead.
+An Adobe Commerce **404 page not found** is usually a heavy, theme-stylized page (~1.5 MB) and **non-cacheable**, so repeated 404s can generate abnormal traffic. Even a trivial missing resource like `favicon.ico` can turn into a heavy `404` page instead of a small file. Use the **404** and **404 BW** columns in **Bandwidth By Domain Details**, **URLs By Bandwidth**, **Top IPs By Bandwidth**, and **Stats By IP Subnets** to find clients, IPs, and URLs consistently generating 404 volume. Then reduce or limit that access, for example, return a lightweight `403` instead.
 
 ### Low FPC hit ratio
 
@@ -80,9 +80,9 @@ Every Cloud Infrastructure project already has a baseline of automatic protectio
 - Watch for credential stuffing, account takeover, fake-account creation, card testing, content scraping, and inventory/cart hoarding. These bot-driven abuse patterns are surfaced in the **Bots Activity and Requests Analysis** tab. High-volume, low-diversity traffic hitting login, account, checkout, or catalog endpoints is the signature to look for in **Top IPs By Requests Count** and **Known Bots Impact Details**.
 - Protect checkout and checkout API endpoints from bot attacks with [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha).
 - Use the Fastly module's native rate-limit [path protection](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md#path-protection).
-- Check [Next-Gen WAF signals](https://www.fastly.com/documentation/guides/next-gen-waf/signals/using-system-signals/) in the comma-separated `Sigsci_Tags` field and combine relevant signal matches into a targeted blocking rule. A suspicious request's value might look like `BOT-ANALYSIS,DATACENTER,SIGSCI-IP,SITE-FLAGGED-IP,SUSPECTED-BAD-BOT`. The WAF labels an IP with `SITE-FLAGGED-IP` up to a threshold before it begins blocking automatically. The **WAF Attack & Anomaly Signals**, **WAF Bots Signals**, and **Requests By WAF Response** widgets, and the WAF columns in the IP, subnet, and country tables, surface these.
+- Check [Next-Gen WAF signals](https://www.fastly.com/documentation/guides/next-gen-waf/signals/using-system-signals/) in the comma-separated `Sigsci_Tags` field and combine relevant signal matches into a targeted blocking rule. A suspicious request's value can look like `BOT-ANALYSIS,DATACENTER,SIGSCI-IP,SITE-FLAGGED-IP,SUSPECTED-BAD-BOT`. The WAF labels an IP with `SITE-FLAGGED-IP` up to a threshold before it begins blocking automatically. The **WAF Attack & Anomaly Signals**, **WAF Bots Signals**, and **Requests By WAF Response** widgets, and the WAF columns in the IP, subnet, and country tables, surface these.
 - See Adobe's article on [blocking malicious traffic for Adobe Commerce on the Fastly level](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level) for common approaches.
-- For complex scenarios where manual blocking is not a viable option, such as sustained bot campaigns, attacks spread across many IPs/APIs, or Layer 7 DDoS, you should consider Adobe's [Advanced Security](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/advanced-security) add-on first (see [native bot management](#advanced-security-native-bot-management-layer-7-ddos--rate-limiting)). It runs on the same Fastly edge serving your storefront. If you need capabilities outside of its scope, a third-party managed bot-mitigation service with native Fastly integration, such as [Datadome](https://docs.datadome.co/docs/module-fastly) or [HUMAN Bot Defender](https://www.fastly.com/documentation/guides/integrations/non-fastly-services/human-bot-defender/) (formerly PerimeterX) is the suggested alternative. All of these options add additional costs.
+- For complex scenarios where manual blocking is not a viable option, such as sustained bot campaigns, attacks spread across many IPs/APIs, or Layer 7 DDoS, consider Adobe's [Advanced Security](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/advanced-security) add-on first (see [native bot management](#advanced-security-native-bot-management-layer-7-ddos--rate-limiting)). It runs on the same Fastly edge serving your storefront. If you need capabilities outside of its scope, a third-party managed bot-mitigation service with native Fastly integration, such as [Datadome](https://docs.datadome.co/docs/module-fastly) or [HUMAN Bot Defender](https://www.fastly.com/documentation/guides/integrations/non-fastly-services/human-bot-defender/) (formerly PerimeterX) is the suggested alternative. All of these options add additional costs.
 
 ## Advanced Security: native bot management, Layer 7 DDoS and rate limiting
 
