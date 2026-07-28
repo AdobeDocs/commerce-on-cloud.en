@@ -52,8 +52,6 @@ Adobe Commerce on cloud infrastructure supports the following services, which ca
 - [Redis](redis.md)
 - [RabbitMQ](rabbitmq.md)
 - [Elasticsearch](elasticsearch.md)
-
-Supported service versions vary by Adobe Commerce version and Cloud environment. See [System Requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
 - [OpenSearch](opensearch.md)
 
 >[!NOTE]
