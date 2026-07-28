@@ -27,9 +27,13 @@ The `services.yaml` file defines the services supported and used by Adobe Commer
 
 >[!NOTE]
 >
->The `.magento/services.yaml` file is managed locally in the `.magento` directory of your project. The configuration is accessed during the build process for defining the required service versions in the integration environment only, and gets removed once the deployment has been completed, so you will not find them on the server.
+>The `.magento/services.yaml` file is managed locally in the `.magento` directory of your project. During deployment, Adobe Commerce on cloud infrastructure uses this configuration to provision supported services for the target environment. The `.magento` directory is removed from the remote server after deployment, so you will not find `services.yaml` on the deployed environment.
 
 The deploy script uses the configuration files in the `.magento` directory to provision the environment with the configured services. A service becomes available to your application if it is included in the [`relationships`](../application/properties.md#relationships) property of the `.magento.app.yaml` file. The `services.yaml` file contains the _type_ and _disk_ values. Service type defines the service _name_ and _version_.
+
+Service configuration in `.magento/services.yaml` is separate from PHP and Composer package dependencies defined in `composer.json` and locked in `composer.lock`.
+
+## Where service changes apply
 
 Changing a service configuration causes a deployment to provision the environment with the updated services, which affects the following environments:
 
@@ -40,10 +44,11 @@ Changing a service configuration causes a deployment to provision the environmen
 
 ## Default and supported services
 
-The cloud infrastructure supports and deploys the following services:
+Adobe Commerce on cloud infrastructure supports the following services, which can be configured for your project:
 
 - [ActiveMQ](activemq.md)
 - [MySQL](mysql.md)
+- [Valkey](valkey.md]
 - [Redis](redis.md)
 - [RabbitMQ](rabbitmq.md)
 - [Elasticsearch](elasticsearch.md)
@@ -54,22 +59,24 @@ The cloud infrastructure supports and deploys the following services:
 >
 >After upgrading to a new version of RabbitMQ, trigger a full deployment to ensure that your custom message queues are recreated in RabbitMQ.
 
-You can view default versions and disk values in the current, [default `services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). The following sample shows the `mysql`, `redis`, `opensearch` or `elasticsearch`, `rabbitmq`, and `activemq-artemis` services defined in the `services.yaml` configuration file:
+## View configured services and versions
+
+You can view example service definitions and disk values in the current template [`services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Actual default and supported service versions depend on your Adobe Commerce version and current cloud template. The following sample shows several services that can be defined in the `services.yaml` configuration file:
 
 ```yaml
 mysql:
-    type: mysql:10.4
+    type: mysql:11.8
     disk: 5120
 
-redis:
-    type: redis:6.2
+cache:
+    type: valkey:9.0
 
 opensearch:
-    type: opensearch:2  # minor version not required; uses latest
+    type: opensearch:3  # minor version not required; uses latest
     disk: 1024
 
 rabbitmq:
-    type: rabbitmq:3.9
+    type: rabbitmq:4.3
     disk: 1024
 
 activemq-artemis:
@@ -142,9 +149,9 @@ In Adobe Commerce on cloud infrastructure projects, service [relationships](../a
 
 You can retrieve the configuration data for all service relationships from the [`$MAGENTO_CLOUD_RELATIONSHIPS`](../environment/variables-cloud.md) environment variable. The configuration data includes service name, type, and version along with any required connection details such as port number and login credentials.
 
-**To verify relationships in local environment**:
+**To verify relationships from your local development environment**:
 
-1. In your local environment, show the relationships for the active environment.
+1. From your local development environment, show the relationships for the active environment.
 
    ```bash
    magento-cloud relationships
@@ -160,7 +167,7 @@ You can retrieve the configuration data for all service relationships from the [
    ...
            type: 'redis:7.0'
            port: 6379
-   elasticsearch:
+   opensearch:
        -
    ...
            type: 'opensearch:2'
@@ -168,7 +175,7 @@ You can retrieve the configuration data for all service relationships from the [
    database:
        -
    ...
-           type: 'mysql:10.6'
+           type: 'mysql:11.8'
            port: 3306
    ```
 
@@ -225,7 +232,7 @@ You can upgrade the installed service version by updating the service configurat
 
    ```yaml
    mysql:
-       type: mysql:10.3
+       type: mysql:11.8
        disk: 2048
    ```
 
@@ -233,7 +240,7 @@ You can upgrade the installed service version by updating the service configurat
 
    ```yaml
    mysql:
-       type: mysql:10.4
+       type: mysql:12.3
        disk: 5120
    ```
 
@@ -244,7 +251,7 @@ You can upgrade the installed service version by updating the service configurat
    ```
 
    ```bash
-   git commit -m "Upgrade MySQL from MariaDB 10.3 to 10.4."
+   git commit -m "Upgrade MySQL from MariaDB 11.8 to 12.3."
    ```
 
    ```bash
