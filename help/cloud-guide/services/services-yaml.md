@@ -48,7 +48,7 @@ Adobe Commerce on cloud infrastructure supports the following services, which ca
 
 - [ActiveMQ](activemq.md)
 - [MySQL](mysql.md)
-- [Valkey](valkey.md]
+- [Valkey](valkey.md)
 - [Redis](redis.md)
 - [RabbitMQ](rabbitmq.md)
 - [Elasticsearch](elasticsearch.md)
