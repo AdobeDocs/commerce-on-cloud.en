@@ -61,7 +61,9 @@ Adobe Commerce on cloud infrastructure supports the following services, which ca
 
 ## View configured services and versions
 
-You can view example service definitions and disk values in the current template [`services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Actual default and supported service versions depend on your Adobe Commerce version and current cloud template. The following sample shows several services that can be defined in the `services.yaml` configuration file:
+You can view example service definitions and disk values in the current template [`services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Actual default and supported service versions depend on your Adobe Commerce version and current cloud template. 
+
+The following example shows service definitions in the `services.yaml` configuration file:
 
 ```yaml
 mysql:
