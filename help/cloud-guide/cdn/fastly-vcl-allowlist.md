@@ -20,6 +20,7 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
+last-update: 2025-01-29
 ---
 # Custom VCL for allowing requests
 

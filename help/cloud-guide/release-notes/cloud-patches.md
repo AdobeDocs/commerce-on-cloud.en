@@ -48,7 +48,14 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.1.16 {#latest}
+## v1.1.17 {#latest}
+
+Release date: July 29, 2026
+
+- ![fix icon](../../assets/fix.svg) **Optimized Symfony L2 cache performance, reliability, and tag management**—Improved cache scalability, reduced unnecessary filesystem I/O, enhanced cache consistency, and resolved stale tag memberships, redundant remote writes, and L1 cache eviction cleanup.<!-- ACP2E-5132 -->
+- ![fix icon](../../assets/fix.svg) **Security improvements**—Improved compatibility for the July 2026 isolated security patch.<!-- AC-17674 -->
+
+## v1.1.16
 
 Release date: July 23, 2026
 
