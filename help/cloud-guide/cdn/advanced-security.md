@@ -10,7 +10,7 @@ exl-id: 7aeb189f-be69-45d5-8163-4748424083c0
 
 >[!TIP]
 >
->The [Adobe Commerce Traffic Insights](../monitor/traffic-insights/overview.md) New Relic app can help you understand your current Fastly traffic and bot patterns, which can help you determine whether Advanced Security is right for you. 
+>Use the [Adobe Commerce Traffic Insights](../monitor/traffic-insights/overview.md) app in New Relic to analyze your Fastly traffic and bot patterns, and determine whether Advanced Security is right for you.
 
 [!DNL Adobe Commerce on Cloud Infrastructure] includes built-in [Layer 3 and 4 DDoS protection](./fastly.md#ddos-protection) and a [Web Application Firewall (WAF)](./fastly-waf-service.md). Under the [shared responsibility model](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility), Layer 7 DDoS detection, bot protection, and proactive IP blocking are merchant responsibilities, which [!DNL Adobe Commerce Advanced Security] is designed to address.
 

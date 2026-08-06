@@ -6,13 +6,13 @@ role: Admin
 ---
 # Investigation playbook
 
-The [!DNL Adobe Commerce Traffic Insights] app is built around approaches to the following problems:
++ The [!DNL Adobe Commerce Traffic Insights] app is designed to help you investigate the following problems:
 
 - Bandwidth overage
 - Crawler load
 - Malicious traffic
 
-Alternatively, you can request [Advanced Security: native bot management, Layer 7 DDoS & rate limiting](#advanced-security-native-bot-management-layer-7-ddos--rate-limiting), Adobe's native escalation path for when manual mitigation is not enough. Each step names the widget that confirms the symptom, so you can transition from a number on a chart to a concrete action.
+Alternatively, you can request [Advanced Security: native bot management, Layer 7 DDoS & rate limiting](#advanced-security-native-bot-management-layer-7-ddos--rate-limiting), Adobe's native escalation path when manual mitigation is insufficient. Each step references the widget that surfaces the symptom, so you can move from a metric to a concrete action.
 
 >[!WARNING]
 >
@@ -58,7 +58,7 @@ The most common cause of a search bot sending too many requests occurs while par
 > Consult an SEO expert before restraining crawler activity. Retraining can negatively affect your SEO.
 
 - Add `nofollow` to top-navigation and layered-navigation links, for example `<a rel="nofollow" href="https://mystore.com/sales.html">Sales</a>`.
-- Change the page meta tag to `index,nofollow` — either as a common [design configuration setting](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview#configure-robotstxt) or  per page type with custom extensions. Keep `sitemap.xml` accurate so that bots always have an up-to-date list of pages to index.
+- Change the page meta tag to `index,nofollow` — either as a common [design configuration setting](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview#configure-robotstxt) or per page type with custom extensions. Keep `sitemap.xml` accurate so that bots always have an up-to-date list of pages to index.
 - Update `robots.txt` to block paths and resources bots should not access.
 - Note the `crawl-delay` directive is not part of the official Robots Exclusion Protocol, but it does work for some bots, such as Bingbot, Slurp, SEMrushBot, and a few others. Googlebot ignores this directive.
 - Add rate-limit rules. There is native [abusive crawler protection](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md#abusive-crawler-protection) in the Fastly module. For finer control, a [custom VCL snippet](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets) can return `429` (Too Many Requests) or `405` (Method Not Allowed) for a user-agent regex with an individual rate limit. Check the crawler's documentation for the preferred method and response code. See Fastly's [rate-limiting VCL guidance](https://www.fastly.com/documentation/reference/vcl/functions/rate-limiting/ratelimit-check-rate/).
