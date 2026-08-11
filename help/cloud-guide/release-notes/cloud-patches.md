@@ -48,7 +48,14 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.1.17 {#latest}
+## v1.1.18 {#latest}
+
+Release date: August 11, 2026
+
+- ![fix icon](../../assets/fix.svg) **Improved patch handling**—Patches now skip hunks targeting modules removed via `composer.json` `replace` and continue applying the remaining installed portions.<!-- MCLOUD-15325 -->
+- ![fix icon](../../assets/fix.svg) **Security improvements**-Applied the latest security patches.<!--MCLOUD-15035 -->
+
+## v1.1.17
 
 Release date: July 29, 2026
 
