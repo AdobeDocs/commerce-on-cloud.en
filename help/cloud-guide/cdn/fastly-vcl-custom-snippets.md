@@ -20,6 +20,7 @@ topic_v2:
     internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
+last-update: 2025-08-20
 ---
 # Getting started with custom VCL
 
@@ -345,4 +346,3 @@ These API request examples use exported environment variables to provide the cre
    Create a snippet with updated values and assign a priority of `100`.
 
 <!-- Last updated from includes: 2025-01-27 17:16:28 -->
-

@@ -18,7 +18,7 @@ role_v2:
 ---
 # Set up Valkey service
 
-[Valkey](https://valkey.io) is an optional, backend cache solution that replaces the `Zend Framework Zend_Cache_Backend_File`, which Adobe Commerce uses by default. If you override the default on Commerce version 2.4.9+ or patch releases later than 2.4.5-p16, 2.4.6-p14, 2.4.7-p9, and the 2.4.8-p5 release lines, you must use Valkey.
+[Valkey](https://valkey.io) is an optional, backend cache solution that replaces the `Zend Framework Zend_Cache_Backend_File`, which Adobe Commerce uses by default. If you override the default on Commerce version 2.4.9+ or patch releases later than 2.4.5-p16, 2.4.6-p14, 2.4.7-p9, and the 2.4.8-p4 release lines, you must use Valkey.
 
 See [Configure Valkey](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration){target="_blank"} in the _Implementation Playbook Best Practices Guide_.
 
@@ -48,13 +48,17 @@ See [Configure Valkey](https://experienceleague.adobe.com/en/docs/commerce-opera
    ```
 
 1. Configure `.magento.env.yaml` to replace the Redis configuration as follows:.
-   
+
    ```yaml
     stage:
         deploy:
         VALKEY_USE_SLAVE_CONNECTION: true
         VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
    ```
+
+   >[!TIP]
+   >
+   >For Adobe Commerce 2.4.9 and later, you can use the modern Symfony Cache-based L2 cache implementation instead of `RemoteSynchronizedCache` by setting `VALKEY_BACKEND: symfony_l2`. See [`VALKEY_BACKEND`](../environment/variables-deploy.md#valkey_backend) in the _Deploy variables_ reference.
 
 1. Add, commit, and push your code changes.
 

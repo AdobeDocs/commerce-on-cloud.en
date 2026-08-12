@@ -48,7 +48,33 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.1.14 {#latest}
+## v1.1.18 {#latest}
+
+Release date: August 11, 2026
+
+- ![fix icon](../../assets/fix.svg) **Improved patch handling**—Patches now skip hunks targeting modules removed via `composer.json` `replace` and continue applying the remaining installed portions.<!-- MCLOUD-15325 -->
+- ![fix icon](../../assets/fix.svg) **Security improvements**-Applied the latest security patches.<!--MCLOUD-15035 -->
+
+## v1.1.17
+
+Release date: July 29, 2026
+
+- ![fix icon](../../assets/fix.svg) **Optimized Symfony L2 cache performance, reliability, and tag management**—Improved cache scalability, reduced unnecessary filesystem I/O, enhanced cache consistency, and resolved stale tag memberships, redundant remote writes, and L1 cache eviction cleanup.<!-- ACP2E-5132 -->
+- ![fix icon](../../assets/fix.svg) **Security improvements**—Improved compatibility for the July 2026 isolated security patch.<!-- AC-17674 -->
+
+## v1.1.16
+
+Release date: July 23, 2026
+
+- ![fix icon](../../assets/fix.svg) **Enhanced Symfony L2 cache performance and reliability**—Optimized cache tag storage for symfony_l2, improved cache invalidation with TTL-based regeneration locks and proper L1 tag cleanup to eliminate stale cache entries, and enabled Redis/Valkey compression (compress_data) by default to reduce memory consumption and network traffic while aligning with the legacy cache implementation.<!-- ACP2E-5132 -->
+
+## v1.1.15
+
+Release date: July 14, 2026
+
+- ![fix icon](../../assets/fix.svg) **Security improvements**-Applied the latest security patches.<!--MCLOUD-15066 -->
+
+## v1.1.14 
 
 Release date: May 06, 2026
 

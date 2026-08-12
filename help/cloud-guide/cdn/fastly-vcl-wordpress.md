@@ -15,6 +15,7 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
+last-update: 2025-01-29
 ---
 # Reroute requests to a CMS backend
 
@@ -57,4 +58,3 @@ Use Fastly Edge Modules to create and upload custom VCL code from the Admin inst
 1. After updating the Fastly service configuration, test your Adobe Commerce store to ensure that the specified URL requests for WordPress are rerouted correctly.
 
 <!-- Last updated from includes: 2025-01-27 17:16:28 -->
-

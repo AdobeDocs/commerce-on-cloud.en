@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
+last-update: 2025-11-19
 ---
 # Cloud CLI reference
 
 {{$include /help/_includes/templated/cloud-cli-ref.md}}
 
 <!-- Last updated from includes: 2025-11-19 09:24:44 -->
-

@@ -30,6 +30,8 @@ Gemfile.lock
 .idea
 .cursor
 .claude
+.scout/
+.vscode
 
 # Environment variables #
 ########################

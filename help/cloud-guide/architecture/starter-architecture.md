@@ -109,7 +109,6 @@ The production and staging environments include the following technologies. You 
 -  Redis server
 -  Elasticsearch for catalog search for Adobe Commerce 2.2 to 2.4.3-p2
 -  OpenSearch for catalog search for Adobe Commerce 2.3.7-p3, 2.4.3-p2, and 2.4.4 and later
--  Egress filtering (outbound firewall)
 
 ### Services
 

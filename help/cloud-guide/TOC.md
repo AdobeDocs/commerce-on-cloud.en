@@ -102,7 +102,6 @@ feature: Cloud
         + Properties {#properties}
             + [Application properties](application/properties.md)
             + [Crons](application/crons-property.md)
-            + [Firewall (Starter only)](application/firewall-property.md)
             + [Hooks](application/hooks-property.md)
             + [Variables](application/variables-property.md)
             + [Web](application/web-property.md)

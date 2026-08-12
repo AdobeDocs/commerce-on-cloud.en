@@ -15,6 +15,7 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
+last-update: 2026-05-05
 ---
 # PHP settings
 
@@ -149,4 +150,3 @@ See [section 3.5 of the SourceGuardian documentation](https://sourceguardian.com
 >PHP compiled with debug is not supported and the Probe may conflict with [!DNL XDebug] or [!DNL XHProf]. Disable those extensions when enabling the Probe. The Probe conflicts with some PHP extensions like [!DNL Pinba] or IonCube.
 
 <!-- Last updated from includes: 2026-04-24 14:50:02 -->
-
