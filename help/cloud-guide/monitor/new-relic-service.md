@@ -2,8 +2,17 @@
 title: New Relic service
 description: Learn about the New Relic service available with your Adobe Commerce on cloud infrastructure project.
 feature: Cloud, Observability
-last-substantial-update: 2023-09-06
+last-substantial-update: 2023-09-06T00:00:00.000Z
 exl-id: 10966241-311d-4b68-804d-4c9569bf933d
+TQID: https://experienceleague.adobe.com/TzgxuxAgzcExYd8BsFh5FTsgFAMy5-qjAOmUdlwqMME
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # New Relic service overview
 
@@ -18,6 +27,8 @@ The following New Relic features are available for use with Production and Stagi
 >[!INFO]
 >
 >Other New Relic features are not available on Adobe Commerce projects.
+>
+>Adobe Commerce on Cloud customers cannot integrate or send data from external servers directly into their provisioned New Relic account. The New Relic service is limited to monitoring the Commerce Cloud application environment. Only third-party services that are invoked by the application itself (for example, external APIs or services called during runtime) can be traced and monitored within New Relic.
 
 ## New Relic APM
 
@@ -27,7 +38,7 @@ The following New Relic features are available for use with Production and Stagi
 - **Database query monitoring**—Locate and monitor database queries affecting performance.
 - **App Map**—View all application dependencies within your site, extensions, and external services.
 - **[!DNL Apdex] scores**—Evaluate performance and create alerts that identify issues and notify you when they occur, such as site performance affected by a flash sale or web event. See [Apdex score](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction/).
-- **Managed alerts for Adobe Commerce**–Use this New Relic alert policy to monitor application and infrastructure performance based on industry best practices. See [Monitor performance with the Managed alerts for Adobe Commerce alert policy](investigate-performance.md/#monitor-performance-with-managed-alerts).
+- **Managed alerts for Adobe Commerce**–Use this New Relic alert policy to monitor application and infrastructure performance based on industry best practices. See [Monitor performance with the Managed alerts for Adobe Commerce alert policy](investigate-performance.md#monitor-performance-with-managed-alerts).
 - **Track deployments**—Monitor deployment events and analyze deployment impact to overall performance. See [Track deployments](track-deployments.md).
 
 Your Adobe Commerce on cloud infrastructure project includes the software for the New Relic APM service along with a license key. You do not need to purchase or install any additional software.

@@ -27,7 +27,7 @@ If you are part of the Adobe community and you want to create a new article or s
 
 ### Major changes from Adobe employees
 
-If you are a technical writer, program manager, or developer from the product team for an Adobe Experience Cloud solution and it is your job to contribute to or author technical articles, you should use the private repository at `https://git.corp.adobe.com/AdobeDocs`.
+If you are a technical writer, program manager, or developer from the product team for an Adobe Experience Cloud solution and it is your job to contribute to or author technical articles, you should use the private repository at `https://github.com/Adobe-Enterprise-Docs/commerce-on-cloud.en`.
 
 ## Tools and setup
 
@@ -94,7 +94,7 @@ To update templated content:
    bundle exec rake render
    ```
 
-   >**NOTE:** You must run the script from the `_jekyll` directory. If this is your first time to run the script, you must install Ruby dependencies first with the `bundle install` command. The rake tasks are provided by the `adobe-comdox-exl-rake-tasks` gem for better maintainability across Adobe Commerce documentation repositories.
+   >**NOTE:** You must run the script from the `_jekyll` directory. If this is your first time to run the script, you must install Ruby dependencies first with the `bundle install` command. Core rake tasks and dependencies (Jekyll, Rake, image optimization) are provided by the `adobe-comdox-exl-rake-tasks` gem for better maintainability across Adobe Commerce documentation repositories. Custom tasks specific to this repository are implemented in the `Rakefile`.
 
 5. Navigate back to the `root` directory.
 
@@ -127,7 +127,9 @@ See the Jekyll documentation for more details on [Data Files](https://jekyllrb.c
 
 ## Available rake tasks
 
-This repository uses rake tasks provided by the `adobe-comdox-exl-rake-tasks` gem. To see all available tasks, run:
+This repository uses rake tasks provided by the
+[`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks)
+gem. To see all available tasks, run:
 
 ```bash
 cd _jekyll
@@ -148,10 +150,11 @@ After cloning the repository, run:
 
 ### What the hooks do
 
-- Automatically detect staged image files (PNG, JPG, JPEG, GIF, SVG)
-- Run `image_optim` to compress and optimize images
+- Automatically detect staged image files (`.png`, `.jpeg`, `.jpg`, `.gif`, `.svg`)
+- Run `image_optim` to compress and optimize raster images (`.png`, `.jpeg`, `.jpg`, `.gif`)
 - Re-stage optimized images automatically
-- Ensure all committed images are properly optimized
+- Ensure all committed raster images are properly optimized
+- Check staged SVGs against a size limit and abort the commit if an oversized SVG is referenced from `help/` (otherwise just warn)
 
 ### Benefits
 

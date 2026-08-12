@@ -1,32 +1,37 @@
 # Cloud packages for Adobe Commerce
 
-<!-- The 'packages' variable contains the 'packages' node of the '_data/codebase/cloud/composer_lock.json' file
- -->
+<!--
+The 'packages' variable contains the 'packages' node of the '_data/codebase/cloud/composer_lock.json' file
+-->
 
-<!-- The 'packages-dev' variable contains the 'packages-dev' node of the '_data/codebase/cloud/composer_lock.json' file
- -->
+<!--
+The 'packages-dev' variable contains the 'packages-dev' node of the '_data/codebase/cloud/composer_lock.json' file
+-->
 
-<!-- The 'product' variable contains data of the 'magento/magento-cloud-metapackage' package
- -->
+<!--
+The 'product' variable contains data of the 'magento/magento-cloud-metapackage' package
+-->
 
-<!-- The edition variable contains `cloud` value from the _data/names.yml file
- -->
+<!--
+The edition variable contains `cloud` value from the _data/names.yml file
+-->
 
 Adobe Commerce on cloud infrastructure uses Composer to manage PHP packages.
 
 The `composer.json` file declares the list of packages, whereas the `composer.lock` file stores a complete list of the packages (a full version of each package and its dependencies) used to build an installation of Adobe Commerce.
 
-The following reference documentation is generated from the `composer.lock` file, and it covers required packages included in Adobe Commerce on cloud infrastructure 2.4.8-p1.
+The following reference documentation is generated from the `composer.lock` file, and it covers required packages included in Adobe Commerce on cloud infrastructure 2.4.9-p2.
 
 ## Dependencies
 
-`magento/magento-cloud-metapackage 2.4.8-p1` has the following dependencies:
+`magento/magento-cloud-metapackage 2.4.9-p2` has the following dependencies:
 
 ```config
+aem/rum: ^1.0.4
 fastly/magento2: ^1.2.34
 magento/ece-tools: ^2002.2.0
 magento/module-paypal-on-boarding: ~100.5.0
-magento/product-enterprise-edition: >=2.4.8 <2.4.9
+magento/product-enterprise-edition: >=2.4.9 <2.4.10
 ```
 
 ## Third-party licenses
@@ -83,6 +88,13 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
     </td>
     <td>library</td>
     <td>AWS SDK for PHP - Use Amazon Web Services in your PHP project</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/giggsey/libphonenumber-for-php.git">giggsey/libphonenumber-for-php</a>
+    </td>
+    <td>library</td>
+    <td>A library for parsing, formatting, storing and validating international phone numbers, a PHP Port of Google's libphonenumber.</td>
   </tr>
   <tr>
     <td>
@@ -198,17 +210,10 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/firebase/php-jwt.git">firebase/php-jwt</a>
+      <a href="https://github.com/googleapis/php-jwt.git">firebase/php-jwt</a>
     </td>
     <td>library</td>
     <td>A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-captcha.git">laminas/laminas-captcha</a>
-    </td>
-    <td>library</td>
-    <td>Generate and validate CAPTCHAs using Figlets, images, ReCaptcha, and more</td>
   </tr>
   <tr>
     <td>
@@ -223,13 +228,6 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
     </td>
     <td>library</td>
     <td>provides a nested object property based user interface for accessing this configuration data within application code</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-di.git">laminas/laminas-di</a>
-    </td>
-    <td>library</td>
-    <td>Automated dependency injection for PSR-11 containers</td>
   </tr>
   <tr>
     <td>
@@ -296,13 +294,6 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-mvc.git">laminas/laminas-mvc</a>
-    </td>
-    <td>library</td>
-    <td>Laminas's event-driven MVC layer, including MVC Applications, Controllers, and Plugins</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/laminas/laminas-permissions-acl.git">laminas/laminas-permissions-acl</a>
     </td>
     <td>library</td>
@@ -317,20 +308,6 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-router.git">laminas/laminas-router</a>
-    </td>
-    <td>library</td>
-    <td>Flexible routing system for HTTP and console applications</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-server.git">laminas/laminas-server</a>
-    </td>
-    <td>library</td>
-    <td>Create Reflection-based RPC servers</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/laminas/laminas-servicemanager.git">laminas/laminas-servicemanager</a>
     </td>
     <td>library</td>
@@ -342,13 +319,6 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
     </td>
     <td>library</td>
     <td>Object-oriented interface to PHP sessions and storage</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-soap.git">laminas/laminas-soap</a>
-    </td>
-    <td>library</td>
-    <td></td>
   </tr>
   <tr>
     <td>
@@ -408,6 +378,13 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/php-db/phpdb.git">php-db/phpdb</a>
+    </td>
+    <td>library</td>
+    <td>Database abstraction layer, SQL abstraction, result set abstraction, and RowDataGateway and TableDataGateway implementations</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/phpfui/recaptcha.git">phpfui/recaptcha</a>
     </td>
     <td>library</td>
@@ -447,27 +424,6 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
     </td>
     <td>magento-module</td>
     <td>Zend_Cache backend using Redis with full support for tags.</td>
-  </tr>
-  </tbody>
-</table>
-
-### ISC
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>
-      <a href="https://github.com/paragonie/sodium_compat.git">paragonie/sodium_compat</a>
-    </td>
-    <td>library</td>
-    <td>Pure PHP implementation of libsodium; uses the PHP extension if it exists</td>
   </tr>
   </tbody>
 </table>
@@ -524,6 +480,13 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
     </td>
     <td>library</td>
     <td>Arbitrary-precision arithmetic library</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/brick/phonenumber.git">brick/phonenumber</a>
+    </td>
+    <td>library</td>
+    <td>Phone number library</td>
   </tr>
   <tr>
     <td>
@@ -664,6 +627,13 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
     </td>
     <td>library</td>
     <td>Adding support for a wider range of PHP versions to ocramius/proxy-manager</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/giggsey/Locale.git">giggsey/locale</a>
+    </td>
+    <td>library</td>
+    <td>Locale functions required by libphonenumber-for-php</td>
   </tr>
   <tr>
     <td>
@@ -828,7 +798,7 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/PhpGt/CssXPath.git">phpgt/cssxpath</a>
+      <a href="https://github.com/phpgt/CssXPath.git">phpgt/cssxpath</a>
     </td>
     <td>library</td>
     <td>Convert CSS selectors to XPath queries.</td>
@@ -860,6 +830,13 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
     </td>
     <td>library</td>
     <td>PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/predis/predis.git">predis/predis</a>
+    </td>
+    <td>library</td>
+    <td>A flexible and feature-complete Redis/Valkey client for PHP.</td>
   </tr>
   <tr>
     <td>
@@ -1003,6 +980,20 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/symfony/cache.git">symfony/cache</a>
+    </td>
+    <td>library</td>
+    <td>Provides extended PSR-6, PSR-16 (and tags) implementations</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/cache-contracts.git">symfony/cache-contracts</a>
+    </td>
+    <td>library</td>
+    <td>Generic abstractions related to caching</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/symfony/clock.git">symfony/clock</a>
     </td>
     <td>library</td>
@@ -1077,13 +1068,6 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
     </td>
     <td>library</td>
     <td>Finds files and directories via an intuitive fluent interface</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/symfony/http-client.git">symfony/http-client</a>
-    </td>
-    <td>library</td>
-    <td>Provides powerful methods to fetch HTTP resources synchronously or asynchronously</td>
   </tr>
   <tr>
     <td>
@@ -1283,6 +1267,13 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/thecodingmachine/safe.git">thecodingmachine/safe</a>
+    </td>
+    <td>library</td>
+    <td>PHP core functions that throw exceptions instead of returning FALSE on error</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/web-token/jwt-framework.git">web-token/jwt-framework</a>
     </td>
     <td>symfony-bundle</td>
@@ -1421,6 +1412,13 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
     </tr>
   </thead>
   <tbody>
+  <tr>
+    <td>
+      aem/rum
+    </td>
+    <td>magento2-module</td>
+    <td>N/A</td>
+  </tr>
   <tr>
     <td>
       paypal/module-braintree-core

@@ -1,12 +1,10 @@
 # Parameters for a GitHub search query
 base_branch: main
 
-enterprise: git.corp.adobe.com
-
 # The list of repositories to scan for pull requests
 repos:
   - AdobeDocs/commerce-on-cloud.en
-  - enterprise:AdobeDocs/commerce-on-cloud.en
+  - enterprise:Adobe-Enterprise-Docs/commerce-on-cloud.en
 
 # Labels also will be used as a 'type' value in the output file
 labels:

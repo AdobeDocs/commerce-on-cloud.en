@@ -1,9 +1,19 @@
 ---
-title: '[!DNL Onboarding] to Commerce'
+title: "[!DNL Onboarding] to Commerce"
 description: Access your cloud account and set up an Adobe Commerce on cloud infrastructure project.
 role: Admin
 recommendations: noDisplay, catalog
 exl-id: 9b48212a-2560-4090-b483-a8b04471de95
+TQID: https://experienceleague.adobe.com/y1WQfRLHOhgyZfCISQEsIRju7g79oq-ikJH1Tl7z420
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # [!DNL Onboarding] to Commerce
 
@@ -15,7 +25,7 @@ To quickly onboard your project, so you can begin developing your site for live 
 
 ## Sign up for a Cloud account
 
-If you do not have an Adobe Commerce on cloud infrastructure account, contact [Sales][]. When you sign up, Adobe creates your account and sends you a welcome email that provides instructions on how to access the project interface. The email contains a link so that you can log in to your account and complete your initial project setup.
+If you do not have an Adobe Commerce on cloud infrastructure account, contact [Sales](https://business.adobe.com/products/magento/get-demo.html). When you sign up, Adobe creates your account and sends you a welcome email that provides instructions on how to access the project interface. The email contains a link so that you can log in to your account and complete your initial project setup.
 
 ## Access project and add users
 
@@ -27,7 +37,7 @@ You can only add registered users to your Adobe Commerce on cloud infrastructure
 
 ### Shared account access
 
-The License Owner can set up shared access for the account. Shared access allows trusted employees and service providers to use the Help center to submit and track Support tickets related to your Adobe Commerce on cloud infrastructure projects. For setup instructions, see the [Shared Access][] article in the Help Center.
+The License Owner can set up shared access for the account. Shared access allows trusted employees and service providers to use the Help center to submit and track Support tickets related to your Adobe Commerce on cloud infrastructure projects. For setup instructions, see the [Shared Access](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access) article in the Help Center.
 
 ### [!DNL Cloud Console]
 
@@ -35,7 +45,7 @@ You can use the [[!DNL Cloud Console]](cloud-console.md) to manage your project,
 
 ## Sign up for Adobe status
 
-Get updates about Adobe Commerce on cloud infrastructure platform environments and related services from the [Status page][].
+Get updates about Adobe Commerce on cloud infrastructure platform environments and related services from the [Status page](https://status.adobe.com/products/503473).
 
 The page provides a status for Adobe Commerce components and services followed by notifications about incident reports, service upgrades, planned outages, and scheduled maintenance. Anyone working on your project can subscribe to the Adobe Commerce status site to receive event notifications and updates through email or Slack. You can customize your Adobe status subscription to track specific products by regions and events.
 
@@ -45,8 +55,3 @@ The page provides a status for Adobe Commerce components and services followed b
 >
 >**Next step**: [Log in to Cl[!DNL ]oud Console](cloud-console.md)
 
-<!-- link definitions -->
-
-[Sales]: https://business.adobe.com/products/magento/get-demo.html
-[Shared Access]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access
-[Status page]: https://status.adobe.com/products/503473

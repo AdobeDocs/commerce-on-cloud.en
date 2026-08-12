@@ -3,6 +3,18 @@ title: Best practices for upgrading your project
 description: See a list of best practices for upgrading your project files.
 feature: Cloud, Best Practices, Upgrade
 exl-id: 64f92739-9170-4cbf-90ef-aab6593a37ca
+TQID: https://experienceleague.adobe.com/Nnr9fNMT210WTnaLTWyRM-YCWRXrZuOv0m-EZYpzKVw
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Best practices for upgrading your project
 
@@ -14,7 +26,7 @@ Follow best practices for builds and deployment, and use the [Upgrades and patch
 
     - Ensure that any custom themes are compatible with the new Adobe Commerce version
 
-    - After upgrading third party and custom extensions, use the `magento-cloud local:build` command to validate Composer dependencies before deploying.
+    - After upgrading third party and custom extensions, use the `magento-cloud local:build` command to validate Composer dependencies before deploying, and run the [Upgrade Compatibility Tool](#use-the-upgrade-compatibility-tool) to identify code‑level incompatibilities between your current and target versions. Then use the [Upgrade Compatibility Tool](https://fluffyjaws.adobe.com/#use-the-upgrade-compatibility-tool) to identify and prioritize code-level incompatibilities before deploying to Integration, Staging, or Production.
 
     - Review the Adobe Commerce release notes and extension documentation to ensure that you have implemented any workarounds or configuration changes required to address known functional issues and bugs related to the upgraded the Adobe Commerce version and extensions.
 
@@ -50,3 +62,19 @@ Follow best practices for builds and deployment, and use the [Upgrades and patch
       See [Logging](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html#logging) in the _Configuration Guide_.
 
     - Complete post-upgrade User Acceptance Testing UAT on Staging and Production environments and fix any issues related to third-party and custom extension upgrades.
+ 
+## Use the Upgrade Compatibility Tool
+
+Run the Upgrade Compatibility Tool (UCT) as part of your pre‑upgrade analysis to understand the scope and impact of an upgrade.
+
+- UCT compares your current instance to a target Adobe Commerce version, returning a list of critical issues, errors, and warnings that must be fixed before upgrading.
+- Use `--coming-version (-c)` to compare against your planned target version and `--ignore-current-version-compatibility-issues` to focus only on new issues introduced by the upgrade.
+- Treat the UCT HTML report as an input to your upgrade checklist alongside extension compatibility, service versions, and database checks.
+
+For setup and usage details, see:
+
+- [Overview of the Upgrade Compatibility Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview)
+- [Run the Upgrade Compatibility Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run)
+
+For Cloud merchants who use the Site-Wide Analysis Tool, you can also trigger UCT from the dashboard and download the HTML report directly from the widget. See Integrate the [Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool).
+

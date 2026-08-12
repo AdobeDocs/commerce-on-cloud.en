@@ -3,13 +3,19 @@ cloud: Experience Cloud
 type: Documentation
 solution-title: Commerce
 solution: Commerce
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: "Commerce"
+usetq: true
+landing-page-name: commerce
+landing-page-breadcrumb-title: Commerce
 feature-set: Commerce
 role: Admin, Developer
 topic: Commerce, Development
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/commerce-on-cloud.en
 description: Adobe Commerce on Cloud Infrastructure Guides
-index: yes
+index: true
 badgePaas: label="PaaS only" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."
 ---
 

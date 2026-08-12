@@ -3,8 +3,20 @@ title: Integrations overview
 description: Learn about third-party integration options for your Adobe Commerce on cloud infrastructure project.
 role: Developer
 feature: Cloud, Integration
-last-substantial-update: 2024-02-06
+last-substantial-update: 2024-02-06T00:00:00.000Z
 exl-id: 97c5f70d-1465-46c9-bb33-98897262c5ef
+TQID: https://experienceleague.adobe.com/07ozUcb8SWNcyRzgxClhaG5S-cOHqywkYWfke1rJB1g
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Integrations overview
 

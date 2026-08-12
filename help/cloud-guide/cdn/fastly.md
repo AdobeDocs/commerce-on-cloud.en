@@ -3,6 +3,36 @@ title: Fastly services overview
 description: Learn how the Fastly services included with Adobe Commerce on cloud infrastructure help you optimize and secure content delivery operations for your Adobe Commerce sites.
 feature: Cloud, Configuration, Iaas, Paas, Cache, Security, Services
 exl-id: 429b6762-0b01-438b-a962-35376306895b
+TQID: https://experienceleague.adobe.com/Lq2rzR14xlcj5y3ycfAWGHEKAIxboekZX8YtyOJPQXA
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: f2261633-201d-46c5-8a66-999e70527a83
+    internal-label: PCI
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 # Fastly services overview
 
@@ -36,13 +66,51 @@ Fastly provides the following services to optimize and secure content delivery o
   
     Adobe Commerce provides a Domain-validated Let's Encrypt SSL/TLS certificate for each Staging and Production environment. Adobe Commerce completes domain validation and certificate provisioning during the Fastly set up process.
 
-- **Origin cloaking**—Prevents traffic from bypassing the Fastly WAF and hides the IP addresses of your origin servers to protect them from direct access and DDoS attacks.
-
-  Origin cloaking is enabled by default on Adobe Commerce on cloud infrastructure Pro Production projects. To enable origin cloaking on Adobe Commerce on cloud infrastructure Starter Production projects, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). If you have traffic that does not require caching, you can customize the Fastly service configuration to allow requests to [bypass the Fastly cache](fastly-vcl-bypass-to-origin.md).
+- **Origin cloaking** — Security feature that ensures all traffic flows through Fastly and blocks direct access to origin servers. See the [Origin cloaking](#origin-cloaking) section below.
 
 - **[Image optimization](fastly-image-optimization.md)**—Offloads image processing and resizing load to the Fastly service so that servers can process orders and conversions more efficiently.
 
 - **[Fastly CDN and WAF logs](../monitor/new-relic-service.md#new-relic-log-management)**—For Adobe Commerce on cloud infrastructure Pro projects, you can use the New Relic Logs service to review and analyze Fastly CDN and WAF log data.
+
+## Origin cloaking {#origin-cloaking}
+
+Origin cloaking is a security feature that prevents non‑Fastly traffic from reaching the Adobe Commerce on cloud infrastructure origin. All requests must follow this enforced path:
+
+**Fastly > Load Balancer > Adobe Commerce application instances**
+
+Using this path ensures that all traffic is inspected by the Fastly Web Application Firewall (WAF) and by the internal WAF on the load balancer. Origin cloaking protects your sites from direct-access attempts and reduces the risk of DDoS attacks.
+
+### Enablement status
+
+Origin cloaking has been fully enabled on all Adobe Commerce on cloud infrastructure projects since 2021.  
+Projects provisioned after 2021 include this configuration by default.  
+**No action is required** to request origin cloaking enablement.
+
+#### What origin cloaking blocks
+
+Origin cloaking blocks any direct access to the origin infrastructure, such as:
+
+```
+mywebsite.com.c.abcdefghijkl.ent.magento.cloud
+mcstaging2.mywebsite.com.c.abcdefghijkl.dev.ent.magento.cloud
+mcstagingX.mywebsite.com.c.abcdefghijkl.X.dev.ent.magento.cloud
+```
+
+Requests through your public domain continue to work normally, including REST API traffic. Examples:
+
+```
+mywebsite.com/rest/default/V1/integration/admin/token
+mywebsite.com/rest/default/V1/orders/
+mywebsite.com/rest/default/V1/products/
+mywebsite.com/rest/default/V1/inventory/source-items
+```
+
+#### Impact on service behavior
+
+- **Outgoing IP addresses do not change.**
+- **REST APIs are not affected.** Fastly does not cache API calls.
+- **Deployments and downtime are not impacted.**
+- If a project has multiple staging environments, **origin cloaking applies to all of them**.
 
 ## Fastly CDN module for Magento 2
 
@@ -52,7 +120,7 @@ On initial provisioning or upgrade of your Adobe Commerce project, Adobe install
 
 ## Fastly service account and credentials
 
-Adobe Commerce on cloud infrastructure projects are not given a dedicated Fastly account. The Fastly service is managed in a centralized account registered to Adobe, and the management dashboard is only accessible to the Cloud Support team.
+Adobe Commerce on cloud infrastructure projects are not given a dedicated Fastly account. The Fastly service is managed in a centralized account registered to Adobe, and  dashboard access is limited to the Cloud Support team. For this reason, support cannot provide Fastly dashboard access in response to customer requests. Use the Adobe Commerce Admin and your environment-specific Fastly credentials for supported Fastly configuration and management tasks.
 
 Instead, each Staging and Production environment has unique Fastly credentials (API token and service ID) to configure and manage Fastly services from the Commerce Admin. The Fastly API is available for performing advanced management of the Fastly service, which will require the credentials to submit those requests.
 

@@ -3,6 +3,18 @@ title: Properties
 description: Use the property list as a reference when configurion the [!DNL Commerce] application for build and deploy to the cloud infrastructure.
 feature: Cloud, Configuration, Build, Deploy, Roles/Permissions, Storage
 exl-id: 32bd1f64-43d6-48a3-84b7-bea22f125bb0
+TQID: https://experienceleague.adobe.com/5HoI8DnJqL6pyBZRt3u-jVlQvhP1UGqN70B9fq2c9-Y
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Properties for application configuration
 
@@ -14,7 +26,6 @@ The `.magento.app.yaml` file uses properties to manage environment support for t
 | [`crons`](crons-property.md) | Update specs and schedule cron jobs | — | No |
 | [`dependencies`](#dependencies) | Enable additional dependencies | `php:composer/composer: '2.2.4'` | No |
 | [`disk`](#disk) | Define the persistent disk size | `5120` | Yes |
-| [`firewall`](firewall-property.md) | (Starter only) Control outbound traffic | — | No |
 | [`hooks`](hooks-property.md) | Customize shell commands for the build, deploy, and post-deploy phases | — | No |
 | [`mounts`](#mounts) | Set paths | Paths:<ul><li>`"var": "shared:files/var"`</li><li>`"app/etc": "shared:files/etc"`</li><li>`"pub/media": "shared:files/media"`</li><li>`"pub/static": "shared:files/static"`</li></ul> | No |
 | [`name`](#name) | Define the application name | `mymagento` | Yes |
@@ -207,3 +218,4 @@ The default user role is `contributor`, which restricts the SSH access from user
 access:
     ssh: viewer
 ```
+

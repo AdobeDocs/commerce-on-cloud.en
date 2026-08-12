@@ -4,6 +4,19 @@ description: Learn how to uninstall the Adobe Commerce application from a cloud 
 role: Developer
 topic: Development
 exl-id: 78e4c535-8c4d-4185-9a56-d25cb04db991
+TQID: https://experienceleague.adobe.com/fYo3B1zwc8a9UAFL3Eo8dOwjG7XQXrhUiJHYqNLTbeQ
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 ---
 # Restore an environment
 

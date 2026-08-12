@@ -21,21 +21,25 @@
             <td>
             {%- assign default_extensions = site.data.cloud-php-extensions.default | sort_natural -%}
             {%- for extension in default_extensions %}
-                {{ extension }}<br>
+                <code>{{ extension }}</code><br>
             {%- endfor %}
             </td>
             <td>
             {%- assign default_extensions = site.data.cloud-php-extensions.installed | sort_natural -%}
             {%- for extension in site.data.cloud-php-extensions.installed %}
-                {{ extension }}<br>
+                <code>{{ extension }}</code><br>
             {%- endfor %}
             </td>
             <td>
             {%- assign default_extensions = site.data.cloud-php-extensions.available | sort_natural -%}
             {%- for extension in site.data.cloud-php-extensions.available %}
-                {{ extension }}<br>
+                <code>{{ extension }}</code><br>
             {%- endfor %}
             </td>
         </tr>
     </tbody>
 </table>
+
+>[!NOTE]
+>
+>Some PHP extensions have environment-specific installation limitations and are not represented fully by the table above. For example, [!DNL LDAP] can be enabled in Integration environments through project configuration, but it is not a self-service configuration for Pro Staging and Production through `.magento.app.yaml`.

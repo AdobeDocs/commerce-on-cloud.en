@@ -1687,7 +1687,7 @@ The service relationship to use
 magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [--attach ATTACH] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
-Add a new domain to the project
+Add a new domain to the project. This option is not available for Cloud Pro plan projects.
 
 ### Arguments
 
@@ -1759,7 +1759,7 @@ Wait for the operation to complete (default)
 magento-cloud domain:delete [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
-Delete a domain from the project
+Delete a domain from the project. This option is not available for Cloud Pro plan projects.
 
 ### Arguments
 
@@ -1806,7 +1806,7 @@ Wait for the operation to complete (default)
 magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<name>]
 ```
 
-Show detailed information for a domain
+Show detailed information for a domain. This option is not available for Cloud Pro plan projects.
 
 ### Arguments
 
@@ -1871,7 +1871,7 @@ The environment ID. Use "." to select the project's default environment.
 magento-cloud domains [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
-Get a list of all domains
+Get a list of all domains. This option is not available for Cloud Pro plan projects.
 
 ### Options
 
@@ -1917,7 +1917,7 @@ The environment ID. Use "." to select the project's default environment.
 magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
-Update a domain
+Update a domain. This option is not available for Cloud Pro plan projects.
 
 ### Arguments
 

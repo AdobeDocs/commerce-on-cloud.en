@@ -3,6 +3,25 @@ title: Upgrade Commerce version
 description: Learn how to upgrade the Adobe Commerce version in the cloud infrastructure environment.
 feature: Cloud, Upgrade
 exl-id: 0cc070cf-ab25-4269-b18c-b2680b895c17
+TQID: https://experienceleague.adobe.com/XCHw9c0bX8UE8LLmFOYjMFRLTaIk8sT57dESptRTUXs
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 # Upgrade Commerce version
 
@@ -10,9 +29,11 @@ You can upgrade the Adobe Commerce code base to a newer version. Before upgradin
 
  Depending on the environment type (Development, Staging, or Production), your upgrade tasks may include the following:
 
-- Update the `.magento/services.yaml` file with new versions for MariaDB (MySQL), OpenSearch, RabbitMQ, and Redis for compatibility with new Adobe Commerce versions. For Pro projects, you must submit an Adobe Commerce Support ticket to install or update services in Staging and Production environments.
-- Update the `.magento.app.yaml` file with new settings for hooks and environment variables.
 - Upgrade third-party extensions to the latest supported version.
+- For Pro projects, you must submit an Adobe Commerce Support ticket to install or update services in Staging and Production environments.
+- For development/integration/PR branches:
+  - Update the `.magento/services.yaml` file with new versions for MariaDB (MySQL), OpenSearch, RabbitMQ, and Redis for compatibility with new Adobe Commerce versions. 
+  - Update the `.magento.app.yaml` file with new settings for hooks and environment variables.
 
 {{upgrade-tip}}
 

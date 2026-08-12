@@ -3,6 +3,18 @@ title: Add site map and search engine robots
 description: Learn how to add site map and search engine robots to Adobe Commerce on cloud infrastructure.
 feature: Cloud, Configuration, Search, Site Navigation
 exl-id: 060dc1f5-0e44-494e-9ade-00cd274e84bc
+TQID: https://experienceleague.adobe.com/Nve-76Ow3rv0PrGEUVTSfr3eyJcw8IFj9bbpS10HnNY
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Add site map and search engine robots
 
@@ -111,15 +123,23 @@ In the `sitemap` admin config, you must specify the location of the file using `
 
 ### Configure indexing by search engine
 
-To activate `robots.txt` customizations in Production, you must enable the **Indexing by search engines is On for `<environment-name>`** option in your project settings on the Cloud Console:
+To activate `robots.txt` customizations in Production, enable indexing by search engines for the `<environment-name>` option in the project settings on the Cloud Console:
 
-![Use the [!DNL Cloud Console] to manage environments](../../assets/robots-indexing-by-search-engine.png)
+- Legacy Cloud Console—the URL follows the pattern `https://<region-id>.magento.cloud/projects/<project_id>`
 
-You can also use the magento-cloud CLI to update this setting:
+  Toggle the setting [!UICONTROL Indexing by search engines] (Legacy Console) [!UICONTROL Hide from search engines] (Adobe Console) to **On**.
 
-```bash
-magento-cloud environment:info -p <project_id> -e production restrict_robots false
-```
+  ![Use the [!DNL Cloud Console] to manage environments](../../assets/robots-indexing-by-search-engine.png)
+
+- Adobe Cloud Console—the URL follows the pattern ``https://console.adobecommerce.com/<username>/<project_id>``
+
+  Uncheck the setting [!UICONTROL Hide from search engines].
+
+- You can also use the magento-cloud CLI to update this setting:
+
+  ```bash
+  magento-cloud environment:info -p <project_id> -e production restrict_robots false
+  ```
 
 >[!NOTE]
 >

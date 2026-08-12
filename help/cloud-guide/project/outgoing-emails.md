@@ -2,6 +2,18 @@
 title: Configure outgoing emails
 description: Learn how to enable outgoing emails for Adobe Commerce on cloud infrastructure.
 exl-id: 616e287b-960a-4933-916e-37896ee6b533
+TQID: https://experienceleague.adobe.com/qTZHcNU58ZVNRE9FgaIdcVsRg6--ae6dL-hKCjpUt3w
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Configure outgoing emails
 

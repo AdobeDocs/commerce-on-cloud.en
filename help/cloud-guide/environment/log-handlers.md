@@ -4,6 +4,16 @@ description: Learn how to configure log handlers for Adobe Commerce on cloud inf
 feature: Cloud, Logs, Configuration
 role: Developer
 exl-id: 0d7fb653-468b-432c-9830-582b0fed8512
+TQID: https://experienceleague.adobe.com/4dowk2oMMCROVmEc8muHE7CzaZ-T3SaQi4sANVnMeWQ
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Log handlers
 
@@ -60,3 +70,4 @@ Log levels determine the level of detail in notification messages. The following
 -  **critical**—critical conditions, such as an unavailable application component or an unexpected exception
 -  **alert**—immediate action required—such as a website is down or the database is unavailable—that triggers an SMS alert
 -  **emergency**—system is unusable
+

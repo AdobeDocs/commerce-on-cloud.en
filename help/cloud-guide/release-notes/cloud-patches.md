@@ -2,8 +2,33 @@
 title: Cloud Patches for Commerce
 description: See a list of the latest improvements to the Cloud Patches package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2025-08-07
+last-substantial-update: 2025-08-07T00:00:00.000Z
 exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913
+TQID: https://experienceleague.adobe.com/ZN1TwgU2EFiIezQcZZT-CglLQGY1xZcXoi-BslV3sGQ
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 # Cloud Patches for Commerce
 
@@ -23,12 +48,53 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.1.12 {#latest}
+## v1.1.18 {#latest}
+
+Release date: August 11, 2026
+
+- ![fix icon](../../assets/fix.svg) **Improved patch handling**—Patches now skip hunks targeting modules removed via `composer.json` `replace` and continue applying the remaining installed portions.<!-- MCLOUD-15325 -->
+- ![fix icon](../../assets/fix.svg) **Security improvements**-Applied the latest security patches.<!--MCLOUD-15035 -->
+
+## v1.1.17
+
+Release date: July 29, 2026
+
+- ![fix icon](../../assets/fix.svg) **Optimized Symfony L2 cache performance, reliability, and tag management**—Improved cache scalability, reduced unnecessary filesystem I/O, enhanced cache consistency, and resolved stale tag memberships, redundant remote writes, and L1 cache eviction cleanup.<!-- ACP2E-5132 -->
+- ![fix icon](../../assets/fix.svg) **Security improvements**—Improved compatibility for the July 2026 isolated security patch.<!-- AC-17674 -->
+
+## v1.1.16
+
+Release date: July 23, 2026
+
+- ![fix icon](../../assets/fix.svg) **Enhanced Symfony L2 cache performance and reliability**—Optimized cache tag storage for symfony_l2, improved cache invalidation with TTL-based regeneration locks and proper L1 tag cleanup to eliminate stale cache entries, and enabled Redis/Valkey compression (compress_data) by default to reduce memory consumption and network traffic while aligning with the legacy cache implementation.<!-- ACP2E-5132 -->
+
+## v1.1.15
+
+Release date: July 14, 2026
+
+- ![fix icon](../../assets/fix.svg) **Security improvements**-Applied the latest security patches.<!--MCLOUD-15066 -->
+
+## v1.1.14 
+
+Release date: May 06, 2026
+
+- ![fix icon](../../assets/fix.svg) **Patch version visibility**-Fixed cloud patch version visibility in cloud environments.<!--MCLOUD-14221 -->
+- ![fix icon](../../assets/fix.svg) **PHPUnit cleanup**-Fixed PHPUnit notices<!--MCLOUD-14717 -->
+- ![new icon](../../assets/new.svg)**Cosmetic fixes**—Added cosmetic improvements.<!--MCLOUD-14686 -->
+
+## v1.1.13
+
+Release date: March 05, 2026
+
+-  ![new icon](../../assets/new.svg) **PHP 8.5**—Added support for PHP 8.5.<!-- MCLOUD-14181 -->
+-  ![fix icon](../../assets/fix.svg) **Updated functional tests for PHP 8.x**—Removed legacy PHP 7.x tests, added PHP 8.1 and 8.2 new test coverage and updated Adobe Commerce versions.<!-- MCLOUD-14203 -->
+
+## v1.1.12
 
 Release date: November 13, 2025
 
 -  ![fix icon](../../assets/fix.svg) **Symfony package**-Added support for the latest Symfony YAML packages.<!-- MCLOUD-14020 -->
-- ![fix icon](../../assets/fix.svg) **Patch** – Fix for the [Checkout fails when JS minification and bundling are enabled](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997)) issue described in the *Commerce Knowledgebase" (tickets AC-15867 & ACSD-68617).<!-- MCLOUD-14191 -->
+-  ![fix icon](../../assets/fix.svg) **Patch** – Fix for the [Checkout fails when JS minification and bundling are enabled](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997) issue described in the *Commerce Knowledgebase*.
 - ![fix icon](../../assets/fix.svg) **Improved Category View** - MCLOUD-13752: Improve category view.<!-- MCLOUD-13752 | MCLOUD-14139  -->
 
 ## v1.1.11 
@@ -47,8 +113,8 @@ Release date: August 07, 2025
 
 Release date: June 09, 2025
 
--  ![fix icon](../../assets/fix.svg) **Improved Category View**-Improve category view CVE-2025-47109<!-- MCLOUD-13752	 - -->
--  ![fix icon](../../assets/fix.svg) **Improved Admin Cache**-Improve-admin-cache-efficiency CVE-2025-47110<!-- MCLOUD-13753	 - -->
+-  ![fix icon](../../assets/fix.svg) **Improved Category View**-Improve category view.<!-- MCLOUD-13752	 - -->
+-  ![fix icon](../../assets/fix.svg) **Improved Admin Cache**-Improve-admin-cache-efficiency CVE-2025-47110.<!-- MCLOUD-13753	 - -->
 
 ## v1.1.8
 

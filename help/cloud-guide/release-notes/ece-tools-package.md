@@ -2,8 +2,27 @@
 title: ECE-Tools release notes
 description: See a list of the latest improvements to the ECE-Tools package.
 recommendations: noDisplay, catalog
-last-substantial-update: 2025-08-07
+last-substantial-update: 2026-05-07T00:00:00.000Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
+TQID: https://experienceleague.adobe.com/pa4D-RsauRtCBS7puKWVBQtA37-Mcv9IZG4lah41l1U
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 ---
 # ECE-Tools release notes
 
@@ -22,7 +41,35 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.2.9 {#latest}
+## v2002.2.12 {#latest}
+
+Release date: July 20, 2026
+
+- ![new icon](../../assets/new.svg) **RabbitMQ**—Added RabbitMQ 4.3 support.<!-- MCLOUD-15088 -->
+- ![fix icon](../../assets/fix.svg) **Redis Lua configuration** - Added `USE_LUA_ON_GC` support and deprecated `LUA_KEY`.<!-- MCLOUD-15048 -->
+- ![fix icon](../../assets/fix.svg) **Symfony L2 cache**-Fixed ece-tools compatibility with the Adobe Commerce 2.4.9 cache configuration<!-- MCLOUD-15114 -->
+
+## v2002.2.11
+
+Release date: May 06, 2026
+
+-  ![new icon](../../assets/new.svg) **RabbitMQ**—Added RabbitMQ 4.2 support.<!-- MCLOUD-14374 -->
+-  ![new icon](../../assets/new.svg) **Opensearch**—Added Opensearch 2.19 and 3.5 support for multiple Magento versions. <!-- MCLOUD-14682 -->
+-  ![new icon](../../assets/new.svg) **Valkey**—Added Valkey 8.1 and 9 support.<!-- MCLOUD-14784/MCLOUD-14625 -->
+-  ![new icon](../../assets/new.svg) **ActiveMQ**—Added ActiveMQ 2.5.1 support.<!-- MCLOUD-14683 -->
+-  ![new icon](../../assets/new.svg) **MariaDB**—Added MariaDB 11.8 and 12.2 support.<!-- MCLOUD-14628 -->
+-  ![fix icon](../../assets/fix.svg) **Configuration and deployment**—Fixed cloud deployment warnings, updated composer test deprecations,and corrected ECE tools version visibility at deployment.<!-- MCLOUD-14822 -->
+
+## v2002.2.10
+
+Release date: March 05, 2026
+
+-  ![new icon](../../assets/new.svg) **PHP 8.5**—Added support for PHP 8.5.<!-- MCLOUD-14179 -->
+-  ![fix icon](../../assets/fix.svg) **Updated Functional Test**-Updated Valkey 8.1, 8,2 and Redis 8.4 tests<!-- MCLOUD-13983 -->
+-  ![fix icon](../../assets/fix.svg) **Updated MariaDB,PHP and Opensearch Validators**-Updated the validator script.<!-- MCLOUD-14574/MCLOUD-14466 -->
+-  ![fix icon](../../assets/fix.svg) **EOL validator**-Updated End of Life (EOL) services dates.<!-- MCLOUD-14272 -->
+
+## v2002.2.9
 
 Release date: November 13, 2025
 
@@ -31,7 +78,7 @@ Release date: November 13, 2025
 
 ## v2002.2.8
 
-Release date: October 08, 2025
+Release date: October 08, 2025      
 
 -  ![new icon](../../assets/new.svg) **ActiveMQ**-Added support for ActiveMQ.<!-- MCLOUD-13770 -->
 -  ![new icon](../../assets/new.svg) **ActiveMQ**-Added functional tests.<!-- MCLOUD-13813 -->
@@ -245,7 +292,9 @@ Release date: February 1, 2021
 
 -  ![new icon](../../assets/new.svg) **New SCD_NO_PARENT environment variable**—Added the `SCD_NO_PARENT` environment variable (for Adobe Commerce >=2.4.2) to manage the generation of static content for parent themes.<!--MCLOUD-7284-->
 
--  ![fix icon](../../assets/fix.svg) **Memory limits and commands**—Fixed an issue where `php vendor/bin/ece-tools` commands would not work if the size of the `cloud.log` file exceeded the PHP memory_limit. Instead of reading the entire `cloud.log` file into memory, we now only read a smaller subset of data from the log file.<!--MCLOUD-7275--><!--MCLOUD-7400-->
+-  ![fix icon](../../assets/fix.svg) **Memory limits and commands**—Fixed an issue where `php vendor/bin/ece-tools` commands would not work if the size of the `cloud.log` file exceeded the PHP memory_limit. Instead of reading the entire `cloud.log` file into memory, we now only read a smaller subset of data from the log file.
+<!--MCLOUD-7275-->
+<!--MCLOUD-7400-->
 
 -  ![fix icon](../../assets/fix.svg) **Custom database connections**—Fixed a `.magento.env.yaml` configuration issue in which custom database connections defined for `DATABASE_CONFIGURATION` were not used. The connection settings were not being added to `app/etc/env.php`.<!--MCLOUD-7426-->
 

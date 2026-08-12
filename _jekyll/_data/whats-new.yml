@@ -1,9 +1,229 @@
 ---
-title: What's New
+title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Nov 14 15:34:34 2025
+updated: Fri Aug 7 15:31:45 2026
 entries:
+- description: Updated [CLI reference](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)
+    after ECE-Tools release, v2002.2.12. No other changes were made besides the version
+    number.
+  versions: ''
+  type: technical
+  date: July 20, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-on-cloud.en/pull/239
+  merge_commit: 136f8312d1c125a49538ee050394c722ab68d9b6
+  contributor: commercedocs_adobe
+  labels:
+  - devops
+  - technical
+- description: Updated [Manage user access](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)
+    with clearer prerequisites, Cloud Console invitation states, redeployment guidance,
+    and related troubleshooting.
+  versions: ''
+  type: feedback
+  date: June 15, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-on-cloud.en/pull/219
+  merge_commit: 747367a8808b0b22f810f4e26b94a06ee995281d
+  contributor: meker_adobe
+  labels:
+  - feedback
+- description: Updated the [Advanced Security](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/advanced-security)
+    topic with information on limitations and observability.
+  versions: ''
+  type: major-update
+  date: June 4, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-on-cloud.en/pull/216
+  merge_commit: 54fcde91fb6fd159edadf85146da375692cce0d6
+  contributor: jhoover_adobe
+  labels:
+  - major-update
+- description: Clarified the default lock configuration and how the [`MAGENTO_CLOUD_LOCKS_DIR`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud)
+    and [`LOCK_PROVIDER`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#lock_provider)
+    environment variables affect Pro and Starter environments.
+  versions: ''
+  type: technical
+  date: June 2, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-on-cloud.en/pull/215
+  merge_commit: 17ecf47f8cad5dcb53ef92b32377a7074e16bb52
+  contributor: meker_adobe
+  labels:
+  - technical
+- description: Removed Elasticsearch support statement for On-Prem in the [Elasticsearch
+    support warning](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch).
+  versions: ''
+  type: technical
+  date: June 1, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-on-cloud.en/pull/213
+  merge_commit: 65898d2007d69d5bd3b8a9eabb9872ced98b8ffc
+  contributor: chernenk_adobe
+  labels:
+  - technical
+- description: Added [Advanced Security](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/advanced-security)
+    offering for Adobe Commerce on Cloud Infrastructure.
+  versions: ''
+  type: new-topic
+  date: May 12, 2026
+  link: enterprise:AdobeDocs/commerce-on-cloud.en/pull/196
+  merge_commit: a145b80df52ed271a15a6374713ac30824a67d2b
+  contributor: jhoover
+  labels:
+  - new-topic
+- description: Updates release notes across Cloud Tools documentation to reflect recent
+    version additions, compatibility updates, and fixes. See [Release notes for Commerce
+    Cloud Tools Suite](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite).
+  versions: ''
+  type: technical
+  date: May 7, 2026
+  link: enterprise:AdobeDocs/commerce-on-cloud.en/pull/193
+  merge_commit: 812482f88f6ab6400c77b6ec36db73956dd3f202
+  contributor: glo33270
+  labels:
+  - technical
+  - release
+- description: Updated [CLI reference](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)
+    and [Error messages](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference)
+    after ECE-Tools release, v2002.2.11.
+  versions: ''
+  type: technical
+  date: May 7, 2026
+  link: enterprise:AdobeDocs/commerce-on-cloud.en/pull/194
+  merge_commit: 6db7cbfa2edc1e177d1db3047f2574fae4485b63
+  contributor: magedocs
+  labels:
+  - devops
+  - technical
+- description: Updated [PHP settings](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions)
+    to list LDAP among optional PHP extensions and to note that LDAP and similar extensions
+    are environment-specific (for example, not self-service on Pro Staging/Production).
+  versions: ''
+  type: technical
+  date: May 5, 2026
+  link: enterprise:AdobeDocs/commerce-on-cloud.en/pull/187
+  merge_commit: 3546f15b4e1d4e192177064c3c72652d8ae7b5cb
+  contributor: anchico
+  labels:
+  - technical
+- description: Added a security note to the [Web property configuration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property)
+    reference for Adobe Commerce on cloud infrastructure to clarify that the default
+    configuration for web property uses `scripts:false` for media locations to prevent
+    execution of uploaded files.
+  versions: ''
+  type: technical, feedback
+  date: April 10, 2026
+  link: enterprise:AdobeDocs/commerce-on-cloud.en/pull/173
+  merge_commit: f3fa8339961505f9c8ac2612d7a89e83553eee37
+  contributor: meker
+  labels:
+  - technical
+  - feedback
+- description: "[ECE-Tools](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)
+    release, v2002.2.10."
+  versions: ''
+  type: technical
+  date: March 6, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/163
+  merge_commit: 78c1e1ae549243e41721592195bf9426f6e3510f
+  contributor: magedocs
+  membership:
+  labels:
+  - devops
+  - technical
+- description: Added clarification of how to [change the admin URL](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin#change-the-admin-url)
+    in Adobe Commerce on Cloud as opposed to on-premises.
+  versions: ''
+  type: major-update, feedback
+  date: March 4, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/158
+  merge_commit: e16ca6d2bdd93f2cf6c43527b5831779a1c7b3d9
+  contributor: glo42770
+  membership:
+  labels:
+  - major-update
+  - feedback
+- description: Added documentation for [checking the disk space limit for Adobe Commerce
+    on Cloud projects](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/check-disk-space-limit-on-cloud)
+    from the Cloud Console.
+  versions: ''
+  type: new-topic, technical
+  date: March 2, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/161
+  merge_commit: 1feaf0c56401ceebf52263e290695d45302d5485
+  contributor: glo51666
+  membership:
+  labels:
+  - new-topic
+  - technical
+- description: Updated the [Launch checklist](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist)
+    for Commerce on cloud projects to add Fastly AAAA records to the DNS configuration
+    instructions.
+  versions: ''
+  type: feedback
+  date: February 27, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/159
+  merge_commit: c4c84286c178cb17a2051d6d803742ab73c409bf
+  contributor: meker
+  membership:
+  labels:
+  - feedback
+- description: Added instructions for [changing the New Relic account owner](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management)
+    to the _Commerce on Cloud Infrastructure Guide_.
+  versions: ''
+  type: technical
+  date: February 19, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/156
+  merge_commit: 6e570c70bb720a6469d7764c7640b07bb56880ce
+  contributor: jmenn
+  membership:
+  labels:
+  - technical
+- description: Added the following information about origin cloaking to the [Fastly
+    services overview](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly).<br/>-
+    Definition and traffic flow<br/>- Enablement status (enabled on all cloud projects
+    since 2021) Blocked origin URL examples<br/>- REST API usage examples
+  versions: ''
+  type: technical
+  date: February 3, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/149
+  merge_commit: e367fd9c565d4d6d2bbc15b0289768dc38dcf7a9
+  contributor: barnato
+  membership:
+  labels:
+  - technical
+  - migrated-from-commerce-kb
+- description: Updated the version of the examples in [Set up OpenSearch service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch).
+  versions: ''
+  type: feedback
+  date: January 13, 2026
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/140
+  merge_commit: f5d325dbb14e5e524c89b41c4d5b82383b5b1ac7
+  contributor: keharper
+  membership:
+  labels:
+  - feedback
+- description: 'Updates the [Cloud Patches 1.1.12 release notes](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
+    to include the fix for the "Checkout fails when JS minification and bundling are
+    enabled: issue.'
+  versions: ''
+  type: technical
+  date: November 17, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/124
+  merge_commit: d07be1a20fa95e2a79534e364e7620a2f856fc0d
+  contributor: glo33270
+  membership:
+  labels:
+  - technical
+- description: Updated [CLI reference](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)
+    after ECE-Tools release, v2002.2.9.
+  versions: ''
+  type: technical
+  date: November 17, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-on-cloud.en/pull/125
+  merge_commit: 5f088df3e7bc35cc1d7fa93d06b5fa9968802572
+  contributor: magedocs
+  membership:
+  labels:
+  - devops
+  - technical
 - description: The retention period for archived log files for Commerce on cloud projects
     is now 30 days. See [View and Manage Logs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations)
     in the Commerce on Cloud Guide.

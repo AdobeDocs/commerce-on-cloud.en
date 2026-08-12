@@ -4,8 +4,23 @@ description: Prepare for local development with an Adobe Commerce on cloud infra
 role: Developer
 feature: Cloud, Install
 topic: Development
-last-substantial-update: 2024-02-06
+last-substantial-update: 2024-02-06T00:00:00.000Z
 exl-id: 14fb0b41-1c3a-4abc-8726-cea16ab00ba8
+TQID: https://experienceleague.adobe.com/VrOBK4bPYTxzRz10ZaHYDOdISw0lSl6WPAHcnEI1J-w
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 ---
 # Development overview
 

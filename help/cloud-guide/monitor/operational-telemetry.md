@@ -4,6 +4,18 @@ description: Learn about client-side performance monitoring for Adobe Commerce o
 feature: Cloud, Observability
 topic: Performance
 exl-id: f6fffa63-f522-41f4-ac8a-95da96b0e73d
+TQID: https://experienceleague.adobe.com/-6vaWjXBGh6IpWMdsAU7QVpVpjcEfGZ0SrkT02lfb9Q
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
 # Operational Telemetry service
 

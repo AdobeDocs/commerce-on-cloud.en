@@ -3,6 +3,20 @@ title: Set up multiple websites or stores
 description: Learn how to configure multiple websites or stores for Adobe Commerce on cloud infrastructure.
 feature: Cloud, Configuration, Routes, Site Navigation
 exl-id: 773d8d64-d235-4c2b-87e9-aadbf8471b2c
+TQID: https://experienceleague.adobe.com/532nrO6XkiqiNDfRMT6gZ4mVRqlv5PszegPJLuemmyc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Set up multiple websites or stores
 
@@ -48,7 +62,7 @@ The process to add a domain depends on the type of Cloud account:
 
 ## Configure local installation
 
-To configure your local installation to use multiple stores, see [Multiple websites or stores][config-multiweb] in the _Configuration Guide_.
+To configure your local installation to use multiple stores, see [Multiple websites or stores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html) in the _Configuration Guide_.
 
 After successfully creating and testing the local installation to use multiple stores, you must prepare your integration environment:
 
@@ -63,7 +77,7 @@ After successfully creating and testing the local installation to use multiple s
 
 >[!TIP]
 >
->You can use a local environment to set up multiple websites or stores. See the Cloud Docker instructions to [Set up multiple websites or stores](https://developer.adobe.com/commerce/cloud-tools/docker/configure/multiple-sites/).
+>You can use a local environment to set up multiple websites or stores. See the Cloud Docker instructions to [Set up multiple websites or stores](https://developer.adobe.com/commerce/cloud-tools/docker/configure/multiple-sites).
 
 ### Configuration updates to Pro environments
 
@@ -345,6 +359,3 @@ Follow the deployment process for [deploying to Staging and Production](../deplo
 
 Adobe recommends fully testing in the Staging environment before pushing to the Production environment. Make code changes in the integration environment and begin the process to deploy across environments again.
 
-<!-- link definitions -->
-
-[config-multiweb]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html

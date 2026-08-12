@@ -3,6 +3,19 @@ title: PHP settings
 description: Learn about the optimal PHP settings for Commerce application configuration in the cloud infrastructure.
 feature: Cloud, Configuration, Extensions
 exl-id: 83094c16-7407-41fa-ba1c-46b206aa160d
+TQID: https://experienceleague.adobe.com/2UjlXGZV6AJQuNf0XOdzZ09aF-23TSk7Q0NqvLyhGRs
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+last-update: 2026-05-05
 ---
 # PHP settings
 
@@ -75,7 +88,7 @@ register_argc_argv => On => On
 
 >[!WARNING]
 >
->If you use Cloud Docker for Commerce for local development, see [Docker service containers](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#fpm-container) for information about using a custom `php.ini` file in a Docker environment.
+>If you use Cloud Docker for Commerce for local development, see [Docker service containers](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#fpm-container) for information about using a custom `php.ini` file in a Docker environment.
 
 ## Enable extensions
 
@@ -136,4 +149,4 @@ See [section 3.5 of the SourceGuardian documentation](https://sourceguardian.com
 >
 >PHP compiled with debug is not supported and the Probe may conflict with [!DNL XDebug] or [!DNL XHProf]. Disable those extensions when enabling the Probe. The Probe conflicts with some PHP extensions like [!DNL Pinba] or IonCube.
 
-<!-- Last updated from includes: 2025-04-14 09:39:27 -->
+<!-- Last updated from includes: 2026-04-24 14:50:02 -->

@@ -1,8 +1,17 @@
 ---
 title: Activity stream
 description: Learn how to read the activity stream in the [!DNL Cloud Console] or the Cloud CLI for Adobe Commerce on Cloud infrastructure.
-last-substantial-update: 2024-02-06
+last-substantial-update: 2024-02-06T00:00:00.000Z
 exl-id: 1acac76e-b088-44ad-9c93-ea27b686b6b4
+TQID: https://experienceleague.adobe.com/piZcU6SjL054YJU9yISQJss7LVEHEHZc7zSYa2QGe60
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Activity stream
 

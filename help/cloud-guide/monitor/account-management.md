@@ -4,6 +4,28 @@ description: Learn how to access your New Relic account and manage access, integ
 feature: Cloud, Observability
 role: Admin
 exl-id: 7aeedd12-7a81-47eb-a82f-3079e16ecb06
+TQID: https://experienceleague.adobe.com/JUx2wo00f8bfp-XZ-eaTGlHjYL6gUH-M0BtNWEg9MgU
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+subfeature_v2:
+  - id: d9ced453-36f4-4eb5-b2f3-1d593e32476b
+    internal-label: Account management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # New Relic account management
 
@@ -25,7 +47,7 @@ If the License Owner was changed and the new License Owner doesn't currently hav
 
 1. Click **[!UICONTROL Administration]** and select one of the following from the list:
 
-   - **[!UICONTROL User management]** to add a user and manage active users and pending invites.
+   - **[!UICONTROL User management]** to add users, manage active users and pending invites, and remove or deactivate users who no longer need access, for example users who have left your company.
 
    - **[!UICONTROL Access management]** to manage user groups, roles, and accounts.
 
@@ -131,3 +153,15 @@ You can only use your New Relic license key on three active environments. If the
    ```bash
    magento-cloud variable:delete php:newrelic.license
    ```
+
+## Change account owner for New Relic on Cloud
+
+To change the New Relic account owner for your Adobe Commerce on cloud infrastructure project:
+
+1. **Change the owner** in the New Relic UI. See [Change the account Owner](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/account-user-mgmt-tutorial/) in the New Relic documentation.
+
+2. **Add the user first** if they're not already on your account. See [Add and update users](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-management-ui-and-tasks/#add-users) in New Relic documentation.
+
+3. **Need help?** If no existing Owner or Admin can help, any Adobe Commerce user with access to the [Adobe Commerce Partnership Owner Account](https://account.newrelic.com/accounts/1311131/users) can add users on your behalf.
+
+For more details, see the [New Relic service overview](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service).

@@ -2,6 +2,27 @@
 title: SendGrid email service
 description: Learn about the SendGrid email service for Adobe Commerce on cloud infrastructure and how you can test your DNS configuration.
 exl-id: 06236068-df32-468f-99ec-c379984be136
+TQID: https://experienceleague.adobe.com/I4giHpOngkQ0KZYBXZoGJGBXLWme2fxE39uIOGnON-k
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+    internal-label: Email marketing
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 # SendGrid email service
 
@@ -43,13 +64,25 @@ If possible, include the following information with your request:
 * the timeframe in question (within the past 30 days only)
 * the subject of the email
 
+To better manage your email delivery settings, use your own [SMTP server or email delivery service provider](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/communications/email-communications). You can also sign up for your own SendGrid service to closely follow the Cloud service stack.
+
+>[!IMPORTANT]
+>
+>If you use your own SendGrid account, you will no longer receive SendGrid support through Adobe.
+>
+>To enable your proprietary SendGrid service or update an existing API Key, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) and include the API Key for your SendGrid account.
+
 ## DomainKeys Identified Mail (DKIM)
 
 DKIM is an email authentication technology that enables Internet Service Providers (ISPs) to identify both legitimate and fake sender addresses, a technique commonly used in phishing and email scams. DKIM relies on a domain owner managing the DNS records. When using DKIM, the sender server uses a private key to sign the messages. Also, the domain owner adds a DKIM record, which is a modified `TXT` record, to the sender-domain's DNS records. This `TXT` record contains a public key that recipient mail servers use to verify the signature of a message. The DKIM public-key cryptography procedure enables recipients to verify the authenticity of a sender. See [DKIM Records Explained](https://docs.sendgrid.com/ui/account-and-settings/dkim-records).
 
 >[!WARNING]
 >
->The SendGrid DKIM signatures and domain authentication support are only available on the Production and Staging environments for Pro projects, but not for all Starter environments. As a result, outbound transactional emails are likely to be flagged by spam filters. Using DKIM improves the delivery rate as an authenticated email sender. To improve the message delivery rate, you can upgrade from Starter to Pro or use your own SMTP server or email delivery service provider. See [Configure email connections](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/communications/email-communications) in the _Admin Systems guide_.
+>The SendGrid DKIM signatures and domain authentication support are available only on the Production and Staging environments for Pro projects. They are not supported on Starter environments.
+>
+>Because of this, transactional emails sent from Starter environments are more likely to be marked ass spam since they cannot be fully authenticated.  On Pro environments, enabling DKIM authenticates your sending domain, which signficantly improves email deliverability and reduces the chance that messages are filtered as spam.
+>
+>To improve the message delivery rate, upgrade from Starter to Pro, or use your own SMTP server or email delivery service provider. See [Configure email connections](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/communications/email-communications) in the _Admin Systems guide_.
 
 ### Sender and domain authentication
 
