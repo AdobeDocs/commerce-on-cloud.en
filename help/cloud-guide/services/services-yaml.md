@@ -172,7 +172,7 @@ You can retrieve the configuration data for all service relationships from the [
    opensearch:
        -
    ...
-           type: 'opensearch:2'
+           type: 'opensearch:3'
            port: 9200
    database:
        -
