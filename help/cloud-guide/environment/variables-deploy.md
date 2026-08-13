@@ -357,7 +357,7 @@ stage:
 
 ## `LOCK_PROVIDER`
 
-- **Default**— In Production and Staging environments, defaults to `file`. For Pro integration and starter environments, defaults to `db`.
+- **Default**— In Production and Staging environments, defaults to `file` and cannot be changed. For Pro integration and starter environments, defaults to `db`.
 - **Version**—Adobe Commerce 2.2.5 and later
 
 The lock provider prevents the launch of duplicate cron jobs and cron groups. Commerce on Cloud supports only `file` and `db` lock providers.
@@ -367,7 +367,7 @@ For Production and Staging environments, the default value `file` is set by [MAG
 ```yaml
 stage:
   deploy:
-    LOCK_PROVIDER: "db"
+    LOCK_PROVIDER: "file"
 ```
 
 ## `MYSQL_USE_SLAVE_CONNECTION`
