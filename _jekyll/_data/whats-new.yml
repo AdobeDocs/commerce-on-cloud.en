@@ -2,7 +2,7 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Aug 7 15:31:45 2026
+updated: Fri Aug 14 15:31:46 2026
 entries:
 - description: Updated [CLI reference](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)
     after ECE-Tools release, v2002.2.12. No other changes were made besides the version
