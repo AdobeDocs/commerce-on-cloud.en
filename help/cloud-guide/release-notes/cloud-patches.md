@@ -162,7 +162,7 @@ Release date: November 5, 2024
 
 Release date: November 5, 2024
 
-- ![fix icon](../../assets/fix.svg) **Added patch for Commerce 2.4.4 to 2.4.7**—This update patches a critical [CVE-2024-34102]/en/docs/experience-cloud-kcs/kbarticles/ka-27136?lang=en CosmicSting vulnerability.<!-- MCLOUD-12980 - -->
+- ![fix icon](../../assets/fix.svg) **Added patch for Commerce 2.4.4 to 2.4.7**—This update patches a critical [CVE-2024-34102](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136) CosmicSting vulnerability.<!-- MCLOUD-12980 - -->
 
 ## v1.1.0
 
