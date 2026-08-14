@@ -53,7 +53,7 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 Release date: August 11, 2026
 
 - ![fix icon](../../assets/fix.svg) **Improved patch handling**—Patches now skip hunks targeting modules removed via `composer.json` `replace` and continue applying the remaining installed portions.<!-- MCLOUD-15325 -->
-- ![fix icon](../../assets/fix.svg) **Security improvements**-Applied the latest security patches.<!--MCLOUD-15035 -->
+- ![fix icon](../../assets/fix.svg) **Security improvements**-Applied the security fixes referenced in [Adobe Commerce Security Update APSB26-92](https://helpx.adobe.com/security/products/magento/apsb26-92.html).<!--MCLOUD-15035 -->
 
 ## v1.1.17
 
@@ -72,7 +72,7 @@ Release date: July 23, 2026
 
 Release date: July 14, 2026
 
-- ![fix icon](../../assets/fix.svg) **Security improvements**-Applied the latest security patches.<!--MCLOUD-15066 -->
+- ![fix icon](../../assets/fix.svg) **Security improvements**-Applied the security fixes referenced in [Adobe Commerce Security Update APSB26-73](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-37421).<!--MCLOUD-15066 -->
 
 ## v1.1.14 
 
