@@ -168,7 +168,7 @@ Release date: November 5, 2024
 
 Release date: October 7, 2024
 
-- ![fix icon](../../assets/fix.svg) **Refactored code**—Removed support of old PHP versions (7.4, 7.3, 7.2) and  related libraries.<!-- MCLOUD-9278 - -->
+- ![fix icon](../../assets/fix.svg) **Refactored code**—Removed support of old PHP versions (7.4, 7.3, 7.2) and related libraries.<!-- MCLOUD-9278 - -->
 - ![fix icon](../../assets/fix.svg) **Upgraded Monolog version**—Added support for monolog 3.6.<!-- MCLOUD-12855 - -->
 - ![fix icon](../../assets/fix.svg) **Patch for Application Server**—Resolves a known issue with the GraphQL Application Server. Specifically, the `CatalogGraphQl\\Model\\Config\\AttributeReader` in version 2.4.7 contained a bug that could lead to GraphQL requests retrieving responses based on outdated Attributes configuration.<!-- ACPT-1876 -->
 
