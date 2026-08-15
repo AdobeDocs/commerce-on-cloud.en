@@ -126,7 +126,7 @@ Release date: June 03, 2025
 
 Release date: May 05, 2025
 
-- ![new icon](../../assets/new.svg) **Updated patch for Commerce 2.4.4 to 2.4.8**—This update is an updated patch for [CVE-2025-24434](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27148), which was released in 1.1.7<!-- MCLOUD-13619 -->
+- ![new icon](../../assets/new.svg) **Updated patch for Commerce 2.4.4 to 2.4.8**—This is an updated patch for [CVE-2025-24434](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27148), which was released in 1.1.7<!-- MCLOUD-13619 -->
 
 ## v1.1.6
 
