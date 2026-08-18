@@ -41,7 +41,13 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.2.12 {#latest}
+## v2002.2.13 {#latest}
+
+Release date: August 19, 2026
+
+- ![fix icon](../../assets/fix.svg) **Caching improvements**Enhanced symfony_l2 cache support with Redis/Valkey slave connections and resolved related cache, tag-index, preload, and static deployment issues..<!-- MCLOUD-15433 -->
+
+## v2002.2.12 
 
 Release date: July 20, 2026
 
