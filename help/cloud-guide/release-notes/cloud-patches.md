@@ -48,7 +48,14 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.1.18 {#latest}
+## v1.1.19 {#latest}
+
+Release date: August 19, 2026
+
+- ![fix icon](../../assets/fix.svg) **Patch reliability**—Improved patch handling for reliable Cloud deployments.<!-- MCLOUD-15325/ACSEC-561/MCLOUD-15451/MCLOUD-15455 -->
+- ![fix icon](../../assets/fix.svg) **Caching improvements**—Enhanced Symfony_l2 cache support for Redis and Valkey slave connections and resolved related cache, tag-index, preload, and static deployment issues..<!-- MCLOUD-15433 -->
+
+## v1.1.18
 
 Release date: August 11, 2026
 
