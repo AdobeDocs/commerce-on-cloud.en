@@ -10,7 +10,7 @@
 
 >[!NOTE]
 >
->Projects provisioned before June 5, 2020 had multiple, smaller Integration environments. If you need a larger Integration environment for testing and development, request an upgrade to Enhanced Integration environments. See the [Integration Environment request](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html) article in the _Adobe Commerce Help Center_ for details.
+>Projects provisioned before June 5, 2020 had multiple, smaller Integration environments. If you need a larger Integration environment for testing and development, request an upgrade to Enhanced Integration environments. See the [Integration Environment request](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) article in the _Adobe Commerce Help Center_ for details.
 
 ## Merge options {#merge-options}
 
@@ -34,15 +34,15 @@ Set the `_merge` option to one of the following:
 >Some **Pro projects** require assistance from Adobe Support to update the route configurations in the `routes.yaml` file and the cron configurations in the `.magento.app.yaml` file. Adobe recommends making and validating all YAML configuration changes in an Integration environment first, and then deploying them to the Staging environment.
 >
 >
->If your changes are not reflected on Staging sites after redeployment and and no related error messages in the log, you **must** [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). In the ticket, clearly describe the configuration changes you attempted and attach any updated YAML configuration files in the ticket.
+>If your changes are not reflected on Staging sites after redeployment and and no related error messages in the log, you **must** [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). In the ticket, clearly describe the configuration changes you attempted and attach any updated YAML configuration files in the ticket.
 
 ## Pro services support {#pro-update-service}
 
 >[!BEGINSHADEBOX]
 
-- For Pro projects, you must [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to install or update [services](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/service/services-yaml.html) in `Staging` and `Production` environments only.
+- For Pro projects, you must [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) to install or update [services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) in `Staging` and `Production` environments only.
 
-- Indicate the service changes needed, include your updated `.magento.app.yaml` and `services.yaml` files, and state the PHP version in the ticket. For self-service changes to PHP version, extensions, or environment settings, see [PHP settings](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/php-settings.html) in _Application configuration_.
+- Indicate the service changes needed, include your updated `.magento.app.yaml` and `services.yaml` files, and state the PHP version in the ticket. For self-service changes to PHP version, extensions, or environment settings, see [PHP settings](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) in _Application configuration_.
 
   >[!IMPORTANT]
   >
@@ -71,9 +71,9 @@ Set the `_merge` option to one of the following:
 
 >[!TIP]
 >
->On Pro Staging and Production environments, you must [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to retrieve a specific backup noting the date, time, and timezone in the ticket.
+>On Pro Staging and Production environments, you must [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) to retrieve a specific backup noting the date, time, and timezone in the ticket.
 >
->Adobe does **not** restore any environments from an automatic backup. See [Restore a DB snapshot from Staging or Production](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production.html) for help choosing a method to restore a Staging or Production snapshot.
+>Adobe does **not** restore any environments from an automatic backup. See [Restore a DB snapshot from Staging or Production](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production) for help choosing a method to restore a Staging or Production snapshot.
 
 ## Redeploy warning {#redeploy-warning}
 
@@ -111,7 +111,7 @@ Use the following instructions for service setup on Pro Integration environments
 
 >[!NOTE]
 >
->[Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change the service configuration on Pro Production and Staging environments.
+>[Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) to change the service configuration on Pro Production and Staging environments.
 
 ## Service change {#service-change-tip}
 
@@ -123,7 +123,7 @@ Use the following instructions for service setup on Pro Integration environments
 
 >[!TIP]
 >
->For help with stuck deployments, use the [Adobe Commerce deployment troubleshooter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html) in the _Commerce Help Center_.
+>For help with stuck deployments, use the [Adobe Commerce deployment troubleshooter](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-29640) in the _Commerce Help Center_.
 
 ## Update to ECE-Tools {#ece-tools-package}
 
