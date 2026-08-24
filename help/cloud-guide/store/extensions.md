@@ -61,7 +61,7 @@ Although this section discusses how to get the Composer name and version of an e
 
 ## Install an extension
 
-Adobe recommends working in a development branch when adding an extension to your implementation. When installing an extension, the extension name (`<VendorName>_<ComponentName>`) is automatically inserted in the [`app/etc/config.php`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/deployment-files.html) file. There is no need to edit the file directly.
+Adobe recommends working in a development branch when adding an extension to your implementation. When installing an extension, the extension name (`<VendorName>_<ComponentName>`) is automatically inserted in the [`app/etc/config.php`](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/deployment-files) file. There is no need to edit the file directly.
 
 **To install an extension**:
 
@@ -167,7 +167,7 @@ Never enable or disable an extension while logged in to the remote environments.
 
 ## Upgrade an extension
 
-Before you continue, you need the Composer name and version for the extension. Also, confirm that the extension is compatible with your project and Adobe Commerce version. In particular, [check the required PHP version](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) before you begin.
+Before you continue, you need the Composer name and version for the extension. Also, confirm that the extension is compatible with your project and Adobe Commerce version. In particular, [check the required PHP version](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) before you begin.
 
 **To update an extension**:
 
@@ -201,4 +201,4 @@ Before you continue, you need the Composer name and version for the extension. A
    git push origin <branch-names>
    ```
 
-If you encounter errors, see [Recover from component failure](../deploy/recover-failed-deployment.md). To learn more about using extensions with Adobe Commerce, see [Extensions](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/extensions.html) in the _Admin Guide_.
+If you encounter errors, see [Recover from component failure](../deploy/recover-failed-deployment.md). To learn more about using extensions with Adobe Commerce, see [Extensions](https://experienceleague.adobe.com/en/docs/commerce-admin/start/resources/extensions) in the _Admin Guide_.

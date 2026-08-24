@@ -55,7 +55,7 @@ You need the Fastly credentials to configure Fastly CDN services from the Adobe 
 
 With Adobe Commerce on cloud infrastructure, you cannot access the Fastly Admin Dashboard directly. 
 
-Use the Adobe Commerce Admin to review and update the Fastly configuration for your environments. If you cannot resolve an issue using the Fastly capabilities in the Admin, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html).
+Use the Adobe Commerce Admin to review and update the Fastly configuration for your environments. If you cannot resolve an issue using the Fastly capabilities in the Admin, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 ## Get Fastly credentials
 
@@ -352,4 +352,4 @@ After you verify Fastly services on the Staging site, repeat the upgrade process
 
 >[!TIP]
 >
-> If you have issues with Fastly services in your Adobe Commerce environments, see the [Adobe Commerce Fastly troubleshooter](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/magento-fastly-troubleshooter).
+> If you have issues with Fastly services in your Adobe Commerce environments, see the [Adobe Commerce Fastly troubleshooter](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-29661).

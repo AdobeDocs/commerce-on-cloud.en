@@ -145,7 +145,7 @@ The minimal recommended disk size is 256 MB. If you see the error `UserError: Er
 
 >[!NOTE]
 >
->For Pro Staging and Production environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to update the `mounts` and `disk` configuration for your application. When you submit the ticket, indicate the required configuration changes and include an updated version of your `.magento.app.yaml` file.
+>For Pro Staging and Production environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) to update the `mounts` and `disk` configuration for your application. When you submit the ticket, indicate the required configuration changes and include an updated version of your `.magento.app.yaml` file.
 >
 >It is not possible to temporarily increase the disk storage in Staging or Production; this process is not reversible. 
 
@@ -196,7 +196,7 @@ The format for adding your mount to this list is as follows:
 
 >[!NOTE]
 >
->For Pro Staging and Production environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to update the `mounts` and `disk` configuration for your application. When you submit the ticket, indicate the required configuration changes and include an updated version of your `.magento.app.yaml` file.
+>For Pro Staging and Production environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) to update the `mounts` and `disk` configuration for your application. When you submit the ticket, indicate the required configuration changes and include an updated version of your `.magento.app.yaml` file.
 
 You can make the mount web accessible by adding it to the [`web`](web-property.md) block of locations.
 

@@ -34,7 +34,7 @@ You can configure application settings, routes, build and deploy actions, and no
 
 ## Configuration updates to Pro environments
 
-For Adobe Commerce on cloud infrastructure Pro Staging and Production environments, you can update many configuration options in your local development environment and commit the changes to apply them to these environments. However, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to update the following configuration options:
+For Adobe Commerce on cloud infrastructure Pro Staging and Production environments, you can update many configuration options in your local development environment and commit the changes to apply them to these environments. However, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) to update the following configuration options:
 
 - Install or update services in the `.magento/services.yaml` file.
 - Change the configuration for the `mounts` and `disk` properties in the `.magento.app.yaml` file.

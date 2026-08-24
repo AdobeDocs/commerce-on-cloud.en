@@ -36,7 +36,7 @@ This tool extends the functionality of the [[!DNL Cloud Console]](../../get-star
 
 **To install the `magento-cloud` CLI**:
 
-1. On your _local workstation_, change to the directory where you intend to clone the Cloud project and where the [file system owner](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html) has _write_ access.
+1. On your _local workstation_, change to the directory where you intend to clone the Cloud project and where the [file system owner](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions) has _write_ access.
 
 1. Install the `magento-cloud` CLI.
 
@@ -149,7 +149,7 @@ The following steps demonstrate using the CLI and Git commands interchangeably t
 
 1. On your local workstation, change to your project directory.
 
-1. Switch to the [file system owner](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html).
+1. Switch to the [file system owner](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions).
 
 1. Log in to your project.
 

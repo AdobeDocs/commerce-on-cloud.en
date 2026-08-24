@@ -190,7 +190,7 @@ stage:
 -  **Default**—`quick`
 -  **Version**—Adobe Commerce 2.2.0 and later
 
-Customize the [deployment strategy](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) for static content. See [Deploy static view files](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
+Customize the [deployment strategy](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy) for static content. See [Deploy static view files](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment).
 
 Use these options _only_ if you have more than one locale:
 

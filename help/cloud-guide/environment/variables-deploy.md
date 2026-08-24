@@ -74,7 +74,7 @@ stage:
             database: 11
 ```
 
-The following example uses the [Redis preload feature](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache.html#redis-preload-feature) as defined in the _Configuration guide_:
+The following example uses the [Redis preload feature](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache#redis-preload-feature) as defined in the _Configuration guide_:
 
 ```yaml
 stage:
@@ -109,7 +109,7 @@ stage:
 - **Default**—`true`
 - **Version**—Adobe Commerce 2.1.4 and later
 
-Enables or disables cleaning [static content files](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html) generated during the build or deploy phase. Use the default value _true_ in development as a best practice.
+Enables or disables cleaning [static content files](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment) generated during the build or deploy phase. Use the default value _true_ in development as a best practice.
 
 - **`true`**—Removes all existing static content before deploying the updated static content.
 - **`false`**—The deployment only overwrites existing static content files if the generated content contains a newer version.
@@ -122,7 +122,7 @@ stage:
     CLEAN_STATIC_FILES: false
 ```
 
-Failure to clean static view files before deploying can cause problems if you deploy updates to existing files without removing the previous versions. Because of [static file fallback](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) rules, fallback operations can display the wrong file if the directory contains multiple versions of the same file.
+Failure to clean static view files before deploying can cause problems if you deploy updates to existing files without removing the previous versions. Because of [static file fallback](https://developer.adobe.com/commerce/frontend-core/guide/css/preprocess#clean-static-view-files) rules, fallback operations can display the wrong file if the directory contains multiple versions of the same file.
 
 ## `CRON_CONSUMERS_RUNNER`
 
@@ -168,7 +168,7 @@ stage:
       consumers: []
 ```
 
-By default, the deployment process overwrites all settings in the `env.php` file. See [Manage message queues](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues.html) in the _Commerce Configuration Guide_ for on-premises Adobe Commerce.
+By default, the deployment process overwrites all settings in the `env.php` file. See [Manage message queues](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues) in the _Commerce Configuration Guide_ for on-premises Adobe Commerce.
 
 ## `CONSUMERS_WAIT_FOR_MAX_MESSAGES`
 
@@ -198,7 +198,7 @@ stage:
 
 >[!WARNING]
 >
->Set the `CRYPT_KEY` value through the [!DNL Cloud Console] instead of the `.magento.env.yaml` file to avoid exposing the key in the source code repository for your environment. See [Set environment and project variables](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/project/overview.html#configure-environment).
+>Set the `CRYPT_KEY` value through the [!DNL Cloud Console] instead of the `.magento.env.yaml` file to avoid exposing the key in the source code repository for your environment. See [Set environment and project variables](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#configure-environment).
 
 When you move the database from one environment to another without an installation process, you need the corresponding cryptographic information. Adobe Commerce uses the encryption key value set in the [!DNL Cloud Console] as the `crypt/key` value in the `env.php` file.
 
@@ -467,7 +467,7 @@ stage:
 
 >[!NOTE]
 >
->If you specify `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` as the Redis backend model to enable [L2 cache](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html), `ece-tools` generates the cache configuration automatically. See an example [configuration file](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html#configuration-example) in the _Adobe Commerce Configuration Guide_. To override the generated cache configuration, use the [CACHE_CONFIGURATION](#cache_configuration) deploy variable.
+>If you specify `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` as the Redis backend model to enable [L2 cache](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/level-two-cache), `ece-tools` generates the cache configuration automatically. See an example [configuration file](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/level-two-cache#configuration-example) in the _Adobe Commerce Configuration Guide_. To override the generated cache configuration, use the [CACHE_CONFIGURATION](#cache_configuration) deploy variable.
 
 ## `REDIS_USE_SLAVE_CONNECTION`
 
@@ -518,7 +518,7 @@ stage:
   VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Specifying remote synchronized cache as the Valkey backend model enables [L2 cache](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html), and `ece-tools` generates the cache configuration automatically. See the [example configuration file](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html#configuration-example). To override the configuration, use the [CACHE_CONFIGURATION](#cache_configuration) deploy variable.
+Specifying remote synchronized cache as the Valkey backend model enables [L2 cache](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/level-two-cache), and `ece-tools` generates the cache configuration automatically. See the [example configuration file](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/level-two-cache#configuration-example). To override the configuration, use the [CACHE_CONFIGURATION](#cache_configuration) deploy variable.
 
 ### Configure modern Symfony L2 cache implementation
 
@@ -530,11 +530,11 @@ stage:
     VALKEY_BACKEND: symfony_l2
 ```
 
-Specifying `symfony_l2` as the Valkey backend model enables [L2 cache](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html){target="_blank"}, and `ece-tools` generates the L2 cache configuration automatically from your Valkey service connection details, including a `default` frontend and a `stale_cache_enabled` frontend. Defining `CACHE_CONFIGURATION` is optional and needed only to customize specific backend options, such as the local cache directory. See [Modern Symfony L2 cache implementation](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html#modern-symfony-l2-cache-implementation){target="_blank"} in the _Adobe Commerce Configuration Guide_, and [Configure Symfony L2 cache](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration#configure-symfony-l2-cache){target="_blank"}  in the _Implementation Playbook_ for a customization example.
+Specifying `symfony_l2` as the Valkey backend model enables [L2 cache](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/level-two-cache){target="_blank"}, and `ece-tools` generates the L2 cache configuration automatically from your Valkey service connection details, including a `default` frontend and a `stale_cache_enabled` frontend. Defining `CACHE_CONFIGURATION` is optional and needed only to customize specific backend options, such as the local cache directory. See [Modern Symfony L2 cache implementation](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/level-two-cache#modern-symfony-l2-cache-implementation){target="_blank"} in the _Adobe Commerce Configuration Guide_, and [Configure Symfony L2 cache](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration#configure-symfony-l2-cache){target="_blank"}  in the _Implementation Playbook_ for a customization example.
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.9 includes Symfony L2 cache improvements—including cache tag storage, invalidation, and compression—with patch ACP2E-5132, reducing disk I/O, eliminating stale cache entries, and reducing memory and network overhead. See [Enhanced Symfony L2 cache performance and reliability](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html#enhanced-symfony-l2-cache-performance-and-reliability) in the _Adobe Commerce Configuration Guide_.
+>Adobe Commerce 2.4.9 includes Symfony L2 cache improvements—including cache tag storage, invalidation, and compression—with patch ACP2E-5132, reducing disk I/O, eliminating stale cache entries, and reducing memory and network overhead. See [Enhanced Symfony L2 cache performance and reliability](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/level-two-cache#enhanced-symfony-l2-cache-performance-and-reliability) in the _Adobe Commerce Configuration Guide_.
 
 ## `VALKEY_USE_SLAVE_CONNECTION`
 
@@ -669,7 +669,7 @@ stage:
 - **Default**—`quick`
 - **Version**—Adobe Commerce 2.2.0 and later
 
-Allows you to customize the [deployment strategy](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) for static content. See [Deploy static view files](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
+Allows you to customize the [deployment strategy](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy) for static content. See [Deploy static view files](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment).
 
 Use these options _only_ if you have more than one locale:
 

@@ -18,7 +18,7 @@ role_v2:
 [Cloud Patches for Commerce](https://github.com/magento/magento-cloud-patches) and the [Quality Patches Tool](https://github.com/magento/quality-patches) deliver patches to your installed Adobe Commerce application.
 
 -  The Cloud Patches for Commerce package delivers required patches with critical fixes
--  Quality Patches deliver optional, low-impact quality fixes as [individual patches](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/versioning-policy.html#individual-patch) that do not contain backward incompatible changes
+-  Quality Patches deliver optional, low-impact quality fixes as [individual patches](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/versioning-policy#individual-patch) that do not contain backward incompatible changes
 
 See [Available Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the _Commerce Operations Tools Guide_ to review a full list of released patches.
 

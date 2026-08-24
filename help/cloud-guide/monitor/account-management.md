@@ -31,7 +31,7 @@ topic_v2:
 
 When Adobe provisions your cloud infrastructure project, the License Owner receives an email from New Relic with credentials and instructions for accessing the New Relic account. If you did not receive the email, use the License Owner email address to reset the New Relic password.
 
-If the License Owner was changed and the new License Owner doesn't currently have access to New Relic, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+If the License Owner was changed and the new License Owner doesn't currently have access to New Relic, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 ## Manage user access (Adminstrator role)
 
@@ -57,7 +57,7 @@ See [User management](https://docs.newrelic.com/docs/accounts/accounts-billing/n
 
 >[!NOTE]
 >
->**Pro environments** are preconfigured to use New Relic services and can skip enable and connect instructions. If New Relic APM is not installed on the Staging and Production environments or New Relic Infrastructure is not available in the Production environment, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request installation.
+>**Pro environments** are preconfigured to use New Relic services and can skip enable and connect instructions. If New Relic APM is not installed on the Staging and Production environments or New Relic Infrastructure is not available in the Production environment, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) to request installation.
 
 For Starter environments, you must check the `.magento.app.yaml` file to verify that the `runtime` section includes the New Relic extension. If the extension has not been configured, add the following:
 
@@ -77,7 +77,7 @@ To connect a Cloud environment to New Relic, add the New Relic license key to th
 
 - For **Starter projects**, you have a New Relic license key that supports up to _three_ environments. You must add the key to your environment configurations manually. Starter environments are not pre-provisioned to use the New Relic service.
 
-For Starter environments, enable the New Relic integration by adding the New Relic license key to the environment configuration. Add the key to the Staging and Production environments and one other environment of your choice. Only the New Relic license key is required for configuration. You can find information about additional configuration options in the [New Relic Reporting](https://experienceleague.adobe.com/docs/commerce-admin/config/general/new-relic-reporting.html) topic in the _Adobe Commerce User Guide_.
+For Starter environments, enable the New Relic integration by adding the New Relic license key to the environment configuration. Add the key to the Staging and Production environments and one other environment of your choice. Only the New Relic license key is required for configuration. You can find information about additional configuration options in the [New Relic Reporting](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) topic in the _Adobe Commerce User Guide_.
 
 {{redeploy-warning}}
 
@@ -85,7 +85,7 @@ For Starter environments, enable the New Relic integration by adding the New Rel
 >
 >- Login credentials for the Adobe Commerce account page, or for the New Relic license associated with your project
 >- [Admin-level access](../project/user-access.md) to the Starter environments to configure
->- Credentials to access the [Admin](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions.html) for the environment
+>- Credentials to access the [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions) for the environment
 
 **To configure New Relic for Starter environments**:
 
@@ -118,7 +118,7 @@ For Starter environments, enable the New Relic integration by adding the New Rel
       magento-cloud variable:update php:newrelic.license --value <newrelic-license-key>
       ```
     
-    Optionally, you can add it from the [Commerce Admin](https://experienceleague.adobe.com/docs/commerce-admin/start/reporting/new-relic-reporting.html#step-3%3A-configure-your-store).
+    Optionally, you can add it from the [Commerce Admin](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service).
 
 1. Log in to your [New Relic account](https://login.newrelic.com/login) to verify that you can view data from the Adobe Commerce environment. See [Investigate performance](investigate-performance.md).
 
@@ -164,4 +164,4 @@ To change the New Relic account owner for your Adobe Commerce on cloud infrastru
 
 3. **Need help?** If no existing Owner or Admin can help, any Adobe Commerce user with access to the [Adobe Commerce Partnership Owner Account](https://account.newrelic.com/accounts/1311131/users) can add users on your behalf.
 
-For more details, see the [New Relic service overview](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service).
+For more details, see the [New Relic service overview](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service).
