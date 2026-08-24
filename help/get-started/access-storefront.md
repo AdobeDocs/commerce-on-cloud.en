@@ -39,7 +39,7 @@ After you submit the password change request, check your email for the password 
 
 >[!TIP]
 >
->If the password reset fails or you cannot sign in to the Admin panel, a user with admin access can connect to the project using SSH and add an admin user using the `admin:user:create` CLI command. See [Create, edit, or unlock an administrator account](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html) in the _Installation guide_.
+>If the password reset fails or you cannot sign in to the Admin panel, a user with admin access can connect to the project using SSH and add an admin user using the `admin:user:create` CLI command. See [Create, edit, or unlock an administrator account](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/admin) in the _Installation guide_.
 
 ## Monitor site health
 
