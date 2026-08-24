@@ -27,6 +27,22 @@ Auto scaling automatically adds or removes resources to the cloud infrastructure
 - [Horizontal auto scaling](#horizontal-auto-scaling) (Available for scaled architecture only) — Adds or removes web server nodes for Scaled architecture projects.
 - [Vertical auto scaling](#vertical-auto-scaling) (Available for standard Pro architecture or scaled architecture) — Resizes the CPU capacity of existing nodes to accommodate changes in demand.
 
+
+## Enable auto scaling
+
+To enable or disable horizontal or vertical auto scaling for your [!DNL Adobe Commerce on cloud infrastructure] project, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). Choose the following reasons in the ticket:
+
+- **Contact reason**: Infrastructure Change Request
+- **Adobe Commerce Infrastructure Contact Reason**: Other Infrastructure Change Request
+
+>[!IMPORTANT]
+>
+>The auto-scaling feature captures unanticipated events. Even if you have auto scaling enabled, Adobe recommends that you continue to [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) if you expect an upcoming event.
+
+### Load testing
+
+Adobe enables auto scaling on your Cloud project _staging_ cluster first. After you perform and complete load testing in your environment, Adobe then enables auto scaling on your production cluster. For guidance on load testing, see [Performance testing](../launch/checklist.md#performance-testing).
+
 ## Horizontal auto scaling
 
 Currently, this feature is only available for projects configured with a [Scaled architecture](scaled-architecture.md).
@@ -75,22 +91,7 @@ SELECT average(cpuPercent) FROM SystemSample FACET hostname, apmApplicationNames
 
 ![New Relic web nodes CPU usage](../../assets/new-relic/web-node-cpu-usage.png)
 
-### Enable auto scaling
-
-To enable or disable auto scaling for your Adobe Commerce on cloud infrastructure project, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). Choose the following reasons in the ticket:
-
-- **Contact reason**: Infrastructure Change Request
-- **Adobe Commerce Infrastructure Contact Reason**: Other Infrastructure Change Request
-
->[!IMPORTANT]
->
->The auto-scaling feature captures unanticipated events. Even if you have auto scaling enabled, Adobe recommends that you continue to [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) if you expect an upcoming event.
-
-#### Load testing
-
-Adobe enables auto scaling on your Cloud project _staging_ cluster first. After you perform and complete load testing in your environment, Adobe then enables auto scaling on your production cluster. For guidance on load testing, see [Performance testing](../launch/checklist.md#performance-testing).
-
-#### IP allowlist
+### IP allowlist
 
 After enabling auto scaling, the outbound web node traffic originates from the IP addresses of the service nodes. If you use an allowlist with a third-party service that is not bundled with your Adobe Commerce on cloud infrastructure project, then verify the IP addresses in the third-party service allowlist.
 
@@ -124,11 +125,3 @@ Vertical auto scaling has the following impact on your environment:
 
 - **Downtime**: No downtime is anticipated when a node is resized.
 - **Timing**: Resizing a node typically takes 20–30 minutes. The node is temporarily taken out of the load balancer while the resize is in progress.
-
-### Enable vertical auto scaling 
-
-To enable vertical auto scaling for your project, contact your Customer Success Manager (CSM) to discuss eligibility and next steps. 
-
->[!IMPORTANT]
->
->Vertical auto scaling is designed to respond to unanticipated increases in load. For planned events or expected peak traffic, Adobe still recommends submitting a support ticket to request a manual upsize ahead of time, since auto scaling depends on instance availability from the cloud provider.
