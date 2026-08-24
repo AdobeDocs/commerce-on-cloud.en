@@ -52,7 +52,7 @@ Security issues shouldn't be reported on this issue tracker. Instead, [file an i
 
 ## What's new highlights
 
-If your changes introduce new topics, significant updates, or corrections that need to be highlighted, you can add a short description to the [What's New section](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview#whats-new) right from your pull request's body.
+If your changes introduce new topics, significant updates, or corrections that need to be highlighted, you can add a short description to the [What's New section](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview#whats-new) right from your pull request's body.
 
 To add a What's New highlight:
 
@@ -60,29 +60,29 @@ To add a What's New highlight:
 
    ```text
    whatsnew
-   Short description of the change in the [target topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/target-topic.html).
+   Short description of the change in the [target topic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/target-topic.html).
    ```
 
    or, if there are multiple topics:
 
    ```text
    whatsnew
-   Short description of the changes in the [first target topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/target-topic.html), [second target topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/second-target-topic.html), and [third target topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/third-target-topic.html).
+   Short description of the changes in the [first target topic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/target-topic.html), [second target topic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/second-target-topic.html), and [third target topic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/third-target-topic.html).
    ```
 
    you can also use lists for multiple highlights:
 
    ```text
    whatsnew
-   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/first-topic.html).
-   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/second-topic.html).
+   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/first-topic.html).
+   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/second-topic.html).
    ```
 
    ```text
    whatsnew
    The following changes were made to the documentation:
-   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/first-topic.html).
-   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/second-topic.html).
+   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/first-topic.html).
+   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/second-topic.html).
    ```
 
 1. Add supported labels that indicate the type of change. Supported labels include labels for each type of change, such as:
@@ -96,4 +96,4 @@ To add a What's New highlight:
 1. The `whatsnew` part must start from the `whatsnew` tag and be at the very end of the pull request body.
 1. The descriptions of the changes must include working links. Please make sure that the links are correct and lead to the intended topics. If the topic is new, verify that the links are working after merging the pull request and publishing the new topic. It is okay to fix the links after the pull request is merged.
 
-For examples, search in closed pull requests in the repository to see how existing highlights are formatted, and compare them with the [What's New section](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview#whats-new) to see how they appear in the documentation.
+For examples, search in closed pull requests in the repository to see how existing highlights are formatted, and compare them with the [What's New section](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview#whats-new) to see how they appear in the documentation.
