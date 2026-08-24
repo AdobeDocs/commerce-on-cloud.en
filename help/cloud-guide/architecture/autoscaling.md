@@ -39,8 +39,8 @@ The [web tier](scaled-architecture.md#web-tier) scales to accommodate an increas
 
 An auto-scaling event occurs when CPU usage and traffic reach a predefined threshold:
 
-- **Nodes added**—CPUs/cores across all active web nodes are at 75% capacity for 1 minute and traffic is increasing by 20% for 5 consecutive minutes.
-- **Nodes removed**—CPUs/cores across all active web nodes are loaded at 60% for 20 minutes. Nodes are removed in the order that they were added.
+- **Nodes added** — CPUs/cores across all active web nodes are at 75% capacity for 1 minute and traffic is increasing by 20% for 5 consecutive minutes.
+- **Nodes removed** — CPUs/cores across all active web nodes are loaded at 60% for 20 minutes. Nodes are removed in the order that they were added.
 
 The minimum and maximum thresholds are determined and set based on the contracted resource limits of each merchant; this reduces the risk of infinite scaling.
 
@@ -77,14 +77,14 @@ SELECT average(cpuPercent) FROM SystemSample FACET hostname, apmApplicationNames
 
 ### Enable auto scaling
 
-To enable or disable auto scaling for your Adobe Commerce on cloud infrastructure project, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Choose the following reasons in the ticket:
+To enable or disable auto scaling for your Adobe Commerce on cloud infrastructure project, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). Choose the following reasons in the ticket:
 
 - **Contact reason**: Infrastructure Change Request
 - **Adobe Commerce Infrastructure Contact Reason**: Other Infrastructure Change Request
 
 >[!IMPORTANT]
 >
->The auto-scaling feature captures unanticipated events. Even if you have auto scaling enabled, Adobe recommends that you continue to [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) if you expect an upcoming event.
+>The auto-scaling feature captures unanticipated events. Even if you have auto scaling enabled, Adobe recommends that you continue to [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) if you expect an upcoming event.
 
 #### Load testing
 
@@ -112,7 +112,7 @@ Instead of adding or removing nodes, vertical auto scaling resizes the CPU capac
 
 ### Auto-scaling thresholds
 
-Vertical auto-scaling events are triggered using Pressure Stall Information (PSI) for memory on Linux, which measures how much time a system spends stalled due to memory pressure. Thresholds are set by Adobe based on your project's contracted resource limits and usage patterns and are not currently configurable by merchants.
+Vertical auto-scaling events are triggered using Pressure Stall Information (PSI) for memory on Linux, which measures how much time a system spends stalled due to memory pressure. Adobe sets thresholds based on your project's contracted resource limits and usage patterns; merchants cannot currently configure them.
 
 ### Monitor thresholds with New Relic
 
@@ -127,7 +127,7 @@ Vertical auto scaling has the following impact on your environment:
 
 ### Enable vertical auto scaling 
 
-If you're interested in enabling vertical auto scaling for your project, contact your Customer Success Manager (CSM) to discuss eligibility and next steps. 
+To enable vertical auto scaling for your project, contact your Customer Success Manager (CSM) to discuss eligibility and next steps. 
 
 >[!IMPORTANT]
 >
