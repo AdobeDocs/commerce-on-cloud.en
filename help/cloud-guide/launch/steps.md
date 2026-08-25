@@ -1,6 +1,6 @@
 ---
 title: Launch steps
-description: Learn how to complete the site launch.
+description: Learn how to complete the final steps to launch your Adobe Commerce cloud infrastructure store, including support tickets, DNS cutover, and site verification.
 exl-id: e7a3cd6b-32de-4fd0-9fbd-da8299e77114
 TQID: https://experienceleague.adobe.com/Nl8YFJUZUkxtsm0eqBgJklsTysKuUE31PkEDsJmvBMU
 product_v2:

@@ -1,6 +1,6 @@
 ---
 title: Launch checklist
-description: Review checklist items for site launch.
+description: Review the Launch checklist for Adobe Commerce cloud infrastructure to confirm configuration, testing, and Fastly setup before deploying to Production.
 exl-id: efc97d4a-a9f3-49fa-b977-061282765e90
 TQID: https://experienceleague.adobe.com/-27J2-qKGpa71AJliIomIC7heTbTelOnFf960NODt0E
 product_v2:

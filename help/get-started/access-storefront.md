@@ -1,6 +1,6 @@
 ---
 title: Access your Commerce Admin panel
-description: Learn how to access your Commerce Admin panel.
+description: Learn how to secure Admin access to your Adobe Commerce cloud infrastructure project, reset your License Owner password, and sign in to the Admin panel.
 recommendations: noDisplay, catalog
 exl-id: 827417b0-9048-44d8-8c82-07befba476c7
 TQID: https://experienceleague.adobe.com/V3BXuCc9aqT5YuyIS8WAZgUdPAYNhQunAgg2i2FCaOs
