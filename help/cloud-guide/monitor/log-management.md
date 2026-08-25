@@ -1,6 +1,6 @@
 ---
 title: New Relic log management
-description: Learn how to use the New Relic log
+description: Learn how to use New Relic log management to aggregate, search, and visualize log data from your Commerce cloud Staging and Production environments.
 feature: Cloud, Logs, Observability
 exl-id: b7636075-56fd-4227-b7e8-67acbe1defc5
 TQID: https://experienceleague.adobe.com/gh3OUHKvbN462Z4w-2qnTwVQHA0IbwWNvRBfdrQKkrE

@@ -1,6 +1,6 @@
 ---
 title: Site launch
-description: Learn how to begin site launch preparation.
+description: Learn how to prepare for site launch on Adobe Commerce cloud infrastructure, including checklists, best practices, and Staging and Production testing.
 exl-id: 95abc7aa-ed4d-44f7-96aa-517c646bc00d
 TQID: https://experienceleague.adobe.com/-aWGtM8yXIMPfKihDMD6LS1r2-UIuceyf9X4TTIFTf0
 product_v2:
