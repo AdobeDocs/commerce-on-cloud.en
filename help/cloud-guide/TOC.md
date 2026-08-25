@@ -21,7 +21,7 @@ feature: Cloud
     + [Pro workflow](architecture/pro-develop-deploy-workflow.md)
     + [Scaled architecture](architecture/scaled-architecture.md)
     + [Auto scaling](architecture/autoscaling.md)
-+ [Get started](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html)
++ [Get started](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/overview)
 + Release notes {#release-notes}
     + [Cloud tools suite](release-notes/cloud-tools-suite.md)
     + [ECE-Tools package](release-notes/ece-tools-package.md)

@@ -106,7 +106,7 @@ When you are ready to launch your site, you must update the DNS configuration to
       php bin/magento setup:store-config:set --base-url="https://www.<domain-name>.com/"
       ```
 
-   **NOTE**: You can also update the Base URL from the Admin. See [ Store URLs](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html) in the _Adobe Commerce Stores and Purchase Experience Guide_.
+   **NOTE**: You can also update the Base URL from the Admin. See [ Store URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls) in the _Adobe Commerce Stores and Purchase Experience Guide_.
 
 1. Wait a few minutes for the site to update.
 
@@ -158,7 +158,7 @@ You can also test using the following third-party options:
 
 -  [Remove any users no longer on the Adobe Commerce on cloud infrastructure project](../project/user-access.md)
 
--  [Configure two-factor authentication](https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication/)
+-  [Configure two-factor authentication](https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication)
 
 ## Performance monitoring
 

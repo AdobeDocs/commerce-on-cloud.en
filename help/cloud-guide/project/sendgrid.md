@@ -46,7 +46,7 @@ You can enable or disable outgoing emails for each environment from the Cloud Co
 
 By default, outgoing emails are enabled on Pro Production and Staging environments. However, [!UICONTROL Outgoing emails] may appear disabled in the environment settings until you set the `enable_smtp` property through the [command line](outgoing-emails.md#enable-emails-in-the-cli) or [Cloud Console](outgoing-emails.md#enable-emails-in-the-cloud-console). You can enable outgoing emails for integration and staging environments to send two-factor authentication or reset password emails for Cloud project users. See [Configure emails for testing](outgoing-emails.md).
 
-If outgoing emails must be disabled or re-enabled on Pro Production or Staging environments, you can submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+If outgoing emails must be disabled or re-enabled on Pro Production or Staging environments, you can submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 >[!TIP]
 >
@@ -56,7 +56,7 @@ If outgoing emails must be disabled or re-enabled on Pro Production or Staging e
 
 All Cloud projects are managed under a central account, so only Support has access to the SendGrid dashboard. SendGrid does not provide subaccount restriction features.
 
-To review the Activity logs for delivery status or a list of bounced, rejected, or blocked email addresses, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket). The Support team **cannot** retrieve activity logs older than 30 days.
+To review the Activity logs for delivery status or a list of bounced, rejected, or blocked email addresses, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). The Support team **cannot** retrieve activity logs older than 30 days.
 
 If possible, include the following information with your request:
 
@@ -70,7 +70,7 @@ To better manage your email delivery settings, use your own [SMTP server or emai
 >
 >If you use your own SendGrid account, you will no longer receive SendGrid support through Adobe.
 >
->To enable your proprietary SendGrid service or update an existing API Key, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) and include the API Key for your SendGrid account.
+>To enable your proprietary SendGrid service or update an existing API Key, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) and include the API Key for your SendGrid account.
 
 ## DomainKeys Identified Mail (DKIM)
 
@@ -94,7 +94,7 @@ For SendGrid to send transactional emails on your behalf from Pro Production or 
 
 **To enable domain authentication**:
 
-1. Submit a [support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) to request enabling DKIM for a specific domain (**Pro Staging and Production environments only**).
+1. Submit a [support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) to request enabling DKIM for a specific domain (**Pro Staging and Production environments only**).
 1. Update your DNS configuration with the `TXT` and `CNAME` records provided to you in the support ticket.
 
 **Example `TXT` record with account ID**:
@@ -145,7 +145,7 @@ dig CNAME s2._domainkey.domain_name
 
 The transactional email threshold refers to the number of transactional email messages that you can send from Pro environments within a specific time period, such as 12,000 emails per month from non-production environments. The threshold is designed to protect against sending spam and potentially damaging your email reputation.
 
-There are no hard limits on the number of emails that can be sent in the Production environment, as long as the Sender Reputation score is over 95%. The reputation is affected by the number of bounced or rejected emails and whether DNS-based spam registries have flagged your domain as a potential spam source. See [Emails not sent when SendGrid credits exceeded on Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/emails-not-being-sent-sendgrid-credits-exceeded) in the _Commerce Support Knowledge Base_.
+There are no hard limits on the number of emails that can be sent in the Production environment, as long as the Sender Reputation score is over 95%. The reputation is affected by the number of bounced or rejected emails and whether DNS-based spam registries have flagged your domain as a potential spam source. See [Emails not sent when SendGrid credits exceeded on Adobe Commerce](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25701) in the _Commerce Support Knowledge Base_.
 
 **To check if maximum credits are exceeded**:
 
@@ -159,7 +159,7 @@ There are no hard limits on the number of emails that can be sent in the Product
 
 1. Check the `/var/log/mail.log` for `authentication failed : Maxium credits exceeded` entries.
 
-   If you see any `authentication failed` log entries and the **Email sending reputation** is at a minimum of 95, you can [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) to request a credit allotment increase.
+   If you see any `authentication failed` log entries and the **Email sending reputation** is at a minimum of 95, you can [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) to request a credit allotment increase.
 
 >[!NOTE]
 >
@@ -175,6 +175,6 @@ An email suppression list is a list of recipients that emails should not be sent
 
 To prevent emails from being sent to the spam folder in the first place, follow Sendgrid's best practices article, [Why Are My Emails Going to Spam?](https://sendgrid.com/en-us/blog/10-tips-to-keep-email-out-of-the-spam-folder).
 
-If some recipients are not receiving your emails, you can [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) to request a review of the suppression lists and remove the recipient(s) if necessary.
+If some recipients are not receiving your emails, you can [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) to request a review of the suppression lists and remove the recipient(s) if necessary.
 
 For more details, refer to [What Is a Suppression List?](https://sendgrid.com/en-us/blog/what-is-a-suppression-list)

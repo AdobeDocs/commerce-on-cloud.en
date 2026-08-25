@@ -18,7 +18,7 @@ role_v2:
 ---
 # Variables property
 
-You can use application-based environment variables to customize store configurations. These variables use a specific syntax. See [Override configuration settings](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/override-config-settings.html) in the _Configuration guide_.
+You can use application-based environment variables to customize store configurations. These variables use a specific syntax. See [Override configuration settings](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/paths/override-config-settings) in the _Configuration guide_.
 
 The following environment variables included in the `.magento.app.yaml` file are required for specific versions of the [!DNL Commerce] application.
 

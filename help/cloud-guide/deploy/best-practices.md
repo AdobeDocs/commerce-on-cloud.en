@@ -81,7 +81,7 @@ Review these best practices and considerations for your deployment process:
 
 -  **Verify service versions and relationships and the ability to connect**
 
-   Verify the services that are available to your application and ensure you are using the most current, compatible version. See [Service relationships](../services/services-yaml.md#service-relationships) and [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the _Installation guide_ for recommended versions.
+   Verify the services that are available to your application and ensure you are using the most current, compatible version. See [Service relationships](../services/services-yaml.md#service-relationships) and [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) in the _Installation guide_ for recommended versions.
 
 -  **Test locally and in the integration environment before deploying to Staging and Production**
 
@@ -190,13 +190,13 @@ If the `app/etc/config.php` file does not exist in the codebase, static files ar
 
 There are two deploy hooks. The `pre-deploy.php` hook completes necessary cleanup and retrieval of resources and code generated in the build hook. The `php ./vendor/bin/ece-tools deploy` hook runs a series of commands and scripts:
 
--  If Adobe Commerce is **not installed**, it installs with `bin/magento setup:install`, updates the deployment configuration, `app/etc/env.php`, and the database for your specified environment, such as Redis and website URLs. **Important:** When you completed the [First-time deployment](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/launch/overview.html) during setup, Adobe Commerce was installed and deployed across all environments.
+-  If Adobe Commerce is **not installed**, it installs with `bin/magento setup:install`, updates the deployment configuration, `app/etc/env.php`, and the database for your specified environment, such as Redis and website URLs. **Important:** When you completed the [First-time deployment](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/overview) during setup, Adobe Commerce was installed and deployed across all environments.
 
 -  If Adobe Commerce **is installed**, perform any necessary upgrades. The deployment script runs `bin/magento setup:upgrade` to update the database schema and data (which is necessary after extension or core code updates), and also updates the deployment configuration, `app/etc/env.php`, and the database for your environment. Finally, the deployment script clears theAdobe Commerce cache.
 
 -  The script optionally generates static web content using the command `magento setup:static-content:deploy`.
 
--  Uses scopes (`-s` flag in build scripts) with a default setting of `quick` for static content deployment strategy. You can customize the strategy using the environment variable [`SCD_STRATEGY`](../environment/variables-deploy.md#scd_strategy). For details on these options and features, see [Static files deployment strategies](../deploy/static-content.md) and the `-s` flag for [Deploy static view files](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
+-  Uses scopes (`-s` flag in build scripts) with a default setting of `quick` for static content deployment strategy. You can customize the strategy using the environment variable [`SCD_STRATEGY`](../environment/variables-deploy.md#scd_strategy). For details on these options and features, see [Static files deployment strategies](../deploy/static-content.md) and the `-s` flag for [Deploy static view files](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment).
 
 >[!NOTE]
 >

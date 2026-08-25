@@ -19,7 +19,7 @@ last-update: 2026-05-05
 ---
 # PHP settings
 
-You can choose which [version of PHP](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) to run in your `.magento.app.yaml` file:
+You can choose which [version of PHP](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) to run in your `.magento.app.yaml` file:
 
 ```yaml
 name: mymagento
@@ -70,7 +70,7 @@ These settings allow PHP processes to cache paths to files instead of looking th
 
 >[!NOTE]
 >
->For a list of recommended PHP configuration settings, see [Required PHP settings](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html) in the _Installation guide_.
+>For a list of recommended PHP configuration settings, see [Required PHP settings](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings) in the _Installation guide_.
 
 ### Check custom PHP settings
 
@@ -125,7 +125,7 @@ The following table shows the supported PHP extensions when deploying Adobe Comm
 
 {{$include /help/_includes/templated/php-extensions-cloud.md}}
 
-PHP module requirements are tied to the Adobe Commerce version. See [PHP requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html).
+PHP module requirements are tied to the Adobe Commerce version. See [PHP requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings).
 
 ### Extension support
 
@@ -143,7 +143,7 @@ sourceguardian.restrict_unencoded = "1"
 
 See [section 3.5 of the SourceGuardian documentation](https://sourceguardian.com/demofiles/files/SourceGuardian%20for%20Linux%20User%20Manual.pdf). _This is a link to a PDF_.
 
-[Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) for help with installing these PHP extensions in all Production environments and Pro Staging environments. Include your updated `.magento/services.yaml` file, `.magento.app.yaml` file with the updated PHP version and any additional PHP extensions. For changes to a live Production environment, you must provide a minimum of 48 hours notice. It can take up to 48 hours for the Cloud infrastructure team to update your project.
+[Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) for help with installing these PHP extensions in all Production environments and Pro Staging environments. Include your updated `.magento/services.yaml` file, `.magento.app.yaml` file with the updated PHP version and any additional PHP extensions. For changes to a live Production environment, you must provide a minimum of 48 hours notice. It can take up to 48 hours for the Cloud infrastructure team to update your project.
 
 >[!WARNING]
 >

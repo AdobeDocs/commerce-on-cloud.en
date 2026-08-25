@@ -18,7 +18,7 @@ role_v2:
 ---
 # Zero downtime deployment
 
-Adobe Commerce on cloud infrastructure runs the application in [_maintenance_ mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode) during the deploy phase, which takes your site offline until the deployment is complete. The length of time your Production site is in maintenance mode depends on the size of the site, the number of changes applied during the deployment, and the configuration for static content deployment. It is possible to configure your project so that it deploys with a **zero** downtime effect.
+Adobe Commerce on cloud infrastructure runs the application in [_maintenance_ mode](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/setup/application-modes#production-mode) during the deploy phase, which takes your site offline until the deployment is complete. The length of time your Production site is in maintenance mode depends on the size of the site, the number of changes applied during the deployment, and the configuration for static content deployment. It is possible to configure your project so that it deploys with a **zero** downtime effect.
 
 During the deployment process, all connections queue for up to 5 minutes preserving any active sessions and pending actions, such as adding to cart or checkout. After deployment, the queue is released and connections continue without interruption. To use this _connection hold_ to your advantage and reduce deployment to _zero_ downtime, you must configure your project to use the most efficient deploy strategy.
 

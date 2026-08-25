@@ -25,17 +25,17 @@ topic_v2:
 ---
 # Best practices for store configuration
 
-For detailed information for configuring your store, sites, and websites, you may want to review the [Adobe Commerce User Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html). This page provides best practices, helpful information, and guidelines for configuring your stores, sites, and more with additional content to post over time and across versions.
+For detailed information for configuring your store, sites, and websites, you may want to review the [Adobe Commerce User Guide](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home). This page provides best practices, helpful information, and guidelines for configuring your stores, sites, and more with additional content to post over time and across versions.
 
 ## Marketing campaigns and promotions
 
 This information is helpful for Adobe Commerce on cloud infrastructure 2.1.X and 2.2.X.
 
-To create campaigns and promotions, create the options and settings in [Content Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html). This feature allows you to create and preview your campaigns before making them public for customer sales. The following information provides helpful information. For exact instructions, see the linked Adobe Commerce User Guide content.
+To create campaigns and promotions, create the options and settings in [Content Staging](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging). This feature allows you to create and preview your campaigns before making them public for customer sales. The following information provides helpful information. For exact instructions, see the linked Adobe Commerce User Guide content.
 
 _Campaigns_ are marketing events for seasonal sales, new product lines, and more. Each campaign can include custom themes, blocks for content, widgets to control and display content, and associated promotions with price rules. Due to the extensive nature of a campaign, you create them with a start and end date through Content Staging.
 
-_Promotions_ provide discounts, one time offers, coupons, first-time buyer incentives, and more. You create these promotions as _Price Rules_ that set the terms, discounts, and options to encourage customers to buy. You can create price rules on the [shopping cart](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html) or [catalog](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog.html), with additional options for banners, reward points, and more. You can schedule campaigns for your promotions, applying price rules for major events like a new product line or seasonal sales.
+_Promotions_ provide discounts, one time offers, coupons, first-time buyer incentives, and more. You create these promotions as _Price Rules_ that set the terms, discounts, and options to encourage customers to buy. You can create price rules on the [shopping cart](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart) or [catalog](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog), with additional options for banners, reward points, and more. You can schedule campaigns for your promotions, applying price rules for major events like a new product line or seasonal sales.
 
 The following are tips to help create, update, and manage promotions and campaigns:
 
@@ -48,7 +48,7 @@ The following are tips to help create, update, and manage promotions and campaig
 
 This information is helpful for Adobe Commerce on cloud infrastructure 2.1.X and 2.2.X.
 
-Typically, you can set [Advanced Pricing](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) for products through the **Products** > **Catalogs** area of the Admin. With Staged Content, complete a few extra steps to add the pricing to a promotion and campaign.
+Typically, you can set [Advanced Pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/pricing-advanced) for products through the **Products** > **Catalogs** area of the Admin. With Staged Content, complete a few extra steps to add the pricing to a promotion and campaign.
 
 To edit Advanced Pricing and update Content Staging:
 
@@ -61,13 +61,13 @@ To edit Advanced Pricing and update Content Staging:
 1. Save the promotion. An inactive initial campaign is created.
 1. You can Preview to review the special price, promotion name, regular price, and the scheduled date range for the campaign.
 
-For additional steps, you can continue with instructions with [Schedule Changes for Catalog Price Rules](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rule-catalog-scheduled-changes.html). Click **Next** to walk through the steps.
+For additional steps, you can continue with instructions with [Schedule Changes for Catalog Price Rules](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-rules/price-rule-catalog-scheduled-changes). Click **Next** to walk through the steps.
 
 ## Price Rules
 
 Price rules can include logic and conditions as limitless as your marketing imagination. Some popular examples include Buy One Get One Free, Buy One Get One 50% Off, a $25 dollars off on orders over $100 dollars, and more.
 
-To create a Price Rule, see [Adobe Commerce User Guide](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog-create.html).
+To create a Price Rule, see [Adobe Commerce User Guide](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog-create).
 
 The following provides an example of creating a Price Rule for a First Order Only discount. For this discount, you would want to:
 

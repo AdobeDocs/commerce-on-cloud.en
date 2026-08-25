@@ -45,7 +45,7 @@ OpenSearch enables you to take data from any source, any format, and search and 
        disk: 1024
    ```
 
-   For Pro projects, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change the OpenSearch version in the Staging and Production environments.
+   For Pro projects, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) to change the OpenSearch version in the Staging and Production environments.
 
 1. Set or verify the `relationships` property in the `.magento.app.yaml` file.
 
@@ -98,7 +98,7 @@ When you install or upgrade your Adobe Commerce on cloud infrastructure project,
 
 - **Project upgrade**–Verify that the OpenSearch PHP client in the new application version is compatible with the OpenSearch service version installed on the cloud infrastructure.
 
-Service version and compatibility support is determined by versions tested and deployed on the Cloud infrastructure, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the _Installation Guide_ for a list of supported versions.
+Service version and compatibility support is determined by versions tested and deployed on the Cloud infrastructure, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. See [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) in the _Installation Guide_ for a list of supported versions.
 
 **To verify OpenSearch software compatibility**:
 
@@ -190,7 +190,7 @@ Optionally, you can add plugins for OpenSearch by adding the `configuration:plug
 
 >[!NOTE]
 >
->This only applies to Integration and Starter environments. To install the plugins in a Pro Staging or Production cluster, [submit a support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
+>This only applies to Integration and Starter environments. To install the plugins in a Pro Staging or Production cluster, [submit a support request](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
 
 
 ```yaml
@@ -214,7 +214,7 @@ Removing the plugin entries from the `opensearch:` section of the `.magento/serv
 
 >[!NOTE]
 >
->This change only applies to Integration and Starter environments. You will have to [submit a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) to remove the plugin in a Pro Staging or Production cluster.
+>This change only applies to Integration and Starter environments. You will have to [submit a support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) to remove the plugin in a Pro Staging or Production cluster.
 
 1. Remove the OpenSearch plugin entries from your `.magento/services.yaml` file.
 1. Add, commit, and push your code changes.

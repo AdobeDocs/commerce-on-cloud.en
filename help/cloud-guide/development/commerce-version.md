@@ -25,7 +25,7 @@ topic_v2:
 ---
 # Upgrade Commerce version
 
-You can upgrade the Adobe Commerce code base to a newer version. Before upgrading the environment, review the [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the _Installation_ guide for the latest software version requirements.
+You can upgrade the Adobe Commerce code base to a newer version. Before upgrading the environment, review the [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) in the _Installation_ guide for the latest software version requirements.
 
  Depending on the environment type (Development, Staging, or Production), your upgrade tasks may include the following:
 
@@ -158,7 +158,7 @@ Review the [service versions](../services/services-yaml.md#service-versions) inf
 
 1. Review the patches that are currently applied:
 
-   - If there are any patches installed in the `m2-hotfixes` directory, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) and work with Adobe Commerce Support to verify which patches can still be applied to the new version. Remove the non-applicable patch(es) from the `m2-hotfixes` directory.
+   - If there are any patches installed in the `m2-hotfixes` directory, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) and work with Adobe Commerce Support to verify which patches can still be applied to the new version. Remove the non-applicable patch(es) from the `m2-hotfixes` directory.
 
    - If there are any [Quality Patches] applied in the `.magento.env.yaml` file, verify whether they can still be applied to the new version. Remove the non-applicable patch(es) from the `QUALITY_PATCHES` section of the `.magento.env.yaml` file.
 

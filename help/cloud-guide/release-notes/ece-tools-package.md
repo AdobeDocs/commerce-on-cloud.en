@@ -207,7 +207,7 @@ Release date: March 10, 2023
 
 Release date: October 27, 2022
 
--  ![new icon](../../assets/new.svg) **Added support for Adobe I/O Events for Adobe Commerce**. Extension developers can now use the [Adobe I/O Events](https://developer.adobe.com/events/docs/) framework to send Commerce event information from Cloud instances to their applications written for [Adobe App Builder](https://developer.adobe.com/app-builder/docs/overview/). Adobe I/O Events for Adobe Commerce is in Partner Preview.<!-- CEXT-932 -->
+-  ![new icon](../../assets/new.svg) **Added support for Adobe I/O Events for Adobe Commerce**. Extension developers can now use the [Adobe I/O Events](https://developer.adobe.com/events/docs/) framework to send Commerce event information from Cloud instances to their applications written for [Adobe App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/). Adobe I/O Events for Adobe Commerce is in Partner Preview.<!-- CEXT-932 -->
 -  ![new icon](../../assets/new.svg) **Validator for OPcache configuration**—Added a validator to check the OPcache configuration for excluded paths.<!-- MCLOUD-9485 -->
 -  ![fix icon](../../assets/fix.svg) **Fixed an issue with GraphQL cache configuration**—Now ECE-Tools keeps the GraphQL `id_salt` value in `cache` configuration in the `app/etc/env.php` file.<!-- MCLOUD-9486 -->
 

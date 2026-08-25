@@ -28,7 +28,7 @@ Users that have administrative access to the Adobe Commerce on cloud infrastruct
 
 You can override Admin user credentials during Commerce installation with the ADMIN variables in the following table.
 
-If you want to change the values after installation, connect to your environment using SSH and use the Adobe Commerce CLI [`admin:user` command](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html) to create or edit the Admin user credentials.
+If you want to change the values after installation, connect to your environment using SSH and use the Adobe Commerce CLI [`admin:user` command](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/admin) to create or edit the Admin user credentials.
 
 | Variable       | Default                     | Description |
 | -------------- | --------------------------- | ----------- |
@@ -47,9 +47,9 @@ Use the following environment variable to secure access to your Admin UI. If spe
 
 ### Change the Admin URL
 
-By default, the [Commerce Admin](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/admin.html) URL is set to *<domain_name>/admin*. For security reasons, Adobe recommends changing it to a unique, custom Admin URL that is not easy to guess.
+By default, the [Commerce Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin) URL is set to *<domain_name>/admin*. For security reasons, Adobe recommends changing it to a unique, custom Admin URL that is not easy to guess.
 
-**In [!DNL Adobe Commerce] on cloud infrastructure**,  you must change the Admin URL using the `ADMIN_URL` environment variable in the ([!DNL Cloud Console] or [!DNL Cloud CLI]). Modifying the setting from the [!DNL Admin] is only applicable for on-premises installations. For on-premises installations, follow [use a custom admin URL](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html#use-a-custom-admin-url).
+**In [!DNL Adobe Commerce] on cloud infrastructure**,  you must change the Admin URL using the `ADMIN_URL` environment variable in the ([!DNL Cloud Console] or [!DNL Cloud CLI]). Modifying the setting from the [!DNL Admin] is only applicable for on-premises installations. For on-premises installations, follow [use a custom admin URL](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls#use-a-custom-admin-url).
 
 Adobe recommends changing the environment-level variable for the Admin URL after installation. Configure this setting for security reasons before branching from the cloned `master` environment. All branches created from the `master` branch inherit the environment-level variables and their values unless you set inheritance to false.
 
@@ -59,12 +59,12 @@ Use either the [!DNL Cloud Console] or the [!DNL Cloud CLI] to set or update `AD
 
 ##### Integration environment
 
-From the [Cloud Console](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html), add a new variable with:
+From the [Cloud Console](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview), add a new variable with:
 
 - **Name:** `ADMIN_URL`
 - **Value:** Your new Admin URL (for example, `magento_A8v10`)
 
-- For detailed steps, see [add environment variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-environment) or [environment variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html) in our developer documentation.
+- For detailed steps, see [add environment variables](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#configure-environment) or [environment variables](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin) in our developer documentation.
 
 ##### Set the Admin URL in the [!DNL Cloud Console]
 
@@ -95,7 +95,7 @@ magento-cloud variable:update ADMIN_URL --value newAdmin_A8v10 -e master --inher
 ```
 
 - **Redeployment:** Changing the `ADMIN_URL` variable in the [!DNL Cloud CLI] triggers a redeployment of the environment.
-- **Inheritance:** Variables are inheritable by default. To prevent the value from being inherited by child environments, use the `--inheritable false` option as shown. For more detail, see [variable level visibility](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility).
+- **Inheritance:** Variables are inheritable by default. To prevent the value from being inherited by child environments, use the `--inheritable false` option as shown. For more detail, see [variable level visibility](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/variable-levels#visibility).
 
 >[!NOTE]
 >

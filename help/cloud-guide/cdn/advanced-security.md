@@ -248,7 +248,7 @@ To request [!DNL Advanced Security]:
 
 1. Contact your Adobe Account team or Adobe Sales representative to discuss [!DNL Advanced Security] for your project.
 
-1. After purchasing [!DNL Advanced Security], [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting [!DNL Advanced Security] enablement. Include your [!DNL Adobe Commerce on Cloud Infrastructure] project ID and the environments requiring enablement (for example, Production and Staging).
+1. After purchasing [!DNL Advanced Security], [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) requesting [!DNL Advanced Security] enablement. Include your [!DNL Adobe Commerce on Cloud Infrastructure] project ID and the environments requiring enablement (for example, Production and Staging).
 
 1. Adobe activates [!DNL Advanced Security] on your Fastly service and configures the initial protection policies. Enablement is usually completed within a few business days of ticket submission.
 
@@ -256,7 +256,7 @@ To request [!DNL Advanced Security]:
 
 >[!NOTE]
 >
->Configuration changes to [!DNL Advanced Security] currently require [submitting a support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Self-service configuration through the Admin UI is planned for a future release.
+>Configuration changes to [!DNL Advanced Security] currently require [submitting a support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). Self-service configuration through the Admin UI is planned for a future release.
 
 ## Limitations
 

@@ -38,7 +38,7 @@ topic_v2:
 
 >[!WARNING]
 >
->To maintain PCI compliance for Adobe Commerce sites deployed on the Cloud platform, set up Fastly on your Starter main branch, Pro Production, and Pro Staging environments. If you use Adobe Commerce in a headless deployment, we highly recommend that you use Fastly to cache GraphQL responses. See [Caching with Fastly](https://developer.adobe.com/commerce/webapi/graphql/usage/caching/#caching-with-fastly) in the *GraphQL Developer Guide*.
+>To maintain PCI compliance for Adobe Commerce sites deployed on the Cloud platform, set up Fastly on your Starter main branch, Pro Production, and Pro Staging environments. If you use Adobe Commerce in a headless deployment, we highly recommend that you use Fastly to cache GraphQL responses. See [Caching with Fastly](https://developer.adobe.com/commerce/webapi/graphql/usage/caching#caching-with-fastly) in the *GraphQL Developer Guide*.
 
 Fastly provides the following services to optimize and secure content delivery operations for Adobe Commerce on cloud infrastructure projects. These services are included with Adobe Commerce on cloud infrastructure at no additional cost.
 
@@ -134,7 +134,7 @@ When you receive the new token, update your Staging or Production environment to
 
 **To change the Fastly API token credential**:
 
-1. [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting new Fastly API credentials.
+1. [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) requesting new Fastly API credentials.
 
    Include your Adobe Commerce on cloud infrastructure project ID and the environments that require a new credential.
 
@@ -182,18 +182,16 @@ DDOS protection is built in to the Fastly CDN service. Once you have enabled Fas
 
 >[!NOTE]
 >
->Protection against Layer 7 attacks is not covered by the Fastly CDN service integrated with Adobe Commerce. For tips on protecting against Layer 7 attacks, see [Checking for DDoS Attacks](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli) and [How to block malicious attacks](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level) in the *Adobe Commerce Knowledge Base*. 
+>Protection against Layer 7 attacks is not covered by the Fastly CDN service integrated with Adobe Commerce. For tips on protecting against Layer 7 attacks, see [How to block malicious attacks](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level) in the *Adobe Commerce Knowledge Base*. 
 
 <!--Link definitions-->
 
-[Caching with Fastly]: https://developer.adobe.com/commerce/webapi/graphql/usage/caching/#caching-with-fastly
-
-[Checking for DDoS attacks]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.html
+[Caching with Fastly]: https://developer.adobe.com/commerce/webapi/graphql/usage/caching#caching-with-fastly
 
 [Fastly CDN module for Magento 2]: https://github.com/fastly/fastly-magento2
 
 [Fastly support ticket]: https://docs.fastly.com/products/support-description-and-sla#support-requests
 
-[How to block malicious traffic]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html
+[How to block malicious traffic]: https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level
 
 [Working with Domains]: https://docs.fastly.com/en/guides/working-with-domains
