@@ -63,7 +63,7 @@ relationships:
   valkey: "cache:valkey"
 ```
 
-The relationship key, valkey, is the name used by the application to access the service. The value, cache:valkey, references the service ID and service type defined in .magento/services.yaml.
+The relationship key, `valkey`, is the name used by the application to access the service. The value, `cache:valkey`, references the service ID and service type defined in `.magento/services.yaml`.
 
 ### Configure the Valkey backend
 
