@@ -48,7 +48,7 @@ cache:
   type: valkey:8.0
 ```
 
-The example version is not universal. Actual default and supported service versions depend on your Adobe Commerce version and current Cloud template. Use the version specified by the current project template.vSee [Configure services](services-yaml.md#service-versions) for more information.
+The example version is not universal. Actual default and supported service versions depend on your Adobe Commerce version and current Cloud template. Use the version specified by the current project template. See [Configure services](services-yaml.md#service-versions) for more information.
 
 >[!WARNING]
 >
@@ -121,35 +121,59 @@ After the deployment completes, verify that the Valkey service relationship is a
 
 ## Verify the service relationship
 
-The `MAGENTO_CLOUD_RELATIONSHIPS` environment variable contains base64-encoded JSON with connection information for the services configured in the environment.
+After deploying the configuration, run the following command from an application container to display the decoded `MAGENTO_CLOUD_RELATIONSHIPS` object:
 
 Use SSH to connect to the remote Cloud environment, then run:
 
 ```terminal
 echo "$MAGENTO_CLOUD_RELATIONSHIPS" | base64 -d | json_pp
 ```
+The command displays all configured service relationships. Locate the valkey relationship to identify the Valkey connection details.
 
-The command displays the complete decoded JSON object. The output can contain multiple relationships, such as database, opensearch, and valkey.
+**Example output**
 
-### Example output
+The following is an abbreviated, valid JSON example showing the `valkey` relationship.
 
-The command displays the complete decoded JSON object for the environment. The output can contain multiple service relationships, such as `database`, `opensearch`, and `valkey`.
-
-The following is an abbreviated, valid JSON example showing only the `valkey` relationship.
 ```json
 {
-  "valkey": [
-    {
-      "host": "valkey.internal",
-      "port": 6379,
-      "path": null,
-      "scheme": "valkey"
-    }
-  ]
+   "database" : [
+      {
+         "host" : "database.internal",
+         "port" : 3306,
+         "path" : "main",
+         "scheme" : "mysql"
+      }
+   ],
+   "opensearch" : [
+      {
+         "host" : "opensearch.internal",
+         "port" : 9200,
+         "path" : null,
+         "scheme" : "http"
+      }
+   ],
+   "valkey" : [
+      {
+         "host" : "valkey.internal",
+         "port" : 6379,
+         "path" : null,
+         "scheme" : "valkey"
+      }
+   ]
 }
 ```
 
 The output varies by environment and service configuration. Do not hard-code hostnames, ports, IP addresses, cluster names, service versions, usernames, or passwords from this example. Use the values returned by `MAGENTO_CLOUD_RELATIONSHIPS` in the target environment.
+
+To display only the Valkey relationship, run:
+
+```terminal
+printf '%s' "$MAGENTO_CLOUD_RELATIONSHIPS" \
+  | base64 -d \
+  | jq '{valkey: .valkey}'
+```
+
+For more information about service relationships, see [Configure services](services-yaml).
 
 ## Using the Valkey CLI
 
