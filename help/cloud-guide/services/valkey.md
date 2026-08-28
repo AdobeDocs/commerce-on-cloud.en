@@ -1,6 +1,6 @@
 ---
 title: Set up Valkey service
-description: Learn how to set up and optimize Valkey as a backend cache solution for Adobe Commerce on Cloud Infrastructure.
+description: Learn how to set up and optimize Valkey as a backend cache solution for Adobe Commerce on cloud infrastructure.
 feature: Cloud, Cache, Services
 exl-id: f8933e0d-a308-4c75-8547-cb26ab6df947
 TQID: https://experienceleague.adobe.com/-aBnwClJGQlRkEfugtChxbjLObLzTu0xl1IvkYUVRsk
@@ -15,12 +15,19 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Set up Valkey service
 
 [Valkey](https://valkey.io) is an optional backend cache solution for Adobe Commerce on cloud infrastructure. Valkey is required when you override the default cache configuration on Adobe Commerce 2.4.9 and later, or on patch releases later than 2.4.5-p16, 2.4.6-p14, 2.4.7-p9, and 2.4.8-p4.
-
-For cache, session, and L2 configuration recommendations, see [Best practices for Valkey and Redis service configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration){target="_blank"} in the _Implementation Playbook Best Practices Guide_.
 
 {{service-instruction}}
 
@@ -28,9 +35,8 @@ For cache, session, and L2 configuration recommendations, see [Best practices fo
 
 To replace Redis with Valkey, update the following files:
 
-- .magento/services.yaml
-- .magento.app.yaml
-- .magento.env.yaml
+- `.magento/services.yaml`
+- `.magento.app.yaml`
 
 ### Configure the service
 
@@ -41,8 +47,8 @@ cache:
   type: valkey:<version>
 ```
 
-For example:
-   
+**Example**
+
 ```yaml
 cache:
   type: valkey:8.0
@@ -65,50 +71,22 @@ relationships:
 
 The relationship key, `valkey`, is the name used by the application to access the service. The value, `cache:valkey`, references the service ID and service type defined in `.magento/services.yaml`.
 
-### Configure the Valkey backend
-
-In `.magento.env.yaml`, configure the Valkey backend appropriate for your Adobe Commerce version.
-
-For Adobe Commerce 2.4.8 and earlier versions that support Valkey, use the remote-synchronized cache backend:
-
-```yaml
-stage:
-  deploy:
-    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
-```
-
-For Adobe Commerce 2.4.9 and later, use the Symfony L2 cache implementation:
-
-```yaml
-stage:
-  deploy:
-    VALKEY_BACKEND: symfony_l2
-```
-
-The symfony_l2 implementation is supported with Valkey and is configured through the `VALKEY_BACKEND` deployment variable. Do not configure it manually in `app/etc/env.php`, because deployment can overwrite manual changes.
-
-See [Deploy variables](../environment/variables-deploy.md) for additional configuration details.
-
-### Enable the replica connection
-
->[!NOTE]
+>[!TIP]
 >
->`VALKEY_USE_SLAVE_CONNECTION` is supported for Adobe Commerce 2.4.8 and later on supported Pro Staging and Production cluster environments that provide a read-only Valkey replica. Before enabling it, verify that the environment provides the required replica connection details. Use the relationship inspection command in [Verify the service relationship](services-yaml.md#service-relationships).
-
-If your Pro environment provides a replica, add the following configuration to `.magento.env.yaml`:
-
-```yaml
-stage:
-  deploy:
-    VALKEY_USE_SLAVE_CONNECTION: true
-```
+>Adobe Commerce communicates with Valkey through the `credis` client library, which works over plain PHP sockets by default. To improve performance, enable the `redis` PHP extension in `.magento.app.yaml`. `credis` uses the compiled extension automatically when it is available.
+>
+>```yaml
+>runtime:
+>  extensions:
+>    - redis
+>```
 
 ### Commit and deploy the changes
 
 Add, commit, and push the configuration changes:
 
 ```terminal
-git add .magento/services.yaml .magento.app.yaml .magento.env.yaml
+git add .magento/services.yaml .magento.app.yaml
 git commit -m "Enable Valkey service"
 git push origin <branch-name>
 ```
@@ -119,6 +97,10 @@ After the deployment completes, verify that the Valkey service relationship is a
 
 {{valkey-newrelic}}
 
+## Customize the Valkey configuration
+
+For cache, session, L2, and replica-connection recommendations, see [Best practices for Valkey and Redis service configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) in the _Implementation Playbook Best Practices Guide_.
+
 ## Verify the service relationship
 
 After deploying the configuration, run the following command from an application container to display the decoded `MAGENTO_CLOUD_RELATIONSHIPS` object:
@@ -128,11 +110,12 @@ Use SSH to connect to the remote Cloud environment, then run:
 ```terminal
 echo "$MAGENTO_CLOUD_RELATIONSHIPS" | base64 -d | json_pp
 ```
+
 The command displays all configured service relationships. Locate the valkey relationship to identify the Valkey connection details.
 
 **Example output**
 
-The following is an abbreviated, valid JSON example showing the `valkey` relationship.
+The following abbreviated example shows the `valkey` relationship. It is not a universal schema.
 
 ```json
 {
@@ -173,7 +156,7 @@ printf '%s' "$MAGENTO_CLOUD_RELATIONSHIPS" \
   | jq '{valkey: .valkey}'
 ```
 
-For more information about service relationships, see [Configure services](services-yaml).
+For more information about service relationships, see [Configure services](services-yaml.md).
 
 ## Using the Valkey CLI
 
@@ -182,31 +165,33 @@ Assuming your Valkey relationship is named `valkey`, use the host and port retur
 ```terminal
 valkey-cli -h <host> -p <port>
 ```
+
 **Example**
 
 ```terminal
 valkey-cli -h valkey.internal -p 6379
 ```
 
-### Get the installed Valkey version
+## Get the installed Valkey version
 
 >[!BEGINTABS]
 
 >[!TAB Integration environment]
 
-On an Integration environment, run:
+On an Integration environment, use the host and port returned by the `valkey` relationship to run:
 
 ```terminal
-valkey-cli -h valkey.internal info | grep version
+valkey-cli -h <host> -p <port> info | grep version
 ```
+
 **Example response**
 
 ```text
-valkey_version:8.0.1
-gcc_version:12.2.0
+valkey_version:<installed-version>
+gcc_version:<installed-version>
 ```
 
-The returned version may differ depending on the Valkey service provisioned for the environment.
+The version and build details vary by environment. Do not treat a displayed example version as a required or universal service version.
 
 >[!TAB Pro Staging and Production]
 
@@ -219,7 +204,7 @@ valkey-server -v
 **Example response**
 
 ```text
-Valkey server v=8.0.1 ...
+Valkey server v=<installed-version> ...
 ```
 
-The version and build details may differ by environment. Treat the displayed version as the authoritative version for the environment where you run the command.
+The version and build details vary by environment. Do not treat a displayed example version as a required or universal service version.
