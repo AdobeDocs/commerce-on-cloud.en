@@ -57,7 +57,7 @@ The example version is not universal. Actual default and supported service versi
 >
 >If you change the service ID, the existing service is removed and a new service is created. Existing data in the removed service is permanently deleted. Back up the environment before renaming a service.
 
-Do not assume that cache and session data carry over when you change the `type` value from `redis:<version>` to `valkey:<version>`, even when you keep the same service ID. Treat the migration as creating a fresh cache: existing cache and session data is not guaranteed to be preserved, and users may be logged out after the migration completes.
+Do not assume that cache and session data persist when you change the `type` value from `redis:<version>` to `valkey:<version>`, even when you keep the same service ID. Treat the migration as creating a fresh cache: existing cache and session data is not guaranteed to be preserved, and users are logged out after the migration completes.
 
 ### Configure the service relationship
 
@@ -102,7 +102,7 @@ For cache, session, L2, and replica-connection recommendations, see [Best practi
 
 ## Verify the service relationship
 
-After deploying the configuration, run the following command from an application container to display the decoded `MAGENTO_CLOUD_RELATIONSHIPS` object:
+To display the decoded `MAGENTO_CLOUD_RELATIONSHIPS` object, run the following command from an application container after deploying the configuration:
 
 Use SSH to connect to the remote Cloud environment, then run:
 
@@ -110,7 +110,7 @@ Use SSH to connect to the remote Cloud environment, then run:
 echo "$MAGENTO_CLOUD_RELATIONSHIPS" | base64 -d | json_pp
 ```
 
-The command displays all configured service relationships. Locate the valkey relationship to identify the Valkey connection details.
+The command displays all configured service relationships. To identify the Valkey connection details, locate the valkey relationship.
 
 **Example output**
 
@@ -214,6 +214,6 @@ The version and build details vary by environment. Do not treat a displayed exam
 
 ### Cache-clean errors reference Redis on a Valkey-configured cache
 
-A pre-deploy cache-clean failure can display error code `[107]` (`clean-redis-cache`) and a `Connection to Redis` message even when the `cache` service is configured as Valkey. `ece-tools` uses this legacy Redis-oriented error code and message for the cache-clean step regardless of which service backs the `cache` relationship, so the wording does not indicate that Redis is installed.
+A pre-deploy cache-clean failure can display error code `[107]` (`clean-redis-cache`) and a `Connection to Redis` message even when the `cache` service is configured as Valkey. `ece-tools` uses this error code and message for the cache-clean step regardless of whether the  backing cache service is Redis or Valkey.
 
 If the underlying error is a DNS failure, such as `Name or service not known` for the relationship host, the deploy step ran before the service relationship was available, or the relationship name in `.magento.app.yaml` does not match the service ID in `.magento/services.yaml`. See [Verify the service relationship](#verify-the-service-relationship).

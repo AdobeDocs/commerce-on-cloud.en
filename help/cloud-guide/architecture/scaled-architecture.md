@@ -37,33 +37,33 @@ Historically, the Pro architecture consisted of three nodes, each containing a f
 
 ### Service tier
 
-There are three service nodes for data storage, cache, and services: **OpenSearch** or **Elasticsearch**, **MariaDB**, **Redis** or **Valkey**, and more. When the service tier approaches capacity, the only way to scale is to increase the server size, such as boosting the CPU power and memory. Capacity is limited to the size of the node that is available. Because the database cluster is designed for high availability, you cannot scale horizontally in a reliable way with the technologies used.
+Each of the three service nodes runs the same set of services: **OpenSearch** or **Elasticsearch** for search, **MariaDB** for the database, and **Redis** or **Valkey** for caching, among others. When the service tier approaches capacity, you can scale only vertically, by increasing the server size (CPU and memory). Capacity is limited to the largest available node size. Because the database cluster is designed for high availability, you cannot scale the database nodes in a reliable way with the technologies used.
 
 ![Service tier scaling](../../assets/scaling-service.png)
 
-Consider an example that the service node instance type is _m5.2xlarge_ with 32-Gb RAM. A service, such as the database, uses a considerable amount of memory (30 Gb). Scaling to the next available instance size _m5.4xlarge_ provides 64-Gb RAM, which doubles the memory and accommodates the growing needs of the database.
+Consider an example where the service node instance type is _m5.2xlarge_ with 32-Gb RAM. A service, such as the database, uses a considerable amount of memory (30 Gb). Scaling to the next available instance size _m5.4xlarge_ provides 64-Gb RAM, which doubles the memory and accommodates the growing needs of the database.
 
-You can further optimize the performance of the service tier by routing traffic based on the node type. By default, the database node is isolated from the web traffic. As an example, you can choose to serve web traffic on the database node.
+You can further optimize the performance of the service tier by routing traffic based on the node type. By default, the database node is isolated from the web traffic. For example, you can choose to serve web traffic on the database node.
 
 ### Web tier
 
-There are three web nodes for processing requests and web traffic: **php-fpm** and **NGINX**. In addition to vertical scaling by increasing power and memory, the web tier can scale horizontally by adding web servers to an existing cluster when constricted at the PHP level. See [Auto scaling](autoscaling.md) to learn how the web nodes scale automatically.
+There are three web nodes for processing requests and web traffic: **php-fpm** and **NGINX**. In addition to vertical scaling by increasing power and memory, the web tier can scale horizontally by adding web servers to an existing cluster when constricted at the PHP level. To learn how the web nodes scale automatically, see [Auto scaling](autoscaling.md).
 
 ![Web tier scaling](../../assets/scaling-web.png)
 
-This complements the vertical scaling provided by the service tier. As the service tier scales in size and power to accommodate a growing database and service usage, the web tier scales in size, power, and instances to accommodate an increase in process requests and higher traffic requirements.
+This complements the vertical scaling provided by the service tier. As the service tier scales to accommodate a growing database, the web tier scales to handle an increase in requests and traffic.
 
-Consider an example that the web node instance type is _C5.2xlarge with eight CPUs and 16-Gb RAM_. The number of requests to the site increased greatly. You can add a C5.2xlarge node to handle the increase in php-fpm processes or you can change each instance type to _C5.4xlarge with 16 CPU and 32-Gb RAM_. Adding a node reduces the risk of insufficient surge capacity.
+Consider an example where the web node instance type is _C5.2xlarge with eight CPUs and 16-Gb RAM_. The number of requests to the site increased greatly. To handle the increase in php-fpm processes, you can add a C5.2xlarge node or you can change each instance type to _C5.4xlarge with 16 CPU and 32-Gb RAM_. Adding a node reduces the risk of insufficient surge capacity.
 
 ## Project structure
 
-Minimally, Pro projects with the Scaled architecture have six nodes available.
+Pro projects with the Scaled architecture have six nodes available.
 
 - 3 web nodes c5.2xlarge (8 CPU, 16-Gb RAM)
 
 - 3 service nodes m5.2xlarge (8 CPU, 32-Gb RAM)
 
-Each project is unique, however, and requires performance monitoring to properly analyze resource management. Each account includes the [New Relic service](../monitor/new-relic-service.md), which automatically connects with the application data and performance analytics to provide dynamic server monitoring. Specifically, you can use the New Relic service to monitor CPU and RAM utilization to determine which nodes require additional resources. As a resource reaches capacity or you notice a degradation in performance based on the analytics, you can create a request to scale your infrastructure to meet the demand.
+Each project is unique, however, and requires performance monitoring to analyze resource management properly. Each account includes the [New Relic service](../monitor/new-relic-service.md), which automatically connects with the application data and performance analytics to provide dynamic server monitoring. Specifically, you can use the New Relic service to monitor CPU and RAM utilization to determine which nodes require additional resources. As a resource reaches capacity or you notice a degradation in performance based on the analytics, you can create a request to scale your infrastructure to meet the demand.
 
 ### SSH access
 
@@ -115,6 +115,6 @@ project-id@server-id:~$
 
 ### Log locations
 
-The log locations vary slightly depending on the node. For example, a database log, such as the **MySQL error log**, is available on a service node (`/var/log/mysql/mysql-error.log`), but it is not available on a web node.
+The log locations vary slightly depending on the node. For example, the **MySQL error log** (`/var/log/mysql/mysql-error.log`) is available on a service node, but not on a web node.
 
 Each Pro account includes the [New Relic Logs service](../monitor/new-relic-service.md), which automatically connects with log data from the application to provide dynamic log management. Aggregated log data from all nodes displays in the New Relic Logs application so that you can troubleshoot performance issues on specific nodes from a single dashboard.
