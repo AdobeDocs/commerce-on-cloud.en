@@ -197,6 +197,8 @@ Redis server v=<installed-version> ...
 
 The version and build details vary by environment. Do not treat a displayed example version as a required or universal service version.
 
+>[!ENDTABS]
+
 ## Troubleshooting Redis
 
 See the following Adobe Commerce Support articles for help with troubleshooting Redis problems:
