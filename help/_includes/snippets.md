@@ -34,7 +34,7 @@ Set the `_merge` option to one of the following:
 >Some **Pro projects** require assistance from Adobe Support to update the route configurations in the `routes.yaml` file and the cron configurations in the `.magento.app.yaml` file. Adobe recommends making and validating all YAML configuration changes in an Integration environment first, and then deploying them to the Staging environment.
 >
 >
->If your changes are not reflected on Staging sites after redeployment and no related error messages in the log, you **must** [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). In the ticket, clearly describe the configuration changes you attempted and attach any updated YAML configuration files in the ticket.
+>If your changes are not reflected on Staging sites after redeployment, and there are no related error messages in the log, you **must** [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). In the ticket, clearly describe the configuration changes you attempted and attach any updated YAML configuration files in the ticket.
 
 ## Pro services support {#pro-update-service}
 

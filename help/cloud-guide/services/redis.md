@@ -176,7 +176,7 @@ redis-cli -h <host> -p <port> info | grep version
 
 ```text
 redis_version:<installed-version>
-gcc_version:<installed-version>
+gcc_version:<gcc-version>
 ```
 
 The version and build details vary by environment. Do not treat a displayed example version as a required or universal service version.

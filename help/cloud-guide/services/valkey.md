@@ -21,9 +21,6 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-    internal-label: Admin
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-    internal-label: Developer
 ---
 # Set up Valkey service
 
@@ -190,7 +187,7 @@ valkey-cli -h <host> -p <port> info | grep version
 
 ```text
 valkey_version:<installed-version>
-gcc_version:<installed-version>
+gcc_version:<gcc-version>
 ```
 
 The version and build details vary by environment. Do not treat a displayed example version as a required or universal service version.

@@ -105,7 +105,7 @@ This _service-id_ value is used in the [`relationships`](../application/properti
 
 ```yaml
 relationships:
-    valkey: "<name>:valkey"
+    valkey: "valkey:valkey"
 ```
 
 You can name multiple instances of each service type. For example, you could use multiple Valkey instances—one for session and one for cache.
