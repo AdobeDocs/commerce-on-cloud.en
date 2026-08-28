@@ -205,3 +205,9 @@ See the following Adobe Commerce Support articles for help with troubleshooting 
 
 - [Managed alerts on Adobe Commerce: Redis memory warning alert](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert)
 - [Managed alerts on Adobe Commerce: Redis memory critical alert](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert)
+
+### Cache-clean errors reference Redis on a Valkey-configured cache
+
+A pre-deploy cache-clean failure can display error code `[107]` (`clean-redis-cache`) and a `Connection to Redis` message even when the `cache` service is configured as Valkey. `ece-tools` uses this legacy Redis-oriented error code and message for the cache-clean step regardless of which service backs the `cache` relationship, so the wording does not indicate that Redis is installed.
+
+If the underlying error is a DNS failure, such as `Name or service not known` for the relationship host, the deploy step ran before the service relationship was available, or the relationship name in `.magento.app.yaml` does not match the service ID in `.magento/services.yaml`. See [Verify the service relationship](#verify-the-service-relationship).
