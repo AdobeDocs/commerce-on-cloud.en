@@ -37,7 +37,7 @@ Historically, the Pro architecture consisted of three nodes, each containing a f
 
 ### Service tier
 
-There are three service nodes for data storage, cache, and services: **OpenSearch** or **Elasticsearch**, **MariaDB**, **Redis**, and more. When the service tier approaches capacity, the only way to scale is to increase the server size, such as boosting the CPU power and memory. Capacity is limited to the size of the node that is available. Because the database cluster is designed for high availability, you cannot scale horizontally in a reliable way with the technologies used.
+There are three service nodes for data storage, cache, and services: **OpenSearch** or **Elasticsearch**, **MariaDB**, **Redis** or **Valkey**, and more. When the service tier approaches capacity, the only way to scale is to increase the server size, such as boosting the CPU power and memory. Capacity is limited to the size of the node that is available. Because the database cluster is designed for high availability, you cannot scale horizontally in a reliable way with the technologies used.
 
 ![Service tier scaling](../../assets/scaling-service.png)
 
@@ -118,4 +118,3 @@ project-id@server-id:~$
 The log locations vary slightly depending on the node. For example, a database log, such as the **MySQL error log**, is available on a service node (`/var/log/mysql/mysql-error.log`), but it is not available on a web node.
 
 Each Pro account includes the [New Relic Logs service](../monitor/new-relic-service.md), which automatically connects with log data from the application to provide dynamic log management. Aggregated log data from all nodes displays in the New Relic Logs application so that you can troubleshoot performance issues on specific nodes from a single dashboard.
-

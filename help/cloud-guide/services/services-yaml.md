@@ -23,7 +23,7 @@ topic_v2:
 ---
 # Configure services
 
-The `services.yaml` file defines the services supported and used by Adobe Commerce on cloud infrastructure, such as MySQL, Redis, and Elasticsearch or OpenSearch. You do not need to subscribe to external service providers. 
+The `services.yaml` file defines the services supported and used by Adobe Commerce on cloud infrastructure, such as MySQL, Redis or Valkey, and Elasticsearch or OpenSearch. You do not need to subscribe to external service providers.
 
 >[!NOTE]
 >
@@ -48,8 +48,7 @@ Adobe Commerce on cloud infrastructure supports the following services, which ca
 
 - [ActiveMQ](activemq.md)
 - [MySQL](mysql.md)
-- [Valkey](valkey.md)
-- [Redis](redis.md)
+- [Redis](redis.md) or [Valkey](valkey.md)
 - [RabbitMQ](rabbitmq.md)
 - [Elasticsearch](elasticsearch.md)
 - [OpenSearch](opensearch.md)
@@ -61,7 +60,7 @@ Adobe Commerce on cloud infrastructure supports the following services, which ca
 
 ## View configured services and versions
 
-You can view example service definitions and disk values in the current template [`services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Actual default and supported service versions depend on your Adobe Commerce version and current cloud template. 
+You can view example service definitions and disk values in the current template [`services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Actual default and supported service versions depend on your Adobe Commerce version and current cloud template.
 
 The following example shows service definitions in the `services.yaml` configuration file:
 
@@ -100,23 +99,23 @@ Use the following format:
 
 ### `service-id`
 
-The `service-id` value identifies the service in the project. You can only use lowercase alphanumeric characters: `a` to `z` and `0` to `9`, such as `redis`.
+The `service-id` value identifies the service in the project. You can only use lowercase alphanumeric characters: `a` to `z` and `0` to `9`, such as `valkey`.
 
 This _service-id_ value is used in the [`relationships`](../application/properties.md#relationships) property of the `.magento.app.yaml` configuration file:
 
 ```yaml
 relationships:
-    redis: "<name>:redis"
+    valkey: "<name>:valkey"
 ```
 
-You can name multiple instances of each service type. For example, you could use multiple Redis instances—one for session and one for cache.
+You can name multiple instances of each service type. For example, you could use multiple Valkey instances—one for session and one for cache.
 
 ```yaml
-redis:
-    type: redis:<version>
+valkey:
+    type: valkey:<version>
 
-redis2:
-    type: redis:<version>
+valkey2:
+    type: valkey:<version>
 ```
 
 Renaming a service in the `services.yaml` file **permanently removes** the following:
@@ -135,7 +134,7 @@ mysql:
 
 ### `disk`
 
-The `disk` value specifies the size of the persistent disk storage (in MB) to allocate to the service. Services that use persistent storage, such as MySQL, must provide a disk value. Services that use memory instead of persistent storage, such as Redis, do not require a disk value.
+The `disk` value specifies the size of the persistent disk storage (in MB) to allocate to the service. Services that use persistent storage, such as MySQL, must provide a disk value. Services that use memory instead of persistent storage, such as Valkey, do not require a disk value.
 
 ```yaml
 mysql:
@@ -164,10 +163,10 @@ You can retrieve the configuration data for all service relationships from the [
    >Abbreviated sample response
 
    ```yaml
-   redis:
+   valkey:
        -
    ...
-           type: 'redis:7.0'
+           type: 'valkey:8.0'
            port: 6379
    opensearch:
        -

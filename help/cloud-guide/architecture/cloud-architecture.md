@@ -93,7 +93,7 @@ You can configure the following services:
 
 - [PHP](../application/php-settings.md)
 - [MySQL](../services/mysql.md)
-- [Redis](../services/redis.md)
+- [Redis](../services/redis.md) or [Valkey](../services/valkey.md)
 - [RabbitMQ](../services/rabbitmq.md)
 - [ActiveMQ](../services/activemq.md)
 - [Elasticsearch](../services/elasticsearch.md)

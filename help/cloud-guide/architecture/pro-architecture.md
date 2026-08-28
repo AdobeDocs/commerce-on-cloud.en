@@ -84,7 +84,7 @@ For best performance in the integration environment follow these best practices:
 
 - Restrict the catalog size - For reference, the Sample Data contains about 2,048 products. Try reducing your catalog size to around 4,000-5,000 products.
   To check the number of products in the catalog, run the following MySQL query:
-  
+
   ```sql
   select distinct count(entity_id) from catalog_product_entity;
   ```
@@ -162,7 +162,7 @@ The production environment has three virtual machines (VMs) behind an Elastic Lo
     - `pub/static`
     - `app/etc`
 
-- **Redis**—one server per VM with only one active and the other two as replicas
+- **Redis** or **Valkey**—one server per VM with only one active and the other two as replicas.
 
 - **Elasticsearch**—search for Adobe Commerce on cloud infrastructure 2.2 to 2.4.3-p2
 
