@@ -2,8 +2,29 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Aug 21 15:31:47 2026
+updated: Fri Aug 28 17:20:53 2026
 entries:
+- description: Updated [CLI reference](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)
+    after ECE-Tools release, v2002.2.13.
+  versions: ''
+  type: technical
+  date: August 24, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-on-cloud.en/pull/266
+  merge_commit: 0ac31574952505e92744535f861591abcdd8ac56
+  contributor: commercedocs_adobe
+  labels:
+  - devops
+  - technical
+- description: Added [vertical autoscaling](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/autoscaling#vertical-auto-scaling)
+    availability to Adobe Commerce on Cloud Infrastructure.
+  versions: ''
+  type: major-update
+  date: August 24, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-on-cloud.en/pull/268
+  merge_commit: cd222546c1c57f5250408d9e423dc586284a34fc
+  contributor: jhoover_adobe
+  labels:
+  - major-update
 - description: Updated [CLI reference](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)
     after ECE-Tools release, v2002.2.12. No other changes were made besides the version
     number.
