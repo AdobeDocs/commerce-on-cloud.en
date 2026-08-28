@@ -23,11 +23,11 @@ topic_v2:
 ---
 # Configure services
 
-The `services.yaml` file defines the services supported and used by Adobe Commerce on cloud infrastructure, such as MySQL, Redis, and Elasticsearch or OpenSearch. You do not need to subscribe to external service providers. 
+The `services.yaml` file defines the services supported and used by Adobe Commerce on cloud infrastructure, such as MySQL, Redis or Valkey, and Elasticsearch or OpenSearch. You do not need to subscribe to external service providers.
 
 >[!NOTE]
 >
->The `.magento/services.yaml` file is managed locally in the `.magento` directory of your project. During deployment, Adobe Commerce on cloud infrastructure uses this configuration to provision supported services for the target environment. The `.magento` directory is removed from the remote server after deployment, so you will not find `services.yaml` on the deployed environment.
+>The `.magento/services.yaml` file is managed locally in the `.magento` directory of your project. During deployment, Adobe Commerce on cloud infrastructure uses this configuration to provision supported services for the target environment. The `.magento` directory is removed from the remote server after deployment, so `services.yaml` does not exist on the deployed environment.
 
 The deploy script uses the configuration files in the `.magento` directory to provision the environment with the configured services. A service becomes available to your application if it is included in the [`relationships`](../application/properties.md#relationships) property of the `.magento.app.yaml` file. The `services.yaml` file contains the _type_ and _disk_ values. Service type defines the service _name_ and _version_.
 
@@ -48,20 +48,19 @@ Adobe Commerce on cloud infrastructure supports the following services, which ca
 
 - [ActiveMQ](activemq.md)
 - [MySQL](mysql.md)
-- [Valkey](valkey.md)
-- [Redis](redis.md)
+- [Redis](redis.md) or [Valkey](valkey.md)
 - [RabbitMQ](rabbitmq.md)
 - [Elasticsearch](elasticsearch.md)
 - [OpenSearch](opensearch.md)
 
 >[!NOTE]
->You must [upgrade RabbitMQ sequentially between available versions](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service), for example, you cannot upgrade from 3.9 directly to 4.1
+>[Upgrade RabbitMQ sequentially between available versions](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service). For example, do not upgrade from 3.9 directly to 4.1.
 >
->After upgrading to a new version of RabbitMQ, trigger a full deployment to ensure that your custom message queues are recreated in RabbitMQ.
+>To ensure that your custom message queues are recreated in RabbitMQ after upgrading to a new version, trigger a full deployment.
 
 ## View configured services and versions
 
-You can view example service definitions and disk values in the current template [`services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Actual default and supported service versions depend on your Adobe Commerce version and current cloud template. 
+You can view example service definitions and disk values in the current template [`services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Actual default and supported service versions depend on your Adobe Commerce version and current cloud template.
 
 The following example shows service definitions in the `services.yaml` configuration file:
 
@@ -88,7 +87,7 @@ activemq-artemis:
 
 ## Service values
 
-You must provide the service ID and service type configuration `type: <name>:<version>`. If the service uses persistent storage, then you must provide a disk value.
+Provide the service ID and service type configuration `type: <name>:<version>`. If the service uses persistent storage, then you must provide a disk value.
 
 Use the following format:
 
@@ -100,29 +99,29 @@ Use the following format:
 
 ### `service-id`
 
-The `service-id` value identifies the service in the project. You can only use lowercase alphanumeric characters: `a` to `z` and `0` to `9`, such as `redis`.
+The `service-id` value identifies the service in the project. You can only use lowercase alphanumeric characters: `a` to `z` and `0` to `9`, such as `valkey`.
 
 This _service-id_ value is used in the [`relationships`](../application/properties.md#relationships) property of the `.magento.app.yaml` configuration file:
 
 ```yaml
 relationships:
-    redis: "<name>:redis"
+    valkey: "valkey:valkey"
 ```
 
-You can name multiple instances of each service type. For example, you could use multiple Redis instances—one for session and one for cache.
+You can name multiple instances of each service type. For example, you could use multiple Valkey instances—one for session and one for cache.
 
 ```yaml
-redis:
-    type: redis:<version>
+valkey:
+    type: valkey:<version>
 
-redis2:
-    type: redis:<version>
+valkey2:
+    type: valkey:<version>
 ```
 
 Renaming a service in the `services.yaml` file **permanently removes** the following:
 
 - The existing service before creating a service with the new name you specify.
-- All existing data for the service is removed. Adobe strongly recommends that you [backup your Starter environment](../storage/snapshots.md) before you change the name of an existing service.
+- All existing data for the service is removed. Adobe recommends that you [backup your Starter environment](../storage/snapshots.md) before you change the name of an existing service.
 
 ### `type`
 
@@ -135,7 +134,7 @@ mysql:
 
 ### `disk`
 
-The `disk` value specifies the size of the persistent disk storage (in MB) to allocate to the service. Services that use persistent storage, such as MySQL, must provide a disk value. Services that use memory instead of persistent storage, such as Redis, do not require a disk value.
+The `disk` value specifies the size of the persistent disk storage (in MB) to allocate to the service. Services that use persistent storage, such as MySQL, must provide a disk value. Services that use memory instead of persistent storage, such as Valkey, do not require a disk value.
 
 ```yaml
 mysql:
@@ -143,7 +142,7 @@ mysql:
     disk: 5120
 ```
 
-The current default storage amount per project is 5 GB, or 512 0MB. You can distribute this amount between your application and each of its services.
+The current default storage amount per project is 5 GB, or 5120 MB. You can distribute this amount between your application and each of its services.
 
 ## Service relationships
 
@@ -164,10 +163,10 @@ You can retrieve the configuration data for all service relationships from the [
    >Abbreviated sample response
 
    ```yaml
-   redis:
+   valkey:
        -
    ...
-           type: 'redis:7.0'
+           type: 'valkey:8.0'
            port: 6379
    opensearch:
        -
@@ -197,11 +196,11 @@ You can retrieve the configuration data for all service relationships from the [
    php ./vendor/bin/ece-tools env:config:show services
    ```
 
-1. Confirm the `service` and `type` from the response. The response provides connection information, such as the IP address and port number and any required username and password credentials.
+1. Confirm the `service` and `type` from the response. The response provides connection information, such as the IP address, port number, and required username and password credentials.
 
 ## Service versions
 
-Service version and compatibility support for Adobe Commerce on cloud infrastructure is determined by versions deployed and tested on the Cloud infrastructure, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. See [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) in the _Installation_ guide for a list of third-party software dependencies that Adobe has tested with specific Adobe Commerce and Magento Open Source releases.
+Versions deployed and tested on the Cloud infrastructure determine service version and compatibility support for Adobe Commerce on cloud infrastructure, which sometimes differ from versions supported by Adobe Commerce on-premises deployments. See [System requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) in the _Installation_ guide for a list of third-party software dependencies that Adobe has tested with specific Adobe Commerce and Magento Open Source releases.
 
 ### Software EOL checks
 
@@ -329,7 +328,7 @@ When you change the service version, you must update the service configuration i
        disk: 5120
    ```
 
-1. Change the relationships configuration in the `.magento.app.yaml` file to use the new service.
+1. To use the new service, change the relationships configuration in the `.magento.app.yaml` file.
 
    > Original `.magento.app.yaml` configuration
 
