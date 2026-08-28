@@ -37,7 +37,7 @@ To replace Redis with Valkey, update the following files:
 
 ### Configure the service
 
-In `.magento/services.yaml`, replace the Redis service definition with a Valkey service definition. Replace <version> with a Valkey version supported by your Adobe Commerce version and current Cloud template.
+In `.magento/services.yaml`, replace the Redis service definition with a Valkey service definition. Replace `<version>` with a Valkey version supported by your Adobe Commerce version and current Cloud template.
 
 ```yaml
 cache:
