@@ -80,13 +80,13 @@ Use the following instructions for service setup on Pro Integration environments
 
 >[!NOTE]
 >
->To change the service configuration on Pro Production and Staging environments, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). For scheduling requirements and customer availability guidance, see [Pro services support](services-yaml.md#pro-services-support) in _Configure services_.
+>To change the service configuration on Pro Production and Staging environments, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). For scheduling requirements and customer availability guidance, see [Pro services support](https://experienceleague.adobe.com/en/docs/cloud-guide/services/services-yaml.md#pro-services-support) in _Configure services_.
 
 ## Service change {#service-change-tip}
 
 >[!TIP]
 >
->After initial service setup, you can change the software version for an installed service by updating the `services.yaml` and `.magento.app.yaml` configuration files. See [Change service version](/help/cloud-guide/services/services-yaml.md#change-service-version) for guidance on upgrading or downgrading a service. This self-service method does not apply to Pro Staging or Production environments—see [Pro services support](services-yaml.md#pro-services-support) in _Configure services_.
+>After initial service setup, you can change the software version for an installed service by updating the `services.yaml` and `.magento.app.yaml` configuration files. See [Change service version](/help/cloud-guide/services/services-yaml.md#change-service-version) for guidance on upgrading or downgrading a service. This self-service method does not apply to Pro Staging or Production environments—see [Pro services support](https://experienceleague.adobe.com/en/docs/cloud-guide/services/services-yaml.md#pro-services-support) in _Configure services_.
 
 ## Stuck deployment tip {#stuck-deployment-tip}
 
