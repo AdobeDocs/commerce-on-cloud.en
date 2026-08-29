@@ -172,7 +172,7 @@ Service version and compatibility support is determined by versions tested and d
    }
    ```
 
-{{pro-update-service}}
+For Pro service upgrade scheduling requirements and customer availability guidance, see [Pro services support](services-yaml.md#pro-services-support) in _Configure services_.
 
 ## Restart the OpenSearch service
 

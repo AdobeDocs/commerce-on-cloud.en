@@ -40,7 +40,7 @@ Changing a service configuration causes a deployment to provision the environmen
 - All Starter environments including Production `master`
 - Pro integration environments
 
-{{pro-update-service}}
+{{$include /help/_includes/pro-services-support.md}}
 
 ## Default and supported services
 

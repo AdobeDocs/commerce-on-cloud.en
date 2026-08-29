@@ -30,14 +30,14 @@ You can upgrade the Adobe Commerce code base to a newer version. Before upgradin
  Depending on the environment type (Development, Staging, or Production), your upgrade tasks may include the following:
 
 - Upgrade third-party extensions to the latest supported version.
-- For Pro projects, submit an Adobe Commerce Support ticket to install or update services in Staging and Production environments.
-- For development/integration/PR branches:
-  - Update the `.magento/services.yaml` file with new versions for MariaDB (MySQL), OpenSearch, RabbitMQ, and Redis or Valkey for compatibility with new Adobe Commerce versions.
-  - Update the `.magento.app.yaml` file with new settings for hooks and environment variables.
+- Update the `.magento/services.yaml` file with the required service versions for MariaDB (MySQL), OpenSearch, RabbitMQ, and Redis or Valkey so they remain compatible with the target Adobe Commerce version.
+  - For development/integration/PR branches, these changes are used directly as part of the environment configuration.
+  - For Pro Staging and Production environments, Adobe Commerce Support performs the actual service installation or update, but you must still keep `.magento/services.yaml` current, complete, and valid, because its contents are validated during deployment.
+- Update the `.magento.app.yaml` file with new settings for hooks and environment variables.
 
 {{upgrade-tip}}
 
-{{pro-update-service}}
+{{$include /help/_includes/pro-services-support.md}}
 
 ## Configuration files
 
