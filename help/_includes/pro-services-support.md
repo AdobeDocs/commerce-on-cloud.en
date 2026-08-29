@@ -26,6 +26,8 @@ To request and complete a Pro service upgrade in Staging or Production, follow t
 
    Issues caused by third-party modules, custom code, or dependency compatibility often surface during the redeployment that follows a service upgrade. To validate multiple service upgrades one at a time, a reasonable order is Valkey or Redis, then RabbitMQ, then OpenSearch, then MariaDB. This isn't a required sequence—database upgrades carry the highest operational impact and deserve the most caution.
 
+   Adobe can't guarantee the exact duration of a Production maintenance window in advance, since timing depends on the environment and the services involved. Use the time your Staging upgrade takes as a practical estimate when planning the Production window.
+
 1. **Redeploy the environment** after Adobe completes the service upgrade so the change takes effect, even if the Adobe Commerce application version doesn't change.
 
    If the upgrade includes OpenSearch, also plan for a full reindex. Adobe cannot guarantee zero downtime for a service upgrade, so plan a maintenance window that allows time to redeploy, reindex if needed, and validate the storefront and Admin before reopening the site.
