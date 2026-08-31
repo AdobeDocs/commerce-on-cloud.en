@@ -28,7 +28,7 @@ last-update: 2026-08-28
 ---
 # Commerce on Cloud Infrastructure
 
-Adobe Commerce on cloud infrastructure provides an automated hosting platform with a **self-service** approach to building, deploying, and managing your [!DNL Commerce] application in a cloud-native environment. Adobe Commerce on cloud infrastructure comes with additional features that set it apart from the on-premises Adobe Commerce and Magento Open Source platforms:
+Adobe Commerce on cloud infrastructure provides an automated hosting platform with a **self-service** approach to building, deploying, and managing your [!DNL Commerce] application in a cloud-native environment. Adobe Commerce on cloud infrastructure comes with additional features that distinguish it from the on-premises Adobe Commerce and Magento Open Source platforms:
 
 - A pre-provisioned infrastructure that includes PHP, MySQL (MariaDB), [!DNL Redis], message queue services ([!DNL RabbitMQ] or [!DNL ActiveMQ]), and supported search engine technologies.
 - Git-based workflow with automatic build and deploy for efficient rapid development and continuous deployment every time you push code changes in a Platform as a Service (PaaS) environment.
@@ -68,7 +68,7 @@ The following sections provide details about the different AWS and Azure regions
 
 >[!NOTE]
 >
-> Only on-premises in China and Russia. All merchants that require integration environments must use US regions.
+> Only on-premises deployments are supported in China and Russia. All merchants that require integration environments must use US regions.
 
 ## Adobe Commerce documentation
 

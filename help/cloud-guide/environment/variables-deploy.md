@@ -456,7 +456,7 @@ Adobe Commerce version 2.3.0 and later includes the following backend models:
 - `\Magento\Framework\Cache\Backend\Redis`
 - `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache`
 
-The example how to set `REDIS_BACKEND`
+How to set `REDIS_BACKEND`:
 
 ```yaml
 stage:
@@ -475,7 +475,7 @@ stage:
 
 >[!TIP]
 >
->The `REDIS_USE_SLAVE_CONNECTION` variable is supported only on Adobe Commerce on cloud infrastructure Staging and Production Pro cluster environments and is not supported on Starter projects.
+>The `REDIS_USE_SLAVE_CONNECTION` variable is supported only on [!DNL Adobe Commerce on cloud infrastructure] Staging and Production Pro cluster environments and is not supported on Starter projects.
 
 Adobe Commerce can read multiple Redis instances asynchronously. Set to `true` to automatically use a _read-only_ connection to a Redis instance to receive read-only traffic on a non-master node. This connection improves performance through load balancing, because only one node handles read-write traffic. Set to `false` to remove any existing read-only connection array from the `env.php` file.
 

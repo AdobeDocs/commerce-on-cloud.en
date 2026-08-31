@@ -110,7 +110,7 @@ relationships:
     redis: "<name>:redis"
 ```
 
-You can name multiple instances of each service type. For example, you could use multiple Redis instances—one for session and one for cache.
+You can name multiple instances of each service type. For example, use multiple Redis instances—one for session and one for cache.
 
 ```yaml
 redis:
@@ -120,10 +120,10 @@ redis2:
     type: redis:<version>
 ```
 
-Renaming a service in the `services.yaml` file **permanently removes** the following:
+Renaming a service in the `services.yaml` file:
 
-- The existing service before creating a service with the new name you specify.
-- All existing data for the service is removed. Adobe strongly recommends that you [back up your Starter environment](../storage/snapshots.md) before you change the name of an existing service.
+- **Permanently removes** the existing service before creating a service with the new name you specify.
+- **Permanently removes** all existing data for the service. Adobe strongly recommends that you [back up your Starter environment](../storage/snapshots.md) before you change the name of an existing service.
 
 ### `type`
 

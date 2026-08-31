@@ -40,7 +40,7 @@ Environment variables that are specific to Adobe Commerce on cloud infrastructur
 >
 >![Environment variable example](../../assets/set-env-variable-ui.png)
 
-Since values can change over time, it is best to inspect the variable at runtime and use it to configure your application. For example, use the `MAGENTO_CLOUD_RELATIONSHIPS` variable to retrieve environment-related relationships as follows:
+Since values can change over time, you should inspect the variable at runtime and use it to configure your application. For example, use the `MAGENTO_CLOUD_RELATIONSHIPS` variable to retrieve environment-related relationships as follows:
 
 ```php
 <?php

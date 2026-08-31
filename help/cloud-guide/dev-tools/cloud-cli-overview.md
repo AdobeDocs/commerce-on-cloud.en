@@ -29,7 +29,7 @@ This tool extends the functionality of the [[!DNL Cloud Console]](../../get-star
 
 >[!NOTE]
 >
->This is a local tool and is only supported on Unix-based operating systems. Windows is not supported. It cannot be installed on the Cloud environment (which is read-only) using the method described on this page. You can only install modules on the Cloud environment through one of the following **deployment workflows**.
+>This local tool is only supported on Unix-based operating systems. Windows is not supported. It cannot be installed on the Cloud environment (which is read-only) using the method described on this page. You can only install modules on the Cloud environment through one of the following **deployment workflows**.
 >
 >- [Pro deployment workflow](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
 >- [Starter deployment workflow](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
@@ -126,7 +126,7 @@ Are you sure you want to redeploy the environment <environment-name>? [Y/n]
 
 ## Git commands
 
-You may notice that some of these commands are similar to Git commands. The `magento-cloud` commands directly connect to the Git-based Cloud project with additional features. If you create a branch without using the `magento-cloud` CLI, it is not "activated" and does not automatically build when you push changes to the remote environment. The `magento-cloud` CLI command includes activation.
+Some of these commands are similar to Git commands. The `magento-cloud` commands directly connect to the Git-based Cloud project with additional features. If you create a branch without using the `magento-cloud` CLI, it is not "activated" and does not automatically build when you push changes to the remote environment. The `magento-cloud` CLI command includes activation.
 
 To create a branch, use the `magento-cloud` command so the branch is activated.
 
@@ -189,13 +189,13 @@ The following steps demonstrate using the CLI and Git commands interchangeably t
    magento-cloud environment:checkout <environment-ID>
    ```
 
-   Git commands only checkout the Git branch. The `magento-cloud checkout` command checks out the branch and switches to the active environment.
+   Git commands only check out the Git branch. The `magento-cloud checkout` command checks out the branch and switches to the active environment.
 
    >[!TIP]
    >
    >You can create an environment branch using the `magento-cloud environment:branch <environment-name> <parent-environment-ID>` command syntax. It may take some additional time to create and activate an environment branch.
 
-1. Use the environment ID to pull any updated code to your local environment. This is not necessary if the environment branch is new.
+1. Use the environment ID to pull any updated code to your local environment. This step is not necessary if the environment branch is new.
 
    ```bash
    git pull origin <environment-ID>

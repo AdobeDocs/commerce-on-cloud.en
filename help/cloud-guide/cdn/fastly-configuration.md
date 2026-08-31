@@ -35,7 +35,7 @@ Fastly works with Varnish to provide fast caching capabilities and a Content Del
 >
 >Fastly is not available in integration environments.
 
-Complete the following steps to enable, configure, and test Fastly early in your site development process to enable secure access to your site.
+Complete the following steps to enable, configure, and test Fastly during the early stages of your site development process to enable secure access to your site.
 
 - Get Fastly credentials for Staging and Production environments
 - Enable Fastly CDN caching
@@ -192,7 +192,7 @@ This automation requires you to update the DNS configuration for your site to su
 >
 >If you have a Production domain that is not active, use the ACME challenge CNAME records for domain validation. Adding the records to your DNS configuration early allows Adobe to provision the SSL/TLS certificate with the correct domains before site launch. Before launching to production, you must replace these placeholder records with the CNAME records provided by Adobe.
 
-When domain validation completes, Adobe provisions the Let's Encrypt TLS/SSL certificate, and uploads it to live Staging or Production environments. This process can take up to 12 hours. Adobe recommends that you complete the DNS configuration updates several days in advance to prevent delays in site development and site launch.
+When domain validation completes, Adobe provisions the Let's Encrypt TLS/SSL certificate, and uploads it to live Staging or Production environments. This process can take up to 12 hours. Adobe recommends that you complete the DNS configuration updates several days in advance to prevent site development and launch delays.
 
 ## Update DNS configuration with development settings
 
@@ -299,7 +299,7 @@ After you complete the DNS configuration changes, use the [cURL](https://curl.se
    curl -vo /dev/null -H Fastly-Debug:1 --resolve <live-URL-hostname>:443:<live-IP-address>
    ```
 
-1. In the response, verify the [headers](fastly-troubleshooting.md#check-cache-hit-and-miss-response-headers) to ensure that Fastly is working. For example, you should see following unique headers in the response:
+1. In the response, verify the [headers](fastly-troubleshooting.md#check-cache-hit-and-miss-response-headers) to ensure that Fastly is working. For example, see the following unique headers in the response:
 
    ```http
    < Fastly-Magento-VCL-Uploaded: 1.2.228
