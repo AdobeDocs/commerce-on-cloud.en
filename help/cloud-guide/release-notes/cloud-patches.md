@@ -1,6 +1,6 @@
 ---
 title: Cloud Patches for Commerce
-description: See a list of the latest improvements to the Cloud Patches package.
+description: Learn about the latest improvements to the Cloud Patches for Commerce package, including security fixes, cache enhancements, and patch reliability updates.
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00.000Z
 exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913

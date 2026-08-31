@@ -1,6 +1,6 @@
 ---
 title: Configure Fastly services
-description: Learn how to set up and configure Fastly services for your Adobe Commerce project.
+description: Learn how to set up, configure, and test Fastly caching, VCL snippets, and the Web Application Firewall (WAF) for your Staging and Production environments.
 feature: Cloud, Configuration, Iaas, Cache, Security
 exl-id: f9ce1e8b-4e9f-488e-8a4d-f866567c41d8
 TQID: https://experienceleague.adobe.com/sDx6n5Qgt1lI3-3FDzhUR-JyKgI59woXmoVHSjKFT9w
@@ -37,11 +37,11 @@ Fastly works with Varnish to provide fast caching capabilities and a Content Del
 
 Complete the following steps to enable, configure, and test Fastly early in your site development process to enable secure access to your site.
 
--  Get Fastly credentials for Staging and Production environments
--  Enable Fastly CDN caching
--  Upload Fastly VCL snippets
--  Update DNS configuration to route traffic to the Fastly service
--  Test Fastly caching
+- Get Fastly credentials for Staging and Production environments
+- Enable Fastly CDN caching
+- Upload Fastly VCL snippets
+- Update DNS configuration to route traffic to the Fastly service
+- Test Fastly caching
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ You need the Fastly credentials to configure Fastly CDN services from the Adobe 
 
 ## Fastly Admin Dashboard access
 
-With Adobe Commerce on cloud infrastructure, you cannot access the Fastly Admin Dashboard directly. 
+With Adobe Commerce on cloud infrastructure, you cannot access the Fastly Admin Dashboard directly.
 
 Use the Adobe Commerce Admin to review and update the Fastly configuration for your environments. If you cannot resolve an issue using the Fastly capabilities in the Admin, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
@@ -71,7 +71,7 @@ On Cloud Pro projects, check the credentials from the IaaS-mounted shared direct
 
    Staging and Production environments have unique credentials. You must get the credentials for each environment.
 
-**Get credentials For Cloud Starter projects**:
+**Get credentials for Cloud Starter projects**:
 
 On Cloud Starter projects, get the credentials from the Cloud Console or using the Cloud CLI:
 
@@ -107,33 +107,33 @@ You need the following components to enable and configure Fastly services:
 
 - The latest version of the [Fastly CDN for Magento 2 module](fastly.md#fastly-cdn-module-for-magento-2) is installed in the Staging and Production environments. See [Upgrade Fastly](#upgrade-the-fastly-module).
 
--  [Fastly credentials](#get-fastly-credentials) for Adobe Commerce on cloud infrastructure Staging and Production environments
+- [Fastly credentials](#get-fastly-credentials) for Adobe Commerce on cloud infrastructure Staging and Production environments
 
 **To enable Fastly CDN caching in Staging and Production**:
 
 {{admin-login-step}}
 
-1. Click **Stores** > Settings > **Configuration** > **Advanced** > **System** and expand **Full Page Cache**.
+1. Click **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** and expand **[!UICONTROL Full Page Cache]**.
 
    ![Expand to select Fastly](../../assets/cdn/fastly-menu.png)
 
-1. In the _Caching Application_ section, remove the selection from **Use system value**, and then select **Fastly CDN** from the drop-down list.
+1. In the _[!UICONTROL Caching Application]_ section, remove the selection from **[!UICONTROL Use system value]**, and then select **[!UICONTROL Fastly CDN]** from the drop-down list.
 
    ![Choose Fastly](../../assets/cdn/fastly-enable-admin.png)
 
-1. Expand **Fastly Configuration** and [choose caching options](https://github.com/fastly/fastly-magento2/blob/master/Documentation/CONFIGURATION.md#configure-the-module).
+1. Expand **[!UICONTROL Fastly Configuration]** and [choose caching options](https://github.com/fastly/fastly-magento2/blob/master/Documentation/CONFIGURATION.md#configure-the-module).
 
-1. After configuring the caching options, click **Save Config** at the top of the page.
+1. After configuring the caching options, click **[!UICONTROL Save Config]** at the top of the page.
 
 1. Clear the cache according to the notification.
 
-1. Continue configuring Fastly by navigating back to **Stores** > **Settings** > **Configuration** > **Advanced** > **System** > **Fastly Configuration**.
+1. Continue configuring Fastly by navigating back to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Fastly Configuration]**.
 
 ### Test Fastly credentials
 
-1. On the Admin, navigate to **Stores** > Settings > **Configuration** > **Advanced** > **System** > **Fastly Configuration**.
+1. On the Admin, navigate to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Fastly Configuration]**.
 
-1. If needed, add the **Fastly service ID** and **API token** values for your project environment.
+1. If needed, add the **[!UICONTROL Fastly service ID]** and **[!UICONTROL API token]** values for your project environment.
 
    ![Fastly credentials Admin](../../assets/cdn/fastly-credentials-admin-ui.png)
 
@@ -141,9 +141,9 @@ You need the following components to enable and configure Fastly services:
    >
    >Do not select the link to create the Fastly API token. Instead, use the [Fastly credentials (Service ID and API token) provided by Adobe](#get-fastly-credentials).
 
-1. Click **Test credentials**.
+1. Click **[!UICONTROL Test credentials]**.
 
-1. If the test succeeds, click **Save Config**, and then clear the cache.
+1. If the test succeeds, click **[!UICONTROL Save Config]**, and then clear the cache.
 
    If the test fails, verify that the correct service ID and API token values match the credentials for the current environment.
 
@@ -163,7 +163,7 @@ After you enable the Fastly module, upload the default [VCL code](https://github
 
 **To upload the Fastly VCL**:
 
-1. In the _Fastly Configuration_ section, click **Upload VCL to Fastly** as the following figure shows.
+1. In the _[!UICONTROL Fastly Configuration]_ section, click **[!UICONTROL Upload VCL to Fastly]** as the following figure shows.
 
    ![Upload a Magento VCL to Fastly](../../assets/cdn/fastly-upload-vcl-admin.png)
 
@@ -179,14 +179,14 @@ Adobe provides a Domain-Validated Let's Encrypt SSL/TLS certificate to serve sec
 
 To enable the SSL/TLS certificates for Adobe Commerce environments, Adobe automation completes the following steps:
 
--  Validates domain ownership
--  Provisions a Let's Encrypt SSL/TLS certificate that covers specified top-level and subdomains for your stores
--  Uploads the certificate to the Cloud environment when the site is live
+- Validates domain ownership
+- Provisions a Let's Encrypt SSL/TLS certificate that covers specified top-level and subdomains for your stores
+- Uploads the certificate to the Cloud environment when the site is live
 
 This automation requires you to update the DNS configuration for your site to supply domain validation information. Use **one** of the following methods:
 
--  **DNS validation**–For live sites, update your DNS configuration with CNAME records that point to the Fastly service
--  **ACME challenge CNAME records**–Update your DNS configuration with ACME challenge CNAME records provided by Adobe for each domain in your environment
+- **DNS validation**–For live sites, update your DNS configuration with CNAME records that point to the Fastly service
+- **ACME challenge CNAME records**–Update your DNS configuration with ACME challenge CNAME records provided by Adobe for each domain in your environment
 
 >[!TIP]
 >
@@ -221,12 +221,12 @@ To route traffic from your store URLs to the Fastly service update your DNS conf
 
 **Prerequisites:**
 
--  Enable the Fastly module.
--  Upload the default Fastly VCL code.
--  Provide a list of top-level and subdomains for each environment to Adobe, or submit an Adobe Commerce Support ticket.
--  Wait for confirmation that the specified domains have been added to your Cloud environments.
--  On Starter projects, add the domains to your Fastly service configuration. See [Manage domains](fastly-custom-cache-configuration.md#manage-domains).
--  For information about updating the DNS configuration, check with your [DNS registrar](https://lookup.icann.org/) for the correct method for your domain service.
+- Enable the Fastly module.
+- Upload the default Fastly VCL code.
+- Provide a list of top-level and subdomains for each environment to Adobe, or submit an Adobe Commerce Support ticket.
+- Wait for confirmation that the specified domains have been added to your Cloud environments.
+- On Starter projects, add the domains to your Fastly service configuration. See [Manage domains](fastly-custom-cache-configuration.md#manage-domains).
+- For information about updating the DNS configuration, check with your [DNS registrar](https://lookup.icann.org/) for the correct method for your domain service.
 
 **To update your DNS configuration for development**:
 

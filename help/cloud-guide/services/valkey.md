@@ -1,6 +1,6 @@
 ---
 title: Set up Valkey service
-description: Learn how to set up and optimize Valkey as a backend cache solution for Adobe Commerce on Cloud Infrastructure.
+description: Learn how to configure Valkey as a backend cache for Adobe Commerce on Cloud Infrastructure, including replacing Redis and customizing cache backend settings.
 feature: Cloud, Cache, Services
 exl-id: f8933e0d-a308-4c75-8547-cb26ab6df947
 TQID: https://experienceleague.adobe.com/-aBnwClJGQlRkEfugtChxbjLObLzTu0xl1IvkYUVRsk
@@ -47,13 +47,13 @@ See [Configure Valkey](https://experienceleague.adobe.com/en/docs/commerce-opera
        valkey: "cache:valkey"
    ```
 
-1. Configure `.magento.env.yaml` to replace the Redis configuration as follows:.
+1. Configure `.magento.env.yaml` to replace the Redis configuration as follows:
 
    ```yaml
-    stage:
-        deploy:
-        VALKEY_USE_SLAVE_CONNECTION: true
-        VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+   stage:
+     deploy:
+       VALKEY_USE_SLAVE_CONNECTION: true
+       VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
    ```
 
    >[!TIP]
@@ -72,19 +72,19 @@ See [Configure Valkey](https://experienceleague.adobe.com/en/docs/commerce-opera
 
 {{valkey-newrelic}}
 
-## Using the Valkey CLI
+## Use the Valkey CLI
 
 Assuming your Valkey relationship is named `valkey`, you can access it using the `valkey-cli` tool.
 
 1. Use SSH to connect to the integration environment with Valkey installed and configured.
 
-1. Open an SSH tunnel to a host.
+1. Connect to the Valkey instance using the `valkey-cli` tool.
 
    ```bash
    valkey-cli -h valkey.internal
    ```
 
-## Get installed Valkey version
+## Get the installed Valkey version
 
 Use the following command to get the Valkey version installed on an integration environment:
 
@@ -127,7 +127,7 @@ Response:
         "fragment" : null,
         "host" : "valkeycache.internal",
         "host_mapped" : false,
-        "hostname" : "oblahblahblahblahe.cache.service._.magentosite.cloud",
+        "hostname" : "<your-host-name>.cache.service._.magentosite.cloud",
         "instance_ips" : [
         "123.456.789.012"
         ],

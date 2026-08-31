@@ -44,7 +44,7 @@ This tool extends the functionality of the [[!DNL Cloud Console]](../../get-star
    curl -sS https://accounts.magento.cloud/cli/installer | php
    ```
 
-1. Add `magento-cloud` CLI to the bash profile.
+1. Add the `magento-cloud` CLI to the bash profile.
 
    ```bash
    export PATH=$PATH:$HOME/.magento-cloud/bin
@@ -106,7 +106,11 @@ magento-cloud environment:list
 
 ### Redeploy the environment
 
-Trigger a redeployment without using a push. Verify and confirm the environment to redeploy. Do not use redeploy if there is a build in a pending state.
+Trigger a redeployment without using a push. Verify and confirm the environment to redeploy.
+
+>[!CAUTION]
+>
+>Do not use redeploy if there is a build in a pending state.
 
 ```bash
 magento-cloud environment:redeploy
@@ -132,8 +136,8 @@ magento-cloud environment:branch <new-name> <parent-branch>
 
 For branch status:
 
--  Use the `magento-cloud env` command to view a list of the environment branches and their status: active or inactive.
--  Use the `magento-cloud environment:activate` command to activate an environment branch.
+- Use the `magento-cloud env` command to view a list of the environment branches and their status: active or inactive.
+- Use the `magento-cloud environment:activate` command to activate an environment branch.
 
 Push an empty Git commit to trigger a deployment. For example:
 
@@ -191,7 +195,7 @@ The following steps demonstrate using the CLI and Git commands interchangeably t
    >
    >You can create an environment branch using the `magento-cloud environment:branch <environment-name> <parent-environment-ID>` command syntax. It may take some additional time to create and activate an environment branch.
 
-1. Use the environment ID to pull any updated code to your local. This is not necessary if the environment branch is new.
+1. Use the environment ID to pull any updated code to your local environment. This is not necessary if the environment branch is new.
 
    ```bash
    git pull origin <environment-ID>

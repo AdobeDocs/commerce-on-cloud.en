@@ -134,8 +134,7 @@ Use this environment variable to confirm that message queues are running after a
 - `cron_run`—A boolean value that enables or disables the `consumers_runner` cron job (default = `false`).
 - `max_messages`—A number specifying the maximum number of messages each consumer must process before terminating (default = `1000`). You can set the value to `0` to prevent the consumer from terminating.
 - `consumers`—An array of strings specifying which consumers to run. An empty array runs _all_ consumers.
-
-- `multiple_processes`-A number specifying the number of processes to spawn for each consumer. Supported in Commerce **2.4.4** or greater.
+- `multiple_processes`—A number specifying the number of processes to spawn for each consumer. Supported in Commerce **2.4.4** or greater.
 
 >[!NOTE]
 >
@@ -152,7 +151,7 @@ stage:
       consumers:
         - example_consumer_1
         - example_consumer_2
--     multiple_processes:
+      multiple_processes:
         example_consumer_1: 4
         example_consumer_2: 3
 ```
@@ -362,7 +361,7 @@ stage:
 
 The lock provider prevents the launch of duplicate cron jobs and cron groups. Commerce on Cloud supports only `file` and `db` lock providers.
 
-For Production and Staging environments, the default value `file` is set by [MAGENTO_CLOUD_LOCKS_DIR](variables-cloud.md) and cannot be overridden. For Starter environments and the Pro integration environment, `ece-tools` sets the `db` lock provider automatically. In these enviroments, you can change the default to `file` to optimize local performance and mirror production architecture.
+For Production and Staging environments, the default value `file` is set by [MAGENTO_CLOUD_LOCKS_DIR](variables-cloud.md) and cannot be overridden. For Starter environments and the Pro integration environment, `ece-tools` sets the `db` lock provider automatically. In these environments, you can change the default to `file` to optimize local performance and mirror production architecture.
 
 ```yaml
 stage:
@@ -514,8 +513,8 @@ For Adobe Commerce 2.4.8, the following example describes how to set `VALKEY_BAC
 ```yaml
 stage:
   deploy:
-  VALKEY_USE_SLAVE_CONNECTION: true
-  VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    VALKEY_USE_SLAVE_CONNECTION: true
+    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
 Specifying remote synchronized cache as the Valkey backend model enables [L2 cache](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/level-two-cache), and `ece-tools` generates the cache configuration automatically. See the [example configuration file](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/level-two-cache#configuration-example). To override the configuration, use the [CACHE_CONFIGURATION](#cache_configuration) deploy variable.
@@ -584,7 +583,7 @@ stage:
 - **Default**—`4`
 - **Version**—Adobe Commerce 2.1.4 and later
 
-Specifies which [gzip](https://www.gnu.org/software/gzip) compression level (`0` to `9`) to use when compressing static content; `0` disables compression.
+Specifies which [gzip](https://www.gnu.org/software/gzip) compression level (`0` to `9`) to use when compressing static content. Set it to `0` to disable compression.
 
 ```yaml
 stage:
@@ -688,7 +687,7 @@ stage:
 - **Default**—Automatic
 - **Version**—Adobe Commerce 2.1.4 and later
 
-Sets the number of threads for static content deployment. The default value is set based on the detected CPU thread count and does not exceed a value of 4. Increasing the number of threads speeds up static content deployment; decreasing the number of threads slows it down. You can set the thread value, for example:
+Sets the number of threads for static content deployment. The default value is set based on the detected CPU thread count and does not exceed a value of 4. Increasing the number of threads speeds up static content deployment. Decreasing the number of threads slows it down. You can set the thread value, for example:
 
 ```yaml
 stage:

@@ -63,7 +63,7 @@ The following baseline bot management protections are available through Fastly's
 | Dynamic challenge for specific APIs or URL patterns | Configured only when required in collaboration with the customer | Blocked traffic is visible in New Relic logs under `Agent_response` |
 | Browser challenge | Configured only when required in collaboration with the customer | Blocked traffic is visible in New Relic logs under `Agent_response` |
 
-## Observability — monitoring bot protection and NGWAF activity
+## Monitor bot protection and NGWAF activity
 
 CDN logs are automatically forwarded to the customer's New Relic account. For additional details, refer to [Log management](../monitor/log-management.md).
 
@@ -136,7 +136,7 @@ The [!DNL Advanced Security] add-on operates in addition to the standard Fastly 
 - **Dynamic Challenges**—Automatically assigns the optimal challenge to suspicious traffic. Leverages Private Access Tokens (PAT) to seamlessly validate a portion of requests without impacting the user experience.
 - **Deception technology**—Addresses account takeover attempts by returning false information to attackers, mitigating their attack while disrupting their ability to operate at scale.
 
-## Choosing the right protection
+## Choose the right protection
 
 Use the following guidance to determine whether [!DNL Advanced Security] is the right solution for your storefront protection needs, or whether existing protections or alternative solutions are more appropriate.
 
@@ -192,7 +192,7 @@ The following scenarios are best addressed with alternative protections that can
 - **[Origin cloaking](./fastly.md#origin-cloaking)**—Ensures all traffic routes through Fastly, blocking direct access to origin servers.
 - **[VCL-based security snippets](./fastly-vcl-custom-snippets.md)**—Custom Varnish Configuration Language (VCL) rules for IP blocking, allowlisting, and request filtering.
 
-### [!DNL Advanced Security]
+### Additional protections from Advanced Security
 
 [!DNL Advanced Security] provides increased protection beyond the built-in protections included with [!DNL Adobe Commerce on Cloud Infrastructure], but at an additional cost:
 

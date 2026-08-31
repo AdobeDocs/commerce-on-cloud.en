@@ -1,6 +1,6 @@
 ---
 title: Configure services
-description: Learn how to configure services used by Adobe Commerce on cloud infrastructure.
+description: Learn how to configure services used by Adobe Commerce on cloud infrastructure, such as MySQL, Redis, and Elasticsearch.
 feature: Cloud, Configuration, Services
 exl-id: ddf44b7c-e4ae-48f0-97a9-a219e6012492
 TQID: https://experienceleague.adobe.com/qvCjqNc8E9QGme-zM42vMg-kb1WjwTlWUqjbm-NI2bg
@@ -23,7 +23,7 @@ topic_v2:
 ---
 # Configure services
 
-The `services.yaml` file defines the services supported and used by Adobe Commerce on cloud infrastructure, such as MySQL, Redis, and Elasticsearch or OpenSearch. You do not need to subscribe to external service providers. 
+The `services.yaml` file defines the services supported and used by Adobe Commerce on cloud infrastructure, such as MySQL, Redis, and Elasticsearch or OpenSearch. You do not need to subscribe to external service providers.
 
 >[!NOTE]
 >
@@ -55,13 +55,14 @@ Adobe Commerce on cloud infrastructure supports the following services, which ca
 - [OpenSearch](opensearch.md)
 
 >[!NOTE]
+>
 >You must [upgrade RabbitMQ sequentially between available versions](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service), for example, you cannot upgrade from 3.9 directly to 4.1
 >
 >After upgrading to a new version of RabbitMQ, trigger a full deployment to ensure that your custom message queues are recreated in RabbitMQ.
 
 ## View configured services and versions
 
-You can view example service definitions and disk values in the current template [`services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Actual default and supported service versions depend on your Adobe Commerce version and current cloud template. 
+You can view example service definitions and disk values in the current template [`services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Actual default and supported service versions depend on your Adobe Commerce version and current cloud template.
 
 The following example shows service definitions in the `services.yaml` configuration file:
 
@@ -122,7 +123,7 @@ redis2:
 Renaming a service in the `services.yaml` file **permanently removes** the following:
 
 - The existing service before creating a service with the new name you specify.
-- All existing data for the service is removed. Adobe strongly recommends that you [backup your Starter environment](../storage/snapshots.md) before you change the name of an existing service.
+- All existing data for the service is removed. Adobe strongly recommends that you [back up your Starter environment](../storage/snapshots.md) before you change the name of an existing service.
 
 ### `type`
 
@@ -143,7 +144,7 @@ mysql:
     disk: 5120
 ```
 
-The current default storage amount per project is 5 GB, or 512 0MB. You can distribute this amount between your application and each of its services.
+The current default storage amount per project is 5 GB, or 5120 MB. You can distribute this amount between your application and each of its services.
 
 ## Service relationships
 
@@ -151,7 +152,7 @@ In Adobe Commerce on cloud infrastructure projects, service [relationships](../a
 
 You can retrieve the configuration data for all service relationships from the [`$MAGENTO_CLOUD_RELATIONSHIPS`](../environment/variables-cloud.md) environment variable. The configuration data includes service name, type, and version along with any required connection details such as port number and login credentials.
 
-**To verify relationships from your local development environment**:
+### Verify relationships from your local development environment
 
 1. From your local development environment, show the relationships for the active environment.
 
@@ -181,7 +182,7 @@ You can retrieve the configuration data for all service relationships from the [
            port: 3306
    ```
 
-**To verify relationships in remote environments**:
+### Verify relationships in remote environments
 
 1. Use SSH to log in to the remote environment.
 
@@ -270,7 +271,7 @@ You cannot downgrade an installed service directly. You have two options:
 
 When you change the service version, you must update the service configuration in the `services.yaml` file, and update the relationships in the `.magento.app.yaml` file.
 
-**To downgrade a service version by renaming an existing service**:
+#### Downgrade a service version by renaming an existing service
 
 1. Rename the existing service in the `.magento/services.yaml` file and change the version.
 
@@ -314,7 +315,7 @@ When you change the service version, you must update the service configuration i
 
 1. Add, commit, and push your code changes.
 
-**To downgrade a service by creating a service**:
+#### Downgrade a service by creating a service
 
 1. Add a service definition to the `services.yaml` file for your project with the downgraded version specification. See _mysql2_ in the following example:
 
