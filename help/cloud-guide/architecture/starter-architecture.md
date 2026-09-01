@@ -31,7 +31,7 @@ Your Adobe Commerce on cloud infrastructure Starter architecture supports up to 
 
 All environments are in PaaS (Platform as a service) containers. These containers are deployed inside highly restricted containers on a grid of servers. These environments are read-only, accepting deployed code changes from branches pushed from your local workspace. Each environment provides a database and web server.
 
->[!NOTE] 
+>[!NOTE]
 >
 >It is not possible to change the permissions on read-only folders in any of the Starter environments. This restriction protects the integrity and security of the application. Folder permissions on these read-only file systems cannot be changed — even Support cannot modify them. Any changes must be made from a branch in your local development environment and pushed to the application environment. You can use any development and branching methodology you like. When you get initial access to your project, create a `staging` environment from the `master` environment. Then, create the `integration` environment by branching from `staging`.
 
@@ -83,7 +83,7 @@ For best performance in the integration environment follow these best practices:
 
 - Restrict the catalog size - For reference, the Sample Data contains about 2,048 products. Try reducing your catalog size to around 4,000-5,000 products.
   To check the number of products in the catalog, run the following MySQL query:
-  
+
   ```sql
   select distinct count(entity_id) from catalog_product_entity;
   ```
@@ -106,13 +106,12 @@ The production and staging environments include the following technologies. You 
 
 -  Fastly for HTTP caching and CDN
 -  Nginx web server speaking to PHP-FPM, one instance with multiple workers
--  Redis server
--  Elasticsearch for catalog search for Adobe Commerce 2.2 to 2.4.3-p2
--  OpenSearch for catalog search for Adobe Commerce 2.3.7-p3, 2.4.3-p2, and 2.4.4 and later
+-  Redis or Valkey server
+-  OpenSearch for catalog search for Adobe Commerce 2.4.4 and later
 
 ### Services
 
-Adobe Commerce on cloud infrastructure currently supports the following services: PHP, MySQL (MariaDB), Elasticsearch (Adobe Commerce 2.2 to 2.4.3-p2), OpenSearch (2.3.7-p3, 2.4.3-p2, 2.4.4 and later), Redis, and [!DNL RabbitMQ].
+Adobe Commerce on cloud infrastructure currently supports the following services: PHP, MySQL (MariaDB), OpenSearch (2.4.4 and later), Redis or Valkey, and [!DNL RabbitMQ].
 
 Each service runs in a separate, secure container. Containers are managed together in the project. Some services are standard, such as the following:
 
@@ -132,7 +131,7 @@ Adobe Commerce on cloud infrastructure uses the Debian GNU/Linux operating syste
 
 -  [MySQL](../services/mysql.md)
 
--  [Redis](../services/redis.md)
+-  [Redis](../services/redis.md) or [Valkey](../services/valkey.md)
 
 -  [RabbitMQ](../services/rabbitmq.md)
 
