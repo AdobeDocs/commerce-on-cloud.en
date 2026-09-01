@@ -107,13 +107,11 @@ The production and staging environments include the following technologies. You 
 -  Fastly for HTTP caching and CDN
 -  Nginx web server speaking to PHP-FPM, one instance with multiple workers
 -  Redis or Valkey server
--  OpenSearch for Catalog search
-
--  OpenSearch for catalog search for Adobe Commerce 2.3.7-p3, 2.4.3-p2, and 2.4.4 and later
+-  OpenSearch for catalog search for Adobe Commerce 2.4.4 and later
 
 ### Services
 
-Adobe Commerce on cloud infrastructure currently supports the following services: PHP, MySQL (MariaDB), Elasticsearch (Adobe Commerce 2.2 to 2.4.3-p2), OpenSearch (2.3.7-p3, 2.4.3-p2, 2.4.4 and later), Redis or Valkey, and [!DNL RabbitMQ].
+Adobe Commerce on cloud infrastructure currently supports the following services: PHP, MySQL (MariaDB), OpenSearch (2.4.4 and later), Redis or Valkey, and [!DNL RabbitMQ].
 
 Each service runs in a separate, secure container. Containers are managed together in the project. Some services are standard, such as the following:
 
