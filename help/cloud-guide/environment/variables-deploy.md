@@ -500,11 +500,11 @@ The read-only connection is not available in the Integration environment. If you
 ## `VALKEY_BACKEND`
 
 - **Default**—`Cm_Cache_Backend_Redis`
-- **Version**—Adobe Commerce 2.4.8 and later
+- **Version**—Adobe Commerce releases that support Valkey
 
 `VALKEY_BACKEND` specifies the backend model for Valkey cache configuration. The default value uses a legacy Redis-compatible class name; it does not mean that the service must be Redis.
 
-For Adobe Commerce 2.4.8 and earlier releases that support Valkey, the legacy backend models include:
+For Adobe Commerce versions earlier than 2.4.9 that support Valkey, the backend models include:
 
 - `Cm_Cache_Backend_Redis`
 - `\Magento\Framework\Cache\Backend\Redis`
