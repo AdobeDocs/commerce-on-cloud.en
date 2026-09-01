@@ -36,45 +36,6 @@ Set the `_merge` option to one of the following:
 >
 >If your changes are not reflected on Staging sites after redeployment, and there are no related error messages in the log, you **must** [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). In the ticket, clearly describe the configuration changes you attempted and attach any updated YAML configuration files in the ticket.
 
-## Pro services support {#pro-update-service}
-
->[!BEGINSHADEBOX]
-
-- For Pro projects, you must [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) to install or update [services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) in `Staging` and `Production` environments only.
-
-- Indicate the service changes needed, include your updated `.magento.app.yaml` and `services.yaml` files, and state the PHP version in the ticket. For self-service changes to PHP version, extensions, or environment settings, see [PHP settings](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) in _Application configuration_.
-
-  >[!IMPORTANT]
-  >
-  >When selecting the Environment field in the new ticket form, use Adobe's environment naming. For example, select Staging even if you call that environment **Dev** internally. You can mention your internal name in the description, but the Environment field itself must use Adobe's nomenclature.
-
-- For changes to a live production environment (Pro only), Adobe requires upgrades to be scheduled at least two business days in advance. The notice period allows the Cloud Infrastructure team sufficient time to allocate resources and perform the upgrade securely. The notice period begins when the Cloud Infrastructure team acknowledges the request and confirms the upgrade schedule; weekends do not count toward the notice period. For example, the Cloud Infrastructure team must acknowledge and schedule a Monday upgrade by the preceding Wednesday. Additional lead time is required during periods of peak demand.
-
-  >[!NOTE]
-  >
-  >All scheduled maintenance windows must be provided in UTC format to ensure clarity and consistency across all communications. Service upgrades cannot be scheduled in the Staging environment. In most cases, upgrades in Staging are performed on the same day as the request.
-  >
-  >If you request a RabbitMQ upgrade, make sure to redeploy the environment after the upgrade completes so that the message queues are re-initialized.
-
-- Validate service upgrades in a Staging or Integration environment before scheduling them in Production. Issues caused by third-party modules, custom code, or dependency compatibility often surface during the redeployment that follows a service upgrade.
-
-- To ensure the updated service takes effect after the Commerce infrastructure team completes a service upgrade, you must redeploy the environment, even when the upgrade does not change the Adobe Commerce application version. If the upgrade includes OpenSearch, plan for a full reindex after the redeployment.
-
-- Adobe cannot guarantee zero downtime for a service upgrade. Plan a maintenance window that allows time to redeploy, reindex if needed, and validate the storefront and Admin before reopening the site.
-
-- If you are upgrading more than one service and prefer to validate changes one at a time, a reasonable planning order is Valkey or Redis, then RabbitMQ, then OpenSearch, then MariaDB. This order is not an official execution requirement; database upgrades typically carry the highest operational impact and deserve the most caution.
-
-- **Two-Part Coordination Process for Scheduling Upgrades**
-
-  To ensure a smooth and coordinated upgrade process, Adobe Commerce Support follows a two-part handshake process for all production environment upgrades:
-
-  1. **Customer Confirmation**: Adobe Support first requests that the customer confirm the desired date and time for the upgrade. This step ensures that the timing aligns with the customer's business needs and maintenance windows.
-  2. **Scheduling & Final Confirmation**: Once the customer confirms the timing, Adobe Support submits the request to the Infrastructure team, who then reviews the request and provides final confirmation of the scheduled upgrade window.
-
- The upgrade is not considered scheduled until the Infrastructure team has provided final confirmation. Customers are encouraged to respond promptly at least 48 hours before the upgrade window to avoid delays and to allow for adequate notice.
-
->[!ENDSHADEBOX]
-
 ## Pro backups {#pro-backups}
 
 >[!TIP]
@@ -119,13 +80,13 @@ Use the following instructions for service setup on Pro Integration environments
 
 >[!NOTE]
 >
->To change the service configuration on Pro Production and Staging environments, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+>To change the service configuration on Pro Production and Staging environments, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). For scheduling requirements and customer availability guidance, see [Pro services support](https://experienceleague.adobe.com/en/docs/cloud-guide/services/services-yaml.md#pro-services-support) in _Configure services_.
 
 ## Service change {#service-change-tip}
 
 >[!TIP]
 >
->After initial service setup, you can change the software version for an installed service by updating the `services.yaml` and `.magento.app.yaml` configuration files. See [Change service version](/help/cloud-guide/services/services-yaml.md#change-service-version) for guidance on upgrading or downgrading a service.
+>After initial service setup, you can change the software version for an installed service by updating the `services.yaml` and `.magento.app.yaml` configuration files. See [Change service version](/help/cloud-guide/services/services-yaml.md#change-service-version) for guidance on upgrading or downgrading a service. This self-service method does not apply to Pro Staging or Production environments—see [Pro services support](https://experienceleague.adobe.com/en/docs/cloud-guide/services/services-yaml.md#pro-services-support) in _Configure services_.
 
 ## Stuck deployment tip {#stuck-deployment-tip}
 

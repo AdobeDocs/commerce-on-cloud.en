@@ -203,7 +203,7 @@ Service version and compatibility support for Adobe Commerce on cloud infrastruc
 
    -  Change the Elasticsearch service version in the `services.yaml` file to a version that is compatible with the Elasticsearch PHP client.
 
-      {{pro-update-service}}
+      For Pro service upgrade scheduling requirements and customer availability guidance, see [Pro services support](services-yaml.md#pro-services-support) in _Configure services_.
 
 ## Restart the Elasticsearch service
 
