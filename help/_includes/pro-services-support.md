@@ -6,7 +6,7 @@ To request and complete a Pro service upgrade in Staging or Production, follow t
 
 1. **To install or update [services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) in `Staging` and `Production` environments only**, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
-   In the ticket, specify the required service changes, include the updated `.magento.app.yaml` and `.magento/services.yaml` files, and note the target PHP version. PHP version, Composer updates, extensions, and environment settings are self-service changes—Adobe may need to update the New Relic agent for PHP version compatibility. See [PHP settings](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) in _Application configuration_.
+   In the ticket, specify the required service changes, include the updated `.magento.app.yaml` and `.magento/services.yaml` files, and note the target PHP version. PHP version, Composer updates, extensions, and environment settings are self-service changes. Adobe may need to update the New Relic agent for PHP version compatibility. See [PHP settings](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) in _Application configuration_.
 
    >[!IMPORTANT]
    >
@@ -28,7 +28,7 @@ To request and complete a Pro service upgrade in Staging or Production, follow t
 
    Adobe does not guarantee the exact duration of a Production maintenance window in advance, since timing depends on the environment and the services involved. Use the time your Staging upgrade takes as a practical estimate when planning the Production window.
 
-1. **Redeploy the environment** after Adobe completes the service upgrade so the change takes effect, even if the Adobe Commerce application version doesn't change.
+1. **Redeploy the environment** after Adobe completes the service upgrade so the change takes effect, even if the Adobe Commerce application version does not change.
 
    If the upgrade includes OpenSearch, also plan for a full reindex. Adobe cannot guarantee zero downtime for a service upgrade, so plan a maintenance window that allows time to redeploy, reindex if needed, and validate the storefront and Admin before reopening the site.
 
