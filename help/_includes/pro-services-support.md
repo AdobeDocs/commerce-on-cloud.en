@@ -14,7 +14,7 @@ To request and complete a Pro service upgrade in Staging or Production, follow t
 
 1. **Confirm the upgrade schedule** through Adobe's two-part process: you confirm the requested date and time first, then Support submits it to the Infrastructure team for final confirmation.
 
-   Production changes (Pro only) require at least two business days' notice, excluding weekends—for example, the Cloud Infrastructure team must acknowledge a Monday upgrade by the preceding Wednesday. Expect additional lead time during peak demand. To avoid delays, respond to the initial request at least 48 hours before the window, as the upgrade isn't considered scheduled until you receive final confirmation.
+   Production changes (Pro only) require at least two business days' notice, excluding weekends. For example, the Cloud Infrastructure team must acknowledge a Monday upgrade by the preceding Wednesday. Expect additional lead time during peak demand. To avoid delays, respond to the initial request at least 48 hours before the window. The upgrade is not considered scheduled until you receive final confirmation.
 
    >[!NOTE]
    >
