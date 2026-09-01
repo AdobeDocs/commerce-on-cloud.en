@@ -164,8 +164,8 @@ stage:
       cron_run: true
       max_messages: 1000
       consumers:
-        - example_consumer_1
-        - example_consumer_2
+       example_consumer_1
+       example_consumer_2
       multiple_processes:
         example_consumer_1: 4
         example_consumer_2: 3
@@ -592,7 +592,7 @@ stage:
 
 - **Default**—`4`
 
-Specifies which [gzip](https://www.gnu.org/software/gzip) compression level (`0` to `9`) to use when compressing static content; `0` disables compression.
+Specifies which [gzip](https://www.gnu.org/software/gzip) compression level (`0` to `9`) to use when compressing static content. Set it to `0` to disable compression.
 
 ```yaml
 stage:
@@ -690,7 +690,7 @@ stage:
 
 - **Default**—Automatic
 
-Sets the number of threads for static content deployment. The default value is set based on the detected CPU thread count and does not exceed a value of 4. Increasing the number of threads speeds up static content deployment; decreasing the number of threads slows it down. You can set the thread value, for example:
+Sets the number of threads for static content deployment. The default value is set based on the detected CPU thread count and does not exceed a value of 4. Increasing the number of threads speeds up static content deployment. Decreasing the number of threads slows it down. You can set the thread value, for example:
 
 ```yaml
 stage:

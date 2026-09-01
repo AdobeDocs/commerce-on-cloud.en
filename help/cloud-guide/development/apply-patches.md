@@ -1,6 +1,6 @@
 ---
-title: Apply patches
-description: Learn how to apply patches in the Adobe Commerce on cloud infrastructure project.
+title: Apply Patches
+description: Learn how to apply required, optional, and custom patches to an Adobe Commerce on Cloud Infrastructure project using ECE-Tools and the Quality Patches Tool.
 feature: Cloud, Upgrade
 exl-id: 923c1e43-45da-450f-bdfc-de84a901400d
 TQID: https://experienceleague.adobe.com/SyS-AIRHp0LW7Z4JwZw2FNtbvy9FVzISUID12MjlMrc
@@ -116,7 +116,7 @@ You can apply patches manually in a local environment and test them before you d
 
 **To apply individual patches in a local development environment**:
 
-1. Add the 'QUALITY_PATCHES' variable to the `.magento.env.yaml` file and list the required patches underneath.
+1. Add the `QUALITY_PATCHES` variable to the `.magento.env.yaml` file and list the required patches underneath.
 
    ```yaml
    stage:
@@ -191,7 +191,7 @@ When you deploy, ECE-Tools applies all Adobe patches and any custom patches that
 
 **To apply and test a custom patch on a Cloud environment**:
 
-1. In the project root, create a directory called `m2-hotfixes` if it does not exist
+1. In the project root, create a directory called `m2-hotfixes` if it does not exist.
 
    ```bash
    mkdir m2-hotfixes

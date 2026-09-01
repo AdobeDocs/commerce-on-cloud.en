@@ -1,6 +1,6 @@
 ---
 title: Set up Valkey service
-description: Learn how to set up and optimize Valkey as a backend cache solution for Adobe Commerce on cloud infrastructure.
+description: Learn how to set up and optimize Valkey as a backend cache solution for Adobe Commerce on cloud infrastructure including replacing Redis and customizing cache backend settings.
 feature: Cloud, Cache, Services
 exl-id: f8933e0d-a308-4c75-8547-cb26ab6df947
 TQID: https://experienceleague.adobe.com/-aBnwClJGQlRkEfugtChxbjLObLzTu0xl1IvkYUVRsk
