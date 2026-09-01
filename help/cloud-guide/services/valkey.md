@@ -147,7 +147,7 @@ The following abbreviated example shows the `valkey` relationship. It is not a u
 
 The output varies by environment and service configuration. Do not hard-code hostnames, ports, IP addresses, cluster names, service versions, usernames, or passwords from this example. Use the values returned by `MAGENTO_CLOUD_RELATIONSHIPS` in the target environment.
 
-To display only the Valkey relationship, run:
+If `jq` is available, display only the Valkey relationship:
 
 ```terminal
 printf '%s' "$MAGENTO_CLOUD_RELATIONSHIPS" \
