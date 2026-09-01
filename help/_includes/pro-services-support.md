@@ -18,7 +18,7 @@ To request and complete a Pro service upgrade in Staging or Production, follow t
 
    >[!NOTE]
    >
-   >Provide maintenance windows in UTC. Staging upgrades aren't scheduled in advance and are typically completed the same day as the request.
+   >Provide maintenance windows in UTC. Staging upgrades are not scheduled in advance and are typically completed the same day as the request.
    >
    >After a RabbitMQ upgrade, redeploy the environment to re-initialize the message queues.
 
