@@ -50,6 +50,6 @@ The available representative must be able to:
 
 ### Maintenance mode
 
-**Maintenance mode is not a substitute for customer availability.** It only blocks storefront access—it doesn't validate application services, integrations, queues, cron jobs, checkout, or other customer-specific functions.
+**Maintenance mode is not a substitute for customer availability.** Maintenance mode blocks storefront access, but does not validate application services, integrations, queues, cron jobs, checkout, or other customer-specific functions.
 
 If the planned work requires maintenance mode, coordinate its use with Adobe Support and follow the instructions for that upgrade. Afterward, confirm that the storefront and critical workflows are operating normally before considering the work complete.
