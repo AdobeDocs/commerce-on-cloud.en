@@ -164,8 +164,8 @@ stage:
       cron_run: true
       max_messages: 1000
       consumers:
-        - example_consumer_1
-        - example_consumer_2
+       example_consumer_1
+       example_consumer_2
       multiple_processes:
         example_consumer_1: 4
         example_consumer_2: 3
