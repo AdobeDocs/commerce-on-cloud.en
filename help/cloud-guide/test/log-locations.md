@@ -284,6 +284,7 @@ For example, if you create a custom path to store logs in the `var/log/mymodule`
 Because each service runs in a separate container, the service logs are not available in the integration environment. Adobe Commerce on cloud infrastructure provides access to the web server container in the integration environment only. The following service log locations are for the Pro Production and Staging environments:
 
 - **Redis log**: `/var/log/platform/<project-ID>*/redis-server-<project-ID>*.log`
+- **Valkey log**: `/var/log/platform/<project-ID>*/valkey-server-<project-ID>*.log`
 - **Elasticsearch log**: `/var/log/elasticsearch/elasticsearch.log`
 - **Java garbage collection log**: `/var/log/elasticsearch/gc.log`
 - **Mail log**: `/var/log/mail.log`

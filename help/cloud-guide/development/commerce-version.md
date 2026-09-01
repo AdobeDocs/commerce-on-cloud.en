@@ -30,9 +30,9 @@ You can upgrade the Adobe Commerce code base to a newer version. Before upgradin
  Depending on the environment type (Development, Staging, or Production), your upgrade tasks may include the following:
 
 - Upgrade third-party extensions to the latest supported version.
-- For Pro projects, you must submit an Adobe Commerce Support ticket to install or update services in Staging and Production environments.
+- For Pro projects, submit an Adobe Commerce Support ticket to install or update services in Staging and Production environments.
 - For development/integration/PR branches:
-  - Update the `.magento/services.yaml` file with new versions for MariaDB (MySQL), OpenSearch, RabbitMQ, and Redis for compatibility with new Adobe Commerce versions. 
+  - Update the `.magento/services.yaml` file with new versions for MariaDB (MySQL), OpenSearch, RabbitMQ, and Redis or Valkey for compatibility with new Adobe Commerce versions.
   - Update the `.magento.app.yaml` file with new settings for hooks and environment variables.
 
 {{upgrade-tip}}
@@ -41,7 +41,7 @@ You can upgrade the Adobe Commerce code base to a newer version. Before upgradin
 
 ## Configuration files
 
-Before upgrading the application, you must update your project configuration files to account for changes to the default configuration settings for Adobe Commerce on cloud infrastructure or the application. The latest defaults can be found in the [magento-cloud GitHub repository](https://github.com/magento/magento-cloud).
+To account for changes to the default configuration settings for Adobe Commerce on cloud infrastructure or the application, update your project configuration files before upgrading the application. The latest defaults can be found in the [magento-cloud GitHub repository](https://github.com/magento/magento-cloud).
 
 ### composer.json
 
@@ -86,7 +86,7 @@ To update the `composer.json` file for Adobe Commerce version 2.4.4 and later**:
 
 ## Environment Backup
 
-We recommend creating a backup of the instance before an upgrade. Use the following steps to back up your Integration, Staging, and Production environments.
+Adobe recommends creating a backup of the instance before an upgrade. Use the following steps to back up your Integration, Staging, and Production environments.
 
 **To back up your integration environment database and code**:
 
@@ -163,10 +163,10 @@ Review the [service versions](../services/services-yaml.md#service-versions) inf
    - If there are any [Quality Patches] applied in the `.magento.env.yaml` file, verify whether they can still be applied to the new version. Remove the non-applicable patch(es) from the `QUALITY_PATCHES` section of the `.magento.env.yaml` file.
 
    **Method 1**: [Verify the applicable versions in the Quality Patches release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
-  
+
    **Method 2**: [View available patches and status](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
-  
-   **Method 3**: [Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=en)
+
+   **Method 3**: [Search for patches](https://experienceleague.adobe.com/en/tools/commerce-quality-patches)
 
 
 1. Add, commit, and push code changes.
@@ -187,7 +187,7 @@ Review the [service versions](../services/services-yaml.md#service-versions) inf
 
    The files that Composer marshals belong to the new version of Adobe Commerce, to overwrite the outdated version of those same files. Currently, marshaling is disabled in Adobe Commerce, so you must add the marshaled files to source control.
 
-1. Wait for deployment to complete.
+1. To complete the upgrade, wait for deployment.
 
 1. Verify the upgrade in your Integration, Staging, or Production environment by using SSH to log in and check the version.
 
@@ -215,9 +215,9 @@ Review your third-party extension and module pages in Marketplace or other compa
 
 1. Push to and test in your integration environment.
 
-1. Push to the Staging environment to test in a pre-production environment.
+1. To test in a pre-production environment, push to the Staging environment.
 
-Adobe strongly recommends upgrading your Production environment _before_ including the upgraded extensions in your site launch process.
+Adobe recommends upgrading your Production environment _before_ including the upgraded extensions in your site launch process.
 
 >[!NOTE]
 >
@@ -225,7 +225,7 @@ Adobe strongly recommends upgrading your Production environment _before_ includi
 
 ## Troubleshoot upgrade
 
-If the upgrade failed, you receive an error message in the browser indicating that you cannot access your storefront or the Admin panel:
+If the upgrade fails, you receive an error message in the browser indicating that you cannot access your storefront or the Admin panel:
 
 ```
 There has been an error processing your request

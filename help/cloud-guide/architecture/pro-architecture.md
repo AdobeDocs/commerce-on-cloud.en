@@ -164,11 +164,9 @@ The production environment has three virtual machines (VMs) behind an Elastic Lo
     - `pub/static`
     - `app/etc`
 
-- **Redis**—one server per VM with only one active and the other two as replicas
+- **Redis** or **Valkey**—one server per VM with only one active and the other two as replicas.
 
-- **Elasticsearch**—search for Adobe Commerce on cloud infrastructure 2.2 to 2.4.3-p2
-
-- **OpenSearch**—search for Adobe Commerce on cloud infrastructure 2.3.7-p3, 2.4.3-p2, 2.4.4 and later
+- **OpenSearch**—search for Adobe Commerce on cloud infrastructure 2.4.4 and later
 
 - **Galera**—database cluster with one MariaDB MySQL database per node with an auto-increment setting of three for unique IDs across every database
 
