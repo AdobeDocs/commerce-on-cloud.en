@@ -1,6 +1,6 @@
 ---
 title: Commerce on Cloud Infrastructure
-description: Learn about building, deploying, and managing Commerce on Cloud infrastructure.
+description: Learn about building, deploying, and managing Adobe Commerce on Cloud Infrastructure, a secure Platform as a Service (PaaS) hosted across AWS and Azure regions.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
 TQID: https://experienceleague.adobe.com/-sgz85xapPKNipyFVB4yMrLilEku3ff5IJg3OddymsA
 product_v2:
@@ -28,7 +28,7 @@ last-update: 2026-08-28
 ---
 # Commerce on Cloud Infrastructure
 
-Adobe Commerce on cloud infrastructure provides an automated hosting platform with a **self-service** approach to building, deploying, and managing your [!DNL Commerce] application in a cloud-native environment. Adobe Commerce on cloud infrastructure comes with additional features that set it apart from the on-premises Adobe Commerce and Magento Open Source platforms:
+Adobe Commerce on cloud infrastructure provides an automated hosting platform with a **self-service** approach to building, deploying, and managing your [!DNL Commerce] application in a cloud-native environment. Adobe Commerce on cloud infrastructure comes with additional features that distinguish it from the on-premises Adobe Commerce and Magento Open Source platforms:
 
 - A pre-provisioned infrastructure that includes PHP, MySQL (MariaDB), Redis or Valkey, message queue services ([!DNL RabbitMQ] or [!DNL ActiveMQ]), and supported search engine technologies.
 - Git-based workflow with automatic build and deploy for efficient Rapid development and Continuous deployment every time you push code changes in a Platform as a Service (PaaS) environment.
@@ -37,7 +37,7 @@ Adobe Commerce on cloud infrastructure provides an automated hosting platform wi
 
 ![Cloud benefits](../assets/CloudBenefits.svg)
 
->[!NOTE] 
+>[!NOTE]
 >
 >For more information on security, refer to the [security launch checklist](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
 
@@ -60,7 +60,7 @@ The following sections provide details about the different AWS and Azure regions
 
 >[!NOTE]
 >
-> Only on-premises in China and Russia.
+> Adobe Commerce on cloud infrastructure is not available in China or Russia. Only on-premises deployments are supported in those countries.
 
 ## Azure regions
 
@@ -68,7 +68,7 @@ The following sections provide details about the different AWS and Azure regions
 
 >[!NOTE]
 >
-> Only on-premises in China and Russia. All merchants that require Integration environments must use US regions.
+> Only on-premises deployments are supported in China and Russia. All merchants that require integration environments must use US regions.
 
 ## Adobe Commerce documentation
 
