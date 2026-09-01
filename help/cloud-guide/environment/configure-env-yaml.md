@@ -170,7 +170,7 @@ If you have enabled Configuration Management after dumping the configurations, y
     SCD_STRATEGY: compact
     SCD_MATRIX:
       ...
-    REDIS_USE_SLAVE_CONNECTION: 1
+    MYSQL_USE_SLAVE_CONNECTION: 1
 ```
 
 >After enabling Configuration Management, move the SCD_* variables to the build stage:
@@ -180,10 +180,9 @@ If you have enabled Configuration Management after dumping the configurations, y
     CRON_CONSUMERS_RUNNER:
       cron_run: true
       consumers: []
-    REDIS_USE_SLAVE_CONNECTION: 1
+    MYSQL_USE_SLAVE_CONNECTION: 1
   build:
     SCD_STRATEGY: compact
     SCD_MATRIX:
       ...
 ```
-

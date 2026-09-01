@@ -29,7 +29,7 @@ The `.magento.app.yaml` file uses properties to manage environment support for t
 | [`hooks`](hooks-property.md) | Customize shell commands for the build, deploy, and post-deploy phases | — | No |
 | [`mounts`](#mounts) | Set paths | Paths:<ul><li>`"var": "shared:files/var"`</li><li>`"app/etc": "shared:files/etc"`</li><li>`"pub/media": "shared:files/media"`</li><li>`"pub/static": "shared:files/static"`</li></ul> | No |
 | [`name`](#name) | Define the application name | `mymagento` | Yes |
-| [`relationships`](#relationships) | Map services | Services:<ul><li>`database: "mysql:mysql"`</li><li>`redis: "redis:redis"`</li><li>`opensearch: "opensearch:opensearch"`</li></ul> | No |
+| [`relationships`](#relationships) | Map services | Services:<ul><li>`database: "mysql:mysql"`</li><li>`redis: "redis:redis"` or `valkey: "cache:valkey"`</li><li>`opensearch: "opensearch:opensearch"`</li></ul> | No |
 | [`runtime`](#runtime) | Runtime property includes extensions that are required by the [!DNL Commerce] application. | Extensions:<ul><li>`xsl`</li><li>`newrelic`</li><li>`sodium`</li></ul> | Yes |
 | [`type`](#type-and-build) | Set the base container image | `php:8.3` | Yes |
 | [`variables`](variables-property.md) | Apply an environment variable for a specific Commerce version | — | No |
