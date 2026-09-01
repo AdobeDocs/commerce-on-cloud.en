@@ -34,7 +34,7 @@ To request and complete a Pro service upgrade in Staging or Production, follow t
 
 ## Customer availability during upgrades
 
-**A representative from your team or implementation partner must be available online for the duration of the scheduled Production upgrade window.** Scheduling during a low-traffic period doesn't make the upgrade hands-off—Adobe manages the cloud infrastructure upgrade but can't validate your application behavior, integrations, custom code, or business workflows.
+**A representative from your team or implementation partner must be available online for the duration of the scheduled Production upgrade window.** Scheduling during a low-traffic period does not make the upgrade hands-off. Adobe manages the cloud infrastructure upgrade but cannot validate your application behavior, integrations, custom code, or business workflows.
 
 The available representative must be able to:
 
