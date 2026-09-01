@@ -1,6 +1,6 @@
 # Pro services support and customer availability
 
-## Pro services support
+## Support
 
 To request and complete a Pro service upgrade in Staging or Production, follow these steps:
 
