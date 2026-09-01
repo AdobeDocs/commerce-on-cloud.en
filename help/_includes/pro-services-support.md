@@ -26,7 +26,7 @@ To request and complete a Pro service upgrade in Staging or Production, follow t
 
 1. **Validate the upgrade** in a Staging or Integration environment before scheduling it in Production.
 
-   Issues caused by third-party modules, custom code, or dependency compatibility often surface during the redeployment that follows a service upgrade. To validate multiple service upgrades one at a time, a reasonable order is Valkey or Redis, then RabbitMQ, then OpenSearch, then MariaDB. This isn't a required sequence—database upgrades carry the highest operational impact and deserve the most caution.
+   Issues caused by third-party modules, custom code, or dependency compatibility often surface during the redeployment that follows a service upgrade. To validate multiple service upgrades one at a time, a reasonable order is Valkey or Redis, then RabbitMQ, then OpenSearch, then MariaDB. This is not a required sequence. Database upgrades carry the highest operational impact and deserve the most caution.
 
    Adobe does not guarantee the exact duration of a Production maintenance window in advance, since timing depends on the environment and the services involved. Use the time your Staging upgrade takes as a practical estimate when planning the Production window.
 
