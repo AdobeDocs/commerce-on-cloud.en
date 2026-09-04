@@ -180,6 +180,4 @@ feature: Cloud
         + Traffic Insights {#traffic-insights}
             + [Overview](monitor/traffic-insights/overview.md)
             + [Understanding the app](monitor/traffic-insights/understanding-the-app.md)
-            + [Metrics and signals reference](monitor/traffic-insights/metrics-signals-reference.md)
-            + [Widget reference](monitor/traffic-insights/widget-reference.md)
             + [Investigation playbook](monitor/traffic-insights/investigation-playbook.md)
