@@ -4,6 +4,36 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### September 1, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated the Redis and Valkey service documentation to reflect current version and patch-level support, and added Valkey references across the Cloud Guide architecture and services pages, including <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/redis">Set up Redis service</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey">Set up Valkey service</a>, and <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/environment/variables-deploy">Deploy variables</a>.</p>
+</td>
+      <td>
+        Feedback, major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/89a9594b50dfeacc4e0e7765f195d9bade00413d">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added guidance on customer availability requirements during Commerce upgrade windows, and clarified the Pro service upgrade request and scheduling process, in <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version">Upgrade Commerce version</a> and <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml">Configure services</a>.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/ea46582388a9afaf94eb9ced6b61dbef0044370d">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### August 24, 2026
 
 <table style="table-layout:auto;">
