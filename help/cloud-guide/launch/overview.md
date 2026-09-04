@@ -1,6 +1,6 @@
 ---
 title: Site launch
-description: Learn how to begin site launch preparation.
+description: Learn how to prepare for site launch on Adobe Commerce cloud infrastructure, including checklists, best practices, and Staging and Production testing.
 exl-id: 95abc7aa-ed4d-44f7-96aa-517c646bc00d
 TQID: https://experienceleague.adobe.com/-aWGtM8yXIMPfKihDMD6LS1r2-UIuceyf9X4TTIFTf0
 product_v2:
@@ -62,7 +62,7 @@ As part of Adobe Commerce on cloud infrastructure subscription, Adobe provides a
 
 >[!NOTE]
 >
->If you want to deploy your own Extended Validation SSL certificate for your company instead of using the Let's Encrypt certificate, contact your CTA or [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+>If you want to deploy your own Extended Validation SSL certificate for your company instead of using the Let's Encrypt certificate, contact your CTA or [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 ## Set up the Security Scan Tool
 

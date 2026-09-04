@@ -33,7 +33,7 @@ Adobe Commerce on cloud infrastructure supports integration with the [AWS Privat
 
 >[!TIP]
 >
->PrivateLink is best used for securing connections for non-HTTP(S) integrations, such as database or file transfers. If you plan to integrate your application with Adobe Commerce APIs, see how to create an [Adobe API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) in _API Mesh for Adobe Developer App Builder_.
+>PrivateLink is best used for securing connections for non-HTTP(S) integrations, such as database or file transfers. If you plan to integrate your application with Adobe Commerce APIs, see how to create an [Adobe API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) in _API Mesh for Adobe Developer App Builder_.
 
 ## Features and support
 
@@ -54,7 +54,7 @@ The PrivateLink service integration for Adobe Commerce on cloud infrastructure p
 - Adobe Commerce support does not cover troubleshooting AWS PrivateLink issues beyond initial enablement.
 - Customers are responsible for costs associated with managing their own VPC.
 - **HTTPS protocol (port 443) support by platform:**
-  - **Azure Private Link**: You cannot use the HTTPS protocol (port 443) to connect to Adobe Commerce on cloud infrastructure due to [Fastly origin cloaking](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html).
+  - **Azure Private Link**: You cannot use the HTTPS protocol (port 443) to connect to Adobe Commerce on cloud infrastructure due to [Fastly origin cloaking](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly).
   - **AWS PrivateLink**: HTTPS protocol (port 443) connections are supported.
 - PrivateDNS is not available.
 
@@ -222,7 +222,7 @@ You can use the Telnet application to test the connection to the VPC endpoint se
 
 ## Change PrivateLink configuration
 
-[Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change an existing PrivateLink configuration. For example, you can request changes like the following:
+[Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) to change an existing PrivateLink configuration. For example, you can request changes like the following:
 
 - Remove the PrivateLink connection from the Adobe Commerce on cloud infrastructure Pro Production or Staging environment.
 - Change the customer Cloud platform account number for accessing the Adobe endpoint service.

@@ -23,7 +23,7 @@ topic_v2:
 ---
 # Set up [!DNL RabbitMQ] service
 
-The [Message Queue Framework (MQF)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html) is a system within Adobe Commerce that allows a [module](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module) to publish messages to queues. It also defines the consumers that receive the messages asynchronously.
+The [Message Queue Framework (MQF)](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework) is a system within Adobe Commerce that allows a [module](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module) to publish messages to queues. It also defines the consumers that receive the messages asynchronously.
 
 The MQF uses [RabbitMQ](https://www.rabbitmq.com/) as the messaging broker, which provides a scalable platform for sending and receiving messages. It also includes a mechanism for storing undelivered messages. [!DNL RabbitMQ] is based on the Advanced Message Queuing Protocol (AMQP) 0.9.1 specification.
 

@@ -1,6 +1,6 @@
 ---
 title: Access your Commerce Admin panel
-description: Learn how to access your Commerce Admin panel.
+description: Learn how to secure Admin access to your Adobe Commerce cloud infrastructure project, reset your License Owner password, and sign in to the Admin panel.
 recommendations: noDisplay, catalog
 exl-id: 827417b0-9048-44d8-8c82-07befba476c7
 TQID: https://experienceleague.adobe.com/V3BXuCc9aqT5YuyIS8WAZgUdPAYNhQunAgg2i2FCaOs
@@ -39,7 +39,7 @@ After you submit the password change request, check your email for the password 
 
 >[!TIP]
 >
->If the password reset fails or you cannot sign in to the Admin panel, a user with admin access can connect to the project using SSH and add an admin user using the `admin:user:create` CLI command. See [Create, edit, or unlock an administrator account](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html) in the _Installation guide_.
+>If the password reset fails or you cannot sign in to the Admin panel, a user with admin access can connect to the project using SSH and add an admin user using the `admin:user:create` CLI command. See [Create, edit, or unlock an administrator account](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/admin) in the _Installation guide_.
 
 ## Monitor site health
 

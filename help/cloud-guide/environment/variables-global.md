@@ -65,7 +65,7 @@ stage:
 -  **Default**-_Not set_
 -  **Version**—Adobe Commerce 2.4.4 and later
 
-When set to `true`, enables Commerce webhooks. The webhook runs on an external endpoint, such as an App Builder runtime action or a third-party inventory management system. The [_Webhooks Guide_](https://developer.adobe.com/commerce/extensibility/webhooks) describes this feature in detail.
+When set to `true`, enables Commerce webhooks. The webhook runs on an external endpoint, such as an App Builder runtime action or a third-party inventory management system. The [_Webhooks Guide_](https://developer.adobe.com/commerce/extensibility/webhooks/) describes this feature in detail.
 
 ```yaml
 stage:
@@ -189,7 +189,7 @@ stage:
 -  **Default**—_Not set_
 -  **Version**—Adobe Commerce 2.1.4 and later
 
-Use the `X_FRAME_CONFIGURATION` variable to change the [`X-Frame-Options`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html) header configuration for your Adobe Commerce site. This configuration controls how the browser renders a page in a `<frame>`, `<iframe>`, or `<object>`. Use one of the following options:
+Use the `X_FRAME_CONFIGURATION` variable to change the [`X-Frame-Options`](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/security/xframe-options) header configuration for your Adobe Commerce site. This configuration controls how the browser renders a page in a `<frame>`, `<iframe>`, or `<object>`. Use one of the following options:
 
 -  `DENY`—Page cannot be displayed in a frame.
 -  `SAMEORIGIN`—(The default Adobe Commerce setting.) Page can be displayed only in a frame on the same origin as the page itself.

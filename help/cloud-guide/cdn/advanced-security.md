@@ -6,7 +6,7 @@ exl-id: 7aeb189f-be69-45d5-8163-4748424083c0
 ---
 # [!DNL Adobe Commerce Advanced Security]
 
-[!DNL Adobe Commerce Advanced Security] is a product that works with [!DNL Adobe Commerce on Cloud Infrastructure] to keep your online store fast, available, and secure. This can help protect revenue, reduce downtime, and maintain customer trust during peak traffic events and automated attacks.
+[!DNL Adobe Commerce Advanced Security] is a product that works with [!DNL Adobe Commerce on Cloud Infrastructure] to keep your online store fast, available, and secure. These features can help protect revenue, reduce downtime, and maintain customer trust during peak traffic events and automated attacks.
 
 >[!TIP]
 >
@@ -28,7 +28,7 @@ exl-id: 7aeb189f-be69-45d5-8163-4748424083c0
 
 - **[DDoS Protection](https://docs.fastly.com/products/fastly-ddos-protection)**—Provides Layer 7 (application layer) DDoS protection beyond the existing Layer 3 and 4 protection included with all [!DNL Adobe Commerce on Cloud Infrastructure] projects. The DDoS Protection service absorbs large-scale volumetric attacks and ensures continuous application availability during distributed denial-of-service (DDoS) events, protecting revenue during peak traffic periods.
 
-- **[Advanced Rate Limiting](https://www.fastly.com/documentation/guides/next-gen-waf/rules/working-with-advanced-rate-limiting-rules/)**—Provides configurable rate limiting rules that protect specific URLs, API endpoints, and application resources from abuse. The Advanced Rate Limiting service goes beyond the [basic rate limiting](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md) available through the Fastly CDN module to target specific traffic patterns and attack vectors, reducing infrastructure strain and cloud costs.
+- **[Advanced Rate Limiting](https://www.fastly.com/documentation/guides/next-gen-waf/rules/working-with-advanced-rate-limiting-rules/)**—Provides configurable rate limiting rules that protect specific URLs, API endpoints, and application resources from abuse. The Advanced Rate Limiting service extends the [basic rate limiting](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md) available through the Fastly CDN module to target specific traffic patterns and attack vectors, reducing infrastructure strain and cloud costs.
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ The following baseline bot management protections are available through Fastly's
 | Dynamic challenge for specific APIs or URL patterns | Configured only when required in collaboration with the customer | Blocked traffic is visible in New Relic logs under `Agent_response` |
 | Browser challenge | Configured only when required in collaboration with the customer | Blocked traffic is visible in New Relic logs under `Agent_response` |
 
-## Observability — monitoring bot protection and NGWAF activity
+## Monitor bot protection and NGWAF activity
 
 CDN logs are automatically forwarded to the customer's New Relic account. For additional details, refer to [Log management](../monitor/log-management.md).
 
@@ -137,10 +137,10 @@ The [!DNL Advanced Security] add-on operates in addition to the standard Fastly 
 
 ### Additional capabilities
 
-- **Dynamic Challenges**—Automatically assigns the optimal challenge to suspicious traffic. Leverages Private Access Tokens (PAT) to seamlessly validate a portion of requests without impacting the user experience.
+- **Dynamic Challenges**—Automatically assigns the optimal challenge to suspicious traffic. Leverages Private Access Tokens (PAT) to validate a portion of requests seamlessly without impacting the user experience.
 - **Deception technology**—Addresses account takeover attempts by returning false information to attackers, mitigating their attack while disrupting their ability to operate at scale.
 
-## Choosing the right protection
+## Choose the right protection
 
 Use the following guidance to determine whether [!DNL Advanced Security] is the right solution for your storefront protection needs, or whether existing protections or alternative solutions are more appropriate.
 
@@ -196,7 +196,7 @@ The following scenarios are best addressed with alternative protections that can
 - **[Origin cloaking](./fastly.md#origin-cloaking)**—Ensures all traffic routes through Fastly, blocking direct access to origin servers.
 - **[VCL-based security snippets](./fastly-vcl-custom-snippets.md)**—Custom Varnish Configuration Language (VCL) rules for IP blocking, allowlisting, and request filtering.
 
-### [!DNL Advanced Security]
+### Additional protections from Advanced Security
 
 [!DNL Advanced Security] provides increased protection beyond the built-in protections included with [!DNL Adobe Commerce on Cloud Infrastructure], but at an additional cost:
 
@@ -252,7 +252,7 @@ To request [!DNL Advanced Security]:
 
 1. Contact your Adobe Account team or Adobe Sales representative to discuss [!DNL Advanced Security] for your project.
 
-1. After purchasing [!DNL Advanced Security], [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting [!DNL Advanced Security] enablement. Include your [!DNL Adobe Commerce on Cloud Infrastructure] project ID and the environments requiring enablement (for example, Production and Staging).
+1. After purchasing [!DNL Advanced Security], [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) requesting [!DNL Advanced Security] enablement. Include your [!DNL Adobe Commerce on Cloud Infrastructure] project ID and the environments requiring enablement (for example, Production and Staging).
 
 1. Adobe activates [!DNL Advanced Security] on your Fastly service and configures the initial protection policies. Enablement is usually completed within a few business days of ticket submission.
 
@@ -260,14 +260,14 @@ To request [!DNL Advanced Security]:
 
 >[!NOTE]
 >
->Configuration changes to [!DNL Advanced Security] currently require [submitting a support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Self-service configuration through the Admin UI is planned for a future release.
+>Configuration changes to [!DNL Advanced Security] currently require [submitting a support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). Self-service configuration through the Admin UI is planned for a future release.
 
 ## Limitations
 
 [!DNL Advanced Security] provides edge-layer storefront protection. The following capabilities are not available and are best addressed with complementary solutions:
 
 - **Transaction-level fraud scoring**—[!DNL Advanced Security] does not evaluate individual payment transactions for fraud risk. Use a dedicated fraud prevention platform for transaction-level scoring.
-- **Identity and access management (IAM)**—[!DNL Advanced Security] does not manage user authentication, authorization, or session management. These remain customer responsibilities.
+- **Identity and access management (IAM)**—[!DNL Advanced Security] does not manage user authentication, authorization, or session management. These items remain customer responsibilities.
 - **Static and dynamic application security testing (SAST/DAST)**—[!DNL Advanced Security] does not include code-level vulnerability scanning or penetration testing.
 - **API security**—While Advanced Rate Limiting can protect API endpoints from abuse, comprehensive API security features such as schema validation and API gateway management are not provided.
 - **Full fraud prevention**—[!DNL Advanced Security] focuses on edge-layer storefront protection and is not a complete fraud management platform.

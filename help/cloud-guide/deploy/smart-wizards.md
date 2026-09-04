@@ -21,7 +21,7 @@ role_v2:
 The smart wizards can help you determine whether your Cloud configuration follows best practices. The available wizards assist with the following configurations:
 
 -  Ideal state for minimal deployment downtime
--  Load-balancing configuration for database and Redis
+-  Load-balancing configuration for database and Redis or Valkey
 -  Static Content Deployment (SCD) for on-demand, the build stage, or the deploy stage
 
 Each of the smart wizard commands provides a verification response and, if applicable, a recommendation for the proper configuration.

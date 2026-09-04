@@ -31,7 +31,7 @@ The _build_ phase assembles containers for the services defined in the configura
 
 ## ![Deploy phase](../../assets/status-deploy.png) Deploy phase
 
-The _deploy_ phase places a temporary hold on incoming requests and transitions the site to [maintenance mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html). The deploy phase uses the new containers and, after mounting the file system, opens network connections, activates the services defined in the `relationships` section of the `.magento.app.yaml` file, and runs the deploy hooks defined in the `.magento.app.yaml` file. Everything is _read only_, except for directories defined in the `.magento.app.yaml` file. By default, the [`mounts` property](../application/properties.md#mounts) includes the following directories:
+The _deploy_ phase places a temporary hold on incoming requests and transitions the site to [maintenance mode](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/setup/application-modes). The deploy phase uses the new containers and, after mounting the file system, opens network connections, activates the services defined in the `relationships` section of the `.magento.app.yaml` file, and runs the deploy hooks defined in the `.magento.app.yaml` file. Everything is _read only_, except for directories defined in the `.magento.app.yaml` file. By default, the [`mounts` property](../application/properties.md#mounts) includes the following directories:
 
 -  `app/etc`—contains the `env.php` and `config.php` configuration files
 -  `pub/media`—contains all media data, such as products or categories

@@ -44,7 +44,7 @@ https://store.com/second/
 
 >[!TIP]
 >
->To add a store view to the site base URL, you do not have to create multiple directories. See [Add the store code to the base URL](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html) in the _Configuration Guide_.
+>To add a store view to the site base URL, you do not have to create multiple directories. See [Add the store code to the base URL](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/multi-sites/ms-admin) in the _Configuration Guide_.
 
 ## Add Domains
 
@@ -54,15 +54,15 @@ The process to add a domain depends on the type of Cloud account:
 
 - For Pro Staging and Production
 
-   Add the new domain to Fastly, see [Manage domains](../cdn/fastly-custom-cache-configuration.md#manage-domains), or open a support ticket to request assistance. In addition, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request new domains to be added to a cluster.
+   Add the new domain to Fastly, see [Manage domains](../cdn/fastly-custom-cache-configuration.md#manage-domains), or open a support ticket to request assistance. In addition, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) to request new domains to be added to a cluster.
 
 - For Starter Production only
 
-   Add the new domain to Fastly, see [Manage domains](../cdn/fastly-custom-cache-configuration.md#manage-domains), or [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request assistance. In addition, you must add the new domain to the **Domains** tab in the [!DNL Cloud Console]: `https://<zone>.magento.cloud/projects/<project-ID>/edit`
+   Add the new domain to Fastly, see [Manage domains](../cdn/fastly-custom-cache-configuration.md#manage-domains), or [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) to request assistance. In addition, you must add the new domain to the **Domains** tab in the [!DNL Cloud Console]: `https://<zone>.magento.cloud/projects/<project-ID>/edit`
 
 ## Configure local installation
 
-To configure your local installation to use multiple stores, see [Multiple websites or stores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html) in the _Configuration Guide_.
+To configure your local installation to use multiple stores, see [Multiple websites or stores](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/multi-sites/ms-overview) in the _Configuration Guide_.
 
 After successfully creating and testing the local installation to use multiple stores, you must prepare your integration environment:
 
@@ -221,7 +221,7 @@ Where the routes configuration defines how the URLs are processed, the `web` pro
 
 ### Set up websites, stores, and store views
 
-In the _Admin UI_, set up your Adobe Commerce **Websites**, **Stores**, and **Store Views**. See [Set up multiple websites, stores, and store views in the Admin](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html) in the _Configuration Guide_.
+In the _Admin UI_, set up your Adobe Commerce **Websites**, **Stores**, and **Store Views**. See [Set up multiple websites, stores, and store views in the Admin](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/multi-sites/ms-admin) in the _Configuration Guide_.
 
 It is important to use the same name and Code of your websites, stores, and store views from your Admin when you set up your local installation. You need these values when you update the `magento-vars.php` file.
 

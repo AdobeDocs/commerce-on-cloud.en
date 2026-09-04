@@ -42,7 +42,7 @@ All collected data details the time spent on actions that transmit data, queries
 
 >[!TIP]
 >
->For details on using this data to troubleshoot application performance issues, see [Troubleshoot performance using New Relic](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html) in the _Adobe Commerce Help Center_.
+>For details on using this data to troubleshoot application performance issues, see [Troubleshoot performance using New Relic](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-40830) in the _Adobe Commerce Help Center_.
 
 ## Monitor performance with Managed Alerts
 
@@ -58,7 +58,7 @@ Adobe provides the _Managed Alerts for Adobe Commerce_ alert policy to track per
 | MariaDB query load | NRI             | Pro             |
 | Redis memory       | NRI             | Pro             |
 
-When site infrastructure or application conditions trigger an alert threshold, New Relic sends alert notifications so that you can proactively address the issue. See [Managed Alerts for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html) in the _Adobe Commerce Help Center_ for details about alert thresholds and troubleshooting steps to resolve the issues that triggered the alert.
+When site infrastructure or application conditions trigger an alert threshold, New Relic sends alert notifications so that you can proactively address the issue. See [Managed Alerts for Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce) in the _Adobe Commerce Help Center_ for details about alert thresholds and troubleshooting steps to resolve the issues that triggered the alert.
 
 >[!TIP]
 >
@@ -88,7 +88,7 @@ When site infrastructure or application conditions trigger an alert threshold, N
 
       >[!NOTE]
       >
-      >If the _Managed Alerts for Adobe Commerce_ policy is not available, see [Managed Alerts for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html) in the _Adobe Commerce Help Center_.
+      >If the _Managed Alerts for Adobe Commerce_ policy is not available, see [Managed Alerts for Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce) in the _Adobe Commerce Help Center_.
 
 1. Click the **[!UICONTROL Alert conditions]** tab to review the alert conditions defined in the policy.
 

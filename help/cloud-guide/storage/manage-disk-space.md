@@ -143,7 +143,7 @@ Two [configuration files](../environment/overview.md) control the allocation of 
 
 >[!IMPORTANT]
 >
->- For Pro Production and Staging environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change disk space allocation. A size increase of Pro Production and Staging environments can only occur at certain intervals, so, depending on your current disk space usage, support might recommend increasing disk space allocation by a minimum of 10 GB. Once allocated, the storage increase for Pro staging and production cannot be reverted. Storage cannot be reallocated or redistributed between resources. To add more file storage space, reduce the disk space allocated for MySQL.
+>- For Pro Production and Staging environments, you must [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) to change disk space allocation. A size increase of Pro Production and Staging environments can only occur at certain intervals, so, depending on your current disk space usage, support might recommend increasing disk space allocation by a minimum of 10 GB. Once allocated, the storage increase for Pro staging and production cannot be reverted. Storage cannot be reallocated or redistributed between resources. To add more file storage space, reduce the disk space allocated for MySQL.
 >- Pro Production and Staging environments hosted on AWS have a [mandatory 6-hour cooldown](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVolume.html) that applies to disk space increases. After disk space is increased on a mount, you must wait 6 hours before disk space can be increased again on that mount.
 
 ### Application disk space
@@ -200,7 +200,7 @@ The `.magento/services.yaml` file controls the disk space available to each serv
 
 ## Monitor disk space
 
-On Pro Production environments, you can monitor disk space and other performance indicators using the Managed alerts for Adobe Commerce alert policy for New Relic. For details, see [Monitor performance with Managed Alerts](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts). For further guidance, see [Best practices to resolve database performance issues](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html).
+On Pro Production environments, you can monitor disk space and other performance indicators using the Managed alerts for Adobe Commerce alert policy for New Relic. For details, see [Monitor performance with Managed Alerts](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts). For further guidance, see [Best practices to resolve database performance issues](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues).
 
 ## No space left
 

@@ -4,6 +4,36 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### August 24, 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">CLI reference</a> after ECE-Tools release, v2002.2.13.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/0ac31574952505e92744535f861591abcdd8ac56">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/autoscaling#vertical-auto-scaling">vertical autoscaling</a> availability to Adobe Commerce on Cloud Infrastructure.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/cd222546c1c57f5250408d9e423dc586284a34fc">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### July 20, 2026
 
 <table style="table-layout:auto;">
@@ -22,72 +52,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Technical
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/136f8312d1c125a49538ee050394c722ab68d9b6">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### June 15, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access">Manage user access</a> with clearer prerequisites, Cloud Console invitation states, redeployment guidance, and related troubleshooting.</p>
-</td>
-      <td>
-        Feedback
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/747367a8808b0b22f810f4e26b94a06ee995281d">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### June 4, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/advanced-security">Advanced Security</a> topic with information on limitations and observability.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/54fcde91fb6fd159edadf85146da375692cce0d6">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### June 2, 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Clarified the default lock configuration and how the <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud"><code>MAGENTO_CLOUD_LOCKS_DIR</code></a> and <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#lock_provider"><code>LOCK_PROVIDER</code></a> environment variables affect Pro and Starter environments.</p>
-</td>
-      <td>
-        Technical
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/17ecf47f8cad5dcb53ef92b32377a7074e16bb52">commit</a></td>
     </tr>
   </tbody>
 </table>

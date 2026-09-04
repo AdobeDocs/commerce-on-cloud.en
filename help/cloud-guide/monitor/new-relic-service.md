@@ -49,4 +49,4 @@ Pro projects include the [New Relic Infrastructure (NRI)](https://docs.newrelic.
 
 ## New Relic Log Management
 
-All cloud infrastructure projects include [New Relic log management](log-management.md). The service is pre-configured to aggregate all log data from your Staging and Production environments and display it in a centralized log management dashboard.
+All Pro cloud infrastructure projects include [New Relic log management](log-management.md). The service is pre-configured to aggregate all log data from your Staging and Production environments and display it in a centralized log management dashboard.

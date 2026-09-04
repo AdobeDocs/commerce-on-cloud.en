@@ -37,7 +37,7 @@ You can only add registered users to your Adobe Commerce on cloud infrastructure
 
 ### Shared account access
 
-The License Owner can set up shared access for the account. Shared access allows trusted employees and service providers to use the Help center to submit and track Support tickets related to your Adobe Commerce on cloud infrastructure projects. For setup instructions, see the [Shared Access](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access) article in the Help Center.
+The License Owner can set up shared access for the account. Shared access allows trusted employees and service providers to use the Help center to submit and track Support tickets related to your Adobe Commerce on cloud infrastructure projects. For setup instructions, see the [Shared Access](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#shared-access) article in the Help Center.
 
 ### [!DNL Cloud Console]
 

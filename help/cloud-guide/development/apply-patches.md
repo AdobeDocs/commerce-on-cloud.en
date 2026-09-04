@@ -1,6 +1,6 @@
 ---
-title: Apply patches
-description: Learn how to apply patches in the Adobe Commerce on cloud infrastructure project.
+title: Apply Patches
+description: Learn how to apply required, optional, and custom patches to an Adobe Commerce on Cloud Infrastructure project using ECE-Tools and the Quality Patches Tool.
 feature: Cloud, Upgrade
 exl-id: 923c1e43-45da-450f-bdfc-de84a901400d
 TQID: https://experienceleague.adobe.com/SyS-AIRHp0LW7Z4JwZw2FNtbvy9FVzISUID12MjlMrc
@@ -18,7 +18,7 @@ role_v2:
 [Cloud Patches for Commerce](https://github.com/magento/magento-cloud-patches) and the [Quality Patches Tool](https://github.com/magento/quality-patches) deliver patches to your installed Adobe Commerce application.
 
 -  The Cloud Patches for Commerce package delivers required patches with critical fixes
--  Quality Patches deliver optional, low-impact quality fixes as [individual patches](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/versioning-policy.html#individual-patch) that do not contain backward incompatible changes
+-  Quality Patches deliver optional, low-impact quality fixes as [individual patches](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/versioning-policy#individual-patch) that do not contain backward incompatible changes
 
 See [Available Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the _Commerce Operations Tools Guide_ to review a full list of released patches.
 
@@ -116,7 +116,7 @@ You can apply patches manually in a local environment and test them before you d
 
 **To apply individual patches in a local development environment**:
 
-1. Add the 'QUALITY_PATCHES' variable to the `.magento.env.yaml` file and list the required patches underneath.
+1. Add the `QUALITY_PATCHES` variable to the `.magento.env.yaml` file and list the required patches underneath.
 
    ```yaml
    stage:
@@ -191,7 +191,7 @@ When you deploy, ECE-Tools applies all Adobe patches and any custom patches that
 
 **To apply and test a custom patch on a Cloud environment**:
 
-1. In the project root, create a directory called `m2-hotfixes` if it does not exist
+1. In the project root, create a directory called `m2-hotfixes` if it does not exist.
 
    ```bash
    mkdir m2-hotfixes

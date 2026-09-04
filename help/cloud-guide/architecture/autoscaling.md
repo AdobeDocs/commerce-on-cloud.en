@@ -22,20 +22,45 @@ role_v2:
 ---
 # Auto scaling
 
-Auto scaling automatically adds or removes resources to the cloud infrastructure to maintain optimal performance and reasonable costs. Currently, this feature is only available for projects configured with a [Scaled architecture](scaled-architecture.md).
+Auto scaling automatically adds or removes resources to the cloud infrastructure to maintain optimal performance and reasonable costs. Adobe offers two types of auto scaling for [!DNL Adobe Commerce on cloud infrastructure] projects:
 
-## Web server nodes
+- [Horizontal auto scaling](#horizontal-auto-scaling) (Available for scaled architecture only) — Adds or removes web server nodes for Scaled architecture projects.
+- [Vertical auto scaling](#vertical-auto-scaling) (Available for standard Pro architecture or scaled architecture) — Resizes the CPU capacity of existing nodes to accommodate changes in demand.
+
+
+## Enable auto scaling
+
+To enable or disable horizontal or vertical auto scaling for your [!DNL Adobe Commerce on cloud infrastructure] project, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). Choose the following reasons in the ticket:
+
+- **Contact reason**: Infrastructure Change Request
+- **Adobe Commerce Infrastructure Contact Reason**: Other Infrastructure Change Request
+
+>[!IMPORTANT]
+>
+>The auto-scaling feature captures unanticipated events. Even if you have auto scaling enabled, Adobe recommends that you continue to [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) if you expect an upcoming event.
+
+### Load testing
+
+Adobe enables auto scaling on your Cloud project _staging_ cluster first. After you perform and complete load testing in your environment, Adobe then enables auto scaling on your production cluster. For guidance on load testing, see [Performance testing](../launch/checklist.md#performance-testing).
+
+## Horizontal auto scaling
+
+Currently, this feature is only available for projects configured with a [Scaled architecture](scaled-architecture.md).
+
+Horizontal auto scaling adds or removes web server nodes for Scaled architecture projects. Alternatively, [vertical auto scaling](#vertical-auto-scaling) resizes the CPU capacity of existing nodes to accommodate changes in demand.
+
+### Web server nodes
 
 The [web tier](scaled-architecture.md#web-tier) scales to accommodate an increase in process requests and higher traffic requirements. Currently, the auto-scaling feature only scales horizontally by adding or removing web server nodes.
 
 An auto-scaling event occurs when CPU usage and traffic reach a predefined threshold:
 
-- **Nodes added**—CPUs/cores across all active web nodes are at 75% capacity for 1 minute and traffic is increasing by 20% for 5 consecutive minutes.
-- **Nodes removed**—CPUs/cores across all active web nodes are loaded at 60% for 20 minutes. Nodes are removed in the order that they were added.
+- **Nodes added** — CPUs/cores across all active web nodes are at 75% capacity for 1 minute and traffic is increasing by 20% for 5 consecutive minutes.
+- **Nodes removed** — CPUs/cores across all active web nodes are loaded at 60% for 20 minutes. Nodes are removed in the order that they were added.
 
 The minimum and maximum thresholds are determined and set based on the contracted resource limits of each merchant; this reduces the risk of infinite scaling.
 
-## Monitor thresholds with New Relic
+### Monitor thresholds with New Relic
 
 You can use the [New Relic service](../monitor/new-relic-service.md) to monitor certain thresholds, such as host count and CPU usage. The following New Relic queries use a variable notation for `cluster-id` for example purposes only.
 
@@ -44,7 +69,7 @@ You can use the [New Relic service](../monitor/new-relic-service.md) to monitor 
 >For a reference on building queries, see [NRQL syntax, clauses, and functions](https://docs.newrelic.com/docs/query-your-data/nrql-new-relic-query-language/get-started/nrql-syntax-clauses-functions/) in the _New Relic_ documentation.
 >Use your queries to build a [New Relic dashboard](https://docs.newrelic.com/docs/query-your-data/explore-query-data/dashboards/introduction-dashboards/).
 
-### Host count
+#### Host count
 
 The following example New Relic query shows the host count within the environment:
 
@@ -56,7 +81,7 @@ In the following screenshot, **APM hosts seen** refers to the number of hosts wi
 
 ![New Relic host count](../../assets/new-relic/host-count.png)
 
-### CPU usage
+#### CPU usage
 
 The following example New Relic query shows CPU usage for web nodes:
 
@@ -65,21 +90,6 @@ SELECT average(cpuPercent) FROM SystemSample FACET hostname, apmApplicationNames
 ```
 
 ![New Relic web nodes CPU usage](../../assets/new-relic/web-node-cpu-usage.png)
-
-## Enable auto scaling
-
-To enable or disable auto scaling for your Adobe Commerce on cloud infrastructure project, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Choose the following reasons in the ticket:
-
-- **Contact reason**: Infrastructure Change Request
-- **Adobe Commerce Infrastructure Contact Reason**: Other Infrastructure Change Request
-
->[!IMPORTANT]
->
->The auto-scaling feature captures unanticipated events. Even if you have auto scaling enabled, Adobe recommends that you continue to [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) if you expect an upcoming event.
-
-### Load testing
-
-Adobe enables auto scaling on your Cloud project _staging_ cluster first. After you perform and complete load testing in your environment, Adobe then enables auto scaling on your production cluster. For guidance on load testing, see [Performance testing](../launch/checklist.md#performance-testing).
 
 ### IP allowlist
 
@@ -91,3 +101,27 @@ For example:
 - If the allowlist contains the IP addresses for your service nodes (1, 2, and 3) and web nodes (4, 5, and 6)—in this case all six nodes—then there is no action required.
 - If the allowlist contains the IP addresses _only_ for your web nodes (4, 5, and 6), then you must update the allowlist to include the IP addresses for the service nodes.
 
+## Vertical auto scaling
+
+In addition to traditional [horizontal auto scaling](#auto-scaling), [!DNL Adobe Commerce on cloud infrastructure] also offers vertical auto scaling for both standard pro architecture and scaled architecture projects.
+
+Instead of adding or removing nodes, vertical auto scaling resizes the CPU capacity of existing nodes to accommodate changes in demand. This complements horizontal auto scaling, which adds or removes web server nodes for Scaled architecture projects.
+
+- **Nodes added**: Not applicable. Vertical auto scaling resizes existing nodes rather than adding new ones.
+- **Node upsize**: A node is resized to the next larger instance size when memory pressure crosses the defined threshold. Only one size increase is applied per scaling event.
+- **Node downsize**: Nodes are downsized automatically after demand subsides. Minimum and maximum sizes are set based on each project's usage pattern and contracted resource limits, which reduces the risk of unnecessary scaling.
+
+### Auto-scaling thresholds
+
+Vertical auto-scaling events are triggered using Pressure Stall Information (PSI) for memory on Linux, which measures how much time a system spends stalled due to memory pressure. Adobe sets thresholds based on your project's contracted resource limits and usage patterns; merchants cannot currently configure them.
+
+### Monitor thresholds with New Relic
+
+You can use the [!DNL New Relic] service to monitor infrastructure instance details, including instance size and type. Configure alerts in New Relic to be notified whenever a vertical auto-scaling event changes the size or type of an instance.
+
+### Impact to your environment
+
+Vertical auto scaling has the following impact on your environment:
+
+- **Downtime**: No downtime is anticipated when a node is resized.
+- **Timing**: Resizing a node typically takes 20–30 minutes. The node is temporarily taken out of the load balancer while the resize is in progress.

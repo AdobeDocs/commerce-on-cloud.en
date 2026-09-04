@@ -25,14 +25,14 @@ The default configurations for your store are stored in a `config.xml` for the a
 
 Store settings, which refer to the configurations in the Admin **Stores** > **Settings** > **Configuration** section, are stored in the deployment configuration files based on the type of configuration:
 
-- `app/etc/config.php`—configuration settings for stores, websites, modules or extensions, static file optimization, and system values related to static content deployment. See the [config.php reference](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-configphp.html) in the _Configuration Guide_.
-- `app/etc/env.php`—values for system-specific overrides and sensitive settings that should _NOT_ be stored in source control. See the [env.php reference](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-envphp.html) in the _Configuration Guide_.
+- `app/etc/config.php`—configuration settings for stores, websites, modules or extensions, static file optimization, and system values related to static content deployment. See the [config.php reference](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp) in the _Configuration Guide_.
+- `app/etc/env.php`—values for system-specific overrides and sensitive settings that should _NOT_ be stored in source control. See the [env.php reference](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-envphp) in the _Configuration Guide_.
 
 >[!NOTE]
 >
 >Because Adobe Commerce on cloud infrastructure supports only the production and maintenance modes, the **Advanced** > **Developer** section is not accessible in the Admin. You must have [environment Admin privileges](../project/user-access.md) to complete configuration management tasks. You can configure additional settings using [environment variables](../environment/configure-env-yaml.md).
 
-Configuration management provides a way to deploy consistent store settings across your environments with minimal downtime using Pipeline deployment. Adobe Commerce on cloud infrastructure project includes the build server, build and deploy scripts, and deployment environments designed with the [pipeline deployment strategy](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) in mind.
+Configuration management provides a way to deploy consistent store settings across your environments with minimal downtime using Pipeline deployment. Adobe Commerce on cloud infrastructure project includes the build server, build and deploy scripts, and deployment environments designed with the [pipeline deployment strategy](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/deployment/technical-details) in mind.
 
 ## Configuration override scheme
 
@@ -46,7 +46,7 @@ To summarize, environment variables override all other values.
 
 >[!TIP]
 >
->See [Configuration management](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) in the _Configuration guide_ for more about the override scheme for pipeline deployment.
+>See [Configuration management](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/deployment/technical-details) in the _Configuration guide_ for more about the override scheme for pipeline deployment.
 
 If the same setting is configured in multiple places, the application relies on the following configuration hierarchy to determine which value to apply to the environment :
 
@@ -77,9 +77,9 @@ The data "dumped" to the `app/etc/config.php` file becomes _locked_, which means
 
 ### Sensitive data
 
-Any sensitive configurations export to the `app/etc/env.php` file when you use the `bin/magento app:config:dump` command. You can set sensitive values using the CLI command: `bin/magento config:sensitive:set`. See  [Sensitive and environment-specific settings](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/) in the _Commerce PHP Extensions_ guide to learn how to designate configuration settings as being sensitive or system-specific.
+Any sensitive configurations export to the `app/etc/env.php` file when you use the `bin/magento app:config:dump` command. You can set sensitive values using the CLI command: `bin/magento config:sensitive:set`. See  [Sensitive and environment-specific settings](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings) in the _Commerce PHP Extensions_ guide to learn how to designate configuration settings as being sensitive or system-specific.
 
-See a list of [Sensitive or system-specific settings](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/config-reference-sens.html) in the _Configuration Guide_.
+See a list of [Sensitive or system-specific settings](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/paths/config-reference-sens) in the _Configuration Guide_.
 
 ### SCD performance
 

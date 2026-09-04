@@ -26,7 +26,7 @@ topic_v2:
 
 You must have an authentication key to access the Adobe Commerce repository and to enable install and update commands for your Adobe Commerce on cloud infrastructure project. There are two methods for specifying Composer authorization credentials.
 
-- **authentication file**—A file that contains your Adobe Commerce [authorization credentials](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) in your Adobe Commerce on cloud infrastructure root directory.
+- **authentication file**—A file that contains your Adobe Commerce [authorization credentials](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) in your Adobe Commerce on cloud infrastructure root directory.
 - **environment variable**—An environment variable to set up authentication keys in your Adobe Commerce on cloud infrastructure project to prevent accidental exposure.
 
 >[!BEGINSHADEBOX]

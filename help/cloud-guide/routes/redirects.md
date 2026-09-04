@@ -33,7 +33,7 @@ The following demonstrates how to manage redirection rules on your Adobe Commerc
 
 >[!WARNING]
 >
->For Adobe Commerce on cloud infrastructure projects, configuring numerous non-regex redirects and rewrites in the `routes.yaml` file can cause performance issues. If your `routes.yaml` file is 32 KB or larger, offload your non-regex redirects and rewrites to Fastly. See [Offload non-regex redirects to Fastly instead of Nginx (routes)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes.html) in the _Adobe Commerce Help Center_.
+>For Adobe Commerce on cloud infrastructure projects, configuring numerous non-regex redirects and rewrites in the `routes.yaml` file can cause performance issues. If your `routes.yaml` file is 32 KB or larger, offload your non-regex redirects and rewrites to Fastly. See [Offload non-regex redirects to Fastly instead of Nginx (routes)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes) in the _Adobe Commerce Help Center_.
 
 ## Whole-route redirects
 

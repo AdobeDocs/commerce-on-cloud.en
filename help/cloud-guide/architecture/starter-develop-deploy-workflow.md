@@ -176,7 +176,7 @@ As you develop features, add extensions, and design themes, having real data to 
 
 To help export Production data as test data to use in staging and integration environments:
 
--  [Run the support utilities](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html) CLI commands (Recommended) when exporting a protected backup of customer and store data using your Adobe Commerce encryption key
+-  [Run the support utilities](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/run-support-utilities) CLI commands (Recommended) when exporting a protected backup of customer and store data using your Adobe Commerce encryption key
 
 -  [Data Collection](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector) tool for generating and exporting data
 
@@ -186,7 +186,7 @@ To migrate this data, see [Migrate and deploy static files and data](../deploy/s
 
 >[!NOTE]
 >
->Before pushing the data to another environment, you should consider sanitizing your data. You have a couple of options including [using support utilities](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html) or developing a script to scrub out customer data.
+>Before pushing the data to another environment, you should consider sanitizing your data. You have a couple of options including [using support utilities](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/run-support-utilities) or developing a script to scrub out customer data.
 
 >[!WARNING]
 >

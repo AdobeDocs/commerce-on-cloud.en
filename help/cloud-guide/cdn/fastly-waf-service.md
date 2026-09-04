@@ -74,7 +74,7 @@ When the WAF service is enabled, it inspects all web and admin traffic against t
 
 You can customize this error response page from the Admin. See [Customize the WAF response page](fastly-custom-response.md#customize-the-waf-error-page).
 
-If your Adobe Commerce admin page or storefront returns a `403 Forbidden` error page in response to a legitimate URL request, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case). Copy the reference ID from the error response page and paste it into the ticket description.
+If your Adobe Commerce admin page or storefront returns a `403 Forbidden` error page in response to a legitimate URL request, submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case). Copy the reference ID from the error response page and paste it into the ticket description.
 
 To identify the WAF response for a particular request using New Relic, refer to the following:
 
@@ -96,7 +96,7 @@ If you find that the WAF is blocking legitimate requests, these are often false 
 The standard WAF service powered by Fastly does not support the following features:
 
 - Protection against malware or bot mitigation—Consider using [access control lists](./fastly-vcl-allowlist.md) or a third-party service.
-- Rate limiting—See [Rate Limiting](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md) in the Fastly documentation, or see [Rate limiting](https://developer.adobe.com/commerce/webapi/get-started/rate-limiting/) in the _Commerce Web API_ security section.
+- Rate limiting—See [Rate Limiting](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md) in the Fastly documentation, or see [Rate limiting](https://developer.adobe.com/commerce/webapi/get-started/rate-limiting) in the _Commerce Web API_ security section.
 - Configuring a logging endpoint for customer—See [PrivateLink service](../development/privatelink-service.md) as an alternative.
 
 The WAF service allows you to block or allow traffic based on IP addresses. You can add access control lists (ACL) and custom VCL snippets to your Fastly service to specify the IP addresses and VCL logic for blocking or allowing traffic. See [Custom Fastly VCL snippets](fastly-vcl-custom-snippets.md).

@@ -25,7 +25,7 @@ topic_v2:
 
 The `mysql` service provides persistent data storage based on [MariaDB](https://mariadb.com/) versions 10.2 to 10.4, supporting the [XtraDB](https://docs.percona.com/percona-xtradb-cluster/8.0/index.html) storage engine and reimplemented features from MySQL 5.6 and 5.7.
 
-Reindexing on MariaDB 10.4 takes more time compared to other MariaDB or MySQL versions. See [Indexers](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#indexers) in the _Performance Best Practices_ guide.
+Reindexing on MariaDB 10.4 takes more time compared to other MariaDB or MySQL versions. See [Indexers](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#indexers) in the _Performance Best Practices_ guide.
 
 >[!WARNING]
 >
@@ -84,7 +84,7 @@ mysql:
             optimizer_use_condition_selectivity: 1
 ```
 
-The `properties` in the above example modifies the default `optimizer` settings as [recommended in the Performance Best Practices guide](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#indexers).
+The `properties` in the above example modifies the default `optimizer` settings as [recommended in the Performance Best Practices guide](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#indexers).
 
 **MariaDB configuration options**:
 
@@ -100,7 +100,7 @@ The `properties` in the above example modifies the default `optimizer` settings 
 
 Optionally, you can set up multiple users with different permissions for accessing the `main` database.
 
-By default, there is one endpoint named `mysql` that has administrator access to the database. To set up multiple database users, you must define multiple endpoints in the `services.yaml` file and declare the relationships in the `.magento.app.yaml` file. For Pro Staging and Production environments, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request the additional user.
+By default, there is one endpoint named `mysql` that has administrator access to the database. To set up multiple database users, you must define multiple endpoints in the `services.yaml` file and declare the relationships in the `.magento.app.yaml` file. For Pro Staging and Production environments, [Submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) to request the additional user.
 
 Use a nested array to define the endpoints for specific user access. Each endpoint can designate access to one or more schemas (databases) and different levels of permission on each.
 
@@ -224,13 +224,13 @@ Accessing the MariaDB database directly requires you to use an SSH to log in to 
 >
 >This feature is available on Pro Production and Staging clusters only.
 
-Sometimes, you have to connect to the secondary database to improve database performance or resolve database locking issues. If this configuration is required, use `"port" : 3304` to establish the connection. See the [Best practice to configure the MySQL slave connection](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/mysql-configuration.html) topic in the _Implementation Best Practices_ guide.
+Sometimes, you have to connect to the secondary database to improve database performance or resolve database locking issues. If this configuration is required, use `"port" : 3304` to establish the connection. See the [Best practice to configure the MySQL slave connection](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/mysql-configuration) topic in the _Implementation Best Practices_ guide.
 
 ## Troubleshooting
 
 See the following Adobe Commerce Support articles for help with troubleshooting MySQL problems:
 
-- [Checking slow queries and processes MySQL](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql.html)
-- [Create database dump on Cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html)
+- [Checking slow queries and processes MySQL](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql)
+- [Create database dump on Cloud](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud)
 - [Data Migration Tool troubleshooting](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
-- [Adobe Commerce upgrade: compact to dynamic tables 2.2.x, 2.3.x to 2.4.x](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)
+- [Adobe Commerce upgrade: compact to dynamic tables 2.2.x, 2.3.x to 2.4.x](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade)

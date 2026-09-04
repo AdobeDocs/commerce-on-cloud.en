@@ -48,7 +48,7 @@ The branching strategy uses a common Git workflow where you develop code and add
 
 Your account supports a limited number of ![active branch](../../assets/icon-active.png){width="32"} (active) and an unlimited number of ![inactive branch](../../assets/icon-inactive.png){width="32"} (inactive) development branches. Manage active and inactive branches by adding or deleting a branch using only the [!DNL Cloud Console] or the Cloud CLI. Before you can delete a branch, you deactivate the branch, which remains in the _Environments_ list as _inactive_. You can reactivate the branch later or you can [delete the branch](../dev-tools/cloud-cli-overview.md#) in environment settings or using the Cloud CLI.
 
-If you need additional active environments for development, submit a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+If you need additional active environments for development, submit a [Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 **To add a branch**:
 
