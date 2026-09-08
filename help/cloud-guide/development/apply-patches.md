@@ -15,28 +15,28 @@ role_v2:
 ---
 # Apply patches
 
-[Cloud Patches for Commerce](https://github.com/magento/magento-cloud-patches) and the [Quality Patches Tool](https://github.com/magento/quality-patches) deliver patches to your installed Adobe Commerce application.
+The `magento/magento-cloud-patches` Composer package (see [Cloud Patches for Commerce release notes](../release-notes/cloud-patches.md)) and the [Quality Patches Tool](https://github.com/magento/quality-patches) deliver patches to your installed Adobe Commerce application.
 
--  The Cloud Patches for Commerce package delivers required patches with critical fixes
--  Quality Patches deliver optional, low-impact quality fixes as [individual patches](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/versioning-policy#individual-patch) that do not contain backward incompatible changes
+- The Cloud Patches for Commerce package delivers required patches with critical fixes
+- Quality Patches deliver optional, low-impact quality fixes as [individual patches](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/versioning-policy#individual-patch) that do not contain backward incompatible changes
 
-See [Available Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the _Commerce Operations Tools Guide_ to review a full list of released patches.
+To review a full list of released patches, see [Available Patches](https://experienceleague.adobe.com/en/tools/commerce-quality-patches) in the _Commerce Operations Tools Guide_.
 
 Both packages improve the integration of all Adobe Commerce versions with Cloud environments and support quick delivery of critical, optional, and custom fixes. You can use these packages to apply, revert, and view general information about all individual patches that are available for Commerce.
 
 >[!TIP]
 >
->You can use the [Quality Patches Tool](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) and Cloud Patches for Commerce as stand-alone packages for Magento Open Source and Adobe Commerce projects. We recommend using the Quality Patches Tool for non-Cloud projects.
+>You can use the [Quality Patches Tool](https://experienceleague.adobe.com/en/tools/commerce-quality-patches) and Cloud Patches for Commerce as independent packages for Magento Open Source and Adobe Commerce projects. Adobe recommends using the Quality Patches Tool for non-Cloud projects.
 
 When you deploy changes to the remote environment, the `ece-tools` package uses `magento/magento-cloud-patches` and `magento/quality-patches` to check for pending patches and applies them automatically in the following order:
 
 1. Apply all required Commerce patches included in the Cloud Patches for Commerce package.
 1. Apply selected optional Commerce patches included in the Quality Patches Tool.
-1. Apply custom patches in the `/m2-hotfixes` directory in alphabetical order by patch name.
+1. Apply custom patches in the `/m2-hotfixes` directory alphabetically by patch name.
 
 >[!NOTE]
 >
->When you update the `ece-tools` package or the Cloud Patches for Commerce package, the latest required patches are applied the next time you deploy your project, or you can deploy them immediately using the `ece-patches apply` CLI command and redeploying your Cloud environment. You cannot skip [required patches](https://github.com/magento/magento-cloud-patches/tree/develop/patches) during the deployment process.
+>When you update the `ece-tools` or Cloud Patches for Commerce package, the latest required patches apply during your next deployment. Alternatively, use the `ece-patches apply` CLI command and redeploy your Cloud environment to apply them immediately. You cannot skip [required patches](https://github.com/magento/magento-cloud-patches/tree/develop/patches) during the deployment process.
 
 ## Prerequisites
 
@@ -97,7 +97,7 @@ The status table contains the following types of information:
 - **Type**:
     - `Optional`—All patches from the Quality Patches Tool and the Cloud Patches package are optional for Adobe Commerce and Magento Open Source installations. For Adobe Commerce on cloud infrastructure, all patches are optional.
     - `Required`—All patches from the Cloud Patches for Commerce package are required for Cloud customers.
-    - `Deprecated`—The individual patch is marked as deprecated and we recommend reverting it if you have applied it. After you revert a deprecated patch, it will no longer be displayed in the status table.
+    - `Deprecated`—The individual patch is marked as deprecated. Adobe recommends reverting it if you have applied it. After you revert a deprecated patch, it no longer displays in the status table.
     - `Custom`—All patches from the 'm2-hotfixes' directory.
 
 - **Status**:
@@ -149,7 +149,7 @@ You can apply patches manually in a local environment and test them before you d
 
 >[!WARNING]
 >
->We strongly recommend testing all patches in an integration or Staging environments before deploying to the Production environment.
+>Adobe recommends testing all patches in an integration or Staging environment before deploying to the Production environment.
 
 **To apply patches in a remote environment**:
 

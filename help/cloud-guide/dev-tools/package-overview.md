@@ -99,5 +99,5 @@ See [Release notes for ece-tools](../release-notes/cloud-tools-suite.md).
 
 ## Adobe patches and custom patches
 
-The `ece-tools` package includes a dependency for the [magento/magento-cloud-patches](https://github.com/magento/magento-cloud-patches) package, which delivers Adobe patches and hot fixes that improve the integration of all Adobe Commerce versions with Cloud environments and supports quick delivery of critical fixes. The `` also delivers custom patches that you add to your Adobe Commerce on cloud infrastructure project. See [Apply patches](../development/apply-patches.md).
+The `ece-tools` package includes a dependency for the `magento/magento-cloud-patches` Composer package (see [Cloud Patches for Commerce release notes](../release-notes/cloud-patches.md)), which delivers Adobe patches and hot fixes that improve the integration of all Adobe Commerce versions with Cloud environments and supports quick delivery of critical fixes. The package also delivers custom patches that you add to your Adobe Commerce on cloud infrastructure project. See [Apply patches](../development/apply-patches.md).
 
