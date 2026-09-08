@@ -2,8 +2,37 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Aug 28 17:20:53 2026
+updated: Fri Sep 4 15:31:46 2026
 entries:
+- description: Updated the Redis and Valkey service documentation to reflect current
+    version and patch-level support, and added Valkey references across the Cloud
+    Guide architecture and services pages, including [Set up Redis service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/redis),
+    [Set up Valkey service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey),
+    and [Deploy variables](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/environment/variables-deploy).
+  versions: ''
+  type: feedback, major-update
+  date: September 1, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-on-cloud.en/pull/273
+  merge_commit: 89a9594b50dfeacc4e0e7765f195d9bade00413d
+  contributor: meker_adobe
+  labels:
+  - content-quality
+  - feedback
+  - major-update
+- description: Added guidance on customer availability requirements during Commerce
+    upgrade windows, and clarified the Pro service upgrade request and scheduling
+    process, in [Upgrade Commerce version](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version)
+    and [Configure services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml).
+  versions: ''
+  type: feedback
+  date: September 1, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-on-cloud.en/pull/276
+  merge_commit: ea46582388a9afaf94eb9ced6b61dbef0044370d
+  contributor: meker_adobe
+  labels:
+  - documentation
+  - content-quality
+  - feedback
 - description: Updated [CLI reference](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)
     after ECE-Tools release, v2002.2.13.
   versions: ''
