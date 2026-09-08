@@ -177,3 +177,7 @@ feature: Cloud
             + [Data ingestion](monitor/ingest-data.md)
             + [Track deployments](monitor/track-deployments.md)
         + [Log management](monitor/log-management.md)
+        + Traffic Insights {#traffic-insights}
+            + [Overview](monitor/traffic-insights/overview.md)
+            + [Understanding the app](monitor/traffic-insights/understanding-the-app.md)
+            + [Investigation playbook](monitor/traffic-insights/investigation-playbook.md)
