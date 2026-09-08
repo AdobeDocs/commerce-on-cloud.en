@@ -48,7 +48,13 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.1.19 {#latest}
+## v1.1.20 {#latest}
+
+Release date: September 08, 2026
+
+- ![fix icon](../../assets/fix.svg) **Security improvements**—Included support for the September 2026 isolated security patch.<!-- MCLOUD-15053 -->
+
+## v1.1.19 
 
 Release date: August 19, 2026
 

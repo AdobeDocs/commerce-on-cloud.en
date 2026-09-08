@@ -41,11 +41,19 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.2.13 {#latest}
+## v2002.2.14 {#latest}
+
+Release date: September 08, 2026
+
+- ![fix icon](../../assets/fix.svg) **Valkey 8.5 functional test coverage**—Improved coverage for Symfony L2 cache configuration.<!-- MCLOUD-15487 -->
+- ![fix icon](../../assets/fix.svg) **Caching improvements**—Resolved a page cache isolation issue.<!-- MCLOUD-15509 -->
+- ![fix icon](../../assets/fix.svg) **Redis and Valkey improvements**—Enhanced `REDIS_BACKEND` and `VALKEY_BACKEND` handling to support both legacy and modern (Symfony Cache, 2.4.9+) Redis and Valkey cache configurations.<!-- MCLOUD-15546 -->
+
+## v2002.2.13
 
 Release date: August 19, 2026
 
-- ![fix icon](../../assets/fix.svg) **Caching improvements**Enhanced Symfony_l2 cache support for Redis and Valkey slave connections and resolved related cache, tag-index, preload, and static deployment issues..<!-- MCLOUD-15433 -->
+- ![fix icon](../../assets/fix.svg) **Caching improvements**—Enhanced Symfony_l2 cache support for Redis and Valkey slave connections and resolved related cache, tag-index, preload, and static deployment issues..<!-- MCLOUD-15433 -->
 
 ## v2002.2.12 
 
