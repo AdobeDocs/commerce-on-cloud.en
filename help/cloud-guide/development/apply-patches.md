@@ -36,7 +36,7 @@ When you deploy changes to the remote environment, the `ece-tools` package uses 
 
 >[!NOTE]
 >
->When you update the `ece-tools` or Cloud Patches for Commerce package, the latest required patches apply during your next deployment. Alternatively, use the `ece-patches apply` CLI command and redeploy your Cloud environment to apply them immediately. You cannot skip [required patches](https://github.com/magento/magento-cloud-patches/tree/develop/patches) during the deployment process.
+>When you update the `ece-tools` or [Cloud Patches for Commerce package](../release-notes/cloud-patches.md], the latest required patches apply during your next deployment. Alternatively, use the `ece-patches apply` CLI command and redeploy your Cloud environment to apply them immediately. You cannot skip [required patches](https://github.com/magento/magento-cloud-patches/tree/develop/patches) during the deployment process.
 
 ## Prerequisites
 
