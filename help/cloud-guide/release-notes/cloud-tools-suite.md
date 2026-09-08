@@ -23,12 +23,12 @@ role_v2:
 ---
 # Release notes for Commerce Cloud Tools Suite
 
-This release information details the latest improvements to the Cloud Tools Suite for Commerce packages, which are designed to deploy and manage Adobe Commerce installations and upgrades on the Cloud platform.
+This release information details the latest improvements to the Cloud Tools Suite for Commerce packages that are designed to deploy and manage Adobe Commerce installations and upgrades on the Cloud platform.
 
 | Release notes     | Version  | Description                              | Source              |
 | ----------------- |----------| ---------------------------------------- | --------------------------- |
 | [ece-tools package](ece-tools-package.md) | 2002.2.14 | A set of scripts and tools designed to manage and deploy Cloud projects | [`magento/ece-tools`](https://github.com/magento/ece-tools/tree/2002.2.14) |
-| [Cloud Patches for Commerce](cloud-patches.md) | 1.1.21 | A set of patches which improve the integration of all Adobe Commerce versions with Cloud environments. This package includes Adobe Commerce patches and available hotfixes that are applied when you use `ece-tools` to deploy | `magento/magento-cloud-patches`, via the [Commerce Composer repository](cloud-patches.md) at `repo.magento.com` (requires an Adobe Commerce on cloud infrastructure entitlement) |
+| [Cloud Patches for Commerce](cloud-patches.md) | 1.1.21 | A set of patches which improve the integration of all Adobe Commerce versions with Cloud environments. This package includes Adobe Commerce patches and available hotfixes that are applied when you use `ece-tools` to deploy | `magento/magento-cloud-patches`, via the Commerce Composer repository at `repo.magento.com` (requires an Adobe Commerce on cloud infrastructure entitlement; see [Cloud Patches for Commerce release notes](cloud-patches.md)) |
 | [Cloud Docker for Commerce](cloud-docker.md) | 1.4.9 | Functionality and configuration files for Docker images to deploy Adobe Commerce to a local cloud environment | [`magento/magento-cloud-docker`](https://github.com/magento/magento-cloud-docker/tree/1.4.9) |
 | [Cloud Components of Commerce](cloud-components.md) | 1.1.4 | Extended Adobe Commerce core functionality for sites deployed on the Cloud infrastructure | [`magento/magento-cloud-components`](https://github.com/magento/magento-cloud-components/tree/1.1.4) |
 

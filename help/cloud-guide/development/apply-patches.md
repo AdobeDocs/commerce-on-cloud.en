@@ -98,7 +98,7 @@ The status table contains the following types of information:
     - `Optional`—All patches from the Quality Patches Tool and the Cloud Patches package are optional for Adobe Commerce and Magento Open Source installations. For Adobe Commerce on cloud infrastructure, all patches are optional.
     - `Required`—All patches from the Cloud Patches for Commerce package are required for Cloud customers.
     - `Deprecated`—The individual patch is marked as deprecated. Adobe recommends reverting it if you have applied it. After you revert a deprecated patch, it no longer displays in the status table.
-    - `Custom`—All patches from the 'm2-hotfixes' directory.
+    - `Custom`—All patches from the `m2-hotfixes` directory.
 
 - **Status**:
     - `Applied`—The patch has been applied.
@@ -149,7 +149,7 @@ You can apply patches manually in a local environment and test them before you d
 
 >[!WARNING]
 >
->Adobe recommends testing all patches in an integration or Staging environment before deploying to the Production environment.
+>Adobe recommends testing all patches in an Integration or Staging environment before deploying to the Production environment.
 
 **To apply patches in a remote environment**:
 
