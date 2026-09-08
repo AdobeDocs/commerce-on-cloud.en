@@ -47,11 +47,11 @@ topic_v2:
 
 ## v2002.0.22
 
-The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` package to decouple the release of `Adobe Commerce on cloud infrastructure` patches from the ECE-Tools release. Starting with this release, patches and critical fixes will be delivered using the [`magento/magento-cloud-patches`](https://github.com/magento/magento-cloud-patches) package, which is a new dependency for the `ece-tools` package. We made these changes to reduce complexity for scheduling release updates and working with community contributions.
+The `ece-tools` 2002.0.22 release changes the structure of the `ece-tools` package to decouple the release of `Adobe Commerce on cloud infrastructure` patches from the ECE-Tools release. Starting with this release, patches and critical fixes will be delivered using the `magento/magento-cloud-patches` package, which is a new dependency for the `ece-tools` package. We made these changes to reduce complexity for scheduling release updates and working with community contributions.
 
 - ![new icon](../../assets/new.svg) **Changes to the ECE-Tools package**
 
-   - ![new icon](../../assets/new.svg) Moved the Adobe Commerce patches from the `ece-tools` package to a new [`magento/magento-cloud-patches`](https://github.com/magento/magento-cloud-patches) composer package.
+   - ![new icon](../../assets/new.svg) Moved the Adobe Commerce patches from the `ece-tools` package to a new `magento/magento-cloud-patches` composer package.
 
    - ![new icon](../../assets/new.svg) Updated the `composer.json` file for the `ece-tools` package to add a dependency for the `magento/magento-cloud-patches` v1.0.0 package.
 

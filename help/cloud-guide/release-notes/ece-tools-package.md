@@ -462,7 +462,7 @@ Release date: February 6, 2020
 
    -  ![new icon](../../assets/new.svg) **Added separate package for Cloud Docker for Commerce**—Decoupled the Docker package from the `ece-tools` package to maintain code quality and provide independent releases. Updates and fixes related to `ece-tools` are managed from the [magento-cloud-docker](https://github.com/magento/magento-cloud-docker) GitHub repository.<!--MAGECLOUD-2927-->
 
-   -  ![new icon](../../assets/new.svg) **Updated patching capabilities**—Moved the patching functionality from the ECE-Tools package to a separate [magento-cloud-patches](https://github.com/magento/magento-cloud-patches) package. During deployment, `ece-tools` uses the new package to apply patches. See [Cloud patches release notes](cloud-patches.md).<!--MAGECLOUD-4567-->
+   -  ![new icon](../../assets/new.svg) **Updated patching capabilities**—Moved the patching functionality from the ECE-Tools package to a separate `magento-cloud-patches` package. During deployment, `ece-tools` uses the new package to apply patches. See [Cloud patches release notes](cloud-patches.md).<!--MAGECLOUD-4567-->
 
    -  ![new icon](../../assets/new.svg) **Updated Composer dependencies**—Updated the `composer.json` file for Adobe Commerce on cloud infrastructure with a dependency for the `magento/magento-cloud-docker` package. Now, `ece-tools` includes dependencies for all packages in the [`Cloud Tools Suite for Commerce`](cloud-tools-suite.md). These packages are installed and updated automatically when you install or update `ece-tools`.
 
