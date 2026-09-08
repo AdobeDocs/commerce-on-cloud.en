@@ -36,7 +36,7 @@ The `magento/magento-cloud-patches` Composer package provides a set of required 
 
 >[!NOTE]
 >
->Starting with version 1.1.15, Adobe distributes the `magento/magento-cloud-patches` package exclusively through the Commerce Composer repository at `repo.magento.com`. You must have an entitlement to Adobe Commerce on cloud infrastructure to download this package. Do not use the GitHub package repository to install or update this package.
+>Starting with version 1.1.15, Adobe distributes the `magento/magento-cloud-patches` package exclusively through the Commerce Composer repository at `repo.magento.com`. You must have the Adobe Commerce EE entitlement to download this package.
 
 The Cloud Patches for Commerce package is a dependency for the ECE-Tools package and is installed and updated when you install or update the ECE-Tools package. You can also use and manage Cloud Patches for Commerce as a stand-alone package to apply patches to an Adobe Commerce project that is not on the Cloud Platform. These release notes describe the latest improvements to this package.
 
