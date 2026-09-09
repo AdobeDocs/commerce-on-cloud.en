@@ -36,7 +36,7 @@ When you deploy changes to the remote environment, the `ece-tools` package uses 
 
 >[!NOTE]
 >
->When you update the `ece-tools` or Cloud Patches for Commerce package, the latest required patches apply during your next deployment. Alternatively, use the `ece-patches apply` CLI command to apply and validate patches locally in your Cloud environment before deploying to Production and Staging. You cannot skip required patches during the deployment process.
+>When you update the `ece-tools` or Cloud Patches for Commerce package, the latest required patches apply during your next deployment. Alternatively, use the `ece-patches apply` CLI command to apply and validate patches locally in your Cloud environment before deploying. You cannot skip required patches during the deployment process.
 >
 >Only customers with the Adobe Commerce EE entitlement can download the [Cloud Patches for Commerce package](../release-notes/cloud-patches.md) from the Commerce Composer repository at `repo.magento.com`. 
 
