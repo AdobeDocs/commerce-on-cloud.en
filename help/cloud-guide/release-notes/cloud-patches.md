@@ -62,7 +62,7 @@ Release date: September 08, 2026
 
 Release date: September 08, 2026
 
-- ![fix icon](../../assets/fix.svg) **Security improvements**—Included support for the September 2026 isolated security patch.<!-- MCLOUD-15053 -->
+- ![fix icon](../../assets/fix.svg) **Security improvements**—Included support for the September 2026 isolated security patches referenced in [Adobe Commerce Security Update APSB26-138](https://helpx.adobe.com/security/products/magento/apsb26-138.html).<!-- MCLOUD-15053 -->
 
 ## v1.1.19
 
