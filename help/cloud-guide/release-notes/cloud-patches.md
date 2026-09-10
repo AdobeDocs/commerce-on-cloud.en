@@ -32,7 +32,11 @@ topic_v2:
 ---
 # Cloud Patches for Commerce
 
-The [Cloud Patches](https://github.com/magento/magento-cloud-patches) package provides a set of required patches which improve the integration of all Adobe Commerce versions with Cloud environments and supports quick delivery of critical fixes.
+The `magento/magento-cloud-patches` Composer package provides a set of required patches which improve the integration of all Adobe Commerce versions with Cloud environments and supports quick delivery of critical fixes. Adobe distributes this package through the Commerce Composer repository at `repo.magento.com`.
+
+>[!NOTE]
+>
+>Starting with version 1.1.15, Adobe distributes the `magento/magento-cloud-patches` package exclusively through the Commerce Composer repository at `repo.magento.com`. You must have the Adobe Commerce EE entitlement to download this package.
 
 The Cloud Patches for Commerce package is a dependency for the ECE-Tools package and is installed and updated when you install or update the ECE-Tools package. You can also use and manage Cloud Patches for Commerce as a stand-alone package to apply patches to an Adobe Commerce project that is not on the Cloud Platform. These release notes describe the latest improvements to this package.
 
@@ -145,7 +149,7 @@ Release date: June 03, 2025
 
 Release date: May 05, 2025
 
-- ![new icon](../../assets/new.svg) **Updated patch for Commerce 2.4.4 to 2.4.8**—This is an updated patch for [CVE-2025-24434](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27148), which was released in 1.1.7<!-- MCLOUD-13619 -->
+- ![new icon](../../assets/new.svg) **Updated patch for Commerce 2.4.4 to 2.4.8**—This update revises the patch for [CVE-2025-24434](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27148), which was released in 1.1.7<!-- MCLOUD-13619 -->
 
 ## v1.1.6
 
@@ -440,7 +444,7 @@ This release includes the following patches and critical fixes:
 
 - **Elasticsearch catalog pagination fix** —Replaced the Elasticsearch catalog pagination patch delivered in magento/magento-cloud-patches v1.0 with a more effective fix.<!--MAGECLOUD-4847-->
 
-- **Page Builder patches**—In Cloud Patches for Commerce 1.0.0, Page Builder patches were bundled to address a known Page Builder remote code execution (RCE) vulnerability, with the initial fix based on Adobe Commerce 2.3.3. These patches have been updated with a more stable implementation based on Adobe Commerce 2.3.4., which includes multiple optimizations for fixing the issue.<!--MAGECLOUD-4884-->
+- **Page Builder patches**—In Cloud Patches for Commerce 1.0.0, Page Builder patches were bundled to address a known Page Builder remote code execution (RCE) vulnerability, with the initial fix based on Adobe Commerce 2.3.3. These patches have been updated with a more stable implementation based on Adobe Commerce 2.3.4, which includes multiple optimizations for fixing the issue.<!--MAGECLOUD-4884-->
 
    If you have the magento/magento-cloud-patches 1.0.0 package, you are still protected from the Page Builder RCE vulnerability issues. If you update to 1.0.1 or later, you have a better implementation of the same fix.
 
@@ -448,7 +452,7 @@ This release includes the following patches and critical fixes:
 
 Release date: November 14, 2019
 
-This release is the first release of the [`magento/magento-cloud-patches`](https://github.com/magento/magento-cloud-patches) package, which is a new dependency for the `ece-tools` package version 2002.0.22 or later releases.
+This release is the first release of the `magento/magento-cloud-patches` package, which is a new dependency for the `ece-tools` package version 2002.0.22 or later releases.
 
 This release includes the following patches and critical fixes:
 
