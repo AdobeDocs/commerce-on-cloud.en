@@ -2,8 +2,48 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Sep 4 15:31:46 2026
+updated: Fri Sep 11 15:31:36 2026
 entries:
+- description: Clarified in [Cloud Patches for Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
+    and [Release notes for Commerce Cloud Tools Suite](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite)
+    that, starting with version 1.1.15, customers must download the Cloud Patches
+    for Commerce package through Composer from `repo.magento.com` rather than from
+    GitHub, and that an Adobe Commerce on cloud infrastructure entitlement is required.
+  versions: ''
+  type: feedback, technical
+  date: September 10, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-on-cloud.en/pull/284
+  merge_commit: ccc122ea36aa8709ac5fa281f94f0814d62e71db
+  contributor: meker_adobe
+  labels:
+  - documentation
+  - content-quality
+  - feedback
+  - technical
+- description: Updated [CLI reference](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)
+    and [Error messages](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference)
+    after ECE-Tools release, v2002.2.14.
+  versions: ''
+  type: technical
+  date: September 9, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-on-cloud.en/pull/286
+  merge_commit: 0e2395ce240935dd67032fe7d2d9d7005958e026
+  contributor: commercedocs_adobe
+  labels:
+  - devops
+  - technical
+- description: The new [Traffic Insights](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/traffic-insights/overview)
+    app helps users visualize their CDN traffic.
+  versions: ''
+  type: major-update, new-topic
+  date: September 8, 2026
+  link: enterprise:Adobe-Enterprise-Docs/commerce-on-cloud.en/pull/245
+  merge_commit: 74ff686398d92e74f6f889aa10eca67205beb42e
+  contributor: jhoover_adobe
+  labels:
+  - major-update
+  - new-topic
+  - blocked
 - description: Updated the Redis and Valkey service documentation to reflect current
     version and patch-level support, and added Valkey references across the Cloud
     Guide architecture and services pages, including [Set up Redis service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/redis),
