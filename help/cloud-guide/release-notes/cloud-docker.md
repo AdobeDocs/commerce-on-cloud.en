@@ -40,7 +40,13 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v1.4.9 {#latest}
+## v1.4.10 {#latest}
+
+Release date: October 08, 2026
+
+- ![new icon](../../assets/new.svg) **Functional tests for services**-Added Magento 2.4.10 functional test coverage for ActiveMQ Artemis, OpenSearch, RabbitMQ, MariaDB and Valkey.<!-- MCLOUD-15399 -->
+
+## v1.4.9
 
 Release date: July 20, 2026
 

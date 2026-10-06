@@ -41,7 +41,15 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v2002.2.14 {#latest}
+## v2002.2.15 {#latest}
+
+Release date: October 08, 2026
+
+- ![new icon](../../assets/new.svg) **Functional tests for services**-Added Magento 2.4.10 functional test coverage for ActiveMQ Artemis, OpenSearch, RabbitMQ, MariaDB and Valkey.<!-- MCLOUD-15399 -->
+-  ![fix icon](../../assets/fix.svg) **EOL validator**-Updated End of Life (EOL) services dates for Opensearch.<!-- MCLOUD-15384 -->
+
+
+## v2002.2.14
 
 Release date: September 08, 2026
 
