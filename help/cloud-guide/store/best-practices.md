@@ -3,7 +3,7 @@ title: Best practices for store configuration
 description: Read about best practices for configuring your store on Adobe Commerce on cloud infrastructure.
 feature: Cloud, Best Practices
 exl-id: ae7da73b-f874-4623-bf29-821ee0a00eb9
-TQID: https://experienceleague.adobe.com/dhZ3IlMZ-8xCdbEQzjDNWoFALPxUIaIFN1ch0w6O6R0
+TQID: 'https://experienceleague.adobe.com/dhZ3IlMZ-8xCdbEQzjDNWoFALPxUIaIFN1ch0w6O6R0'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,6 +14,10 @@ feature_v2:
     internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
     internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

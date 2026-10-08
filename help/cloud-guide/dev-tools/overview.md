@@ -4,7 +4,7 @@ description: View a list of developer tools available for use with Adobe Commerc
 feature: Cloud, Docker, Integration, Upgrade
 last-substantial-update: 2023-05-19T00:00:00.000Z
 exl-id: 2f2fcdce-d0d9-46c1-a6a6-6d86da529aa3
-TQID: https://experienceleague.adobe.com/7gA5JA0-AGoYicEdnpJkDGT5YsjTPKfRIrxlxn5ePto
+TQID: 'https://experienceleague.adobe.com/7gA5JA0-AGoYicEdnpJkDGT5YsjTPKfRIrxlxn5ePto'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -13,6 +13,14 @@ feature_v2:
     internal-label: Developer tools
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 8b9bbb36-cedc-5e11-a32c-96dd81cfc81d
+    internal-label: Docker
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
 subfeature_v2:
   - id: fa7753f5-a3dd-4259-a6b9-23f8da7b5f40
     internal-label: Cloud Docker for Commerce

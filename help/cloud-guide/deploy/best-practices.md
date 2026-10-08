@@ -3,7 +3,7 @@ title: Deployment best practices
 description: Discover best practices for deploying Adobe Commerce on cloud infrastructure.
 feature: Cloud, Deploy, Best Practices
 exl-id: 87aabee7-4629-4a3c-9587-dbde4cf268e1
-TQID: https://experienceleague.adobe.com/sXtq-V7nDHm5IvDX0CqpxLcO3eQXem-YlMPG-kxTsmc
+TQID: 'https://experienceleague.adobe.com/sXtq-V7nDHm5IvDX0CqpxLcO3eQXem-YlMPG-kxTsmc'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,6 +14,12 @@ feature_v2:
     internal-label: Integrations
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

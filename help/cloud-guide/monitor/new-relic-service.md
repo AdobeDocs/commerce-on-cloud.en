@@ -4,10 +4,15 @@ description: Learn about the New Relic service available with your Adobe Commerc
 feature: Cloud, Observability
 last-substantial-update: 2023-09-06T00:00:00.000Z
 exl-id: 10966241-311d-4b68-804d-4c9569bf933d
-TQID: https://experienceleague.adobe.com/TzgxuxAgzcExYd8BsFh5FTsgFAMy5-qjAOmUdlwqMME
+TQID: 'https://experienceleague.adobe.com/TzgxuxAgzcExYd8BsFh5FTsgFAMy5-qjAOmUdlwqMME'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

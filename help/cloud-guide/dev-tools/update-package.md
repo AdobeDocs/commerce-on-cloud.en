@@ -3,10 +3,15 @@ title: Update the ECE-Tools package
 description: Learn how to upgrade the ECE-Tools package to take advantage of the latest fixes and features applied to Adobe Commerce on cloud infrastructure.
 feature: Cloud, Upgrade
 exl-id: acb4fd0d-6ffb-4094-8dd4-83bb7735d64f
-TQID: https://experienceleague.adobe.com/WqcVa0BJN0ot6yg2unhzeEB8nkjKXM7o26tOwmrg5mU
+TQID: 'https://experienceleague.adobe.com/WqcVa0BJN0ot6yg2unhzeEB8nkjKXM7o26tOwmrg5mU'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

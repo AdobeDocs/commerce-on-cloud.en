@@ -4,7 +4,7 @@ description: Learn about the Pro environment architecture, including the Master,
 feature: Cloud, Auto Scaling, Iaas, Paas, Storage
 topic: Architecture
 exl-id: a6eb562b-1b97-4285-a271-989d9fddc4f9
-TQID: https://experienceleague.adobe.com/Es-cmVlUrzd4xMf9unOJD-Z-h0OvL-ycoullKVO-yRA
+TQID: 'https://experienceleague.adobe.com/Es-cmVlUrzd4xMf9unOJD-Z-h0OvL-ycoullKVO-yRA'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -13,6 +13,12 @@ feature_v2:
     internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
     internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
 subfeature_v2:
   - id: db6b6496-d1b5-4ad4-9e18-dea78dae3aa8
     internal-label: Auto Scaling

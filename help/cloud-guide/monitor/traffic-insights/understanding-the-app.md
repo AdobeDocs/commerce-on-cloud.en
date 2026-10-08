@@ -3,6 +3,17 @@ title: Understanding the App
 description: Learn about how Adobe Commerce Traffic Insights works, how to drive it with filters, how its data is measured, and its data limitations and performance.
 feature: Cloud, Observability
 role: Admin
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Understanding the app
 
