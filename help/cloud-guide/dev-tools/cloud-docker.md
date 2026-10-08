@@ -3,10 +3,15 @@ title: Cloud Docker for Commerce
 description: Learn how to deploy Adobe Commerce to a local, cloud-like environment using the Cloud Docker for Commerce package.
 feature: Cloud, Docker
 exl-id: 5271c301-c308-46b2-abcc-6758790b102b
-TQID: https://experienceleague.adobe.com/-L8CRp8zLFYq5-2s0bgw3x-BI9Ek9NBZgwpZj9DimT8
+TQID: 'https://experienceleague.adobe.com/-L8CRp8zLFYq5-2s0bgw3x-BI9Ek9NBZgwpZj9DimT8'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 8b9bbb36-cedc-5e11-a32c-96dd81cfc81d
+    internal-label: Docker
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

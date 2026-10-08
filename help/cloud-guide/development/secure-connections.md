@@ -5,13 +5,15 @@ role: Developer
 feature: Cloud, Security
 topic: Security
 exl-id: 73af13d8-7085-4ac8-9cfe-9772bc6bc112
-TQID: https://experienceleague.adobe.com/-4Ag5M7x3edpbquUy6Rr--rcghGk7r745jKV883IFFA
+TQID: 'https://experienceleague.adobe.com/-4Ag5M7x3edpbquUy6Rr--rcghGk7r745jKV883IFFA'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
     internal-label: Security
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer

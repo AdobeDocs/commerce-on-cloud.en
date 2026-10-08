@@ -3,7 +3,7 @@ title: Cloud infrastructure security
 description: Learn about how Adobe keeps Adobe Commerce on cloud infrastructure secure.
 feature: Cloud, Security
 exl-id: ae934401-2c32-427a-8162-98df9a047cd4
-TQID: https://experienceleague.adobe.com/3qXIdZWVJ-jxSodN8YGSzE2TOvMzlMKXHgRizgLVoHk
+TQID: 'https://experienceleague.adobe.com/3qXIdZWVJ-jxSodN8YGSzE2TOvMzlMKXHgRizgLVoHk'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Architecture
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
     internal-label: Reporting
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 subfeature_v2:
   - id: bcbf87e7-9b75-4596-bffe-0f376b4c73a7
     internal-label: GDPR

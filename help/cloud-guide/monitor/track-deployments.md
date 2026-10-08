@@ -5,13 +5,19 @@ feature: Cloud, Deploy, Observability
 topic: Performance
 last-substantial-update: 2023-10-12T00:00:00.000Z
 exl-id: 3344314e-bed5-4b98-a2a1-a3a97f61ac85
-TQID: https://experienceleague.adobe.com/-zFiZWxwqEGvapQNrAYL6qgdqW6bzHDw1a1xoBVyJcE
+TQID: 'https://experienceleague.adobe.com/-zFiZWxwqEGvapQNrAYL6qgdqW6bzHDw1a1xoBVyJcE'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

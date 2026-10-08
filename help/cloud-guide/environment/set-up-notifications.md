@@ -3,13 +3,18 @@ title: Set up notifications
 description: Learn how to configure notifications for Adobe Commerce on cloud infrastructure environments.
 feature: Cloud, Configuration, Logs
 exl-id: dfbe1084-ad30-4489-af2d-d6f6b5eae1c4
-TQID: https://experienceleague.adobe.com/YWCv3iFJDvmDTCSaB9cWGmR0WVAEd4ckJdd5MFb8XOo
+TQID: 'https://experienceleague.adobe.com/YWCv3iFJDvmDTCSaB9cWGmR0WVAEd4ckJdd5MFb8XOo'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+subfeature_v2:
+  - id: 3c398179-d35a-51ba-b317-6c5b95feef5e
+    internal-label: Logs
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
