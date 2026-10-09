@@ -3,7 +3,7 @@ title: PHP settings
 description: Learn about the optimal PHP settings for Commerce application configuration in the cloud infrastructure.
 feature: Cloud, Configuration, Extensions
 exl-id: 83094c16-7407-41fa-ba1c-46b206aa160d
-last-update: 2026-08-25T00:00:00.000Z
+last-update: 2026-08-25
 TQID: 'https://experienceleague.adobe.com/2UjlXGZV6AJQuNf0XOdzZ09aF-23TSk7Q0NqvLyhGRs'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
