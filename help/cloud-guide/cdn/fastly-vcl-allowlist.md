@@ -3,7 +3,7 @@ title: Custom VCL for allowing requests
 description: Filter incoming requests and allow access by IP address for Adobe Commerce sites by with a Fastly Edge ACL list and custom VCL snippet.
 feature: Cloud, Configuration, Security
 exl-id: 836779b5-5029-4a21-ad77-0c82ebbbcdd5
-last-update: 2026-08-25T00:00:00.000Z
+last-update: 2026-08-25
 TQID: 'https://experienceleague.adobe.com/szgjjm841ttfcCwULGf3lBNSRhixIhMPfmoYILbNGKY'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047

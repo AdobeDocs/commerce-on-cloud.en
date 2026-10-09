@@ -3,7 +3,7 @@ title: Upgrade Commerce version
 description: Learn how to upgrade the Adobe Commerce version in the cloud infrastructure environment.
 feature: Cloud, Upgrade
 exl-id: 0cc070cf-ab25-4269-b18c-b2680b895c17
-last-update: 2026-09-01T00:00:00.000Z
+last-update: 2026-09-01
 TQID: 'https://experienceleague.adobe.com/XCHw9c0bX8UE8LLmFOYjMFRLTaIk8sT57dESptRTUXs'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047

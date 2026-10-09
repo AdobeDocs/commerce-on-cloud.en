@@ -3,7 +3,7 @@ title: Configure services
 description: Learn how to configure services used by Adobe Commerce on cloud infrastructure, such as MySQL, Redis, and Elasticsearch.
 feature: Cloud, Configuration, Services
 exl-id: ddf44b7c-e4ae-48f0-97a9-a219e6012492
-last-update: 2026-09-01T00:00:00.000Z
+last-update: 2026-09-01
 TQID: 'https://experienceleague.adobe.com/qvCjqNc8E9QGme-zM42vMg-kb1WjwTlWUqjbm-NI2bg'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
