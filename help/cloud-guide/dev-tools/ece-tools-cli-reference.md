@@ -17,7 +17,7 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-last-update: 2026-09-09
+last-update: 2026-10-13
 ---
 # ECE-Tools CLI reference
 
