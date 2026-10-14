@@ -56,7 +56,7 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 Release date: October 13, 2026
 
-- ![fix icon](../../assets/fix.svg) **Security improvements**—Applied the security fixes referenced in [Adobe Commerce Security Update APSB26-153](https://helpx.adobe.com/security/products/magento/apsb26-153.html).<!--MCLOUD-15727 -->
+- ![fix icon](../../assets/fix.svg) **Security improvements**—Applied the security fixes referenced in [Adobe Commerce Security Update APSB26-153](https://www.adobe.com/trust/security/products/commerce/apsb26-153.html).<!--MCLOUD-15727 -->
 
 ## v1.1.21 
 
