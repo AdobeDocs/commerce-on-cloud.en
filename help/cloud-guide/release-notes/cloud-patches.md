@@ -52,7 +52,13 @@ The `magento/magento-cloud-patches` package uses the following version sequence:
 
 <!--Add release notes below-->
 
-## v1.1.22 {#latest}
+## v1.1.23 {#latest}
+
+Release date: October 19, 2026
+
+- ![fix icon](../../assets/fix.svg) **Security improvements**—Updated the October 2026 isolated security patch for 2.4.8-p5 to include an additional defense-in-depth change. See [KA-50927](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-50927).<!--MCLOUD-15841 -->
+
+## v1.1.22
 
 Release date: October 13, 2026
 
