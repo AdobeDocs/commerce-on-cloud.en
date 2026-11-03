@@ -53,7 +53,7 @@ role_v2:
 >
 >**Current limitations**
 >
->Until the end of Q1 2027, customers cannot modify or manage Bot Management rules directly.
+>Currently, customers cannot modify or manage Bot Management rules directly.
 >
 >For any rule additions, modifications, or adjustments, contact Adobe Commerce Support through a [support ticket](https://experienceleague.adobe.com/home?support-tab=home#support). The Support team will implement the requested changes.
 >
