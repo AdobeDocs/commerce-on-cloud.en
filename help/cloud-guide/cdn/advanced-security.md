@@ -57,7 +57,7 @@ role_v2:
 >
 >For any rule additions, modifications, or adjustments, contact Adobe Commerce Support through a [support ticket](https://experienceleague.adobe.com/home?support-tab=home#support). The Support team will implement the requested changes.
 >
->Beginning in Q1 2027, Fastly is scheduled to release an add-on capability that will allow customers to manage Bot Management rules in the Commerce Admin panel.
+>Beginning in Q1 2027, Fastly is scheduled to release an add-on capability that will allow customers to manage Bot Management rules in the Commerce Admin.
 
 ## Default rules and protections
 
