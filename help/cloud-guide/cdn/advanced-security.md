@@ -53,11 +53,11 @@ role_v2:
 >
 >**Current limitations**
 >
->Until the end of Q3 2026, customers cannot modify or manage Bot Management rules directly.
+>Until the end of Q1 2027, customers cannot modify or manage Bot Management rules directly.
 >
 >For any rule additions, modifications, or adjustments, contact Adobe Commerce Support through a [support ticket](https://experienceleague.adobe.com/home?support-tab=home#support). The Support team will implement the requested changes.
 >
->Beginning in Q4 2026, Fastly is scheduled to release an add-on capability that will allow customers to manage Bot Management rules in the Commerce Admin panel.
+>Beginning in Q1 2027, Fastly is scheduled to release an add-on capability that will allow customers to manage Bot Management rules in the Commerce Admin panel.
 
 ## Default rules and protections
 
@@ -170,6 +170,12 @@ The following scenarios are best addressed with [!DNL Advanced Security]:
 | Specific URLs or API endpoints are targeted by high-volume distributed traffic that cannot be blocked by IP | Advanced Rate Limiting provides granular controls for specific endpoints and traffic patterns |
 | You want to manage AI crawlers and fetchers accessing your storefront content | Bot Management includes configurable AI bot detection and enforcement policies |
 | You need an Adobe-supported edge security solution integrated with your existing Fastly CDN | [!DNL Advanced Security] runs on the same Fastly edge platform already serving your storefront |
+
+#### Guidance for headless implementations
+
+If your Adobe Commerce site uses a headless implementation, where the storefront is not the default Adobe Commerce storefront and is hosted or delivered through a separate storefront provider, consider where the affected traffic is being served before selecting a bot protection solution.
+
+For storefront traffic, if the bot or crawler activity primarily targets frontend storefront pages, such as product detail pages (PDPs), product listing pages (PLPs), or category pages, work with your storefront provider to evaluate the bot management or security capabilities available for that storefront.
 
 ### When to use existing protections
 
