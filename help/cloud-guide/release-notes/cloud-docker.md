@@ -46,7 +46,15 @@ The release notes include:
 
 <!--Add release notes below-->
 
-## v1.4.10 {#latest}
+## v1.4.11 {#latest}
+
+Release date: November 19, 2026
+
+- ![new icon](../../assets/new.svg) **Nginx** — Added image nginx v1.30.7.<!-- MCLOUD-16080 -->
+- ![new icon](../../assets/new.svg) **Upgraded PHP 8.1 FPM base image**—Updated the Cloud Docker `php-fpm` 8.1 image to the `php:8.1-fpm` base image (PHP 8.1.34).<!-- MCLOUD-16082 -->
+- ![fix icon](../../assets/fix.svg) **Java security hardening**—Evaluated Java usage across Cloud tools and applied the required fixes and mitigations.<!-- MCLOUD-16055 -->
+
+## v1.4.10
 
 Release date: October 08, 2026
 
