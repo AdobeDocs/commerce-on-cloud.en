@@ -2,20 +2,60 @@
 title: What's new
 description: This page contains the changes made in the last 60 days. Minor updates,
   such as copy editing, are excluded from this list.
-updated: Fri Nov 13 15:41:55 2026
+updated: Fri Nov 20 17:52:10 2026
 entries:
+- description: 'Updated the following release documentation:<br/>- [Cloud Docker for
+    Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-docker#latest):
+    Added v1.4.11 release notes covering nginx v1.30.7, the PHP 8.1 FPM base image
+    update to PHP 8.1.34, and Java security hardening across Cloud tools.<br/>- [Cloud
+    Tools Suite](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite):
+    Updated the Cloud Docker version and source tag link to v1.4.11.'
+  versions: ''
+  type: release-notes
+  date: '2026-11-20'
+  link: enterprise:Adobe-Enterprise-Docs/commerce-on-cloud.en/pull/321
+  merge_commit: d8b1e9b099c1c42094dc223248485b94d1c6a260
+  contributor: glo33270_adobe
+  labels:
+  - release-notes
+  - ai-reviewed
+- description: Updated the [Cloud Patches for Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
+    to include the security improvements referenced in [Adobe Commerce Security Update
+    APSB26-153](https://www.adobe.com/trust/security/products/commerce/apsb26-153.html).
+  versions: ''
+  type: release-notes
+  date: '2026-10-13'
+  link: enterprise:Adobe-Enterprise-Docs/commerce-on-cloud.en/pull/302
+  merge_commit: 287bd80401c6f3a3f0a0adc6d9d9019795207a56
+  contributor: glo33270_adobe
+  labels:
+  - release-notes
 - description: Updated [CLI reference](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference)
     and [Error messages](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference)
     after the ECE-Tools v2002.2.15 release.
   versions: ''
   type: technical
-  date: October 13, 2026
+  date: '2026-10-13'
   link: enterprise:Adobe-Enterprise-Docs/commerce-on-cloud.en/pull/301
   merge_commit: d27cc83271459bb3c8cb718fe72a1810d2f5a3c5
   contributor: commercedocs_adobe
   labels:
   - devops
   - technical
+- description: Updated the release notes for [ece-tools](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package)
+    2002.2.15 and [Cloud Docker](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-docker)
+    1.4.10:<br/>- Added an end-of-life (EOL) entry for OpenSearch.<br/>- Documented
+    Magento 2.4.10 functional test coverage for ActiveMQ Artemis, OpenSearch, RabbitMQ,
+    MariaDB, and Valkey.<br/>- Updated the [Cloud Tools Suite version table](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite)
+    to reflect the new ece-tools and Cloud Docker versions.
+  versions: ''
+  type: release-notes
+  date: '2026-10-08'
+  link: enterprise:Adobe-Enterprise-Docs/commerce-on-cloud.en/pull/296
+  merge_commit: ea6667f993821b605931d4be0cdd89cd3c8d0d30
+  contributor: glo33270_adobe
+  labels:
+  - release-notes
 - description: Clarified in [Cloud Patches for Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
     and [Release notes for Commerce Cloud Tools Suite](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite)
     that, starting with version 1.1.15, customers must download the Cloud Patches
